@@ -1,0 +1,19 @@
+None
+
+
+Boilerplate code:
+```python
+class MaxStack(object):
+    def __init__(self):
+        ...
+    def push(self, x):
+        ...
+    def pop(self):
+        ...
+    def top(self):
+        ...
+    def peekMax(self):
+        ...
+    def popMax(self):
+        ...
+```

@@ -1,0 +1,22 @@
+def containsNearbyAlmostDuplicate(nums, k, t):
+    """
+    :type nums: List[int]
+    :type k: int
+    :type t: int
+    :rtype: bool
+    """
+    buckets = {}
+    for i, v in enumerate(nums):
+        # t == 0 is a special case where we only have to check the bucket
+        # that v is in.
+        bucketNum, offset = (v / t, 1) if t else (v, 0)
+        for idx in range(bucketNum - offset, bucketNum + offset + 1):
+            if idx in buckets and abs(buckets[idx] - nums[i]) <= t:
+                return True
+
+        buckets[bucketNum] = nums[i]
+        if len(buckets) > k:
+            # Remove the bucket which is too far away. Beware of zero t.
+            del buckets[nums[i - k] / t if t else nums[i - k]]
+
+    return False
