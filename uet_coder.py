@@ -27,9 +27,9 @@ def build_prompt(problem_text: str) -> str:
     return f"""### Problem:
 {problem_text.strip()}
 
-Instruction: Write exactly one clean and efficient Python function that correctly solves the problem.
-The solution should be optimal in both time and space complexity.
-Do not include multiple solutions or explanations.
+"Instruction: Write clean and efficient Python code that correctly solves the problem."
+"The solution should be the most optimal approach in terms of time and space complexity."
+"Do not include testing or extra text.\n"
 
 ### Solution:
 """
