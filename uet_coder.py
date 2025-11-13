@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig, 
 from peft import PeftModel
 
 # Load fine-tune model
-def load_model(lora_weight_path):
+def load_model():
     print("Loading base model...")
     quant_config = BitsAndBytesConfig(load_in_4bit=True)
 
@@ -17,7 +17,7 @@ def load_model(lora_weight_path):
     )
 
     print("Loading fine-tuned adapter...")
-    model = PeftModel.from_pretrained(base_model, lora_weight_path)
+    model = PeftModel.from_pretrained(base_model, "lora_weight")
 
     tokenizer = AutoTokenizer.from_pretrained("bigcode/starcoder2-3b")
     return model, tokenizer
@@ -82,7 +82,7 @@ def main():
     prompt = build_prompt(problem_text)
 
     # Load model
-    model, tokenizer = load_model(lora_weight_path=)
+    model, tokenizer = load_model()
 
     # Generate solution
     print("Generating solution...")
