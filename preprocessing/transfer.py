@@ -4,9 +4,9 @@ import shutil
 from pathlib import Path
 
 # --- Cấu hình ---
-PYTHON_DIR = Path("python")
-PROBLEM_DIR = Path("problems")
-SOLUTION_DIR = Path("solution")
+PYTHON_DIR = Path("../data/python")
+PROBLEM_DIR = Path("../data/problems")
+SOLUTION_DIR = Path("../data/solution")
 SOLUTION_DIR.mkdir(exist_ok=True)
 
 def extract_problem_ids_from_problems():

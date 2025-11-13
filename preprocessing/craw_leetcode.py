@@ -4,8 +4,8 @@ import requests
 from pathlib import Path
 
 # --- Cấu hình ---
-PYTHON_DIR = Path("python")
-PROBLEM_DIR = Path("problems")
+PYTHON_DIR = Path("../data/python")
+PROBLEM_DIR = Path("../data/problems")
 PROBLEM_DIR.mkdir(exist_ok=True)
 
 # --- B1: Lấy danh sách id từ thư mục python ---

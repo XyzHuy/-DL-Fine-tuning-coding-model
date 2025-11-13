@@ -1,0 +1,17 @@
+[
+  {
+    "category": "easy",
+    "input": "hello world",
+    "expected_output": "hollo werld"
+  },
+  {
+    "category": "medium",
+    "input": "Programming Is Fun!",
+    "expected_output": "PrugrImmang os Fin!"
+  },
+  {
+    "category": "hard",
+    "input": "Rhythm, why not?",
+    "expected_output": "Rhythm, why not?"
+  }
+]

@@ -3,8 +3,8 @@ import re
 from bs4 import BeautifulSoup
 
 # === Cấu hình ===
-INPUT_DIR = "problems"          # Thư mục chứa file .md gốc
-OUTPUT_DIR = "cleaned_problems" # Thư mục lưu file sạch
+INPUT_DIR = "../data/problems"          # Thư mục chứa file .md gốc
+OUTPUT_DIR = "../data/cleaned_problems" # Thư mục lưu file sạch
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def clean_html(text: str) -> str:

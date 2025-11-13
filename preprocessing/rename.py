@@ -1,8 +1,8 @@
 import os
 import re
 
-PROBLEMS_DIR = "problems"
-SOLUTIONS_DIR = "solution"
+PROBLEMS_DIR = "../data/problems"
+SOLUTIONS_DIR = "../data/solution"
 
 # Regex nhận diện số trong tên file
 problem_re = re.compile(r"Problem(\d+)\.md$")

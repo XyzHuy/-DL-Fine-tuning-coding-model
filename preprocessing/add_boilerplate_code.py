@@ -1,11 +1,9 @@
-
-
 import os
 import re
 import textwrap
 
-PROBLEM_DIR = "problems"
-SOLUTION_DIR = "solution"
+PROBLEM_DIR = "../data/problems"
+SOLUTION_DIR = "../data/solution"
 
 def extract_boilerplate(solution_code: str) -> str:
     """
