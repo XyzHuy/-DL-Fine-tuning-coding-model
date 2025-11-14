@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 import json
-import time  # <-- THÊM THƯ VIỆN TIME
+import time 
 
 # --- 1. Cấu hình API Key ---
 api_key = None
@@ -39,22 +39,27 @@ def create_problem_description(problem_filepath):
         return None
 
 # --- 3. Tạo Prompt (Câu lệnh) ---
-# (Hàm này không thay đổi)
 def create_prompt_template(problem_description):
+    num_easy = 30
+    num_medium = 10
+    num_hard = 10
+    total_cases = num_easy + num_medium + num_hard
+
     prompt_template = f"""
     Bạn là một QA Engineer chuyên nghiệp chuyên tạo test case cho lập trình thi đấu.
-    Dựa trên mô tả bài toán dưới đây, hãy tạo chính xác 3 test case đa dạng.
-    Yêu cầu:
-    1.  Phân loại rõ ràng các test case thành 3 nhóm:
-        * 1 test case cơ bản (happy path, dễ).
-        * 1 test case trung bình (các trường hợp phức tạp hơn một chút).
-        * 1 test case đặc biệt (edge cases/khó).
-    2.  Định dạng đầu ra là một mảng JSON (một list các object).
-    3.  Mỗi object trong mảng phải có 3 key:
-        * `category`: (string, giá trị là "easy", "medium", hoặc "hard")
-        * `input`: (nội dung đầu vào của test case)
-        * `expected_output`: (kết quả mong đợi)
-    4.  **Quan trọng:** Chỉ trả về mảng JSON, không định dạng markdown, không thêm bất kỳ văn bản nào.
+
+    Dựa trên mô tả bài toán dưới đây, hãy tạo chính xác {total_cases} test case.
+    Phân loại: {num_easy} cơ bản (easy), {num_medium} trung bình (medium), và {num_hard} đặc biệt (hard/edge cases).
+
+    YÊU CẦU ĐỊNH DẠNG ĐẦU RA:
+    1.  Đầu ra phải là một ĐỐI TƯỢNG JSON (single JSON object) duy nhất.
+    2.  Đối tượng JSON này phải có 2 key chính ở cấp cao nhất: `function_name` và `test_cases`.
+    3.  Giá trị của `function_name`: (string) Tên hàm hoặc tên bài toán được suy ra từ mô tả (ví dụ: "sum_of_two_largest", "find_max_element").
+    4.  Giá trị của `test_cases`: (array) Một mảng chứa chính xác {total_cases} test case object.
+    5.  Mỗi object trong mảng `test_cases` phải có 2 key: `parameters` và `expected_output`.
+    6.  Giá trị của `parameters`: (object) Một object chứa các tham số đầu vào. Tên key của tham số PHẢI khớp với tên biến trong mô tả bài toán (ví dụ: {{"nums": [1, 2, 3]}}, hoặc {{"s": "hello", "k": 2}}).
+    7.  Giá trị của `expected_output`: (any) Kết quả đầu ra mong đợi cho test case đó.
+    8.  **QUAN TRỌNG:** Chỉ trả về đối tượng JSON, không thêm bất kỳ văn bản nào trước hoặc sau nó, không dùng markdown (```json ... ```).
 
     Mô tả bài toán:
     {problem_description}
@@ -65,7 +70,6 @@ def create_prompt_template(problem_description):
 def gen_test_case(prompt_template, problem_num, output_folder):
     print(f"\nĐang tạo test cases cho Problem {problem_num}, vui lòng chờ...")
     try:
-        # (Sửa: Đặt tên model chính xác của bạn ở đây)
         model = genai.GenerativeModel('gemini-pro-latest') 
         response = model.generate_content(prompt_template)
         raw_response_text = response.text
@@ -86,7 +90,7 @@ def gen_test_case(prompt_template, problem_num, output_folder):
             with open(output_filepath, 'w', encoding='utf-8') as f:
                 json.dump(test_cases, f, ensure_ascii=False, indent=2)
             
-            print(f"\n--- ĐÃ GHI THÀNH CÔNG {len(test_cases)} TEST CASES VÀO FILE: {output_filepath} ---")
+            print(f"\n--- ĐÃ GHI THÀNH CÔNG {len(test_cases["test_cases"])} TEST CASES VÀO FILE: {output_filepath} ---")
             return True # Trả về True nếu thành công
 
         except json.JSONDecodeError:
@@ -99,20 +103,17 @@ def gen_test_case(prompt_template, problem_num, output_folder):
     except Exception as e:
         print(f"\n--- LỖI API ---")
         print(f"Đã xảy ra lỗi khi gọi API: {e}")
-        # Nếu lỗi 429 (rate limit) xảy ra ở đây, chúng ta vẫn sẽ chờ ở bước tiếp theo
     
-    return False # Trả về False nếu thất bại
+    return False
 
 
 # --- 5. HÀM MAIN ĐIỀU KHIỂN ---
-# (THAY THẾ TOÀN BỘ if __name__ == "__main__" CŨ)
 if __name__ == "__main__":
     
     # --- Cấu hình ---
     PROBLEMS_FOLDER = "./data/problems"     # Thư mục chứa file .md
     TESTCASES_FOLDER = "./data/testcases"   # Thư mục chứa file .json (output)
-    API_DELAY_SECONDS = 40           # 40 giây (an toàn cho 2 req/phút)
-    # --- Kết thúc cấu hình ---
+    API_DELAY_SECONDS = 50           # 50 giây (an toàn cho 2 req/phút)
 
     # 1. Tạo thư mục output nếu chưa tồn tại
     os.makedirs(TESTCASES_FOLDER, exist_ok=True)
