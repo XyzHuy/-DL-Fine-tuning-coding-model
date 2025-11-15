@@ -1,24 +1,23 @@
-Given an integer n, return the largest palindromic integer that can be represented as the product of two n-digits integers. Since the answer can be very large, return it modulo 1337.
- 
+Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+Note that you must do this in-place without making a copy of the array.
+ 
 Example 1:
-
-Input: n = 2
-Output: 987
-Explanation: 99 x 91 = 9009, 9009 % 1337 = 987
-
+Input: nums = [0,1,0,3,12]
+Output: [1,3,12,0,0]
 Example 2:
+Input: nums = [0]
+Output: [0]
 
-Input: n = 1
-Output: 9
-
- 
+ 
 Constraints:
 
-1 <= n <= 8
+1 <= nums.length <= 104
+-231 <= nums[i] <= 231 - 1
 
-
+ 
+Follow up: Could you minimize the total number of operations done?
 Boilerplate code:
 ```python
-def largestPalindrome(n):
+def moveZeroes(nums):
     ...
 ```

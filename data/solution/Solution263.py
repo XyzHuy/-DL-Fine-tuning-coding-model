@@ -1,20 +1,19 @@
-def validWordAbbreviation(word, abbr):
-    pos = curr = 0
-    for i in range(len(abbr)):
-        try:
-            num = int(abbr[i])
-            if num == 0 and curr == 0:
-                return False
-            curr = curr * 10 + num
-        except ValueError:
-            pos += curr
-            curr = 0
-            if pos >= len(word):
-                return False
-            if word[pos] != abbr[i]:
-                return False
-            pos += 1
-    pos += curr
-    if pos == len(word):
-        return True
-    return False
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def isUgly(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        for factor in [2, 3, 5]:
+            while n % factor == 0:
+                n //= factor
+        return n == 1
+
+def isUgly(n: int) -> bool:
+    return Solution().isUgly(n)

@@ -1,32 +1,46 @@
-def exist(board, word):
-    """
-    :type board: List[List[str]]
-    :type word: str
-    :rtype: bool
-    """
-    check_board = [[True] * len(board[0]) for _ in range(len(board))]
-    for i in range(len(board)):
-        for j in range(len(board[0])):
-            if board[i][j] == word[0] and check_board:
-                check_board[i][j] = False
-                res = check_exist(check_board, board, word, 1, len(word), i, j)
-                if res:
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        if not board or not board[0]:
+            return False
+        
+        m, n = len(board), len(board[0])
+        
+        def dfs(x, y, index):
+            if index == len(word):
+                return True
+            if x < 0 or x >= m or y < 0 or y >= n or board[x][y] != word[index]:
+                return False
+            
+            # Mark the cell as visited
+            temp, board[x][y] = board[x][y], '#'
+            
+            # Explore neighbors
+            found = (dfs(x + 1, y, index + 1) or
+                     dfs(x - 1, y, index + 1) or
+                     dfs(x, y + 1, index + 1) or
+                     dfs(x, y - 1, index + 1))
+            
+            # Unmark the cell
+            board[x][y] = temp
+            
+            return found
+        
+        for i in range(m):
+            for j in range(n):
+                if dfs(i, j, 0):
                     return True
-                check_board[i][j] = True
-    return False
+        
+        return False
 
-
-def check_exist(check_board, board, word, index, ls, row, col):
-    if index == ls:
-        return True
-    for temp in [(0, 1),(0, -1),(1, 0),(-1, 0)]:
-        curr_row = row + temp[0]
-        curr_col = col + temp[1]
-        if curr_row >= 0 and curr_row < len(board) and curr_col >= 0 and curr_col < len(board[0]):
-            if check_board[curr_row][curr_col] and board[curr_row][curr_col] == word[index]:
-                check_board[curr_row][curr_col] = False
-                res = check_exist(check_board, board, word, index + 1, len(word), curr_row, curr_col)
-                if res:
-                    return res
-                check_board[curr_row][curr_col] = True
-    return False
+def exist(board: List[List[str]], word: str) -> bool:
+    return Solution().exist(board, word)

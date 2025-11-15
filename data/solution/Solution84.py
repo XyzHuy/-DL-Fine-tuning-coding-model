@@ -1,30 +1,41 @@
-def maximalRectangle( matrix):
-    """
-    :type matrix: List[List[str]]
-    :rtype: int
-    """
-    if matrix is None or len(matrix) == 0:
-        return 0
-    ls_row, ls_col = len(matrix), len(matrix[0])
-    left, right, height = [0] * ls_col, [ls_col] * ls_col, [0] * ls_col
-    maxA = 0
-    for i in range(ls_row):
-        curr_left, curr_right = 0, ls_col
-        for j in range(ls_col):
-            if matrix[i][j] == '1':
-                height[j] += 1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def largestRectangleArea(self, heights: List[int]) -> int:
+        stack = []
+        max_area = 0
+        index = 0
+        
+        while index < len(heights):
+            # If this bar is higher than the bar that was previous bar, push it to stack
+            if not stack or heights[index] >= heights[stack[-1]]:
+                stack.append(index)
+                index += 1
             else:
-                height[j] = 0
-        for j in range(ls_col):
-            if matrix[i][j] == '1':
-                left[j] = max(left[j], curr_left)
-            else:
-                left[j], curr_left = 0, j + 1
-        for j in range(ls_col - 1, -1, -1):
-            if matrix[i][j] == '1':
-                right[j] = min(right[j], curr_right)
-            else:
-                right[j], curr_right = ls_col, j
-        for j in range(ls_col):
-            maxA = max(maxA, (right[j] - left[j]) * height[j])
-    return maxA
+                # Calculate area of all bars with height stack top. The bar at stack top is the smallest (or minimum height) bar. 'index' is 'right index' for the top and element before top in stack is 'left index'
+                top_of_stack = stack.pop()
+                # Calculate the area with heights[top_of_stack] stack as smallest (or minimum height) bar. 'index' is 'right index' for the top and element before top in stack is 'left index'
+                area = (heights[top_of_stack] * 
+                       ((index - stack[-1] - 1) if stack else index))
+                # Update max area, if needed
+                max_area = max(max_area, area)
+        
+        # Now pop the remaining bars from stack and calculate area with every popped bar as the smallest bar
+        while stack:
+            top_of_stack = stack.pop()
+            area = (heights[top_of_stack] * 
+                    ((index - stack[-1] - 1) if stack else index))
+            max_area = max(max_area, area)
+        
+        return max_area
+
+def largestRectangleArea(heights: List[int]) -> int:
+    return Solution().largestRectangleArea(heights)

@@ -1,12 +1,36 @@
-def summaryRanges(nums):
-    res = []
-    start, ls = 0, len(nums)
-    for i in range(ls):
-        if i + 1 <  ls and nums[i + 1] == nums[i] + 1:
-            continue
-        if i == start:
-            res.append(str(nums[start]))
-        else:
-            res.append("%d->%d" % (nums[start], nums[i]))
-        start = i + 1
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def reverseWords(self, s: List[str]) -> None:
+        """
+        Do not return anything, modify s in-place instead.
+        """
+        # Reverse the entire character array
+        s.reverse()
+        
+        # Initialize pointers for reversing each word
+        start = 0
+        end = 0
+        n = len(s)
+        
+        # Reverse each word in the reversed array
+        while start < n:
+            # Find the end of the current word
+            while end < n and s[end] != ' ':
+                end += 1
+            
+            # Reverse the current word
+            s[start:end] = reversed(s[start:end])
+            
+            # Move to the next word
+            start = end + 1
+            end += 1
+
+def reverseWords(s: List[str]) -> None:
+    return Solution().reverseWords(s)

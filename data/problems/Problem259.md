@@ -1,24 +1,34 @@
-Given an integer n, return the nth digit of the infinite integer sequence [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...].
- 
+Given an array of n integers nums and an integer target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.
+ 
 Example 1:
 
-Input: n = 3
-Output: 3
+Input: nums = [-2,0,1,3], target = 2
+Output: 2
+Explanation: Because there are two triplets which sums are less than 2:
+[-2,0,1]
+[-2,0,3]
 
 Example 2:
 
-Input: n = 11
+Input: nums = [], target = 0
 Output: 0
-Explanation: The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, which is part of the number 10.
 
- 
+Example 3:
+
+Input: nums = [0], target = 0
+Output: 0
+
+ 
 Constraints:
 
-1 <= n <= 231 - 1
+n == nums.length
+0 <= n <= 3500
+-100 <= nums[i] <= 100
+-100 <= target <= 100
 
 
 Boilerplate code:
 ```python
-def findNthDigit(n):
+def threeSumSmaller(nums, target):
     ...
 ```

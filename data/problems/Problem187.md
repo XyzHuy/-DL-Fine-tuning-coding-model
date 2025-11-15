@@ -1,32 +1,26 @@
-Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
- 
+The DNA sequence is composed of a series of nucleotides abbreviated as 'A', 'C', 'G', and 'T'.
+
+For example, "ACGAATTCCG" is a DNA sequence.
+
+When studying DNA, it is useful to identify repeated sequences within the DNA.
+Given a string s that represents a DNA sequence, return all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. You may return the answer in any order.
+ 
 Example 1:
-
-Input: nums = [3,2,3]
-Output: [3]
-
+Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+Output: ["AAAAACCCCC","CCCCCAAAAA"]
 Example 2:
+Input: s = "AAAAAAAAAAAAA"
+Output: ["AAAAAAAAAA"]
 
-Input: nums = [1]
-Output: [1]
-
-Example 3:
-
-Input: nums = [1,2]
-Output: [1,2]
-
- 
+ 
 Constraints:
 
-1 <= nums.length <= 5 * 104
--109 <= nums[i] <= 109
-
- 
-Follow up: Could you solve the problem in linear time and in O(1) space?
+1 <= s.length <= 105
+s[i] is either 'A', 'C', 'G', or 'T'.
 
 
 Boilerplate code:
 ```python
-def majorityElement(nums):
+def findRepeatedDnaSequences(s):
     ...
 ```

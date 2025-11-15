@@ -1,55 +1,38 @@
-Implement a first in first out (FIFO) queue using only two stacks. The implemented queue should support all the functions of a normal queue (push, peek, pop, and empty).
-Implement the MyQueue class:
-
-void push(int x) Pushes element x to the back of the queue.
-int pop() Removes the element from the front of the queue and returns it.
-int peek() Returns the element at the front of the queue.
-boolean empty() Returns true if the queue is empty, false otherwise.
-
-Notes:
-
-You must use only standard operations of a stack, which means only push to top, peek/pop from top, size, and is empty operations are valid.
-Depending on your language, the stack may not be supported natively. You may simulate a stack using a list or deque (double-ended queue) as long as you use only a stack's standard operations.
-
- 
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+ 
 Example 1:
 
-Input
-["MyQueue", "push", "push", "peek", "pop", "empty"]
-[[], [1], [2], [], [], []]
-Output
-[null, null, null, 1, 1, false]
+Input: nums = [1,2,3,4,5,6,7], k = 3
+Output: [5,6,7,1,2,3,4]
+Explanation:
+rotate 1 steps to the right: [7,1,2,3,4,5,6]
+rotate 2 steps to the right: [6,7,1,2,3,4,5]
+rotate 3 steps to the right: [5,6,7,1,2,3,4]
 
-Explanation
-MyQueue myQueue = new MyQueue();
-myQueue.push(1); // queue is: [1]
-myQueue.push(2); // queue is: [1, 2] (leftmost is front of the queue)
-myQueue.peek(); // return 1
-myQueue.pop(); // return 1, queue is [2]
-myQueue.empty(); // return false
+Example 2:
 
- 
+Input: nums = [-1,-100,3,99], k = 2
+Output: [3,99,-1,-100]
+Explanation: 
+rotate 1 steps to the right: [99,-1,-100,3]
+rotate 2 steps to the right: [3,99,-1,-100]
+
+ 
 Constraints:
 
-1 <= x <= 9
-At most 100 calls will be made to push, pop, peek, and empty.
-All the calls to pop and peek are valid.
+1 <= nums.length <= 105
+-231 <= nums[i] <= 231 - 1
+0 <= k <= 105
 
- 
-Follow-up: Can you implement the queue such that each operation is amortized O(1) time complexity? In other words, performing n operations will take overall O(n) time even if one of those operations may take longer.
+ 
+Follow up:
+
+Try to come up with as many solutions as you can. There are at least three different ways to solve this problem.
+Could you do it in-place with O(1) extra space?
 
 
 Boilerplate code:
 ```python
-class Queue(object):
-    def __init__(self):
-        ...
-    def push(self, x):
-        ...
-    def pop(self):
-        ...
-    def peek(self):
-        ...
-    def empty(self):
-        ...
+def rotate(nums, k):
+    ...
 ```

@@ -1,20 +1,43 @@
-def intersect(nums1, nums2):
-    """
-    :type nums1: List[int]
-    :type nums2: List[int]
-    :rtype: List[int]
-    """
-    nums1.sort()
-    nums2.sort()
-    res = []
-    pos1 = pos2 = 0
-    while pos1 < len(nums1) and pos2 < len(nums2):
-        if nums1[pos1] == nums2[pos2]:
-            res.append(nums1[pos1])
-            pos1 += 1
-            pos2 += 1
-        elif nums1[pos1] < nums2[pos2]:
-            pos1 += 1
-        else:
-            pos2 += 1
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def diffWaysToCompute(self, expression: str) -> List[int]:
+        # Helper function to perform the arithmetic operation
+        def compute(left, right, operator):
+            if operator == '+':
+                return left + right
+            elif operator == '-':
+                return left - right
+            elif operator == '*':
+                return left * right
+        
+        # Base case: if the expression is a number, return it as the only result
+        if expression.isdigit():
+            return [int(expression)]
+        
+        results = []
+        
+        # Iterate through the expression to find operators
+        for i in range(len(expression)):
+            if expression[i] in "+-*":
+                # Split the expression into left and right parts
+                left_results = self.diffWaysToCompute(expression[:i])
+                right_results = self.diffWaysToCompute(expression[i+1:])
+                
+                # Combine the results from the left and right parts using the current operator
+                for left in left_results:
+                    for right in right_results:
+                        results.append(compute(left, right, expression[i]))
+        
+        return results
+
+def diffWaysToCompute(expression: str) -> List[int]:
+    return Solution().diffWaysToCompute(expression)

@@ -1,22 +1,27 @@
-def merge(nums1, m, nums2, n):
-    """
-    :type nums1: List[int]
-    :type m: int
-    :type nums2: List[int]
-    :type n: int
-    :rtype: void Do not return anything, modify nums1 in-place instead.
-    """
-    p1, p2 = m - 1, n - 1
-    pos = m + n - 1
-    while p1 >= 0 and p2 >= 0:
-        if nums1[p1] >= nums2[p2]:
-            nums1[pos] = nums1[p1]
-            p1 -= 1
-        else:
-            nums1[pos] = nums2[p2]
-            p2 -= 1
-        pos -= 1
-    while p2 >= 0:
-        nums1[pos] = nums2[p2]
-        p2 -= 1
-        pos -= 1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from functools import cache
+
+class Solution:
+    def isScramble(self, s1: str, s2: str) -> bool:
+        @cache
+        def dfs(i: int, j: int, k: int) -> bool:
+            if k == 1:
+                return s1[i] == s2[j]
+            for h in range(1, k):
+                if dfs(i, j, h) and dfs(i + h, j + h, k - h):
+                    return True
+                if dfs(i + h, j, k - h) and dfs(i, j + k - h, h):
+                    return True
+            return False
+
+        return dfs(0, 0, len(s1))
+
+def isScramble(s1: str, s2: str) -> bool:
+    return Solution().isScramble(s1, s2)

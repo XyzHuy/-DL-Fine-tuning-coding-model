@@ -1,40 +1,30 @@
-Given an array of characters chars, compress it using the following algorithm:
-Begin with an empty string s. For each group of consecutive repeating characters in chars:
-
-If the group's length is 1, append the character to s.
-Otherwise, append the character followed by the group's length.
-
-The compressed string s should not be returned separately, but instead, be stored in the input character array chars. Note that group lengths that are 10 or longer will be split into multiple characters in chars.
-After you are done modifying the input array, return the new length of the array.
-You must write an algorithm that uses only constant extra space.
-Note: The characters in the array beyond the returned length do not matter and should be ignored.
- 
+Given an array of integers citations where citations[i] is the number of citations a researcher received for their ith paper and citations is sorted in ascending order, return the researcher's h-index.
+According to the definition of h-index on Wikipedia: The h-index is defined as the maximum value of h such that the given researcher has published at least h papers that have each been cited at least h times.
+You must write an algorithm that runs in logarithmic time.
+ 
 Example 1:
 
-Input: chars = ["a","a","b","b","c","c","c"]
-Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"]
-Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".
+Input: citations = [0,1,3,5,6]
+Output: 3
+Explanation: [0,1,3,5,6] means the researcher has 5 papers in total and each of them had received 0, 1, 3, 5, 6 citations respectively.
+Since the researcher has 3 papers with at least 3 citations each and the remaining two with no more than 3 citations each, their h-index is 3.
 
 Example 2:
 
-Input: chars = ["a"]
-Output: Return 1, and the first character of the input array should be: ["a"]
-Explanation: The only group is "a", which remains uncompressed since it's a single character.
+Input: citations = [1,2,100]
+Output: 2
 
-Example 3:
-
-Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
-Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"].
-Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
- 
+ 
 Constraints:
 
-1 <= chars.length <= 2000
-chars[i] is a lowercase English letter, uppercase English letter, digit, or symbol.
+n == citations.length
+1 <= n <= 105
+0 <= citations[i] <= 1000
+citations is sorted in ascending order.
 
 
 Boilerplate code:
 ```python
-def compress(chars):
+def hIndex(citations):
     ...
 ```

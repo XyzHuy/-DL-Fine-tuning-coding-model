@@ -1,49 +1,36 @@
-You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition:
-
-struct Node {
- int val;
- Node *left;
- Node *right;
- Node *next;
-}
-
-Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
-Initially, all next pointers are set to NULL.
- 
+Given two strings s and t, return the number of distinct subsequences of s which equals t.
+The test cases are generated so that the answer fits on a 32-bit signed integer.
+ 
 Example 1:
 
-Input: root = [1,2,3,4,5,6,7]
-Output: [1,#,2,3,#,4,5,6,7,#]
-Explanation: Given the above perfect binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '#' signifying the end of each level.
+Input: s = "rabbbit", t = "rabbit"
+Output: 3
+Explanation:
+As shown below, there are 3 ways you can generate "rabbit" from s.
+rabbbit
+rabbbit
+rabbbit
 
 Example 2:
 
-Input: root = []
-Output: []
-
- 
+Input: s = "babgbag", t = "bag"
+Output: 5
+Explanation:
+As shown below, there are 5 ways you can generate "bag" from s.
+babgbag
+babgbag
+babgbag
+babgbag
+babgbag
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 212 - 1].
--1000 <= Node.val <= 1000
-
- 
-Follow-up:
-
-You may only use constant extra space.
-The recursive approach is fine. You may assume implicit stack space does not count as extra space for this problem.
+1 <= s.length, t.length <= 1000
+s and t consist of English letters.
 
 
 Boilerplate code:
 ```python
-# Definition for binary tree with next pointer.
-class TreeLinkNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-        self.next = None
-
-def connect( root):
+def numDistinct(s, t):
     ...
 ```

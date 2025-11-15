@@ -1,43 +1,38 @@
-def trap(height):
-    """
-    :type height: List[int]
-    :rtype: int
-    """
-    ls = len(height)
-    if ls == 0:
-        return 0
-    res, left = 0, 0
-    while left < ls and height[left] == 0:
-        left += 1
-    pos = left + 1
-    while pos < ls:
-        if height[pos] >= height[left]:
-            # there is a right bar which is no less than left bar
-            res += rain_water(height, left, pos)
-            left = pos
-            pos += 1
-        elif pos == ls - 1:
-            # left bar is higher than all right bar
-            max_value, max_index = 0, pos
-            for index in range(left + 1, ls):
-                if height[index] > max_value:
-                    max_value = height[index]
-                    max_index = index
-            res += rain_water(height, left, max_index)
-            left = max_index
-            pos = left + 1
-        else:
-            pos += 1
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def rain_water( height, start, end):
-    # computer rain water
-    if end - start <= 1:
-        return 0
-    min_m = min(height[start], height[end])
-    res = min_m * (end - start - 1)
-    step = 0
-    for index in range(start + 1, end):
-        if height[index] > 0:
-            step += height[index]
-    return res - step
+
+from typing import List
+
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        if not height:
+            return 0
+
+        n = len(height)
+        left_max = [0] * n
+        right_max = [0] * n
+
+        # Fill left_max array
+        left_max[0] = height[0]
+        for i in range(1, n):
+            left_max[i] = max(left_max[i - 1], height[i])
+
+        # Fill right_max array
+        right_max[n - 1] = height[n - 1]
+        for i in range(n - 2, -1, -1):
+            right_max[i] = max(right_max[i + 1], height[i])
+
+        # Calculate trapped water using the min of left_max and right_max
+        water_trapped = 0
+        for i in range(n):
+            water_trapped += min(left_max[i], right_max[i]) - height[i]
+
+        return water_trapped
+
+def trap(height: List[int]) -> int:
+    return Solution().trap(height)

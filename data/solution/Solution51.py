@@ -1,35 +1,53 @@
-def solveNQueens(n):
-    """
-    :type n: int
-    :rtype: List[List[str]]
-    """
-    # recusive
-    if n == 0:
-        return 0
-    res = []
-    board = [['.'] * n for t in range(n)]
-    do_solveNQueens(res, board, n)
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def do_solveNQueens(res, board, num):
-    if num == 0:
-        res.append([''.join(t) for t in board])
-        return
-    ls = len(board)
-    pos = ls - num
-    check = [True] * ls
-    for i in range(pos):
-        for j in range(ls):
-            if board[i][j] == 'Q':
-                check[j] = False
-                step = pos - i
-                if j + step < ls:
-                    check[j + step] = False
-                if j - step >= 0:
-                    check[j - step] = False
-                break
-    for j in range(ls):
-        if check[j]:
-            board[pos][j] = 'Q'
-            do_solveNQueens(res, board, num - 1)
-            board[pos][j] = '.'
+
+from typing import List
+
+class Solution:
+    def solveNQueens(self, n: int) -> List[List[str]]:
+        def is_not_under_attack(row, col):
+            return not (cols[col] + hills[row - col] + dales[row + col])
+        
+        def place_queen(row, col):
+            queens.add((row, col))
+            cols[col] = 1
+            hills[row - col] = 1
+            dales[row + col] = 1
+        
+        def remove_queen(row, col):
+            queens.remove((row, col))
+            cols[col] = 0
+            hills[row - col] = 0
+            dales[row + col] = 0
+        
+        def add_solution():
+            solution = []
+            for _, col in sorted(queens):
+                solution.append('.' * col + 'Q' + '.' * (n - col - 1))
+            output.append(solution)
+        
+        def backtrack(row = 0):
+            for col in range(n):
+                if is_not_under_attack(row, col):
+                    place_queen(row, col)
+                    if row + 1 == n:
+                        add_solution()
+                    else:
+                        backtrack(row + 1)
+                    remove_queen(row, col)
+        
+        cols = [0] * n
+        hills = [0] * (2 * n - 1)  # "hill" diagonals
+        dales = [0] * (2 * n - 1)  # "dale" diagonals
+        queens = set()  # list of the queens positions
+        output = []
+        backtrack()
+        return output
+
+def solveNQueens(n: int) -> List[List[str]]:
+    return Solution().solveNQueens(n)

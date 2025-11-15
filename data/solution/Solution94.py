@@ -1,34 +1,66 @@
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def tree_node(values: list):
+    if not values:
+        return None
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
+    return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
 # Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        stack = []
+        current = root
+        
+        while current or stack:
+            while current:
+                stack.append(current)
+                current = current.left
+            current = stack.pop()
+            result.append(current.val)
+            current = current.right
+        
+        return result
 
-
-def generateTrees(n):
-    """
-    :type n: int
-    :rtype: List[TreeNode]
-    """
-    if n == 0:
-        return []
-    return get_trees(1, n)
-
-def get_trees(start, end):
-    # recursive solve this problem
-    res = []
-    if start > end:
-        res.append(None)
-        return res
-    for i in range(start, end + 1):
-        lefts = get_trees(start, i - 1)
-        rights = get_trees(i + 1, end)
-        for j in range(len(lefts)):
-            for k in range(len(rights)):
-                # root point
-                root = TreeNode(i)
-                root.left = lefts[j]
-                root.right = rights[k]
-                res.append(root)
-    return res
+def inorderTraversal(root: Optional[TreeNode]) -> List[int]:
+    return Solution().inorderTraversal(root)

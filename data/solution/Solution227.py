@@ -1,58 +1,38 @@
-class NumArray(object):
-    def __init__(self, nums):
-        """
-        initialize your data structure here.
-        :type nums: List[int]
-        """
-        self.ls = len(nums)
-        self.tree = [0] * (self.ls * 2)
-        self.buildTree(nums)
-
-    def buildTree(self, nums):
-        i, j = self.ls, 0
-        while i < 2 * self.ls:
-            self.tree[i] = nums[j]
-            i += 1
-            j += 1
-        for i in reversed(range(1, self.ls)):
-            self.tree[i] = self.tree[i * 2] + self.tree[i * 2  + 1]
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-    def update(self, i, val):
-        """
-        :type i: int
-        :type val: int
-        :rtype: int
-        """
-        i += self.ls
-        self.tree[i] = val
-        while i > 0:
-            left = right = i
-            if i % 2 == 0:
-                right = i + 1
-            else:
-                left = i -1
-            self.tree[i / 2] = self.tree[left] + self.tree[right]
-            i /= 2
+class Solution:
+    def calculate(self, s: str) -> int:
+        def update(op, num):
+            if op == '+':
+                stack.append(num)
+            elif op == '-':
+                stack.append(-num)
+            elif op == '*':
+                stack.append(stack.pop() * num)
+            elif op == '/':
+                # Integer division that truncates toward zero
+                stack.append(int(stack.pop() / num))
 
-    def sumRange(self, i, j):
-        """
-        sum of elements nums[i..j], inclusive.
-        :type i: int
-        :type j: int
-        :rtype: int
-        """
-        res = 0
-        i += self.ls
-        j += self.ls
+        stack = []
+        num = 0
+        op = '+'
 
-        while i <= j:
-            if i % 2 == 1:
-                res += self.tree[i]
-                i += 1
-            if j % 2 == 0:
-                res += self.tree[j]
-                j -= 1
-            i /= 2
-            j /= 2
-        return res
+        for i, char in enumerate(s):
+            if char.isdigit():
+                num = num * 10 + int(char)
+            
+            if char in '+-*/' or i == len(s) - 1:
+                update(op, num)
+                op = char
+                num = 0
+
+        return sum(stack)
+
+def calculate(s: str) -> int:
+    return Solution().calculate(s)

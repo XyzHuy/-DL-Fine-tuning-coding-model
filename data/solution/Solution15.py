@@ -1,24 +1,43 @@
-def threeSum(nums):
-    res = []
-    nums.sort()
-    ls = len(nums)
-    for i in range(ls - 2):
-        if i > 0 and nums[i] == nums[i - 1]:
-            continue
-        j = i + 1
-        k = ls - 1
-        while j < k:
-            curr = nums[i] + nums[j] + nums[k]
-            if curr == 0:
-                res.append([nums[i], nums[j], nums[k]])
-                while j < k and nums[j] == nums[j + 1]:
-                    j += 1
-                while j < k and nums[k] == nums[k - 1]:
-                    k -= 1
-                j += 1
-                k -= 1
-            elif curr < 0:
-                j += 1
-            else:
-                k -= 1
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        nums.sort()
+        result = []
+        n = len(nums)
+        
+        for i in range(n):
+            # Skip the same element to avoid duplicate triplets
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            
+            left, right = i + 1, n - 1
+            while left < right:
+                total = nums[i] + nums[left] + nums[right]
+                if total == 0:
+                    result.append([nums[i], nums[left], nums[right]])
+                    # Move the left pointer to the right, skipping duplicates
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    # Move the right pointer to the left, skipping duplicates
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+                    left += 1
+                    right -= 1
+                elif total < 0:
+                    left += 1
+                else:
+                    right -= 1
+        
+        return result
+
+def threeSum(nums: List[int]) -> List[List[int]]:
+    return Solution().threeSum(nums)

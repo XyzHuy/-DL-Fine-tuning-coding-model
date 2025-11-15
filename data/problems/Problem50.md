@@ -1,5 +1,5 @@
 Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
- 
+ 
 Example 1:
 
 Input: x = 2.00000, n = 10
@@ -16,7 +16,7 @@ Input: x = 2.00000, n = -2
 Output: 0.25000
 Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
- 
+ 
 Constraints:
 
 -100.0 < x < 100.0
@@ -28,6 +28,6 @@ Either x is not zero or n > 0.
 
 Boilerplate code:
 ```python
-def myPow( x, n):
+def myPow(x, n):
     ...
 ```

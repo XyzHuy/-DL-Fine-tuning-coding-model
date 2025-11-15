@@ -1,34 +1,33 @@
-You are given two binary trees root1 and root2.
-Imagine that when you put one of them to cover the other, some nodes of the two trees are overlapped while the others are not. You need to merge the two trees into a new binary tree. The merge rule is that if two nodes overlap, then sum node values up as the new value of the merged node. Otherwise, the NOT null node will be used as the node of the new tree.
-Return the merged tree.
-Note: The merging process must start from the root nodes of both trees.
- 
+Given an m x n binary grid grid where each 1 marks the home of one friend, return the minimal total travel distance.
+The total travel distance is the sum of the distances between the houses of the friends and the meeting point.
+The distance is calculated using Manhattan Distance, where distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|.
+ 
 Example 1:
 
-Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
-Output: [3,4,5,5,4,null,7]
+
+Input: grid = [[1,0,0,0,1],[0,0,0,0,0],[0,0,1,0,0]]
+Output: 6
+Explanation: Given three friends living at (0,0), (0,4), and (2,2).
+The point (0,2) is an ideal meeting point, as the total travel distance of 2 + 2 + 2 = 6 is minimal.
+So return 6.
 
 Example 2:
 
-Input: root1 = [1], root2 = [1,2]
-Output: [2,2]
+Input: grid = [[1,1]]
+Output: 1
 
- 
+ 
 Constraints:
 
-The number of nodes in both trees is in the range [0, 2000].
--104 <= Node.val <= 104
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 200
+grid[i][j] is either 0 or 1.
+There will be at least two friends in the grid.
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-   def __init__(self, x):
-       self.val = x
-       self.left = None
-       self.right = None
-
-def mergeTrees(t1, t2):
+def minTotalDistance(grid):
     ...
 ```

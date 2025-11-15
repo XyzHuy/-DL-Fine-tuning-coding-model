@@ -4,7 +4,7 @@ Given an input string (s) and a pattern (p), implement wildcard pattern matching
 '*' Matches any sequence of characters (including the empty sequence).
 
 The matching should cover the entire input string (not partial).
- 
+ 
 Example 1:
 
 Input: s = "aa", p = "a"
@@ -15,15 +15,15 @@ Example 2:
 
 Input: s = "aa", p = "*"
 Output: true
-Explanation: '*' matches any sequence.
+Explanation: '*' matches any sequence.
 
 Example 3:
 
 Input: s = "cb", p = "?a"
 Output: false
-Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
+Explanation: '?' matches 'c', but the second letter is 'a', which does not match 'b'.
 
- 
+ 
 Constraints:
 
 0 <= s.length, p.length <= 2000
@@ -33,6 +33,6 @@ p contains only lowercase English letters, '?' or '*'.
 
 Boilerplate code:
 ```python
-def isMatch( s, p):
+def isMatch(s, p):
     ...
 ```

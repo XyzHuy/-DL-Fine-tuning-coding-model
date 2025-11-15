@@ -1,18 +1,38 @@
-def coinChange(coins, amount):
-    # bottom-up dp
-    if amount == 0:
-        return 0
-    if coins is None or len(coins) == 0:
-        return -1
-    coins.sort()
-    dp = [1000000000] * (amount + 1)
-    for i in range(1, amount + 1):
-        for coin in coins:
-            if i == coin:
-                dp[i] = 1
-                break
-            elif i > coin:
-                dp[i] = min(dp[i], dp[i - coin] + 1)
-    if dp[amount] == 1000000000:
-        return -1
-    return dp[amount]
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def summaryRanges(self, nums: List[int]) -> List[str]:
+        if not nums:
+            return []
+        
+        ranges = []
+        start = nums[0]
+        end = nums[0]
+        
+        for i in range(1, len(nums)):
+            if nums[i] == nums[i - 1] + 1:
+                end = nums[i]
+            else:
+                if start == end:
+                    ranges.append(f"{start}")
+                else:
+                    ranges.append(f"{start}->{end}")
+                start = nums[i]
+                end = nums[i]
+        
+        # Add the last range
+        if start == end:
+            ranges.append(f"{start}")
+        else:
+            ranges.append(f"{start}->{end}")
+        
+        return ranges
+
+def summaryRanges(nums: List[int]) -> List[str]:
+    return Solution().summaryRanges(nums)

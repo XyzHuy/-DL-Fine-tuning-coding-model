@@ -1,27 +1,42 @@
-def fourSum( nums, target):
-    sort_nums = sorted(nums)
-    ls = len(nums)
-    res = {}
-    pairs = {}
-    for i in range(ls - 3):
-        for j in range(i + 1, ls - 2):
-            res_2 = sort_nums[i] + sort_nums[j]
-            try:
-                pairs[target - res_2].append([i, j])
-            except KeyError:
-                pairs[target - res_2] = [[i, j]]
-    for key, temp in pairs.items():
-        for pair in temp:
-            j = pair[1] + 1
-            k = ls - 1
-            while j < k:
-                current = sort_nums[j] + sort_nums[k]
-                if current == key:
-                    result = (sort_nums[pair[0]], sort_nums[pair[1]], sort_nums[j], sort_nums[k])
-                    res[result] = True
-                    j += 1
-                elif current < key:
-                    j += 1
-                else:
-                    k -= 1
-    return res.keys()
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        nums.sort()
+        n = len(nums)
+        result = []
+        
+        for i in range(n):
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
+            for j in range(i + 1, n):
+                if j > i + 1 and nums[j] == nums[j - 1]:
+                    continue
+                left, right = j + 1, n - 1
+                while left < right:
+                    total = nums[i] + nums[j] + nums[left] + nums[right]
+                    if total == target:
+                        result.append([nums[i], nums[j], nums[left], nums[right]])
+                        while left < right and nums[left] == nums[left + 1]:
+                            left += 1
+                        while left < right and nums[right] == nums[right - 1]:
+                            right -= 1
+                        left += 1
+                        right -= 1
+                    elif total < target:
+                        left += 1
+                    else:
+                        right -= 1
+        
+        return result
+
+def fourSum(nums: List[int], target: int) -> List[List[int]]:
+    return Solution().fourSum(nums, target)

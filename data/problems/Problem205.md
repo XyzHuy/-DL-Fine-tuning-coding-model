@@ -1,26 +1,40 @@
-An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
-Given an integer n, return the nth ugly number.
- 
+Given two strings s and t, determine if they are isomorphic.
+Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
+ 
 Example 1:
 
-Input: n = 10
-Output: 12
-Explanation: [1, 2, 3, 4, 5, 6, 8, 9, 10, 12] is the sequence of the first 10 ugly numbers.
+Input: s = "egg", t = "add"
+Output: true
+Explanation:
+The strings s and t can be made identical by:
+
+Mapping 'e' to 'a'.
+Mapping 'g' to 'd'.
+
 
 Example 2:
 
-Input: n = 1
-Output: 1
-Explanation: 1 has no prime factors, therefore all of its prime factors are limited to 2, 3, and 5.
+Input: s = "foo", t = "bar"
+Output: false
+Explanation:
+The strings s and t can not be made identical as 'o' needs to be mapped to both 'a' and 'r'.
 
- 
+Example 3:
+
+Input: s = "paper", t = "title"
+Output: true
+
+ 
 Constraints:
 
-1 <= n <= 1690
+1 <= s.length <= 5 * 104
+t.length == s.length
+s and t consist of any valid ascii character.
 
 
 Boilerplate code:
 ```python
-def nthUglyNumber(n):
+def isIsomorphic(s, t):
     ...
 ```

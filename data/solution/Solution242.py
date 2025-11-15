@@ -1,42 +1,37 @@
-def numberOfPatterns( m, n):
-    """
-    :type m: int
-    :type n: int
-    :rtype: int
-    """
-    used = [False] * 9
-    res = 0
-    for l in range(m, n + 1):
-        res += calc_patterns(used, -1, l)
-        used = [False] * 9
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def is_valid( used, index, last):
-    # markded
-    if used[index]:
-        return False
-    # first digit
-    if last == -1:
-        return True
-    # adjacent cells (in a row or in a column)
-    if (last + index) % 2 == 1:
-        return True
-    mid = (last + index) / 2
-    if mid == 4:
-        return used[mid]
-    # adjacent cells on diagonal
-    if (index % 3 != last % 3) and (index / 3 != last / 3):
-        return True
-    # all other cells which are not adjacent
-    return used[mid]
 
-def calc_patterns(used, last, length):
-    if length == 0:
-        return 1
-    res = 0
-    for i in range(9):
-        if is_valid(used, i, last):
-            used[i] = True
-            res += calc_patterns(used, i, length - 1)
-            used[i] = False
-    return res
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        # If the lengths of the strings are not the same, they cannot be anagrams
+        if len(s) != len(t):
+            return False
+        
+        # Create a dictionary to count the frequency of each character in s
+        char_count = {}
+        
+        for char in s:
+            if char in char_count:
+                char_count[char] += 1
+            else:
+                char_count[char] = 1
+        
+        # Decrease the count based on characters in t
+        for char in t:
+            if char in char_count:
+                char_count[char] -= 1
+                if char_count[char] < 0:
+                    return False
+            else:
+                return False
+        
+        # If all counts are zero, then t is an anagram of s
+        return all(count == 0 for count in char_count.values())
+
+def isAnagram(s: str, t: str) -> bool:
+    return Solution().isAnagram(s, t)

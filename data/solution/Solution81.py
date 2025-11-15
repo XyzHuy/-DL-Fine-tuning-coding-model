@@ -1,34 +1,30 @@
-def search(nums, target):
-    """
-    :type nums: List[int]
-    :type target: int
-    :rtype: bool
-    """
-    def get(start, end):
-        if start > end:
-            return False
-        mid = (start + end) / 2
-        # handle duplicate
-        while mid < end and nums[mid + 1] == nums[mid]:
-            mid += 1
-        while start < mid and nums[start + 1] == nums[start]:
-            start += 1
-        if nums[mid] == target:
-            return True
-        elif mid == end:
-            return get(start, mid - 1)
-        elif start == mid:
-            return get(mid + 1, end)
-        elif nums[mid] >= nums[start]:
-            # First half is sorted
-            if target >= nums[start] and target < nums[mid]:
-                return get(start, mid - 1)
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def search(self, nums: List[int], target: int) -> bool:
+        n = len(nums)
+        l, r = 0, n - 1
+        while l < r:
+            mid = (l + r) >> 1
+            if nums[mid] > nums[r]:
+                if nums[l] <= target <= nums[mid]:
+                    r = mid
+                else:
+                    l = mid + 1
+            elif nums[mid] < nums[r]:
+                if nums[mid] < target <= nums[r]:
+                    l = mid + 1
+                else:
+                    r = mid
             else:
-                return get(mid + 1, end)
-        elif nums[mid] <= nums[end]:
-            # Second half is sorted
-            if target > nums[mid] and target <= nums[end]:
-                return get(mid + 1, end)
-            else:
-                return get(start, mid - 1)
-    return get(0, len(nums) - 1)
+                r -= 1
+        return nums[l] == target
+
+def search(nums: List[int], target: int) -> bool:
+    return Solution().search(nums, target)

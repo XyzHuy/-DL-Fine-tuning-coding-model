@@ -1,10 +1,30 @@
-def countBits(num):
-    """
-    :type num: int
-    :rtype: List[int]
-    """
-    res = [0] * (num + 1)
-    for i in range(1, num + 1):
-        # res[left:last] + last bit
-        res[i] = res[i >> 1] + (i & 1)
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def countDigitOne(self, n: int) -> int:
+        count = 0
+        factor = 1
+        while factor <= n:
+            lower_nums = n - (n // factor) * factor
+            cur_num = (n // factor) % 10
+            higher_nums = n // (factor * 10)
+            
+            if cur_num == 0:
+                count += higher_nums * factor
+            elif cur_num == 1:
+                count += higher_nums * factor + lower_nums + 1
+            else:
+                count += (higher_nums + 1) * factor
+            
+            factor *= 10
+        
+        return count
+
+def countDigitOne(n: int) -> int:
+    return Solution().countDigitOne(n)

@@ -1,37 +1,32 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def reverseBetween(head, m, n):
-    """
-    :type head: ListNode
-    :type m: int
-    :type n: int
-    :rtype: ListNode
-    """
-    if m == n:
-        return head
-    split_node, prev, curr = None, None, head
-    count = 1
-    while count <= m and curr is not None:
-        if count == m:
-            split_node = prev
-        prev = curr
-        curr = curr.next
-        count += 1
-    tail, next_node = prev, None
-    while curr is not None and count <= n:
-        next_temp = curr.next
-        curr.next = prev
-        prev = curr
-        curr = next_temp
-        count += 1
-    if split_node is not None:
-        split_node.next = prev
-    if tail is not None:
-        tail.next = curr
-    if m == 1:
-        return prev
-    return head
+
+class Solution:
+    def numDecodings(self, s: str) -> int:
+        if not s or s[0] == '0':
+            return 0
+        
+        # dp[i] will store the number of ways to decode the substring s[:i]
+        dp = [0] * (len(s) + 1)
+        dp[0] = 1  # Base case: empty string has one way to be decoded
+        dp[1] = 1  # Base case: single non-zero digit can be decoded in one way
+        
+        for i in range(2, len(s) + 1):
+            # Check if the current digit can form a valid single digit number
+            if s[i - 1] != '0':
+                dp[i] += dp[i - 1]
+            
+            # Check if the previous two digits form a valid two digit number
+            two_digit = int(s[i - 2:i])
+            if 10 <= two_digit <= 26:
+                dp[i] += dp[i - 2]
+        
+        return dp[-1]
+
+def numDecodings(s: str) -> int:
+    return Solution().numDecodings(s)

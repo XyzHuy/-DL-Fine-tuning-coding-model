@@ -1,21 +1,27 @@
-def longestValidParentheses(s):
-    
-    ls = len(s)
-    stack = []
-    data = [0] * ls
-    for i in range(ls):
-        curr = s[i]
-        if curr == '(':
-            stack.append(i)
-        else:
-            if len(stack) > 0:
-                data[i] = 1
-                data[stack.pop(-1)] = 1
-    tep, res = 0, 0
-    for t in data:
-        if t == 1:
-            tep += 1
-        else:
-            res = max(tep, res)
-            tep = 0
-    return max(tep, res)
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def longestValidParentheses(self, s: str) -> int:
+        stack = [-1]  # Initialize stack with -1 to handle edge cases
+        max_length = 0
+        
+        for i, char in enumerate(s):
+            if char == '(':
+                stack.append(i)  # Push the index of '(' onto the stack
+            else:
+                stack.pop()  # Pop the last index from the stack for ')'
+                if not stack:
+                    stack.append(i)  # If stack is empty, push current index as base
+                else:
+                    max_length = max(max_length, i - stack[-1])  # Calculate the length of the current valid substring
+        
+        return max_length
+
+def longestValidParentheses(s: str) -> int:
+    return Solution().longestValidParentheses(s)

@@ -1,50 +1,19 @@
+import collections
+import string
+import math
+import datetime
 
-def findLadders(beginWord, endWord, wordlist):
-    # do not use single dfs or bfs, because both of them
-    # try to get result in single direction, which check lots
-    # of unnecessary branches
-    wordlist.discard(beginWord)
-    wordlist.discard(endWord)
-    hash_map, res = {}, []
-    bfs(set([beginWord]), set([endWord]), wordlist, False, hash_map)
-    dfs(res, [beginWord], beginWord, endWord, hash_map)
-    return res
 
-def bfs(forward, backward, wordlist, reverse, hash_map):
-    import string
-    if len(forward) == 0 or len(backward) == 0:
-        return
-    if len(forward) > len(backward):
-        bfs(backward, forward, wordlist, not reverse, hash_map)
-        return
-    is_connected = False
-    next_level = set()
-    for word in forward:
-        for c in string.ascii_lowercase:
-            for index in range(len(word)):
-                neigh = word[:index] + c + word[index + 1:]
-                if not reverse:
-                    key, value = word, neigh
-                else:
-                    key, value = neigh, word
-                if neigh in backward:
-                    hash_map[key] = hash_map.get(key, []) + [value]
-                    is_connected = True
-                if not is_connected and neigh in wordlist:
-                    next_level.add(neigh)
-                    hash_map[key] = hash_map.get(key, []) + [value]
-                    wordlist.discard(neigh)
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        # Convert to lowercase
+        s = s.lower()
+        # Filter out non-alphanumeric characters
+        filtered_chars = [char for char in s if char.isalnum()]
+        # Join the characters to form the cleaned string
+        cleaned_string = ''.join(filtered_chars)
+        # Check if the cleaned string is a palindrome
+        return cleaned_string == cleaned_string[::-1]
 
-    if not is_connected:
-        bfs(next_level, backward, wordlist, reverse, hash_map)
-
-def dfs(res, path, begin, end, hash_map):
-    if begin == end:
-        res.append(path)
-        return
-    try:
-        next_step = hash_map[begin]
-        for word in next_step:
-            dfs(res, path + [word], word, end, hash_map)
-    except KeyError:
-        pass
+def isPalindrome(s: str) -> bool:
+    return Solution().isPalindrome(s)

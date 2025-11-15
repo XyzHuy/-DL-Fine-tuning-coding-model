@@ -1,19 +1,16 @@
-def palindromePairs(words):
-    """
-    :type words: List[str]
-    :rtype: List[List[int]]
-    """
-    # reverse word and create a word to index map
-    word2index, res = dict([(w[::-1], i) for i, w in enumerate(words)]), []
-    for i, word in enumerate(words):
-        for j in range(len(word) + 1):
-            # Use prefix and postfix
-            # rather than going through all posible combinations
-            prefix, postfix = word[:j], word[j:]
-            # prefix + postfix + reverse(prfix)
-            if prefix in word2index and i != word2index[prefix] and postfix == postfix[::-1]:
-                res.append([i, word2index[prefix]])
-            # reverse(postfix) + prefix + postfix
-            if j > 0 and postfix in word2index and i != word2index[postfix] and prefix == prefix[::-1]:
-                res.append([word2index[postfix], i])
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        if n <= 0:
+            return False
+        return n & (n - 1) == 0
+
+def isPowerOfTwo(n: int) -> bool:
+    return Solution().isPowerOfTwo(n)

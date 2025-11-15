@@ -1,19 +1,34 @@
-def findCircleNum(M):
-    """
-    :type M: List[List[int]]
-    :rtype: int
-    """
-    # because
-    visited = [0] * len(M)
-    count = 0
-    for i in range(len(M)):
-        if visited[i] == 0:
-            dfs(M, visited, i)
-            count += 1
-    return count
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def dfs(M, visited, i):
-    for j in range(len(M)):
-        if M[i][j] == 1 and visited[j] == 0:
-            visited[j] = 1
-            dfs(M, visited, j)
+
+class Solution:
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        words = s.split()
+        if len(pattern) != len(words):
+            return False
+        
+        char_to_word = {}
+        word_to_char = {}
+        
+        for char, word in zip(pattern, words):
+            if char in char_to_word:
+                if char_to_word[char] != word:
+                    return False
+            else:
+                char_to_word[char] = word
+            
+            if word in word_to_char:
+                if word_to_char[word] != char:
+                    return False
+            else:
+                word_to_char[word] = char
+        
+        return True
+
+def wordPattern(pattern: str, s: str) -> bool:
+    return Solution().wordPattern(pattern, s)

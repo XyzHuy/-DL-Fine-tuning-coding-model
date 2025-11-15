@@ -1,14 +1,29 @@
-def maxProduct(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    if nums is None or len(nums) == 0:
-        return 0
-    max_here = min_here = max_so_far = nums[0]
-    for i in range(1, len(nums)):
-        mx, mn = max_here, min_here
-        max_here = max(max(mx * nums[i], nums[i]), mn * nums[i])
-        min_here = min(min(mx * nums[i], nums[i]), mn * nums[i])
-        max_so_far = max(max_here, max_so_far)
-    return max_so_far
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def maxPoints(self, points: List[List[int]]) -> int:
+        n = len(points)
+        ans = 1
+        for i in range(n):
+            x1, y1 = points[i]
+            for j in range(i + 1, n):
+                x2, y2 = points[j]
+                cnt = 2
+                for k in range(j + 1, n):
+                    x3, y3 = points[k]
+                    a = (y2 - y1) * (x3 - x1)
+                    b = (y3 - y1) * (x2 - x1)
+                    cnt += a == b
+                ans = max(ans, cnt)
+        return ans
+
+def maxPoints(points: List[List[int]]) -> int:
+    return Solution().maxPoints(points)

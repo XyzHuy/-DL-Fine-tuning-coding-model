@@ -1,35 +1,42 @@
-You are given an m x n matrix board containing letters 'X' and 'O', capture regions that are surrounded:
+You are given the root of a binary tree containing digits from 0 to 9 only.
+Each root-to-leaf path in the tree represents a number.
 
-Connect: A cell is connected to adjacent cells horizontally or vertically.
-Region: To form a region connect every 'O' cell.
-Surround: The region is surrounded with 'X' cells if you can connect the region with 'X' cells and none of the region cells are on the edge of the board.
+For example, the root-to-leaf path 1 -> 2 -> 3 represents the number 123.
 
-To capture a surrounded region, replace all 'O's with 'X's in-place within the original board. You do not need to return anything.
- 
+Return the total sum of all root-to-leaf numbers. Test cases are generated so that the answer will fit in a 32-bit integer.
+A leaf node is a node with no children.
+ 
 Example 1:
 
-Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
-Output: [["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
-Explanation:
 
-In the above diagram, the bottom region is not captured because it is on the edge of the board and cannot be surrounded.
+Input: root = [1,2,3]
+Output: 25
+Explanation:
+The root-to-leaf path 1->2 represents the number 12.
+The root-to-leaf path 1->3 represents the number 13.
+Therefore, sum = 12 + 13 = 25.
 
 Example 2:
 
-Input: board = [["X"]]
-Output: [["X"]]
 
- 
+Input: root = [4,9,0,5,1]
+Output: 1026
+Explanation:
+The root-to-leaf path 4->9->5 represents the number 495.
+The root-to-leaf path 4->9->1 represents the number 491.
+The root-to-leaf path 4->0 represents the number 40.
+Therefore, sum = 495 + 491 + 40 = 1026.
+
+ 
 Constraints:
 
-m == board.length
-n == board[i].length
-1 <= m, n <= 200
-board[i][j] is 'X' or 'O'.
+The number of nodes in the tree is in the range [1, 1000].
+0 <= Node.val <= 9
+The depth of the tree will not exceed 10.
 
 
 Boilerplate code:
 ```python
-def solve(board):
+def sumNumbers(root):
     ...
 ```

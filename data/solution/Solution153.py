@@ -1,22 +1,23 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def upsideDownBinaryTree(root):
-    """
-    :type root: TreeNode
-    :rtype: TreeNode
-    """
-    # top-down
-    node, parent, parentRight = root, None, None
-    while node is not None:
-        left = node.left
-        node.left = parentRight
-        parentRight = node.right
-        node.right = parent
-        parent = node
-        node = left
-    return parent
+
+class Solution:
+    def findMin(self, nums: List[int]) -> int:
+        if nums[0] <= nums[-1]:
+            return nums[0]
+        left, right = 0, len(nums) - 1
+        while left < right:
+            mid = (left + right) >> 1
+            if nums[0] <= nums[mid]:
+                left = mid + 1
+            else:
+                right = mid
+        return nums[left]
+
+def findMin(nums: List[int]) -> int:
+    return Solution().findMin(nums)

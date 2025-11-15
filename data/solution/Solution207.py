@@ -1,43 +1,39 @@
-def generatePalindromes(s):
-    """
-    :type s: str
-    :rtype: List[str]
-    """
-    dic = {}
-    half = []
-    res = []
-    for c in s:
-        dic[c] = dic.get(c, 0) + 1
-    odd, even = 0, 0
-    for c in dic:
-        if dic[c] % 2 == 0:
-            even += 1
-        else:
-            odd += 1
-    if odd > 1:
-        return []
-    # generate half
-    seed = []
-    mid = ''
-    for c in dic:
-        if dic[c] % 2 == 1:
-            mid = c
-        seed.extend([c] * (dic[c] / 2))
-    permute(half, seed, 0)
-    # merge half to get res
-    for r in half:
-        res.append(''.join(r) + mid + ''.join(reversed(r)))
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def permute(res, num, index):
-    if index == len(num):
-        res.append(list(num))
-        return
-    appeared = set()
-    for i in range(index, len(num)):
-        if num[i] in appeared:
-            continue
-        appeared.add(num[i])
-        num[i], num[index] = num[index], num[i]
-        permute(res, num, index + 1)
-        num[i], num[index] = num[index], num[i]
+
+from typing import List
+
+class Solution:
+    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+        from collections import defaultdict, deque
+        
+        # Create a graph
+        graph = defaultdict(list)
+        in_degree = [0] * numCourses
+        
+        # Build the graph
+        for course, prereq in prerequisites:
+            graph[prereq].append(course)
+            in_degree[course] += 1
+        
+        # Add all courses with no prerequisites to the queue
+        queue = deque([course for course in range(numCourses) if in_degree[course] == 0])
+        
+        # Process the queue
+        while queue:
+            course = queue.popleft()
+            numCourses -= 1
+            for next_course in graph[course]:
+                in_degree[next_course] -= 1
+                if in_degree[next_course] == 0:
+                    queue.append(next_course)
+        
+        return numCourses == 0
+
+def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    return Solution().canFinish(numCourses, prerequisites)

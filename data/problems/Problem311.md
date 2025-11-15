@@ -1,25 +1,28 @@
-A self-dividing number is a number that is divisible by every digit it contains.
-
-For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0.
-
-A self-dividing number is not allowed to contain the digit zero.
-Given two integers left and right, return a list of all the self-dividing numbers in the range [left, right] (both inclusive).
- 
+Given two sparse matrices mat1 of size m x k and mat2 of size k x n, return the result of mat1 x mat2. You may assume that multiplication is always possible.
+ 
 Example 1:
-Input: left = 1, right = 22
-Output: [1,2,3,4,5,6,7,8,9,11,12,15,22]
-Example 2:
-Input: left = 47, right = 85
-Output: [48,55,66,77]
 
- 
+
+Input: mat1 = [[1,0,0],[-1,0,3]], mat2 = [[7,0,0],[0,0,0],[0,0,1]]
+Output: [[7,0,0],[-7,0,3]]
+
+Example 2:
+
+Input: mat1 = [[0]], mat2 = [[0]]
+Output: [[0]]
+
+ 
 Constraints:
 
-1 <= left <= right <= 104
+m == mat1.length
+k == mat1[i].length == mat2.length
+n == mat2[i].length
+1 <= m, n, k <= 100
+-100 <= mat1[i][j], mat2[i][j] <= 100
 
 
 Boilerplate code:
 ```python
-def selfDividingNumbers(left: int, right: int) -> list[int]:
+def multiply(mat1, mat2):
     ...
 ```

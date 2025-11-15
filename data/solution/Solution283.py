@@ -1,10 +1,28 @@
-def largestPalindrome(n):
-    if n == 1:
-        return 9
-    for a in range(2, 9 * 10 ** (n - 1)):
-        hi = (10 ** n) - a
-        lo = int(str(hi)[::-1])
-        if a ** 2 - 4 * lo < 0:
-            continue
-        if (a ** 2 - 4 * lo) ** .5 == int((a ** 2 - 4 * lo) ** .5):
-            return (lo + 10 ** n * (10 ** n - a)) % 1337
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        # Initialize a pointer for the position of the next non-zero element
+        last_non_zero_found_at = 0
+
+        # Move all the non-zero elements to the beginning of the array
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[last_non_zero_found_at] = nums[i]
+                last_non_zero_found_at += 1
+
+        # Fill the remaining positions with zeros
+        for i in range(last_non_zero_found_at, len(nums)):
+            nums[i] = 0
+
+def moveZeroes(nums: List[int]) -> None:
+    return Solution().moveZeroes(nums)

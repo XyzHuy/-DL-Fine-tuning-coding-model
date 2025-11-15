@@ -1,41 +1,32 @@
-You are given a 0-indexed array of unique strings words.
-A palindrome pair is a pair of integers (i, j) such that:
-
-0 <= i, j < words.length,
-i != j, and
-words[i] + words[j] (the concatenation of the two strings) is a palindrome.
-
-Return an array of all the palindrome pairs of words.
-You must write an algorithm with O(sum of words[i].length) runtime complexity.
- 
+Given an integer n, return true if it is a power of two. Otherwise, return false.
+An integer n is a power of two, if there exists an integer x such that n == 2x.
+ 
 Example 1:
 
-Input: words = ["abcd","dcba","lls","s","sssll"]
-Output: [[0,1],[1,0],[3,2],[2,4]]
-Explanation: The palindromes are ["abcddcba","dcbaabcd","slls","llssssll"]
+Input: n = 1
+Output: true
+Explanation: 20 = 1
 
 Example 2:
 
-Input: words = ["bat","tab","cat"]
-Output: [[0,1],[1,0]]
-Explanation: The palindromes are ["battab","tabbat"]
+Input: n = 16
+Output: true
+Explanation: 24 = 16
 
 Example 3:
 
-Input: words = ["a",""]
-Output: [[0,1],[1,0]]
-Explanation: The palindromes are ["a","a"]
+Input: n = 3
+Output: false
 
- 
+ 
 Constraints:
 
-1 <= words.length <= 5000
-0 <= words[i].length <= 300
-words[i] consists of lowercase English letters.
+-231 <= n <= 231 - 1
 
-
+ 
+Follow up: Could you solve it without loops/recursion?
 Boilerplate code:
 ```python
-def palindromePairs(words):
+def isPowerOfTwo(n):
     ...
 ```

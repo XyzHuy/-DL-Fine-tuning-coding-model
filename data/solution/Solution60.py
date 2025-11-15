@@ -1,28 +1,28 @@
-def getPermutation( n, k):
-    """
-    :type n: int
-    :type k: int
-    :rtype: str
-    """
-    # let permutations with first identical num be a block
-    # target in (k - 1) / (n - 1)! block
-    remain = range(1, n + 1)
-    if k <= 1:
-        return ''.join(str(t) for t in remain)
-    total = 1
-    for num in remain[:-1]:
-        total *= num
-    res = do_getPermutation(remain, total, n - 1, k - 1)
-    return ''.join(str(t) for t in res)
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-def do_getPermutation(remain, curr, n, k):
-    if n == 0 or k <= 0 or curr == 0:
-        return remain
-    # which block
-    step = k / curr
-    # remain k value
-    k %= curr
-    curr /= n
-    res = [remain[step]] + do_getPermutation(remain[:step] + remain[step + 1:], curr, n - 1, k)
-    return res
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        ans = []
+        vis = [False] * (n + 1)
+        for i in range(n):
+            fact = 1
+            for j in range(1, n - i):
+                fact *= j
+            for j in range(1, n + 1):
+                if not vis[j]:
+                    if k > fact:
+                        k -= fact
+                    else:
+                        ans.append(str(j))
+                        vis[j] = True
+                        break
+        return ''.join(ans)
+
+def getPermutation(n: int, k: int) -> str:
+    return Solution().getPermutation(n, k)

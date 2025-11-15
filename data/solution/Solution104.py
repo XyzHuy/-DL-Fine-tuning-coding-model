@@ -1,22 +1,58 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def buildTree(preorder, inorder):
-    n = len(inorder)
-    inOrderMap = {inorder[i]: i for i in range(n)}
-    return buildTreeUtil(preorder, inorder, inOrderMap, 0, n - 1, 0, n - 1)
 
-def buildTreeUtil(preorder, inorder, inOrderMap, pStart, pEnd, iStart, iEnd):
-    if pStart > pEnd or iStart > iEnd:
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def tree_node(values: list):
+    if not values:
         return None
-    root = TreeNode(preorder[pStart])
-    rootIdx = inOrderMap[root.val]
-    root.left = buildTreeUtil(preorder, inorder, inOrderMap, pStart + 1, pStart + rootIdx - iStart + 1, iStart,
-                                    rootIdx - 1)
-    root.right = buildTreeUtil(preorder, inorder, inOrderMap, pStart + rootIdx - iStart + 1, pEnd, rootIdx + 1,
-                                    iEnd)
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
     return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            return 0
+        left_depth = self.maxDepth(root.left)
+        right_depth = self.maxDepth(root.right)
+        return max(left_depth, right_depth) + 1
+
+def maxDepth(root: Optional[TreeNode]) -> int:
+    return Solution().maxDepth(root)

@@ -1,39 +1,33 @@
-Given two strings s and t, determine if they are isomorphic.
-Two strings s and t are isomorphic if the characters in s can be replaced to get t.
-All occurrences of a character must be replaced with another character while preserving the order of characters. No two characters may map to the same character, but a character may map to itself.
- 
+Given an integer n, return the number of trailing zeroes in n!.
+Note that n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1.
+ 
 Example 1:
 
-Input: s = "egg", t = "add"
-Output: true
-Explanation:
-The strings s and t can be made identical by:
-
-Mapping 'e' to 'a'.
-Mapping 'g' to 'd'.
+Input: n = 3
+Output: 0
+Explanation: 3! = 6, no trailing zero.
 
 Example 2:
 
-Input: s = "foo", t = "bar"
-Output: false
-Explanation:
-The strings s and t can not be made identical as 'o' needs to be mapped to both 'a' and 'r'.
+Input: n = 5
+Output: 1
+Explanation: 5! = 120, one trailing zero.
 
 Example 3:
 
-Input: s = "paper", t = "title"
-Output: true
+Input: n = 0
+Output: 0
 
- 
+ 
 Constraints:
 
-1 <= s.length <= 5 * 104
-t.length == s.length
-s and t consist of any valid ascii character.
+0 <= n <= 104
 
+ 
+Follow up: Could you write a solution that works in logarithmic time complexity?
 
 Boilerplate code:
 ```python
-def isIsomorphic(s, t):
+def trailingZeroes(n):
     ...
 ```

@@ -1,41 +1,44 @@
-Given an input string s, reverse the order of the words.
+Given two version strings, version1 and version2, compare them. A version string consists of revisions separated by dots '.'. The value of the revision is its integer conversion ignoring leading zeros.
+To compare version strings, compare their revision values in left-to-right order. If one of the version strings has fewer revisions, treat the missing revision values as 0.
+Return the following:
 
-A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
+If version1 < version2, return -1.
+If version1 > version2, return 1.
+Otherwise, return 0.
 
-Return a string of the words in reverse order concatenated by a single space.
-
-Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
-
- 
-
+ 
 Example 1:
 
-Input: s = "the sky is blue"
-Output: "blue is sky the"
+Input: version1 = "1.2", version2 = "1.10"
+Output: -1
+Explanation:
+version1's second revision is "2" and version2's second revision is "10": 2 < 10, so version1 < version2.
+
 Example 2:
 
-Input: s = "  hello world  "
-Output: "world hello"
-Explanation: Your reversed string should not contain leading or trailing spaces.
+Input: version1 = "1.01", version2 = "1.001"
+Output: 0
+Explanation:
+Ignoring leading zeroes, both "01" and "001" represent the same integer "1".
+
 Example 3:
 
-Input: s = "a good   example"
-Output: "example good a"
-Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
- 
+Input: version1 = "1.0", version2 = "1.0.0.0"
+Output: 0
+Explanation:
+version1 has less revisions, which means every missing revision are treated as "0".
 
+ 
 Constraints:
 
-1 <= s.length <= 104
-s contains English letters (upper-case and lower-case), digits, and spaces ' '.
-There is at least one word in s.
- 
-
-Follow-up: If the string data type is mutable in your language, can you solve it in-place with O(1) extra space?
+1 <= version1.length, version2.length <= 500
+version1 and version2 only contain digits and '.'.
+version1 and version2 are valid version numbers.
+All the given revisions in version1 and version2 can be stored in a 32-bit integer.
 
 
 Boilerplate code:
 ```python
-def reverseWords(s):
+def compareVersion(version1, version2):
     ...
 ```

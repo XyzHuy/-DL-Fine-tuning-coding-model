@@ -1,21 +1,22 @@
-def wordPattern(pattern, str):
-    """
-    :type pattern: str
-    :type str: str
-    :rtype: bool
-    """
-    if pattern is None or str is None:
-        return True
-    # double map
-    words_to_pattern = {}
-    pattern_to_words = {}
-    word_list = str.split(' ')
-    if len(word_list) != len(pattern):
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        # Use a set to track seen numbers
+        seen = set()
+        for num in nums:
+            if num in seen:
+                return True
+            seen.add(num)
         return False
-    for index, word in enumerate(word_list):
-        curr_p = pattern[index]
-        if pattern_to_words.get(curr_p, word) != word or words_to_pattern.get(word, curr_p) != curr_p:
-            return False
-        pattern_to_words[curr_p] = pattern_to_words.get(curr_p, word)
-        words_to_pattern[word] = words_to_pattern.get(word, curr_p)
-    return True
+
+def containsDuplicate(nums: List[int]) -> bool:
+    return Solution().containsDuplicate(nums)

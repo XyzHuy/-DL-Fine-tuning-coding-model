@@ -1,37 +1,32 @@
-Given a positive integer n, write a function that returns the number of set bits in its binary representation (also known as the Hamming weight).
- 
+Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, return any of them.
+It is guaranteed that the length of the answer string is less than 104 for all the given inputs.
+ 
 Example 1:
 
-Input: n = 11
-Output: 3
-Explanation:
-The input binary string 1011 has a total of three set bits.
+Input: numerator = 1, denominator = 2
+Output: "0.5"
 
 Example 2:
 
-Input: n = 128
-Output: 1
-Explanation:
-The input binary string 10000000 has a total of one set bit.
+Input: numerator = 2, denominator = 1
+Output: "2"
 
 Example 3:
 
-Input: n = 2147483645
-Output: 30
-Explanation:
-The input binary string 1111111111111111111111111111101 has a total of thirty set bits.
+Input: numerator = 4, denominator = 333
+Output: "0.(012)"
 
- 
+ 
 Constraints:
 
-1 <= n <= 231 - 1
-
- 
-Follow up: If this function is called many times, how would you optimize it?
+-231 <= numerator, denominator <= 231 - 1
+denominator != 0
 
 
 Boilerplate code:
 ```python
-def hammingWeight(n):
+def fractionToDecimal(numerator, denominator):
     ...
 ```

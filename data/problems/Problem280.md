@@ -1,32 +1,29 @@
-The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
-Given two integers x and y, return the Hamming distance between them.
- 
+Given an integer array nums, reorder it such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
+You may assume the input array always has a valid answer.
+ 
 Example 1:
 
-Input: x = 1, y = 4
-Output: 2
-Explanation:
-1 (0 0 0 1)
-4 (0 1 0 0)
- ↑ ↑
-The above arrows point to positions where the corresponding bits are different.
+Input: nums = [3,5,2,1,6,4]
+Output: [3,5,1,6,2,4]
+Explanation: [1,6,2,5,3,4] is also accepted.
 
 Example 2:
 
-Input: x = 3, y = 1
-Output: 1
+Input: nums = [6,6,5,6,3,8]
+Output: [6,6,5,6,3,8]
 
- 
+ 
 Constraints:
 
-0 <= x, y <= 231 - 1
+1 <= nums.length <= 5 * 104
+0 <= nums[i] <= 104
+It is guaranteed that there will be an answer for the given input nums.
 
- 
-Note: This question is the same as 2220: Minimum Bit Flips to Convert Number.
-
+ 
+Follow up: Could you solve the problem in O(n) time complexity?
 
 Boilerplate code:
 ```python
-def hammingDistance(x, y):
+def wiggleSort(nums):
     ...
 ```

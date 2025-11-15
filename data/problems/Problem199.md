@@ -1,24 +1,38 @@
-Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), determine if a person could attend all meetings.
-
-
+Given the root of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+ 
 Example 1:
 
-Input: [[0,30],[5,10],[15,20]]
-Output: false
+Input: root = [1,2,3,null,5,null,4]
+Output: [1,3,4]
+Explanation:
+
+
 Example 2:
 
-Input: [[7,10],[2,4]]
-Output: true
+Input: root = [1,2,3,4,null,null,null,5]
+Output: [1,3,4,5]
+Explanation:
+
+
+Example 3:
+
+Input: root = [1,null,3]
+Output: [1,3]
+
+Example 4:
+
+Input: root = []
+Output: []
+
+ 
+Constraints:
+
+The number of nodes in the tree is in the range [0, 100].
+-100 <= Node.val <= 100
 
 
 Boilerplate code:
 ```python
-# Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
-
-def canAttendMeetings(intervals):
+def rightSideView(root):
     ...
 ```

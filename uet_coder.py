@@ -4,65 +4,74 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig, BitsAndBytesConfig
 from peft import PeftModel
 
-# Load fine-tune model
+
 def load_model():
     print("Loading base model...")
-    quant_config = BitsAndBytesConfig(load_in_4bit=True)
 
-    base_model = AutoModelForCausalLM.from_pretrained(
-        "bigcode/starcoder2-3b",
-        quantization_config=quant_config,
-        dtype=torch.float16,
-        device_map="auto"
+    model_name = "deepseek-ai/deepseek-coder-1.3b-instruct"
+
+    quant_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_use_double_quant=True,
     )
 
-    print("Loading fine-tuned adapter...")
-    model = PeftModel.from_pretrained(base_model, "lora_weight")
+    base_model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    quantization_config=quant_config,
+    device_map="auto",
+    trust_remote_code=True,
+    )
 
-    tokenizer = AutoTokenizer.from_pretrained("bigcode/starcoder2-3b")
+    adapter_path = "deepseek-coder-finetuned"  
+    print("Loading fine-tuned adapter...")
+    # Load tokenizer
+    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+    tokenizer.pad_token = tokenizer.eos_token
+
+    # Gắn adapter QLoRA
+    model = PeftModel.from_pretrained(base_model, adapter_path)
+    model.eval()
     return model, tokenizer
 
 
 def build_prompt(problem_text: str) -> str:
-    return f"""### Problem:
-{problem_text.strip()}
-
-"Instruction: Write clean and efficient Python code that correctly solves the problem."
-"The solution should be the most optimal approach in terms of time and space complexity."
-"Do not include testing or extra text.\n"
-
-### Solution:
-"""
+    prompt = f"""
+            <|system|>
+            You are a highly skilled Python engineer. Your task is to provide correct and optimal Python solutions for coding problems.
+            
+            <|user|>
+            ### Problem
+            {problem_text}
+            
+            ### Write the solution in Python.
+            
+            <|assistant|>
+            ```python
+            """
+    return prompt
 
 
 def generate_code(model, tokenizer, prompt: str) -> str:
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    inputs = tokenizer(
-        prompt,
-        return_tensors="pt",
-        truncation=True,
-        max_length=2048
-    ).to(device)
+    inputs = tokenizer(prompt, return_tensors="pt").to(device)
 
-    generation_config = GenerationConfig(
-        max_new_tokens=256,
-        do_sample=True,
-        temperature=0.2,
-        top_p=0.95,
+
+    outputs = model.generate(
+        **inputs,
+        max_new_tokens=400,
+        do_sample=False,
         pad_token_id=tokenizer.eos_token_id,
         eos_token_id=tokenizer.eos_token_id
     )
 
-    with torch.no_grad():
-        outputs = model.generate(**inputs, generation_config=generation_config)
-
-    full_output = tokenizer.decode(outputs[0], skip_special_tokens=True)
-
-    generated_code = full_output.split("### Solution:")[-1].strip()
-    generated_code = generated_code.split("<|end_of_solution|>")[0].strip()
-
-    return generated_code
+    generated = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    code = generated[len(prompt):]
+    if "```" in code:
+        code = code.split("```")[0]
+    return code.strip()
 
 
 def main():
@@ -94,7 +103,23 @@ def main():
 
     # Ghi file
     with open(args.output, "w", encoding="utf-8") as f:
-        f.write(generated_code + "\n")
+        f.write(
+"""
+from typing import *
+from functools import *
+from collections import *
+from itertools import *
+from heapq import *
+from bisect import *
+from string import *
+from operator import *
+from math import *
+
+inf = float('inf')
+
+"""
+            +
+            generated_code + "\n")
 
     print(f"Solution saved to {args.output}")
     print("=== Generated Code ===")

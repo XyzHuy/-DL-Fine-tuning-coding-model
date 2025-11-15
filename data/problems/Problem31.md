@@ -10,7 +10,7 @@ While the next permutation of arr = [3,2,1] is [1,2,3] because [3,2,1] does not 
 
 Given an array of integers nums, find the next permutation of nums.
 The replacement must be in place and use only constant extra memory.
- 
+ 
 Example 1:
 
 Input: nums = [1,2,3]
@@ -26,7 +26,7 @@ Example 3:
 Input: nums = [1,1,5]
 Output: [1,5,1]
 
- 
+ 
 Constraints:
 
 1 <= nums.length <= 100

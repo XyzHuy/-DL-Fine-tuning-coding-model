@@ -1,48 +1,34 @@
-You are given an array of strings tokens that represents an arithmetic expression in a Reverse Polish Notation.
-Evaluate the expression. Return an integer that represents the value of the expression.
-Note that:
+Given the head of a singly linked list, sort the list using insertion sort, and return the sorted list's head.
+The steps of the insertion sort algorithm:
 
-The valid operators are '+', '-', '*', and '/'.
-Each operand may be an integer or another expression.
-The division between two integers always truncates toward zero.
-There will not be any division by zero.
-The input represents a valid arithmetic expression in a reverse polish notation.
-The answer and all the intermediate calculations can be represented in a 32-bit integer.
+Insertion sort iterates, consuming one input element each repetition and growing a sorted output list.
+At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list and inserts it there.
+It repeats until no input elements remain.
 
- 
+The following is a graphical example of the insertion sort algorithm. The partially sorted list (black) initially contains only the first element in the list. One element (red) is removed from the input data and inserted in-place into the sorted list with each iteration.
+
+ 
 Example 1:
 
-Input: tokens = ["2","1","+","3","*"]
-Output: 9
-Explanation: ((2 + 1) * 3) = 9
+
+Input: head = [4,2,1,3]
+Output: [1,2,3,4]
 
 Example 2:
 
-Input: tokens = ["4","13","5","/","+"]
-Output: 6
-Explanation: (4 + (13 / 5)) = 6
 
-Example 3:
+Input: head = [-1,5,3,4,0]
+Output: [-1,0,3,4,5]
 
-Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
-Output: 22
-Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
-= ((10 * (6 / (12 * -11))) + 17) + 5
-= ((10 * (6 / -132)) + 17) + 5
-= ((10 * 0) + 17) + 5
-= (0 + 17) + 5
-= 17 + 5
-= 22
-
- 
+ 
 Constraints:
 
-1 <= tokens.length <= 104
-tokens[i] is either an operator: "+", "-", "*", or "/", or an integer in the range [-200, 200].
+The number of nodes in the list is in the range [1, 5000].
+-5000 <= Node.val <= 5000
 
 
 Boilerplate code:
 ```python
-def evalRPN(tokens):
+def insertionSortList(head):
     ...
 ```

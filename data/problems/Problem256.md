@@ -1,52 +1,33 @@
-Suppose we have a file system that stores both files and directories. An example of one system is represented in the following picture:
+There is a row of n houses, where each house can be painted one of three colors: red, blue, or green. The cost of painting each house with a certain color is different. You have to paint all the houses such that no two adjacent houses have the same color.
+The cost of painting each house with a certain color is represented by an n x 3 cost matrix costs.
 
-Here, we have dir as the only directory in the root. dir contains two subdirectories, subdir1 and subdir2. subdir1 contains a file file1.ext and subdirectory subsubdir1. subdir2 contains a subdirectory subsubdir2, which contains a file file2.ext.
-In text form, it looks like this (with ⟶ representing the tab character):
+For example, costs[0][0] is the cost of painting house 0 with the color red; costs[1][2] is the cost of painting house 1 with color green, and so on...
 
-dir
-⟶ subdir1
-⟶ ⟶ file1.ext
-⟶ ⟶ subsubdir1
-⟶ subdir2
-⟶ ⟶ subsubdir2
-⟶ ⟶ ⟶ file2.ext
-
-If we were to write this representation in code, it will look like this: "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext". Note that the '\n' and '\t' are the new-line and tab characters.
-Every file and directory has a unique absolute path in the file system, which is the order of directories that must be opened to reach the file/directory itself, all concatenated by '/'s. Using the above example, the absolute path to file2.ext is "dir/subdir2/subsubdir2/file2.ext". Each directory name consists of letters, digits, and/or spaces. Each file name is of the form name.extension, where name and extension consist of letters, digits, and/or spaces.
-Given a string input representing the file system in the explained format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.
-Note that the testcases are generated such that the file system is valid and no file or directory name has length 0.
- 
+Return the minimum cost to paint all houses.
+ 
 Example 1:
 
-Input: input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"
-Output: 20
-Explanation: We have only one file, and the absolute path is "dir/subdir2/file.ext" of length 20.
+Input: costs = [[17,2,17],[16,16,5],[14,3,19]]
+Output: 10
+Explanation: Paint house 0 into blue, paint house 1 into green, paint house 2 into blue.
+Minimum cost: 2 + 5 + 3 = 10.
 
 Example 2:
 
-Input: input = "dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
-Output: 32
-Explanation: We have two files:
-"dir/subdir1/file1.ext" of length 21
-"dir/subdir2/subsubdir2/file2.ext" of length 32.
-We return 32 since it is the longest absolute path to a file.
+Input: costs = [[7,6,2]]
+Output: 2
 
-Example 3:
-
-Input: input = "a"
-Output: 0
-Explanation: We do not have any files, just a single directory named "a".
-
- 
+ 
 Constraints:
 
-1 <= input.length <= 104
-input may contain lowercase or uppercase English letters, a new line character '\n', a tab character '\t', a dot '.', a space ' ', and digits.
-All file and directory names have positive length.
+costs.length == n
+costs[i].length == 3
+1 <= n <= 100
+1 <= costs[i][j] <= 20
 
 
 Boilerplate code:
 ```python
-def lengthLongestPath(input):
+def minCost(costs):
     ...
 ```

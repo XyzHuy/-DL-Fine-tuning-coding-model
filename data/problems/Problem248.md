@@ -1,31 +1,24 @@
-Assume you have an array of length n initialized with all 0's and are given k update operations.
+Given two strings low and high that represent two integers low and high where low <= high, return the number of strobogrammatic numbers in the range [low, high].
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+ 
+Example 1:
+Input: low = "50", high = "100"
+Output: 3
+Example 2:
+Input: low = "0", high = "0"
+Output: 1
 
+ 
+Constraints:
 
-Each operation is represented as a triplet: [startIndex, endIndex, inc] which increments each element of subarray A[startIndex ... endIndex] (startIndex and endIndex inclusive) with inc.
-
-Return the modified array after all k operations were executed.
-
-Example:
-
-Input: length = 5, updates = [[1,3,2],[2,4,3],[0,2,-2]]
-Output: [-2,0,3,5,3]
-Explanation:
-
-Initial state:
-[0,0,0,0,0]
-
-After applying operation [1,3,2]:
-[0,2,2,2,0]
-
-After applying operation [2,4,3]:
-[0,2,5,5,3]
-
-After applying operation [0,2,-2]:
-[-2,0,3,5,3]
+1 <= low.length, high.length <= 15
+low and high consist of only digits.
+low <= high
+low and high do not contain any leading zeros except for zero itself.
 
 
 Boilerplate code:
 ```python
-def getModifiedArray(length, updates):
+def strobogrammaticInRange(low, high):
     ...
 ```

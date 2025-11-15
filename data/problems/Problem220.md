@@ -1,19 +1,39 @@
-You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.
+You are given an integer array nums and two integers indexDiff and valueDiff.
+Find a pair of indices (i, j) such that:
 
-Write a function to determine if the starting player can guarantee a win.
+i != j,
+abs(i - j) <= indexDiff.
+abs(nums[i] - nums[j]) <= valueDiff, and
 
-Example:
+Return true if such pair exists or false otherwise.
+ 
+Example 1:
 
-Input: s = "++++"
+Input: nums = [1,2,3,1], indexDiff = 3, valueDiff = 0
 Output: true
-Explanation: The starting player can guarantee a win by flipping the middle "++" to become "+--+".
+Explanation: We can choose (i, j) = (0, 3).
+We satisfy the three conditions:
+i != j --> 0 != 3
+abs(i - j) <= indexDiff --> abs(0 - 3) <= 3
+abs(nums[i] - nums[j]) <= valueDiff --> abs(1 - 1) <= 0
 
-Follow up:
-Derive your algorithm's runtime complexity.
+Example 2:
+
+Input: nums = [1,5,9,1,5,9], indexDiff = 2, valueDiff = 3
+Output: false
+Explanation: After trying all the possible pairs (i, j), we cannot satisfy the three conditions, so we return false.
+
+ 
+Constraints:
+
+2 <= nums.length <= 105
+-109 <= nums[i] <= 109
+1 <= indexDiff <= nums.length
+0 <= valueDiff <= 109
 
 
 Boilerplate code:
 ```python
-def canWin(s):
+def containsNearbyAlmostDuplicate(nums, indexDiff, valueDiff):
     ...
 ```

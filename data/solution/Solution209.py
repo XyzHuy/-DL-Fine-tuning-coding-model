@@ -1,13 +1,28 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-def closestValue(root, target):
-    # compare kids' result with root
-    kid = root.left if target < root.val else root.right
-    if not kid:
-        return root.val
-    kid_min = closestValue(kid, target)
-    return min((kid_min, root.val), key=lambda x: abs(target - x))
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+        left = 0
+        current_sum = 0
+        min_length = float('inf')
+        
+        for right in range(len(nums)):
+            current_sum += nums[right]
+            
+            while current_sum >= target:
+                min_length = min(min_length, right - left + 1)
+                current_sum -= nums[left]
+                left += 1
+        
+        return min_length if min_length != float('inf') else 0
+
+def minSubArrayLen(target: int, nums: List[int]) -> int:
+    return Solution().minSubArrayLen(target, nums)

@@ -1,34 +1,31 @@
-Given the root of a binary tree, return the sum of all left leaves.
-A leaf is a node with no children. A left leaf is a leaf that is the left child of another node.
- 
+You have a graph of n nodes labeled from 0 to n - 1. You are given an integer n and a list of edges where edges[i] = [ai, bi] indicates that there is an undirected edge between nodes ai and bi in the graph.
+Return true if the edges of the given graph make up a valid tree, and false otherwise.
+ 
 Example 1:
 
-Input: root = [3,9,20,null,null,15,7]
-Output: 24
-Explanation: There are two left leaves in the binary tree, with values 9 and 15 respectively.
+
+Input: n = 5, edges = [[0,1],[0,2],[0,3],[1,4]]
+Output: true
 
 Example 2:
 
-Input: root = [1]
-Output: 0
 
- 
+Input: n = 5, edges = [[0,1],[1,2],[2,3],[1,3],[1,4]]
+Output: false
+
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [1, 1000].
--1000 <= Node.val <= 1000
+1 <= n <= 2000
+0 <= edges.length <= 5000
+edges[i].length == 2
+0 <= ai, bi < n
+ai != bi
+There are no self-loops or repeated edges.
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-def sumOfLeftLeaves(root):
+def validTree(n, edges):
     ...
 ```

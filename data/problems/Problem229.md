@@ -1,35 +1,31 @@
-Given an integer n, return true if it is a power of three. Otherwise, return false.
-An integer n is a power of three, if there exists an integer x such that n == 3x.
- 
+Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
+ 
 Example 1:
 
-Input: n = 27
-Output: true
-Explanation: 27 = 33
+Input: nums = [3,2,3]
+Output: [3]
 
 Example 2:
 
-Input: n = 0
-Output: false
-Explanation: There is no x where 3x = 0.
+Input: nums = [1]
+Output: [1]
 
 Example 3:
 
-Input: n = -1
-Output: false
-Explanation: There is no x where 3x = (-1).
+Input: nums = [1,2]
+Output: [1,2]
 
- 
+ 
 Constraints:
 
--231 <= n <= 231 - 1
+1 <= nums.length <= 5 * 104
+-109 <= nums[i] <= 109
 
- 
-Follow up: Could you solve it without loops/recursion?
-
+ 
+Follow up: Could you solve the problem in linear time and in O(1) space?
 
 Boilerplate code:
 ```python
-def isPowerOfThree(n):
+def majorityElement(nums):
     ...
 ```

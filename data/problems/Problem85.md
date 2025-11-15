@@ -1,32 +1,33 @@
-Given the head of a linked list and a value x, partition it such that all nodes less than x come before nodes greater than or equal to x.
-You should preserve the original relative order of the nodes in each of the two partitions.
- 
+Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
+ 
 Example 1:
 
-Input: head = [1,4,3,2,5,2], x = 3
-Output: [1,2,2,4,3,5]
+
+Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+Output: 6
+Explanation: The maximal rectangle is shown in the above picture.
 
 Example 2:
 
-Input: head = [2,1], x = 2
-Output: [1,2]
+Input: matrix = [["0"]]
+Output: 0
 
- 
+Example 3:
+
+Input: matrix = [["1"]]
+Output: 1
+
+ 
 Constraints:
 
-The number of nodes in the list is in the range [0, 200].
--100 <= Node.val <= 100
--200 <= x <= 200
+rows == matrix.length
+cols == matrix[i].length
+1 <= row, cols <= 200
+matrix[i][j] is '0' or '1'.
 
 
 Boilerplate code:
 ```python
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-def partition(head, x):
+def maximalRectangle(matrix):
     ...
 ```

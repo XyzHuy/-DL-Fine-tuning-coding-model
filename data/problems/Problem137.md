@@ -1,36 +1,23 @@
-Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words.
-Note that the same word in the dictionary may be reused multiple times in the segmentation.
- 
+Given an integer array nums where every element appears three times except for one, which appears exactly once. Find the single element and return it.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+ 
 Example 1:
-
-Input: s = "leetcode", wordDict = ["leet","code"]
-Output: true
-Explanation: Return true because "leetcode" can be segmented as "leet code".
-
+Input: nums = [2,2,3,2]
+Output: 3
 Example 2:
+Input: nums = [0,1,0,1,0,1,99]
+Output: 99
 
-Input: s = "applepenapple", wordDict = ["apple","pen"]
-Output: true
-Explanation: Return true because "applepenapple" can be segmented as "apple pen apple".
-Note that you are allowed to reuse a dictionary word.
-
-Example 3:
-
-Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
-Output: false
-
- 
+ 
 Constraints:
 
-1 <= s.length <= 300
-1 <= wordDict.length <= 1000
-1 <= wordDict[i].length <= 20
-s and wordDict[i] consist of only lowercase English letters.
-All the strings of wordDict are unique.
+1 <= nums.length <= 3 * 104
+-231 <= nums[i] <= 231 - 1
+Each element in nums appears exactly three times except for one element which appears once.
 
 
 Boilerplate code:
 ```python
-def wordBreak(s, wordDict):
+def singleNumber(nums):
     ...
 ```

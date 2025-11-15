@@ -1,27 +1,32 @@
-Nearly everyone has used the Multiplication Table. The multiplication table of size m x n is an integer matrix mat where mat[i][j] == i * j (1-indexed).
-Given three integers m, n, and k, return the kth smallest element in the m x n multiplication table.
- 
+Given an integer array nums, return the length of the longest strictly increasing subsequence.
+ 
 Example 1:
 
-Input: m = 3, n = 3, k = 5
-Output: 3
-Explanation: The 5th smallest number is 3.
+Input: nums = [10,9,2,5,3,7,101,18]
+Output: 4
+Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4.
 
 Example 2:
 
-Input: m = 2, n = 3, k = 6
-Output: 6
-Explanation: The 6th smallest number is 6.
+Input: nums = [0,1,0,3,2,3]
+Output: 4
 
- 
+Example 3:
+
+Input: nums = [7,7,7,7,7,7,7]
+Output: 1
+
+ 
 Constraints:
 
-1 <= m, n <= 3 * 104
-1 <= k <= m * n
+1 <= nums.length <= 2500
+-104 <= nums[i] <= 104
 
+ 
+Follow up: Can you come up with an algorithm that runs in O(n log(n)) time complexity?
 
 Boilerplate code:
 ```python
-def findKthNumber(m: int, n: int, k: int) -> int:
+def lengthOfLIS(nums):
     ...
 ```

@@ -1,43 +1,36 @@
-Given the root of a binary tree, flatten the tree into a "linked list":
-
-The "linked list" should use the same TreeNode class where the right child pointer points to the next node in the list and the left child pointer is always null.
-The "linked list" should be in the same order as a pre-order traversal of the binary tree.
-
- 
+Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of the node values in the path equals targetSum. Each path should be returned as a list of the node values, not node references.
+A root-to-leaf path is a path starting from the root and ending at any leaf node. A leaf is a node with no children.
+ 
 Example 1:
 
-Input: root = [1,2,5,3,4,null,6]
-Output: [1,null,2,null,3,null,4,null,5,null,6]
+
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
+Output: [[5,4,11,2],[5,8,4,5]]
+Explanation: There are two paths whose sum equals targetSum:
+5 + 4 + 11 + 2 = 22
+5 + 8 + 4 + 5 = 22
 
 Example 2:
 
-Input: root = []
+
+Input: root = [1,2,3], targetSum = 5
 Output: []
 
 Example 3:
 
-Input: root = [0]
-Output: [0]
+Input: root = [1,2], targetSum = 0
+Output: []
 
- 
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 2000].
--100 <= Node.val <= 100
-
- 
-Follow up: Can you flatten the tree in-place (with O(1) extra space)?
+The number of nodes in the tree is in the range [0, 5000].
+-1000 <= Node.val <= 1000
+-1000 <= targetSum <= 1000
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def flatten(root):
+def pathSum(root, targetSum):
     ...
 ```

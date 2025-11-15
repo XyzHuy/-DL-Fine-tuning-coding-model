@@ -1,33 +1,37 @@
-Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,4,4,5,6,7] might become:
-
-[4,5,6,7,0,1,4] if it was rotated 4 times.
-[0,1,4,4,5,6,7] if it was rotated 7 times.
-
-Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
-Given the sorted rotated array nums that may contain duplicates, return the minimum element of this array.
-You must decrease the overall operation steps as much as possible.
- 
+Given an input string s, reverse the order of the words.
+A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
+Return a string of the words in reverse order concatenated by a single space.
+Note that s may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.
+ 
 Example 1:
-Input: nums = [1,3,5]
-Output: 1
-Example 2:
-Input: nums = [2,2,2,0,1]
-Output: 0
 
- 
+Input: s = "the sky is blue"
+Output: "blue is sky the"
+
+Example 2:
+
+Input: s = "  hello world  "
+Output: "world hello"
+Explanation: Your reversed string should not contain leading or trailing spaces.
+
+Example 3:
+
+Input: s = "a good   example"
+Output: "example good a"
+Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
+
+ 
 Constraints:
 
-n == nums.length
-1 <= n <= 5000
--5000 <= nums[i] <= 5000
-nums is sorted and rotated between 1 and n times.
+1 <= s.length <= 104
+s contains English letters (upper-case and lower-case), digits, and spaces ' '.
+There is at least one word in s.
 
- 
-Follow up: This problem is similar to Find Minimum in Rotated Sorted Array, but nums may contain duplicates. Would this affect the runtime complexity? How and why?
-
+ 
+Follow-up: If the string data type is mutable in your language, can you solve it in-place with O(1) extra space?
 
 Boilerplate code:
 ```python
-def findMin(nums):
+def reverseWords(s):
     ...
 ```

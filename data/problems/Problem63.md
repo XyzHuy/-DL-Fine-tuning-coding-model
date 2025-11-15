@@ -2,8 +2,9 @@ You are given an m x n integer array grid. There is a robot initially located at
 An obstacle and space are marked as 1 or 0 respectively in grid. A path that the robot takes cannot include any square that is an obstacle.
 Return the number of possible unique paths that the robot can take to reach the bottom-right corner.
 The testcases are generated so that the answer will be less than or equal to 2 * 109.
- 
+ 
 Example 1:
+
 
 Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]
 Output: 2
@@ -14,10 +15,11 @@ There are two ways to reach the bottom-right corner:
 
 Example 2:
 
+
 Input: obstacleGrid = [[0,1],[0,0]]
 Output: 1
 
- 
+ 
 Constraints:
 
 m == obstacleGrid.length
@@ -28,6 +30,6 @@ obstacleGrid[i][j] is 0 or 1.
 
 Boilerplate code:
 ```python
-def uniquePathsWithObstacles( obstacleGrid):
+def uniquePathsWithObstacles(obstacleGrid):
     ...
 ```

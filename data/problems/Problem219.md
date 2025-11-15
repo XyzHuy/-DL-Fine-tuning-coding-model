@@ -1,20 +1,30 @@
-You are playing the following Flip Game with your friend: Given a string that contains only these two characters: + and -, you and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move and therefore the other person will be the winner.
+Given an integer array nums and an integer k, return true if there are two distinct indices i and j in the array such that nums[i] == nums[j] and abs(i - j) <= k.
+ 
+Example 1:
 
-Write a function to compute all possible states of the string after one valid move.
+Input: nums = [1,2,3,1], k = 3
+Output: true
 
-Example:
+Example 2:
 
-Input: s = "++++"
-Output:
-[
-  "--++",
-  "+--+",
-  "++--"
-]
-Note: If there is no valid move, return an empty list [].
+Input: nums = [1,0,1,1], k = 1
+Output: true
+
+Example 3:
+
+Input: nums = [1,2,3,1,2,3], k = 2
+Output: false
+
+ 
+Constraints:
+
+1 <= nums.length <= 105
+-109 <= nums[i] <= 109
+0 <= k <= 105
+
 
 Boilerplate code:
 ```python
-def generatePossibleNextMoves(s):
+def containsNearbyDuplicate(nums, k):
     ...
 ```

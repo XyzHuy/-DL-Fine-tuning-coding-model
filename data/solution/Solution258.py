@@ -1,10 +1,17 @@
-def isSubsequence(s: str, t: str) -> bool:
-    for a in s:
-        if a in t:
-            for b in range(0, len(t)):
-                if a==t[b]:
-                    t=t[b+1:]
-                    break
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def addDigits(self, num: int) -> int:
+        if num == 0:
+            return 0
         else:
-            return(False)
-    return(True)
+            return 1 + (num - 1) % 9
+
+def addDigits(num: int) -> int:
+    return Solution().addDigits(num)

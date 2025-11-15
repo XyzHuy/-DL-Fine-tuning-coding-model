@@ -1,28 +1,27 @@
-def circularArrayLoop(nums: list[int]) -> bool:
-    for i in range(len(nums)):
-        if nums[i] == 0:
-            continue
-        
-        # if slow and fast pointers collide, then there exists a loop
-        slow = i
-        fast = index(nums, slow)
-        while nums[slow] * nums[fast] > 0 and nums[slow] * nums[index(nums, fast)] > 0:
-            if slow == fast and fast != index(nums, fast):
-                return True
-            elif slow == fast and fast == index(nums, fast):
-                break
-            slow = index(nums, slow)
-            fast = index(nums, index(nums, fast))
-            
-        # set path to all 0s since it doesn't work
-        runner = i
-        value = nums[runner]
-        while nums[runner] * value > 0:
-            temp = index(nums, runner)
-            nums[runner] = 0
-            runner = temp
-    return False
-        
-def index(nums, index):
-    length = len(nums)
-    return (index + nums[index] + length) % length
+import heapq
+import itertools
+from sortedcontainers import SortedList
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+# The isBadVersion API is already defined for you.
+# def isBadVersion(version: int) -> bool:
+
+class Solution:
+    def firstBadVersion(self, n: int) -> int:
+        left, right = 1, n
+        while left < right:
+            mid = left + (right - left) // 2
+            if isBadVersion(mid):
+                right = mid
+            else:
+                left = mid + 1
+        return left
+
+def firstBadVersion(n: int) -> int:
+    return Solution().firstBadVersion(n)

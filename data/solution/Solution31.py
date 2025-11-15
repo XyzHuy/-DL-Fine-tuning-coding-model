@@ -1,28 +1,38 @@
-def nextPermutation(nums):
-    """
-    :type nums: List[int]
-    :rtype: void Do not return anything, modify nums in-place instead.
-    """
-    ls = len(nums)
-    if ls <= 1:
-        return
-    pair = []
-    for i in range(ls):
-        for j in range(i + 1, ls):
-            # append ascending order pair
-            if nums[i] < nums[j]:
-                pair.append([i,j])
-    pos = 0
-    if len(pair) > 0:
-        swap(nums, pair[-1][0], pair[-1][1])
-        pos = pair[-1][0] + 1
-    # sort from pos
-    for i in range(pos, ls):
-        for j in range(i + 1, ls):
-            if nums[i] > nums[j]:
-                swap(nums, i, j)
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def swap(nums, index1, index2):
-    if index1 == index2:
-        return
-    nums[index1], nums[index2] = nums[index2], nums[index1]
+
+from typing import List
+
+class Solution:
+    def nextPermutation(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        # Find the first decreasing element from the end
+        i = len(nums) - 2
+        while i >= 0 and nums[i] >= nums[i + 1]:
+            i -= 1
+        
+        # If the entire array is decreasing, reverse it to get the smallest permutation
+        if i == -1:
+            nums.reverse()
+            return
+        
+        # Find the element just larger than nums[i] to the right of i
+        j = len(nums) - 1
+        while nums[j] <= nums[i]:
+            j -= 1
+        
+        # Swap the found elements
+        nums[i], nums[j] = nums[j], nums[i]
+        
+        # Reverse the elements to the right of i to get the next permutation
+        nums[i + 1:] = reversed(nums[i + 1:])
+
+def nextPermutation(nums: List[int]) -> None:
+    return Solution().nextPermutation(nums)

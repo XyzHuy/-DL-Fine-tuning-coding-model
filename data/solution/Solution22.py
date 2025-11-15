@@ -1,11 +1,27 @@
-def generateParenthesis(n):
-    if n == 1:
-        return ['()']
-    last_list = generateParenthesis(n - 1)
-    res = []
-    for t in last_list:
-        curr = t + ')'
-        for index in range(len(curr)):
-            if curr[index] == ')':
-                res.append(curr[:index] + '(' + curr[index:])
-    return list(set(res))
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        def backtrack(s='', left=0, right=0):
+            if len(s) == 2 * n:
+                result.append(s)
+                return
+            if left < n:
+                backtrack(s + '(', left + 1, right)
+            if right < left:
+                backtrack(s + ')', left, right + 1)
+        
+        result = []
+        backtrack()
+        return result
+
+def generateParenthesis(n: int) -> List[str]:
+    return Solution().generateParenthesis(n)

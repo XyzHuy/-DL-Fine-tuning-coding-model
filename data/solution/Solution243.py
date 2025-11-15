@@ -1,33 +1,26 @@
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-import heapq
-class Logger(object):
-    
+from typing import List
+from math import inf
 
-    def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-        self.heap = []
-        self.cache = {}
+class Solution:
+    def shortestDistance(self, wordsDict: List[str], word1: str, word2: str) -> int:
+        i = j = -1
+        ans = inf
+        for k, w in enumerate(wordsDict):
+            if w == word1:
+                i = k
+            if w == word2:
+                j = k
+            if i != -1 and j != -1:
+                ans = min(ans, abs(i - j))
+        return ans
 
-    def shouldPrintMessage(self, timestamp, message):
-        """
-        Returns true if the message should be printed in the given timestamp, otherwise returns false.
-        If this method returns false, the message will not be printed.
-        The timestamp is in seconds granularity.
-        :type timestamp: int
-        :type message: str
-        :rtype: bool
-        """
-        while len(self.heap):
-            if self.heap[0][0] <= timestamp:
-                temp = heapq.heappop(self.heap)
-                self.cache.pop(temp[1])
-            else:
-                break
-        if timestamp < self.cache.get(message, 0):
-            return False
-        self.cache[message] = timestamp + 10
-        heapq.heappush(self.heap, (timestamp + 10, message))
-        return True
+def shortestDistance(wordsDict: List[str], word1: str, word2: str) -> int:
+    return Solution().shortestDistance(wordsDict, word1, word2)

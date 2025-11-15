@@ -1,42 +1,34 @@
-class Queue(object):
-    def __init__(self):
-        """
-        initialize your data structure here.
-        """
-        self.stack1 = []
-        self.stack2 = []
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-    def push(self, x):
-        """
-        :type x: int
-        :rtype: nothing
-        """
-        self.stack1.append(x)
+from typing import List
 
-    def pop(self):
+class Solution:
+    def rotate(self, nums: List[int], k: int) -> None:
         """
-        :rtype: nothing
+        Do not return anything, modify nums in-place instead.
         """
-        if len(self.stack2) == 0:
-            while len(self.stack1):
-                curr = self.stack1.pop()
-                self.stack2.append(curr)
-        self.stack2.pop()
+        n = len(nums)
+        k = k % n  # In case k is greater than n
+        
+        # Helper function to reverse a portion of the array
+        def reverse(start: int, end: int) -> None:
+            while start < end:
+                nums[start], nums[end] = nums[end], nums[start]
+                start += 1
+                end -= 1
+        
+        # Reverse the whole array
+        reverse(0, n - 1)
+        # Reverse the first k elements
+        reverse(0, k - 1)
+        # Reverse the remaining n-k elements
+        reverse(k, n - 1)
 
-
-    def peek(self):
-        """
-        :rtype: int
-        """
-        if len(self.stack2) == 0:
-            while len(self.stack1):
-                curr = self.stack1.pop()
-                self.stack2.append(curr)
-        return self.stack2[-1]
-
-    def empty(self):
-        """
-        :rtype: bool
-        """
-        return len(self.stack1) + len(self.stack2) == 0
+def rotate(nums: List[int], k: int) -> None:
+    return Solution().rotate(nums, k)

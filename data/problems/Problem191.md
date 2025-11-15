@@ -1,43 +1,35 @@
-Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).”
- 
+Given a positive integer n, write a function that returns the number of set bits in its binary representation (also known as the Hamming weight).
+ 
 Example 1:
 
-Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
-Output: 6
-Explanation: The LCA of nodes 2 and 8 is 6.
+Input: n = 11
+Output: 3
+Explanation:
+The input binary string 1011 has a total of three set bits.
 
 Example 2:
 
-Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
-Output: 2
-Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+Input: n = 128
+Output: 1
+Explanation:
+The input binary string 10000000 has a total of one set bit.
 
 Example 3:
 
-Input: root = [2,1], p = 2, q = 1
-Output: 2
+Input: n = 2147483645
+Output: 30
+Explanation:
+The input binary string 1111111111111111111111111111101 has a total of thirty set bits.
 
- 
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [2, 105].
--109 <= Node.val <= 109
-All Node.val are unique.
-p != q
-p and q will exist in the BST.
+1 <= n <= 231 - 1
 
-
+ 
+Follow up: If this function is called many times, how would you optimize it?
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-def lowestCommonAncestor(root, p, q):
+def hammingWeight(n):
     ...
 ```

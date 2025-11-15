@@ -1,24 +1,21 @@
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def binaryTreePaths(root):
-    if root is None:
-        return []
-    paths = []
-    get_path(paths, [], root)
-    res = ['->'.join(p) for p in paths ]
-    return res
 
-def get_path( result, path, node):
-    if node.left is None and node.right is None:
-        result.append(path + [str(node.val)])
-        return
-    path = path + [str(node.val)]
-    if node.left is not None:
-        get_path(result, path, node.left)
-    if node.right is not None:
-        get_path(result, path, node.right)
+class Solution:
+    def rangeBitwiseAnd(self, left: int, right: int) -> int:
+        shift = 0
+        # Find the common prefix bits
+        while left < right:
+            left >>= 1
+            right >>= 1
+            shift += 1
+        # Append zeros to the right
+        return left << shift
+
+def rangeBitwiseAnd(left: int, right: int) -> int:
+    return Solution().rangeBitwiseAnd(left, right)

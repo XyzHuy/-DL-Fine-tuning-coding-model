@@ -1,33 +1,42 @@
-You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money.
-Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
-You may assume that you have an infinite number of each kind of coin.
- 
+You are given a sorted unique integer array nums.
+A range [a,b] is the set of all integers from a to b (inclusive).
+Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
+Each range [a,b] in the list should be output as:
+
+"a->b" if a != b
+"a" if a == b
+
+ 
 Example 1:
 
-Input: coins = [1,2,5], amount = 11
-Output: 3
-Explanation: 11 = 5 + 5 + 1
+Input: nums = [0,1,2,4,5,7]
+Output: ["0->2","4->5","7"]
+Explanation: The ranges are:
+[0,2] --> "0->2"
+[4,5] --> "4->5"
+[7,7] --> "7"
 
 Example 2:
 
-Input: coins = [2], amount = 3
-Output: -1
+Input: nums = [0,2,3,4,6,8,9]
+Output: ["0","2->4","6","8->9"]
+Explanation: The ranges are:
+[0,0] --> "0"
+[2,4] --> "2->4"
+[6,6] --> "6"
+[8,9] --> "8->9"
 
-Example 3:
-
-Input: coins = [1], amount = 0
-Output: 0
-
- 
+ 
 Constraints:
 
-1 <= coins.length <= 12
-1 <= coins[i] <= 231 - 1
-0 <= amount <= 104
+0 <= nums.length <= 20
+-231 <= nums[i] <= 231 - 1
+All the values of nums are unique.
+nums is sorted in ascending order.
 
 
 Boilerplate code:
 ```python
-def coinChange(coins, amount):
+def summaryRanges(nums):
     ...
 ```

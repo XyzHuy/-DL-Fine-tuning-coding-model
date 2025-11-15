@@ -1,31 +1,62 @@
-def isInterleave(s1, s2, s3):
-    """
-    :type s1: str
-    :type s2: str
-    :type s3: str
-    :rtype: bool
-    """
-    if len(s1) + len(s2) != len(s3):
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def tree_node(values: list):
+    if not values:
+        return None
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
+    return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
         return False
-    queue = [(0, 0), (-1, -1)]
-    visited = set()
-    isSuccess = False
-    index = 0
-    while len(queue) != 1 or queue[0][0] != -1:
-        p = queue.pop(0)
-        if p[0] == len(s1) and p[1] == len(s2):
-            return True
-        if p[0] == -1:
-            queue.append(p)
-            index += 1
-            continue
-        if p in visited:
-            continue
-        visited.add(p)
-        if p[0] < len(s1):
-            if s1[p[0]] == s3[index]:
-                queue.append((p[0] + 1, p[1]))
-        if p[1] < len(s2):
-            if s2[p[1]] == s3[index]:
-                queue.append((p[0], p[1] + 1))
-    return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+class Solution:
+    def numTrees(self, n: int) -> int:
+        # This problem can be solved using dynamic programming.
+        # The idea is to use the concept of Catalan numbers.
+        # G(n) = sum(G(i-1) * G(n-i)) for i in range(1, n+1)
+        # where G(n) is the number of unique BSTs with n nodes.
+        
+        # Base case: There is one unique BST with 0 nodes and one with 1 node
+        G = [0] * (n + 1)
+        G[0], G[1] = 1, 1
+        
+        # Calculate the number of unique BSTs for each number of nodes from 2 to n
+        for i in range(2, n + 1):
+            for j in range(1, i + 1):
+                G[i] += G[j - 1] * G[i - j]
+        
+        return G[n]
+
+def numTrees(n: int) -> int:
+    return Solution().numTrees(n)

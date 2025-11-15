@@ -1,43 +1,38 @@
-Given the root of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus the sum of all keys greater than the original key in BST.
-As a reminder, a binary search tree is a tree that satisfies these constraints:
-
-The left subtree of a node contains only nodes with keys less than the node's key.
-The right subtree of a node contains only nodes with keys greater than the node's key.
-Both the left and right subtrees must also be binary search trees.
-
- 
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
+There is only one repeated number in nums, return this repeated number.
+You must solve the problem without modifying the array nums and using only constant extra space.
+ 
 Example 1:
 
-Input: root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
-Output: [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
+Input: nums = [1,3,4,2,2]
+Output: 2
 
 Example 2:
 
-Input: root = [0,null,1]
-Output: [1,null,1]
+Input: nums = [3,1,3,4,2]
+Output: 3
 
- 
+Example 3:
+
+Input: nums = [3,3,3,3,3]
+Output: 3
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 104].
--104 <= Node.val <= 104
-All the values in the tree are unique.
-root is guaranteed to be a valid binary search tree.
+1 <= n <= 105
+nums.length == n + 1
+1 <= nums[i] <= n
+All the integers in nums appear only once except for precisely one integer which appears two or more times.
 
- 
-Note: This question is the same as 1038: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
+ 
+Follow up:
+
+How can we prove that at least one duplicate number must exist in nums?
+Can you solve the problem in linear runtime complexity?
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-def convertBST(root):
+def findDuplicate(nums):
     ...
 ```

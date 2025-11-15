@@ -1,29 +1,32 @@
-Given a non-empty binary search tree and a target value, find the value in the BST that is closest to the target.
+Given an array of positive integers nums and a positive integer target, return the minimal length of a subarray whose sum is greater than or equal to target. If there is no such subarray, return 0 instead.
+ 
+Example 1:
 
-Note:
+Input: target = 7, nums = [2,3,1,2,4,3]
+Output: 2
+Explanation: The subarray [4,3] has the minimal length under the problem constraint.
 
-Given target value is a floating point.
-You are guaranteed to have only one unique value in the BST that is closest to the target.
-Example:
+Example 2:
 
-Input: root = [4,2,5,1,3], target = 3.714286
+Input: target = 4, nums = [1,4,4]
+Output: 1
 
-    4
-   / \
-  2   5
- / \
-1   3
+Example 3:
 
-Output: 4
+Input: target = 11, nums = [1,1,1,1,1,1,1,1]
+Output: 0
 
+ 
+Constraints:
+
+1 <= target <= 109
+1 <= nums.length <= 105
+1 <= nums[i] <= 104
+
+ 
+Follow up: If you have figured out the O(n) solution, try coding another solution of which the time complexity is O(n log(n)).
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-def closestValue(root, target):
+def minSubArrayLen(target, nums):
     ...
 ```

@@ -1,17 +1,27 @@
-Design a logger system that receive stream of messages along with its timestamps, each message should be printed if and only if it is not printed in the last 10 seconds.
+Given an array of strings wordsDict and two different strings that already exist in the array word1 and word2, return the shortest distance between these two words in the list.
+ 
+Example 1:
 
-Given a message and a timestamp (in seconds granularity), return true if the message should be printed in the given timestamp, otherwise returns false.
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "coding", word2 = "practice"
+Output: 3
 
-It is possible that several messages arrive roughly at the same time.
+Example 2:
 
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "coding"
+Output: 1
 
+ 
+Constraints:
+
+2 <= wordsDict.length <= 3 * 104
+1 <= wordsDict[i].length <= 10
+wordsDict[i] consists of lowercase English letters.
+word1 and word2 are in wordsDict.
+word1 != word2
 
 
 Boilerplate code:
 ```python
-class Logger(object):
-    def __init__(self):
-        ...
-    def shouldPrintMessage(self, timestamp, message):
-        ...
+def shortestDistance(wordsDict, word1, word2):
+    ...
 ```

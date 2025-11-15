@@ -1,37 +1,67 @@
-class LRUCache(object):
-    def __init__(self, capacity):
-        """
-        :type capacity: int
-        """
-        self.capacity = capacity
-        self.cache = {}
-        self.queue = []
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-    def updateQueue(self, key):
-        self.queue.remove(key)
-        self.queue.insert(0, key)
 
-    def get(self, key):
-        """
-        :rtype: int
-        """
-        if key in self.cache:
-            self.updateQueue(key)
-            return self.cache[key]
-        else:
-            return -1
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-    def put(self, key, value):
-        """
-        :type key: int
-        :type value: int
-        :rtype: nothing
-        """
-        if key in self.cache:
-            self.queue.remove(key)
-        elif len(self.queue) == self.capacity:
-            del self.cache[self.queue.pop(-1)]
+def tree_node(values: list):
+    if not values:
+        return None
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
+    return root
 
-        self.cache[key] = value
-        self.queue.insert(0, key)
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+        
+        stack, result = [root], []
+        
+        while stack:
+            node = stack.pop()
+            result.append(node.val)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
+        
+        return result
 
+def preorderTraversal(root: Optional[TreeNode]) -> List[int]:
+    return Solution().preorderTraversal(root)

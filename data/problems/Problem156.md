@@ -1,31 +1,40 @@
-Given two strings s and t, determine if they are both one edit distance apart.
+Given the root of a binary tree, turn the tree upside down and return the new root.
+You can turn a binary tree upside down with the following steps:
 
-Note: 
+The original left child becomes the new root.
+The original root becomes the new right child.
+The original right child becomes the new left child.
 
-There are 3 possiblities to satisify one edit distance apart:
 
-Insert a character into s to get t
-Delete a character from s to get t
-Replace a character of s to get t
+The mentioned steps are done level by level. It is guaranteed that every right node has a sibling (a left node with the same parent) and has no children.
+ 
 Example 1:
 
-Input: s = "ab", t = "acb"
-Output: true
-Explanation: We can insert 'c' into s to get t.
+
+Input: root = [1,2,3,4,5]
+Output: [4,5,2,null,null,3,1]
+
 Example 2:
 
-Input: s = "cab", t = "ad"
-Output: false
-Explanation: We cannot get t from s by only one step.
+Input: root = []
+Output: []
+
 Example 3:
 
-Input: s = "1203", t = "1213"
-Output: true
-Explanation: We can replace '0' with '1' to get t.
+Input: root = [1]
+Output: [1]
+
+ 
+Constraints:
+
+The number of nodes in the tree will be in the range [0, 10].
+1 <= Node.val <= 10
+Every right node in the tree has a sibling (a left node that shares the same parent).
+Every right node in the tree has no children.
 
 
 Boilerplate code:
 ```python
-def isOneEditDistance(s, t):
+def upsideDownBinaryTree(root):
     ...
 ```

@@ -1,33 +1,35 @@
 import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-class RandomizedSet(object):
 
-    def __init__(self):
-        self.num_to_idx = {}
-        self.num_list = []
+from typing import List
+import heapq
 
-    def insert(self, val):
-        if val in self.num_to_idx:
-            return False
-        else:
-            self.num_list.append(val)
-            self.num_to_idx[val] = len(self.num_list) - 1
-            return True
+class Solution:
+    def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+        # Create a list of all events: start and end times
+        events = []
+        for start, end in intervals:
+            events.append((start, 1))  # Meeting starts
+            events.append((end, -1))   # Meeting ends
+        
+        # Sort events by time. If two events have the same time, end comes before start
+        events.sort()
+        
+        # Initialize variables to keep track of the current number of rooms and the maximum number of rooms needed
+        current_rooms = 0
+        max_rooms = 0
+        
+        # Process each event in the sorted list
+        for time, delta in events:
+            current_rooms += delta  # Update the number of current rooms
+            max_rooms = max(max_rooms, current_rooms)  # Update the maximum number of rooms needed
+        
+        return max_rooms
 
-    def remove(self, val):
-        if val not in self.num_to_idx:
-            return False
-
-        idx = self.num_to_idx[val]
-        last = self.num_list[-1]
-
-        # swap last elem to current spot so you can pop the end
-        self.num_list[idx] = last
-        self.num_list.pop()
-        self.num_to_idx[last] = idx
-        del self.num_to_idx[val]
-
-        return True
-
-    def getRandom(self):
-        return random.choice(self.num_list)
+def minMeetingRooms(intervals: List[List[int]]) -> int:
+    return Solution().minMeetingRooms(intervals)

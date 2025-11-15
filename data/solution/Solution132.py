@@ -1,20 +1,43 @@
-def canCompleteCircuit(gas, cost):
-    """
-    :type gas: List[int]
-    :type cost: List[int]
-    :rtype: int
-    """
-    ls = len(gas)
-    begin, end = 0, ls - 1
-    curr = gas[end] - cost[end]
-    while begin < end:
-        if curr >= 0:
-            curr += gas[begin] - cost[begin]
-            begin += 1
-        else:
-            end -= 1
-            curr += gas[end] - cost[end]
-    if curr >= 0:
-        return end
-    else:
-        return -1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def minCut(self, s: str) -> int:
+        n = len(s)
+        if n == 0:
+            return 0
+        
+        # dp array to store the minimum cuts needed for the first i characters
+        dp = [float('inf')] * n
+        
+        # Iterate over each character in the string
+        for i in range(n):
+            # Check for odd length palindromes centered at i
+            l, r = i, i
+            while l >= 0 and r < n and s[l] == s[r]:
+                if l == 0:
+                    dp[r] = 0
+                else:
+                    dp[r] = min(dp[r], dp[l - 1] + 1)
+                l -= 1
+                r += 1
+            
+            # Check for even length palindromes centered between i and i+1
+            l, r = i, i + 1
+            while l >= 0 and r < n and s[l] == s[r]:
+                if l == 0:
+                    dp[r] = 0
+                else:
+                    dp[r] = min(dp[r], dp[l - 1] + 1)
+                l -= 1
+                r += 1
+        
+        return dp[n - 1]
+
+def minCut(s: str) -> int:
+    return Solution().minCut(s)

@@ -1,36 +1,24 @@
-def longestPalindrome(s):
-    """
-    :type s: str
-    :rtype: str
-    """
-    # my solution
-    # expand string according to Manacher algorithm
-    # but extend radius step by step
-    ls = len(s)
-    if ls <= 1 or len(set(s)) == 1:
-        return s
-    # create a new list like this: "abc"->"a#b#c"
-    temp_s = '#'.join('{}'.format(s))
-    # print temp_s
-    tls = len(temp_s)
-    seed = range(1, tls - 1)
-    # this table stores the max length palindrome
-    len_table = [0] * tls
-    for step in range(1, tls / 2 + 1):
-        final = []
-        for pos in seed:
-            if pos - step < 0 or pos + step >= tls:
-                continue
-            if temp_s[pos - step] != temp_s[pos + step]:
-                continue
-            final.append(pos)
-            if temp_s[pos - step] == '#':
-                continue
-            len_table[pos] = step
-        seed = final
-    max_pos, max_step = 0, 0
-    for i, s in enumerate(len_table):
-        if s >= max_step:
-            max_step = s
-            max_pos = i
-    return temp_s[max_pos - max_step:max_pos + max_step + 1].translate(None, '#')
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        f = [[True] * n for _ in range(n)]
+        k, mx = 0, 1
+        for i in range(n - 2, -1, -1):
+            for j in range(i + 1, n):
+                f[i][j] = False
+                if s[i] == s[j]:
+                    f[i][j] = f[i + 1][j - 1]
+                    if f[i][j] and mx < j - i + 1:
+                        k, mx = i, j - i + 1
+        return s[k : k + mx]
+
+def longestPalindrome(s: str) -> str:
+    return Solution().longestPalindrome(s)

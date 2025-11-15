@@ -1,46 +1,42 @@
-# Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-def insert(intervals, newInterval):
-    """
-    :type intervals: List[Interval]
-    :type newInterval: Interval
-    :rtype: List[Interval]
-    """
-    if intervals is None or len(intervals) == 0:
-        return [newInterval]
-    intervals.sort(key=lambda x:x.start)
-    pos = 0
-    while pos < len(intervals):
-        # left of pos
-        if newInterval.end < intervals[pos].start:
-            intervals.insert(pos, newInterval)
-            return intervals
-        # overlap with pos
-        if check_overlap(intervals[pos], newInterval):
-            temp = intervals.pop(pos)
-            newInterval = merge_intervals(temp, newInterval)
-        else:
-            pos += 1
-    if len(intervals) == 0 or pos == len(intervals):
-        intervals.append(newInterval)
-    return intervals
+from typing import List
 
-def check_overlap(curr_int, new_int):
-    if curr_int.start <= new_int.start:
-        if curr_int.end > new_int.start:
-            return True
-    else:
-        if curr_int.start <= new_int.end:
-            return True
-    return False
+class Solution:
+    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+        if not intervals:
+            return [newInterval]
+        
+        merged = []
+        i = 0
+        n = len(intervals)
+        
+        # Add all intervals before the newInterval starts
+        while i < n and intervals[i][1] < newInterval[0]:
+            merged.append(intervals[i])
+            i += 1
+        
+        # Merge all overlapping intervals
+        while i < n and intervals[i][0] <= newInterval[1]:
+            newInterval[0] = min(newInterval[0], intervals[i][0])
+            newInterval[1] = max(newInterval[1], intervals[i][1])
+            i += 1
+        
+        # Add the merged newInterval
+        merged.append(newInterval)
+        
+        # Add all remaining intervals
+        while i < n:
+            merged.append(intervals[i])
+            i += 1
+        
+        return merged
 
-def merge_intervals(int1, int2):
-    temp_int = Interval()
-    temp_int.start = min([int1.start, int2.start])
-    temp_int.end = max([int1.end, int2.end])
-    return temp_int
+def insert(intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    return Solution().insert(intervals, newInterval)

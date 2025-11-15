@@ -1,31 +1,31 @@
-Given a set of distinct positive integers nums, return the largest subset answer such that every pair (answer[i], answer[j]) of elements in this subset satisfies:
-
-answer[i] % answer[j] == 0, or
-answer[j] % answer[i] == 0
-
-If there are multiple solutions, return any of them.
- 
+Given a string num which represents an integer, return true if num is a strobogrammatic number.
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+ 
 Example 1:
 
-Input: nums = [1,2,3]
-Output: [1,2]
-Explanation: [1,3] is also accepted.
+Input: num = "69"
+Output: true
 
 Example 2:
 
-Input: nums = [1,2,4,8]
-Output: [1,2,4,8]
+Input: num = "88"
+Output: true
 
- 
+Example 3:
+
+Input: num = "962"
+Output: false
+
+ 
 Constraints:
 
-1 <= nums.length <= 1000
-1 <= nums[i] <= 2 * 109
-All the integers in nums are unique.
+1 <= num.length <= 50
+num consists of only digits.
+num does not contain any leading zeros except for zero itself.
 
 
 Boilerplate code:
 ```python
-def largestDivisibleSubset(nums):
+def isStrobogrammatic(num):
     ...
 ```

@@ -1,18 +1,15 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-def lowestCommonAncestor(root, p, q):
-    # use the BST to reduce the search space
-    if p is None or q is None or root is None:
-        return None
-    if p.val < root.val and q.val < root.val:
-        return lowestCommonAncestor(root.left, p, q)
-    elif p.val > root.val and q.val > root.val:
-        return lowestCommonAncestor(root.right, p, q)
-    else:
-        return root
+class Solution:
+    def hammingWeight(self, n: int) -> int:
+        # Convert the integer to its binary representation and count the '1's
+        return bin(n).count('1')
+
+def hammingWeight(n: int) -> int:
+    return Solution().hammingWeight(n)

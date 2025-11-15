@@ -1,37 +1,39 @@
-Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
-An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
- 
+Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
+For example:
+
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28 
+...
+
+ 
 Example 1:
 
-Input: grid = [
- ["1","1","1","1","0"],
- ["1","1","0","1","0"],
- ["1","1","0","0","0"],
- ["0","0","0","0","0"]
-]
-Output: 1
+Input: columnNumber = 1
+Output: "A"
 
 Example 2:
 
-Input: grid = [
- ["1","1","0","0","0"],
- ["1","1","0","0","0"],
- ["0","0","1","0","0"],
- ["0","0","0","1","1"]
-]
-Output: 3
+Input: columnNumber = 28
+Output: "AB"
 
- 
+Example 3:
+
+Input: columnNumber = 701
+Output: "ZY"
+
+ 
 Constraints:
 
-m == grid.length
-n == grid[i].length
-1 <= m, n <= 300
-grid[i][j] is '0' or '1'.
+1 <= columnNumber <= 231 - 1
 
 
 Boilerplate code:
 ```python
-def numIslands(grid):
+def convertToTitle(columnNumber):
     ...
 ```

@@ -1,36 +1,30 @@
-Given the root of a binary tree and an integer targetSum, return the number of paths where the sum of the values along the path equals targetSum.
-The path does not need to start or end at the root or a leaf, but it must go downwards (i.e., traveling only from parent nodes to child nodes).
- 
+Given the root of a binary search tree, a target value, and an integer k, return the k values in the BST that are closest to the target. You may return the answer in any order.
+You are guaranteed to have only one unique set of k values in the BST that are closest to the target.
+ 
 Example 1:
 
-Input: root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8
-Output: 3
-Explanation: The paths that sum to 8 are shown.
+
+Input: root = [4,2,5,1,3], target = 3.714286, k = 2
+Output: [4,3]
 
 Example 2:
 
-Input: root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22
-Output: 3
+Input: root = [1], target = 0.000000, k = 1
+Output: [1]
 
- 
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 1000].
--109 <= Node.val <= 109
--1000 <= targetSum <= 1000
+The number of nodes in the tree is n.
+1 <= k <= n <= 104.
+0 <= Node.val <= 109
+-109 <= target <= 109
 
+ 
+Follow up: Assume that the BST is balanced. Could you solve it in less than O(n) runtime (where n = total nodes)?
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-result = 0
-
-def pathSum(root, sum):
+def closestKValues(root, target, k):
     ...
 ```

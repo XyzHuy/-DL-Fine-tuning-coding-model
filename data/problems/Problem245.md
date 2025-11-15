@@ -1,27 +1,24 @@
-Given a positive integer num, return true if num is a perfect square or false otherwise.
-A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itself.
-You must not use any built-in library function, such as sqrt.
- 
+Given an array of strings wordsDict and two strings that already exist in the array word1 and word2, return the shortest distance between the occurrence of these two words in the list.
+Note that word1 and word2 may be the same. It is guaranteed that they represent two individual words in the list.
+ 
 Example 1:
-
-Input: num = 16
-Output: true
-Explanation: We return true because 4 * 4 = 16 and 4 is an integer.
-
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "coding"
+Output: 1
 Example 2:
+Input: wordsDict = ["practice", "makes", "perfect", "coding", "makes"], word1 = "makes", word2 = "makes"
+Output: 3
 
-Input: num = 14
-Output: false
-Explanation: We return false because 3.742 * 3.742 = 14 and 3.742 is not an integer.
-
- 
+ 
 Constraints:
 
-1 <= num <= 231 - 1
+1 <= wordsDict.length <= 105
+1 <= wordsDict[i].length <= 10
+wordsDict[i] consists of lowercase English letters.
+word1 and word2 are in wordsDict.
 
 
 Boilerplate code:
 ```python
-def isPerfectSquare(num):
+def shortestWordDistance(wordsDict, word1, word2):
     ...
 ```

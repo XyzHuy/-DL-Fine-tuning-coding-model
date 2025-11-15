@@ -1,31 +1,45 @@
-There are n cities. Some of them are connected, while some are not. If city a is connected directly with city b, and city b is connected directly with city c, then city a is connected indirectly with city c.
-A province is a group of directly or indirectly connected cities and no other cities outside of the group.
-You are given an n x n matrix isConnected where isConnected[i][j] = 1 if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
-Return the total number of provinces.
- 
+Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s. Specifically:
+
+Each letter in pattern maps to exactly one unique word in s.
+Each unique word in s maps to exactly one letter in pattern.
+No two letters map to the same word, and no two words map to the same letter.
+
+ 
 Example 1:
 
-Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
-Output: 2
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+Explanation:
+The bijection can be established as:
+
+'a' maps to "dog".
+'b' maps to "cat".
+
 
 Example 2:
 
-Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]
-Output: 3
+Input: pattern = "abba", s = "dog cat cat fish"
+Output: false
 
- 
+Example 3:
+
+Input: pattern = "aaaa", s = "dog cat cat dog"
+Output: false
+
+ 
 Constraints:
 
-1 <= n <= 200
-n == isConnected.length
-n == isConnected[i].length
-isConnected[i][j] is 1 or 0.
-isConnected[i][i] == 1
-isConnected[i][j] == isConnected[j][i]
+1 <= pattern.length <= 300
+pattern contains only lower-case English letters.
+1 <= s.length <= 3000
+s contains only lowercase English letters and spaces ' '.
+s does not contain any leading or trailing spaces.
+All the words in s are separated by a single space.
 
 
 Boilerplate code:
 ```python
-def findCircleNum(M):
+def wordPattern(pattern, s):
     ...
 ```

@@ -1,44 +1,50 @@
-You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
-Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored. nums2 has a length of n.
- 
+We can scramble a string s to get a string t using the following algorithm:
+
+If the length of the string is 1, stop.
+If the length of the string is > 1, do the following:
+	
+Split the string into two non-empty substrings at a random index, i.e., if the string is s, divide it to x and y where s = x + y.
+Randomly decide to swap the two substrings or to keep them in the same order. i.e., after this step, s may become s = x + y or s = y + x.
+Apply step 1 recursively on each of the two substrings x and y.
+
+
+
+Given two strings s1 and s2 of the same length, return true if s2 is a scrambled string of s1, otherwise, return false.
+ 
 Example 1:
 
-Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
-Output: [1,2,2,3,5,6]
-Explanation: The arrays we are merging are [1,2,3] and [2,5,6].
-The result of the merge is [1,2,2,3,5,6] with the underlined elements coming from nums1.
+Input: s1 = "great", s2 = "rgeat"
+Output: true
+Explanation: One possible scenario applied on s1 is:
+"great" --> "gr/eat" // divide at random index.
+"gr/eat" --> "gr/eat" // random decision is not to swap the two substrings and keep them in order.
+"gr/eat" --> "g/r / e/at" // apply the same algorithm recursively on both substrings. divide at random index each of them.
+"g/r / e/at" --> "r/g / e/at" // random decision was to swap the first substring and to keep the second substring in the same order.
+"r/g / e/at" --> "r/g / e/ a/t" // again apply the algorithm recursively, divide "at" to "a/t".
+"r/g / e/ a/t" --> "r/g / e/ a/t" // random decision is to keep both substrings in the same order.
+The algorithm stops now, and the result string is "rgeat" which is s2.
+As one possible scenario led s1 to be scrambled to s2, we return true.
 
 Example 2:
 
-Input: nums1 = [1], m = 1, nums2 = [], n = 0
-Output: [1]
-Explanation: The arrays we are merging are [1] and [].
-The result of the merge is [1].
+Input: s1 = "abcde", s2 = "caebd"
+Output: false
 
 Example 3:
 
-Input: nums1 = [0], m = 0, nums2 = [1], n = 1
-Output: [1]
-Explanation: The arrays we are merging are [] and [1].
-The result of the merge is [1].
-Note that because m = 0, there are no elements in nums1. The 0 is only there to ensure the merge result can fit in nums1.
+Input: s1 = "a", s2 = "a"
+Output: true
 
- 
+ 
 Constraints:
 
-nums1.length == m + n
-nums2.length == n
-0 <= m, n <= 200
-1 <= m + n <= 200
--109 <= nums1[i], nums2[j] <= 109
-
- 
-Follow up: Can you come up with an algorithm that runs in O(m + n) time?
+s1.length == s2.length
+1 <= s1.length <= 30
+s1 and s2 consist of lowercase English letters.
 
 
 Boilerplate code:
 ```python
-def merge(nums1, m, nums2, n):
+def isScramble(s1, s2):
     ...
 ```

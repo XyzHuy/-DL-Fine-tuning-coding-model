@@ -1,22 +1,46 @@
-def spiralOrder( matrix):
-    """
-    :type matrix: List[List[int]]
-    :rtype: List[int]
-    """
-    if matrix is None or len(matrix) == 0:
-        return matrix
-    m, n = len(matrix), len(matrix[0])
-    return get_spiralOrder(matrix, 0, m - 1, 0, n - 1)
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def get_spiralOrder( matrix, r_start, r_end, c_start, c_end):
-    if r_start > r_end or c_start > c_end:
-        return []
-    elif r_start == r_end:
-        return matrix[r_start][c_start:c_end + 1]
-    elif c_start == c_end:
-        return [matrix[j][c_end] for j in range(r_start, r_end + 1)]
-    curr = matrix[r_start][c_start:c_end + 1] + [matrix[j][c_end] for j in range(r_start + 1, r_end)] +\
-            matrix[r_end][c_start:c_end + 1][::-1] +\
-            [matrix[j][c_start] for j in reversed(range(r_start + 1, r_end))]
-    res = curr + get_spiralOrder(matrix, r_start + 1, r_end - 1, c_start + 1, c_end - 1)
-    return res
+
+from typing import List
+
+class Solution:
+    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+        if not matrix or not matrix[0]:
+            return []
+        
+        result = []
+        top, bottom = 0, len(matrix) - 1
+        left, right = 0, len(matrix[0]) - 1
+        
+        while top <= bottom and left <= right:
+            # Traverse from left to right along the top row
+            for i in range(left, right + 1):
+                result.append(matrix[top][i])
+            top += 1
+            
+            # Traverse from top to bottom along the right column
+            for i in range(top, bottom + 1):
+                result.append(matrix[i][right])
+            right -= 1
+            
+            if top <= bottom:
+                # Traverse from right to left along the bottom row
+                for i in range(right, left - 1, -1):
+                    result.append(matrix[bottom][i])
+                bottom -= 1
+            
+            if left <= right:
+                # Traverse from bottom to top along the left column
+                for i in range(bottom, top - 1, -1):
+                    result.append(matrix[i][left])
+                left += 1
+        
+        return result
+
+def spiralOrder(matrix: List[List[int]]) -> List[int]:
+    return Solution().spiralOrder(matrix)

@@ -1,23 +1,37 @@
-Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei), find the minimum number of conference rooms required.
-
+Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+ 
 Example 1:
 
-Input: [[0, 30],[5, 10],[15, 20]]
-Output: 2
+Input: grid = [
+  ["1","1","1","1","0"],
+  ["1","1","0","1","0"],
+  ["1","1","0","0","0"],
+  ["0","0","0","0","0"]
+]
+Output: 1
+
 Example 2:
 
-Input: [[7,10],[2,4]]
-Output: 1
+Input: grid = [
+  ["1","1","0","0","0"],
+  ["1","1","0","0","0"],
+  ["0","0","1","0","0"],
+  ["0","0","0","1","1"]
+]
+Output: 3
+
+ 
+Constraints:
+
+m == grid.length
+n == grid[i].length
+1 <= m, n <= 300
+grid[i][j] is '0' or '1'.
 
 
 Boilerplate code:
 ```python
-# Definition for an interval.
-class Interval(object):
-    def __init__(self, s=0, e=0):
-        self.start = s
-        self.end = e
-
-def minMeetingRooms(intervals):
+def numIslands(grid):
     ...
 ```

@@ -1,48 +1,30 @@
-You are given an integer array nums with no duplicates. A maximum binary tree can be built recursively from nums using the following algorithm:
-
-Create a root node whose value is the maximum value in nums.
-Recursively build the left subtree on the subarray prefix to the left of the maximum value.
-Recursively build the right subtree on the subarray suffix to the right of the maximum value.
-
-Return the maximum binary tree built from nums.
- 
+Given the root of a binary tree, return the length of the longest consecutive sequence path.
+A consecutive sequence path is a path where the values increase by one along the path.
+Note that the path can start at any node in the tree, and you cannot go from a node to its parent in the path.
+ 
 Example 1:
 
-Input: nums = [3,2,1,6,0,5]
-Output: [6,3,5,null,2,0,null,null,1]
-Explanation: The recursive calls are as follow:
-- The largest value in [3,2,1,6,0,5] is 6. Left prefix is [3,2,1] and right suffix is [0,5].
- - The largest value in [3,2,1] is 3. Left prefix is [] and right suffix is [2,1].
- - Empty array, so no child.
- - The largest value in [2,1] is 2. Left prefix is [] and right suffix is [1].
- - Empty array, so no child.
- - Only one element, so child is a node with value 1.
- - The largest value in [0,5] is 5. Left prefix is [0] and right suffix is [].
- - Only one element, so child is a node with value 0.
- - Empty array, so no child.
+
+Input: root = [1,null,3,2,4,null,null,null,5]
+Output: 3
+Explanation: Longest consecutive sequence path is 3-4-5, so return 3.
 
 Example 2:
 
-Input: nums = [3,2,1]
-Output: [3,null,2,null,1]
 
- 
+Input: root = [2,null,3,2,null,1]
+Output: 2
+Explanation: Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
+
+ 
 Constraints:
 
-1 <= nums.length <= 1000
-0 <= nums[i] <= 1000
-All integers in nums are unique.
+The number of nodes in the tree is in the range [1, 3 * 104].
+-3 * 104 <= Node.val <= 3 * 104
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def constructMaximumBinaryTree(nums):
+def longestConsecutive(root):
     ...
 ```

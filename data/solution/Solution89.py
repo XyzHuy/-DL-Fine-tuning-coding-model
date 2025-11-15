@@ -1,17 +1,27 @@
-def subsetsWithDup(nums):
-    nums.sort()
-    res = [[]]
-    begin = 0
-    for index in range(len(nums)):
-        if index == 0 or nums[index] != nums[index - 1]:
-            # generate all
-            begin = 0
-        size = len(res)
-        # use existing subsets to generate new subsets
-        for j in range(begin, size):
-            curr = list(res[j])
-            curr.append(nums[index])
-            res.append(curr)
-        # avoid duplicate subsets
-        begin = size
-    return res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def grayCode(self, n: int) -> List[int]:
+        if n == 0:
+            return [0]
+        
+        # Start with the base case for n = 1
+        gray = [0, 1]
+        
+        # Generate the sequence iteratively for n > 1
+        for i in range(1, n):
+            # Reflect the current sequence and prefix with 1 (i.e., add 2^i)
+            gray += [x + (1 << i) for x in reversed(gray)]
+        
+        return gray
+
+def grayCode(n: int) -> List[int]:
+    return Solution().grayCode(n)

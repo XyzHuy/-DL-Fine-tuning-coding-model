@@ -1,29 +1,27 @@
-Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
-Since the result may be very large, so you need to return a string instead of an integer.
- 
+Given an integer array nums, return the maximum difference between two successive elements in its sorted form. If the array contains less than two elements, return 0.
+You must write an algorithm that runs in linear time and uses linear extra space.
+ 
 Example 1:
 
-Input: nums = [10,2]
-Output: "210"
+Input: nums = [3,6,9,1]
+Output: 3
+Explanation: The sorted form of the array is [1,3,6,9], either (3,6) or (6,9) has the maximum difference 3.
 
 Example 2:
 
-Input: nums = [3,30,34,5,9]
-Output: "9534330"
+Input: nums = [10]
+Output: 0
+Explanation: The array contains less than 2 elements, therefore return 0.
 
- 
+ 
 Constraints:
 
-1 <= nums.length <= 100
+1 <= nums.length <= 105
 0 <= nums[i] <= 109
 
 
 Boilerplate code:
 ```python
-class LargerNumKey(str):
-    def __lt__(x, y):
-        return x + y > y + x
-
-def largestNumber(nums):
+def maximumGap(nums):
     ...
 ```

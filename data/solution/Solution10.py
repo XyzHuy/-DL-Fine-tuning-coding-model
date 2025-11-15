@@ -1,25 +1,30 @@
-def isMatch( s, p):
-    """
-    :type s: str
-    :type p: str
-    :rtype: bool
-    """
-    if s == p:
-        return True
-    m, n = len(s), len(p)
-    dp = [[False] * (n + 1) for _ in range(m + 1)]
-    dp[0][0] = True
-    for j in range(1, n):
-        if p[j] == '*' and dp[0][j - 1]:
-            dp[0][j + 1] = True
-    # print dp
-    for i in range(m):
-        for j in range(n):
-            if p[j] == '.' or p[j] == s[i]:
-                dp[i + 1][j + 1] = dp[i][j]
-            elif p[j] == '*':
-                if p[j - 1] != s[i] and p[j - 1] != '.':
-                    dp[i + 1][j + 1] = dp[i + 1][j - 1]
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def isMatch(self, s: str, p: str) -> bool:
+        # Dynamic programming table
+        dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
+        
+        # Empty pattern matches empty string
+        dp[-1][-1] = True
+        
+        # Fill the table from bottom-right to top-left
+        for i in range(len(s), -1, -1):
+            for j in range(len(p) - 1, -1, -1):
+                first_match = (i < len(s)) and p[j] in {s[i], '.'}
+                
+                if j+1 < len(p) and p[j+1] == '*':
+                    dp[i][j] = dp[i][j+2] or (first_match and dp[i+1][j])
                 else:
-                    dp[i + 1][j + 1] = dp[i + 1][j] or dp[i][j + 1] or dp[i + 1][j - 1]
-    return dp[m][n]
+                    dp[i][j] = first_match and dp[i+1][j+1]
+        
+        return dp[0][0]
+
+def isMatch(s: str, p: str) -> bool:
+    return Solution().isMatch(s, p)

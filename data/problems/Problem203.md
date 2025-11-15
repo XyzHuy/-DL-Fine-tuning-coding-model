@@ -1,16 +1,31 @@
-Given an array of n integers nums and a target, find the number of index triplets i, j, k with 0 <= i < j < k < n that satisfy the condition nums[i] + nums[j] + nums[k] < target.
+Given the head of a linked list and an integer val, remove all the nodes of the linked list that has Node.val == val, and return the new head.
+ 
+Example 1:
 
-Example:
 
-Input: nums = [-2,0,1,3], and target = 2
-Output: 2
-Explanation: Because there are two triplets which sums are less than 2:
-             [-2,0,1]
-             [-2,0,3]
-Follow up: Could you solve it in O(n2) runtime?
+Input: head = [1,2,6,3,4,5,6], val = 6
+Output: [1,2,3,4,5]
+
+Example 2:
+
+Input: head = [], val = 1
+Output: []
+
+Example 3:
+
+Input: head = [7,7,7,7], val = 7
+Output: []
+
+ 
+Constraints:
+
+The number of nodes in the list is in the range [0, 104].
+1 <= Node.val <= 50
+0 <= val <= 50
+
 
 Boilerplate code:
 ```python
-def threeSumSmaller(nums, target):
+def removeElements(head, val):
     ...
 ```

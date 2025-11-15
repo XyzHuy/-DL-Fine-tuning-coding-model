@@ -1,6 +1,6 @@
 Given two integers n and k, return all possible combinations of k numbers chosen from the range [1, n].
 You may return the answer in any order.
- 
+ 
 Example 1:
 
 Input: n = 4, k = 2
@@ -14,7 +14,7 @@ Input: n = 1, k = 1
 Output: [[1]]
 Explanation: There is 1 choose 1 = 1 total combination.
 
- 
+ 
 Constraints:
 
 1 <= n <= 20
@@ -23,6 +23,6 @@ Constraints:
 
 Boilerplate code:
 ```python
-def combine(self, n, k):
+def combine(n, k):
     ...
 ```

@@ -1,40 +1,26 @@
-Given an Android 3x3 key lock screen and two integers m and n, where 1 ≤ m ≤ n ≤ 9, count the total number of unlock patterns of the Android lock screen, which consist of minimum of m keys and maximum n keys.
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+ 
+Example 1:
 
-Rules for a valid pattern:
+Input: s = "anagram", t = "nagaram"
+Output: true
 
-Each pattern must connect at least m keys and at most n keys.
-All the keys must be distinct.
-If the line connecting two consecutive keys in the pattern passes through any other keys, the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.
-The order of keys used matters.
+Example 2:
 
-Explanation:
+Input: s = "rat", t = "car"
+Output: false
 
-| 1 | 2 | 3 |
-| 4 | 5 | 6 |
-| 7 | 8 | 9 |
-Invalid move: 4 - 1 - 3 - 6
-Line 1 - 3 passes through key 2 which had not been selected in the pattern.
+ 
+Constraints:
 
-Invalid move: 4 - 1 - 9 - 2
-Line 1 - 9 passes through key 5 which had not been selected in the pattern.
+1 <= s.length, t.length <= 5 * 104
+s and t consist of lowercase English letters.
 
-
-Valid move: 2 - 4 - 1 - 3 - 6
-Line 1 - 3 is valid because it passes through key 2, which had been selected in the pattern
-
-Valid move: 6 - 5 - 4 - 1 - 9 - 2
-Line 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.
-
- 
-
-Example:
-
-Input: m = 1, n = 1
-Output: 9
-
+ 
+Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 
 Boilerplate code:
 ```python
-def numberOfPatterns( m, n):
+def isAnagram(s, t):
     ...
 ```

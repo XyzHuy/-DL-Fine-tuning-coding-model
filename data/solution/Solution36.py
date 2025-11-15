@@ -1,17 +1,41 @@
-def isValidSudoku(board):
-    vset = [0] * 9
-    hset = [0] * 9
-    bset = [0] * 9
-    for i in range(9):
-        for j in range(9):
-            curr = board[i][j]
-            if curr != '.':
-                index = 1 << (ord(curr) - ord('0'))
-                if (hset[i] & index) > 0 or\
-                                (vset[j] & index) > 0 or\
-                                (bset[(i / 3) * 3 + j / 3] & index) > 0:
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
+        def is_valid_block(block):
+            block = [num for num in block if num != '.']
+            return len(block) == len(set(block))
+        
+        # Check rows
+        for row in board:
+            if not is_valid_block(row):
+                return False
+        
+        # Check columns
+        for col in range(9):
+            if not is_valid_block([board[row][col] for row in range(9)]):
+                return False
+        
+        # Check 3x3 sub-boxes
+        for box_row in range(0, 9, 3):
+            for box_col in range(0, 9, 3):
+                block = [
+                    board[r][c]
+                    for r in range(box_row, box_row + 3)
+                    for c in range(box_col, box_col + 3)
+                ]
+                if not is_valid_block(block):
                     return False
-                hset[i] |= index
-                vset[j] |= index
-                bset[(i / 3) * 3 + j / 3] |= index
-    return True
+        
+        return True
+
+def isValidSudoku(board: List[List[str]]) -> bool:
+    return Solution().isValidSudoku(board)

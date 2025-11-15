@@ -1,25 +1,34 @@
-Given an integer array nums, return the maximum result of nums[i] XOR nums[j], where 0 <= i <= j < n.
- 
+There is a new alien language that uses the English alphabet. However, the order of the letters is unknown to you.
+You are given a list of strings words from the alien language's dictionary. Now it is claimed that the strings in words are sorted lexicographically by the rules of this new language.
+If this claim is incorrect, and the given arrangement of string in words cannot correspond to any order of letters, return "".
+Otherwise, return a string of the unique letters in the new alien language sorted in lexicographically increasing order by the new language's rules. If there are multiple solutions, return any of them.
+ 
 Example 1:
 
-Input: nums = [3,10,5,25,2,8]
-Output: 28
-Explanation: The maximum result is 5 XOR 25 = 28.
+Input: words = ["wrt","wrf","er","ett","rftt"]
+Output: "wertf"
 
 Example 2:
 
-Input: nums = [14,70,53,83,49,91,36,80,92,51,66,70]
-Output: 127
+Input: words = ["z","x"]
+Output: "zx"
 
- 
+Example 3:
+
+Input: words = ["z","x","z"]
+Output: ""
+Explanation: The order is invalid, so return "".
+
+ 
 Constraints:
 
-1 <= nums.length <= 2 * 105
-0 <= nums[i] <= 231 - 1
+1 <= words.length <= 100
+1 <= words[i].length <= 100
+words[i] consists of only lowercase English letters.
 
 
 Boilerplate code:
 ```python
-def findMaximumXOR(nums):
+def alienOrder(words):
     ...
 ```

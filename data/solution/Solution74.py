@@ -1,19 +1,23 @@
-def searchMatrix(matrix, target):
-    # binary search
-    try:
-        ls_row, ls_col = len(matrix), len(matrix[0])
-    except:
-        return False
-    if target < matrix[0][0] or target > matrix[-1][-1]:
-        return False
-    begin, end = 0, ls_row * ls_col - 1
-    while begin <= end:
-        mid = (begin + end) / 2
-        row, col = mid / ls_col, mid % ls_col
-        if matrix[row][col] == target:
-            return True
-        elif matrix[row][col] > target:
-            end = mid - 1
-        else:
-            begin = mid + 1
-    return False
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        m, n = len(matrix), len(matrix[0])
+        left, right = 0, m * n - 1
+        while left < right:
+            mid = (left + right) >> 1
+            x, y = divmod(mid, n)
+            if matrix[x][y] >= target:
+                right = mid
+            else:
+                left = mid + 1
+        return matrix[left // n][left % n] == target
+
+def searchMatrix(matrix: List[List[int]], target: int) -> bool:
+    return Solution().searchMatrix(matrix, target)

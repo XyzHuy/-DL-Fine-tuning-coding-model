@@ -1,42 +1,26 @@
-You are given a sorted unique integer array nums.
-A range [a,b] is the set of all integers from a to b (inclusive).
-Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
-Each range [a,b] in the list should be output as:
-
-"a->b" if a != b
-"a" if a == b
-
- 
+Given a character array s, reverse the order of the words.
+A word is defined as a sequence of non-space characters. The words in s will be separated by a single space.
+Your code must solve the problem in-place, i.e. without allocating extra space.
+ 
 Example 1:
-
-Input: nums = [0,1,2,4,5,7]
-Output: ["0->2","4->5","7"]
-Explanation: The ranges are:
-[0,2] --> "0->2"
-[4,5] --> "4->5"
-[7,7] --> "7"
-
+Input: s = ["t","h","e"," ","s","k","y"," ","i","s"," ","b","l","u","e"]
+Output: ["b","l","u","e"," ","i","s"," ","s","k","y"," ","t","h","e"]
 Example 2:
+Input: s = ["a"]
+Output: ["a"]
 
-Input: nums = [0,2,3,4,6,8,9]
-Output: ["0","2->4","6","8->9"]
-Explanation: The ranges are:
-[0,0] --> "0"
-[2,4] --> "2->4"
-[6,6] --> "6"
-[8,9] --> "8->9"
-
- 
+ 
 Constraints:
 
-0 <= nums.length <= 20
--231 <= nums[i] <= 231 - 1
-All the values of nums are unique.
-nums is sorted in ascending order.
+1 <= s.length <= 105
+s[i] is an English letter (uppercase or lowercase), digit, or space ' '.
+There is at least one word in s.
+s does not contain leading or trailing spaces.
+All the words in s are guaranteed to be separated by a single space.
 
 
 Boilerplate code:
 ```python
-def summaryRanges(nums):
+def reverseWords(s):
     ...
 ```

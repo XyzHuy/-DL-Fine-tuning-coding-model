@@ -1,29 +1,41 @@
-Given an integer n, return the number of prime numbers that are strictly less than n.
- 
+Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+For example:
+
+A -> 1
+B -> 2
+C -> 3
+...
+Z -> 26
+AA -> 27
+AB -> 28 
+...
+
+ 
 Example 1:
 
-Input: n = 10
-Output: 4
-Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+Input: columnTitle = "A"
+Output: 1
 
 Example 2:
 
-Input: n = 0
-Output: 0
+Input: columnTitle = "AB"
+Output: 28
 
 Example 3:
 
-Input: n = 1
-Output: 0
+Input: columnTitle = "ZY"
+Output: 701
 
- 
+ 
 Constraints:
 
-0 <= n <= 5 * 106
+1 <= columnTitle.length <= 7
+columnTitle consists only of uppercase English letters.
+columnTitle is in the range ["A", "FXSHRXW"].
 
 
 Boilerplate code:
 ```python
-def countPrimes(n):
+def titleToNumber(columnTitle):
     ...
 ```

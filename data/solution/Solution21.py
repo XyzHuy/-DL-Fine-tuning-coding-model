@@ -1,24 +1,49 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def mergeTwoLists(l1, l2):
-    # dummy head
-    pos = dummyHead = ListNode(-1)
-    while l1 is not None and l2 is not None:
-        if l1.val <= l2.val:
-            pos.next = l1
-            l1 = l1.next
+
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+def list_node(values: list):
+    if not values:
+        return None
+    head = ListNode(values[0])
+    p = head
+    for val in values[1:]:
+        node = ListNode(val)
+        p.next = node
+        p = node
+    return head
+
+def is_same_list(p1, p2):
+    if p1 is None and p2 is None:
+        return True
+    if not p1 or not p2:
+        return False
+    return p1.val == p2.val and is_same_list(p1.next, p2.next)
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        if list1 is None or list2 is None:
+            return list1 or list2
+        if list1.val <= list2.val:
+            list1.next = self.mergeTwoLists(list1.next, list2)
+            return list1
         else:
-            pos.next = l2
-            l2 = l2.next
-        pos = pos.next
-    # merge residual l1
-    if l1 is not None:
-        pos.next = l1
-    # merge residual l2
-    if l2 is not None:
-        pos.next = l2
-    return dummyHead.next
+            list2.next = self.mergeTwoLists(list1, list2.next)
+            return list2
+
+def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+    return Solution().mergeTwoLists(list1, list2)

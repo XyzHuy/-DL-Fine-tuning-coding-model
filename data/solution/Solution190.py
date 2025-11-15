@@ -1,32 +1,20 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def isPalindrome(head):
-    # p2 is 2 times faster than p3
-    # p1 and pre is used to reverse the first half of the list
-    # so when the first while is over
-    # p1 is in the middle
-    # p3 is in middle + 1
-    # p2 is in the end
-    if head is None:
-        return True
-    p1, p2 = head, head
-    p3, pre = p1.next, p1
-    while p2.next is not None and p2.next.next is not None:
-        p2 = p2.next.next
-        pre = p1
-        p1 = p3
-        p3 = p3.next
-        p1.next = pre
-    if p2.next is None:
-        p1 = p1.next
 
-    while p3 is not None:
-        if p1.val != p3.val:
-            return False
-        p1 = p1.next
-        p3 = p3.next
-    return True
+class Solution:
+    def reverseBits(self, n: int) -> int:
+        # Convert the integer to a binary string, remove the '0b' prefix, and pad with zeros to ensure it's 32 bits
+        binary_str = format(n, '032b')
+        # Reverse the binary string
+        reversed_binary_str = binary_str[::-1]
+        # Convert the reversed binary string back to an integer
+        reversed_int = int(reversed_binary_str, 2)
+        return reversed_int
+
+def reverseBits(n: int) -> int:
+    return Solution().reverseBits(n)

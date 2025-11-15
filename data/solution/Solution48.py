@@ -1,19 +1,27 @@
-def rotate(matrix):
-    """
-    :type matrix: List[List[int]]
-    :rtype: void Do not return anything, modify matrix in-place instead.
-    """
-    # rotate from outside to inside
-    if matrix is None or len(matrix) == 1:
-        return
-    ls = len(matrix)
-    for i in range(ls / 2):
-        # border
-        begin, end = i, ls - 1 - i
-        for k in range(ls - 2 * i - 1):
-            temp = matrix[end - k][begin]
-            matrix[end - k][begin] = matrix[end][end - k]
-            matrix[end][end - k] = matrix[begin + k][end]
-            matrix[begin + k][end] = matrix[begin][begin + k]
-            matrix[begin][begin + k] = temp
-    return
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        n = len(matrix)
+        # Transpose the matrix
+        for i in range(n):
+            for j in range(i, n):
+                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+        
+        # Reverse each row
+        for i in range(n):
+            matrix[i].reverse()
+
+def rotate(matrix: List[List[int]]) -> None:
+    return Solution().rotate(matrix)

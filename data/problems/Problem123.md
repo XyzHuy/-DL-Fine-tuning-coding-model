@@ -1,38 +1,35 @@
-A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. A node can only appear in the sequence at most once. Note that the path does not need to pass through the root.
-The path sum of a path is the sum of the node's values in the path.
-Given the root of a binary tree, return the maximum path sum of any non-empty path.
- 
+You are given an array prices where prices[i] is the price of a given stock on the ith day.
+Find the maximum profit you can achieve. You may complete at most two transactions.
+Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+ 
 Example 1:
 
-Input: root = [1,2,3]
+Input: prices = [3,3,5,0,0,3,1,4]
 Output: 6
-Explanation: The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6.
-
+Explanation: Buy on day 4 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
+Then buy on day 7 (price = 1) and sell on day 8 (price = 4), profit = 4-1 = 3.
 Example 2:
 
-Input: root = [-10,9,20,null,null,15,7]
-Output: 42
-Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 42.
+Input: prices = [1,2,3,4,5]
+Output: 4
+Explanation: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+Note that you cannot buy on day 1, buy on day 2 and sell them later, as you are engaging multiple transactions at the same time. You must sell before buying again.
 
- 
+Example 3:
+
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: In this case, no transaction is done, i.e. max profit = 0.
+
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [1, 3 * 104].
--1000 <= Node.val <= 1000
+1 <= prices.length <= 105
+0 <= prices[i] <= 105
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-result = -2147483647
-
-def maxPathSum(self, root):
+def maxProfit(prices):
     ...
 ```

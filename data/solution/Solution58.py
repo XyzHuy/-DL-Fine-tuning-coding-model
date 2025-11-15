@@ -1,13 +1,17 @@
-def lengthOfLastWord(s):
-    """
-    :type s: str
-    :rtype: int
-    """
-    if len(s) == 0:
-        return 0
-    temp = s.split(' ')
-    temp = [t for t in temp if len(t) > 0]
-    if len(temp) == 0:
-        return 0
-    else:
-        return len(temp[-1])
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        # Strip any leading or trailing spaces from the string
+        s = s.strip()
+        # Split the string into words
+        words = s.split(' ')
+        # Return the length of the last word
+        return len(words[-1])
+
+def lengthOfLastWord(s: str) -> int:
+    return Solution().lengthOfLastWord(s)

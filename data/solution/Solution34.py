@@ -1,27 +1,40 @@
-def searchRange(nums, target):
-    """
-    :type nums: List[int]
-    :type target: int
-    :rtype: List[int]
-    """
-    length = len(nums)
-    if length == 0:
-        return [-1, -1]
-    min = 0
-    max = length - 1
-    while min <= max:
-        pos = (min + max) / 2
-        if nums[pos] > target:
-            max = pos - 1
-        elif nums[pos] < target:
-            min = pos + 1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        def find_left(nums, target):
+            left, right = 0, len(nums) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return left
+
+        def find_right(nums, target):
+            left, right = 0, len(nums) - 1
+            while left <= right:
+                mid = (left + right) // 2
+                if nums[mid] <= target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return right
+
+        left_index = find_left(nums, target)
+        right_index = find_right(nums, target)
+
+        if left_index <= right_index and 0 <= right_index < len(nums) and nums[left_index] == target:
+            return [left_index, right_index]
         else:
-            # when nums[pos] == target
-            # find the min and max
-            for i in range(min, max + 1):
-                if nums[i] == target:
-                    if min < i and nums[min] != nums[i]:
-                        min = i
-                    max = i
-            return [min, max]
-    return [-1, -1]
+            return [-1, -1]
+
+def searchRange(nums: List[int], target: int) -> List[int]:
+    return Solution().searchRange(nums, target)

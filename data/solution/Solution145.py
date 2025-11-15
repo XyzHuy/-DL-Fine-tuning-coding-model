@@ -1,24 +1,67 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def insertionSortList(head):
-    """
-    :type head: ListNode
-    :rtype: ListNode
-    """
-    if head is None:
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def tree_node(values: list):
+    if not values:
         return None
-    helper = ListNode(-1000)
-    pre, curr = helper, head
-    while curr is not None:
-        next_step = curr.next
-        while pre.next and pre.next.val < curr.val:
-            pre = pre.next
-        curr.next = pre.next
-        pre.next = curr
-        pre = helper
-        curr = next_step
-    return helper.next
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
+    return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root:
+            return []
+        
+        result = []
+        stack = [root]
+        while stack:
+            node = stack.pop()
+            result.append(node.val)
+            if node.left:
+                stack.append(node.left)
+            if node.right:
+                stack.append(node.right)
+        
+        return result[::-1]
+
+def postorderTraversal(root: Optional[TreeNode]) -> List[int]:
+    return Solution().postorderTraversal(root)

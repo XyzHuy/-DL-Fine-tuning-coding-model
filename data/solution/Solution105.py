@@ -1,29 +1,72 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-def buildTree(inorder, postorder):
-    """
-    :type inorder: List[int]
-    :type postorder: List[int]
-    :rtype: TreeNode
-    """
-    n = len(inorder)
-    inOrderMap = {inorder[i]: i for i in range(n)}
-    return buildTreeUtil(inorder, postorder, inOrderMap, 0, n - 1, 0, n - 1)
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-def buildTreeUtil(inorder, postorder, inOrderMap, pStart, pEnd, iStart, iEnd):
-    if pStart > pEnd or iStart > iEnd:
+def tree_node(values: list):
+    if not values:
         return None
-
-    root = TreeNode(postorder[pEnd])
-    rootIdx = inOrderMap[root.val]
-    root.left = buildTreeUtil(inorder, postorder, inOrderMap, pStart, pStart + rootIdx - iStart - 1, iStart,
-                                    rootIdx - 1)
-    root.right = buildTreeUtil(inorder, postorder, inOrderMap, pStart + rootIdx - iStart, pEnd - 1, rootIdx + 1,
-                                    iEnd)
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
+            queue.append(node.left)
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
+            queue.append(node.right)
+        i += 1
     return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+from typing import List, Optional
+
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        if not preorder or not inorder:
+            return None
+        
+        # The first element in preorder is the root
+        root_val = preorder[0]
+        root = TreeNode(root_val)
+        
+        # Find the index of the root in inorder
+        mid = inorder.index(root_val)
+        
+        # Recursively build the left subtree
+        root.left = self.buildTree(preorder[1:mid+1], inorder[:mid])
+        
+        # Recursively build the right subtree
+        root.right = self.buildTree(preorder[mid+1:], inorder[mid+1:])
+        
+        return root
+
+def buildTree(preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+    return Solution().buildTree(preorder, inorder)

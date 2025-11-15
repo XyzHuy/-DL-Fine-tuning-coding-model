@@ -2,8 +2,9 @@ You are given an integer array height of length n. There are n vertical lines dr
 Find two lines that together with the x-axis form a container, such that the container contains the most water.
 Return the maximum amount of water a container can store.
 Notice that you may not slant the container.
- 
+ 
 Example 1:
+
 
 Input: height = [1,8,6,2,5,4,8,3,7]
 Output: 49
@@ -14,7 +15,7 @@ Example 2:
 Input: height = [1,1]
 Output: 1
 
- 
+ 
 Constraints:
 
 n == height.length
@@ -24,6 +25,6 @@ n == height.length
 
 Boilerplate code:
 ```python
-def maxArea(height: list[int]) -> int:
+def maxArea(height):
     ...
 ```

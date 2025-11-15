@@ -1,25 +1,22 @@
-Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-Note that you must do this in-place without making a copy of the array.
- 
+You are given a string s. You can convert s to a palindrome by adding characters in front of it.
+Return the shortest palindrome you can find by performing this transformation.
+ 
 Example 1:
-Input: nums = [0,1,0,3,12]
-Output: [1,3,12,0,0]
+Input: s = "aacecaaa"
+Output: "aaacecaaa"
 Example 2:
-Input: nums = [0]
-Output: [0]
+Input: s = "abcd"
+Output: "dcbabcd"
 
- 
+ 
 Constraints:
 
-1 <= nums.length <= 104
--231 <= nums[i] <= 231 - 1
-
- 
-Follow up: Could you minimize the total number of operations done?
+0 <= s.length <= 5 * 104
+s consists of lowercase English letters only.
 
 
 Boilerplate code:
 ```python
-def moveZeroes(nums):
+def shortestPalindrome(s):
     ...
 ```

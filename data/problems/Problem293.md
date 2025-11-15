@@ -1,35 +1,26 @@
-Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
-A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
- 
+You are playing a Flip Game with your friend.
+You are given a string currentState that contains only '+' and '-'. You and your friend take turns to flip two consecutive "++" into "--". The game ends when a person can no longer make a move, and therefore the other person will be the winner.
+Return all possible states of the string currentState after one valid move. You may return the answer in any order. If there is no valid move, return an empty list [].
+ 
 Example 1:
 
-Input: root = [3,4,5,1,2], subRoot = [4,1,2]
-Output: true
+Input: currentState = "++++"
+Output: ["--++","+--+","++--"]
 
 Example 2:
 
-Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2]
-Output: false
+Input: currentState = "+"
+Output: []
 
- 
+ 
 Constraints:
 
-The number of nodes in the root tree is in the range [1, 2000].
-The number of nodes in the subRoot tree is in the range [1, 1000].
--104 <= root.val <= 104
--104 <= subRoot.val <= 104
+1 <= currentState.length <= 500
+currentState[i] is either '+' or '-'.
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-def isSubtree(s, t):
+def generatePossibleNextMoves(currentState):
     ...
 ```

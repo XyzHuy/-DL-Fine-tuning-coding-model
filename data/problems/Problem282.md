@@ -1,34 +1,34 @@
-Winter is coming! During the contest, your first job is to design a standard heater with a fixed warm radius to warm all the houses.
-Every house can be warmed, as long as the house is within the heater's warm radius range. 
-Given the positions of houses and heaters on a horizontal line, return the minimum radius standard of heaters so that those heaters could cover all houses.
-Notice that all the heaters follow your radius standard, and the warm radius will be the same.
- 
+Given a string num that contains only digits and an integer target, return all possibilities to insert the binary operators '+', '-', and/or '*' between the digits of num so that the resultant expression evaluates to the target value.
+Note that operands in the returned expressions should not contain leading zeros.
+ 
 Example 1:
 
-Input: houses = [1,2,3], heaters = [2]
-Output: 1
-Explanation: The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed.
+Input: num = "123", target = 6
+Output: ["1*2*3","1+2+3"]
+Explanation: Both "1*2*3" and "1+2+3" evaluate to 6.
 
 Example 2:
 
-Input: houses = [1,2,3,4], heaters = [1,4]
-Output: 1
-Explanation: The two heaters were placed at positions 1 and 4. We need to use a radius 1 standard, then all the houses can be warmed.
+Input: num = "232", target = 8
+Output: ["2*3+2","2+3*2"]
+Explanation: Both "2*3+2" and "2+3*2" evaluate to 8.
 
 Example 3:
 
-Input: houses = [1,5], heaters = [2]
-Output: 3
+Input: num = "3456237490", target = 9191
+Output: []
+Explanation: There are no expressions that can be created from "3456237490" to evaluate to 9191.
 
- 
+ 
 Constraints:
 
-1 <= houses.length, heaters.length <= 3 * 104
-1 <= houses[i], heaters[i] <= 109
+1 <= num.length <= 10
+num consists of only digits.
+-231 <= target <= 231 - 1
 
 
 Boilerplate code:
 ```python
-def findRadius(houses, heaters):
+def addOperators(num, target):
     ...
 ```

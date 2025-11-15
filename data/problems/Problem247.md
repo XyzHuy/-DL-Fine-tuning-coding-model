@@ -1,21 +1,21 @@
-Given a non-negative integer represented as non-empty a singly linked list of digits, plus one to the integer.
+Given an integer n, return all the strobogrammatic numbers that are of length n. You may return the answer in any order.
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+ 
+Example 1:
+Input: n = 2
+Output: ["11","69","88","96"]
+Example 2:
+Input: n = 1
+Output: ["0","1","8"]
 
-You may assume the integer do not contain any leading zero, except the number 0 itself.
+ 
+Constraints:
 
-The digits are stored such that the most significant digit is at the head of the list.
+1 <= n <= 14
 
-Example :
-
-Input: [1,2,3]
-Output: [1,2,4]
 
 Boilerplate code:
 ```python
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-def plusOne(head):
+def findStrobogrammatic(n):
     ...
 ```

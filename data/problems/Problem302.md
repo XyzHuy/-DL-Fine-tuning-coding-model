@@ -1,30 +1,34 @@
-Given an unsorted array of integers nums, return the length of the longest continuous increasing subsequence (i.e. subarray). The subsequence must be strictly increasing.
-A continuous increasing subsequence is defined by two indices l and r (l < r) such that it is [nums[l], nums[l + 1], ..., nums[r - 1], nums[r]] and for each l <= i < r, nums[i] < nums[i + 1].
- 
+You are given an m x n binary matrix image where 0 represents a white pixel and 1 represents a black pixel.
+The black pixels are connected (i.e., there is only one black region). Pixels are connected horizontally and vertically.
+Given two integers x and y that represents the location of one of the black pixels, return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
+You must write an algorithm with less than O(mn) runtime complexity
+ 
 Example 1:
 
-Input: nums = [1,3,5,4,7]
-Output: 3
-Explanation: The longest continuous increasing subsequence is [1,3,5] with length 3.
-Even though [1,3,5,7] is an increasing subsequence, it is not continuous as elements 5 and 7 are separated by element
-4.
+
+Input: image = [["0","0","1","0"],["0","1","1","0"],["0","1","0","0"]], x = 0, y = 2
+Output: 6
 
 Example 2:
 
-Input: nums = [2,2,2,2,2]
+Input: image = [["1"]], x = 0, y = 0
 Output: 1
-Explanation: The longest continuous increasing subsequence is [2] with length 1. Note that it must be strictly
-increasing.
 
- 
+ 
 Constraints:
 
-1 <= nums.length <= 104
--109 <= nums[i] <= 109
+m == image.length
+n == image[i].length
+1 <= m, n <= 100
+image[i][j] is either '0' or '1'.
+0 <= x < m
+0 <= y < n
+image[x][y] == '1'.
+The black pixels in the image only form one component.
 
 
 Boilerplate code:
 ```python
-def findLengthOfLCIS(nums):
+def minArea(image, x, y):
     ...
 ```

@@ -1,29 +1,28 @@
-def wallsAndGates(rooms):
-    """
-    :type rooms: List[List[int]]
-    :rtype: void Do not return anything, modify rooms in-place instead.
-    """
-    # BFS with queue
-    direction = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-    m = len(rooms)
-    if m == 0:
-        return
-    n = len(rooms[0])
-    q = []
-    for row in range(m):
-        for col in range(n):
-            # gate
-            if rooms[row][col] == 0:
-                q.append((row, col))
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-    while len(q) > 0:
-        point = q.pop(0)
-        row, col = point[0], point[1]
-        for d in direction:
-            r = row + d[0]
-            c = col + d[1]
-            # wall or out of rooms
-            if r < 0 or c < 0 or r >= m or c >= n or rooms[r][c] != 2147483647:
-                continue
-            rooms[r][c] = rooms[row][col] + 1
-            q.append((r, c))
+
+from typing import List
+import heapq
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        # Create a min-heap with the first k elements
+        min_heap = nums[:k]
+        heapq.heapify(min_heap)
+        
+        # Iterate over the remaining elements
+        for num in nums[k:]:
+            # If the current number is larger than the smallest in the heap, replace it
+            if num > min_heap[0]:
+                heapq.heappushpop(min_heap, num)
+        
+        # The root of the heap is the kth largest element
+        return min_heap[0]
+
+def findKthLargest(nums: List[int], k: int) -> int:
+    return Solution().findKthLargest(nums, k)

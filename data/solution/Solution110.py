@@ -1,29 +1,69 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-        
-def minDepth(root):
-    # BFS
-    if root is None:
-        return 0
-    queue = [root]
-    depth, rightMost = 1, root
-    while len(queue) > 0:
-        node = queue.pop(0)
-        if node.left is None and node.right is None:
-            break
-        if node.left is not None:
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def tree_node(values: list):
+    if not values:
+        return None
+    root = TreeNode(values[0])
+    i = 1
+    queue = deque()
+    queue.append(root)
+    while queue:
+        node = queue.popleft()
+        if i < len(values) and values[i] is not None:
+            node.left = TreeNode(values[i])
             queue.append(node.left)
-        if node.right is not None:
+        i += 1
+        if i < len(values) and values[i] is not None:
+            node.right = TreeNode(values[i])
             queue.append(node.right)
-        if node == rightMost:
-            # reach the current level end
-            depth += 1
-            if node.right is not None:
-                rightMost = node.right
-            else:
-                rightMost = node.left
-    return depth
+        i += 1
+    return root
+
+def is_same_tree(p, q):
+    if not p and not q:
+        return True
+    elif not p or not q:
+        return False
+    elif p.val != q.val:
+        return False
+    else:
+        return is_same_tree(p.left, q.left) and is_same_tree(p.right, q.right)
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+from typing import Optional
+
+class Solution:
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        def check_balance(node):
+            if not node:
+                return 0, True
+            
+            left_height, left_balanced = check_balance(node.left)
+            right_height, right_balanced = check_balance(node.right)
+            
+            current_height = max(left_height, right_height) + 1
+            current_balanced = left_balanced and right_balanced and abs(left_height - right_height) <= 1
+            
+            return current_height, current_balanced
+        
+        _, balanced = check_balance(root)
+        return balanced
+
+def isBalanced(root: Optional[TreeNode]) -> bool:
+    return Solution().isBalanced(root)

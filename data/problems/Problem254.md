@@ -1,25 +1,33 @@
-Given two strings ransomNote and magazine, return true if ransomNote can be constructed by using the letters from magazine and false otherwise.
-Each letter in magazine can only be used once in ransomNote.
- 
-Example 1:
-Input: ransomNote = "a", magazine = "b"
-Output: false
-Example 2:
-Input: ransomNote = "aa", magazine = "ab"
-Output: false
-Example 3:
-Input: ransomNote = "aa", magazine = "aab"
-Output: true
+Numbers can be regarded as the product of their factors.
 
- 
+For example, 8 = 2 x 2 x 2 = 2 x 4.
+
+Given an integer n, return all possible combinations of its factors. You may return the answer in any order.
+Note that the factors should be in the range [2, n - 1].
+ 
+Example 1:
+
+Input: n = 1
+Output: []
+
+Example 2:
+
+Input: n = 12
+Output: [[2,6],[3,4],[2,2,3]]
+
+Example 3:
+
+Input: n = 37
+Output: []
+
+ 
 Constraints:
 
-1 <= ransomNote.length, magazine.length <= 105
-ransomNote and magazine consist of lowercase English letters.
+1 <= n <= 107
 
 
 Boilerplate code:
 ```python
-def canConstruct(ransomNote, magazine):
+def getFactors(n):
     ...
 ```

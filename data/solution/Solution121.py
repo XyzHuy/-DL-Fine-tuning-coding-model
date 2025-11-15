@@ -1,7 +1,28 @@
-def maxProfit(prices):
-    """
-    :type prices: List[int]
-    :rtype: int
-    """
-    # sum of prices[i + 1] - prices[i], if prices[i + 1] > prices[i]
-    return sum([y - x for x, y in zip(prices[0:-1], prices[1:]) if x < y])
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        if not prices:
+            return 0
+        
+        min_price = prices[0]
+        max_profit = 0
+        
+        for price in prices:
+            if price < min_price:
+                min_price = price
+            elif price - min_price > max_profit:
+                max_profit = price - min_price
+        
+        return max_profit
+
+def maxProfit(prices: List[int]) -> int:
+    return Solution().maxProfit(prices)

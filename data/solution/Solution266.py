@@ -1,19 +1,23 @@
-def thirdMax(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    import queue
-    pq = queue.PriorityQueue(4)
-    check = set()
-    for n in nums:
-        if n in check:
-            continue
-        pq.put(n)
-        check.add(n)
-        if len(check) > 3:
-            check.remove(pq.get())
-    total = len(check)
-    while total < 3 and total > 1:
-        total -= 1
-    return pq.get()
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def canPermutePalindrome(self, s: str) -> bool:
+        from collections import Counter
+        
+        # Count the frequency of each character in the string
+        char_count = Counter(s)
+        
+        # Count how many characters have an odd frequency
+        odd_count = sum(1 for count in char_count.values() if count % 2 != 0)
+        
+        # A string can form a palindrome if it has at most one character with an odd frequency
+        return odd_count <= 1
+
+def canPermutePalindrome(s: str) -> bool:
+    return Solution().canPermutePalindrome(s)

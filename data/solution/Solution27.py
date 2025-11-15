@@ -1,13 +1,19 @@
-def removeElement(nums, val):
-    ls = len(nums)
-    if ls == 0:
-        return ls
-    count = 0
-    index = 0
-    while index < ls - count:
-        if nums[index] == val:
-            nums[index] = nums[ls - 1 - count]
-            count += 1
-        else:
-            index += 1
-    return ls - count
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        k = 0  # This will be the count of elements not equal to val
+        for i in range(len(nums)):
+            if nums[i] != val:
+                nums[k] = nums[i]
+                k += 1
+        return k
+
+def removeElement(nums: List[int], val: int) -> int:
+    return Solution().removeElement(nums, val)

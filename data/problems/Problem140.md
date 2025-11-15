@@ -1,44 +1,35 @@
-Given the head of a linked list, return the node where the cycle begins. If there is no cycle, return null.
-There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to (0-indexed). It is -1 if there is no cycle. Note that pos is not passed as a parameter.
-Do not modify the linked list.
- 
+Given a string s and a dictionary of strings wordDict, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences in any order.
+Note that the same word in the dictionary may be reused multiple times in the segmentation.
+ 
 Example 1:
 
-Input: head = [3,2,0,-4], pos = 1
-Output: tail connects to node index 1
-Explanation: There is a cycle in the linked list, where tail connects to the second node.
+Input: s = "catsanddog", wordDict = ["cat","cats","and","sand","dog"]
+Output: ["cats and dog","cat sand dog"]
 
 Example 2:
 
-Input: head = [1,2], pos = 0
-Output: tail connects to node index 0
-Explanation: There is a cycle in the linked list, where tail connects to the first node.
+Input: s = "pineapplepenapple", wordDict = ["apple","pen","applepen","pine","pineapple"]
+Output: ["pine apple pen apple","pineapple pen apple","pine applepen apple"]
+Explanation: Note that you are allowed to reuse a dictionary word.
 
 Example 3:
 
-Input: head = [1], pos = -1
-Output: no cycle
-Explanation: There is no cycle in the linked list.
+Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]
+Output: []
 
- 
+ 
 Constraints:
 
-The number of the nodes in the list is in the range [0, 104].
--105 <= Node.val <= 105
-pos is -1 or a valid index in the linked-list.
-
- 
-Follow up: Can you solve it using O(1) (i.e. constant) memory?
+1 <= s.length <= 20
+1 <= wordDict.length <= 1000
+1 <= wordDict[i].length <= 10
+s and wordDict[i] consist of only lowercase English letters.
+All the strings of wordDict are unique.
+Input is generated in a way that the length of the answer doesn't exceed 105.
 
 
 Boilerplate code:
 ```python
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-def detectCycle(head):
+def wordBreak(s, wordDict):
     ...
 ```

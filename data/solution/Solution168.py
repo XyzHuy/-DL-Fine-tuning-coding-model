@@ -1,26 +1,19 @@
-def numIslands(grid):
-    """
-    :type grid: List[List[str]]
-    :rtype: int
-    """
-    # BFS with marks
-    if grid is None or len(grid) == 0:
-        return 0
-    islands = 0
-    for i in range(len(grid)):
-        for j in range(len(grid[i])):
-            if grid[i][j] == '1':
-                explore(grid, i, j)
-                islands += 1
-    return islands
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def explore(grid, i, j):
-    grid[i][j] = 'X'
-    if i - 1 >= 0 and grid[i - 1][j] == '1':
-        explore(grid, i - 1, j)
-    if j - 1 >= 0 and grid[i][j - 1] == '1':
-        explore(grid, i, j - 1)
-    if i + 1 < len(grid) and grid[i + 1][j] == '1':
-        explore(grid, i + 1, j)
-    if j + 1 < len(grid[i]) and grid[i][j + 1] == '1':
-        explore(grid, i, j + 1)
+
+class Solution:
+    def convertToTitle(self, columnNumber: int) -> str:
+        result = ""
+        while columnNumber > 0:
+            # Convert the current part of the column number to a character
+            columnNumber, remainder = divmod(columnNumber - 1, 26)
+            result = chr(65 + remainder) + result
+        return result
+
+def convertToTitle(columnNumber: int) -> str:
+    return Solution().convertToTitle(columnNumber)

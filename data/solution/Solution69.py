@@ -1,12 +1,29 @@
-def mySqrt(x):
-    # sqrt(x) = 2 * sqrt(x / 4) for n % 4 == 0
-    # sqrt(x) = 1 + 2 * sqrt(x / 4) for n % 4 != 0
-    if x == 0:
-        return 0
-    if x < 4:
-        return 1
-    res = 2 * mySqrt(x / 4)
-    # (res + 1) * (res + 1) >= 0 for avoiding overflow
-    if (res + 1) * (res + 1) <= x and (res + 1) * (res + 1) >= 0:
-        return res + 1
-    return  res
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        if x == 0:
+            return 0
+        
+        left, right = 1, x
+        while left <= right:
+            mid = (left + right) // 2
+            mid_squared = mid * mid
+            
+            if mid_squared == x:
+                return mid
+            elif mid_squared < x:
+                left = mid + 1
+            else:
+                right = mid - 1
+        
+        return right
+
+def mySqrt(x: int) -> int:
+    return Solution().mySqrt(x)

@@ -5,7 +5,7 @@ Insert a character
 Delete a character
 Replace a character
 
- 
+ 
 Example 1:
 
 Input: word1 = "horse", word2 = "ros"
@@ -26,7 +26,7 @@ enention -> exention (replace 'n' with 'x')
 exention -> exection (replace 'n' with 'c')
 exection -> execution (insert 'u')
 
- 
+ 
 Constraints:
 
 0 <= word1.length, word2.length <= 500

@@ -1,25 +1,35 @@
-Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
- 
+Write an efficient algorithm that searches for a value target in an m x n integer matrix matrix. This matrix has the following properties:
+
+Integers in each row are sorted in ascending from left to right.
+Integers in each column are sorted in ascending from top to bottom.
+
+ 
 Example 1:
 
-Input: nums1 = [1,2,2,1], nums2 = [2,2]
-Output: [2]
+
+Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
+Output: true
 
 Example 2:
 
-Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
-Output: [9,4]
-Explanation: [4,9] is also accepted.
 
- 
+Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
+Output: false
+
+ 
 Constraints:
 
-1 <= nums1.length, nums2.length <= 1000
-0 <= nums1[i], nums2[i] <= 1000
+m == matrix.length
+n == matrix[i].length
+1 <= n, m <= 300
+-109 <= matrix[i][j] <= 109
+All the integers in each row are sorted in ascending order.
+All the integers in each column are sorted in ascending order.
+-109 <= target <= 109
 
 
 Boilerplate code:
 ```python
-def intersection(nums1, nums2):
+def searchMatrix(matrix, target):
     ...
 ```

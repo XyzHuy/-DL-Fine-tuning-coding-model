@@ -1,25 +1,21 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
-def isSubtree(s, t):
-    """
-    :type s: TreeNode
-    :type t: TreeNode
-    :rtype: bool
-    """
-    s_res = preorder(s, True)
-    t_res = preorder(t, True)
-    return t_res in s_res
+from typing import List
 
-def preorder(root, isLeft):
-    if root is None:
-        if isLeft:
-            return "lnull"
-        else:
-            return "rnull"
-    return "#" + str(root.val) + " " + preorder(root.left, True) + " " + preorder(root.right, False)
+class Solution:
+    def generatePossibleNextMoves(self, currentState: str) -> List[str]:
+        possible_states = []
+        for i in range(len(currentState) - 1):
+            if currentState[i:i+2] == "++":
+                new_state = currentState[:i] + "--" + currentState[i+2:]
+                possible_states.append(new_state)
+        return possible_states
+
+def generatePossibleNextMoves(currentState: str) -> List[str]:
+    return Solution().generatePossibleNextMoves(currentState)

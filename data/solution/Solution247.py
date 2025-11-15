@@ -1,33 +1,29 @@
-#Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def plusOne(head):
-    """
-    :type head: ListNode
-    :rtype: ListNode
-    """
-    dummy = ListNode(0)
-    dummy.next = head
-    place_stop, tail = dummy, dummy
-    # find the tail
-    while tail.next is not None:
-        tail = tail.next
-        if tail.val != 9:
-            place_stop = tail
-    if tail.val != 9:
-        # done
-        tail.val += 1
-    else:
-        # not yet
-        place_stop.val += 1
-        place_stop = place_stop.next
-        # set all node behind this place to zero
-        while place_stop is not None:
-            place_stop.val = 0
-            place_stop = place_stop.next
-    if dummy.val == 0:
-        return dummy.next
-    return dummy
+
+from typing import List
+
+class Solution:
+    def findStrobogrammatic(self, n: int) -> List[str]:
+        def dfs(u):
+            if u == 0:
+                return ['']
+            if u == 1:
+                return ['0', '1', '8']
+            ans = []
+            for v in dfs(u - 2):
+                for l, r in ('11', '88', '69', '96'):
+                    ans.append(l + v + r)
+                if u != n:
+                    ans.append('0' + v + '0')
+            return ans
+
+        return dfs(n)
+
+def findStrobogrammatic(n: int) -> List[str]:
+    return Solution().findStrobogrammatic(n)

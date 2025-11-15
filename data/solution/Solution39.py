@@ -1,15 +1,31 @@
-def combinationSum( candidates, target):
-    candidates.sort()
-    dp = [[] for _ in range(target + 1)]
-    dp[0].append([])
-    for i in range(1, target + 1):
-        for j in range(len(candidates)):
-            if candidates[j] > i:
-                break
-            for k in range(len(dp[i - candidates[j]])):
-                temp = dp[i - candidates[j]][k][:]
-                if len(temp) > 0 and temp[-1] > candidates[j]:
-                    continue
-                temp.append(candidates[j])
-                dp[i].append(temp)
-    return dp[target]
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        def backtrack(remaining, start, path, result):
+            if remaining == 0:
+                result.append(list(path))
+                return
+            elif remaining < 0:
+                return
+            
+            for i in range(start, len(candidates)):
+                path.append(candidates[i])
+                backtrack(remaining - candidates[i], i, path, result)
+                path.pop()
+        
+        result = []
+        candidates.sort()  # Optional: sort to optimize and break early if remaining < 0
+        backtrack(target, 0, [], result)
+        return result
+
+def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
+    return Solution().combinationSum(candidates, target)

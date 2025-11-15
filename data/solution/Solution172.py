@@ -1,14 +1,18 @@
-def isIsomorphic(s, t):
-    if len(s) != len(t):
-        return False
-    ls = len(s)
-    mapStoT = [0] * 127
-    mapTtoS = [0] * 127
-    for i in range(ls):
-        s_num, t_num = ord(s[i]), ord(t[i])
-        if mapStoT[s_num] == 0 and mapTtoS[t_num] == 0:
-            mapStoT[s_num] = t_num
-            mapTtoS[t_num] = s_num
-        elif mapTtoS[t_num] != s_num or mapStoT[s_num] != t_num:
-            return False
-    return True
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def trailingZeroes(self, n: int) -> int:
+        count = 0
+        while n > 0:
+            n //= 5
+            count += n
+        return count
+
+def trailingZeroes(n: int) -> int:
+    return Solution().trailingZeroes(n)

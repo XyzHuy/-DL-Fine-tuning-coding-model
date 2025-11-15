@@ -1,0 +1,20 @@
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        count = 0
+        for num in nums:
+            if len(str(num)) % 2 == 0:
+                count += 1
+        return count
+
+def findNumbers(nums: List[int]) -> int:
+    return Solution().findNumbers(nums)

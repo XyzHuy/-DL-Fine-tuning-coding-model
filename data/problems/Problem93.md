@@ -1,46 +1,33 @@
-Given the root of a binary tree, return the inorder traversal of its nodes' values.
- 
+A valid IP address consists of exactly four integers separated by single dots. Each integer is between 0 and 255 (inclusive) and cannot have leading zeros.
+
+For example, "0.1.2.201" and "192.168.1.1" are valid IP addresses, but "0.011.255.245", "192.168.1.312" and "192.168@1.1" are invalid IP addresses.
+
+Given a string s containing only digits, return all possible valid IP addresses that can be formed by inserting dots into s. You are not allowed to reorder or remove any digits in s. You may return the valid IP addresses in any order.
+ 
 Example 1:
 
-Input: root = [1,null,2,3]
-Output: [1,3,2]
-Explanation:
+Input: s = "25525511135"
+Output: ["255.255.11.135","255.255.111.35"]
 
 Example 2:
 
-Input: root = [1,2,3,4,5,null,8,null,null,6,7,9]
-Output: [4,2,6,5,7,1,3,9,8]
-Explanation:
+Input: s = "0000"
+Output: ["0.0.0.0"]
 
 Example 3:
 
-Input: root = []
-Output: []
+Input: s = "101023"
+Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
 
-Example 4:
-
-Input: root = [1]
-Output: [1]
-
- 
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 100].
--100 <= Node.val <= 100
-
- 
-Follow up: Recursive solution is trivial, could you do it iteratively?
+1 <= s.length <= 20
+s consists of digits only.
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def inorderTraversal(root):
+def restoreIpAddresses(s):
     ...
 ```

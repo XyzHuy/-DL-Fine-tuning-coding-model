@@ -1,32 +1,29 @@
-An ugly number is a positive integer which does not have a prime factor other than 2, 3, and 5.
-Given an integer n, return true if n is an ugly number.
- 
+Given an integer n, return the number of prime numbers that are strictly less than n.
+ 
 Example 1:
 
-Input: n = 6
-Output: true
-Explanation: 6 = 2 × 3
+Input: n = 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
 
 Example 2:
 
-Input: n = 1
-Output: true
-Explanation: 1 has no prime factors.
+Input: n = 0
+Output: 0
 
 Example 3:
 
-Input: n = 14
-Output: false
-Explanation: 14 is not ugly since it includes the prime factor 7.
+Input: n = 1
+Output: 0
 
- 
+ 
 Constraints:
 
--231 <= n <= 231 - 1
+0 <= n <= 5 * 106
 
 
 Boilerplate code:
 ```python
-def isUgly(num):
+def countPrimes(n):
     ...
 ```

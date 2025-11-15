@@ -1,20 +1,29 @@
-class MovingAverage(object):
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-    def __init__(self, size):
-        """
-        Initialize your data structure here.
-        :type size: int
-        """
-        self.size = size
-        self.curr_range = []
+
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        answer = [1] * n
         
+        # Calculate left products
+        left_product = 1
+        for i in range(n):
+            answer[i] = left_product
+            left_product *= nums[i]
+        
+        # Calculate right products and multiply with left products
+        right_product = 1
+        for i in range(n - 1, -1, -1):
+            answer[i] *= right_product
+            right_product *= nums[i]
+        
+        return answer
 
-    def next(self, val):
-        """
-        :type val: int
-        :rtype: float
-        """
-        if len(self.curr_range) == self.size:
-            self.curr_range.pop(0)
-        self.curr_range.append(val)
-        return sum(self.curr_range) * 1.0 / len(self.curr_range)
+def productExceptSelf(nums: List[int]) -> List[int]:
+    return Solution().productExceptSelf(nums)

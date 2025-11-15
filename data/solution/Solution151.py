@@ -1,12 +1,17 @@
-def findMin(nums):
-    l, r = 0, len(nums) - 1
-    while l < r and nums[l] >= nums[r]:
-        mid = (l + r) / 2
-        if nums[mid] > nums[r]:
-            l = mid + 1
-        elif nums[mid] < nums[l]:
-            r = mid
-        else:
-            # nums[l] = nums[r] = nums[mid]
-            l += 1
-    return nums[l]
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        # Split the string by spaces and filter out any empty strings
+        words = s.split()
+        # Reverse the list of words
+        words.reverse()
+        # Join the words with a single space
+        return ' '.join(words)
+
+def reverseWords(s: str) -> str:
+    return Solution().reverseWords(s)

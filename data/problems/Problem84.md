@@ -1,32 +1,28 @@
-Given a rows x cols binary matrix filled with 0's and 1's, find the largest rectangle containing only 1's and return its area.
- 
+Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+ 
 Example 1:
 
-Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
-Output: 6
-Explanation: The maximal rectangle is shown in the above picture.
+
+Input: heights = [2,1,5,6,2,3]
+Output: 10
+Explanation: The above is a histogram where width of each bar is 1.
+The largest rectangle is shown in the red area, which has an area = 10 units.
 
 Example 2:
 
-Input: matrix = [["0"]]
-Output: 0
 
-Example 3:
+Input: heights = [2,4]
+Output: 4
 
-Input: matrix = [["1"]]
-Output: 1
-
- 
+ 
 Constraints:
 
-rows == matrix.length
-cols == matrix[i].length
-1 <= rows, cols <= 200
-matrix[i][j] is '0' or '1'.
+1 <= heights.length <= 105
+0 <= heights[i] <= 104
 
 
 Boilerplate code:
 ```python
-def maximalRectangle( matrix):
+def largestRectangleArea(heights):
     ...
 ```

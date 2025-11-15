@@ -1,13 +1,30 @@
-def twoSum(nums, target):
-    # two point
-    nums_index = [(v, index) for index, v in enumerate(nums)]
-    nums_index.sort()
-    begin, end = 0, len(nums) - 1
-    while begin < end:
-        curr = nums_index[begin][0] + nums_index[end][0]
-        if curr == target:
-            return [nums_index[begin][1], nums_index[end][1]]
-        elif curr < target:
-            begin += 1
-        else:
-            end -= 1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # Create a dictionary to store the numbers and their indices
+        num_to_index = {}
+        
+        # Iterate over the list of numbers
+        for index, num in enumerate(nums):
+            # Calculate the complement
+            complement = target - num
+            
+            # Check if the complement is already in the dictionary
+            if complement in num_to_index:
+                # If found, return the indices of the complement and the current number
+                return [num_to_index[complement], index]
+            
+            # Otherwise, add the current number and its index to the dictionary
+            num_to_index[num] = index
+
+def twoSum(nums: List[int], target: int) -> List[int]:
+    return Solution().twoSum(nums, target)

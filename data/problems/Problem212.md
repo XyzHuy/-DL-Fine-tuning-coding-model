@@ -1,29 +1,33 @@
-There is a fence with n posts, each post can be painted with one of the k colors.
+Given an m x n board of characters and a list of strings words, return all words on the board.
+Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+ 
+Example 1:
 
-You have to  paint all the posts such that no more than two adjacent fence posts have the same color.
 
-Return the total number of ways you can paint the fence.
+Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"]
+Output: ["eat","oath"]
 
-Note:
-n and k are non-negative integers.
+Example 2:
 
-Example:
 
-Input: n = 3, k = 2
-Output: 6
-Explanation: Take c1 as color 1, c2 as color 2. All possible ways are:
+Input: board = [["a","b"],["c","d"]], words = ["abcb"]
+Output: []
 
-            post1  post2  post3
- -----      -----  -----  -----
-   1         c1     c1     c2
-   2         c1     c2     c1
-   3         c1     c2     c2
-   4         c2     c1     c1 
-   5         c2     c1     c2
-   6         c2     c2     c1
-   
+ 
+Constraints:
+
+m == board.length
+n == board[i].length
+1 <= m, n <= 12
+board[i][j] is a lowercase English letter.
+1 <= words.length <= 3 * 104
+1 <= words[i].length <= 10
+words[i] consists of lowercase English letters.
+All the strings of words are unique.
+
+
 Boilerplate code:
 ```python
-def numWays(n, k):
+def findWords(board, words):
     ...
 ```

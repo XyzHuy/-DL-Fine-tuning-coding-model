@@ -1,41 +1,47 @@
-def solveSudoku( board):
-    """
-    :type board: List[List[str]]
-    :rtype: void Do not return anything, modify board in-place instead.
-    """
-    empty = []
-    for i in range(9):
-        for j in range(9):
-            if board[i][j] == '.':
-                empty.append(9 * i + j)
-    solve(board, empty)
-
-def solve( board, empty):
-    if len(empty) == 0:
-        return True
-    first_value = empty[-1]
-    row, col = first_value / 9, first_value % 9
-    for k in range(1, 10):
-        if is_safe(board, row, col, str(k)):
-            board[row][col] = str(k)
-            empty.pop()
-            if solve(board, empty):
-                return True
-            board[row][col] = '.'
-            empty.append(first_value)
-    return False
-
-def is_safe( board, row, col, ch):
-    for k in range(9):
-        if board[k][col] == ch:
-            return False
-        if board[row][k] == ch:
-            return False
-    start_row, start_col = 3 * (row / 3), 3 * (col / 3)
-    for i in range(start_row, start_row + 3):
-        for j in range(start_col, start_col + 3):
-            if board[i][j] == ch:
-                return False
-    return True
+import heapq
+import itertools
+from sortedcontainers import SortedList
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
 
+class Solution:
+    def solveSudoku(self, board: List[List[str]]) -> None:
+        """
+        Do not return anything, modify board in-place instead.
+        """
+        def dfs(k):
+            nonlocal ok
+            if k == len(t):
+                ok = True
+                return
+            i, j = t[k]
+            for v in range(9):
+                if row[i][v] == col[j][v] == block[i // 3][j // 3][v] == False:
+                    row[i][v] = col[j][v] = block[i // 3][j // 3][v] = True
+                    board[i][j] = str(v + 1)
+                    dfs(k + 1)
+                    row[i][v] = col[j][v] = block[i // 3][j // 3][v] = False
+                if ok:
+                    return
+
+        row = [[False] * 9 for _ in range(9)]
+        col = [[False] * 9 for _ in range(9)]
+        block = [[[False] * 9 for _ in range(3)] for _ in range(3)]
+        t = []
+        ok = False
+        for i in range(9):
+            for j in range(9):
+                if board[i][j] == '.':
+                    t.append((i, j))
+                else:
+                    v = int(board[i][j]) - 1
+                    row[i][v] = col[j][v] = block[i // 3][j // 3][v] = True
+        dfs(0)
+
+def solveSudoku(board: List[List[str]]) -> None:
+    return Solution().solveSudoku(board)

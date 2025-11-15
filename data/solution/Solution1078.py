@@ -1,0 +1,23 @@
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def findOcurrences(self, text: str, first: str, second: str) -> List[str]:
+        words = text.split()
+        result = []
+        
+        for i in range(len(words) - 2):
+            if words[i] == first and words[i + 1] == second:
+                result.append(words[i + 2])
+        
+        return result
+
+def findOcurrences(text: str, first: str, second: str) -> List[str]:
+    return Solution().findOcurrences(text, first, second)

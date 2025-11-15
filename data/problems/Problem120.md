@@ -1,29 +1,34 @@
-You are given an array prices where prices[i] is the price of a given stock on the ith day.
-You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
-Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
- 
+Given a triangle array, return the minimum path sum from top to bottom.
+For each step, you may move to an adjacent number of the row below. More formally, if you are on index i on the current row, you may move to either index i or index i + 1 on the next row.
+ 
 Example 1:
 
-Input: prices = [7,1,5,3,6,4]
-Output: 5
-Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5.
-Note that buying on day 2 and selling on day 1 is not allowed because you must buy before you sell.
+Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+Output: 11
+Explanation: The triangle looks like:
+   2
+  3 4
+ 6 5 7
+4 1 8 3
+The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).
 
 Example 2:
 
-Input: prices = [7,6,4,3,1]
-Output: 0
-Explanation: In this case, no transactions are done and the max profit = 0.
+Input: triangle = [[-10]]
+Output: -10
 
- 
+ 
 Constraints:
 
-1 <= prices.length <= 105
-0 <= prices[i] <= 104
+1 <= triangle.length <= 200
+triangle[0].length == 1
+triangle[i].length == triangle[i - 1].length + 1
+-104 <= triangle[i][j] <= 104
 
-
+ 
+Follow up: Could you do this using only O(n) extra space, where n is the total number of rows in the triangle?
 Boilerplate code:
 ```python
-def maxProfit(prices):
+def minimumTotal(triangle):
     ...
 ```

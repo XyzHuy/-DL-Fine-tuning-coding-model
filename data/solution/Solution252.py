@@ -1,15 +1,24 @@
-def getMoneyAmount(n):
-    import sys
-    # bottom up dp
-    dp = [[0] * (n + 1) for _ in range(n + 1)]
-    for j in range(2, n + 1):
-        for i in range(j - 1, 0, -1):
-            globalMin = sys.maxsize
-            for k in range(i + 1, j):
-                localMax = k + max(dp[i][k - 1], dp[k + 1][j])
-                globalMin = min(globalMin, localMax)
-            if i + 1 == j:
-                dp[i][j] = i
-            else:
-                dp[i][j] = globalMin
-    return dp[1][n]
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+        # Sort the intervals based on the start time
+        intervals.sort(key=lambda x: x[0])
+        
+        # Check if there is any overlap between consecutive intervals
+        for i in range(1, len(intervals)):
+            if intervals[i][0] < intervals[i - 1][1]:
+                return False
+        
+        return True
+
+def canAttendMeetings(intervals: List[List[int]]) -> bool:
+    return Solution().canAttendMeetings(intervals)

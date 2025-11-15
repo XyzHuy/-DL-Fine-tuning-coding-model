@@ -1,31 +1,31 @@
-Your task is to calculate ab mod 1337 where a is a positive integer and b is an extremely large positive integer given in the form of an array.
- 
+Given the root of a binary tree, return the number of uni-value subtrees.
+A uni-value subtree means all nodes of the subtree have the same value.
+ 
 Example 1:
 
-Input: a = 2, b = [3]
-Output: 8
+
+Input: root = [5,1,5,5,5,null,5]
+Output: 4
 
 Example 2:
 
-Input: a = 2, b = [1,0]
-Output: 1024
+Input: root = []
+Output: 0
 
 Example 3:
 
-Input: a = 1, b = [4,3,3,8,5,2]
-Output: 1
+Input: root = [5,5,5,5,5,null,5]
+Output: 6
 
- 
+ 
 Constraints:
 
-1 <= a <= 231 - 1
-1 <= b.length <= 2000
-0 <= b[i] <= 9
-b does not contain leading zeros.
+The number of the node in the tree will be in the range [0, 1000].
+-1000 <= Node.val <= 1000
 
 
 Boilerplate code:
 ```python
-def superPow(a, b):
+def countUnivalSubtrees(root):
     ...
 ```

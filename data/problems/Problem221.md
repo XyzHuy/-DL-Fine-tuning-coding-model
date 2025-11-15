@@ -1,23 +1,33 @@
-A group of two or more people wants to meet and minimize the total travel distance. You are given a 2D grid of values 0 or 1, where each 1 marks the home of someone in the group. The distance is calculated using Manhattan Distance, where distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|
+Given an m x n binary matrix filled with 0's and 1's, find the largest square containing only 1's and return its area.
+ 
+Example 1:
 
-Example:
 
-Input:
+Input: matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+Output: 4
 
-1 - 0 - 0 - 0 - 1
-|   |   |   |   |
-0 - 0 - 0 - 0 - 0
-|   |   |   |   |
-0 - 0 - 1 - 0 - 0
+Example 2:
 
-Output: 6
 
-Explanation: Given three people living at (0,0), (0,4), and (2,2):
-             The point (0,2) is an ideal meeting point, as the total travel distance
-             of 2+2+2=6 is minimal. So return 6.
+Input: matrix = [["0","1"],["1","0"]]
+Output: 1
+
+Example 3:
+
+Input: matrix = [["0"]]
+Output: 0
+
+ 
+Constraints:
+
+m == matrix.length
+n == matrix[i].length
+1 <= m, n <= 300
+matrix[i][j] is '0' or '1'.
+
 
 Boilerplate code:
 ```python
-def minTotalDistance( grid):
+def maximalSquare(matrix):
     ...
 ```

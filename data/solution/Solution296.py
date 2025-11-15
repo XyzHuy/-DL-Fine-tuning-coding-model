@@ -1,21 +1,25 @@
-# Definition for a binary tree node.
-class TreeNode(object):
-   def __init__(self, x):
-       self.val = x
-       self.left = None
-       self.right = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def mergeTrees(t1, t2):
-    """
-    :type t1: TreeNode
-    :type t2: TreeNode
-    :rtype: TreeNode
-    """
-    if t1 is None:
-        return t2
-    if t2 is None:
-        return t1
-    t1.val += t2.val
-    t1.left = mergeTrees(t1.left, t2.left)
-    t1.right = mergeTrees(t1.right, t2.right)
-    return t1
+
+from typing import List
+
+class Solution:
+    def minTotalDistance(self, grid: List[List[int]]) -> int:
+        # Collect row and column indices of all homes
+        rows = [i for i in range(len(grid)) for j in range(len(grid[0])) if grid[i][j] == 1]
+        cols = [j for j in range(len(grid[0])) for i in range(len(grid)) if grid[i][j] == 1]
+        
+        # Function to calculate minimum distance for a given sorted list of coordinates
+        def min_distance(points):
+            return sum(abs(points[i] - points[len(points) // 2]) for i in range(len(points)))
+        
+        # Calculate the minimum total distance using the median
+        return min_distance(rows) + min_distance(cols)
+
+def minTotalDistance(grid: List[List[int]]) -> int:
+    return Solution().minTotalDistance(grid)

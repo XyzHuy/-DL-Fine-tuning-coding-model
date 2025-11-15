@@ -1,37 +1,29 @@
-Given the roots of two binary trees p and q, write a function to check if they are the same or not.
-Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
- 
+You are given the root of a binary search tree (BST), where the values of exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
+ 
 Example 1:
 
-Input: p = [1,2,3], q = [1,2,3]
-Output: true
+
+Input: root = [1,3,null,null,2]
+Output: [3,1,null,null,2]
+Explanation: 3 cannot be a left child of 1 because 3 > 1. Swapping 1 and 3 makes the BST valid.
 
 Example 2:
 
-Input: p = [1,2], q = [1,null,2]
-Output: false
 
-Example 3:
+Input: root = [3,1,4,null,null,2]
+Output: [2,1,4,null,null,3]
+Explanation: 2 cannot be in the right subtree of 3 because 2 < 3. Swapping 2 and 3 makes the BST valid.
 
-Input: p = [1,2,1], q = [1,1,2]
-Output: false
-
- 
+ 
 Constraints:
 
-The number of nodes in both trees is in the range [0, 100].
--104 <= Node.val <= 104
+The number of nodes in the tree is in the range [2, 1000].
+-231 <= Node.val <= 231 - 1
 
-
+ 
+Follow up: A solution using O(n) space is pretty straight-forward. Could you devise a constant O(1) space solution?
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def isSameTree(p, q):
+def recoverTree(root):
     ...
 ```

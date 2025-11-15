@@ -1,26 +1,36 @@
-def countAndSay( n):
-    """
-    :type n: int
-    :rtype: str
-    """
-    if n == 1:
-        return '1'
-    x = '1'
-    while n > 1:
-        # each round, read itself
-        x = count(x)
-        n -= 1
-    return x
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def count( x):
-    m = list(x)
-    res = []
-    m.append(None)
-    i , j = 0 , 0
-    while i < len(m) - 1:
-        j += 1
-        if m[j] != m[i]:
-            # note j - i is the count of m[i]
-            res += [j - i, m[i]]
-            i = j
-    return ''.join(str(s) for s in res)
+
+class Solution:
+    def countAndSay(self, n: int) -> str:
+        if n == 1:
+            return "1"
+        
+        # Start with the first element of the sequence
+        current_sequence = "1"
+        
+        # Generate the sequence iteratively from 2 to n
+        for _ in range(2, n + 1):
+            next_sequence = ""
+            i = 0
+            while i < len(current_sequence):
+                count = 1
+                # Count the number of times the current character repeats
+                while i + 1 < len(current_sequence) and current_sequence[i] == current_sequence[i + 1]:
+                    count += 1
+                    i += 1
+                # Append the count and the character to the next sequence
+                next_sequence += str(count) + current_sequence[i]
+                i += 1
+            # Update the current sequence to the next sequence
+            current_sequence = next_sequence
+        
+        return current_sequence
+
+def countAndSay(n: int) -> str:
+    return Solution().countAndSay(n)

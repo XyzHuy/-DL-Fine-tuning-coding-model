@@ -1,32 +1,28 @@
-Given the root of a binary tree, return all root-to-leaf paths in any order.
-A leaf is a node with no children.
- 
+Given two integers left and right that represent the range [left, right], return the bitwise AND of all numbers in this range, inclusive.
+ 
 Example 1:
 
-Input: root = [1,2,3,null,5]
-Output: ["1->2->5","1->3"]
+Input: left = 5, right = 7
+Output: 4
 
 Example 2:
 
-Input: root = [1]
-Output: ["1"]
+Input: left = 0, right = 0
+Output: 0
 
- 
+Example 3:
+
+Input: left = 1, right = 2147483647
+Output: 0
+
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [1, 100].
--100 <= Node.val <= 100
+0 <= left <= right <= 231 - 1
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def binaryTreePaths(root):
+def rangeBitwiseAnd(left, right):
     ...
 ```

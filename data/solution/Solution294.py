@@ -1,19 +1,29 @@
-def findUnsortedSubarray(nums):
-    """
-    :type nums: List[int]
-    :rtype: int
-    """
-    stack = []
-    l, r = len(nums), 0
-    for i in range(len(nums)):
-        while len(stack) != 0 and nums[stack[-1]] > nums[i]:
-            l = min(l, stack.pop())
-        stack.append(i)
-    stack = []
-    for i in range(len(nums) - 1, -1, -1):
-        while len(stack) != 0 and nums[stack[-1]] < nums[i]:
-            r = max(r, stack.pop())
-        stack.append(i)
-    if r > l:
-        return r - l + 1
-    return 0
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def canWin(self, currentState: str) -> bool:
+        def canWinHelper(state, memo):
+            if state in memo:
+                return memo[state]
+            
+            for i in range(len(state) - 1):
+                if state[i] == '+' and state[i + 1] == '+':
+                    new_state = state[:i] + '--' + state[i + 2:]
+                    if not canWinHelper(new_state, memo):
+                        memo[state] = True
+                        return True
+            
+            memo[state] = False
+            return False
+        
+        memo = {}
+        return canWinHelper(currentState, memo)
+
+def canWin(currentState: str) -> bool:
+    return Solution().canWin(currentState)

@@ -1,41 +1,35 @@
-Given an integer array nums, handle multiple queries of the following type:
-
-Calculate the sum of the elements of nums between indices left and right inclusive where left <= right.
-
-Implement the NumArray class:
-
-NumArray(int[] nums) Initializes the object with the integer array nums.
-int sumRange(int left, int right) Returns the sum of the elements of nums between indices left and right inclusive (i.e. nums[left] + nums[left + 1] + ... + nums[right]).
-
- 
+Given a string s representing a valid expression, implement a basic calculator to evaluate it, and return the result of the evaluation.
+Note: You are not allowed to use any built-in function which evaluates strings as mathematical expressions, such as eval().
+ 
 Example 1:
 
-Input
-["NumArray", "sumRange", "sumRange", "sumRange"]
-[[[-2, 0, 3, -5, 2, -1]], [0, 2], [2, 5], [0, 5]]
-Output
-[null, 1, -1, -3]
+Input: s = "1 + 1"
+Output: 2
 
-Explanation
-NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);
-numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1
-numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
-numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
+Example 2:
 
- 
+Input: s = " 2-1 + 2 "
+Output: 3
+
+Example 3:
+
+Input: s = "(1+(4+5+2)-3)+(6+8)"
+Output: 23
+
+ 
 Constraints:
 
-1 <= nums.length <= 104
--105 <= nums[i] <= 105
-0 <= left <= right < nums.length
-At most 104 calls will be made to sumRange.
+1 <= s.length <= 3 * 105
+s consists of digits, '+', '-', '(', ')', and ' '.
+s represents a valid expression.
+'+' is not used as a unary operation (i.e., "+1" and "+(2 + 3)" is invalid).
+'-' could be used as a unary operation (i.e., "-1" and "-(2 + 3)" is valid).
+There will be no two consecutive operators in the input.
+Every number and running calculation will fit in a signed 32-bit integer.
 
 
 Boilerplate code:
 ```python
-class NumArray(object):
-    def __init__(self, nums):
-        ...
-    def sumRange(self, i, j):
-        ...
+def calculate(s):
+    ...
 ```

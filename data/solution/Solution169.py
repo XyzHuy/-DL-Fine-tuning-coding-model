@@ -1,10 +1,25 @@
-def isHappy(n):
-    """
-    :type n: int
-    :rtype: bool
-    """
-    seen_numbers = set()
-    while n > 1 and n not in seen_numbers:
-        seen_numbers.add(n)
-        n = sum(map(lambda x: int(x) * int(x), list(str(n))))
-    return n == 1
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from typing import List
+
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        # Boyer-Moore Voting Algorithm
+        count = 0
+        candidate = None
+        
+        for num in nums:
+            if count == 0:
+                candidate = num
+            count += (1 if num == candidate else -1)
+        
+        return candidate
+
+def majorityElement(nums: List[int]) -> int:
+    return Solution().majorityElement(nums)

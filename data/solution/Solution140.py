@@ -1,26 +1,37 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+import random
+import functools
+import collections
+import string
+import math
+import datetime
 
-def detectCycle(head):
-    """
-    :type head: ListNode
-    :rtype: ListNode
-    """
-    # Two points
-    try:
-        fast = head.next.next
-        slow = head.next
 
-        while fast != slow:
-            fast = fast.next.next
-            slow = slow.next
-    except:
-        return None
-    slow = head
-    while fast != slow:
-        fast = fast.next
-        slow = slow.next
-    return fast
+from typing import List
+
+class Solution:
+    def wordBreak(self, s: str, wordDict: List[str]) -> List[str]:
+        wordSet = set(wordDict)
+        memo = {}
+        
+        def dfs(start):
+            if start in memo:
+                return memo[start]
+            if start == len(s):
+                return [""]
+            
+            res = []
+            for end in range(start + 1, len(s) + 1):
+                word = s[start:end]
+                if word in wordSet:
+                    for sub_sentence in dfs(end):
+                        if sub_sentence:
+                            res.append(word + " " + sub_sentence)
+                        else:
+                            res.append(word)
+            memo[start] = res
+            return res
+        
+        return dfs(0)
+
+def wordBreak(s: str, wordDict: List[str]) -> List[str]:
+    return Solution().wordBreak(s, wordDict)

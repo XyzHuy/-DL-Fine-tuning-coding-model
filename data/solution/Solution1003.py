@@ -1,0 +1,16 @@
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        while "abc" in s:
+            s = s.replace("abc", "")
+        return s == ""
+
+def isValid(s: str) -> bool:
+    return Solution().isValid(s)

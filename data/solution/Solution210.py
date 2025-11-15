@@ -1,15 +1,43 @@
-def numberToWords(num):
-    to19 = 'One Two Three Four Five Six Seven Eight Nine Ten Eleven Twelve ' \
-           'Thirteen Fourteen Fifteen Sixteen Seventeen Eighteen Nineteen'.split()
-    tens = 'Twenty Thirty Forty Fifty Sixty Seventy Eighty Ninety'.split()
-    def words(n):
-        if n < 20:
-            return to19[n - 1:n]
-        if n < 100:
-            return [tens[n / 10 - 2]] + words(n % 10)
-        if n < 1000:
-            return [to19[n / 100 - 1]] + ['Hundred'] + words(n % 100)
-        for p, w in enumerate(('Thousand', 'Million', 'Billion'), 1):
-            if n < 1000 ** (p + 1):
-                return words(n / 1000 ** p) + [w] + words(n % 1000 ** p)
-    return ' '.join(words(num)) or 'Zero'
+import random
+import functools
+import collections
+import string
+import math
+import datetime
+
+
+from collections import defaultdict, deque
+from typing import List
+
+class Solution:
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+        # Create a graph and in-degree array
+        graph = defaultdict(list)
+        in_degree = [0] * numCourses
+        
+        # Build the graph and fill in-degree array
+        for course, prereq in prerequisites:
+            graph[prereq].append(course)
+            in_degree[course] += 1
+        
+        # Initialize the queue with all courses having 0 in-degree
+        queue = deque([course for course in range(numCourses) if in_degree[course] == 0])
+        result = []
+        
+        # Process nodes in the queue
+        while queue:
+            course = queue.popleft()
+            result.append(course)
+            
+            # Decrease the in-degree of adjacent courses
+            for neighbor in graph[course]:
+                in_degree[neighbor] -= 1
+                # If in-degree becomes 0, add to the queue
+                if in_degree[neighbor] == 0:
+                    queue.append(neighbor)
+        
+        # If we have processed all courses, return the result
+        return result if len(result) == numCourses else []
+
+def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    return Solution().findOrder(numCourses, prerequisites)

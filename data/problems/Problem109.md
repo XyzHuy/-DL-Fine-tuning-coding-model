@@ -1,36 +1,26 @@
-Given a binary tree, determine if it is height-balanced.
- 
+Given the head of a singly linked list where elements are sorted in ascending order, convert it to a height-balanced binary search tree.
+ 
 Example 1:
 
-Input: root = [3,9,20,null,null,15,7]
-Output: true
+
+Input: head = [-10,-3,0,5,9]
+Output: [0,-3,9,-10,null,5]
+Explanation: One possible answer is [0,-3,9,-10,null,5], which represents the shown height balanced BST.
 
 Example 2:
 
-Input: root = [1,2,2,3,3,null,null,4,4]
-Output: false
+Input: head = []
+Output: []
 
-Example 3:
-
-Input: root = []
-Output: true
-
- 
+ 
 Constraints:
 
-The number of nodes in the tree is in the range [0, 5000].
--104 <= Node.val <= 104
+The number of nodes in head is in the range [0, 2 * 104].
+-105 <= Node.val <= 105
 
 
 Boilerplate code:
 ```python
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-def isBalanced(root):
+def sortedListToBST(head):
     ...
 ```
