@@ -17,7 +17,7 @@ def load_model():
     )
 
     print("Loading fine-tuned adapter...")
-    model = PeftModel.from_pretrained(base_model, "lora_weight")
+    model = PeftModel.from_pretrained(base_model, "lora_weight_starcoder")
 
     tokenizer = AutoTokenizer.from_pretrained("bigcode/starcoder2-3b")
     return model, tokenizer

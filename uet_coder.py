@@ -24,7 +24,7 @@ def load_model():
     trust_remote_code=True,
     )
 
-    adapter_path = "deepseek-coder-finetuned"  
+    adapter_path = "lora_weight_deepseek"  
     print("Loading fine-tuned adapter...")
     # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
