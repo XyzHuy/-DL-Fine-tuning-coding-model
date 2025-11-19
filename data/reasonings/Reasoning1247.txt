@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum swaps between two strings s1 and s2 of equal length ('x', 'y' only) to make them identical. Swaps are only allowed between characters of different strings.
+2. Problem type / algorithm category: Greedy, String Manipulation, Counting Mismatches.
+3. Step-by-step approach: Count two types of mismatches: 'xy' (s1[i]='x', s2[i]='y') and 'yx' (s1[i]='y', s2[i]='x'). Pairs of 'xy' or 'yx' mismatches can be resolved with one swap. One 'xy' and one 'yx' mismatch require two swaps. If the total count of mismatches is odd, it's impossible.
+4. Edge cases: Total mismatches being odd makes it impossible. Empty strings are not possible due to constraints.
+5. Time and space complexity: O(N) time for iterating through strings, O(1) space for counters.
+</thinking>

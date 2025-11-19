@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum distance for a squirrel to collect all nuts and bring them to a tree in a grid.
+2. Problem type / algorithm category: Optimization, Greedy Algorithm, Manhattan Distance
+3. Step-by-step approach: Calculate the total distance assuming each nut is picked up from the tree and returned to the tree. Optimize by finding the nut which, if picked first by the squirrel, minimizes the total distance. This is achieved by calculating the difference between the squirrel's distance to the nut and the tree's distance to the nut.
+4. Edge cases: Empty nuts array (though the prompt specifies at least one nut), large grid size.
+5. Time and space complexity: Time: O(N), where N is the number of nuts. Space: O(1).
+</thinking>

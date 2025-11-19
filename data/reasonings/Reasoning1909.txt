@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be made strictly increasing by removing at most one element.
+2. Problem type / algorithm category: Iteration and helper function, brute force.
+3. Step-by-step approach: Iterate through each element, create a temporary array by removing the current element, and check if the temporary array is strictly increasing. Return true if any such removal results in a strictly increasing array.
+4. Edge cases: Arrays that are already strictly increasing, arrays with duplicate adjacent elements.
+5. Time and space complexity: O(n^2) time complexity due to nested operations (loop and slicing/joining within the helper function), O(n) space complexity for creating temporary arrays.
+</thinking>

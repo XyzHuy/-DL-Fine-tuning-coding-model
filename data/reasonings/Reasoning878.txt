@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the nth magical number which is divisible by either a or b and return it modulo 10^9 + 7.
+2. Problem type / algorithm category: Binary Search, Number Theory (GCD, LCM).
+3. Step-by-step approach: Use binary search to find the nth magical number. Calculate the count of magical numbers less than or equal to a given mid value using the inclusion-exclusion principle: count = mid/a + mid/b - mid/lcm(a,b). Adjust the binary search range based on whether the count is less than n or not.
+4. Edge cases: Large n value, potentially large a and b, need to handle modulo operation correctly.
+5. Time and space complexity: Time: O(log(n * min(a, b))), Space: O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all self-dividing numbers within a given range [left, right]. A self-dividing number is divisible by all of its digits and does not contain zero.
+2. Problem type / algorithm category: Number theory, iteration.
+3. Step-by-step approach: Iterate through the numbers from left to right inclusive. For each number, check if it is a self-dividing number by extracting its digits and verifying divisibility. A helper function is_self_dividing is used for readability.
+4. Edge cases: Numbers containing zero are not self-dividing. Single-digit numbers are self-dividing.
+5. Time and space complexity: Time complexity is O(N * D), where N is the range size (right - left + 1) and D is the maximum number of digits in a number within the range. Space complexity is O(K), where K is the number of self-dividing numbers in the range.
+</thinking>

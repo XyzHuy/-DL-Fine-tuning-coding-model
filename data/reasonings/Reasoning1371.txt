@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest substring where each vowel ('a', 'e', 'i', 'o', 'u') appears an even number of times.
+2. Problem type / algorithm category: Prefix sums with bitmasking, State compression.
+3. Step-by-step approach: Use a bitmask to track the parity (even/odd count) of each vowel. Iterate through the string, updating the bitmask. Store the first index where each bitmask state is encountered. If a state is seen again, the substring between the current index and the previously seen index for that state is a candidate for the longest substring.
+4. Edge cases: An empty string or a string with no vowels, where all vowels appear zero (even) times. A string that itself satisfies the condition.
+5. Time and space complexity: O(n) time because we iterate through the string once. O(1) space because the state is represented by a fixed-size bitmask (2^5 = 32 states) and the dictionary stores at most 32 entries.
+</thinking>

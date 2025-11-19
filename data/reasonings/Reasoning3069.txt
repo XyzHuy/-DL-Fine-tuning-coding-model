@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute elements of a distinct integer array `nums` into two arrays, `arr1` and `arr2`, based on a specific rule, and then concatenate them.
+2. Problem type / algorithm category: Simulation, Greedy approach.
+3. Step-by-step approach: Initialize `arr1` with the first element of `nums` and `arr2` with the second element. Iterate through the rest of `nums` starting from the third element. For each element, compare it with the last elements of `arr1` and `arr2`. Append the current element to the array whose last element is greater. Finally, concatenate `arr1` and `arr2`.
+4. Edge cases: The problem constraints state `n >= 3`, so there are always at least three elements. The first two elements are handled by direct assignment, and the loop starts from the third element, ensuring there are always elements to compare with.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the `nums` array once. Space complexity is O(n) to store `arr1`, `arr2`, and the final result.
+</thinking>

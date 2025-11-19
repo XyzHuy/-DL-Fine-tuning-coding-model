@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of unique elements from two sorted arrays, allowing path switches at common elements.
+2. Problem type / algorithm category: Dynamic Programming / Two Pointers.
+3. Step-by-step approach: Use two pointers, one for each array, to iterate through them. Maintain two running sums, one for each array's current path. When elements are different, add to the corresponding sum. When elements are equal, choose the maximum of the current path sums, add the common element, and reset both path sums to this new maximum. After iterating, add any remaining elements to their respective path sums and return the maximum of the two final sums modulo 10^9 + 7.
+4. Edge cases: One or both arrays might be empty (though constraints say >= 1 length). Arrays might have no common elements. All elements might be common.
+5. Time and space complexity: Time complexity is O(N+M) where N and M are lengths of nums1 and nums2, as we iterate through each array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

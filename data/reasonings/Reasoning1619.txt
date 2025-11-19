@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the average of an array after removing the smallest 5% and largest 5% of elements.
+2. Problem type / algorithm category: Sorting and Array manipulation.
+3. Step-by-step approach: Sort the input array. Determine the indices for the start and end of the elements to keep (excluding the 5% smallest and 5% largest). Slice the array to get the relevant sub-array. Calculate the sum of elements in the sub-array and divide by its length to find the mean.
+4. Edge cases: The problem statement guarantees the array length is at least 20 and a multiple of 20, which simplifies handling small arrays and ensures 5% calculation is always a whole number of elements.
+5. Time and space complexity: Sorting dominates time complexity. Space complexity is determined by sorting algorithm used.
+</thinking>

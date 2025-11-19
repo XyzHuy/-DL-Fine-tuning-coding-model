@@ -1,0 +1,485 @@
+{
+  "function_name": "minCostGoodCaption",
+  "test_cases": [
+    {
+      "parameters": {
+        "caption": "cdcd"
+      },
+      "expected_output": "cccc"
+    },
+    {
+      "parameters": {
+        "caption": "xyz"
+      },
+      "expected_output": "yyy"
+    },
+    {
+      "parameters": {
+        "caption": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected_output": "aaaaccceeefffhhhiiikkklllnnnoooqqqrrrtttuuuwwwxxxzzz"
+    },
+    {
+      "parameters": {
+        "caption": "aabbbccc"
+      },
+      "expected_output": "bbbbbccc"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": "bbbbffffjjjmmmpppsssvvvyyy"
+    },
+    {
+      "parameters": {
+        "caption": "cccccc"
+      },
+      "expected_output": "cccccc"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefg"
+      },
+      "expected_output": "bbbbfff"
+    },
+    {
+      "parameters": {
+        "caption": "aaabbbccc"
+      },
+      "expected_output": "aaabbbccc"
+    },
+    {
+      "parameters": {
+        "caption": "aaa"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "caption": "aabbaa"
+      },
+      "expected_output": "aaaaaa"
+    },
+    {
+      "parameters": {
+        "caption": "abca"
+      },
+      "expected_output": "aaaa"
+    },
+    {
+      "parameters": {
+        "caption": "aabbcc"
+      },
+      "expected_output": "aaaccc"
+    },
+    {
+      "parameters": {
+        "caption": "zzz"
+      },
+      "expected_output": "zzz"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "abacaba"
+      },
+      "expected_output": "aaaaaaa"
+    },
+    {
+      "parameters": {
+        "caption": "aaabbb"
+      },
+      "expected_output": "aaabbb"
+    },
+    {
+      "parameters": {
+        "caption": "aca"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "caption": "bc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "caption": "abcabcabc"
+      },
+      "expected_output": "aaaabbbbb"
+    },
+    {
+      "parameters": {
+        "caption": "cccbbbaaaa"
+      },
+      "expected_output": "cccbbbaaaa"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": "bbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyy"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefabcfedcba"
+      },
+      "expected_output": "bbbeeebbbeeebbb"
+    },
+    {
+      "parameters": {
+        "caption": "bcdfghjklmnpqrstvwxyzbcdfghjklmnpqrstvwxyz"
+      },
+      "expected_output": "cccgggkkknnnrrrvvvyyycccgggkkknnnrrrvvvyyy"
+    },
+    {
+      "parameters": {
+        "caption": "abcdcba"
+      },
+      "expected_output": "bbbbbbb"
+    },
+    {
+      "parameters": {
+        "caption": "aaaaabbbbbcccccc"
+      },
+      "expected_output": "aaaaabbbbbcccccc"
+    },
+    {
+      "parameters": {
+        "caption": "abcdabcdabcd"
+      },
+      "expected_output": "bbbbbbcccccc"
+    },
+    {
+      "parameters": {
+        "caption": "qweqweqwe"
+      },
+      "expected_output": "qqqqqeeee"
+    },
+    {
+      "parameters": {
+        "caption": "abcabcabcabcabcabcabcabc"
+      },
+      "expected_output": "aaaabbbbbaaaabbbbbbbbbbb"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrstuvw"
+      },
+      "expected_output": "nnnnrrrrvvv"
+    },
+    {
+      "parameters": {
+        "caption": "aaaabbbaaaa"
+      },
+      "expected_output": "aaaabbbaaaa"
+    },
+    {
+      "parameters": {
+        "caption": "zzzyzzyzz"
+      },
+      "expected_output": "zzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrsmnopqrs"
+      },
+      "expected_output": "nnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrrnnnnrrr"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": "bbbeeehhhkkknnnqqqtttwwwyyywwwtttqqqnnnkkkhhheeebbb"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqr"
+      },
+      "expected_output": "nnnqqq"
+    },
+    {
+      "parameters": {
+        "caption": "aaaabbbbcccc"
+      },
+      "expected_output": "aaaabbbbcccc"
+    },
+    {
+      "parameters": {
+        "caption": "aaabbbccccddddeeeeffff"
+      },
+      "expected_output": "aaabbbccccddddeeeeffff"
+    },
+    {
+      "parameters": {
+        "caption": "aaaabbaaa"
+      },
+      "expected_output": "aaabbbaaa"
+    },
+    {
+      "parameters": {
+        "caption": "xyzxyzxyz"
+      },
+      "expected_output": "xxxxyyyyy"
+    },
+    {
+      "parameters": {
+        "caption": "abcdeedcba"
+      },
+      "expected_output": "bbbddddbbb"
+    },
+    {
+      "parameters": {
+        "caption": "zyxzyxzyxzyxzyx"
+      },
+      "expected_output": "yyyyyxxxxyyyyyy"
+    },
+    {
+      "parameters": {
+        "caption": "aaaazzzzzzzzzzzz"
+      },
+      "expected_output": "aaaazzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "xyzzzzzzzzzzzzzyx"
+      },
+      "expected_output": "yyyzzzzzzzzzzzyyy"
+    },
+    {
+      "parameters": {
+        "caption": "aabbaabbaabb"
+      },
+      "expected_output": "aaaaaabbbbbb"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "aabbccddeeff"
+      },
+      "expected_output": "aaacccdddfff"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghi"
+      },
+      "expected_output": "bbbeeehhh"
+    },
+    {
+      "parameters": {
+        "caption": "aaaabbbbccccdddd"
+      },
+      "expected_output": "aaaabbbbccccdddd"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrs"
+      },
+      "expected_output": "nnnnrrr"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "ababababab"
+      },
+      "expected_output": "aaaaaaabbb"
+    },
+    {
+      "parameters": {
+        "caption": "yzabcyzabcyzabc"
+      },
+      "expected_output": "yyycccbbbyyybbb"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzyyy"
+      },
+      "expected_output": "zzzzzzyyy"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": "xxxxttttqqqnnnkkkhhheeebbb"
+    },
+    {
+      "parameters": {
+        "caption": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzzz"
+      },
+      "expected_output": "aaaacccceeeggghhhjjjkkkmmmnnnpppqqqssstttvvvwwwyyyzzz"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuv"
+      },
+      "expected_output": "nnnnrrruuunnnnrrruuunnnnrrruuunnnnrrruuunnnnrrruuunnnnrrruuu"
+    },
+    {
+      "parameters": {
+        "caption": "aaazzz"
+      },
+      "expected_output": "aaazzz"
+    },
+    {
+      "parameters": {
+        "caption": "fedcbazyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": "eeebbbxxxxttttqqqnnnkkkhhheeebbb"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdefabcdef"
+      },
+      "expected_output": "bbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeeebbbeee"
+    },
+    {
+      "parameters": {
+        "caption": "aabbaabbcc"
+      },
+      "expected_output": "aaaaaaaccc"
+    },
+    {
+      "parameters": {
+        "caption": "xyzyxzyxzyxzyx"
+      },
+      "expected_output": "yyyyxxxxyyyyyy"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghijk"
+      },
+      "expected_output": "bbbbffffjjj"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzyyyy"
+      },
+      "expected_output": "zzzzzyyyy"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "xyzzxyzzxyzz"
+      },
+      "expected_output": "yyyyyyzzzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "xyzabc"
+      },
+      "expected_output": "yyybbb"
+    },
+    {
+      "parameters": {
+        "caption": "aabccccaaa"
+      },
+      "expected_output": "aaaccccaaa"
+    },
+    {
+      "parameters": {
+        "caption": "aaaaaaaaaaa"
+      },
+      "expected_output": "aaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrstu"
+      },
+      "expected_output": "nnnqqqttt"
+    },
+    {
+      "parameters": {
+        "caption": "aaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvvwwwwxxxxyyyyzzzz"
+      },
+      "expected_output": "aaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvvwwwwxxxxyyyyzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefgabcdefgabcdefg"
+      },
+      "expected_output": "bbbbfffbbbbfffbbbbfff"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzyyyyy"
+      },
+      "expected_output": "zzzzzyyyyy"
+    },
+    {
+      "parameters": {
+        "caption": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": "bbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyybbbbffffjjjmmmpppsssvvvyyy"
+    },
+    {
+      "parameters": {
+        "caption": "mnopqrsmnopqrs"
+      },
+      "expected_output": "nnnnrrrnnnnrrr"
+    },
+    {
+      "parameters": {
+        "caption": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzzaabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected_output": "aaaaccceeefffhhhiiikkklllnnnoooqqqrrrtttuuuwwwxxxzzzaaaaccceeefffhhhiiikkklllnnnoooqqqrrrtttuuuwwwxxxzzz"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzz"
+      },
+      "expected_output": "zzzzz"
+    },
+    {
+      "parameters": {
+        "caption": "zzzzzzzzzzzzaaa"
+      },
+      "expected_output": "zzzzzzzzzzzzaaa"
+    },
+    {
+      "parameters": {
+        "caption": "zzzaaa"
+      },
+      "expected_output": "zzzaaa"
+    },
+    {
+      "parameters": {
+        "caption": "abcdabcde"
+      },
+      "expected_output": "bbbbbbddd"
+    }
+  ]
+}

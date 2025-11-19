@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Detect if a subarray pattern of length m repeats consecutively k or more times within a larger array.
+2. Problem type / algorithm category: Sliding window, pattern matching.
+3. Step-by-step approach: Iterate through the array, comparing elements m positions apart. Maintain a counter for consecutive matches. If the counter reaches (k-1)*m, a pattern of length m repeated k times has been found.
+4. Edge cases: Array length is less than m * k, meaning a pattern of sufficient length and repetition is impossible.
+5. Time and space complexity: Time complexity is O(N) where N is the length of arr. Space complexity is O(1).
+</thinking>

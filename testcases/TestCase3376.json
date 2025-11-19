@@ -1,0 +1,2642 @@
+{
+  "function_name": "findMinimumTime",
+  "test_cases": [
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "k": 1
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          5,
+          4
+        ],
+        "k": 2
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 5
+      },
+      "expected_output": 1257577
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          6,
+          10,
+          15,
+          21,
+          28,
+          36
+        ],
+        "k": 1
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000,
+          1000000,
+          10000000
+        ],
+        "k": 10
+      },
+      "expected_output": 159485
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          4,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 1
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 10
+      },
+      "expected_output": 1245267
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 5
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        "k": 2
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 1
+      },
+      "expected_output": 80
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 1
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000
+        ],
+        "k": 5
+      },
+      "expected_output": 424244
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 2
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64
+        ],
+        "k": 3
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "strength": [
+          100000,
+          200000,
+          300000,
+          400000,
+          500000,
+          600000,
+          700000,
+          800000
+        ],
+        "k": 100
+      },
+      "expected_output": 109555
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          6,
+          10,
+          15,
+          21,
+          28,
+          36
+        ],
+        "k": 3
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 2
+      },
+      "expected_output": 504
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 7
+      },
+      "expected_output": 232
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          6,
+          10,
+          15,
+          21,
+          28,
+          36
+        ],
+        "k": 1
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "strength": [
+          150,
+          250,
+          350,
+          450,
+          550,
+          650,
+          750,
+          850
+        ],
+        "k": 50
+      },
+      "expected_output": 173
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 10
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "k": 5
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000,
+          2500,
+          3000,
+          4500,
+          5000,
+          6000,
+          7500,
+          8000
+        ],
+        "k": 7
+      },
+      "expected_output": 2393
+    },
+    {
+      "parameters": {
+        "strength": [
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ],
+        "k": 5
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 4
+      },
+      "expected_output": 320
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 10
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 4
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72
+        ],
+        "k": 9
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 5
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "k": 2
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1,
+          2000000,
+          2,
+          3000000,
+          3,
+          4000000,
+          4
+        ],
+        "k": 5
+      },
+      "expected_output": 332435
+    },
+    {
+      "parameters": {
+        "strength": [
+          999999,
+          1,
+          999999,
+          1,
+          999999,
+          1,
+          999999,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 634528
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000,
+          1000000
+        ],
+        "k": 5
+      },
+      "expected_output": 36659
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          15,
+          7,
+          9,
+          12,
+          6,
+          4,
+          8
+        ],
+        "k": 3
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24
+        ],
+        "k": 4
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56
+        ],
+        "k": 3
+      },
+      "expected_output": 29
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256
+        ],
+        "k": 1
+      },
+      "expected_output": 80
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56
+        ],
+        "k": 7
+      },
+      "expected_output": 17
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812
+        ],
+        "k": 9
+      },
+      "expected_output": 46783
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "k": 7
+      },
+      "expected_output": 137
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 10
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          500000,
+          500000,
+          500000,
+          500000,
+          500000,
+          500000,
+          500000,
+          500000
+        ],
+        "k": 5
+      },
+      "expected_output": 733099
+    },
+    {
+      "parameters": {
+        "strength": [
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120
+        ],
+        "k": 1
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 3
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "strength": [
+          100000,
+          200000,
+          300000,
+          400000,
+          500000,
+          600000,
+          700000,
+          800000
+        ],
+        "k": 1
+      },
+      "expected_output": 800000
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          123,
+          456,
+          789,
+          101,
+          202,
+          303,
+          404,
+          505
+        ],
+        "k": 3
+      },
+      "expected_output": 316
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          900000,
+          800000,
+          700000,
+          600000,
+          500000,
+          400000,
+          300000
+        ],
+        "k": 1
+      },
+      "expected_output": 1343573
+    },
+    {
+      "parameters": {
+        "strength": [
+          128,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 42
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          18,
+          27,
+          36,
+          45,
+          54,
+          63,
+          72
+        ],
+        "k": 9
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "strength": [
+          15,
+          13,
+          11,
+          9,
+          7,
+          5,
+          3,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19
+        ],
+        "k": 3
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812,
+          3906
+        ],
+        "k": 5
+      },
+      "expected_output": 38322
+    },
+    {
+      "parameters": {
+        "strength": [
+          120,
+          240,
+          360,
+          480,
+          600,
+          720,
+          840,
+          960
+        ],
+        "k": 12
+      },
+      "expected_output": 216
+    },
+    {
+      "parameters": {
+        "strength": [
+          100000,
+          200000,
+          300000,
+          400000,
+          500000,
+          600000,
+          700000,
+          800000
+        ],
+        "k": 10000
+      },
+      "expected_output": 100098
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "k": 8
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          500000,
+          400000,
+          300000,
+          200000,
+          100000,
+          50000,
+          25000,
+          12500
+        ],
+        "k": 1
+      },
+      "expected_output": 276310
+    },
+    {
+      "parameters": {
+        "strength": [
+          500,
+          300,
+          700,
+          200,
+          800,
+          600,
+          400,
+          100
+        ],
+        "k": 3
+      },
+      "expected_output": 384
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128
+        ],
+        "k": 1
+      },
+      "expected_output": 42
+    },
+    {
+      "parameters": {
+        "strength": [
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000
+        ],
+        "k": 7
+      },
+      "expected_output": 268530
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 1
+      },
+      "expected_output": 2717859
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812
+        ],
+        "k": 1
+      },
+      "expected_output": 304763
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ],
+        "k": 3
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "k": 10
+      },
+      "expected_output": 128
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1,
+          1000000,
+          1,
+          1000000,
+          1,
+          1000000,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 634529
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56
+        ],
+        "k": 7
+      },
+      "expected_output": 17
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 5
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 3
+      },
+      "expected_output": 384
+    },
+    {
+      "parameters": {
+        "strength": [
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000,
+          200000
+        ],
+        "k": 5
+      },
+      "expected_output": 293241
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000
+        ],
+        "k": 1
+      },
+      "expected_output": 8000
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1000000,
+          1,
+          1000000,
+          1,
+          1000000,
+          1,
+          1000000
+        ],
+        "k": 1
+      },
+      "expected_output": 634529
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000,
+          500,
+          250,
+          125,
+          62,
+          31,
+          15,
+          7
+        ],
+        "k": 7
+      },
+      "expected_output": 59
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000,
+          1000000,
+          1
+        ],
+        "k": 5
+      },
+      "expected_output": 31447
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          16,
+          24,
+          32,
+          40,
+          48,
+          56,
+          64
+        ],
+        "k": 5
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "strength": [
+          128,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 1
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 5
+      },
+      "expected_output": 281
+    },
+    {
+      "parameters": {
+        "strength": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ],
+        "k": 15
+      },
+      "expected_output": 165
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56
+        ],
+        "k": 2
+      },
+      "expected_output": 37
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ],
+        "k": 5
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          50,
+          75,
+          100,
+          125,
+          150,
+          175,
+          200,
+          225
+        ],
+        "k": 4
+      },
+      "expected_output": 121
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ],
+        "k": 1
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          6,
+          10,
+          15,
+          21,
+          28,
+          36
+        ],
+        "k": 2
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 1
+      },
+      "expected_output": 80
+    },
+    {
+      "parameters": {
+        "strength": [
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ],
+        "k": 10
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 10
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "strength": [
+          40,
+          35,
+          30,
+          25,
+          20,
+          15,
+          10,
+          5
+        ],
+        "k": 3
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "strength": [
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812,
+          3906
+        ],
+        "k": 5
+      },
+      "expected_output": 38322
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          7,
+          5,
+          3,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 5
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "strength": [
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999,
+          999999
+        ],
+        "k": 8
+      },
+      "expected_output": 1302581
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "k": 1
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24
+        ],
+        "k": 3
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 1
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812
+        ],
+        "k": 3
+      },
+      "expected_output": 119446
+    },
+    {
+      "parameters": {
+        "strength": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "k": 3
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2
+        ],
+        "k": 1
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 8
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          4,
+          2,
+          1
+        ],
+        "k": 3
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30
+        ],
+        "k": 5
+      },
+      "expected_output": 17
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 3
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          7,
+          5,
+          3,
+          0,
+          9
+        ],
+        "k": 2
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          8,
+          3,
+          7
+        ],
+        "k": 3
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          999999,
+          999998,
+          999997,
+          999996,
+          999995,
+          999994,
+          999993
+        ],
+        "k": 10
+      },
+      "expected_output": 1245257
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "k": 2
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        "k": 3
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "k": 1
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812
+        ],
+        "k": 5
+      },
+      "expected_output": 76642
+    },
+    {
+      "parameters": {
+        "strength": [
+          5
+        ],
+        "k": 5
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          3,
+          8,
+          6
+        ],
+        "k": 3
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 10
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2,
+          1,
+          3,
+          5,
+          7
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "k": 3
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30
+        ],
+        "k": 10
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 10
+      },
+      "expected_output": 1245267
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 5
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          3,
+          4,
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 5
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 5
+      },
+      "expected_output": 1257577
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 5
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          3,
+          2,
+          6,
+          8,
+          7,
+          4,
+          1
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 10
+      },
+      "expected_output": 1138530
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40
+        ],
+        "k": 5
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          5,
+          4
+        ],
+        "k": 2
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 2
+      },
+      "expected_output": 53
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 3
+      },
+      "expected_output": 1392858
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80
+        ],
+        "k": 10
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2,
+          1,
+          3,
+          5,
+          7
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "k": 7
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "k": 10
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          7,
+          5,
+          3,
+          0,
+          9
+        ],
+        "k": 3
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "k": 3
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 10
+      },
+      "expected_output": 1170789
+    },
+    {
+      "parameters": {
+        "strength": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16
+        ],
+        "k": 1
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 4
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 1
+      },
+      "expected_output": 1833334
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          15,
+          13,
+          11,
+          9,
+          7,
+          5,
+          3,
+          1
+        ],
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3
+        ],
+        "k": 1
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "k": 8
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500,
+          31250,
+          15625,
+          7812
+        ],
+        "k": 10
+      },
+      "expected_output": 42972
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "k": 1
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          999999,
+          999998,
+          999997,
+          999996,
+          999995,
+          999994,
+          999993
+        ],
+        "k": 10
+      },
+      "expected_output": 1245257
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15
+        ],
+        "k": 3
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "strength": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ],
+        "k": 3
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "k": 3
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "strength": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "k": 5
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2
+        ],
+        "k": 3
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 10
+      },
+      "expected_output": 1138530
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          500000,
+          250000
+        ],
+        "k": 5
+      },
+      "expected_output": 424244
+    },
+    {
+      "parameters": {
+        "strength": [
+          1
+        ],
+        "k": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "strength": [
+          7,
+          2,
+          9
+        ],
+        "k": 5
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "strength": [
+          8,
+          6,
+          4,
+          2,
+          8,
+          6,
+          4,
+          2
+        ],
+        "k": 2
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          999999,
+          999998,
+          999997,
+          999996,
+          999995,
+          999994,
+          999993
+        ],
+        "k": 5
+      },
+      "expected_output": 1466185
+    },
+    {
+      "parameters": {
+        "strength": [
+          1000000,
+          1000000,
+          1000000
+        ],
+        "k": 1
+      },
+      "expected_output": 1833334
+    }
+  ]
+}

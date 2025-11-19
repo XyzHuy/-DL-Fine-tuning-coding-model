@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings where each unique character appears exactly 'count' times.
+2. Problem type / algorithm category: Sliding Window, String Manipulation.
+3. Step-by-step approach: Iterate through all possible numbers of unique characters (1 to 26). For each unique character count, use a sliding window of size 'num_unique' * 'count'. Maintain a frequency map for characters within the window. Slide the window, updating counts. If all characters in the window (that are present) have a frequency equal to 'count', increment the total.
+4. Edge cases: String length less than required window size, 'count' being very large, empty string (not possible by constraints), string with fewer unique characters than 'num_unique'.
+5. Time and space complexity: O(26 * N) where N is the length of s, for time and O(26) for space due to the counter.
+</thinking>

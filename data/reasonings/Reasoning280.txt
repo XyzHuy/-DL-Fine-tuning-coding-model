@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reorder an array such that elements alternate between being less than or equal to and greater than or equal to their neighbors.
+2. Problem type / algorithm category: Array manipulation, sorting (implicitly).
+3. Step-by-step approach: Iterate through the array, comparing adjacent elements. If the current comparison violates the wiggle condition (less than or greater than), swap the elements. Toggle the comparison expectation after each comparison.
+4. Edge cases: Array of length 1, already wiggle-sorted array, duplicate numbers in the array. The prompt guarantees a valid answer, so no need to check for an empty array.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we perform in-place swaps.
+</thinking>

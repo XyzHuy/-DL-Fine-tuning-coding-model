@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of powers of all non-empty contiguous subarrays, where power is defined as the square of the maximum element multiplied by the minimum element, modulo 10^9 + 7.
+2. Problem type / algorithm category: Array manipulation, dynamic programming, prefix sums, bit manipulation concepts.
+3. Step-by-step approach: Sort the array. Iterate through the sorted array, considering each element `num` as the potential maximum of a group. For each `num`, its contribution to the total power is `num^2 * (sum of all possible minimums)`. The sum of possible minimums are elements that appeared before `num` in the sorted array. A prefix sum `prefix_sum` is maintained to store the sum of all possible minimums seen so far, weighted by the number of groups they can form. The `prefix_sum` is updated iteratively, where each new number `num` can be a minimum in `2^i` new groups (where `i` is its current index in the sorted array). The modulo operation is applied at each addition.
+4. Edge cases: Empty array (constraint says 1 <= nums.length, so not possible), array with single element, array with all same elements.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and O(N) for the iteration. Space complexity is O(1) if modifying input array is allowed, or O(N) for a copy if not.
+</thinking>

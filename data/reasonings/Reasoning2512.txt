@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate scores for students based on feedback reports containing positive and negative words, then return the IDs of the top k students, with lower IDs ranking higher in case of ties.
+2. Problem type / algorithm category: Sorting and Data Structures (Hash Sets).
+3. Step-by-step approach: Convert positive and negative feedback words into sets for efficient lookup. Iterate through each report, split it into words, and calculate the student's score by adding 3 for positive words and subtracting 1 for negative words. Store pairs of (negative score, student ID) to facilitate sorting in descending order of score and ascending order of ID. Sort these pairs and return the student IDs from the top k pairs.
+4. Edge cases: Empty feedback lists, reports with no positive or negative words, reports with only positive or only negative words, k equal to the total number of students.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of reports. Space complexity is O(P + N), where P is the total number of unique feedback words and N is the number of reports.
+</thinking>

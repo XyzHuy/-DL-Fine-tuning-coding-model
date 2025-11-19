@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of distinct pairs of indices (i, j) from an array of digit strings `nums` such that concatenating `nums[i]` and `nums[j]` results in the `target` string, ensuring `i` is not equal to `j`.
+2. Problem type / algorithm category: Brute Force / String manipulation.
+3. Step-by-step approach: Iterate through all possible pairs of indices (i, j) in the `nums` array. For each pair, check if `i` is different from `j`. If they are different, concatenate `nums[i]` and `nums[j]` and compare the result with the `target` string. If they match, increment a counter. Finally, return the total count.
+4. Edge cases: The problem constraints guarantee `nums.length >= 2`, so there will always be at least two strings to form pairs. `i != j` handles avoiding self-pairing. Empty strings are not possible based on constraints.
+5. Time and space complexity: Time complexity is O(N^2 * L), where N is the number of strings in `nums` and L is the maximum length of a string in `nums` (due to string concatenation and comparison). Space complexity is O(1) as only a counter variable is used.
+</thinking>

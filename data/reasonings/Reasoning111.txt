@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum depth of a binary tree, which is the number of nodes along the shortest path from the root to the nearest leaf node.
+2. Problem type / algorithm category: Tree traversal / Depth-First Search (DFS)
+3. Step-by-step approach: Recursively calculate the minimum depth of the left and right subtrees. If one of the subtrees is empty, return 1 plus the minimum depth of the non-empty subtree. If both subtrees are non-empty, return 1 plus the minimum of the depths of the left and right subtrees.
+4. Edge cases: Empty tree (root is None), a node with only one child.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree. Space complexity is O(H) in the worst case, where H is the height of the tree. In the best case (balanced tree), H = log N, so space complexity is O(log N). In the worst case (skewed tree), H = N, so space complexity is O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to reverse a singly linked list and return the head of the reversed list.
+2. Problem type / algorithm category: Linked list manipulation / Iteration and Recursion.
+3. Step-by-step approach: The iterative approach uses three pointers: `prev`, `current`, and `next_node`. In each iteration, the `next` pointer of the current node is pointed to the previous node, and the pointers are moved forward. The recursive approach reverses the rest of the list and then appends the head to the tail of the reversed list.
+4. Edge cases: Empty list, single node list.
+5. Time and space complexity: Iterative: Time O(n), Space O(1). Recursive: Time O(n), Space O(n) due to call stack.
+</thinking>

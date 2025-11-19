@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine which people eventually know a secret, starting with person 0 and firstPerson at time 0, and spreading through meetings.
+2. Problem type / algorithm category: Graph traversal (BFS) and simulation of state changes over time.
+3. Step-by-step approach: Sort meetings by time. Iterate through meetings grouped by the same time. For each time group, build an adjacency list for people involved in meetings at that time. Use BFS starting from anyone who already knows the secret and is in the current time group to find all newly informed people. Update the set of people who know the secret.
+4. Edge cases: No meetings, all people involved in meetings at the same time, firstPerson already knows the secret initially.
+5. Time and space complexity: Time complexity is dominated by sorting meetings O(M log M) and graph processing which is O(M+N) across all time steps, resulting in O(M log M). Space complexity is O(M+N) for storing graph, visited sets, and known_people set.
+</thinking>

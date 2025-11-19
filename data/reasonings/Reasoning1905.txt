@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count islands in grid2 where every cell of the island is also part of a corresponding island in grid1.
+2. Problem type / algorithm category: Graph Traversal (Depth First Search), Island Problems.
+3. Step-by-step approach: Iterate through grid2. When a land cell (1) is found, initiate a DFS. During DFS, mark visited cells in grid2 and simultaneously check if the corresponding cell in grid1 is also land. If any part of the island in grid2 corresponds to water in grid1, it's not a sub-island. Increment count if the entire traversed island in grid2 is also land in grid1.
+4. Edge cases: Grids can be empty or contain only water/land. Islands touching boundaries are handled by boundary checks in DFS.
+5. Time and space complexity: Time O(m*n) for visiting each cell once. Space O(m*n) in the worst case for DFS recursion depth.
+</thinking>

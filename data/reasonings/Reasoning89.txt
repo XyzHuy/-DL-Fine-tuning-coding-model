@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate a Gray Code sequence of length 2^n for a given integer n.
+2. Problem type / algorithm category: Backtracking / Bit Manipulation.
+3. Step-by-step approach: Start with the base case n=1 ([0, 1]). Iteratively build the Gray Code sequence for n > 1 by reflecting the existing sequence, reversing it, and then adding 2^(n-1) to each element in the reversed sequence. Append this modified reversed sequence to the original sequence.
+4. Edge cases: n = 0 returns [0]; 1 <= n <= 16 according to constraints.
+5. Time and space complexity: Time complexity is O(2^n) as we iterate through each element of the gray code sequence. Space complexity is O(2^n) to store the generated gray code sequence.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the unique element in a sorted array where all other elements appear twice.
+2. Problem type / algorithm category: Binary search.
+3. Step-by-step approach: Use binary search to narrow down the search space. Adjust the mid pointer to be even. Compare the element at the adjusted mid index with the next element. If they are the same, the unique element is in the right half of the array, otherwise in the left half.
+4. Edge cases: Array with single element, unique element at start/end of array.
+5. Time and space complexity: O(log n) time, O(1) space.
+</thinking>

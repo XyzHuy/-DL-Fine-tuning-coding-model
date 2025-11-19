@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree where the total number of coins equals the number of nodes, find the minimum number of moves to redistribute the coins so that each node has exactly one coin.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Use a recursive DFS function. For each node, calculate the excess coins in its left and right subtrees. The number of moves is the sum of the absolute values of these excesses. The excess of a node is its current value minus 1, plus the excesses of its children.
+4. Edge cases: Empty tree (base case for recursion), single-node tree.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H) where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H=N, so the space complexity is O(N).
+</thinking>

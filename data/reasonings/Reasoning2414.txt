@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring in a given string where characters are in alphabetical order consecutively.
+2. Problem type / algorithm category: String manipulation, Sliding Window (implicit).
+3. Step-by-step approach: Iterate through the string, maintaining a `current_length` of the continuous alphabetical substring. If the current character is alphabetically one greater than the previous, increment `current_length`. Otherwise, reset `current_length` to 1. Keep track of the `max_length` seen so far.
+4. Edge cases: A string with a single character (length 1) is always a valid continuous substring. The input string has at least one character.
+5. Time and space complexity: Time O(N), Space O(1), where N is the length of the input string.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array and an integer k, maximize the array's sum by negating elements exactly k times. The same element can be negated multiple times.
+2. Problem type / algorithm category: Greedy, Hash Map.
+3. Step-by-step approach: The greedy strategy is to always flip the smallest number to get the largest increase in sum. First, turn all the most negative numbers into positive ones. If k operations remain, and k is odd, flip the number with the smallest absolute value to minimize the sum's decrease.
+4. Edge cases: If k is exhausted after flipping all negative numbers, we are done. If k remains, we check its parity. If k is even, repeatedly flipping any number cancels out. If k is odd, we must perform one more flip. If a zero exists, we can use the remaining flips on it. Otherwise, we flip the smallest positive number.
+5. Time and space complexity: Time complexity is O(N) to build a frequency map of the numbers. Space complexity is O(1) as the range of numbers is constant and small.
+</thinking>

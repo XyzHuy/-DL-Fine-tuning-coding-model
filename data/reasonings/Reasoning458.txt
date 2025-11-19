@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of pigs needed to identify the poisonous bucket given a limited testing time.
+2. Problem type / algorithm category: Math, combinatorics, base conversion.
+3. Step-by-step approach: Calculate the number of possible states each pig can have (alive or dead after each interval). Then, determine the minimum number of pigs needed such that the total number of possible states (states_per_pig ^ num_pigs) is greater than or equal to the number of buckets.
+4. Edge cases: Buckets is 1, minutesToDie equals minutesToTest.
+5. Time and space complexity: Time complexity is O(log(buckets)) due to the while loop. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of copy-paste operations to obtain exactly n 'A's starting with one 'A'.
+2. Problem type / algorithm category: Dynamic Programming / Number Theory
+3. Step-by-step approach: Iterate while the number of 'A's is less than n. If the current number of 'A's is a divisor of n, then copy all. Then paste until n is reached.
+4. Edge cases: n = 1 requires 0 operations.
+5. Time and space complexity: Time complexity is O(n) due to the while loop, and space complexity is O(1) as it uses constant extra space.
+</thinking>

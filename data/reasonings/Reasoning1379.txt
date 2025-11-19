@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the corresponding node in a cloned binary tree given a target node from the original tree.
+2. Problem type / algorithm category: Tree Traversal (Depth-First Search - DFS).
+3. Step-by-step approach: Perform a synchronized DFS on both the original and cloned trees. When the current node in the original tree matches the target node, return the corresponding node from the cloned tree.
+4. Edge cases: An empty original tree (no nodes), or the target node being the root.
+5. Time and space complexity: Time O(N) where N is the number of nodes, Space O(H) where H is the height of the tree due to recursion stack.
+</thinking>

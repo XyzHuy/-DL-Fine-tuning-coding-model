@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the key with the longest press duration from a sequence of key presses and their release times. If durations are equal, choose the lexicographically largest key.
+2. Problem type / algorithm category: Greedy algorithm, array traversal.
+3. Step-by-step approach: Initialize max duration and slowest key with the first keypress. Iterate through remaining keypresses, calculate current duration, and update max duration and slowest key if current duration is greater or equal with a lexicographically larger key.
+4. Edge cases: The first keypress duration is handled separately. Tie-breaking for equal durations using lexicographical comparison is crucial.
+5. Time and space complexity: Time complexity is O(n) as we iterate through the input arrays once. Space complexity is O(1) as we only use a few variables for tracking.
+</thinking>

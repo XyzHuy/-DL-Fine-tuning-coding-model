@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of profitable schemes (subsets of crimes) given the number of members, minimum profit, group size required for each crime, and profit gained from each crime, where a profitable scheme has a total profit of at least minProfit and uses at most n members.
+2. Problem type / algorithm category: Dynamic programming. Specifically, 3D DP.
+3. Step-by-step approach: Use a 3D DP array dp[i][j][k] where i represents the number of crimes considered, j represents the current profit, and k represents the number of members used. Iterate through each crime, and for each crime, iterate through all possible profit values and member counts.  For each crime, there are two options: either include the crime or exclude it. If the crime is included, update the DP array by adding the number of ways to achieve the remaining profit with the remaining members from the previous crimes. If the crime is excluded, the number of ways remains the same as with the previous crimes. Handle the case when including a crime results in profit exceeding `minProfit`. Sum all ways to get `minProfit` or more profit using at most n members.
+4. Edge cases: The base case is achieving 0 profit with 0 members and 0 crimes, which has one way. The profit value needs to be capped at minProfit.
+5. Time and space complexity: Time complexity is O(G * minProfit * n), where G is the length of the group array. Space complexity is O(G * minProfit * n).
+</thinking>

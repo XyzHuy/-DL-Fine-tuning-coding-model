@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty subsequences where the sum of minimum and maximum elements is less than or equal to a given target, modulo 10^9 + 7.
+2. Problem type / algorithm category: Two Pointers, Dynamic Programming (for powers of 2).
+3. Step-by-step approach: Sort the array. Use two pointers, left and right. If nums[left] + nums[right] <= target, it means any subsequence formed with nums[left] as the minimum and any element from nums[left+1] to nums[right] as part of it (including just nums[left] itself) will satisfy the condition. The number of such subsequences is 2^(right - left), as we can either include or exclude elements between left and right. Increment left. If the sum exceeds target, decrement right. Precompute powers of 2.
+4. Edge cases: Empty input array (though constraints say length >= 1), target value, duplicate numbers in the input.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(N) for precomputed powers of 2.
+</thinking>

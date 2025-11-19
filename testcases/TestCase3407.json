@@ -1,0 +1,1468 @@
+{
+  "function_name": "hasMatch",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "a*d*g"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "m*ss*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "luck",
+        "p": "u*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xy",
+        "p": "*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "leetcode",
+        "p": "ee*e"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "testcase",
+        "p": "te*se"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "car",
+        "p": "c*v"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "p": "he*o"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "p": "*a"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "pattern",
+        "p": "p*ern"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*mnop*abcdefghij*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "mnop*abcdefghij"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "complexity",
+        "p": "comple*ty"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*y*l*o*p*h*o*n*e"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*mnop*abcdefghij*kl*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "*bra*bra"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abcdefgh*i*j*k"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "p": "a*d"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*bcd*efghij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefgh*ij*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xyloph*one"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "a*b*c*d*e*f"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "a*th*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylo*phne"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "ab*ef"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "abcdefgh*i"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "mnop*ijkl*abcdefg"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "substitution",
+        "p": "sub*sti*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*abcdefghij*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "substring",
+        "p": "su*b*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*bc*ef*hi*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*ss*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "boundary",
+        "p": "bound*ry"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "a*bcdefghijk"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaa",
+        "p": "a*a"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylo*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "a*d*f*h*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "sequence",
+        "p": "*e*n*ce"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "abcd*ef*gh*i"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "p": "r*ecar"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "p": "pa*t*ern"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*mnop*ijkl*abcdefg*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*phone"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "interviewquestion",
+        "p": "inte*r*view*q*stion"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "depthfirstsearch",
+        "p": "dep*h*f*st*s*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "*n*na"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "fibonacci",
+        "p": "fi*b*oc*nn*i"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xyloph*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdef*ghij*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdexyz",
+        "p": "abc*d*yz"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "datastructures",
+        "p": "d*ta*s*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "m*ss*i*pi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*cd*ef*gh*ij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "m*ss*si*pp*i"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*ef*i*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abcdefghijk*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "floydwarshall",
+        "p": "fl*oyd*w*rsh*ll"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefghij*kl*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*loph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "longestcommonsubsequence",
+        "p": "long*st*c*m*n*s*b*s*q*nce"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "shortestpath",
+        "p": "sh*rt*st*p*th"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*c*d*e*f*g*h*i*j*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "substring",
+        "p": "su*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "matching",
+        "p": "ma*tching"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "dynamicprogramming",
+        "p": "dyn*mic*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "topologicalsort",
+        "p": "t*p*l*g*cal*s*rt"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*abcdefg*ijkl*mnop*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "matchmaking",
+        "p": "ma*ing"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*efg"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefghij*mnop*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abcdefghij*k"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "m*ss*pp"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*bcdefgh*i*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*ph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "dynamicprogramming",
+        "p": "dy*n*ic*m*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "hellohello",
+        "p": "he*lo*he*lo"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*y"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*ij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "substring",
+        "p": "*string"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*l*ph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xyzzyx",
+        "p": "x*z*y"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*mnopabcdefghij"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "substitution",
+        "p": "sub*sti*t*ion"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "interviewquestion",
+        "p": "int*viewq*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "abcd*fg"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abc*efg*ijk"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "a*d*f*h*j*k"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "p": "pro*amm*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mi*s*ippi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylo*p*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "*rith*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylo*ph*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*y*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefgh",
+        "p": "a*d*gh"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "theskyisblue",
+        "p": "the*sky*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "transitiveclosure",
+        "p": "tr*ns*t*v*c*l*sr*e"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*ef*i*j*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "a*bra*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "abc*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "p": "abcd*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abababab",
+        "p": "a*b*a*b*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abc*efghij*k"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefg*ijkl*mnop"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*l*phne"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "ba*n*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "complexpattern",
+        "p": "com*pat*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "p": "pr*am*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyz",
+        "p": "*yzxy*z"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programminglanguage",
+        "p": "pro*ing"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "stronglyconnectedcomponent",
+        "p": "str*ongly*c*nn*c*t*ed*c*mp*nt"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "mnop*abcdefghij*kl*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*l*phne"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "abc*d*ef"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "dynamicprogramming",
+        "p": "dy*na*m*i*c*p*r*mm*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "recursion",
+        "p": "rec*ion"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*ly*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*y*o*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "breadthfirstsearch",
+        "p": "b*eadth*f*st*s*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "a*ghi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "p": "pat*ern*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "algorithms",
+        "p": "algo*rith*m*s"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "pattern",
+        "p": "p*t*ern"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*abcdefghijk"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*l*o*ph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "kl*a*b*c*d*e*f*g*h*i*j*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*kl*abcdefghij*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*c*d*e*f*g*h*i*j*k"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "mnopabcdefghij*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "kl*abcdefghij"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "*abcdefghi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*abcdefghij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "ba*a"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "supercalifragilisticexpialidocious",
+        "p": "su*er*c*ious"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "aaaabaaa",
+        "p": "a*baaa"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*ylo*phone"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "aaaaa",
+        "p": "*a"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*bcdef"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*cde*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "minimumspanningtree",
+        "p": "mi*n*mu*m*s*p*a*n*n*g*t*r*ee"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*c*d*e*f*g*h*i*j*kl"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "p": "a*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*xylophone"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "binarysearch",
+        "p": "bi*ary*earch"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*one"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*ef*i*j*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "p": "*d"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*c*d*e*f*g*h*i*j*klmno*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaa",
+        "p": "aa*aa*aa"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*l*ph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "p": "p*mm*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "p": "p*gram*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "*def*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "backtracking",
+        "p": "ba*k*t*ng"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*bcdefgh*ij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "abcdefgh*k*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "a*b*c*d*e*f*g*h*i*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programminglanguage",
+        "p": "pro*am*age"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*si"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "aaaaa",
+        "p": "a*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghi",
+        "p": "*bcd*ef*ghi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "knapsack",
+        "p": "kn*a*ck"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "p": "*abcd"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*l*ph*ne"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xyl*phne"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "interviewquestion",
+        "p": "in*t*view*q*ion"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*o"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*si*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "programminglanguage",
+        "p": "pro*ming"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xy*o*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdef*ij"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abc*ef*g*i*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefghij*mnop"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "p": "pa*ern*atching"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*xy*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "*f"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefghij*kl"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefg*ijkl*mnop*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "hellohello",
+        "p": "he*lo*lo"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "a*b*c*d*e*f*g*h*i*j*k"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "mnop*abcdefghij*klmno*"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylo*ph*e"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*is*ip*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "p": "aba*caba"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "algo*rithm"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "xylophone*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "ab*bra"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abacaxi",
+        "p": "a*xi"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "abcdef*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "b*n*a"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "multiplication",
+        "p": "mu*li*c*ion"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "abc*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "x*l*phne"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefgh*i*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "*abcdef"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "starburst",
+        "p": "s*rbust"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "a*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "abcdefghij*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "backtracking",
+        "p": "b*ck*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "a*d*h*j"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*gh*i*j*"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "a*th*m"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "aquickbrownfox",
+        "p": "a*quick*fox"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*efgh*i*j"
+      },
+      "expected_output": true
+    }
+  ]
+}

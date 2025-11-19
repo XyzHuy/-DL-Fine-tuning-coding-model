@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a Hamiltonian path for a knight on an m x n chessboard, starting from (r, c), visiting each cell exactly once.
+2. Problem type / algorithm category: Backtracking, Depth-First Search (DFS) on a graph.
+3. Step-by-step approach: Initialize the board with -1, mark the starting cell with 0. Use DFS to explore possible knight moves. At each cell, try all 8 possible moves. If a move is valid (within bounds and not visited), mark it with the next sequential number and recursively call DFS. If the DFS completes and visits all cells, a solution is found. If a path doesn't lead to a solution, backtrack by resetting the cell to -1.
+4. Edge cases: Small boards (1x1, 1x2, etc.), starting positions. The problem guarantees a solution exists.
+5. Time and space complexity: Time complexity is roughly O(8^(m*n)) in the worst case for general Hamiltonian path problems, but for small constraints (m, n <= 5) and guaranteed solution, it's more practically limited by the board size. Space complexity is O(m*n) for the board and recursion stack.
+</thinking>

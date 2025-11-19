@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform a given m x n binary matrix into a zero matrix by flipping cells and their immediate neighbors, minimizing the number of flips.
+2. Problem type / algorithm category: Breadth-First Search (BFS) on state space.
+3. Step-by-step approach: Start with the initial matrix state and perform BFS. In each step, explore all possible single-cell flips. Convert the matrix to a tuple for hashing. Track visited states and the minimum steps to reach each state. The target state is a matrix of all zeros.
+4. Edge cases: The input matrix is already a zero matrix. It's impossible to reach a zero matrix from the given input.
+5. Time and space complexity: The state space is 2^(m*n). For each state, we iterate through m*n cells, and flipping takes constant time (5 neighbors). BFS visits each reachable state once. Therefore, time complexity is O(m*n * 2^(m*n)) and space complexity is O(2^(m*n)) for the visited set and queue.
+</thinking>

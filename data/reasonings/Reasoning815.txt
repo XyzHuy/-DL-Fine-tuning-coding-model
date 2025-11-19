@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of buses needed to travel from a source bus stop to a target bus stop, given a list of bus routes.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Build a graph where stops are nodes and buses connect stops. Perform BFS starting from the source, keeping track of the number of buses taken. Return the number of buses when the target is found, or -1 if the target is unreachable.
+4. Edge cases: Source equals target, no path exists.
+5. Time and space complexity: Time: O(N*M), where N is the total number of stops and M is the number of routes. Space: O(N), where N is the total number of stops.
+</thinking>

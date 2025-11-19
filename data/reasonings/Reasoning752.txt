@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves to reach a target lock combination from '0000', avoiding deadends.
+2. Problem type / algorithm category: Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore possible lock combinations. Start from '0000' and generate neighboring combinations (one move away). Check if a neighbor is the target, a deadend, or already visited. Enqueue valid neighbors and continue until the target is found or the queue is empty.
+4. Edge cases: Target is '0000', '0000' is a deadend, no path to target exists.
+5. Time and space complexity: Time complexity is O(10^4) as we explore at most 10000 combinations. Space complexity is O(10^4) to store visited combinations.
+</thinking>

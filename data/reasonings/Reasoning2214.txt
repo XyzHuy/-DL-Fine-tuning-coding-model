@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum starting health to survive a sequence of levels, each dealing specified damage, with an option to use armor once to reduce damage from one level. Health must remain above 0.
+2. Problem type / algorithm category: Greedy approach, optimization problem.
+3. Step-by-step approach: First, calculate the total damage if armor is not used. Then, identify the maximum damage taken in any single level. To minimize starting health, the armor should be used on the level with maximum damage. The health needed is the total damage minus the damage mitigated by armor, plus one (to survive with at least 1 health).
+4. Edge cases: Armor value is 0 (armor is effectively useless). All damage values are 0. Single level game.
+5. Time and space complexity: Time complexity is O(N) for summing damage and finding the maximum. Space complexity is O(1) as only a few variables are used.
+</thinking>

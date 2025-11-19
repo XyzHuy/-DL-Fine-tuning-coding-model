@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix, replace all occurrences of -1 with the maximum value found in their respective columns.
+2. Problem type / algorithm category: Matrix manipulation, finding column maximums.
+3. Step-by-step approach: First, iterate through each column to find and store its maximum non-negative value. Second, iterate through the matrix again, and for any element that is -1, replace it with the pre-calculated maximum for its column.
+4. Edge cases: The problem guarantees that each column contains at least one non-negative integer, so finding a maximum for each column is always possible. Matrix dimensions are at least 2x2.
+5. Time and space complexity: Time complexity is O(m*n) for iterating through the matrix twice. Space complexity is O(n) to store the maximums for each column.
+</thinking>

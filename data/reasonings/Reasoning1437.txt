@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all occurrences of '1' in a binary array are separated by at least 'k' zeros.
+2. Problem type / algorithm category: Array traversal, Linear scan.
+3. Step-by-step approach: Iterate through the array, keeping track of the index of the most recently seen '1'. When a new '1' is encountered, calculate the distance from the previous '1' and check if it's less than 'k'. If it is, return false. Otherwise, update the 'prev_index' and continue.
+4. Edge cases: An array with no '1's (always true), an array with only one '1' (always true), and the value of 'k' being zero.
+5. Time and space complexity: O(n) time because we iterate through the array once. O(1) space because we only use a few variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count ways to split a binary string into three non-empty parts with an equal number of ones in each part.
+2. Problem type / algorithm category: Counting, String manipulation, Combinatorics.
+3. Step-by-step approach: Calculate total ones. If not divisible by 3, return 0. If total ones is 0, calculate combinations for splits. Otherwise, find boundaries where counts of ones match target_ones and 2*target_ones, then multiply their counts.
+4. Edge cases: Total ones is 0 (all zeros), total ones not divisible by 3.
+5. Time and space complexity: O(N) time and O(1) space, where N is the length of the string.
+</thinking>

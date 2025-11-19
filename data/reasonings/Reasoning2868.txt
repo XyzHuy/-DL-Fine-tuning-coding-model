@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two lexicographically sorted arrays of strings a and b, determine if Alice wins a word game. Alice starts with her smallest word, and players alternate playing a "closely greater" word. A player loses if they cannot play a valid word. Both play optimally.
+2. Problem type / algorithm category: Game Theory / Greedy Algorithm. The game can be simulated turn by turn as players have limited choices and optimal play leads to a deterministic outcome.
+3. Step-by-step approach: Alice starts with a[0]. Then, Bob searches for the first word in b that is lexicographically greater than Alice's word AND starts with the same letter or the next letter. If found, that becomes the new current word and it's Alice's turn. Alice then searches for a word in a similarly. If at any point a player cannot find a valid next word, the other player wins.
+4. Edge cases: One player's list of words might be exhausted before the other. The initial word played by Alice might not allow Bob to make any moves.
+5. Time and space complexity: Time complexity is O(N+M) where N and M are the lengths of arrays a and b, as each word is considered at most once. Space complexity is O(1) (excluding input storage) as we only use a few pointers and variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest contiguous subarray where the first element is strictly greater than the last element.
+2. Problem type / algorithm category: Brute force with optimization using a hash map for first occurrences.
+3. Step-by-step approach: Iterate through the array. For each element, record its first occurrence. Then, iterate from that first occurrence to the end of the array, and if the current element is strictly greater than the element at the recorded first occurrence index, update the maximum length.
+4. Edge cases: Empty array (though constraints say length is at least 1), array with no semi-decreasing subarrays, array where all elements are equal.
+5. Time and space complexity: Time complexity is O(n^2) in the worst case due to nested loops, and space complexity is O(n) for the hash map.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count servers with no requests in a given time window [query_time - x, query_time] for multiple queries.
+2. Problem type / algorithm category: Two Pointers / Sliding Window with Binary Search.
+3. Step-by-step approach: Sort logs by time. Sort queries while preserving original indices. For each query, identify active servers within the time window using binary search on sorted server request times. The count of inactive servers is total servers minus active servers.
+4. Edge cases: Empty logs, queries with times outside log ranges, x being very large or small.
+5. Time and space complexity: O(L log L + Q log Q + N log L) time and O(L + N) space, where L is number of logs and Q is number of queries.
+</thinking>

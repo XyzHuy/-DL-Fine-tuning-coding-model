@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We are given coordinates of workers and bikes on a 2D grid. The goal is to assign each worker a unique bike such that the total Manhattan distance is minimized.
+2. Problem type / algorithm category: This is a combinatorial optimization problem that can be solved using dynamic programming with bitmasking.
+3. Step-by-step approach: The solution uses a recursive dynamic programming approach with memoization. The `dp(worker_index, bike_mask)` function calculates the minimum total Manhattan distance starting from a given worker index and a bitmask representing the availability of bikes. The base case is when all workers have been assigned a bike. In each recursive step, the function iterates through the bikes, checks if a bike is available (not in the mask), calculates the Manhattan distance between the current worker and the bike, and recursively calls the dp function for the next worker, updating the bike mask accordingly.
+4. Edge cases: The number of workers is less than or equal to the number of bikes. Worker and bike locations are unique. Coordinates are non-negative and less than 1000.
+5. Time and space complexity: The time complexity is O(m!/(m-n)!) or O(m * 2^m * n) in the worst case because we are considering all possible permutations of bikes assigned to workers, where n is the number of workers and m is the number of bikes. The space complexity is O(2^m * n) due to the memoization in the dp function and the call stack depth.
+</thinking>

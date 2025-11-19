@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the distinct combinations of pens and pencils that can be bought given a total budget and individual costs for pens and pencils.
+2. Problem type / algorithm category: Combinatorial counting, Iterative approach.
+3. Step-by-step approach: Iterate through all possible numbers of the more expensive item (e.g., pens) that can be bought within the total budget. For each number of pens, calculate the remaining money and determine how many of the cheaper item (e.g., pencils) can be bought with it. Sum up these possibilities.
+4. Edge cases: Total budget is zero or negative, costs are larger than total budget, costs are equal.
+5. Time and space complexity: Time complexity is O(total / min(cost1, cost2)) and space complexity is O(1).
+</thinking>

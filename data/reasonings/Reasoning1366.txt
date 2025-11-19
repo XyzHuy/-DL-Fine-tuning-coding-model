@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort teams based on votes where higher rank is better, using positional votes and alphabetical order for tie-breaking.
+2. Problem type / algorithm category: Sorting, custom comparison.
+3. Step-by-step approach: Create a count for each team at each position (higher count means better rank), then sort teams using these counts as primary sort keys and team names as secondary keys.
+4. Edge cases: Single voter, all votes identical, ties that require alphabetical resolution.
+5. Time and space complexity: O(N*M + T*logT) time, O(T*M) space where N is the number of votes, M is the number of teams, T is the number of unique teams.
+</thinking>

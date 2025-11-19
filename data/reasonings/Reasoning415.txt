@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Add two non-negative integers represented as strings, without using built-in large integer libraries or converting the strings to integers directly.
+2. Problem type / algorithm category: String manipulation, arithmetic.
+3. Step-by-step approach: Iterate through the strings from right to left, adding the digits at each position along with any carry from the previous addition. Store the resulting digits in a list and reverse the list to produce the final sum as a string.
+4. Edge cases: One or both numbers could be "0". The lengths of the two numbers might be different, requiring padding with 0s during the addition process. There might be a carry left after processing all digits.
+5. Time and space complexity: Time complexity is O(max(n, m)), where n and m are the lengths of the input strings. Space complexity is O(max(n, m)) to store the result string.
+</thinking>

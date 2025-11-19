@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a sorted array into a height-balanced BST.
+2. Problem type / algorithm category: Divide and Conquer, Binary Search Tree.
+3. Step-by-step approach: Use recursion. Find the middle element of the array, create a node with that element, and recursively call the function on the left and right subarrays to create the left and right subtrees.
+4. Edge cases: Empty array.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, Space complexity is O(logN) due to the recursive calls.
+</thinking>

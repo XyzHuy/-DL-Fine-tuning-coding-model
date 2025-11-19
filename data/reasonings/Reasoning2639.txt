@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D integer matrix, calculate the maximum string length of numbers in each column.
+2. Problem type / algorithm category: Array traversal, String manipulation.
+3. Step-by-step approach: Iterate through each column. For each column, convert all its numbers to strings and find the maximum string length among them. Store these maximum lengths in a result array.
+4. Edge cases: The constraints mention integers can be negative, which affects string length due to the minus sign. The minimum and maximum values of integers are within standard integer limits. Empty grid is not possible based on constraints.
+5. Time and space complexity: Time complexity is O(m * n * L) where L is the maximum number of digits in an integer, due to converting each number to a string. Space complexity is O(n) for storing the result.
+</thinking>

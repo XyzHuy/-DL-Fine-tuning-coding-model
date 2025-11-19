@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum set of vertices in a directed acyclic graph (DAG) from which all other nodes are reachable.
+2. Problem type / algorithm category: Graph traversal, Set operations.
+3. Step-by-step approach: Identify nodes that have no incoming edges. These nodes must be part of the starting set because nothing else can reach them. All other nodes must have at least one incoming edge, meaning they are reachable from some other node. Therefore, the set of all nodes minus those with incoming edges forms the smallest set of required vertices.
+4. Edge cases: The graph is guaranteed to be a DAG and a unique solution exists. This implies there will always be at least one node with no incoming edges if not all nodes are connected. The constraints ensure n is at least 2.
+5. Time and space complexity: Time complexity is O(N + E) where N is the number of vertices and E is the number of edges, due to iterating through edges and creating sets. Space complexity is O(N) for storing sets of nodes.
+</thinking>

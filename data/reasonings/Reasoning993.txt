@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two nodes in a binary tree are cousins (same depth, different parents).
+2. Problem type / algorithm category: Tree traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Perform a BFS, keeping track of each node's parent and depth. When nodes with values x and y are found, store their parent and depth information. After both nodes are found, check if they have the same depth and different parents.
+4. Edge cases: Empty tree, x or y not in tree (handled implicitly by returning False if the loop completes without finding both).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree. Space complexity is O(W) where W is the maximum width of the tree, due to the queue used in BFS. In the worst case (complete binary tree), W can be N.
+</thinking>

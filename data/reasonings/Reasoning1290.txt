@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a linked list representing a binary number (MSB at head) into its decimal equivalent.
+2. Problem type / algorithm category: Linked List Traversal, Bit Manipulation.
+3. Step-by-step approach: Initialize a decimal result to 0. Iterate through the linked list. For each node, left-shift the current result by one bit (multiply by 2) and then OR it with the node's value. Move to the next node.
+4. Edge cases: The problem statement guarantees the list is not empty, so an empty list is not a concern. Single-node lists are handled correctly.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the linked list, as each node is visited once. Space complexity is O(1) as only a few variables are used for storage.
+</thinking>

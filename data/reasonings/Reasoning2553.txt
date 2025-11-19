@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to take an array of positive integers and return a new array containing the digits of each integer, preserving their original order.
+2. Problem type / algorithm category: Array manipulation, digit extraction.
+3. Step-by-step approach: Iterate through each number in the input array. For each number, repeatedly take the last digit using the modulo operator and prepend it to a temporary list. After extracting all digits, reverse the temporary list and extend the main result list with these digits.
+4. Edge cases: Single-digit numbers in the input array, where the number itself is the only digit.
+5. Time and space complexity: Time complexity is O(N*logM) where N is the number of elements and M is the maximum value of an element, as each digit is processed. Space complexity is O(N*logM) for storing the result.
+</thinking>

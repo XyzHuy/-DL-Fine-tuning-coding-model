@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest prime palindrome greater than or equal to a given integer n.
+2. Problem type / algorithm category: Number theory, palindrome generation, primality test.
+3. Step-by-step approach: Generate palindromes starting from the length of n, check if the generated number is a prime and a palindrome, and return the number if it satisfies both conditions. Optimize by generating only odd length palindromes after a certain point, as even length palindromes are divisible by 11 and not prime (except 11).
+4. Edge cases: Handle the special case where n is between 8 and 11, return 11 directly. The constraints guarantee a solution exists.
+5. Time and space complexity: The time complexity is difficult to precisely determine due to the palindrome generation and primality testing. The space complexity is O(1) as the algorithm uses a constant amount of extra space.
+</thinking>

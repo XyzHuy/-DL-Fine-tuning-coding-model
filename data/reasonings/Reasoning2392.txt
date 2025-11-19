@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a k x k matrix with numbers 1 to k, satisfying relative row and column orderings specified by conditions.
+2. Problem type / algorithm category: Graph theory, Topological Sort.
+3. Step-by-step approach: Model row and column constraints as directed graphs. Perform topological sort on each graph to determine valid relative orderings of numbers. Map these orderings to matrix row and column indices and populate the matrix.
+4. Edge cases: Cycles in either row or column conditions (detected by topological sort returning fewer than k elements), leading to an impossible arrangement.
+5. Time and space complexity: O(k^2) time for matrix initialization and filling, O(N + M + k) for topological sort (where N and M are lengths of row/col conditions), O(k^2) space for the matrix, O(k + N + M) for graph and visited structures.
+</thinking>

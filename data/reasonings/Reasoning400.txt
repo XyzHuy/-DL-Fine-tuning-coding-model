@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the nth digit in an infinite sequence of integers 1, 2, 3, ...
+2. Problem type / algorithm category: Math, digit manipulation
+3. Step-by-step approach: Determine the length of the number containing the nth digit, then find the specific number, and finally extract the nth digit from that number.
+4. Edge cases: The input n can be large (up to 2^31 - 1), so the solution needs to handle large numbers of digits.
+5. Time and space complexity: Time complexity is O(log n) because the while loop iterates a logarithmic number of times based on the number of digits. Space complexity is O(1).
+</thinking>

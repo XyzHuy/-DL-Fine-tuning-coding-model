@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a BST, find the minimum difference between any two distinct node values.
+2. Problem type / algorithm category: Tree traversal, BST properties, finding minimum difference.
+3. Step-by-step approach: Perform an in-order traversal to get a sorted list of node values. Iterate through the sorted list, calculating the difference between consecutive elements and updating the minimum difference found so far.
+4. Edge cases: Empty tree (should not happen based on constraints), tree with only one node (should not happen based on constraints), large value differences.
+5. Time and space complexity: Time complexity is O(N) for inorder traversal and O(N) for calculating min difference. Space complexity is O(N) for storing the sorted array from inorder traversal, where N is the number of nodes.
+</thinking>

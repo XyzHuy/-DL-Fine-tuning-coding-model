@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of colors and a list of queries, find the shortest distance between a given index and a target color for each query.
+2. Problem type / algorithm category: Array searching, binary search.
+3. Step-by-step approach: First, store the indices of each color in a dictionary. Then, for each query, use binary search to find the closest index of the target color and calculate the distance.
+4. Edge cases: If the target color does not exist in the array, return -1. Consider edge cases in binary search such as when the target index is smaller or larger than all indices of the target color.
+5. Time and space complexity: Time complexity is O(n + q * log n) where n is the length of colors array and q is the number of queries. Space complexity is O(n).
+</thinking>

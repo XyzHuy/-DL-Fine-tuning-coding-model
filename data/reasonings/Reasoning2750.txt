@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the ways to partition a binary array into subarrays, each containing exactly one '1'.
+2. Problem type / algorithm category: Counting, Combinatorics, Array traversal.
+3. Step-by-step approach: Identify the indices of all '1's. For each pair of consecutive '1's, count the number of '0's between them. The number of ways to split is the product of (number of zeros + 1) for each such gap, modulo 10^9 + 7.
+4. Edge cases: An array with no '1's has 0 ways. An array with only one '1' has 1 way.
+5. Time and space complexity: Time complexity is O(N) due to single pass, space complexity is O(1) for storing variables.
+</thinking>

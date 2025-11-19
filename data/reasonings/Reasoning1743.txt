@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct an array from given adjacent pairs of its elements.
+2. Problem type / algorithm category: Graph traversal (specifically DFS or BFS), Adjacency List representation.
+3. Step-by-step approach: Build an adjacency list where keys are numbers and values are their adjacent numbers. Find a starting element (which must have only one neighbor in the adjacency list, indicating it's an endpoint). Then, iteratively build the array by picking the neighbor that is not the previously added element.
+4. Edge cases: Smallest possible array length (n=2), which means only one pair is given.
+5. Time and space complexity: Time O(n), Space O(n) where n is the number of elements in the original array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given customer counts and grumpy status for each minute, maximize satisfied customers by using a technique to make the owner not grumpy for a consecutive window of minutes.
+2. Problem type / algorithm category: Sliding window / Dynamic Programming
+3. Step-by-step approach: Calculate the base satisfaction without the technique. Then, use a sliding window to find the maximum additional satisfaction gained by using the technique on different windows of length 'minutes'. Finally, add the base and maximum additional satisfactions.
+4. Edge cases: Empty input arrays, minutes larger than the array length. Although the problem statement mentions 1 <= minutes <= n, it's good to consider those cases in a real-world scenario.
+5. Time and space complexity: Time complexity is O(n) due to the single pass sliding window. Space complexity is O(1) as we only use a few constant space variables.
+</thinking>

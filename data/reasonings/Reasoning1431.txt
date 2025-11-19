@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if each kid can have the greatest number of candies after receiving extra candies.
+2. Problem type / algorithm category: Array traversal, comparison, simple arithmetic.
+3. Step-by-step approach: Find the maximum number of candies any kid currently has. Then, for each kid, add the extra candies to their current amount and check if it's greater than or equal to the maximum found.
+4. Edge cases: All kids could potentially have the greatest number of candies if extraCandies is large enough. The initial maximum candy count could be from any kid.
+5. Time and space complexity: O(n) time to find max and iterate, O(n) space for the result array.
+</thinking>

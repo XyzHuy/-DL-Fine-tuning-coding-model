@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum product of a subarray's minimum element and its sum, modulo 10^9 + 7.
+2. Problem type / algorithm category: Array manipulation, prefix sums, monotonic stack.
+3. Step-by-step approach: Precompute prefix sums. Use a monotonic increasing stack to find, for each element nums[i], the nearest smaller elements to its left and right. This defines the largest subarray where nums[i] is the minimum. Calculate the sum of this subarray using prefix sums and update the maximum min-product.
+4. Edge cases: Empty array (not possible due to constraints), array with one element, all elements are the same. The modulo operation at the end.
+5. Time and space complexity: Time O(n) because each element is pushed and popped from the stack at most once. Space O(n) for prefix sums and the stack.
+</thinking>

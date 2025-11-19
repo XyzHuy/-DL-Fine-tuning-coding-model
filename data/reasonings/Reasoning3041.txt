@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of elements that can form a consecutive sequence after optionally incrementing each element by at most 1.
+2. Problem type / algorithm category: Dynamic Programming, Sorting.
+3. Step-by-step approach: Sort the input array. Iterate through the sorted numbers, maintaining a DP map where dp[x] stores the maximum length of a consecutive sequence ending with value x. For each number `num`, update `dp[num]` and `dp[num+1]` by considering previous chain lengths from `dp[num-1]` and `dp[num]`.
+4. Edge cases: Empty input array (though constraints say nums.length >= 1), all elements are the same, all elements are already consecutive.
+5. Time and space complexity: O(N log N) time for sorting, O(N) space for the DP map.
+</thinking>

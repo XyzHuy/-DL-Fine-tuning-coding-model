@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign workers to jobs with varying difficulty and profit, maximizing the total profit considering worker ability and the fact each worker can only do one job.
+2. Problem type / algorithm category: Greedy algorithm, sorting, and two pointers.
+3. Step-by-step approach: Combine difficulty and profit, sort by difficulty, precompute max profits for each difficulty level, sort workers, and iterate through workers to greedily assign the best possible job.
+4. Edge cases: Empty input lists, workers with no suitable jobs, jobs with very high difficulties.
+5. Time and space complexity: Time complexity is dominated by sorting, O(n log n + m log m), where n is the number of jobs and m is the number of workers. Space complexity is O(n) for storing max_profits.
+</thinking>

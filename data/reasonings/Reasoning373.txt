@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find k pairs with the smallest sums from two sorted integer arrays nums1 and nums2. A pair consists of one element from nums1 and one element from nums2.
+2. Problem type / algorithm category: Heap (Priority Queue)
+3. Step-by-step approach: Use a min-heap to store pairs and their sums. Initially, push the pairs formed by the first element of nums1 and all elements of nums2 (up to k) into the heap. Then, repeatedly extract the smallest sum pair from the heap and add it to the result. If the extracted pair's element from nums2 has a next element, push the pair formed by the nums1 element and the next nums2 element into the heap.
+4. Edge cases: Empty input arrays or k <= 0 should return an empty list. The loop should terminate when k becomes 0 or the heap is empty. Limit the initial heap population to the length of nums1 to avoid index out of bounds.
+5. Time and space complexity: Time complexity is O(k log k) because we are adding and removing elements from the heap k times, and the heap size is at most k. Space complexity is O(k) to store the heap and the result list.
+</thinking>

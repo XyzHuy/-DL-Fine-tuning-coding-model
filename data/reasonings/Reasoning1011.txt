@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum ship capacity needed to transport all packages, in their given order, within a specified number of days.
+2. Problem type / algorithm category: Binary Search on the answer.
+3. Step-by-step approach: The possible capacities form a monotonic search space. We can binary search for the minimum valid capacity. The search range is from the weight of the heaviest package to the sum of all weights. For each midpoint capacity, we check if it's possible to ship everything within the given days. If yes, we try a smaller capacity; if no, we need a larger one.
+4. Edge cases: The minimum capacity must be at least the weight of the heaviest single package. The maximum possible capacity is the sum of all weights, corresponding to shipping in one day.
+5. Time and space complexity: Time is O(N * log(S)) where N is the number of weights and S is their sum. Space is O(1).
+</thinking>

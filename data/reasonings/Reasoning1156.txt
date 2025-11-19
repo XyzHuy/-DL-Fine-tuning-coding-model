@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring with repeated characters in a string after performing at most one swap.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Count character frequencies, group consecutive characters, iterate through groups to check for possible extensions by swapping.
+4. Edge cases: Empty string, string with all same characters, adjacent groups of the same character, groups separated by single different character.
+5. Time and space complexity: O(n) time complexity due to iterations. O(1) space complexity as number of possible character is limited to 26.
+</thinking>

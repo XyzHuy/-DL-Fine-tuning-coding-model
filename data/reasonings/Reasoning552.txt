@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, the problem asks to find the number of possible attendance records of length n, consisting of 'A', 'L', and 'P', such that the record contains fewer than 2 'A's and no 3 consecutive 'L's. The result should be returned modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic programming.
+3. Step-by-step approach: A 3D DP table `dp[i][j][k]` is used, where `i` represents the length of the record, `j` represents the number of 'A's (0 or 1), and `k` represents the number of consecutive 'L's (0, 1, or 2). The DP table is filled iteratively, considering the addition of 'P', 'A', and 'L' at each step, while respecting the constraints. Finally, the sum of all valid sequences of length `n` is calculated and returned modulo 10^9 + 7.
+4. Edge cases: The base case is an empty sequence (length 0), which is considered valid. The code handles cases where 'A' can only be added if there are fewer than 2 absences. 'L' is only added if there are less than 3 consecutive 'L's.
+5. Time and space complexity: Time complexity is O(n) because the code iterates through lengths from 1 to n. Space complexity is O(n) due to the 3D DP table of size (n+1) * 2 * 3.
+</thinking>

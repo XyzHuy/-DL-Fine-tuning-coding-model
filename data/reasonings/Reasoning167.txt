@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two numbers in a sorted array that add up to a target value, and return their 1-based indices.
+2. Problem type / algorithm category: Two Pointers / Binary Search.
+3. Step-by-step approach: Iterate through the array. For each number, find the complement needed to reach the target using binary search on the remaining part of the array. If the complement is found, return the indices (add 1 to each).
+4. Edge cases: The problem states that there will be exactly one solution and that we cannot use the same element twice.
+5. Time and space complexity: Time complexity is O(n log n) due to the binary search within the loop. Space complexity is O(1) since we are using constant extra space.
+</thinking>

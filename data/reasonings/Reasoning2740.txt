@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to partition an array into two non-empty subarrays to minimize the absolute difference between the maximum element of the first subarray and the minimum element of the second subarray.
+2. Problem type / algorithm category: Sorting and greedy approach.
+3. Step-by-step approach: First, sort the input array `nums`. Then, iterate through the sorted array, calculating the difference between adjacent elements. The minimum of these differences represents the minimum partition value.
+4. Edge cases: The problem guarantees the input array has at least two elements, so it's always possible to form two non-empty partitions. The constraints on element values are large but do not affect the algorithm logic.
+5. Time and space complexity: Time complexity is dominated by sorting, which is O(N log N), where N is the length of `nums`. Space complexity is O(1) if sorting is done in-place, or O(N) depending on the sorting implementation.
+</thinking>

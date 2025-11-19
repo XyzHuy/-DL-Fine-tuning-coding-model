@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum area of a rectangle formed by a given set of points where the rectangle's sides are parallel to the x and y axes. Return 0 if no such rectangle exists.
+2. Problem type / algorithm category: Geometry, Hash Table, Sorting
+3. Step-by-step approach: Store points grouped by their x-coordinates. Iterate through the x-coordinates in sorted order. For each x-coordinate, iterate through all pairs of y-coordinates. Use a hash map to store the smallest x-coordinate seen for a given pair of y-coordinates. If a pair of y-coordinates has been seen before, calculate the area of the rectangle formed by the current x-coordinate and the previously seen x-coordinate. Update the minimum area found so far.
+4. Edge cases: No rectangle can be formed (return 0), duplicate points (handled by problem constraints).
+5. Time and space complexity: Time: O(N^2), where N is the number of points. Space: O(N).
+</thinking>

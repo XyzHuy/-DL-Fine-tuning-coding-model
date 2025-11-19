@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the number of distinct islands, considering rotations and reflections as the same island.
+2. Problem type / algorithm category: Graph Traversal (DFS), Shape normalization.
+3. Step-by-step approach: Iterate through the grid, find islands using DFS. For each island, generate all 8 possible transformations (4 rotations, and reflections). Normalize each transformation by subtracting the minimum x and y values. Select the lexicographically smallest representation of all transformations and add it to a set. Return the size of the set.
+4. Edge cases: Empty grid, single island, multiple identical islands after rotation/reflection, islands touching edges.
+5. Time and space complexity: Time: O(m*n * (m*n*log(m*n))), Space: O(m*n)
+</thinking>

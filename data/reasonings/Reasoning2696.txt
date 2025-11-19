@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum length of a string after repeatedly removing "AB" or "CD" substrings.
+2. Problem type / algorithm category: String manipulation, Stack-based processing.
+3. Step-by-step approach: Iterate through the string, maintaining a stack. If the current character forms "AB" or "CD" with the top of the stack, pop the stack; otherwise, push the current character. The final stack length is the answer.
+4. Edge cases: Empty string (though constraints say length >= 1), string with no removable substrings, string that becomes empty after removals.
+5. Time and space complexity: O(N) time complexity due to single pass through the string, O(N) space complexity for the stack in the worst case.
+</thinking>

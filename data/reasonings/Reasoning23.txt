@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Merge k sorted linked lists into one sorted linked list.
+2. Problem type / algorithm category: Heap (Priority Queue), Linked List.
+3. Step-by-step approach: Use a min-heap to store the head node of each list. Pop the smallest element from the heap and add it to the merged list. If the popped node has a next node, push the next node into the heap.
+4. Edge cases: Empty list of lists, empty lists within the list of lists.
+5. Time and space complexity: Time complexity: O(Nlogk), where N is the total number of nodes and k is the number of lists. Space complexity: O(k), where k is the number of linked lists (heap size).
+</thinking>

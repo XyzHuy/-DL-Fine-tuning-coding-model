@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given integer is a power of two.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Check if the number is positive. Then, use the bitwise AND operator to check if the number has only one set bit. If n & (n-1) is 0, then n is a power of 2.
+4. Edge cases: Handle cases where n is zero or negative.
+5. Time and space complexity: Time complexity is O(1) because the bitwise operation takes constant time. Space complexity is O(1) as it uses constant extra space.
+</thinking>

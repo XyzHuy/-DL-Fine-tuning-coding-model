@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of distinct words, abbreviate each word to the shortest possible unique form by replacing a middle section with its length, incrementing the prefix as needed for uniqueness, and keeping the original word if the abbreviation is not shorter.
+2. Problem type / algorithm category: String manipulation, Trie, Hashing
+3. Step-by-step approach: Group words by length and last character, build a Trie for each group, find the minimum prefix length to make each abbreviation unique within its group using the Trie, abbreviate each word, and keep the original word if the abbreviation isn't shorter.
+4. Edge cases: Words that are too short to be abbreviated, words that require the entire prefix to be unique.
+5. Time and space complexity: Time complexity is O(N * L), where N is the number of words and L is the maximum length of a word. Space complexity is O(N * L) due to the Trie.
+</thinking>

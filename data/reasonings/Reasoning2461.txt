@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a subarray of a given length k, where all elements within that subarray are distinct. Return 0 if no such subarray exists.
+2. Problem type / algorithm category: Sliding window with frequency counting.
+3. Step-by-step approach: Iterate through the array using a sliding window of size k. Maintain the current sum of the window and a frequency map of elements within the window. As the window slides, add the new element's value and update its count, and remove the outgoing element's value and update its count (removing from the map if count becomes zero). If the size of the frequency map equals k (meaning all elements are distinct and the window has k elements), update the maximum sum found so far.
+4. Edge cases: Array length less than k, all elements in a subarray are duplicates, no valid subarray found, empty input array (though constraints prevent this).
+5. Time and space complexity: O(n) time complexity because each element is processed at most twice (once when added to the window, once when removed). O(k) space complexity in the worst case for the frequency map, as it stores up to k distinct elements.
+</thinking>

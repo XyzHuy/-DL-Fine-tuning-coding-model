@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks us to repeatedly remove leaf nodes from a binary tree and collect them into a list of lists, until the tree is empty. The output should be a list of lists, where each inner list contains the values of the leaf nodes removed in each iteration.
+2. Problem type / algorithm category: Tree traversal, recursion, depth-first search.
+3. Step-by-step approach: Use a recursive helper function `collectLeaves` to traverse the tree. The height of each node is determined recursively. Leaf nodes are identified by their height. Values of nodes at the same height are grouped together in the result list.
+4. Edge cases: Empty tree (root is None), single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(N) in the worst case (skewed tree) due to recursion depth and the storage of the result list.
+</thinking>

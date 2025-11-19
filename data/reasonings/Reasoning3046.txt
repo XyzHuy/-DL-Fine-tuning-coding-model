@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an even-length integer array can be split into two sub-arrays of equal length, where each sub-array contains only distinct elements.
+2. Problem type / algorithm category: Array manipulation, Frequency counting.
+3. Step-by-step approach: Count the occurrences of each number. If any number appears more than twice, it's impossible to form two distinct sub-arrays, so return false. Otherwise, it's always possible, so return true.
+4. Edge cases: The input array length is always even. Individual elements are within a specified range. The crucial check is for elements appearing more than twice.
+5. Time and space complexity: Time complexity is O(N) due to iterating through the array once to count frequencies. Space complexity is O(N) in the worst case for the counter if all elements are distinct.
+</thinking>

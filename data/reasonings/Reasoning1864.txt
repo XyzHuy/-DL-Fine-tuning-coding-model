@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to find the minimum swaps to make a binary string alternating, or return -1 if impossible.
+2. Problem type / algorithm category: String manipulation, Greedy approach, Counting.
+3. Step-by-step approach: Count '0's and '1's. If counts differ by more than 1, return -1. Otherwise, identify the target alternating pattern(s). Calculate mismatches with the target pattern(s) and divide by 2 for swaps. Return the minimum swaps.
+4. Edge cases: Impossible counts of '0's and '1's. Strings of even length can have two target patterns.
+5. Time and space complexity: Time complexity is O(N) due to string traversal and counting. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count triplets (x, y, z) where their indices in nums1 are increasing AND their indices in nums2 are also increasing.
+2. Problem type / algorithm category: Counting, Fenwick Tree (Binary Indexed Tree).
+3. Step-by-step approach: Map values to their positions in nums1. Create a new array by iterating through nums2 and mapping its elements to their corresponding positions in nums1. Use two Fenwick Trees to efficiently count elements smaller and larger than the current element's nums1 position while iterating through the mapped array. The product of these counts for each element gives triplets with that element as the middle.
+4. Edge cases: n >= 3, permutations of [0, ..., n-1].
+5. Time and space complexity: O(n log n) time due to Fenwick tree operations, O(n) space for mappings and Fenwick trees.
+</thinking>

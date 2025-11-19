@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest common subsequence present in all given sorted integer arrays.
+2. Problem type / algorithm category: Frequency counting, subsequence problem.
+3. Step-by-step approach: Count the occurrences of each number across all arrays using a frequency map. Identify numbers that appear exactly as many times as there are input arrays. These numbers form the common subsequence, and since the input arrays are sorted, the identified common numbers will also be in sorted order.
+4. Edge cases: No common elements between arrays, resulting in an empty common subsequence. Arrays with only one element.
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of arrays and M is the total number of elements across all arrays. Space complexity is O(K) where K is the number of unique elements across all arrays.
+</thinking>

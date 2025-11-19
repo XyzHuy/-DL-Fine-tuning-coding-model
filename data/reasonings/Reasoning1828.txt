@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count points from a given list that fall inside each specified circle.
+2. Problem type / algorithm category: Brute-force geometry check.
+3. Step-by-step approach: For each query circle, iterate through all points and check if the distance from the point to the circle's center is less than or equal to the radius. Sum up the points that satisfy this condition for each query.
+4. Edge cases: Points exactly on the circle's boundary are considered inside. The problem constraints ensure valid inputs for points and queries.
+5. Time and space complexity: Time is O(N*Q) where N is the number of points and Q is the number of queries. Space is O(Q) for storing results.
+</thinking>

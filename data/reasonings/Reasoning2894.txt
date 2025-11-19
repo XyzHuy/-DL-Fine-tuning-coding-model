@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the difference between the sum of numbers not divisible by m and the sum of numbers divisible by m, within the range [1, n].
+2. Problem type / algorithm category: Arithmetic series, summation formulas.
+3. Step-by-step approach: Calculate the total sum of numbers from 1 to n. Calculate the sum of numbers divisible by m in the range [1, n]. The sum of numbers not divisible by m is the total sum minus the sum of numbers divisible by m. Then subtract the sum of numbers divisible by m from the sum of numbers not divisible by m.
+4. Edge cases: m=1 (all numbers are divisible by m), m > n (no numbers are divisible by m).
+5. Time and space complexity: Time complexity is O(1) due to arithmetic formulas. Space complexity is O(1).
+</thinking>

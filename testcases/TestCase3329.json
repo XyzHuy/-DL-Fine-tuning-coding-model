@@ -1,0 +1,565 @@
+{
+  "function_name": "numberOfSubstrings",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "mississippi",
+        "k": 2
+      },
+      "expected_output": 46
+    },
+    {
+      "parameters": {
+        "s": "zzzzzz",
+        "k": 4
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcde",
+        "k": 1
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "aabbcc",
+        "k": 2
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "abcdabcd",
+        "k": 2
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "aabbaa",
+        "k": 3
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "abababab",
+        "k": 3
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "k": 2
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "abcdabcd",
+        "k": 1
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "k": 2
+      },
+      "expected_output": 85
+    },
+    {
+      "parameters": {
+        "s": "xyz",
+        "k": 1
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "zzzz",
+        "k": 2
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "zzzz",
+        "k": 3
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "abcabcabc",
+        "k": 3
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "k": 1
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "k": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "abacb",
+        "k": 2
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "aaabbbccc",
+        "k": 3
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "aaabbb",
+        "k": 3
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabcabc",
+        "k": 2
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm",
+        "k": 2
+      },
+      "expected_output": 351
+    },
+    {
+      "parameters": {
+        "s": "aabbcc",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacaba",
+        "k": 2
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabc",
+        "k": 3
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "xyzzxyzzxyzz",
+        "k": 2
+      },
+      "expected_output": 53
+    },
+    {
+      "parameters": {
+        "s": "qqwweerrttyyuuiiooppllaaasssddffgg",
+        "k": 2
+      },
+      "expected_output": 546
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "k": 1
+      },
+      "expected_output": 351
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "k": 3
+      },
+      "expected_output": 61
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbccccdddd",
+        "k": 4
+      },
+      "expected_output": 87
+    },
+    {
+      "parameters": {
+        "s": "aabbbcccc",
+        "k": 3
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzz",
+        "k": 5
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabc",
+        "k": 3
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "k": 1
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbbccccdddd",
+        "k": 4
+      },
+      "expected_output": 73
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabc",
+        "k": 2
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "s": "aaaaaabbbbbcccccdddddeeeee",
+        "k": 5
+      },
+      "expected_output": 213
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "k": 2
+      },
+      "expected_output": 85
+    },
+    {
+      "parameters": {
+        "s": "pppppppppppppppppppp",
+        "k": 15
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "xyxyxyxyxy",
+        "k": 2
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "s": "xxyyzzxxyyzzxxyyzz",
+        "k": 3
+      },
+      "expected_output": 78
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabc",
+        "k": 4
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkk",
+        "k": 2
+      },
+      "expected_output": 221
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzz",
+        "k": 10
+      },
+      "expected_output": 91
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "k": 3
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "ababababab",
+        "k": 2
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwyxz",
+        "k": 1
+      },
+      "expected_output": 351
+    },
+    {
+      "parameters": {
+        "s": "pppppppppppppppppppppppppp",
+        "k": 15
+      },
+      "expected_output": 78
+    },
+    {
+      "parameters": {
+        "s": "qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
+        "k": 10
+      },
+      "expected_output": 561
+    },
+    {
+      "parameters": {
+        "s": "aabbaaabbbaaabbaa",
+        "k": 3
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "s": "abababababababababababababababababababab",
+        "k": 5
+      },
+      "expected_output": 528
+    },
+    {
+      "parameters": {
+        "s": "abcdefgabcdefg",
+        "k": 2
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "s": "aabbbccc",
+        "k": 3
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 15
+      },
+      "expected_output": 1953
+    },
+    {
+      "parameters": {
+        "s": "ababcabcab",
+        "k": 3
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "aabbaaccc",
+        "k": 2
+      },
+      "expected_output": 33
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "k": 1
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddeeefffggghhhiii",
+        "k": 3
+      },
+      "expected_output": 301
+    },
+    {
+      "parameters": {
+        "s": "aabccba",
+        "k": 2
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 1
+      },
+      "expected_output": 1378
+    },
+    {
+      "parameters": {
+        "s": "aaabbbccc",
+        "k": 2
+      },
+      "expected_output": 34
+    },
+    {
+      "parameters": {
+        "s": "aabbbccc",
+        "k": 2
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacabadabacaba",
+        "k": 2
+      },
+      "expected_output": 221
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcd",
+        "k": 1
+      },
+      "expected_output": 136
+    },
+    {
+      "parameters": {
+        "s": "mississippiissippi",
+        "k": 3
+      },
+      "expected_output": 93
+    },
+    {
+      "parameters": {
+        "s": "aabbccdd",
+        "k": 2
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "s": "mnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuvmnopqrstuvm",
+        "k": 5
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 20
+      },
+      "expected_output": 1128
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddeeefffggghhhiiijjjkkklllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxyyyzzz",
+        "k": 4
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddeeefffggghhhhiii",
+        "k": 3
+      },
+      "expected_output": 327
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "k": 5
+      },
+      "expected_output": 1485
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 2
+      },
+      "expected_output": 1301
+    },
+    {
+      "parameters": {
+        "s": "aabbbcccddd",
+        "k": 3
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyzxyz",
+        "k": 3
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "k": 3
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "s": "xyzzyxzyzyxzyzxzyzxzyz",
+        "k": 2
+      },
+      "expected_output": 200
+    },
+    {
+      "parameters": {
+        "s": "abacabadaba",
+        "k": 2
+      },
+      "expected_output": 41
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, find the largest value in each level/row of the tree and return these values as a list.
+2. Problem type / algorithm category: Tree traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Perform a level-order traversal of the tree using a queue. For each level, iterate through all nodes at that level and maintain the maximum value encountered. After processing each level, add the maximum value to the result list.
+4. Edge cases: Empty tree (root is None). Handle cases where node values could be negative.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree (we visit each node once). Space complexity is O(W), where W is the maximum width of the tree (the maximum number of nodes at any level), due to the queue.
+</thinking>

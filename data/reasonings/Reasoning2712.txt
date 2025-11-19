@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to make all characters in a binary string equal by inverting prefixes or suffixes with associated costs.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation.
+3. Step-by-step approach: Iterate through the string and identify adjacent characters that differ. For each such pair, add the minimum cost of either inverting the prefix up to the current index or the suffix starting from the next index.
+4. Edge cases: The string length can be 1. If all characters are already the same, the cost is 0.
+5. Time and space complexity: O(n) time complexity because we iterate through the string once. O(1) space complexity as we only use a few variables.
+</thinking>

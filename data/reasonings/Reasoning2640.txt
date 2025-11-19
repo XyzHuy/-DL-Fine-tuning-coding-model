@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the score for each prefix of an input array `nums`. The score of a prefix is the sum of its conversion array, where each element in the conversion array is the sum of the original element and the maximum element seen up to that point in the prefix.
+2. Problem type / algorithm category: Prefix Sum, Iterative Calculation.
+3. Step-by-step approach: Iterate through the `nums` array. Maintain a running maximum value seen so far and a running sum of conversion values. For each number, update the running maximum, calculate the current conversion value (number + running maximum), add this to the running sum of conversion values, and append the current running sum to the result array.
+4. Edge cases: The input array has at least one element. All elements are positive integers.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) to store the result array, or O(1) if the result array is not considered extra space.
+</thinking>

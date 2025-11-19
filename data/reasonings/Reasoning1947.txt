@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign each student to a unique mentor to maximize the total compatibility score, where compatibility is the count of matching answers for a student-mentor pair.
+2. Problem type / algorithm category: Backtracking, Permutations, Assignment Problem.
+3. Step-by-step approach: Use a recursive backtracking function to explore all possible pairings. The function iterates through available mentors for the current student, calculates the compatibility score, adds it to the score from recursively calling the function for the next student, and keeps track of the maximum score found.
+4. Edge cases: Small input sizes (m, n <= 8) make backtracking feasible. All students and mentors have the same number of answers.
+5. Time and space complexity: Time complexity is roughly O(m! * n) due to exploring permutations of mentor assignments for m students, and calculating score takes O(n). Space complexity is O(m) for the recursion depth and used_mentors array.
+</thinking>

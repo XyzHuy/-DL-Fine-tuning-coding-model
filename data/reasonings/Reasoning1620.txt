@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the non-negative integer coordinate (cx, cy) that maximizes the total network quality, which is the sum of qualities from reachable towers. Reachability is determined by a radius. Quality from a tower decreases with Euclidean distance. Return the lexicographically smallest coordinate if there are ties.
+2. Problem type / algorithm category: Brute Force with coordinate iteration, Geometric calculations (Euclidean distance).
+3. Step-by-step approach: Iterate through all relevant candidate coordinates (0-50 for x and y). For each candidate coordinate, calculate the total network quality by summing the signal qualities from all towers within the specified radius. Update the best coordinate if a higher quality is found, or if the quality is the same but the current coordinate is lexicographically smaller.
+4. Edge cases: Only one tower, zero quality towers, towers at the same location, radius of zero. The problem constraints imply coordinates and radius are non-negative.
+5. Time and space complexity: Time complexity is O(N * R^2 * K), where N is the number of towers, R is the maximum coordinate value (50), and K is the range of possible coordinate values (51*51). Space complexity is O(1) as we only store a few variables.
+</thinking>

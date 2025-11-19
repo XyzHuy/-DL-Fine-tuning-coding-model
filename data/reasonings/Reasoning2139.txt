@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reach target integer starting from 1 using increment and at most maxDoubles operations.
+2. Problem type / algorithm category: Greedy, Backward approach.
+3. Step-by-step approach: Work backward from target. If target is even and doubles are available, divide by 2 and decrement doubles. If target is odd, decrement by 1. If no doubles are available, add remaining increments.
+4. Edge cases: maxDoubles is 0, target is 1.
+5. Time and space complexity: Time complexity is O(log target * maxDoubles) due to division and subtraction. Space complexity is O(1).
+</thinking>

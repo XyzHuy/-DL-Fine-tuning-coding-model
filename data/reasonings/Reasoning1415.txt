@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth lexicographically ordered happy string of length n, composed of 'a', 'b', 'c' with no adjacent identical characters.
+2. Problem type / algorithm category: Combinatorial generation, greedy approach.
+3. Step-by-step approach: Calculate total happy strings. If k is too large, return empty. Greedily determine the first character based on k and the number of strings starting with each character. Then, for each subsequent position, greedily choose the next character that satisfies the happy string condition and the remaining k value.
+4. Edge cases: k is larger than the total number of possible happy strings.
+5. Time and space complexity: Time complexity is O(n) as we iterate through the length of the string, and space complexity is O(n) for storing the result string.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty subarrays where the median equals a given value k. The median is the middle element after sorting; for even length, it's the left middle.
+2. Problem type / algorithm category: Subarray counting, prefix sums/imbalance, hash map/dictionary.
+3. Step-by-step approach: Find k's index. Calculate "imbalance" (count of elements > k minus count of elements < k) for subarrays to the right of k. Store these imbalances and their counts. Then, iterate leftwards from k. For each leftward subarray ending at k, calculate its imbalance. To form a valid subarray with median k, the combined imbalance (left + right) must be 0 (for odd length subarray centered at k) or 1 (for even length subarray where k is the left middle). Sum counts from the stored right imbalances that satisfy these conditions.
+4. Edge cases: Array with only k, k at the beginning or end of the array, array where k is not present (problem states k is in nums).
+5. Time and space complexity: O(N) time complexity due to single passes, O(N) space complexity for the hash map storing imbalance counts.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a circular array contains a cycle, where a cycle is defined as a sequence of indices that repeats, has a length greater than 1, and all movements within the cycle are in the same direction (either all positive or all negative).
+2. Problem type / algorithm category: Array manipulation, cycle detection, slow and fast pointers.
+3. Step-by-step approach: Iterate through the array. For each element, use slow and fast pointers to detect a cycle. Check if the elements in the potential cycle are moving in the same direction. If a cycle is found that meets the criteria, return true. Mark visited elements during the cycle detection process to avoid re-checking. If no cycle is found after iterating through the entire array, return false.
+4. Edge cases: Array with only one element, cycle of length 1, movements in different directions within a potential cycle, already visited nodes during cycle detection.
+5. Time and space complexity: Time complexity is O(n^2) in the worst case because each element can start a cycle check, and each cycle check can take O(n) time. Space complexity is O(1) because the algorithm modifies the input array in place.
+</thinking>

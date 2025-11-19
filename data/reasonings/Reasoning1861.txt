@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rotate a 2D grid representing a box containing stones, obstacles, and empty spaces 90 degrees clockwise, simulating gravity for stones.
+2. Problem type / algorithm category: Matrix manipulation, simulation.
+3. Step-by-step approach: First, iterate through each row and apply gravity by moving stones ('#') downwards as far as possible until they hit an obstacle ('*') or the bottom. Then, rotate the modified grid 90 degrees clockwise by transposing and reversing rows.
+4. Edge cases: Empty input grid, grids with only stones, only obstacles, or only empty spaces, grids with all stones at the top or bottom.
+5. Time and space complexity: Time complexity is O(m*n) for applying gravity and O(m*n) for rotation, resulting in O(m*n) overall. Space complexity is O(m*n) for the new rotated grid.
+</thinking>

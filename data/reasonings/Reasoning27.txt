@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove all occurrences of a given value from an array in-place and return the new length of the array.
+2. Problem type / algorithm category: Two Pointers / Array Manipulation
+3. Step-by-step approach: Iterate through the array using one pointer, and maintain another pointer to track the position where the non-val elements should be placed. If the current element is not equal to val, move it to the kth position and increment k.
+4. Edge cases: Empty array, array with all elements equal to val, array with no elements equal to val.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the array. Space complexity is O(1) as it is done in-place.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words, transform each word into its Morse code representation and return the number of unique transformations.
+2. Problem type / algorithm category: String manipulation, hash set.
+3. Step-by-step approach: Create a list of Morse code representations. Iterate through the input list of words. For each word, translate it to Morse code by looking up each character in the Morse code list and concatenating them. Add the transformation to a set to track unique transformations. Finally, return the size of the set.
+4. Edge cases: Empty input list, words containing only one character, all words transforming to the same Morse code.
+5. Time and space complexity: Time complexity is O(N * M), where N is the number of words and M is the maximum length of a word. Space complexity is O(N) in the worst case, where N is the number of words (if all transformations are unique).
+</thinking>

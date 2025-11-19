@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a game where the larger of the first two elements wins and the loser goes to the end, until one element wins k consecutive rounds.
+2. Problem type / algorithm category: Simulation, Iterative approach.
+3. Step-by-step approach: Initialize the current winner and win count. Iterate through the array, comparing the current winner with the next element. Increment win count if current winner wins, reset if not and update current winner. Return when win count reaches k.
+4. Edge cases: If k is very large (>= length of array - 1), the maximum element will eventually win k times.
+5. Time and space complexity: O(N) time complexity, where N is the length of the array, as we iterate through the array at most once. O(1) space complexity as we only use a few variables.
+</thinking>

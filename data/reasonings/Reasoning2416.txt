@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of scores for all non-empty prefixes of each word in a given list, where a prefix's score is the count of words it is a prefix of.
+2. Problem type / algorithm category: Trie (Prefix Tree).
+3. Step-by-step approach: Build a Trie by inserting all words. During insertion, increment a counter at each node to track how many words pass through it (i.e., have that prefix). Then, for each word, traverse the Trie to calculate the sum of prefix counts for all its prefixes.
+4. Edge cases: Empty input list (though constraints say n >= 1), words with only one character, words that are prefixes of other words, and words that share common prefixes.
+5. Time and space complexity: Time O(N*L) for building Trie and O(N*L) for calculating scores, where N is the number of words and L is the maximum length of a word. Space O(N*L) for the Trie.
+</thinking>

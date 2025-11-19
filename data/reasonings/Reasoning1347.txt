@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum character replacements in string t to make it an anagram of string s, given that both strings have equal length.
+2. Problem type / algorithm category: Counting, Frequency Map, Anagrams.
+3. Step-by-step approach: Count the frequency of characters in string s. Iterate through string t, decrementing the count for each character encountered in the frequency map. If a character's count becomes negative after decrementing, it means that character is in excess in t compared to s and needs to be replaced, so increment a steps counter.
+4. Edge cases: Strings with only one character, strings that are already anagrams, strings with repeated characters.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the strings, due to iterating through both strings once. Space complexity is O(1) because the frequency map stores counts for at most 26 lowercase English letters.
+</thinking>

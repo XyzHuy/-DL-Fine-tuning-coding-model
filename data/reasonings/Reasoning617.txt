@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two binary trees, merge them by summing the values of overlapping nodes, and using non-null nodes when there's no overlap.
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Perform a recursive traversal of both trees. If either tree is null, return the other. Otherwise, sum the values of the current nodes, and recursively merge the left and right subtrees.
+4. Edge cases: One or both trees are empty.
+5. Time and space complexity: Time complexity is O(min(m, n)), where m and n are the number of nodes in the two trees. Space complexity is O(min(h1, h2)), where h1 and h2 are the heights of the two trees, due to the recursive call stack.
+</thinking>

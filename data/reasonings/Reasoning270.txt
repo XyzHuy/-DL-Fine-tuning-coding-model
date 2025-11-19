@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the node in a Binary Search Tree (BST) whose value is closest to a given target value. If multiple nodes have the same minimum difference, return the smaller value.
+2. Problem type / algorithm category: Binary Search Tree, Tree Traversal, Iterative Search
+3. Step-by-step approach: Initialize the closest value to the root's value. Iterate through the BST. In each step, update the closest value if the current node's value is closer to the target. Then, move to the left subtree if the target is less than the current node's value, and to the right subtree otherwise.
+4. Edge cases: Empty tree (though the problem states the number of nodes is in the range [1, 10^4], so we don't need to consider it); target smaller or larger than all node values in the tree.
+5. Time and space complexity: Time complexity is O(H), where H is the height of the tree. In the best case (balanced tree), it's O(log N), and in the worst case (skewed tree), it's O(N). Space complexity is O(1) as it's an iterative approach with constant extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to identify and remove duplicate folders in a file system, where duplicates are defined by having identical subfolder structures. This removal should be performed recursively, meaning if a folder is removed, all its subfolders are also effectively removed.
+2. Problem type / algorithm category: This problem falls under Trie (prefix tree) and recursion, with a focus on structural comparison and identification of duplicate subtrees.
+3. Step-by-step approach: Build a Trie to represent the file system paths. Traverse the Trie to generate a unique string representation (encoding) for each subtree's structure. Group nodes by their subtree encoding. If an encoding maps to more than one node, mark all those nodes and their descendants as deleted. Finally, traverse the Trie again to collect paths of non-deleted folders.
+4. Edge cases: Empty folders (represented by empty subtree encoding), folders at the root level, and scenarios where all folders are unique. The problem states that parent folders will always exist if child folders do, simplifying some path construction.
+5. Time and space complexity: Time complexity is dominated by Trie construction, subtree encoding generation, and traversal, roughly O(N*L) where N is the number of paths and L is the maximum path length, plus string operations for encoding. Space complexity is also O(N*L) for storing the Trie and subtree encodings.
+</thinking>

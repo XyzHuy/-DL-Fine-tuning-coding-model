@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, find all possible ways to partition it into substrings such that each substring is a palindrome.
+2. Problem type / algorithm category: Backtracking, String manipulation, Palindrome.
+3. Step-by-step approach: Use backtracking to explore all possible partitions. At each step, check if the substring from the current starting position to the current ending position is a palindrome. If it is, add it to the current path and recursively call the backtracking function with the new starting position.
+4. Edge cases: Empty string (should return an empty list), single-character string.
+5. Time and space complexity: Time complexity is O(N*2^N) in the worst case where N is the length of the string, Space complexity is O(N) due to recursion depth and storing the current path.
+</thinking>

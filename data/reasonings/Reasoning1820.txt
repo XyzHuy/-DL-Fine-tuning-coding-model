@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of unique boy-girl pairings where a boy can only invite a girl if there is a 1 in the grid at their intersection, and each boy/girl can only be in one pairing.
+2. Problem type / algorithm category: Maximum Bipartite Matching, implemented using Depth First Search (DFS) and backtracking.
+3. Step-by-step approach: Iterate through each boy. For each boy, try to find a girl he can invite using DFS. If a girl is already invited, recursively try to find a new match for her current partner. If a match is found (either directly or through recursion), increment the count of successful invitations.
+4. Edge cases: Cases where there are no possible invitations (all 0s in grid), or where all boys/girls can be invited. The constraints on m and n (up to 200) imply that a naive O(m*n*m*n) approach would be too slow.
+5. Time and space complexity: Time complexity is O(m * (m + n + m*n)) which simplifies to O(m^2 * n) in the worst case for DFS-based matching. Space complexity is O(n) for the visited array and matched_girls array.
+</thinking>

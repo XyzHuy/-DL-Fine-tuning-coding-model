@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum time to visit a sequence of points on a 2D plane, moving horizontally, vertically, or diagonally in one second.
+2. Problem type / algorithm category: Greedy algorithm, basic geometry.
+3. Step-by-step approach: Iterate through consecutive pairs of points, calculate the absolute difference in x and y coordinates, and add the maximum of these differences to the total time.
+4. Edge cases: A single point (n=1) requires 0 time. The constraints ensure n is at least 1 and coordinates are within bounds.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the points once. Space complexity is O(1) as we only use a few variables.
+</thinking>

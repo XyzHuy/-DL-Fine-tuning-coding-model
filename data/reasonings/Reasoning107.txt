@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return a list of lists representing the level order traversal of the tree from the bottom (leaves) to the top (root).
+2. Problem type / algorithm category: Tree traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Use a queue to perform a level-order traversal. For each level, store the nodes' values in a list. After traversing all levels, reverse the order of the list of lists to get the bottom-up level order traversal.
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree. Space complexity is O(W) where W is the maximum width of the tree, which can be O(N) in the worst case (e.g., a complete binary tree).
+</thinking>

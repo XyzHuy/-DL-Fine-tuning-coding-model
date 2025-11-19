@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum index to split an array such that the dominant element remains dominant in both resulting subarrays.
+2. Problem type / algorithm category: Array manipulation, dominant element identification, prefix/suffix count.
+3. Step-by-step approach: First, find the overall dominant element and its total count. Then, iterate through the array, maintaining a count of the dominant element in the left subarray. For each split point, check if the dominant element's count satisfies the dominance condition (count * 2 > length) in both the left and right subarrays. Return the first such index.
+4. Edge cases: An array with no valid split point, where -1 should be returned. The problem guarantees exactly one dominant element in the input array.
+5. Time and space complexity: Time complexity is O(n) due to single passes for dominant element identification and split checking. Space complexity is O(n) in the worst case for the Counter if all elements are distinct, but typically O(k) where k is the number of distinct elements.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the root of a binary tree, return the vertical order traversal of its nodes. Nodes at the same row and column are sorted by their values.
+2. Problem type / algorithm category: Tree traversal, Breadth-First Search (BFS), Sorting.
+3. Step-by-step approach: Perform a BFS traversal of the tree, storing nodes and their column/row information in a dictionary. Use a heap to store nodes at the same column, prioritizing by row and then value. Finally, iterate through the sorted columns and extract the node values from the heap, adding each column's sorted list of nodes to the result.
+4. Edge cases: Empty tree (root is None), duplicate node values at the same row and column.
+5. Time and space complexity: Time complexity is O(W * H * log(H)) where W is the width and H is the height of the tree due to sorting the nodes at each column and the space complexity is O(N) where N is the number of nodes in the tree for storing the nodes in the hashmap.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a substring in string `s` that can be transformed into the corresponding substring in string `t` with a total cost less than or equal to `maxCost`, where the cost of transforming one character to another is the absolute difference of their ASCII values.
+2. Problem type / algorithm category: Sliding window.
+3. Step-by-step approach: Use a sliding window approach. Expand the window to the right, calculating the cost. If the cost exceeds `maxCost`, shrink the window from the left until the cost is within the limit. Keep track of the maximum length of the window.
+4. Edge cases: Empty strings (handled implicitly as the loop won't run), `maxCost` is 0 (the window may still slide and find a valid substring length 1 if some characters are the same), `s` and `t` are identical (the whole string would be a valid substring of length len(s)).
+5. Time and space complexity: Time complexity is O(n) because each character is visited at most twice (once by the right pointer and once by the left pointer). Space complexity is O(1) because only constant extra space is used.
+</thinking>

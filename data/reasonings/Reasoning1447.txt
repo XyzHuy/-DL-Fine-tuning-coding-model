@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate all unique simplified fractions between 0 and 1 (exclusive) with denominators up to n.
+2. Problem type / algorithm category: Number theory, brute force with simplification.
+3. Step-by-step approach: Iterate through all possible numerators (i) from 1 to n-1 and all possible denominators (j) from i+1 to n. For each pair (i, j), check if their greatest common divisor (GCD) is 1. If it is, format it as a string "i/j" and add it to the result list.
+4. Edge cases: n=1 (no fractions possible between 0 and 1), n=2 (only 1/2). The constraints ensure n is at least 1.
+5. Time and space complexity: Time complexity is O(n^2 * log(n)) due to nested loops and GCD calculation. Space complexity is O(n^2) in the worst case to store the fractions.
+</thinking>

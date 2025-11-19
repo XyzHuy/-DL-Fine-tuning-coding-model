@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct a 2xN binary matrix given the sum of its upper row, lower row, and the column sums.
+2. Problem type / algorithm category: Greedy approach, constructive algorithm.
+3. Step-by-step approach: First, process columns where colsum is 2, placing 1 in both rows and decrementing upper and lower. Then, for columns with colsum 1, greedily place 1 in the row with the larger remaining sum requirement to balance them. Finally, check if the remaining upper and lower sums are zero.
+4. Edge cases: No valid solution exists if at any point upper or lower becomes negative, or if they are not exactly zero at the end.
+5. Time and space complexity: Time complexity is O(N) as we iterate through colsum once. Space complexity is O(N) to store the result matrix.
+</thinking>

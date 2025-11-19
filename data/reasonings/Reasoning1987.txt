@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of unique non-empty subsequences of a binary string that do not have leading zeros, except for the subsequence "0" itself.
+2. Problem type / algorithm category: Dynamic programming, string manipulation, combinatorics.
+3. Step-by-step approach: Maintain counts of unique subsequences ending in '0' and '1'. When a '0' is encountered, new subsequences ending in '0' are formed by appending '0' to existing subsequences. When a '1' is encountered, new subsequences ending in '1' are formed by appending '1' to existing subsequences, plus the subsequence "1" itself. Finally, add 1 if the string contains a '0' to account for the unique subsequence "0".
+4. Edge cases: The presence of the '0' subsequence. An input string consisting only of '0's or '1's.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the binary string, as we iterate through the string once. Space complexity is O(1) as we only use a few variables to store counts.
+</thinking>

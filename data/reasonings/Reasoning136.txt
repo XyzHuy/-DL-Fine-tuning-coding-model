@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the unique element in an array where all other elements appear exactly twice.
+2. Problem type / algorithm category: Bit manipulation (XOR).
+3. Step-by-step approach: Iterate through the array and XOR each element with a running result. The final result will be the single number.
+4. Edge cases: Empty input array (though the problem states non-empty), single element array, array with all elements the same except for one.
+5. Time and space complexity: Time complexity is O(n) due to the single loop. Space complexity is O(1) as it uses only constant extra space.
+</thinking>

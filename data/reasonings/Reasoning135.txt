@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute candies to children in a line based on their ratings, ensuring each child gets at least one candy and children with higher ratings get more than their neighbors. The goal is to minimize the total number of candies.
+2. Problem type / algorithm category: Greedy algorithm and dynamic programming.
+3. Step-by-step approach: First, initialize an array `candies` with 1 candy for each child. Then, traverse the ratings from left to right, and if a child has a higher rating than the previous child, update their candy count to be one more than the previous child's candy count. Next, traverse the ratings from right to left, and if a child has a higher rating than the next child, update their candy count to be the maximum of their current candy count and one more than the next child's candy count. Finally, return the sum of the `candies` array.
+4. Edge cases: Single child (n=1), where only one candy is needed. Cases where plateaus exist in the rating array.
+5. Time and space complexity: Time complexity is O(n) because we traverse the ratings array twice. Space complexity is O(n) because we use an array of size n to store the number of candies for each child.
+</thinking>

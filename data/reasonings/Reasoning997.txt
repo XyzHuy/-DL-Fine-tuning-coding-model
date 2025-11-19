@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the town judge in a directed graph represented by a trust array, where the judge trusts no one and everyone else trusts the judge.
+2. Problem type / algorithm category: Graph theory, degree analysis (in-degree and out-degree).
+3. Step-by-step approach: Create two arrays to store the in-degrees and out-degrees of each person. Iterate through the trust array to populate the degree arrays. Then, iterate through the people and check if there is a person with an in-degree of n-1 and an out-degree of 0.
+4. Edge cases: When the trust array is empty and n is 1, person 1 is the judge. When no one satisfies the judge criteria, return -1.
+5. Time and space complexity: Time complexity is O(T + N), where T is the number of trust relationships and N is the number of people. Space complexity is O(N) to store the in-degree and out-degree arrays.
+</thinking>

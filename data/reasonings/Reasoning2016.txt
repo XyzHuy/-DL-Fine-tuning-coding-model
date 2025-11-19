@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum difference nums[j] - nums[i] where 0 <= i < j < n and nums[i] < nums[j], or return -1 if no such pair exists.
+2. Problem type / algorithm category: One-pass iteration, finding minimum and maximum difference.
+3. Step-by-step approach: Iterate through the array, maintaining the minimum value encountered so far. For each element, if it's greater than the current minimum, calculate the difference and update the maximum difference if it's larger. If the current element is smaller than the current minimum, update the minimum.
+4. Edge cases: The case where no such pair exists (all elements are in non-increasing order) should return -1. The constraints guarantee at least two elements.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

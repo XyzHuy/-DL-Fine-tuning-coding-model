@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the second element to the right that is strictly greater than the current element, satisfying a specific condition on indices.
+2. Problem type / algorithm category: Monotonic Stack and Priority Queue (Min-Heap).
+3. Step-by-step approach: Iterate through the array, maintaining a stack for first greater elements and a min-heap for second greater elements. For each number, update the results for elements whose second greater element is found, then update first greater elements to second greater, and finally push the current element.
+4. Edge cases: Arrays with duplicate numbers, arrays where no second greater element exists for any number, and arrays where no greater element exists at all.
+5. Time and space complexity: O(N log N) time due to heap operations, O(N) space for the stack and heap.
+</thinking>

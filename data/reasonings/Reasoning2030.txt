@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest subsequence of a given string 's' with a specified length 'k', ensuring a particular character 'letter' appears at least 'repetition' times.
+2. Problem type / algorithm category: Greedy approach with a stack (monotonic stack variant).
+3. Step-by-step approach: Iterate through the string 's'. Maintain a stack to build the subsequence. If the current character is smaller than the top of the stack and we can still form a valid subsequence of length 'k' and satisfy the 'repetition' count, pop from the stack. Add the current character if the stack length is less than 'k' and either it's the target 'letter' and 'repetition' can still be met, or if there's enough room for remaining characters to meet 'repetition'.
+4. Edge cases: The target 'letter' must appear at least 'repetition' times in 's'. Ensure that popping from the stack doesn't prevent meeting the required 'repetition' count.
+5. Time and space complexity: Time complexity is O(N) where N is the length of 's' because each character is pushed and popped at most once. Space complexity is O(K) for the stack.
+</thinking>

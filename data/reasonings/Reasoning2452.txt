@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find words in 'queries' that can be transformed into words in 'dictionary' with at most two character edits.
+2. Problem type / algorithm category: String comparison, Brute-force, Helper function.
+3. Step-by-step approach: For each word in 'queries', iterate through all words in 'dictionary'. For each pair, count the differing characters. If the count is 2 or less, add the 'query' word to the result list and move to the next 'query' word.
+4. Edge cases: Empty 'queries' or 'dictionary' lists, words with zero or one difference, words requiring more than two edits.
+5. Time and space complexity: Time O(Q * D * L), Space O(Q) where Q is the number of queries, D is the number of dictionary words, and L is the length of words.
+</thinking>

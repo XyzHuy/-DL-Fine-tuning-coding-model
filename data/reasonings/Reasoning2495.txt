@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of contiguous subarrays within a given integer array whose elements' product is even.
+2. Problem type / algorithm category: Array manipulation, Counting, Prefix sums/logic.
+3. Step-by-step approach: Iterate through the array. Maintain the index of the most recent even number encountered. For each element, any subarray ending at this element and starting from an index up to and including the last even number's index will have an even product. Sum these counts.
+4. Edge cases: An array with all odd numbers will result in zero even product subarrays. An array with at least one even number will have non-zero results.
+5. Time and space complexity: O(n) time because we iterate through the array once. O(1) space because we only use a few variables.
+</thinking>

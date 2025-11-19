@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array representing couples in seats, find the minimum swaps to make all couples sit together. Couples are (0,1), (2,3), etc.
+2. Problem type / algorithm category: Graph theory / Union-Find. The problem can be modeled as finding connected components in a graph where couples that are not seated together form edges.
+3. Step-by-step approach: Use Union-Find to identify connected components of couples. Initialize each couple as its own component. Iterate through the row, and if a couple is not sitting together, union their respective components. The answer is then n (number of couples) minus the number of connected components.
+4. Edge cases: Empty row (handled implicitly), already paired couples, various misarrangements of couples.
+5. Time and space complexity: Time complexity is O(n) due to the Union-Find operations with path compression and the single pass through the row. Space complexity is O(n) for the parent array in Union-Find.
+</thinking>

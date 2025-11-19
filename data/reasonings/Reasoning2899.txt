@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the last visited positive integer for each occurrence of -1 in an array, considering a sequence of consecutive -1s.
+2. Problem type / algorithm category: Array traversal, Stack/List manipulation.
+3. Step-by-step approach: Iterate through nums. Store positive integers in a list `seen` by prepending. For each -1, track consecutive -1s. If the count of consecutive -1s is within the bounds of `seen`, append the corresponding element from `seen` to `ans`. Otherwise, append -1 to `ans`.
+4. Edge cases: Array starting with -1, array ending with -1, array with only positive integers, array with only -1s, empty `seen` list when a -1 is encountered.
+5. Time and space complexity: Time O(N*M) where N is length of nums and M is max length of seen due to list.insert(0, ...) and space O(M) for seen and O(N) for ans.
+</thinking>

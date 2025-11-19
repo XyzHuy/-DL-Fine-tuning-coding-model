@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Process queries by finding an element's position in a permutation, recording the position, and then moving the element to the front of the permutation.
+2. Problem type / algorithm category: Simulation, List manipulation.
+3. Step-by-step approach: Initialize a permutation list from 1 to m. For each query, find its index in the current permutation, store the index as the result, and then move the queried element to the beginning of the permutation.
+4. Edge cases: The problem constraints guarantee that queries are valid (within 1 to m) and that m is at least 1.
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of queries and M is the initial size of the permutation, due to searching and list manipulation. Space complexity is O(M) for storing the permutation and results.
+</thinking>

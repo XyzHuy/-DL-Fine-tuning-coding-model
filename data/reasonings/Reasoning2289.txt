@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Repeatedly remove elements from an array that are smaller than their preceding element until the array is non-decreasing, and count the removal steps.
+2. Problem type / algorithm category: Monotonic stack, simulation.
+3. Step-by-step approach: Iterate from right to left, maintaining a monotonic increasing stack of indices. For each element, pop elements from the stack that are smaller than the current element, updating the current element's removal count with the maximum of its current count plus one and the popped element's count. Push the current index onto the stack. The final answer is the maximum removal count.
+4. Edge cases: An already non-decreasing array (0 steps), array with all elements same, array with unique elements in decreasing order.
+5. Time and space complexity: O(N) time complexity as each element is pushed and popped from the stack at most once. O(N) space complexity for the stack and the days array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of operations (insert, delete, replace) to convert word1 to word2.
+2. Problem type / algorithm category: Dynamic Programming (Edit Distance)
+3. Step-by-step approach: Use a 2D DP array to store the minimum edit distances between prefixes of word1 and word2. Initialize the first row and column with the number of insertions/deletions needed to convert an empty string to a prefix of the other string. Iterate through the rest of the array, and if the characters at the current indices match, no operation is needed; otherwise, take the minimum of insert, delete, and replace operations plus 1.
+4. Edge cases: Empty strings, identical strings. The code handles empty strings correctly by initializing the first row and column of the DP table.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the lengths of word1 and word2 respectively. Space complexity is also O(m*n) due to the DP table.
+</thinking>

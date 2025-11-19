@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum total wasted space by selecting a single supplier's boxes to fit given packages, where waste is box size minus package size.
+2. Problem type / algorithm category: Greedy, Binary Search, Prefix Sum.
+3. Step-by-step approach: Sort packages, then for each supplier, sort their boxes. For each supplier, iterate through their sorted boxes and use binary search (bisect_right) on packages to find how many packages fit into the current box size, accumulating waste using prefix sums. Keep track of the minimum waste across all suppliers.
+4. Edge cases: If no supplier can fit the largest package, return -1. Handle modulo arithmetic for large results.
+5. Time and space complexity: Sorting packages O(N log N). For each supplier, sorting boxes O(M log M) and iterating/binary search O(M log N). Prefix sum O(N). Total: O(N log N + S * (M log M + M log N)) where S is number of suppliers, but given sum of box lengths constraint, it's closer to O(N log N + TotalBoxes * log N) and O(N + TotalBoxes) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to find the total number of operations to empty an array containing distinct numbers, where operations involve removing the smallest element if it's at the front, or moving it to the end otherwise.
+2. Problem type / algorithm category: Simulation, Greedy, Data Structures (Sorted List/Fenwick Tree).
+3. Step-by-step approach: Map each number to its initial index. Sort the numbers. Iterate through the sorted numbers, calculating the operations needed to bring the current smallest number to the front based on its original position and previously processed elements using a sorted list to count elements that have "wrapped around".
+4. Edge cases: An empty input array is not possible due to constraints. An array with a single element requires one operation. An already sorted array requires n operations.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting and operations on the sorted list. Space complexity is O(N) for storing positions and the sorted list.
+</thinking>

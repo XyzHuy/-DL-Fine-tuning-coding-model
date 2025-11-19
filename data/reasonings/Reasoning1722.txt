@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays source and target of same length n, and a list of allowed swaps between indices, find the minimum Hamming distance between source and target by performing any number of allowed swaps on source.
+2. Problem type / algorithm category: Graph, Union-Find, Disjoint Set Union (DSU).
+3. Step-by-step approach: Use Union-Find to group indices that are transitively swappable into connected components. For each component, count the frequencies of numbers in both source and target arrays at those indices. The number of elements that cannot be matched within a component contributes to the Hamming distance. Sum these mismatches across all components.
+4. Edge cases: No allowed swaps means each index is its own component. All elements are the same and can be swapped freely within a component.
+5. Time and space complexity: Time complexity is O(N * alpha(N) + N log N) or O(N * alpha(N)) if using frequency maps directly, where N is the length of arrays and alpha is inverse Ackermann function. Space complexity is O(N) for Union-Find and frequency maps.
+</thinking>

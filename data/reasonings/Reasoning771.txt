@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of stones that are also jewels, given a string of jewels and a string of stones. Case matters.
+2. Problem type / algorithm category: String manipulation, Hash set.
+3. Step-by-step approach: Convert the jewels string into a set for fast lookups. Iterate through the stones string and check if each stone is present in the jewels set. Increment a counter for each jewel found.
+4. Edge cases: Empty jewels string, empty stones string, no common characters.
+5. Time and space complexity: Time complexity is O(J + S) where J is the length of jewels and S is the length of stones. Space complexity is O(J) to store the jewels set.
+</thinking>

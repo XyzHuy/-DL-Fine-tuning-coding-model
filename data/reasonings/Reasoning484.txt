@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct the lexicographically smallest permutation of integers from 1 to n, given a string 's' indicating increasing ('I') or decreasing ('D') relationships between consecutive elements.
+2. Problem type / algorithm category: Array manipulation, permutation reconstruction, greedy algorithm.
+3. Step-by-step approach: Initialize a permutation from 1 to n. Iterate through the string 's'. If 'D' is encountered, find the consecutive sequence of 'D's and reverse the corresponding segment of the permutation array. If 'I' is encountered, simply proceed to the next character.
+4. Edge cases: Empty string (not possible according to the constraints), string with only 'I's or only 'D's.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string and array at most once. Reversing a sub-array also takes O(n) time in the worst case, but it's still within the overall O(n) bound. Space complexity is O(n) to store the permutation array.
+</thinking>

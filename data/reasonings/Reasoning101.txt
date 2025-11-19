@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to determine if a binary tree is symmetric around its center, meaning its left subtree is a mirror reflection of its right subtree.
+2. Problem type / algorithm category: Binary Tree, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: The solution uses a recursive helper function that takes two nodes, say t1 and t2, to check if they are mirrors of each other. For two subtrees rooted at t1 and t2 to be mirrors, their root values must be identical. Furthermore, the left subtree of t1 must be a mirror of the right subtree of t2, and the right subtree of t1 must be a mirror of the left subtree of t2. The initial call checks if the root is a mirror of itself.
+4. Edge cases: An empty tree is considered symmetric. The comparison logic must correctly handle cases where one node is null while its corresponding mirror node is not.
+5. Time and space complexity: The time complexity is O(N) as each node is visited once. The space complexity is O(H), where H is the tree's height, due to the recursion stack depth, which can be O(N) in the worst case (for a skewed tree).
+</thinking>

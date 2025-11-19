@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest prefix of an array where removing exactly one element makes all remaining elements have equal occurrences.
+2. Problem type / algorithm category: Prefix sum, frequency counting, greedy.
+3. Step-by-step approach: Iterate through the array, maintaining counts of each number and counts of those counts. At each step, check if the current prefix satisfies one of the conditions for equal frequencies after removing one element.
+4. Edge cases: All elements have frequency 1, all elements have the same frequency except one, two distinct frequencies where one is 1 or the difference is 1.
+5. Time and space complexity: O(N) time, O(N) space.
+</thinking>

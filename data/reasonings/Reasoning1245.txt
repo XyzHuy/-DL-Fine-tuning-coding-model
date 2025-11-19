@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest path (number of edges) between any two nodes in an undirected tree.
+2. Problem type / algorithm category: Graph traversal (Depth First Search - DFS), Tree algorithms.
+3. Step-by-step approach: Build an adjacency list for the tree. Perform a DFS from an arbitrary node (e.g., node 0) to find the node farthest from it. Then, perform another DFS starting from this farthest node to find the maximum distance from it, which will be the tree's diameter.
+4. Edge cases: A tree with only one node (n=1) will have a diameter of 0. The given constraints ensure n >= 1.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, due to two DFS traversals. Space complexity is O(N) for storing the graph (adjacency list) and the recursion stack.
+</thinking>

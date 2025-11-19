@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to create a deep copy of a binary tree where each node has a random pointer that can point to any node in the tree or null.
+2. Problem type / algorithm category: Tree traversal, Recursion, Hash Map.
+3. Step-by-step approach: Use a hash map to store the mapping from original nodes to their copied nodes. Traverse the original tree recursively. For each node, if it's already in the map, return its copy. Otherwise, create a new copy, store it in the map, and then recursively copy its left, right, and random pointers.
+4. Edge cases: An empty tree (root is null).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes because each node is visited once. Space complexity is O(N) due to the hash map and the recursion stack.
+</thinking>

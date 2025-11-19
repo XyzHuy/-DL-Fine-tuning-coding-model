@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest contiguous subarray of a given length k from an array of distinct integers. A subarray is considered larger if its first differing element is greater than the other subarray's corresponding element.
+2. Problem type / algorithm category: Array manipulation, Greedy approach.
+3. Step-by-step approach: Iterate through all possible starting indices for a subarray of length k. For each starting index, compare the resulting subarray with the current largest subarray found so far. The comparison is lexicographical. Alternatively, find the maximum possible starting element of the largest subarray.
+4. Edge cases: k equals 1 (return the maximum element), k equals nums.length (return the entire array), array with only one possible subarray of length k.
+5. Time and space complexity: Time O(N), Space O(1) excluding output.
+</thinking>

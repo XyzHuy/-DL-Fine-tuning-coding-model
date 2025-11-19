@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Implement a spellchecker that corrects queries based on exact match, case-insensitive match, and vowel error match, prioritizing the first match in the wordlist.
+2. Problem type / algorithm category: Hash table, string manipulation.
+3. Step-by-step approach: Create a function to replace vowels with '*'. Store exact words in a set. Store lowercase words and devoweled words in hash tables, mapping to the first occurrence in the wordlist. Iterate through queries, checking for exact match, lowercase match, and devowel match, returning the appropriate word or an empty string.
+4. Edge cases: Empty wordlist, empty query, multiple words matching case-insensitively or after vowel replacement.
+5. Time and space complexity: Time complexity is O(N + M*L) where N is the length of wordlist, M is the length of queries and L is the maximum length of a word. Space complexity is O(N*L) due to storing wordlist in sets and dictionaries.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of contiguous subarrays whose removal results in the remaining array being strictly increasing.
+2. Problem type / algorithm category: Array traversal, two pointers, combinatorial counting.
+3. Step-by-step approach: Identify the longest non-decreasing prefix and suffix. Count subarrays fully within the prefix. Count subarrays fully within the suffix. Then, use two pointers to count subarrays that span across the prefix and suffix, ensuring the element before the removed subarray is less than the element after it.
+4. Edge cases: The entire array is already strictly increasing; handling array boundaries correctly for prefix and suffix.
+5. Time and space complexity: O(N) time complexity due to linear scans, O(1) space complexity as only a few variables are used.
+</thinking>

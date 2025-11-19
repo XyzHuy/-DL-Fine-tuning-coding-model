@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array and a range [left, right], count the number of subarrays where the maximum element within the subarray falls within that range.
+2. Problem type / algorithm category: Array manipulation, counting subarrays, range queries.
+3. Step-by-step approach: The solution uses the inclusion-exclusion principle. It counts the number of subarrays with maximum value less than or equal to `right`, and subtracts the number of subarrays with maximum value less than `left`. The count function calculates the number of subarrays with a maximum value less than or equal to a given bound.
+4. Edge cases: Empty array, left > right, all numbers outside the range, all numbers inside the range.
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the array in the count function. Space complexity is O(1) as it uses only constant extra space.
+</thinking>

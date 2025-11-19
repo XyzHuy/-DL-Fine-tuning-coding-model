@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum Manhattan distance from a water cell (0) to the nearest land cell (1) in a grid.
+2. Problem type / algorithm category: Breadth-First Search (BFS)
+3. Step-by-step approach: Initialize a queue with all land cells. Perform BFS, expanding from land cells to adjacent water cells, incrementing distance at each level. Mark visited water cells as land to avoid revisiting.
+4. Edge cases: If there's no land or no water, return -1.
+5. Time and space complexity: Time: O(N^2), Space: O(N^2), where N is the dimension of the grid.
+</thinking>

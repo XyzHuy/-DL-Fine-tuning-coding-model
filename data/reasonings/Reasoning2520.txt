@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count how many digits of a given integer evenly divide the integer itself.
+2. Problem type / algorithm category: Simulation, Iteration, Basic Arithmetic.
+3. Step-by-step approach: Convert the number to a string to access each digit. Iterate through each digit, convert it back to an integer, and check if the original number is divisible by this digit. Increment a counter if divisible.
+4. Edge cases: The problem constraints guarantee num is at least 1 and does not contain the digit 0, simplifying checks.
+5. Time and space complexity: Time complexity is O(log10(num)) because we iterate through the digits of the number. Space complexity is O(log10(num)) to store the number as a string.
+</thinking>

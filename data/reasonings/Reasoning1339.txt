@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the product of sums of two subtrees after removing one edge from a binary tree, returning the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Tree Traversal (DFS), Dynamic Programming (implicitly).
+3. Step-by-step approach: First, calculate the total sum of all nodes in the tree. Then, perform a post-order traversal (DFS) to calculate the sum of each subtree. For each subtree sum, calculate the product with the sum of the remaining tree (total_sum - subtree_sum) and update the maximum product found so far. Finally, return the maximum product modulo 10^9 + 7.
+4. Edge cases: A tree with only two nodes is the smallest valid case. The values of the nodes are positive.
+5. Time and space complexity: Time complexity is O(N) for two tree traversals (one to get total sum, one for DFS). Space complexity is O(H) for recursion stack, where H is the height of the tree (O(N) in worst case, O(log N) for balanced tree).
+</thinking>

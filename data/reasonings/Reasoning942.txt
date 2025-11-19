@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct a permutation of integers from 0 to n based on a string s, where 'I' means increasing and 'D' means decreasing.
+2. Problem type / algorithm category: Greedy algorithm, Array construction.
+3. Step-by-step approach: Maintain low and high pointers, initialized to 0 and n respectively. Iterate through the string s. If s[i] is 'I', append low to the result and increment low. If s[i] is 'D', append high to the result and decrement high. After the loop, append either low or high (they are equal) to the result.
+4. Edge cases: Empty string s (though the problem states length >= 1, but it's a good habit to think about it), string with only 'I's or only 'D's.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) to store the resulting permutation.
+</thinking>

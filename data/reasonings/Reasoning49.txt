@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Group a given list of strings into sublists such that each sublist contains anagrams of each other.
+2. Problem type / algorithm category: Hashing, String manipulation.
+3. Step-by-step approach: Create a hash map where the key is the sorted string (tuple) and the value is a list of the original strings which are anagrams. Iterate through the input list, sort each string, use the sorted version as a key to the hashmap, and append the original string to the list associated with that key. Finally, return the values of the hashmap.
+4. Edge cases: Empty input string, single character string.
+5. Time and space complexity: Time complexity is O(N * KlogK), where N is the number of strings and K is the maximum length of a string. Space complexity is O(N * K), where N is the number of strings and K is the maximum length of a string.
+</thinking>

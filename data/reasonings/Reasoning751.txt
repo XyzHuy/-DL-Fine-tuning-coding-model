@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an IP address and a number n, return the shortest list of CIDR blocks that covers the range of IP addresses [ip, ip + n - 1] exactly.
+2. Problem type / algorithm category: Bit manipulation, greedy algorithm.
+3. Step-by-step approach: Convert the IP address to an integer. Iterate while n > 0. Find the largest CIDR block that starts at the current IP address and has a size that is a power of 2 and is less than or equal to n. Add the CIDR block to the result list. Decrement n by the size of the CIDR block. Increment the IP address by the size of the CIDR block.
+4. Edge cases: n = 1, n is a power of 2, the IP address is already aligned to a power of 2.
+5. Time and space complexity: Time complexity is O(n) in the worst case, where n is the number of IP addresses to cover. Space complexity is O(1), excluding the output list.
+</thinking>

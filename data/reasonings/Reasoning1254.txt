@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count islands of land (0s) that are completely surrounded by water (1s) in a 2D grid.
+2. Problem type / algorithm category: Graph traversal (Depth First Search - DFS) on a grid.
+3. Step-by-step approach: Iterate through each cell of the grid. If a land cell (0) is encountered, start a DFS. During DFS, mark visited land cells as water (1). The DFS returns whether the current island segment is surrounded by water on all sides. If it is, increment the closed island count.
+4. Edge cases: Empty grid or grid with no rows/columns. Islands touching the boundary are not closed.
+5. Time and space complexity: Time complexity is O(rows * cols) as each cell is visited at most once. Space complexity is O(rows * cols) in the worst case for the recursion stack depth of DFS.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a list of words is sorted lexicographically according to a given alien alphabet order.
+2. Problem type / algorithm category: String comparison, lexicographical order.
+3. Step-by-step approach: Create a mapping from alien alphabet characters to their indices. Iterate through the words, comparing characters at each index based on the mapping. If any pair of consecutive words is out of order, return false.
+4. Edge cases: Empty words list, different word lengths, all words are sorted, similar words.
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of words and M is the average length of the words. Space complexity is O(1) since the order mapping is a fixed size.
+</thinking>

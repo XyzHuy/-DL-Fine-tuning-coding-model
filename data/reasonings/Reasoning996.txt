@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the number of permutations where the sum of every adjacent pair is a perfect square.
+2. Problem type / algorithm category: Backtracking / Permutations
+3. Step-by-step approach: Use backtracking to explore all possible permutations. A counter is used to keep track of remaining numbers. Before adding a number to the permutation, it's checked if the number can be added to the path currently. After each recursive call, the counter is restored.
+4. Edge cases: Empty input array, duplicate numbers in the input array. The path starts empty.
+5. Time and space complexity: Time complexity is O(N!), where N is the length of the input. Space complexity is O(N) due to recursion depth and counter.
+</thinking>

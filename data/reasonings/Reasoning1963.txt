@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string with an equal number of opening and closing brackets, find the minimum swaps to make it balanced.
+2. Problem type / algorithm category: Greedy approach, String manipulation.
+3. Step-by-step approach: Iterate through the string maintaining a counter for open brackets. Increment for '['. For ']', if there's an open bracket available (counter > 0), decrement it, signifying a matched pair. If ']' is encountered and no open bracket is available (counter is 0), it means this ']' is mismatched. The total count of such mismatches (represented by the final counter value 'x') can be resolved in (x + 1) // 2 swaps.
+4. Edge cases: An already balanced string (e.g., "[]") requires 0 swaps. The constraints guarantee an even length and equal numbers of brackets.
+5. Time and space complexity: Time complexity is O(n) as we iterate through the string once. Space complexity is O(1) as we only use a few variables.
+</thinking>

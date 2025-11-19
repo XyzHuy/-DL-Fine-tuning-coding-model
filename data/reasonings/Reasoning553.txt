@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of numbers, find the optimal way to add parenthesis to maximize the result of consecutive divisions.
+2. Problem type / algorithm category: Mathematical optimization, string manipulation.
+3. Step-by-step approach: Place the first number in the numerator and the division of all the subsequent numbers in the denominator by wrapping them in parentheses.
+4. Edge cases: Array of length 1 and length 2 must be handled separately.
+5. Time and space complexity: Time complexity is O(n), space complexity is O(n).
+</thinking>

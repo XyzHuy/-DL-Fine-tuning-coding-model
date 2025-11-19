@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous groups of three tiles in a circular arrangement where the middle tile's color differs from its immediate neighbors.
+2. Problem type / algorithm category: Array traversal, pattern recognition.
+3. Step-by-step approach: Iterate through each tile, considering it as the potential middle tile of an alternating group. For each tile, check if its color is different from the tile before it and the tile after it, accounting for the circular nature of the arrangement using the modulo operator. Increment a counter if an alternating group is found.
+4. Edge cases: The minimum length of the array is 3, which ensures that at least one group of three can be formed. The circular nature handles connections between the first and last elements.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a constant amount of extra space for the counter variable.
+</thinking>

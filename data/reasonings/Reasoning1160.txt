@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words and a string of characters, find the sum of the lengths of the words that can be formed using the characters in the given string, where each character can only be used once.
+2. Problem type / algorithm category: String manipulation, counting, and hash map (Counter).
+3. Step-by-step approach: Count the frequency of each character in the `chars` string. Iterate through each word in the `words` list. For each word, count the frequency of its characters. Check if each character count in the word is less than or equal to the corresponding character count in `chars`. If all characters in the word satisfy this condition, add the length of the word to the total length. Finally, return the total length.
+4. Edge cases: Empty `words` list, empty `chars` string, words longer than `chars`, words containing characters not in `chars`.
+5. Time and space complexity: Time complexity is O(n*m + k), where n is the number of words, m is the average length of the words, and k is the length of the `chars` string. Space complexity is O(1), because the size of the character counters is limited to the size of the alphabet which is constant.
+</thinking>

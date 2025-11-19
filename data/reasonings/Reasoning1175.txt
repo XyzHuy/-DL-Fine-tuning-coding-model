@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, find the number of permutations of the numbers 1 to n such that prime numbers are placed at prime indices. Return the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Combinatorics, number theory (prime numbers), permutations, factorial.
+3. Step-by-step approach: First, count the number of primes between 1 and n. Then, calculate the number of non-primes. After that, calculate the factorial of the number of primes and the factorial of the number of non-primes. Finally, multiply these two factorials and take the modulo 10^9 + 7.
+4. Edge cases: n = 1 (no primes), n = 2 (one prime), larger values of n up to 100. The result needs to be modulo 10^9 + 7.
+5. Time and space complexity: Time complexity is O(n * sqrt(n)) for finding the primes and O(n) for the factorial calculation, so it's dominated by O(n * sqrt(n)). Space complexity is O(1).
+</thinking>

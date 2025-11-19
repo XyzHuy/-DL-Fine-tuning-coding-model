@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to find the minimum moves to make a chessboard peaceful, meaning one rook per row and one per column, by moving rooks horizontally or vertically one step at a time.
+2. Problem type / algorithm category: Greedy algorithm, Optimization problem.
+3. Step-by-step approach: Separate rook row and column positions, sort them independently, and then sum the absolute differences between the sorted positions and their ideal target indices (0 to n-1).
+4. Edge cases: The problem guarantees no two rooks start in the same cell, and the board size n is at least 1. The constraints are mild enough for the proposed approach.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of rooks. Space complexity is O(N) for storing sorted row and column lists.
+</thinking>

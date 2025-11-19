@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total spending by buying one item per day from available shops, where each item's price is its value multiplied by the current day number. Items in shops are sorted non-increasingly, and the rightmost available item in a shop is chosen.
+2. Problem type / algorithm category: Greedy approach with a min-heap for efficient selection.
+3. Step-by-step approach: Initialize a min-heap with the rightmost (smallest value) item from each shop. On each day, extract the item with the minimum value from the heap, add its cost (value * day) to the total, and if the shop still has items, push the next rightmost item onto the heap. Increment the day counter and repeat until all items are bought.
+4. Edge cases: Shops can have different numbers of items. All items must be bought eventually. Empty input (though constraints prevent this). Single shop or single item per shop.
+5. Time and space complexity: Time complexity is O(M * N * log M) where M is the number of shops and N is the number of items per shop, because each item is pushed and popped from the heap once, and heap operations take O(log M) time. Space complexity is O(M) for storing items in the heap.
+</thinking>

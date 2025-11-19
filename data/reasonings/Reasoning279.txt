@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of perfect square numbers that sum up to a given integer n.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a DP table to store the minimum number of perfect squares for each number from 0 to n. Initialize dp[0] to 0. Iterate through each number from 1 to n, and for each number, iterate through the precomputed perfect squares. Update the DP table by taking the minimum of the current value and the previous value plus 1 (representing adding the current perfect square).
+4. Edge cases: The input n is always greater than or equal to 1 as defined by the constraints.
+5. Time and space complexity: The time complexity is O(n*sqrt(n)) because we iterate up to n and for each number, iterate up to sqrt(n). The space complexity is O(n) due to the DP table.
+</thinking>

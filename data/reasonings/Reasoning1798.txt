@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of coin values, find the maximum number of consecutive integer sums starting from 0 that can be formed by using a subset of these coins.
+2. Problem type / algorithm category: Greedy algorithm, Dynamic Programming (implied but greedy is sufficient).
+3. Step-by-step approach: Sort the coins. Maintain a variable representing the current maximum sum achievable. Iterate through the sorted coins, and if a coin's value is less than or equal to the current maximum achievable sum plus one, add its value to the maximum. Otherwise, stop. The result is the maximum achievable sum plus one.
+4. Edge cases: Empty coins array (though constraints say n >= 1), coins with value 1 allowing to form initial consecutive sums, large coin values preventing formation of consecutive sums.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting, and O(n) if sorting is not considered dominant. Space complexity is O(1) if sorting is in-place, or O(n) depending on the sorting implementation.
+</thinking>

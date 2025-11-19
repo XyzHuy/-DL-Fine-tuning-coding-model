@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of minimums of all contiguous subarrays of a given array modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming / Stack.
+3. Step-by-step approach: Use stacks to determine the number of subarrays where each element is the minimum. Calculate 'left' and 'right' arrays indicating the extent to which arr[i] is the minimum on either side. Multiply arr[i] by the number of subarrays it's the minimum for (using left and right) and add it to the result modulo 10^9 + 7.
+4. Edge cases: Empty array, array with single element, array with all same elements. The code handles the stack being empty gracefully.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array three times. Space complexity is O(n) due to the left, right, and stack data structures.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of paths in a binary tree that sum up to a given target sum. The paths must go downwards.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Prefix Sum.
+3. Step-by-step approach: Use DFS to traverse the tree. Maintain a dictionary (prefix_sum_count) to store the frequency of prefix sums encountered so far.  At each node, calculate the current prefix sum, check how many paths ending at the current node sum to targetSum (using the prefix sum dictionary), update the prefix sum count, recurse on the left and right subtrees, and then backtrack by removing the current prefix sum from the count.
+4. Edge cases: Empty tree (root is None), targetSum is zero, negative node values.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree because each node is visited once. Space complexity is O(N) in the worst case (skewed tree) due to the recursion stack and the prefix sum dictionary.
+</thinking>

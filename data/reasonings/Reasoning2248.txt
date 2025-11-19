@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find common integers present in all sub-arrays of a given 2D integer array.
+2. Problem type / algorithm category: Frequency counting, Intersection.
+3. Step-by-step approach: Flatten the 2D array into a single list, count the occurrences of each integer, and identify integers whose count equals the total number of sub-arrays. Sort the identified integers.
+4. Edge cases: Empty input array, sub-arrays with no common elements.
+5. Time and space complexity: Time complexity is O(S) where S is the total number of elements across all sub-arrays. Space complexity is O(U) where U is the number of unique elements across all sub-arrays.
+</thinking>

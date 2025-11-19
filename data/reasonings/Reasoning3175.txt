@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a queue-based competition where players compete pairwise, and the winner stays at the front while the loser goes to the back. The first player to win k games consecutively wins the competition.
+2. Problem type / algorithm category: Simulation, Greedy approach.
+3. Step-by-step approach: Iterate through the players. Maintain a current winner and their consecutive win count. Compare the current winner with the next player. If the next player wins, they become the new current winner, and their win count resets to 1. Otherwise, the current winner's win count increments. If the win count reaches k, the current winner is the overall winner.
+4. Edge cases: If k is very large (greater than or equal to n-1), the player with the highest skill will eventually win after all other players have had a chance to challenge them. The problem constraint limits k to min(k, n-1) to handle this efficiently.
+5. Time and space complexity: Time complexity is O(n) as we iterate through the players at most once. Space complexity is O(1) as we only use a few variables to store state.
+</thinking>

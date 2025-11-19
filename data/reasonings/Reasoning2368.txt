@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of nodes reachable from node 0 in an undirected tree, without visiting any nodes from a given restricted list. Node 0 is guaranteed not to be restricted.
+2. Problem type / algorithm category: Graph Traversal (Breadth-First Search or Depth-First Search).
+3. Step-by-step approach: Build an adjacency list representation of the tree. Use a set for efficient checking of restricted nodes. Perform a BFS or DFS starting from node 0, keeping track of visited nodes and avoiding restricted ones. Count the total number of visited nodes.
+4. Edge cases: The tree has only two nodes, or all nodes except node 0 are restricted. The restricted list might contain nodes not present in the graph (though constraints imply valid node indices).
+5. Time and space complexity: Time complexity is O(N + E) for graph construction and traversal, where N is the number of nodes and E is the number of edges. Since it's a tree, E = N-1, so it's O(N). Space complexity is O(N) for storing the graph, visited set, and queue/stack.
+</thinking>

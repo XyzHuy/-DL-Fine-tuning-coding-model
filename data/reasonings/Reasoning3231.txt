@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of strictly increasing subsequences to remove to empty an array.
+2. Problem type / algorithm category: Dynamic Programming / Greedy (related to Longest Increasing Subsequence).
+3. Step-by-step approach: Maintain a list `g` where `g[i]` is the smallest ending element of an increasing subsequence of length `i+1`. For each number in `nums`, find its correct position in `g` using binary search to extend an existing subsequence or start a new one. The length of `g` at the end is the answer.
+4. Edge cases: An empty input array is not possible based on constraints. A sorted array requires one operation. A reverse-sorted array requires operations equal to the array length.
+5. Time and space complexity: O(N log N) time due to binary search for each of N elements, O(N) space for the auxiliary list `g`.
+</thinking>

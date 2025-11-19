@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a string formed by concatenating a subsequence of given strings, where the resulting concatenated string must have unique characters.
+2. Problem type / algorithm category: Backtracking/Recursion with bitmasking.
+3. Step-by-step approach: Represent each string in the input array as a bitmask if it contains unique characters. Iterate through the array, and for each string, try to append it (represented by its bitmask) to previously formed valid unique character strings. If appending is possible (no overlapping characters), create a new combined bitmask and add it to the set of possibilities. Finally, find the maximum number of set bits (characters) in any of the generated bitmasks.
+4. Edge cases: Input strings with duplicate characters (these are effectively ignored or skipped). Empty input array (although constraints say length >= 1). Strings in arr that themselves have duplicate characters.
+5. Time and space complexity: Time complexity is O(2^N * L), where N is the length of arr and L is the maximum length of a string in arr. Space complexity is O(2^N) to store the bitmasks.
+</thinking>

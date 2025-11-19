@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all 10-letter substrings in a DNA sequence that appear more than once.
+2. Problem type / algorithm category: String manipulation, sliding window, hashmap (Counter).
+3. Step-by-step approach: Iterate through the string using a sliding window of size 10. Store the count of each 10-letter substring in a hashmap (Counter). If a substring's count becomes 2, add it to the result list.
+4. Edge cases: Empty string, string shorter than 10, string with no repeating sequences.
+5. Time and space complexity: Time: O(N), where N is the length of the string. Space: O(N) in the worst case to store all substrings in the counter.
+</thinking>

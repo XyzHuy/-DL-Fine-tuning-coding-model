@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the sum of matrix elements by flipping signs of adjacent elements any number of times.
+2. Problem type / algorithm category: Greedy, Number Theory.
+3. Step-by-step approach: Convert all numbers to their absolute values to maximize the sum initially. Track the count of negative numbers and the minimum absolute value among all numbers. If the count of negative numbers is even, the initial sum of absolute values is the maximum. If the count is odd, one number must remain negative to achieve the maximum sum, so subtract twice the minimum absolute value from the sum of absolute values.
+4. Edge cases: The matrix can contain zeros. The operation always flips signs of two adjacent numbers, so the parity of negative numbers can be flipped.
+5. Time and space complexity: O(n*n) time complexity to iterate through the matrix, O(1) space complexity as only a few variables are used.
+</thinking>

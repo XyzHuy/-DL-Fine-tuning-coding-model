@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer rowIndex, return the rowIndexth row of Pascal's triangle.
+2. Problem type / algorithm category: Dynamic programming, Pascal's Triangle.
+3. Step-by-step approach: Initialize a list of size rowIndex + 1 with all elements set to 1. Iterate from the second row up to rowIndex. For each row, iterate from the second element up to the second to last element and update the element by adding the element directly to its left from the previous row.
+4. Edge cases: rowIndex = 0, rowIndex = 1, rowIndex = 33 (maximum constraint).
+5. Time and space complexity: Time complexity is O(rowIndex^2) because of the nested loops. Space complexity is O(rowIndex) because we store only the current row.
+</thinking>

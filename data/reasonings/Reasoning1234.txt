@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest substring to replace to make character counts in the whole string equal to n/4.
+2. Problem type / algorithm category: Sliding window, frequency counting.
+3. Step-by-step approach: Count initial frequencies, identify characters exceeding n/4, use a sliding window to find the shortest window where the characters inside can compensate for the excess characters outside the window.
+4. Edge cases: String is already balanced (return 0).
+5. Time and space complexity: O(N) time and O(1) space because character set is fixed to 4.
+</thinking>

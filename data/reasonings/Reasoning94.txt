@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the root of a binary tree, return the inorder traversal of its nodes' values.
+2. Problem type / algorithm category: Tree traversal / Iterative Inorder Traversal
+3. Step-by-step approach: Use a stack to simulate the recursion. While the current node is not null, push it onto the stack and move to its left child. Once the current node is null, pop a node from the stack, add its value to the result, and then move to its right child. Repeat until both the current node and stack are empty.
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(n) where n is the number of nodes in the tree. Space complexity is O(n) in the worst case (skewed tree) due to the stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given friend preferences and pairings, count friends who are unhappy due to a better potential pairing.
+2. Problem type / algorithm category: Graph traversal / Simulation with preference lookup.
+3. Step-by-step approach: Create mappings for current pairs and preference ranks. Iterate through each friend; if they prefer someone else over their current partner, check if that preferred person also prefers them over their current partner. Increment count if both conditions are met.
+4. Edge cases: n=2 (smallest possible even number), preferences lists are sorted, each person is in exactly one pair.
+5. Time and space complexity: O(N^2) time to build preference ranks and check unhappy conditions, O(N^2) space for preference ranks.
+</thinking>

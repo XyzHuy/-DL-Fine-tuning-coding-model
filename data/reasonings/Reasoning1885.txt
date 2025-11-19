@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of indices (i, j) with i < j where the sum of elements at these indices in nums1 is greater than the sum of elements at the same indices in nums2.
+2. Problem type / algorithm category: Array manipulation, Two Pointers, Sorting.
+3. Step-by-step approach: Calculate the difference array (nums1[i] - nums2[i]), sort this difference array, and then use two pointers (left and right) to efficiently count pairs (i, j) such that diff[i] + diff[j] > 0.
+4. Edge cases: Empty arrays (though constraints prevent this), arrays of size 1 (no pairs possible), all differences positive or negative.
+5. Time and space complexity: O(N log N) time for sorting, O(N) space for the difference array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of node values for each level in a binary tree and return the kth largest of these sums. If there are fewer than k levels, return -1.
+2. Problem type / algorithm category: Tree traversal (Level Order Traversal/BFS), Sorting.
+3. Step-by-step approach: Perform a level order traversal (BFS) of the binary tree, calculating the sum of node values at each level. Store these level sums in a list. Sort the list of level sums in descending order. Return the element at index k-1 from the sorted list.
+4. Edge cases: An empty tree (root is None) should return -1. If the number of levels is less than k, return -1.
+5. Time and space complexity: Time complexity is O(N log L) where N is the number of nodes and L is the number of levels, due to BFS and sorting. Space complexity is O(W) where W is the maximum width of the tree for the queue, and O(L) for storing level sums. In the worst case (a complete binary tree), W can be O(N) and L can be O(log N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the three largest distinct sums of elements forming rhombus shapes within a given grid. Return them in descending order, or all distinct sums if fewer than three exist.
+2. Problem type / algorithm category: Grid traversal, brute-force search with optimization, heap (priority queue).
+3. Step-by-step approach: Iterate through each cell as a potential center of a rhombus. For each cell, consider rhombuses of increasing side lengths. Calculate the sum of elements for each valid rhombus. Store these sums in a min-heap of size at most 3, ensuring only distinct sums are kept. Finally, extract elements from the heap and sort them in descending order.
+4. Edge cases: Grid dimensions can be small (1x1). Rhombus can have zero area (single cell). All rhombus sums might be identical. Fewer than three distinct rhombus sums exist.
+5. Time and space complexity: Time complexity is O(m*n*min(m,n)^2) for calculating sums, and O(N log K) where N is the total number of possible rhombuses and K=3 for heap operations. Space complexity is O(K) for the heap and O(N) for the set of unique sums.
+</thinking>

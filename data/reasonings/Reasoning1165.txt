@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total finger movement time on a special keyboard to type a given word.
+2. Problem type / algorithm category: String manipulation, Hash map.
+3. Step-by-step approach: Create a hash map to store the index of each character in the keyboard. Initialize total time with the distance from the starting position (0) to the first character. Iterate through the word, calculate the distance between consecutive characters using the hash map, and add to the total time.
+4. Edge cases: Empty word (though constraints say word length >= 1), keyboard or word containing non-lowercase English characters (constraints specify lowercase characters only).
+5. Time and space complexity: Time complexity is O(N) where N is the length of the word. Space complexity is O(1) as the hash map stores 26 characters at most.
+</thinking>

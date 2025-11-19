@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all distinct ways to place n queens on an n x n chessboard so that no two queens attack each other.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Use backtracking to explore possible queen placements row by row. Maintain sets to track columns and diagonals under attack. If a valid placement is found, add it to the solutions.
+4. Edge cases: n = 1 is a valid edge case that should be handled.
+5. Time and space complexity: Time complexity is O(N!), Space complexity is O(N^2).
+</thinking>

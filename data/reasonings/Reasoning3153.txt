@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of digit differences for all unique pairs of numbers in a given list, where all numbers have the same number of digits. The digit difference is the count of positions with different digits.
+2. Problem type / algorithm category: Arithmetic, Counting, Combinatorics, Iterative processing by digit.
+3. Step-by-step approach: Iterate through each digit position from right to left. For each position, count the occurrences of each digit (0-9). For a given digit, if it appears V times, then these V numbers contribute V * (N - V) to the total difference sum at this position, where N is the total count of numbers. Sum these contributions for all digits at the current position, divide by 2 (since each pair is counted twice), and add to the overall result.
+4. Edge cases: The input array has at least two elements. All numbers have the same number of digits. Numbers are positive. All numbers could be identical, resulting in a sum of 0.
+5. Time and space complexity: Time complexity is O(N * D) where N is the number of elements and D is the number of digits in each number. Space complexity is O(10) or O(k) for storing digit counts, effectively O(1) as the number of digits is limited.
+</thinking>

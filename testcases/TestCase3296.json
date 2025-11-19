@@ -1,0 +1,2115 @@
+{
+  "function_name": "minNumberOfSeconds",
+  "test_cases": [
+    {
+      "parameters": {
+        "mountainHeight": 15,
+        "workerTimes": [
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 75
+    },
+    {
+      "parameters": {
+        "mountainHeight": 15,
+        "workerTimes": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "mountainHeight": 15,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1,
+        "workerTimes": [
+          100
+        ]
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 140
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "expected_output": 1400
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30,
+        "workerTimes": [
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 165
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 3250
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100000,
+        "workerTimes": [
+          1
+        ]
+      },
+      "expected_output": 5000050000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 10,
+        "workerTimes": [
+          3,
+          2,
+          2,
+          4
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "mountainHeight": 5,
+        "workerTimes": [
+          1
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "mountainHeight": 7,
+        "workerTimes": [
+          2,
+          3
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1,
+        "workerTimes": [
+          100000
+        ]
+      },
+      "expected_output": 100000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1,
+        "workerTimes": [
+          1000000
+        ]
+      },
+      "expected_output": 1000000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 234
+    },
+    {
+      "parameters": {
+        "mountainHeight": 20,
+        "workerTimes": [
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 140
+    },
+    {
+      "parameters": {
+        "mountainHeight": 7,
+        "workerTimes": [
+          7
+        ]
+      },
+      "expected_output": 196
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30,
+        "workerTimes": [
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 165
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          10,
+          20,
+          30
+        ]
+      },
+      "expected_output": 2720
+    },
+    {
+      "parameters": {
+        "mountainHeight": 4,
+        "workerTimes": [
+          2,
+          1,
+          1
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "mountainHeight": 20,
+        "workerTimes": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 75
+    },
+    {
+      "parameters": {
+        "mountainHeight": 500,
+        "workerTimes": [
+          50,
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          500
+        ]
+      },
+      "expected_output": 257550
+    },
+    {
+      "parameters": {
+        "mountainHeight": 800,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800
+        ]
+      },
+      "expected_output": 1703000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 75
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100000,
+        "workerTimes": [
+          100000,
+          200000,
+          300000
+        ]
+      },
+      "expected_output": 95812470300000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      },
+      "expected_output": 140
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50000,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      "expected_output": 49602375000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30
+        ]
+      },
+      "expected_output": 5673
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75000,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000
+        ]
+      },
+      "expected_output": 269335050000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 90,
+        "workerTimes": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected_output": 135
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50000,
+        "workerTimes": [
+          50000,
+          25000,
+          10000,
+          5000
+        ]
+      },
+      "expected_output": 1024120650000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 99999,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "expected_output": 54452541
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 1050
+    },
+    {
+      "parameters": {
+        "mountainHeight": 7500,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected_output": 111826000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30000,
+        "workerTimes": [
+          1,
+          10,
+          100,
+          1000,
+          10000,
+          100000,
+          1000000,
+          10000000,
+          100000000,
+          1000000000
+        ]
+      },
+      "expected_output": 210504421
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25
+        ]
+      },
+      "expected_output": 23595
+    },
+    {
+      "parameters": {
+        "mountainHeight": 250,
+        "workerTimes": [
+          10000,
+          20000,
+          30000,
+          40000,
+          50000
+        ]
+      },
+      "expected_output": 31050000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 120,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55,
+          60,
+          65,
+          70,
+          75
+        ]
+      },
+      "expected_output": 1100
+    },
+    {
+      "parameters": {
+        "mountainHeight": 400,
+        "workerTimes": [
+          100000,
+          90000,
+          80000,
+          70000,
+          60000,
+          50000,
+          40000,
+          30000,
+          20000,
+          10000
+        ]
+      },
+      "expected_output": 33210000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 10000,
+        "workerTimes": [
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192
+        ]
+      },
+      "expected_output": 8794190
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000
+        ]
+      },
+      "expected_output": 406000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64
+        ]
+      },
+      "expected_output": 2208
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "expected_output": 5250
+    },
+    {
+      "parameters": {
+        "mountainHeight": 120000,
+        "workerTimes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512,
+          1024,
+          2048,
+          4096,
+          8192,
+          16384,
+          32768,
+          65536
+        ]
+      },
+      "expected_output": 621255624
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000
+        ]
+      },
+      "expected_output": 140000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 15000,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      "expected_output": 4468554000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 210
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30000,
+        "workerTimes": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29
+        ]
+      },
+      "expected_output": 17662788
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47
+        ]
+      },
+      "expected_output": 2601
+    },
+    {
+      "parameters": {
+        "mountainHeight": 120,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500
+        ]
+      },
+      "expected_output": 22000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 90000,
+        "workerTimes": [
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          500
+        ]
+      },
+      "expected_output": 12526645950
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30,
+        "workerTimes": [
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          21,
+          24,
+          27,
+          30
+        ]
+      },
+      "expected_output": 90
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75,
+        "workerTimes": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          56,
+          63,
+          70
+        ]
+      },
+      "expected_output": 980
+    },
+    {
+      "parameters": {
+        "mountainHeight": 65000,
+        "workerTimes": [
+          500,
+          400,
+          300,
+          200,
+          100,
+          50,
+          25,
+          10,
+          5,
+          1
+        ]
+      },
+      "expected_output": 358439550
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected_output": 8610
+    },
+    {
+      "parameters": {
+        "mountainHeight": 10000,
+        "workerTimes": [
+          999999,
+          999998,
+          999997,
+          999996,
+          999995
+        ]
+      },
+      "expected_output": 2000997999000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      "expected_output": 1891000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          50,
+          40,
+          30,
+          20,
+          10,
+          5,
+          15,
+          25,
+          35,
+          45,
+          55,
+          65,
+          75,
+          85,
+          95,
+          105
+        ]
+      },
+      "expected_output": 5775
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "mountainHeight": 600,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 465
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75000,
+        "workerTimes": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512
+        ]
+      },
+      "expected_output": 257157181
+    },
+    {
+      "parameters": {
+        "mountainHeight": 45000,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150
+        ]
+      },
+      "expected_output": 246276030
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50000,
+        "workerTimes": [
+          100000,
+          50000,
+          25000,
+          12500,
+          6250
+        ]
+      },
+      "expected_output": 989124000000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 80000,
+        "workerTimes": [
+          999999,
+          888888,
+          777777,
+          666666,
+          555555,
+          444444,
+          333333,
+          222222,
+          111111
+        ]
+      },
+      "expected_output": 16066085933898
+    },
+    {
+      "parameters": {
+        "mountainHeight": 5000,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          160,
+          170,
+          180,
+          190,
+          200
+        ]
+      },
+      "expected_output": 2183000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ]
+      },
+      "expected_output": 1400
+    },
+    {
+      "parameters": {
+        "mountainHeight": 10000,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      "expected_output": 1987020000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          1,
+          10,
+          100,
+          1000,
+          10000
+        ]
+      },
+      "expected_output": 9900
+    },
+    {
+      "parameters": {
+        "mountainHeight": 80,
+        "workerTimes": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19
+        ]
+      },
+      "expected_output": 252
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29
+        ]
+      },
+      "expected_output": 20100
+    },
+    {
+      "parameters": {
+        "mountainHeight": 45000,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200
+        ]
+      },
+      "expected_output": 3217223100
+    },
+    {
+      "parameters": {
+        "mountainHeight": 7500,
+        "workerTimes": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "expected_output": 4895150
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "expected_output": 3465
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          500,
+          400,
+          300,
+          200,
+          100
+        ]
+      },
+      "expected_output": 4833000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 800,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected_output": 1296000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 595
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75,
+        "workerTimes": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      },
+      "expected_output": 280
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          5,
+          15,
+          25,
+          35
+        ]
+      },
+      "expected_output": 1260
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000,
+          1100,
+          1200,
+          1300,
+          1400,
+          1500
+        ]
+      },
+      "expected_output": 4800
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      "expected_output": 1170
+    },
+    {
+      "parameters": {
+        "mountainHeight": 99,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "expected_output": 153
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected_output": 202000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 120,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected_output": 3300
+    },
+    {
+      "parameters": {
+        "mountainHeight": 90000,
+        "workerTimes": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22,
+          24,
+          26,
+          28,
+          30,
+          32,
+          34,
+          36,
+          38,
+          40
+        ]
+      },
+      "expected_output": 140466750
+    },
+    {
+      "parameters": {
+        "mountainHeight": 30000,
+        "workerTimes": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected_output": 178622640
+    },
+    {
+      "parameters": {
+        "mountainHeight": 99999,
+        "workerTimes": [
+          99999
+        ]
+      },
+      "expected_output": 499990000050000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100000,
+        "workerTimes": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected_output": 1250250000000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 300,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "expected_output": 1200
+    },
+    {
+      "parameters": {
+        "mountainHeight": 5000,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50,
+          55,
+          60,
+          65,
+          70,
+          75,
+          80,
+          85,
+          90,
+          95,
+          100
+        ]
+      },
+      "expected_output": 1091500
+    },
+    {
+      "parameters": {
+        "mountainHeight": 90,
+        "workerTimes": [
+          1000,
+          2000,
+          3000,
+          4000,
+          5000,
+          6000,
+          7000,
+          8000,
+          9000,
+          10000
+        ]
+      },
+      "expected_output": 196000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20,
+          25
+        ]
+      },
+      "expected_output": 2625
+    },
+    {
+      "parameters": {
+        "mountainHeight": 150,
+        "workerTimes": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31
+        ]
+      },
+      "expected_output": 495
+    },
+    {
+      "parameters": {
+        "mountainHeight": 60000,
+        "workerTimes": [
+          10000,
+          15000,
+          20000,
+          25000,
+          30000
+        ]
+      },
+      "expected_output": 1291626280000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 25000,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected_output": 1240518000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 80000,
+        "workerTimes": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          7,
+          8,
+          8,
+          9,
+          9,
+          10,
+          10
+        ]
+      },
+      "expected_output": 31747590
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100000,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 12502500
+    },
+    {
+      "parameters": {
+        "mountainHeight": 75,
+        "workerTimes": [
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49
+        ]
+      },
+      "expected_output": 1470
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      "expected_output": 4305
+    },
+    {
+      "parameters": {
+        "mountainHeight": 500,
+        "workerTimes": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43,
+          47,
+          53,
+          59,
+          61,
+          67,
+          71
+        ]
+      },
+      "expected_output": 5456
+    },
+    {
+      "parameters": {
+        "mountainHeight": 25000,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected_output": 5425125
+    },
+    {
+      "parameters": {
+        "mountainHeight": 100000,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 200010000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 500,
+        "workerTimes": [
+          100000,
+          90000,
+          80000,
+          70000,
+          60000,
+          50000,
+          40000,
+          30000,
+          20000,
+          10000
+        ]
+      },
+      "expected_output": 51510000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 90000,
+        "workerTimes": [
+          90000,
+          45000,
+          30000,
+          22500,
+          18000,
+          15000,
+          12857,
+          11250,
+          10000,
+          9000,
+          8182,
+          7500,
+          7000,
+          6667,
+          6316,
+          6000,
+          5714,
+          5455,
+          5217,
+          5000
+        ]
+      },
+      "expected_output": 99351014202
+    },
+    {
+      "parameters": {
+        "mountainHeight": 500,
+        "workerTimes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 650
+    },
+    {
+      "parameters": {
+        "mountainHeight": 600,
+        "workerTimes": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50,
+          50
+        ]
+      },
+      "expected_output": 41000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 1000,
+        "workerTimes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected_output": 8976
+    },
+    {
+      "parameters": {
+        "mountainHeight": 80000,
+        "workerTimes": [
+          80000,
+          40000,
+          20000,
+          10000,
+          5000,
+          2500,
+          1250,
+          625,
+          312,
+          156,
+          78,
+          39,
+          19,
+          9,
+          4,
+          2,
+          1
+        ]
+      },
+      "expected_output": 292563920
+    },
+    {
+      "parameters": {
+        "mountainHeight": 80000,
+        "workerTimes": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 40010000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 20000,
+        "workerTimes": [
+          300,
+          200,
+          150,
+          100,
+          50
+        ]
+      },
+      "expected_output": 981466500
+    },
+    {
+      "parameters": {
+        "mountainHeight": 200,
+        "workerTimes": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 630
+    },
+    {
+      "parameters": {
+        "mountainHeight": 250,
+        "workerTimes": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected_output": 133200
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50000,
+        "workerTimes": [
+          1000000,
+          500000,
+          250000,
+          125000,
+          62500
+        ]
+      },
+      "expected_output": 9891240000000
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50,
+        "workerTimes": [
+          1,
+          10,
+          100,
+          1000,
+          10000
+        ]
+      },
+      "expected_output": 666
+    },
+    {
+      "parameters": {
+        "mountainHeight": 50000,
+        "workerTimes": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 5559445
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of fruits you can pick from a row of trees, given that you can only pick from two types of fruits at a time and must pick fruits from consecutive trees.
+2. Problem type / algorithm category: Sliding window.
+3. Step-by-step approach: Use a sliding window to iterate through the fruits array. Maintain a dictionary to store the count of each fruit type in the window. If the number of fruit types in the window exceeds 2, shrink the window from the left until there are only 2 fruit types. Update the maximum number of fruits picked so far.
+4. Edge cases: Empty array (though constraints say at least one element), all fruits are of the same type, fruits are of more than 2 types at the start.
+5. Time and space complexity: Time complexity is O(n) because each fruit is visited at most twice (once by the right pointer and once by the left pointer). Space complexity is O(1) because the dictionary can hold at most 3 key-value pairs.
+</thinking>

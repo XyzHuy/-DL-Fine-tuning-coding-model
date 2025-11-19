@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the latest day a path exists from the top row to the bottom row, avoiding water cells that appear sequentially.
+2. Problem type / algorithm category: Binary Search on Answer, Graph Traversal (BFS/DFS).
+3. Step-by-step approach: Binary search for the latest possible day. For a given day `k`, simulate the matrix by flooding cells up to day `k` and then use BFS or DFS to check if a path exists from the first row to the last row on land cells.
+4. Edge cases: Smallest grid dimensions, all cells becoming water simultaneously, no possible path initially.
+5. Time and space complexity: Time O(N * log N) where N is cells.length, Space O(N) for the grid and queue.
+</thinking>

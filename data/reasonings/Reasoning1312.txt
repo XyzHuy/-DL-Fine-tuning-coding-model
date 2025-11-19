@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of character insertions required to make a given string a palindrome.
+2. Problem type / algorithm category: Dynamic Programming, Longest Common Subsequence variation.
+3. Step-by-step approach: Calculate the length of the longest palindromic subsequence (LPS) of the string. The minimum insertions needed is the total length of the string minus the length of its LPS. The LPS can be found using dynamic programming where dp[i][j] stores the length of the LPS for the substring s[i...j].
+4. Edge cases: An empty string requires 0 insertions. A string that is already a palindrome requires 0 insertions. Single character strings are palindromes and require 0 insertions.
+5. Time and space complexity: O(n^2) time complexity due to the nested loops for DP table calculation, and O(n^2) space complexity for the DP table, where n is the length of the string.
+</thinking>

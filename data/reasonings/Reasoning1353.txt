@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of events attended given start and end days, with at most one event per day.
+2. Problem type / algorithm category: Greedy approach with a min-heap.
+3. Step-by-step approach: Sort events by start day. Iterate through days, adding events that start on the current day to a min-heap (ordered by end day). Attend the event in the heap with the earliest end day. Remove expired events from the heap.
+4. Edge cases: No events, events with the same start and end days, overlapping event durations.
+5. Time and space complexity: O(N log N) time due to sorting and heap operations, O(N) space for the heap.
+</thinking>

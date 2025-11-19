@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count nodes in a binary tree whose value equals the sum of all its descendants' values.
+2. Problem type / algorithm category: Tree traversal (Depth First Search - DFS).
+3. Step-by-step approach: Perform a post-order DFS traversal. For each node, recursively calculate the sum of its left and right subtrees. Return the sum of the current node's value and its subtree sums. Inside the DFS, check if the sum of left and right subtree sums equals the current node's value, incrementing a counter if true.
+4. Edge cases: An empty tree (though constraints say at least 1 node), a leaf node (descendant sum is 0), a tree with only a root node.
+5. Time and space complexity: Time O(N) where N is the number of nodes, as each node is visited once. Space O(H) in the average case (balanced tree) and O(N) in the worst case (skewed tree) due to recursion stack.
+</thinking>

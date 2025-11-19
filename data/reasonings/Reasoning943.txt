@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of strings, find the shortest string that contains each input string as a substring.
+2. Problem type / algorithm category: Dynamic programming, string manipulation.
+3. Step-by-step approach: First, compute overlaps between each pair of strings. Then, use dynamic programming to find the optimal order of strings to minimize the total length of the superstring. Finally, construct the shortest superstring based on the optimal order.
+4. Edge cases: Empty input array, overlapping strings, strings that are substrings of each other (though the problem statement says none of the strings are substrings of each other).
+5. Time and space complexity: Time complexity is O(n^2 * 2^n + n^2 * w), where n is the number of words and w is the maximum length of a word. Space complexity is O(n * 2^n).
+</thinking>

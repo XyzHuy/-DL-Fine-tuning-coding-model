@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a queue of students and a stack of sandwiches where students take sandwiches if they match their preference or go to the end of the queue; return the count of students unable to eat.
+2. Problem type / algorithm category: Simulation, Queue and Stack operations.
+3. Step-by-step approach: Use queues for students and sandwiches. Repeatedly check the front student against the top sandwich. If they match, remove both. If not, move the student to the end of the student queue and increment a counter for consecutive rejections. If the rejection counter equals the current student queue length, no more students can eat.
+4. Edge cases: All students prefer the same sandwich type, all sandwiches are of one type, the queue empties before all sandwiches are taken, or the sandwich stack empties.
+5. Time and space complexity: O(N^2) time due to potential repeated queue manipulations and O(N) space for storing student and sandwich lists.
+</thinking>

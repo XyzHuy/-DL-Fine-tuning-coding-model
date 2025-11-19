@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of sightseeing spot values, find the maximum score of a pair of spots (i, j) where i < j, and the score is calculated as values[i] + values[j] + i - j.
+2. Problem type / algorithm category: Dynamic Programming / Optimization. The problem can be solved by iterating through the array and keeping track of the best `values[i] + i` seen so far.
+3. Step-by-step approach: Initialize `max_score` and `best_i`. Iterate through the `values` array from the second element (index 1). In each iteration, calculate the `current_score` using the `best_i` and the current element `values[j]`. Update `max_score` if the `current_score` is greater. Update `best_i` with the maximum of the current `best_i` and `values[j] + j`. Finally, return the `max_score`.
+4. Edge cases: The array has a minimum length of 2. All values are positive integers.
+5. Time and space complexity: The time complexity is O(n) because we iterate through the array once. The space complexity is O(1) because we only use a few variables to store the maximum score and the best value of values[i] + i.
+</thinking>

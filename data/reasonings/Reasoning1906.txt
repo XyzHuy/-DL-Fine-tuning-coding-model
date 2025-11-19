@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum absolute difference between distinct elements within specified subarrays of a given array. Return -1 if a subarray contains only identical elements.
+2. Problem type / algorithm category: Array processing, Subarray queries, Brute-force with optimization.
+3. Step-by-step approach: For each query [left, right], extract the subarray. Find all unique numbers within this subarray. If fewer than two unique numbers exist, the result is -1. Otherwise, sort the unique numbers and find the minimum difference between adjacent elements. Pre-calculating indices for each number optimizes the check for unique numbers within a range.
+4. Edge cases: Subarrays with only one distinct element (return -1), subarrays with identical elements (implicitly handled by finding distinct elements).
+5. Time and space complexity: Time complexity is roughly O(Q * N) in the worst case for iterating through subarrays and checking unique elements, where Q is the number of queries and N is the length of nums, though optimization makes it closer to O(Q * U * log U) where U is the max unique numbers in a subarray (limited by 100). Space complexity is O(N) to store indices and O(U) for unique numbers per query.
+</thinking>

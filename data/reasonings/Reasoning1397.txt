@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count strings of length n, between s1 and s2 inclusive, that do not contain 'evil' as a substring, modulo 10^9 + 7.
+2. Problem type / algorithm category: Digit DP with KMP preprocessing.
+3. Step-by-step approach: Use KMP to precompute the LPS array for 'evil'. Implement a recursive DP function with memoization. The DP state includes the current position, flags for whether the generated string is bounded by s1 and s2, and the current match length with the 'evil' prefix. Iterate through possible characters at each position, updating the state and recursively calling DP.
+4. Edge cases: When the generated string matches 'evil' completely (match_len == m), it's invalid. When the end of the string is reached (pos == n) and 'evil' hasn't been formed, it's a valid string. String boundaries (s1 and s2) must be respected.
+5. Time and space complexity: Time complexity is O(n * 2 * 2 * m * 26) due to DP states (pos, is_limit_lo, is_limit_hi, match_len) and character iteration. Space complexity is O(n * m) for memoization table.
+</thinking>

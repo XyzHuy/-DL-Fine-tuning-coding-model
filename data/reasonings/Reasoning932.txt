@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a "beautiful array" of length n, which is a permutation of [1, n] such that there's no arithmetic mean property violation.
+2. Problem type / algorithm category: Divide and conquer, recursion, array construction.
+3. Step-by-step approach: The approach recursively constructs beautiful arrays for odd and even parts, then combines them by mapping odd numbers to 2*x - 1 and even numbers to 2*x, ensuring the arithmetic mean property holds. The base case is n=1, returning [1].
+4. Edge cases: The base case is n = 1. The recursive calls handle splitting the array into roughly equal odd and even parts.
+5. Time and space complexity: Time complexity is O(n log n) due to the recursive calls. Space complexity is O(n log n) due to the call stack and the intermediate lists created during recursion.
+</thinking>

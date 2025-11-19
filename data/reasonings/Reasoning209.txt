@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimal length of a subarray whose sum is greater than or equal to a given target. Return 0 if no such subarray exists.
+2. Problem type / algorithm category: Sliding window
+3. Step-by-step approach: Use a sliding window approach. Expand the window by incrementing the right pointer and add the current element to the current sum. If the current sum is greater than or equal to the target, shrink the window from the left by incrementing the left pointer and subtracting the element at the left pointer from the current sum, updating the minimum length found so far.
+4. Edge cases: If no subarray meets the criteria, return 0. Initialize the minimum length to infinity so that it can be updated correctly.
+5. Time and space complexity: Time complexity is O(n) because each element is visited at most twice (once by the right pointer and once by the left pointer). Space complexity is O(1) because only constant extra space is used.
+</thinking>

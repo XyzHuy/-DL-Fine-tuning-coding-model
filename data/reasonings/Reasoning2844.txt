@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to make a string representing a non-negative integer divisible by 25 by deleting digits.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate from right to left, looking for pairs of digits that form suffixes divisible by 25 (00, 25, 50, 75). For each valid suffix found, calculate the number of deletions required. Keep track of the minimum deletions across all valid suffixes. Consider the special case where the number can be reduced to just "0".
+4. Edge cases: The input string contains only digits, length is at least 1. The case where the number can be reduced to "0" by deleting all but one digit.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, due to iterating through the string multiple times. Space complexity is O(1) as only a few variables are used.
+</thinking>

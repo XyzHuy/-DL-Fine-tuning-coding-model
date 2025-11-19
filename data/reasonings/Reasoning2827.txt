@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count numbers in a given range [low, high] where the count of even digits equals the count of odd digits, and the number is divisible by k.
+2. Problem type / algorithm category: Digit DP (Dynamic Programming on digits).
+3. Step-by-step approach: Use a helper function `count(n)` that calculates the number of beautiful integers from 1 to n. This is achieved using a recursive DFS function with memoization (lru_cache) to track the current digit position, whether the number is still under the upper limit, if a number has started being formed, the balance between even and odd digits, and the current number's remainder when divided by k. The final answer is `count(high) - count(low - 1)`.
+4. Edge cases: Numbers starting with zero (handled by `is_num` flag), empty range (implicitly handled by `low - 1`), single-digit numbers, and when `k` is 1.
+5. Time and space complexity: Time complexity is O(log10(high) * 2 * 2 * (2*k) * 10) which simplifies to O(log(high) * k) due to the state space of DP. Space complexity is O(log(high) * k) for the memoization table.
+</thinking>

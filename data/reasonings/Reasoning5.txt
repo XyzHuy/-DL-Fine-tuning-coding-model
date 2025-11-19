@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest palindromic substring within a given string s.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a 2D boolean array f to store palindrome information. Iterate through substrings, checking for palindrome conditions and updating the longest palindrome found so far.
+4. Edge cases: Empty string, single-character string.
+5. Time and space complexity: Time O(n^2), Space O(n^2).
+</thinking>

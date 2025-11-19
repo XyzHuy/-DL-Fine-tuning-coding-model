@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid representing stacked cubes, calculate the total surface area of the resulting 3D shape.
+2. Problem type / algorithm category: Grid traversal, surface area calculation.
+3. Step-by-step approach: Iterate through the grid, for each cell with a value (cubes), add its initial surface area (top, bottom, and 4 sides). Subtract the overlapping surface area with adjacent cells (up and left) to avoid double-counting.
+4. Edge cases: Empty grid cells (value 0), grid boundaries (check for valid neighbors), single cube cells.
+5. Time and space complexity: Time: O(n^2), where n is the size of the grid. Space: O(1), constant extra space.
+</thinking>

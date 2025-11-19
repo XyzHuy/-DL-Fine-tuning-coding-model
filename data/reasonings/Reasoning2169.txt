@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Repeatedly subtract the smaller non-negative integer from the larger one until either becomes zero, counting the operations.
+2. Problem type / algorithm category: Iterative simulation, basic arithmetic.
+3. Step-by-step approach: Initialize an operation counter to zero. While both numbers are non-zero, subtract the smaller from the larger, increment the counter, and repeat.
+4. Edge cases: If either num1 or num2 is initially zero, zero operations are needed.
+5. Time and space complexity: Time complexity is O(min(num1, num2)) in the worst case, as each operation reduces one number significantly, resembling the Euclidean algorithm. Space complexity is O(1) as only a few variables are used.
+</thinking>

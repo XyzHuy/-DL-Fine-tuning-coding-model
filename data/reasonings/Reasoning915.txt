@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the smallest index to partition the array into two subarrays, left and right, such that every element in left is less than or equal to every element in right.
+2. Problem type / algorithm category: Array partitioning, prefix/suffix arrays.
+3. Step-by-step approach: Create two arrays, max_left and min_right. max_left[i] stores the maximum value from nums[0] to nums[i]. min_right[i] stores the minimum value from nums[i] to nums[n-1]. Iterate through the array and find the first index i such that max_left[i-1] <= min_right[i].
+4. Edge cases: The problem states that at least one valid answer exists, so we don't need to worry about cases where a partition isn't possible. Also the arrays must be non-empty, and the constraints assure that array size is at least 2.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array three times. Space complexity is O(n) because we create two arrays of size n.
+</thinking>

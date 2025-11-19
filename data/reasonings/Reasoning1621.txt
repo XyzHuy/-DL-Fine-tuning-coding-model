@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of ways to draw exactly k non-overlapping line segments of length at least 2 on a 1D plane with n points (at integer coordinates 0 to n-1), modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a DP table where dp[i][j] represents the number of ways to form j non-overlapping segments considering points up to index i. The transitions involve either not forming a segment ending at i, or forming a new segment ending at i, which depends on previous valid configurations. A prefix sum optimization is used to efficiently calculate the number of ways to start a new segment.
+4. Edge cases: The constraints state 2 <= n <= 1000 and 1 <= k <= n-1. The base case dp[i][0] = 1 for all i is handled, representing zero segments.
+5. Time and space complexity: O(n*k) time complexity due to the nested loops filling the DP table, and O(n*k) space complexity for the DP table itself.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a k-avoiding array of length n with the minimum possible sum, where k-avoiding means no two distinct elements sum to k.
+2. Problem type / algorithm category: Greedy approach, Set operations.
+3. Step-by-step approach: Iterate through positive integers starting from 1. For each integer, check if its complement (k minus the integer) is already in the chosen set. If the complement is not present, add the current integer to the set. Continue until n elements are collected. The sum of these elements is the minimum sum.
+4. Edge cases: n=1 (any single positive integer works), k=1 (no two positive integers can sum to 1, so just pick n smallest positive integers), k is very large (all small numbers are safe).
+5. Time and space complexity: Time complexity is O(N) because we iterate up to roughly N numbers, and set operations are O(1) on average. Space complexity is O(N) to store the N elements in the set.
+</thinking>

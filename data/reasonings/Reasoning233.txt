@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the occurrences of the digit '1' in all integers from 0 to n, inclusive.
+2. Problem type / algorithm category: Digit DP / Mathematical.
+3. Step-by-step approach: Iterate through each digit place (ones, tens, hundreds, etc.). For each place, calculate the number of 1s that appear in that place based on the digits to the left and right. Handle cases where the current digit is 0, 1, or greater than 1.
+4. Edge cases: n = 0, single-digit numbers, large values of n.
+5. Time and space complexity: Time complexity is O(log n), where n is the input number, because the while loop iterates once for each digit. Space complexity is O(1) because only constant extra space is used.
+</thinking>

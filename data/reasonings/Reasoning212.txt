@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a board of characters and a list of words, find all words from the list that can be formed on the board by traversing adjacent cells (horizontally or vertically) without revisiting the same cell.
+2. Problem type / algorithm category: Trie, Depth First Search (DFS), Backtracking.
+3. Step-by-step approach: Build a Trie from the given words. Iterate through each cell of the board and initiate a DFS search if the Trie contains the character in that cell. The DFS explores adjacent cells, checking for valid word extensions in the Trie. If a word is found, add it to the result and mark it to avoid duplicates.
+4. Edge cases: Empty board, empty word list, words not present on the board, board containing characters not in the words.
+5. Time and space complexity: Time complexity is O(M * N * 4^L), where M is the number of rows, N is the number of columns, and L is the maximum length of a word. Space complexity is O(W * K), where W is the number of words and K is the average length of the words (for the Trie).
+</thinking>

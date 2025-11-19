@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of operations (deleting first two, last two, or first/last elements) such that all operations yield the same sum.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: The core idea is that the first operation determines the target score for all subsequent operations. We explore three possible initial scores by considering the first two, last two, or first and last elements. For each potential score, a recursive DP function explores all valid operation sequences from a given sub-array (defined by start and end indices i, j) that match the target score. Memoization is used to store results of subproblems to avoid recomputation. The base cases handle empty or single-element arrays.
+4. Edge cases: Arrays with less than two elements, which cannot perform any operations.
+5. Time and space complexity: Time complexity is O(N^3) because there are O(N^2) states (i, j) and for each state, we might check up to 3 operations, which takes O(1) time. However, due to the fixed target score, the DP state is effectively (i, j, score). Since score is fixed in each top-level call, it's O(N^2) states, each O(1) work. The initial calls explore 3 potential scores. Space complexity is O(N^2) due to the memoization table storing results for O(N^2) states.
+</thinking>

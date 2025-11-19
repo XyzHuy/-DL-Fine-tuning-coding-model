@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a tree represented by parent array, calculate the score of each node which is the product of sizes of subtrees formed by removing the node and its connected edges, and return the count of nodes with the highest score.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming (subtree sizes).
+3. Step-by-step approach: Build an adjacency list representation of the tree. Perform a post-order traversal (DFS) to calculate the size of each subtree rooted at each node. Then, iterate through each node, calculate its score by multiplying the sizes of its children's subtrees and the size of the remaining tree if it's not the root. Keep track of the maximum score found and the count of nodes achieving it.
+4. Edge cases: The root node (node 0) has no parent, and its score calculation involves the sizes of all its children's subtrees. For leaf nodes, their subtree size is 1, and their score is the product of the sizes of the subtrees formed by removing them, which is the size of the entire tree minus 1.
+5. Time and space complexity: Time complexity is O(N) for building the tree, calculating subtree sizes, and calculating scores. Space complexity is O(N) for storing the tree, subtree sizes, and recursion stack for DFS.
+</thinking>

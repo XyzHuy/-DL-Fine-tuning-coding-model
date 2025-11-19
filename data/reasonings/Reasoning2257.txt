@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of empty cells in an m x n grid that are not visible to any guard, considering walls as obstructions.
+2. Problem type / algorithm category: Grid traversal, simulation, brute force.
+3. Step-by-step approach: Initialize a grid, mark walls and guards. For each guard, simulate their line of sight in all four directions, marking any reachable empty cell as guarded. Finally, count the remaining unmarked empty cells.
+4. Edge cases: Grids with no guards, grids with no walls, guards or walls placed at the edges of the grid, guards or walls completely surrounding an area.
+5. Time and space complexity: Time complexity is O(m*n*k) where k is the number of guards, due to simulating sightlines for each guard. Space complexity is O(m*n) for storing the grid.
+</thinking>

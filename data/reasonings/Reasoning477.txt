@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of Hamming distances between all pairs of integers in a given array.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Iterate through each bit position (0 to 31). For each bit, count the number of 1s and 0s. The Hamming distance for that bit is the product of the number of 1s and 0s. Sum the Hamming distances for each bit position to get the total Hamming distance.
+4. Edge cases: Empty input array (though the problem statement specifies a minimum size of 1), large numbers with many bits set.
+5. Time and space complexity: Time complexity is O(n), where n is the number of elements in `nums`. Space complexity is O(1).
+</thinking>

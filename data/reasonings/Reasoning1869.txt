@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if the longest contiguous sequence of '1's in a binary string is strictly greater than the longest contiguous sequence of '0's.
+2. Problem type / algorithm category: String manipulation, iteration, tracking maximums.
+3. Step-by-step approach: Iterate through the string, maintaining counts for the current contiguous sequence of '1's and '0's. Reset the count when the character changes. Keep track of the maximum observed count for both '1's and '0's. Finally, compare these maximums.
+4. Edge cases: Strings with no '0's (max_zeros is 0), strings with no '1's (max_ones is 0), strings of all same characters, strings with alternating characters.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(1) because we only use a few variables to store counts.
+</thinking>

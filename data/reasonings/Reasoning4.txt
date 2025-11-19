@@ -1,0 +1,7 @@
+thinking>
+1. Problem summary: Find the median of two sorted arrays. The algorithm must have logarithmic time complexity.
+2. Problem type / algorithm category: Binary Search, Array.
+3. Step-by-step approach: The solution uses binary search on the smaller array to find the correct partition point. This partition ensures that all elements to the left are smaller than all elements to the right, allowing us to calculate the median.
+4. Edge cases: Handle cases where one array is empty or when partition is at the boundary (leftmost or rightmost element).
+5. Time and space complexity: Time complexity is O(log(min(m, n))) due to the binary search on the smaller array. Space complexity is O(1) as it uses a constant amount of extra space.
+</thinking>

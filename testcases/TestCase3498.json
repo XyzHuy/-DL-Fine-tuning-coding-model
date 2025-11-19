@@ -1,0 +1,335 @@
+{
+  "function_name": "reverseDegree",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "zzzz"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 15678
+    },
+    {
+      "parameters": {
+        "s": "world"
+      },
+      "expected_output": 230
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 3276
+    },
+    {
+      "parameters": {
+        "s": "z"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "degree"
+      },
+      "expected_output": 405
+    },
+    {
+      "parameters": {
+        "s": "abc"
+      },
+      "expected_output": 148
+    },
+    {
+      "parameters": {
+        "s": "reverse"
+      },
+      "expected_output": 403
+    },
+    {
+      "parameters": {
+        "s": "aaa"
+      },
+      "expected_output": 156
+    },
+    {
+      "parameters": {
+        "s": "zzz"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 6201
+    },
+    {
+      "parameters": {
+        "s": "a"
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "s": "zaza"
+      },
+      "expected_output": 160
+    },
+    {
+      "parameters": {
+        "s": "hello"
+      },
+      "expected_output": 228
+    },
+    {
+      "parameters": {
+        "s": "aaabbbccc"
+      },
+      "expected_output": 1107
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzzxywvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 18602
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringthatweneedtocheck"
+      },
+      "expected_output": 11902
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghijabcdefghij"
+      },
+      "expected_output": 17300
+    },
+    {
+      "parameters": {
+        "s": "letsdothisoverandover"
+      },
+      "expected_output": 3275
+    },
+    {
+      "parameters": {
+        "s": "repeatedcharactersss"
+      },
+      "expected_output": 3224
+    },
+    {
+      "parameters": {
+        "s": "complex"
+      },
+      "expected_output": 362
+    },
+    {
+      "parameters": {
+        "s": "abracadabra"
+      },
+      "expected_output": 1453
+    },
+    {
+      "parameters": {
+        "s": "pythonprogramming"
+      },
+      "expected_output": 2314
+    },
+    {
+      "parameters": {
+        "s": "uniquecharacters"
+      },
+      "expected_output": 2168
+    },
+    {
+      "parameters": {
+        "s": "randomstringswithdifferentcharactersareincludedhere"
+      },
+      "expected_output": 22682
+    },
+    {
+      "parameters": {
+        "s": "thisisareallylongstringwithvariouscharacters"
+      },
+      "expected_output": 14440
+    },
+    {
+      "parameters": {
+        "s": "quickbrownfoxjumpsoverthelazydog"
+      },
+      "expected_output": 7059
+    },
+    {
+      "parameters": {
+        "s": "python"
+      },
+      "expected_output": 250
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 1711
+    },
+    {
+      "parameters": {
+        "s": "aquickbrownfoxjumpsoverthelazydog"
+      },
+      "expected_output": 7509
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 1485
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcd"
+      },
+      "expected_output": 1896
+    },
+    {
+      "parameters": {
+        "s": "algorithms"
+      },
+      "expected_output": 724
+    },
+    {
+      "parameters": {
+        "s": "exampletestcase"
+      },
+      "expected_output": 1940
+    },
+    {
+      "parameters": {
+        "s": "reversealphabetcalculationsarefun"
+      },
+      "expected_output": 9042
+    },
+    {
+      "parameters": {
+        "s": "thisisareallylongstringthatweneedtocalculatereversedegree"
+      },
+      "expected_output": 26964
+    },
+    {
+      "parameters": {
+        "s": "qwertypoiasdfghjklzxcvbnm"
+      },
+      "expected_output": 4708
+    },
+    {
+      "parameters": {
+        "s": "abacaxabacax"
+      },
+      "expected_output": 1576
+    },
+    {
+      "parameters": {
+        "s": "loonyspoons"
+      },
+      "expected_output": 684
+    },
+    {
+      "parameters": {
+        "s": "hellothere"
+      },
+      "expected_output": 880
+    },
+    {
+      "parameters": {
+        "s": "thisisareallylongstringwithsomerepeatedcharacters"
+      },
+      "expected_output": 19494
+    },
+    {
+      "parameters": {
+        "s": "pythonisfun"
+      },
+      "expected_output": 832
+    },
+    {
+      "parameters": {
+        "s": "programmingisfun"
+      },
+      "expected_output": 1980
+    },
+    {
+      "parameters": {
+        "s": "qwen"
+      },
+      "expected_output": 136
+    },
+    {
+      "parameters": {
+        "s": "alibabacloud"
+      },
+      "expected_output": 1461
+    },
+    {
+      "parameters": {
+        "s": "reversedegree"
+      },
+      "expected_output": 1634
+    },
+    {
+      "parameters": {
+        "s": "mississippi"
+      },
+      "expected_output": 851
+    },
+    {
+      "parameters": {
+        "s": "testcase"
+      },
+      "expected_output": 611
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected_output": 12753
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 18226
+    },
+    {
+      "parameters": {
+        "s": "programming"
+      },
+      "expected_output": 1068
+    },
+    {
+      "parameters": {
+        "s": "multiplewordstringexample"
+      },
+      "expected_output": 4768
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 1275
+    },
+    {
+      "parameters": {
+        "s": "thequickbrownfoxjumpsoverthelazydog"
+      },
+      "expected_output": 8442
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 406
+    }
+  ]
+}

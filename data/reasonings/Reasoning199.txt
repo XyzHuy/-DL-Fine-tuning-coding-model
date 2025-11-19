@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Return a list of the values of nodes visible from the right side of a binary tree, ordered from top to bottom.
+2. Problem type / algorithm category: Tree traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to traverse the tree level by level. For each level, append the value of the rightmost node to the result list.
+4. Edge cases: Empty tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes. Space complexity is O(W), where W is the maximum width of the tree.
+</thinking>

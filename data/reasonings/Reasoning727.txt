@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest substring in s1 that contains s2 as a subsequence.
+2. Problem type / algorithm category: String manipulation / Two Pointers / Subsequence search
+3. Step-by-step approach: Iterate through s1, and if a character matches the first character of s2, attempt to find the rest of s2 as a subsequence within s1 starting from that index. If found, compare the length of the new window with the current minimum window and update if necessary.
+4. Edge cases: s2 is not a subsequence of s1 (return ""), multiple minimum length windows (return leftmost), empty strings.
+5. Time and space complexity: Time: O(m*n) where m is the length of s1 and n is the length of s2. Space: O(1)
+</thinking>

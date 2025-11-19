@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, return a new array where each element at index i is the product of all numbers in the original array except the number at index i.
+2. Problem type / algorithm category: Array manipulation, prefix and suffix products.
+3. Step-by-step approach: First, initialize an answer array with all 1s. Calculate the prefix products and store them in the answer array. Then, calculate the suffix products and multiply them with the corresponding prefix products in the answer array.
+4. Edge cases: The array can contain negative numbers and zeros. The problem statement guarantees that the product will fit in a 32-bit integer, so overflow is not an issue.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array twice. Space complexity is O(1) extra space (excluding the output array).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if Alice wins a game where she and Bob fill '?' in a string to make the sums of digits in the first and second halves equal (Bob wins) or unequal (Alice wins). Alice starts.
+2. Problem type / algorithm category: Game Theory, Optimal Strategy, Mathematical Reasoning.
+3. Step-by-step approach: Calculate initial sums and counts of '?' for both halves. If total '?' is odd, Alice wins. Otherwise, analyze the optimal play considering each '?' can be 0-9. Alice aims for unequal sums, Bob for equal sums.
+4. Edge cases: The string might have no '?' characters, in which case the outcome is pre-determined by the initial sums.
+5. Time and space complexity: Time O(N) to iterate through the string once, Space O(1) for storing counts and sums.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given positive integer is a perfect square without using built-in square root functions.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Initialize left and right pointers. Use binary search to find the potential square root. If mid*mid equals the number, return true. Adjust left or right based on whether mid*mid is less than or greater than the number. If no such mid is found, return false.
+4. Edge cases: Handle the case where num is 1.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1).
+</thinking>

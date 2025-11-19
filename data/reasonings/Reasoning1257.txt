@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of nested regions, find the smallest common region that contains two specified regions.
+2. Problem type / algorithm category: Graph traversal / Tree data structure (parent pointers).
+3. Step-by-step approach: Build a parent map where each region points to its direct parent. Find all ancestors of region1 up to the root. Then, traverse from region2 upwards until an ancestor is found that is also an ancestor of region1; this is the smallest common region.
+4. Edge cases: The problem guarantees that a smallest region exists and that region1 and region2 are distinct. The structure implies a single root containing all regions.
+5. Time and space complexity: O(N*M) time for building the parent map, where N is the number of region lists and M is the max number of regions in a list. O(D) time for tracing paths, where D is the maximum depth of the region hierarchy. O(U) space for the parent map and ancestors set, where U is the total number of unique regions.
+</thinking>

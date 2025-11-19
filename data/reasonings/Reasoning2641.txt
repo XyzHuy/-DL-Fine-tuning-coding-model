@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace each node's value in a binary tree with the sum of its cousins' values. Cousins are nodes at the same depth but with different parents.
+2. Problem type / algorithm category: Tree Traversal (DFS/BFS), Dynamic Programming (implicit for sum calculation).
+3. Step-by-step approach: First, calculate the sum of all node values at each depth using a traversal. Second, perform another traversal, and for each node, its new value will be the total sum of its depth minus the sum of its direct children's values (which represent its siblings at the next level).
+4. Edge cases: Empty tree (root is None), tree with only one node (root), nodes without siblings.
+5. Time and space complexity: Time complexity is O(N) due to two traversals of the tree. Space complexity is O(N) for storing depth sums and recursion stack (or queue if BFS is used).
+</thinking>

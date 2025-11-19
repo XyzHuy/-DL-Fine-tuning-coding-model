@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to paint n houses with three colors such that no two adjacent houses have the same color.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Iterate through the costs array, updating the minimum cost to paint each house with each color based on the minimum cost of painting the previous house with a different color.
+4. Edge cases: Empty input list, single house input.
+5. Time and space complexity: Time complexity is O(n), where n is the number of houses. Space complexity is O(1) as we are only storing the costs of the previous house.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize weeks worked by completing one milestone per week, avoiding consecutive work on the same project, until no more valid moves can be made.
+2. Problem type / algorithm category: Greedy approach, focusing on the project with the most milestones.
+3. Step-by-step approach: Identify the project with the maximum milestones and the sum of milestones in all other projects. If the maximum is significantly larger than the sum of others, the solution is limited by the sum of others. Otherwise, all milestones can potentially be completed.
+4. Edge cases: When one project's milestones are excessively large compared to the sum of others, preventing full completion.
+5. Time and space complexity: O(N) time for finding max and sum, O(1) space.
+</thinking>

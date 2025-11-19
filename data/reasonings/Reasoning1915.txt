@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty substrings where at most one character appears an odd number of times, considering characters 'a' through 'j'.
+2. Problem type / algorithm category: Prefix XOR (Bitmask) and Hash Map.
+3. Step-by-step approach: Iterate through the string, maintaining a bitmask representing character parity. For each position, add counts of previous prefix masks that are identical or differ by a single bit to the result. Update the frequency of the current bitmask.
+4. Edge cases: The empty string is not considered. Single-character substrings are always wonderful. The constraints limit characters to 'a'-'j'.
+5. Time and space complexity: Time complexity is O(N*K) where N is the length of the string and K is the number of distinct characters (10 in this case). Space complexity is O(2^K) for the hash map.
+</thinking>

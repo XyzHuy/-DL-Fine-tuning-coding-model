@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange an array such that elements less than a pivot come first, followed by elements equal to the pivot, and then elements greater than the pivot, while maintaining relative order within each group.
+2. Problem type / algorithm category: Array manipulation, partitioning.
+3. Step-by-step approach: Iterate through the input array, categorizing each element into three separate lists: one for elements less than the pivot, one for elements equal to the pivot, and one for elements greater than the pivot. Finally, concatenate these three lists in the specified order to form the result.
+4. Edge cases: The pivot value might appear multiple times. The array might contain only elements less than, equal to, or greater than the pivot. An empty array is not possible based on constraints.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) due to the creation of three auxiliary lists to store the partitioned elements.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a BST and a range [low, high], trim the tree such that all node values are within the range.
+2. Problem type / algorithm category: Binary Search Tree, Recursion.
+3. Step-by-step approach: Recursively traverse the tree. If a node's value is less than low, return the trimmed right subtree. If a node's value is greater than high, return the trimmed left subtree. Otherwise, recursively trim the left and right subtrees and return the node.
+4. Edge cases: Empty tree (root is None), low and high are the same, all nodes are smaller or greater than the range.
+5. Time and space complexity: Time: O(N) in the worst case (skewed tree), Space: O(H) where H is the height of the tree (recursion stack).
+</thinking>

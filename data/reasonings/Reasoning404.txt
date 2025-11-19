@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of all left leaves in a given binary tree. A left leaf is defined as a leaf node that is the left child of its parent.
+2. Problem type / algorithm category: Tree traversal (Depth-First Search - DFS), recursion.
+3. Step-by-step approach: Use a recursive helper function to traverse the tree. The helper function takes a node and a boolean indicating whether it is a left child. If the node is a leaf and is a left child, add its value to the sum. Recursively call the helper function on the left and right children, updating the is_left boolean accordingly.
+4. Edge cases: Empty tree (root is None), single node tree, tree with no left leaves.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H) in the average case, where H is the height of the tree, due to the recursive call stack, and O(N) in the worst case (skewed tree).
+</thinking>

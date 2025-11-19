@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, count the number of range sums that fall within a specified lower and upper bound (inclusive).
+2. Problem type / algorithm category: Prefix Sum, Binary Search (using bisect library).
+3. Step-by-step approach: Calculate prefix sums. For each prefix sum, use binary search to find the number of previously seen prefix sums that satisfy the condition `lower <= current_sum - prefix_sum <= upper`. Insert the current prefix sum into a sorted list to maintain the history of prefix sums for binary search.
+4. Edge cases: Empty input array, zero-length ranges (lower=upper). Numerical overflow is not a concern due to constraints.
+5. Time and space complexity: Time: O(N log N) due to bisect.insort and bisect operations within the loop. Space: O(N) to store prefix sums.
+</thinking>

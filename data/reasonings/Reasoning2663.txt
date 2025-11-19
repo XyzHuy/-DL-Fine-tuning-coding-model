@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest beautiful string of length n that is strictly greater than a given beautiful string s, using characters from the first k lowercase English letters. A string is beautiful if it uses only the first k letters and has no palindromic substrings of length 2 or more.
+2. Problem type / algorithm category: String manipulation, backtracking (implicit), greedy approach.
+3. Step-by-step approach: Iterate from the rightmost character of s to the left. For each position, try to increment the character to the next available letter within the first k letters. If an incremented character is valid (does not create a palindrome with adjacent characters), update the string at that position. Then, greedily fill the remaining characters to the right with the smallest possible valid characters. If no valid increment can be made at a position, move to the next character to the left.
+4. Edge cases: The input string s is already guaranteed to be beautiful. The case where no larger beautiful string exists (e.g., the largest possible beautiful string of length n is reached).
+5. Time and space complexity: Time complexity is O(n*k) in the worst case due to nested loops. Space complexity is O(n) for storing the modified string.
+</thinking>

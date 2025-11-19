@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of 2n integers, find the maximum sum of the minimums of n pairs formed from the array.
+2. Problem type / algorithm category: Sorting, Greedy Algorithm
+3. Step-by-step approach: Sort the array in ascending order. Then, sum every other element (starting from the first) to maximize the sum of the minimums.
+4. Edge cases: Empty array (though constraints say n >= 1), array with duplicate numbers.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1) or O(n) depending on the sorting algorithm used (in-place or not).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum possible maximum value (capability) among robbed houses, such that at least k houses are robbed without robbing adjacent ones.
+2. Problem type / algorithm category: Binary Search on Answer, Greedy.
+3. Step-by-step approach: Binary search for the minimum capability. For a given capability `cap`, use a greedy approach to check if at least `k` houses can be robbed. The greedy check iterates through houses, robbing a house if its value is within `cap` and the previous house wasn't robbed. Adjust binary search bounds based on whether `k` houses can be robbed with the current `cap`.
+4. Edge cases: Minimum and maximum possible values in `nums` as initial binary search bounds. `k` being 1 or `(nums.length + 1)/2`.
+5. Time and space complexity: Time complexity is O(N log M) where N is the number of houses and M is the range of money values. Space complexity is O(1).
+</thinking>

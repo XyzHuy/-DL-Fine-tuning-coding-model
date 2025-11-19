@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum average formed by repeatedly pairing the smallest and largest remaining elements from an array and calculating their average.
+2. Problem type / algorithm category: Sorting and iterative computation.
+3. Step-by-step approach: Sort the input array first. Then, iterate n/2 times. In each iteration, take the first (smallest) and last (largest) elements, calculate their average, and store it. Finally, find the minimum among all calculated averages.
+4. Edge cases: The input array length is guaranteed to be even and at least 2. All numbers are positive. No specific unusual edge cases beyond these constraints.
+5. Time and space complexity: Time complexity is dominated by sorting, O(n log n). Space complexity is O(n) or O(log n) depending on the sorting algorithm used, plus O(n) for storing averages.
+</thinking>

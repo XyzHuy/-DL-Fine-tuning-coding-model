@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of digits and an integer m, determine if each prefix of the string, when interpreted as a number, is divisible by m.
+2. Problem type / algorithm category: Iterative processing, modular arithmetic.
+3. Step-by-step approach: Initialize a remainder to 0. Iterate through each digit of the word. Update the remainder by multiplying the current remainder by 10, adding the integer value of the current digit, and taking the result modulo m. Append 1 to the result list if the remainder is 0, otherwise append 0.
+4. Edge cases: The input string length can be up to 10^5. The integer m can be up to 10^9. The string consists only of digits '0'-'9'.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the word, due to a single pass. Space complexity is O(n) for storing the result array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each element in an input array, count how many other elements in the array are strictly smaller than it.
+2. Problem type / algorithm category: Sorting and Hashing.
+3. Step-by-step approach: Sort the input array. Then, iterate through the sorted array to create a mapping where each number maps to the count of numbers smaller than it (which is its index in the sorted array if it's the first occurrence). Finally, iterate through the original array and use this mapping to construct the result array.
+4. Edge cases: The problem constraints ensure the array length is at least 2. Duplicate numbers are handled by taking the index of the first occurrence in the sorted array.
+5. Time and space complexity: Time complexity is dominated by sorting (O(N log N)), and space complexity is O(N) for the sorted array and hash map.
+</thinking>

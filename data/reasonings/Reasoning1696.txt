@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score by jumping from index 0 to the last index, where the score is the sum of visited elements, and each jump is at most k steps forward.
+2. Problem type / algorithm category: Dynamic Programming with a Sliding Window Maximum (using a Max Heap).
+3. Step-by-step approach: Use dynamic programming where dp[i] stores the maximum score to reach index i. To calculate dp[i], consider all possible previous indices j (i-k <= j < i) and take the maximum score dp[j] plus nums[i]. A max heap is used to efficiently find the maximum dp[j] within the sliding window of size k.
+4. Edge cases: The array can have only one element. All numbers can be negative, leading to a potentially low or zero score.
+5. Time and space complexity: Time complexity is O(n log k) due to heap operations for each of the n elements, and space complexity is O(n) for the DP array and O(k) for the heap.
+</thinking>

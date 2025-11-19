@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate a new matrix where each cell's value is the absolute difference between the number of distinct elements on its top-left diagonal and its bottom-right diagonal.
+2. Problem type / algorithm category: Matrix traversal, Brute force.
+3. Step-by-step approach: Iterate through each cell (r, c) in the grid. For each cell, trace back the top-left diagonal to collect its values and count distinct elements. Then, trace forward the bottom-right diagonal to collect its values and count distinct elements. Finally, compute the absolute difference between these two counts and store it in the answer matrix at (r, c).
+4. Edge cases: A 1x1 grid, where both diagonals are empty resulting in 0 distinct elements.
+5. Time and space complexity: Time complexity is O(m * n * (m + n)) due to nested loops and diagonal traversals. Space complexity is O(m * n) for the answer matrix and O(m + n) for temporary diagonal storage.
+</thinking>

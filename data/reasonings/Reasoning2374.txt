@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a directed graph where each node has one outgoing edge, calculate the "edge score" for each node (sum of incoming node labels) and return the node with the highest score, breaking ties with the smallest index.
+2. Problem type / algorithm category: Graph traversal, Array manipulation.
+3. Step-by-step approach: Initialize an array to store edge scores for each node. Iterate through the 'edges' array, and for each node 'i', add 'i' to the edge score of the node 'edges[i]'. Find the maximum edge score and iterate again to find the first node with that maximum score.
+4. Edge cases: Graph with minimum number of nodes (n=2), tie-breaking for highest score.
+5. Time and space complexity: Time O(n) for calculating scores and finding the max, Space O(n) for storing scores.
+</thinking>

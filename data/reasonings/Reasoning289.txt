@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D board representing the Game of Life, update the board in-place to its next state based on the given rules for live/dead cell transitions.
+2. Problem type / algorithm category: Array manipulation, simulation.
+3. Step-by-step approach: Iterate through the board, count live neighbors for each cell, and encode the next state within the cell's current value using bit manipulation. After encoding the next states, iterate through the board again to update the cells to their next states.
+4. Edge cases: Handle cells at the edges of the board by checking neighbor indices are within bounds.
+5. Time and space complexity: Time complexity is O(m*n) because we iterate through each cell twice. Space complexity is O(1) because the solution is in-place.
+</thinking>

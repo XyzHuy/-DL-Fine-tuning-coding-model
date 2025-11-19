@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D grid of '1's (land) and '0's (water), count the number of islands. An island is formed by horizontally or vertically connected lands.
+2. Problem type / algorithm category: Graph Traversal / Depth First Search (DFS)
+3. Step-by-step approach: Iterate through the grid. If a cell is '1', increment the island count and perform DFS to mark all connected '1's as '0' to avoid recounting the same island. The DFS explores adjacent cells, changing '1' to '0' and recursively calling DFS.
+4. Edge cases: Empty grid, grid with no islands, grid fully filled with '1's, grid filled with only '0's. The DFS includes boundary checks to prevent out-of-bounds access.
+5. Time and space complexity: Time complexity is O(M*N) where M is the number of rows and N is the number of columns, as we visit each cell at most once. Space complexity is O(M*N) in the worst case due to the call stack of DFS (when the grid is filled with '1's).
+</thinking>

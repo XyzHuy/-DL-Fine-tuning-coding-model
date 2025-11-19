@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string representing a non-negative integer, remove k digits to obtain the smallest possible resulting integer.
+2. Problem type / algorithm category: Stack / Greedy Algorithm.
+3. Step-by-step approach: Use a stack to maintain a monotonically increasing sequence of digits. Iterate through the digits of the number. If the current digit is smaller than the top of the stack and k > 0, pop the top of the stack and decrement k. Otherwise, push the current digit onto the stack. After iterating, if k > 0, remove the last k digits from the stack. Finally, remove leading zeros and return the result, or "0" if the result is empty.
+4. Edge cases: k is equal to the length of the number, leading zeros in the result, the result is empty after removing leading zeros.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the string num, as each digit is visited at most twice. Space complexity is O(n) in the worst case, where the stack stores all the digits.
+</thinking>

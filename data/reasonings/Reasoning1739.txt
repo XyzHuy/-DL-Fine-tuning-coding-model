@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the number of unit cubes touching the floor in an n x n x n room, given a total of n unit cubes to place, subject to stability constraints.
+2. Problem type / algorithm category: Greedy approach, mathematical series summation (triangular numbers).
+3. Step-by-step approach: Find the largest number of complete "triangular layers" of boxes that can be formed. Then, determine how many additional boxes are needed on the next layer, and sum the boxes on the base of the last complete layer with the additional boxes.
+4. Edge cases: n = 1, where only one box is needed and touches the floor. Large values of n.
+5. Time and space complexity: O(log n) time due to binary search (implicit in the while loop finding k), O(1) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of two integers without using the + or - operators.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Use bitwise operators to simulate addition. Calculate the carry and sum without carry in a loop until the carry becomes zero. Handle 32-bit integer overflow by using a mask.
+4. Edge cases: Negative numbers, potential overflow beyond 32-bit integers.
+5. Time and space complexity: Time complexity is O(1) since the loop runs at most 32 times. Space complexity is O(1).
+</thinking>

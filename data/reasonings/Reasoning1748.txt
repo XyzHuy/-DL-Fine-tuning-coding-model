@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of elements that appear only once in an integer array.
+2. Problem type / algorithm category: Frequency Counting / Hash Map.
+3. Step-by-step approach: Use a hash map (like Counter) to store the frequency of each number. Iterate through the frequency map and sum up numbers whose count is exactly one.
+4. Edge cases: An array with no unique elements (all elements appear more than once), or an array where all elements are unique. The constraints guarantee a non-empty array.
+5. Time and space complexity: Time O(N) to count frequencies and O(K) to sum unique elements, where K is the number of distinct elements. Space O(K) to store frequencies.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the widest range of indices (i, j) where the sum of elements in nums1 from i to j equals the sum of elements in nums2 from i to j. The width is defined as j - i + 1.
+2. Problem type / algorithm category: Prefix sums and hash map (dictionary).
+3. Step-by-step approach: Calculate the difference array (nums1[k] - nums2[k]). Compute the prefix sums of this difference array. Use a hash map to store the first occurrence of each prefix sum. Iterate through the prefix sums, and if a sum is encountered again, calculate the distance between the current index and the stored index of that sum. Keep track of the maximum distance found.
+4. Edge cases: No pair satisfying the condition exists, meaning the maximum distance remains 0. The arrays can be of length 1.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the arrays. Space complexity is O(n) in the worst case for the hash map to store prefix sums.
+</thinking>

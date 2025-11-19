@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the maximum number of rows that can be made equal after flipping some columns.
+2. Problem type / algorithm category: Hashing, pattern recognition.
+3. Step-by-step approach: Iterate through each row, generate its original and inverted pattern (flipping 0s and 1s). Count the occurrences of each pattern. The maximum count represents the maximum number of equal rows achievable.
+4. Edge cases: Empty matrix, matrix with only one row, matrix with only one column.
+5. Time and space complexity: Time complexity is O(m*n) where m is the number of rows and n is the number of columns. Space complexity is O(m*n) in the worst case where all rows are distinct.
+</thinking>

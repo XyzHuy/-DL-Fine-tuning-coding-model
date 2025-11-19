@@ -1,0 +1,670 @@
+{
+  "function_name": "beautifulNumbers",
+  "test_cases": [
+    {
+      "parameters": {
+        "l": 999,
+        "r": 999
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 9
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "l": 900,
+        "r": 1000
+      },
+      "expected_output": 35
+    },
+    {
+      "parameters": {
+        "l": 789,
+        "r": 890
+      },
+      "expected_output": 35
+    },
+    {
+      "parameters": {
+        "l": 500,
+        "r": 5000
+      },
+      "expected_output": 1800
+    },
+    {
+      "parameters": {
+        "l": 5,
+        "r": 50
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "l": 100,
+        "r": 200
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "l": 50,
+        "r": 100
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "l": 10,
+        "r": 20
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "l": 999,
+        "r": 1001
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 999999999
+      },
+      "expected_output": 670349658
+    },
+    {
+      "parameters": {
+        "l": 990,
+        "r": 1000
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "l": 100000000,
+        "r": 100000000
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 123,
+        "r": 456
+      },
+      "expected_output": 110
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 300,
+        "r": 500
+      },
+      "expected_output": 70
+    },
+    {
+      "parameters": {
+        "l": 99999,
+        "r": 100001
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "l": 100,
+        "r": 150
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 15
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "l": 1000,
+        "r": 10000
+      },
+      "expected_output": 3676
+    },
+    {
+      "parameters": {
+        "l": 111,
+        "r": 222
+      },
+      "expected_output": 33
+    },
+    {
+      "parameters": {
+        "l": 1000,
+        "r": 1010
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "l": 50,
+        "r": 55
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 100000,
+        "r": 200000
+      },
+      "expected_output": 52892
+    },
+    {
+      "parameters": {
+        "l": 100000,
+        "r": 150000
+      },
+      "expected_output": 29004
+    },
+    {
+      "parameters": {
+        "l": 999999,
+        "r": 1000001
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "l": 123456,
+        "r": 654321
+      },
+      "expected_output": 288118
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 1000000
+      },
+      "expected_output": 534358
+    },
+    {
+      "parameters": {
+        "l": 333333,
+        "r": 444444
+      },
+      "expected_output": 59841
+    },
+    {
+      "parameters": {
+        "l": 90000000,
+        "r": 99999999
+      },
+      "expected_output": 6259058
+    },
+    {
+      "parameters": {
+        "l": 123456789,
+        "r": 2147483647
+      },
+      "expected_output": 1428531442
+    },
+    {
+      "parameters": {
+        "l": 7654321,
+        "r": 8765432
+      },
+      "expected_output": 646518
+    },
+    {
+      "parameters": {
+        "l": 1000000,
+        "r": 10000000
+      },
+      "expected_output": 5311175
+    },
+    {
+      "parameters": {
+        "l": 987654,
+        "r": 987664
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "l": 10000000,
+        "r": 10001000
+      },
+      "expected_output": 1001
+    },
+    {
+      "parameters": {
+        "l": 10000000,
+        "r": 20000000
+      },
+      "expected_output": 6285218
+    },
+    {
+      "parameters": {
+        "l": 999999990,
+        "r": 999999999
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "l": "1000000000 - 100000",
+        "r": 1000000000
+      },
+      "expected_output": "Error: Solution.beautifulNumbers() missing 1 required positional argument: 'l'"
+    },
+    {
+      "parameters": {
+        "l": 999999,
+        "r": 999999
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "l": 888888,
+        "r": 999999
+      },
+      "expected_output": 57963
+    },
+    {
+      "parameters": {
+        "l": 99999999,
+        "r": 100000000
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 5000,
+        "r": 75000
+      },
+      "expected_output": 33900
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": 1000000000
+      },
+      "expected_output": 670349659
+    },
+    {
+      "parameters": {
+        "l": 777777,
+        "r": 888888
+      },
+      "expected_output": 58602
+    },
+    {
+      "parameters": {
+        "l": 1,
+        "r": "1000000000 - 1"
+      },
+      "expected_output": "Error: Solution.beautifulNumbers() missing 1 required positional argument: 'r'"
+    },
+    {
+      "parameters": {
+        "l": 987654321,
+        "r": 1000000000
+      },
+      "expected_output": 7554239
+    },
+    {
+      "parameters": {
+        "l": 999999,
+        "r": 9999999
+      },
+      "expected_output": 5311174
+    },
+    {
+      "parameters": {
+        "l": 500000,
+        "r": 510000
+      },
+      "expected_output": 10001
+    },
+    {
+      "parameters": {
+        "l": 987654321,
+        "r": 987654321
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 123456789,
+        "r": 234567890
+      },
+      "expected_output": 73969442
+    },
+    {
+      "parameters": {
+        "l": 2000000,
+        "r": 2010000
+      },
+      "expected_output": 10001
+    },
+    {
+      "parameters": {
+        "l": 100000,
+        "r": 1000000
+      },
+      "expected_output": 486888
+    },
+    {
+      "parameters": {
+        "l": 10000000,
+        "r": 10000000
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 555555555,
+        "r": 555555555
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "l": 1000000,
+        "r": 1001000
+      },
+      "expected_output": 1001
+    },
+    {
+      "parameters": {
+        "l": 500000,
+        "r": 999999
+      },
+      "expected_output": 270652
+    },
+    {
+      "parameters": {
+        "l": 100000000,
+        "r": 300000000
+      },
+      "expected_output": 134174863
+    },
+    {
+      "parameters": {
+        "l": 1000000,
+        "r": 3000000
+      },
+      "expected_output": 1175795
+    },
+    {
+      "parameters": {
+        "l": 456789,
+        "r": 456789123
+      },
+      "expected_output": 304015671
+    },
+    {
+      "parameters": {
+        "l": 123456,
+        "r": 123567
+      },
+      "expected_output": 46
+    },
+    {
+      "parameters": {
+        "l": 56789,
+        "r": 567890
+      },
+      "expected_output": 276722
+    },
+    {
+      "parameters": {
+        "l": 88888888,
+        "r": 99999999
+      },
+      "expected_output": 6902887
+    },
+    {
+      "parameters": {
+        "l": 50000000,
+        "r": 60000000
+      },
+      "expected_output": 6522427
+    },
+    {
+      "parameters": {
+        "l": 500000000,
+        "r": 501000000
+      },
+      "expected_output": 1000001
+    },
+    {
+      "parameters": {
+        "l": 1234567,
+        "r": 12345678
+      },
+      "expected_output": 6951395
+    },
+    {
+      "parameters": {
+        "l": 12345,
+        "r": 67890
+      },
+      "expected_output": 26696
+    },
+    {
+      "parameters": {
+        "l": 98765432,
+        "r": 98765432
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "l": 8000000,
+        "r": 8100000
+      },
+      "expected_output": 100001
+    },
+    {
+      "parameters": {
+        "l": 456789,
+        "r": 987654
+      },
+      "expected_output": 286642
+    },
+    {
+      "parameters": {
+        "l": 1234567,
+        "r": 8765432
+      },
+      "expected_output": 4438756
+    },
+    {
+      "parameters": {
+        "l": 555555,
+        "r": 666666
+      },
+      "expected_output": 61137
+    },
+    {
+      "parameters": {
+        "l": 5000000,
+        "r": 6000000
+      },
+      "expected_output": 609303
+    },
+    {
+      "parameters": {
+        "l": 50000,
+        "r": 55000
+      },
+      "expected_output": 2738
+    },
+    {
+      "parameters": {
+        "l": 1000000,
+        "r": 1010000
+      },
+      "expected_output": 10001
+    },
+    {
+      "parameters": {
+        "l": 800000,
+        "r": 900000
+      },
+      "expected_output": 53367
+    },
+    {
+      "parameters": {
+        "l": 500000000,
+        "r": 550000000
+      },
+      "expected_output": 36195523
+    },
+    {
+      "parameters": {
+        "l": 500000,
+        "r": 550000
+      },
+      "expected_output": 30521
+    },
+    {
+      "parameters": {
+        "l": 10000000,
+        "r": 100000000
+      },
+      "expected_output": 57110376
+    },
+    {
+      "parameters": {
+        "l": 111111,
+        "r": 222222
+      },
+      "expected_output": 58091
+    },
+    {
+      "parameters": {
+        "l": 100000000,
+        "r": 111111111
+      },
+      "expected_output": 11111111
+    },
+    {
+      "parameters": {
+        "l": 800000,
+        "r": 801000
+      },
+      "expected_output": 1001
+    },
+    {
+      "parameters": {
+        "l": 100000000,
+        "r": 200000000
+      },
+      "expected_output": 66911398
+    },
+    {
+      "parameters": {
+        "l": 500000,
+        "r": 600000
+      },
+      "expected_output": 55997
+    },
+    {
+      "parameters": {
+        "l": 999900,
+        "r": 1000100
+      },
+      "expected_output": 124
+    },
+    {
+      "parameters": {
+        "l": 123456789,
+        "r": 123456789
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "l": 100000,
+        "r": 999999
+      },
+      "expected_output": 486887
+    },
+    {
+      "parameters": {
+        "l": 111111111,
+        "r": 222222222
+      },
+      "expected_output": 73867777
+    },
+    {
+      "parameters": {
+        "l": 8000000,
+        "r": 8999999
+      },
+      "expected_output": 583871
+    },
+    {
+      "parameters": {
+        "l": 987654,
+        "r": 987654
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "l": 999000,
+        "r": 1001000
+      },
+      "expected_output": 1335
+    },
+    {
+      "parameters": {
+        "l": "1000000000 - 100000",
+        "r": "1000000000 - 1"
+      },
+      "expected_output": "Error: Solution.beautifulNumbers() missing 2 required positional arguments: 'l' and 'r'"
+    },
+    {
+      "parameters": {
+        "l": 123,
+        "r": 987654321
+      },
+      "expected_output": 662795385
+    },
+    {
+      "parameters": {
+        "l": 100000,
+        "r": 500000
+      },
+      "expected_output": 216236
+    },
+    {
+      "parameters": {
+        "l": 77777777,
+        "r": 88888888
+      },
+      "expected_output": 6956761
+    },
+    {
+      "parameters": {
+        "l": 5000000,
+        "r": 5010000
+      },
+      "expected_output": 10001
+    }
+  ]
+}

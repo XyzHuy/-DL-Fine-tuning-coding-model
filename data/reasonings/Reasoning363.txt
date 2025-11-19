@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a rectangular submatrix within a given matrix such that the sum is no larger than a given integer k.
+2. Problem type / algorithm category: Dynamic programming, prefix sum, binary search.
+3. Step-by-step approach: Iterate through all possible top and bottom rows of the submatrix. For each pair of top and bottom rows, calculate the sum of elements in each column between these rows. Then, use prefix sums and binary search to find the maximum subarray sum that is no larger than k.
+4. Edge cases: Empty matrix, k is smaller or larger than all possible submatrix sums.
+5. Time and space complexity: O(m^2 * n * log n) time, where m is the number of rows and n is the number of columns. O(n) space.
+</thinking>

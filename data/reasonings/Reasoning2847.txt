@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest positive integer whose digits multiply to a given positive integer n, or return "-1" if none exists.
+2. Problem type / algorithm category: Greedy approach with factorization.
+3. Step-by-step approach: Greedily divide n by the largest possible digits (9 down to 2) to form the product. If n is not reduced to 1, it's impossible. Otherwise, sort the collected digits in ascending order to form the smallest number.
+4. Edge cases: n = 1 (handled by direct return as "1"), n < 10 (handled by direct return as n itself), n having prime factors greater than 9 (results in "-1").
+5. Time and space complexity: Time complexity is O(log n) for factorization, and O(k log k) for sorting where k is the number of digits (k <= log n). Space complexity is O(k) to store digits.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest substring of a binary string with exactly k ones. Among shortest ones, return the lexicographically smallest.
+2. Problem type / algorithm category: Sliding window, String manipulation.
+3. Step-by-step approach: Use a sliding window to track substrings with exactly k ones. Expand the window to the right. If the window has k ones, update the minimum length and lexicographically smallest result. Shrink the window from the left until the count of ones is less than k.
+4. Edge cases: No beautiful substrings exist, string is empty, k is 0.
+5. Time and space complexity: Time complexity is O(N), where N is the length of the string s. Space complexity is O(1).
+</thinking>

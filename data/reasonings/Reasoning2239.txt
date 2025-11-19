@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number in an array closest to zero. If multiple numbers have the same minimum distance, return the largest among them.
+2. Problem type / algorithm category: Iteration, comparison, absolute value.
+3. Step-by-step approach: Initialize a variable to store the closest number found so far. Iterate through the array. For each number, compare its absolute value to the absolute value of the current closest number. If the current number is closer, update the closest number. If they are equally close, update if the current number is larger.
+4. Edge cases: The input array will always have at least one element. Numbers can be positive, negative, or zero.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we use a constant amount of extra space for variables.
+</thinking>

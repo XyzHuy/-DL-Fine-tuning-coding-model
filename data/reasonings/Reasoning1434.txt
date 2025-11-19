@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign hats to people such that each person gets a preferred hat and no two people wear the same hat, count the total valid assignments modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking.
+3. Step-by-step approach: Build a graph mapping hats to people who prefer them. Use DP where dp[hat_id][mask] represents the number of ways to assign hats up to hat_id to the people represented by the set bits in mask. Iterate through hats, and for each hat, consider assigning it to a person if they prefer it and haven't been assigned a hat yet, updating the DP state.
+4. Edge cases: Single person, single hat, no possible assignments. The modulo operation handles large results.
+5. Time and space complexity: Time complexity is O(H * 2^N * N) where H is the number of distinct hats and N is the number of people. Space complexity is O(H * 2^N).
+</thinking>

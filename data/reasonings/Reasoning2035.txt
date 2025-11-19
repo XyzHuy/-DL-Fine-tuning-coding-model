@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Partition an array of 2*n integers into two arrays of size n to minimize the absolute difference of their sums.
+2. Problem type / algorithm category: Meet-in-the-middle, Dynamic programming (subset sums).
+3. Step-by-step approach: Split the array into two halves. Generate all possible subset sums for each half, considering subsets of varying sizes. Then, for each possible number of elements taken from the left half, find the best complementary number of elements from the right half using a two-pointer approach on sorted sum lists to minimize the total sum of one partition (which indirectly minimizes the difference).
+4. Edge cases: The problem constraints imply n is at least 1. All numbers can be positive, negative, or zero. The sum of elements can be large.
+5. Time and space complexity: Time complexity is roughly O(n * 2^n) for generating sums and O(n * 2^n * log(2^n)) for sorting and two pointers, dominated by sum generation. Space complexity is O(n * 2^n) to store subset sums.
+</thinking>

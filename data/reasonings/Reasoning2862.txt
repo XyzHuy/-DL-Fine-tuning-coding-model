@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Select a subset of indices from a 1-indexed array `nums` such that for any pair of selected indices `i` and `j`, their product `i * j` is a perfect square. Maximize the sum of elements at these selected indices.
+2. Problem type / algorithm category: Graph traversal or Union-Find, focusing on perfect square relationships between indices.
+3. Step-by-step approach: Group indices into connected components where any two indices in a component have a product that is a perfect square. For each component, sum its associated `nums` values and find the maximum sum among all components.
+4. Edge cases: Empty input array (though constraints say n >= 1), all numbers being 1, single-element subsets.
+5. Time and space complexity: Time complexity is dominated by finding prime factorizations and building the Union-Find structure, roughly O(N * sqrt(max_index)), Space complexity is O(N) for the Union-Find data structure.
+</thinking>

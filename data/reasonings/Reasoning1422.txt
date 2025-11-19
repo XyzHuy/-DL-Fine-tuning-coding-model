@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score by splitting a binary string into two non-empty parts, where the score is the count of zeros in the left part plus the count of ones in the right part.
+2. Problem type / algorithm category: String manipulation, Brute force iteration.
+3. Step-by-step approach: Iterate through all possible split points of the string. For each split, count the zeros in the left substring and ones in the right substring, sum them to get the current score, and keep track of the maximum score found so far.
+4. Edge cases: The string length is at least 2, ensuring non-empty left and right substrings are always possible.
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through n splits and O(n) for counting within each split. Space complexity is O(n) for substring creation.
+</thinking>

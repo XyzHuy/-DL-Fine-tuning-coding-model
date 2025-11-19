@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid, starting cell (row, col), and color, color the border of the connected component containing (row, col) with the given color. The border is defined as cells adjacent to a different color or on the grid boundary.
+2. Problem type / algorithm category: Graph traversal / Depth-First Search (DFS).
+3. Step-by-step approach: Perform a DFS to identify all cells belonging to the connected component with the original color. During the DFS, check if each cell is a border cell. After DFS, iterate through the border cells and change their color to the specified color.
+4. Edge cases: Empty grid, starting cell outside the grid, component consisting of the entire grid, and cases where the starting cell is already a border cell.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the dimensions of the grid due to DFS traversal. Space complexity is O(m*n) in the worst case for the recursion stack and the visited set.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all substrings of a given string that consist of the same character repeated at least three times, and return their start and end indices.
+2. Problem type / algorithm category: String manipulation, array traversal.
+3. Step-by-step approach: Iterate through the string, keeping track of the start and end of each group of consecutive identical characters. If the length of the group is greater than or equal to 3, add its start and end indices to the result.
+4. Edge cases: Empty string, string with no large groups, string with multiple overlapping large groups.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(k), where k is the number of large groups.
+</thinking>

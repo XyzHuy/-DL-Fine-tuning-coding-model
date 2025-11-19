@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum time to travel from 'S' to 'D' on a grid, avoiding 'X' (stones) and '*' (flooded cells), where '.' cells adjacent to '*' also become flooded each second.
+2. Problem type / algorithm category: Multi-source Breadth-First Search (BFS) or a combined BFS simulation.
+3. Step-by-step approach: Use two queues: one for the flood expansion and one for the person's movement. Simulate second by second. In each second, first expand the flood to adjacent empty cells. Then, move the person to adjacent empty cells. If the destination is reached, return the current time + 1. Mark visited cells to avoid cycles.
+4. Edge cases: The destination might be unreachable. The start or destination might be surrounded by stones. The grid might be small (2x2).
+5. Time and space complexity: Time complexity is O(N*M) because each cell is visited at most a constant number of times by the flood and the person. Space complexity is O(N*M) for storing the queues and potentially modifying the grid in-place for visited marking.
+</thinking>

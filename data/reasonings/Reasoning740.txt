@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, maximize the points earned by deleting numbers, where deleting a number also deletes its adjacent numbers (number - 1 and number + 1).
+2. Problem type / algorithm category: Dynamic Programming
+3. Step-by-step approach: First, create an earnings array where earnings[i] is the sum of all occurrences of number i in the input array. Then, use dynamic programming to find the maximum earnings. dp[i] represents the maximum earnings up to number i. The recurrence relation is dp[i] = max(dp[i-1], dp[i-2] + earnings[i]).
+4. Edge cases: Empty input array.
+5. Time and space complexity: Time complexity is O(N + K) where N is the length of the input array and K is the maximum value in the input array. Space complexity is O(K).
+</thinking>

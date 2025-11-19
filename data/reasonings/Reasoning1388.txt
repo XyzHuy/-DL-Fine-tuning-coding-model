@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the sum of pizza slices taken, where you pick one, Alice picks anti-clockwise, Bob picks clockwise, and this repeats until no slices remain.
+2. Problem type / algorithm category: Dynamic Programming, Greedy (implicit choice due to fixed picking pattern).
+3. Step-by-step approach: Use dynamic programming on subproblems. Since the first and last slices cannot be taken simultaneously in any valid sequence (due to the circular nature and fixed picking pattern), solve two independent subproblems: one excluding the last slice and one excluding the first slice, then take the maximum. The DP state `dp[i][j]` represents the maximum sum using `j` slices from the first `i` available slices.
+4. Edge cases: The constraints ensure `slices.length` is at least 3. The DP formulation handles cases where `i-2` is out of bounds by returning 0.
+5. Time and space complexity: Time complexity is O(N*N) due to the DP within the two subproblems, where N is the length of slices. Space complexity is O(N*N) for the DP table.
+</thinking>

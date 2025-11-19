@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest fence (convex hull) that encloses all trees in a garden, returning the coordinates of the trees on the fence.
+2. Problem type / algorithm category: Computational Geometry, Convex Hull, Graham Scan.
+3. Step-by-step approach: Sort the trees lexicographically. Use a stack to maintain the upper and lower hulls. Iterate through the sorted trees to build the upper hull and then the lower hull. Finally, combine the hulls and return the coordinates of the trees in the resulting hull.
+4. Edge cases: When the number of trees is less than 4, return all the trees. Ensure duplicate points are handled correctly.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(n) to store the stack and visited array.
+</thinking>

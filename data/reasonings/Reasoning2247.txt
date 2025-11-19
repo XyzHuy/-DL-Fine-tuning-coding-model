@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum cost of a trip that uses exactly k highways, starting from any city and visiting each city at most once.
+2. Problem type / algorithm category: Graph traversal, Depth-First Search (DFS) with memoization, Bitmasking for visited states.
+3. Step-by-step approach: 1. Build an adjacency list representation of the graph from the highways. 2. Implement a recursive DFS function that takes the current city, a bitmask of visited cities, and the remaining number of highways to traverse. 3. Memoize the DFS results to avoid recomputing subproblems. 4. In the DFS, iterate through neighbors, ensuring they haven't been visited. If a valid path is found, add the toll and recursively call DFS. 5. If exactly k highways are traversed, return 0. 6. The base case returns 0 if remaining highways are 0. 7. If no valid path of length k is found from a state, return -1. 8. Iterate through all possible starting cities and find the maximum cost returned by the DFS.
+4. Edge cases: If k is greater than or equal to n, it's impossible to visit each city at most once, so return -1. If no valid trip of length k exists, the initial max_trip_cost of -1 will be returned.
+5. Time and space complexity: Time complexity is O(N * 2^N * K) due to states (current city, visited mask, remaining k) in DFS. Space complexity is O(N * 2^N * K) for memoization.
+</thinking>

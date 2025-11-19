@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D integer matrix, compute the smoothed image by averaging each cell with its neighbors.
+2. Problem type / algorithm category: Array manipulation, image processing.
+3. Step-by-step approach: Iterate through each cell of the input image. For each cell, iterate through its neighbors (including itself). Calculate the sum of the neighbor values and the count of valid neighbors. Compute the average by integer division (floor). Assign the average to the corresponding cell in the result matrix.
+4. Edge cases: Cells on the border or corners of the image have fewer than 8 neighbors, which are handled by using max(0, i-1) and min(m, i+2) to constrain the neighbor indices within bounds.
+5. Time and space complexity: Time complexity is O(m*n), where m and n are the dimensions of the image. Space complexity is O(m*n) for the output image.
+</thinking>

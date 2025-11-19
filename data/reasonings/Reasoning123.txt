@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum profit achievable from at most two stock transactions given an array of stock prices.
+2. Problem type / algorithm category: Dynamic Programming, greedy approach.
+3. Step-by-step approach: Iterate through the prices, tracking the minimum cost and maximum profit for each of the two possible transactions. Update the minimum cost and maximum profit variables at each step.
+4. Edge cases: Empty prices array, prices array with only decreasing prices.
+5. Time and space complexity: Time complexity is O(n) and space complexity is O(1).
+</thinking>

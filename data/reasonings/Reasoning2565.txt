@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum score (length of removed substring from t) to make the remaining part of t a subsequence of s.
+2. Problem type / algorithm category: Subsequence checking, Binary Search on Answer.
+3. Step-by-step approach: Precompute longest prefix and suffix of t that are subsequences of s. If t is already a subsequence, score is 0. Otherwise, use binary search on the length of the substring to remove from t. For a given length, check if removing any substring of that length makes t a subsequence.
+4. Edge cases: t is already a subsequence of s (score 0). t is empty after removal (score is length of t).
+5. Time and space complexity: O(N*M) for naive checks, but O((N+M) log M) with precomputation and binary search, where N is length of s and M is length of t. Space complexity is O(1) or O(M) depending on implementation of modified t.
+</thinking>

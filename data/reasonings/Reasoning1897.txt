@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all strings in a given list can be made equal by moving characters between them.
+2. Problem type / algorithm category: Frequency analysis, Counting.
+3. Step-by-step approach: Count the total occurrences of each character across all strings. For all strings to be made equal, the count of each character must be perfectly divisible by the total number of strings.
+4. Edge cases: An empty input list of words (though constraints state at least 1 word), or words containing only one type of character.
+5. Time and space complexity: Time complexity is O(N*L) where N is the number of words and L is the total length of all words. Space complexity is O(K) where K is the number of unique characters (at most 26).
+</thinking>

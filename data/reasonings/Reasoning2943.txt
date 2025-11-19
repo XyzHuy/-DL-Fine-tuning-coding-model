@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum area of a square hole in a grid by removing specified horizontal and vertical bars.
+2. Problem type / algorithm category: Greedy algorithm, finding maximum consecutive elements.
+3. Step-by-step approach: Sort both horizontal and vertical bar lists. For each list, find the maximum number of consecutive bars that can be removed by calculating the maximum difference between adjacent sorted bar indices plus one. The side length of the largest square hole is determined by the minimum of (maximum consecutive horizontal bars + 1) and (maximum consecutive vertical bars + 1). The area is then side_length squared.
+4. Edge cases: The problem constraints state 1 <= n, m <= 10^9, implying the grid can be very large. The number of bars to remove is relatively small (<= 100). The bar indices are within the grid boundaries. The case where no bars are removed is implicitly handled by the logic.
+5. Time and space complexity: Sorting takes O(H log H + V log V), where H and V are the lengths of hBars and vBars. Finding max consecutive bars takes O(H + V). Thus, time complexity is dominated by sorting, O(H log H + V log V). Space complexity is O(1) if sorting is in-place, or O(H + V) if auxiliary space is used for sorting.
+</thinking>

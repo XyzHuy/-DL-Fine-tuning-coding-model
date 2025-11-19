@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum sum path from the top row to the bottom row of a square grid, ensuring no two adjacent elements in the path share the same column.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming where dp[i][j] represents the minimum sum to reach cell (i, j). For each cell in row i, its value is the current grid value plus the minimum of the values in the previous row (i-1), excluding the cell directly above. To optimize, keep track of the two smallest values and their columns from the previous row.
+4. Edge cases: A grid with only one row.
+5. Time and space complexity: O(n^2) time complexity and O(n^2) space complexity (or O(n) if space optimization is applied by only storing the previous row's DP values).
+</thinking>

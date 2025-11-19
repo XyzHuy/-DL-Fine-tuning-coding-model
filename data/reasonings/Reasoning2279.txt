@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of bags that reach full capacity using a given number of additional rocks.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Calculate the space needed for each bag to be full, sort these needs, and greedily fill bags starting with the smallest needs until additional rocks are exhausted.
+4. Edge cases: All bags already full, insufficient rocks for even the smallest gap, or more than enough rocks for all bags.
+5. Time and space complexity: O(N log N) time for sorting, O(N) space for storing remaining capacities.
+</thinking>

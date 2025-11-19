@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the longest palindrome by concatenating two-letter words from a given list, using each word at most once.
+2. Problem type / algorithm category: String manipulation, greedy approach, hash map (counter).
+3. Step-by-step approach: Count the frequency of each word. For words with identical characters (e.g., "gg"), add all even occurrences to the total length and use one odd occurrence for the center if available. For words with different characters (e.g., "ab"), pair them with their reverse (e.g., "ba") and add four times the minimum count of the pair to the total length.
+4. Edge cases: When no pairs can be formed, or only single-character-palindromes (like "aa") are available. The case of using a single odd-count symmetrical word for the center.
+5. Time and space complexity: Time complexity is O(N) due to iterating through the words and the counter. Space complexity is O(N) to store the word counts in the counter.
+</thinking>

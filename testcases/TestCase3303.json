@@ -1,0 +1,943 @@
+{
+  "function_name": "minStartingIndex",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "mississippi",
+        "pattern": "missiippi"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "pattern": "dba"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "pattern": "abcdefghii"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "pattern": "abcdefghij"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaa",
+        "pattern": "aba"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "pattern": "bcdffg"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "pattern": "misosippi"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aabbccdd",
+        "pattern": "aabbccde"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "xyz",
+        "pattern": "xya"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "ababbababa",
+        "pattern": "bacaba"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "pattern": "mississipi"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "testcase",
+        "pattern": "tasteing"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "pattern": "misissippi"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbb",
+        "pattern": "aaaa"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefgh",
+        "pattern": "hgfedcba"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "pattern": "provramming"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "dde",
+        "pattern": "d"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "pattern",
+        "pattern": "patern"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcde",
+        "pattern": "bcdef"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzz",
+        "pattern": "zzzzzzzzzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefgh",
+        "pattern": "aefgh"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "pattern": "prigramming"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aabbcc",
+        "pattern": "aabccc"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "pattern": "hallo"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "pattern": "alorithmn"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabc",
+        "pattern": "abcabcabcabcabcabcabcabcabcbca"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcdeabcdeabcde",
+        "pattern": "abcdeabcdeabcdeabcdeabcae"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "azcdefghijklmnopqrstuvwxyb"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaaabaaaaabaaaaabaaaaabaaaaab",
+        "pattern": "aaaaabaaaaabaaaaabaaaaabaaaaaa"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "pattern": "abcdefghjk"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "pattern": "aabbccddeeffgf"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzza"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "longerpatternstring",
+        "pattern": "longerpatternstriang"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "longstringlongstringlongstring",
+        "pattern": "longstringlongstrignlongstring"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abababababababababab",
+        "pattern": "abababababababababaa"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaaabaaaabaaaaabaaaaab",
+        "pattern": "bbbbabaaaabaaaabaaaaab"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "repeatedrepeatedrepeated",
+        "pattern": "repeatedrepeatedrepeatea"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcdeabcdeabcdeabcde",
+        "pattern": "abcdeabcdeabcdeabcdeabcdeabcdf"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcdabcdabcdabcdabcd",
+        "pattern": "abcdbcdabcdabcdabcdabcdabcdabcdabcd"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "hellotherehello",
+        "pattern": "hellotherehelll"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddfffggghhh",
+        "pattern": "aaabbbcccdddfffggghhg"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacabad",
+        "pattern": "abacabadabacabxx"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "repeatedstringrepeated",
+        "pattern": "repeatedstringrepeaa"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxzy"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "pattern": "xylophone"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyi"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghij",
+        "pattern": "abcdefghijabcdefghijabcdefghii"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacaba",
+        "pattern": "abacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabadabacabz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefgabcdefgabcdefg",
+        "pattern": "abcdefgabcdefgxabcdefg"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "oneonetwoonetwoonetwoonetwo",
+        "pattern": "oneonetwoonetwoonetwoonetwotwo"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "pattern": "abracadabrr"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "ababababababababab",
+        "pattern": "abababababababaxab"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "samelettersamelettersame",
+        "pattern": "samelettersamelettersamx"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "quickbrownfoxjumpsoverthelazydog",
+        "pattern": "quickbrownfoxjumpsoverthelazymog"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaaabaaaabaaaaabaaaab",
+        "pattern": "aaaaabaaaabaaaaabaaaab"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "pattern": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabca"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaab",
+        "pattern": "aaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaaabaaaaba"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghij",
+        "pattern": "abcdefghijabcdefghijabxxefij"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "xyzzzyxyzzzyx",
+        "pattern": "xyzzzyxyzzzyy"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijkabcdefghijk",
+        "pattern": "abcdefghijkabcdefghiij"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacabadabacaba",
+        "pattern": "abacabadabacabadabacabb"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghij",
+        "pattern": "abcdefghijabcdefghijabcdefghik"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "repeatedpatternrepeatedpattern",
+        "pattern": "repeatedpartternrepeatedpattern"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklnopqrstuvwxyz",
+        "pattern": "bcdefghijklnopqrstuvwxyza"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyx"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcdeabcdeabcdeabcde",
+        "pattern": "abcdeabcdeabcdeabcdeabcdeabcde"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbbccccdddd",
+        "pattern": "aaaacccc"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "hellohellohellohello",
+        "pattern": "hellohellohelllohello"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "pattern": "aabbccddeefggh"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvvwwwwxxxxyyyyzzzz",
+        "pattern": "aaaabbbbccccddddeeeeffffgggghhhhiiiijjjjkkkkllllmmmmnnnnooooppppqqqqrrrrssssttttuuuuvvvvwwwwxxxxyyyyzzza"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "pattern": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyza"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "pattern": "abracadabrc"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "onetwothreefourfive",
+        "pattern": "onetwothreefourfie"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "pattern": "abcdefghijabcdefghiz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "sequencecomparison",
+        "pattern": "sequencecomporison"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "repeatedstringrepeatedstring",
+        "pattern": "repeatedstringrepeateedstring"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbbcccccddddd",
+        "pattern": "aaaaabbbbbbccccddddd"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "qwertqwertqwertqwert",
+        "pattern": "qwertqwertqwertqweqt"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "findalmostequalhere",
+        "pattern": "findalmosteuqalhere"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "longstringthatgoesonandone",
+        "pattern": "longstringthatgoesonandoo"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "pattern": "patternmacheing"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringwithmanycharacters",
+        "pattern": "thisisaverylongstringwithmanycharacterz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghikjlmnopqrstuvwxyz",
+        "pattern": "abcdefghikjlmnopqrstuvwxyx"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "pattern": "b"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaaaabaaaaaa",
+        "pattern": "aaaaaaaaaaaaa"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "uniquecharacters",
+        "pattern": "uniquecharacteers"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcde",
+        "pattern": "abfdeabfdeabfde"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyzxyzxyz",
+        "pattern": "xyzxyzxyzxyzyxx"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "pattern": "abcdabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abxyzabxyzabxyz"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcdeabcdeabcde",
+        "pattern": "abcdeabcdeabcdeabcdeabcde"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "pattern": "abacabadabacaba"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkll",
+        "pattern": "aabbccddeeffgghhiijjkklm"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabc",
+        "pattern": "abcabcabcabcabcbab"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abracadabraabracadabra",
+        "pattern": "abracadabrabracadabc"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxya"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghij",
+        "pattern": "abcdefghijabcdefghijabcdefghiz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyy"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "longstringwithrepeatedpatterns",
+        "pattern": "longstrintwithrepeatedpatterns"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxya"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "lkjihgfedcba",
+        "pattern": "lkjihgfedcbz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "almostequal",
+        "pattern": "almosnequal"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcd",
+        "pattern": "dcbaabdcbaabcdabcd"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "veryverylongstringwithalotofcharacters",
+        "pattern": "veryverylongstringwithalotofcharracters"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaaaaabaaaaaaaaaabaaaaaaaaaab",
+        "pattern": "aaaaaaaaaaaabaaaaaaaaaab"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "samestartswithsame",
+        "pattern": "samestartswithsamg"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "hellohellohellohellohello",
+        "pattern": "hellolhellohellohellohello"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "pattern": "mississipppp"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabc",
+        "pattern": "abcabcabcabcabcabcabxcabc"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "hellohellohellohello",
+        "pattern": "hellohellohelolohello"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcde",
+        "pattern": "edcba"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzx"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "longpatternstring",
+        "pattern": "longpatternstrong"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "pattern": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzw"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "pattern": "aaaaaaaaaaaaaaaaaaaaaaaab"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "longlonglonglonglong",
+        "pattern": "longlonglonglonglong"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "pattern": "zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "complexsubstringexample",
+        "pattern": "complexsubstrigexampl"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabc",
+        "pattern": "abcbcabcabcabcabcabcabcabc"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "pattern": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzaa"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaaaabaaaaaabaaaaaab",
+        "pattern": "aaaaaabaaaaaabbaaaaaa"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyz",
+        "pattern": "xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzz"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "pattern": "abacabadabacaca"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcdeabcdeabcde",
+        "pattern": "abcdeabcdeabcdeabcdeabcdd"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringthatwearetesting",
+        "pattern": "thisisaverylongstringthatwearetasting"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "pattern": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyi"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abababababababababababababababababab",
+        "pattern": "bababababababababababababababababa"
+      },
+      "expected_output": 1
+    }
+  ]
+}

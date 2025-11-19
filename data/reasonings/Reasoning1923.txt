@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest contiguous sequence of cities that appears in all given friend paths.
+2. Problem type / algorithm category: Binary search on answer combined with polynomial rolling hash.
+3. Step-by-step approach: Perform binary search on the possible length of the common subpath. For a given length `l`, use polynomial rolling hash to generate all subpath hashes for the first path and then check if each subsequent path contains any of these common hashes. If a common subpath of length `l` exists, try a longer length; otherwise, try a shorter length.
+4. Edge cases: Paths with lengths less than the target common subpath length `l`, or cases where no common subpath exists (returning 0).
+5. Time and space complexity: Time complexity is O(M * L_avg * log(L_max)) where L_avg is the average path length and L_max is the maximum path length, due to binary search and hash calculation. Space complexity is O(L_max) for storing hashes.
+</thinking>

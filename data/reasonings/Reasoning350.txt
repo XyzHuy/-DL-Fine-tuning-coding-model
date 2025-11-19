@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the intersection of two integer arrays, including duplicates, with each element appearing as many times as it shows in both arrays.
+2. Problem type / algorithm category: Hashing / Counting.
+3. Step-by-step approach: Create a frequency counter for the first array, then iterate through the second array. If an element exists in the counter and its count is greater than zero, add it to the result and decrement the counter.
+4. Edge cases: Empty input arrays, arrays with no common elements, one array is much larger than the other.
+5. Time and space complexity: Time complexity is O(m+n), where m and n are the lengths of the input arrays. Space complexity is O(min(m,n)) in the worst case where all elements of the shorter array are distinct, as it stores the frequency counts.
+</thinking>

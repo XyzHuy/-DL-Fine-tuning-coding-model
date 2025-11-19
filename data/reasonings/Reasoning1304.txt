@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate an array of n unique integers that sum to zero.
+2. Problem type / algorithm category: Array manipulation, constructive algorithm.
+3. Step-by-step approach: If n is even, create pairs of (i, -i) for i from 1 to n/2. If n is odd, do the same and add 0.
+4. Edge cases: n = 1 requires a single element [0].
+5. Time and space complexity: Time O(n), Space O(n) to store the result array.
+</thinking>

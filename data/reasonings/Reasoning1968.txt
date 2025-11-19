@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange an array of distinct integers so no element is the average of its immediate neighbors.
+2. Problem type / algorithm category: Array manipulation, Sorting, Greedy approach.
+3. Step-by-step approach: Sort the array, split it into two halves, and interleave elements from both halves to create the rearranged array.
+4. Edge cases: The problem constraints state the array length is at least 3, so empty or single-element arrays are not applicable. The distinctness of integers is important.
+5. Time and space complexity: Time complexity is dominated by sorting (O(N log N)). Space complexity is O(N) for the result array or O(log N) to O(N) if sorting in-place depends on implementation.
+</thinking>

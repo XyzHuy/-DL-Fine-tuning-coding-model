@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays of positive integers that may contain zeros, replace each zero with a strictly positive integer to make the sums of the two arrays equal, finding the minimum possible equal sum.
+2. Problem type / algorithm category: Greedy approach, arithmetic calculation.
+3. Step-by-step approach: Calculate initial sums and count zeros for both arrays. Determine the minimum possible sum for each array (initial sum + number of zeros, as each zero must be replaced by at least 1). Compare these minimums with the other array's sum plus its zeros. If one array's minimum potential sum is less than or equal to the other's initial sum plus its zeros, it's possible. The minimum equal sum is the maximum of the two minimum potential sums.
+4. Edge cases: When one or both arrays have no zeros, or when it's impossible to achieve an equal sum even with minimum replacements (e.g., one array's sum plus all its zeros is still less than the other array's base sum).
+5. Time and space complexity: Time complexity is O(N + M) where N and M are the lengths of nums1 and nums2, due to summing and counting elements. Space complexity is O(1) as only a few variables are used.
+</thinking>

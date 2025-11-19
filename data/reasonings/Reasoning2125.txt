@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count laser beams between security devices in a bank represented by a 2D binary grid, where beams only exist between devices on different rows and only if all intermediate rows are empty.
+2. Problem type / algorithm category: Greedy, Iteration, String manipulation.
+3. Step-by-step approach: Iterate through each row, count devices ('1's). If a row has devices, multiply the count by the devices in the previous non-empty row and add to the total beams. Update the previous non-empty row's device count.
+4. Edge cases: Rows with no devices, bank with only one row, bank with all rows having devices.
+5. Time and space complexity: Time O(m*n) due to iterating through each cell, Space O(1) as only a few variables are used.
+</thinking>

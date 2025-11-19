@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of mutations to transform a start gene to an end gene, given a bank of valid gene mutations, where each mutation is a single character change.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS). The gene strings can be seen as nodes, and valid mutations as edges.
+3. Step-by-step approach: Use BFS to explore possible gene mutations, starting from the startGene. Maintain a queue of gene strings and their mutation counts. At each step, generate all possible one-character mutations of the current gene. If a mutation is in the bank and hasn't been visited, add it to the queue with an incremented mutation count. Return the mutation count when the endGene is reached.
+4. Edge cases: If the endGene cannot be reached, return -1. The startGene might not be present in the bank, but it's a valid starting point.
+5. Time and space complexity: Time complexity is O(B * 8 * 3), where B is the number of genes in the bank, 8 is the length of the gene and 3 is the number of possible mutations for each character. Space complexity is O(B) for the queue and visited set in the worst case.
+</thinking>

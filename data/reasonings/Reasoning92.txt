@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse a portion of a singly linked list between the left and right indices (inclusive).
+2. Problem type / algorithm category: Linked list manipulation / Reversal.
+3. Step-by-step approach: Use a dummy node to handle edge cases, find the nodes before the left index and at the left index. Iteratively reverse the sublist from left to right using pointer manipulation, then connect the reversed sublist back to the original list.
+4. Edge cases: Empty list, left equals right, left is 1 (reversal starts from the head), right is the last element.
+5. Time and space complexity: Time complexity is O(N), where N is the length of the linked list. Space complexity is O(1) as it's done in-place.
+</thinking>

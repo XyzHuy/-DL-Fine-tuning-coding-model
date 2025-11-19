@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Split an array into three non-empty contiguous subarrays (left, mid, right) such that sum(left) <= sum(mid) <= sum(right), and count the number of such splits modulo 10^9 + 7.
+2. Problem type / algorithm category: Array manipulation, prefix sums, two pointers (or binary search implicitly).
+3. Step-by-step approach: First, compute prefix sums. Then, iterate through possible end points of the left subarray. For each left subarray, find the valid range of split points for the mid and right subarrays using two pointers or binary search on prefix sums to satisfy the sum conditions. Sum up the counts of valid splits.
+4. Edge cases: Array length is at least 3. All elements are non-negative. Ensuring subarrays are non-empty. Handling modulo arithmetic.
+5. Time and space complexity: Time complexity is O(N) due to prefix sum calculation and the two-pointer approach (each pointer moves at most N times). Space complexity is O(N) for storing prefix sums.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of distinct bitwise OR results of all non-empty subarrays of a given integer array.
+2. Problem type / algorithm category: Bit manipulation, Dynamic Programming (using sets to avoid recalculating subarray ORs)
+3. Step-by-step approach: Iterate through the array. For each element, update a 'current' set by taking the bitwise OR of the current element with all existing elements in 'current' and adding the current element itself.  Then, add all elements of 'current' to a 'result' set. Finally, return the size of the 'result' set.
+4. Edge cases: Empty input array (not possible based on constraints). Array with all zeros. Array with single element.
+5. Time and space complexity: O(N*M) time, where N is the length of the array and M is the number of distinct bitwise OR values possible, and O(M) space, where M is number of distinct bitwise OR values possible. Since each element is at most 10^9, there can be at most 32 distinct prefixes OR values for any given element.
+</thinking>

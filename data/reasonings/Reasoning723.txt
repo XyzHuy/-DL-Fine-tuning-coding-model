@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate the Candy Crush game by identifying and crushing candies that form horizontal or vertical sequences of three or more, then dropping candies to fill the empty spaces. The process repeats until there are no more candies to crush.
+2. Problem type / algorithm category: Simulation, Grid Traversal.
+3. Step-by-step approach: Repeatedly identify candies to crush, crush them (set their values to 0), and drop candies to fill the empty spaces. The crushing and dropping continue until no more candies can be crushed.
+4. Edge cases: Empty board, board with no candies to crush initially, board with only a few rows or columns, candies of the same type appearing in both horizontal and vertical lines at the same position.
+5. Time and space complexity: The time complexity is O((m*n)^2) in the worst case where m is the number of rows and n is the number of columns. Space complexity is O(m*n) in the worst case due to the crush set.
+</thinking>

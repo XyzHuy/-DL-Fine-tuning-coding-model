@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the difference between the maximum and minimum elements in an array by changing at most three elements.
+2. Problem type / algorithm category: Sorting, greedy approach.
+3. Step-by-step approach: Sort the array. Consider four cases where we effectively remove the three smallest, three largest, two smallest and one largest, or one smallest and two largest elements. Calculate the difference between the remaining max and min in each case and return the minimum.
+4. Edge cases: If the array has 4 or fewer elements, we can change all elements to be the same, resulting in a difference of 0.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), and space complexity is O(1) or O(N) depending on the sort implementation.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, find all possible strings after flipping two consecutive '++' to '--'.
+2. Problem type / algorithm category: String manipulation, enumeration.
+3. Step-by-step approach: Iterate through the string, check for consecutive "++", and replace them with "--" to generate new states.
+4. Edge cases: Empty input string, no "++" found.
+5. Time and space complexity: O(n^2) time complexity, where n is the length of the input string, due to string slicing. O(n) space complexity to store the result.
+</thinking>

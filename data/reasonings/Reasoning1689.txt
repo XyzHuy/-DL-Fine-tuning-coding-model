@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of deci-binary numbers (composed of 0s and 1s) that sum up to a given decimal number string.
+2. Problem type / algorithm category: Greedy, Number Theory.
+3. Step-by-step approach: The minimum number of deci-binary numbers required is determined by the largest digit present in the input string. Each deci-binary number can contribute at most a '1' to any digit position. Therefore, to form the largest digit, we need that many deci-binary numbers.
+4. Edge cases: The input string length is at least 1 and contains only digits, representing a positive integer without leading zeros.
+5. Time and space complexity: Time complexity is O(L) where L is the length of the string n, as we iterate through the string once. Space complexity is O(1) as we only store a single maximum value.
+</thinking>

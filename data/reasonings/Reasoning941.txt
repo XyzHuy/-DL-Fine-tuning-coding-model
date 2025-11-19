@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array is a valid "mountain array", meaning it first strictly increases then strictly decreases.
+2. Problem type / algorithm category: Array traversal, Two Pointers
+3. Step-by-step approach: First check for trivial cases (length < 3). Then, traverse upwards to find the peak. If the peak is at either end of the array, it's invalid. Finally, traverse downwards from the peak. The array is valid if the entire array is traversed.
+4. Edge cases: Array lengths less than 3, peak at the beginning or end of the array, plateau (duplicate values), strictly increasing or decreasing array.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array at most twice. Space complexity is O(1) because we use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make an array continuous by changing elements, where continuous means unique elements and max - min = length - 1.
+2. Problem type / algorithm category: Sliding window on sorted unique elements, binary search.
+3. Step-by-step approach: First, remove duplicates and sort the array. Then, iterate through each unique number as a potential minimum of a continuous subarray. For each potential minimum, use binary search to find how many elements fall within the range [current_min, current_min + n - 1]. The difference between n and this count is the operations needed for this window. Track the minimum operations across all possible windows.
+4. Edge cases: Array with all same elements, array already continuous, array with large values requiring changes.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting and binary search within a loop. Space complexity is O(N) for storing unique elements.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of intervals, find the minimum size of a set that contains at least two integers from each interval.
+2. Problem type / algorithm category: Greedy algorithm, Interval covering problem.
+3. Step-by-step approach: Sort the intervals by their end points (and start points in descending order if end points are equal). Iterate through the sorted intervals, maintaining the two largest numbers currently in the containing set. If an interval contains both of these numbers, move to the next interval. If an interval contains only the largest number, add the interval's end point to the set. If an interval contains neither number, add the interval's end-1 and end point to the set.
+4. Edge cases: Empty interval list, overlapping intervals, intervals with the same start and end points.
+5. Time and space complexity: O(n log n) time for sorting, O(1) space (excluding the input list).
+</thinking>

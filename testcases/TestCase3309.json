@@ -1,0 +1,915 @@
+{
+  "function_name": "maxGoodNumber",
+  "test_cases": [
+    {
+      "parameters": {
+        "nums": [
+          64,
+          1,
+          127
+        ]
+      },
+      "expected_output": 32704
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          5,
+          3
+        ]
+      },
+      "expected_output": 253
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          127,
+          127
+        ]
+      },
+      "expected_output": 2097151
+    },
+    {
+      "parameters": {
+        "nums": [
+          32,
+          16,
+          8
+        ]
+      },
+      "expected_output": 17440
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          5,
+          7
+        ]
+      },
+      "expected_output": 125
+    },
+    {
+      "parameters": {
+        "nums": [
+          64,
+          32,
+          16
+        ]
+      },
+      "expected_output": 135232
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          8,
+          16
+        ]
+      },
+      "expected_output": 1296
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          64,
+          32
+        ]
+      },
+      "expected_output": 1044544
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          4,
+          126
+        ]
+      },
+      "expected_output": 4084
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          1,
+          1
+        ]
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "nums": [
+          15,
+          31,
+          63
+        ]
+      },
+      "expected_output": 32767
+    },
+    {
+      "parameters": {
+        "nums": [
+          64,
+          32,
+          16
+        ]
+      },
+      "expected_output": 135232
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          66,
+          33
+        ]
+      },
+      "expected_output": 815298
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          1,
+          127
+        ]
+      },
+      "expected_output": 16383
+    },
+    {
+      "parameters": {
+        "nums": [
+          8,
+          4,
+          2
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "nums": [
+          110,
+          111,
+          112
+        ]
+      },
+      "expected_output": 1849326
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          10,
+          15
+        ]
+      },
+      "expected_output": 2010
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          31,
+          15
+        ]
+      },
+      "expected_output": 32767
+    },
+    {
+      "parameters": {
+        "nums": [
+          50,
+          60,
+          70
+        ]
+      },
+      "expected_output": 497990
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          15,
+          31
+        ]
+      },
+      "expected_output": 32767
+    },
+    {
+      "parameters": {
+        "nums": [
+          4,
+          16,
+          8
+        ]
+      },
+      "expected_output": 2320
+    },
+    {
+      "parameters": {
+        "nums": [
+          55,
+          25,
+          10
+        ]
+      },
+      "expected_output": 28570
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          200,
+          30
+        ]
+      },
+      "expected_output": 126090
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          1,
+          127
+        ]
+      },
+      "expected_output": 32767
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          7,
+          7
+        ]
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          5,
+          9
+        ]
+      },
+      "expected_output": 985
+    },
+    {
+      "parameters": {
+        "nums": [
+          21,
+          42,
+          84
+        ]
+      },
+      "expected_output": 177492
+    },
+    {
+      "parameters": {
+        "nums": [
+          64,
+          1,
+          127
+        ]
+      },
+      "expected_output": 32704
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          4
+        ]
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "nums": [
+          60,
+          61,
+          62
+        ]
+      },
+      "expected_output": 257916
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          4,
+          8
+        ]
+      },
+      "expected_output": 200
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          9,
+          27
+        ]
+      },
+      "expected_output": 1977
+    },
+    {
+      "parameters": {
+        "nums": [
+          8,
+          16,
+          32
+        ]
+      },
+      "expected_output": 17440
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          20,
+          30
+        ]
+      },
+      "expected_output": 126100
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          64,
+          65
+        ]
+      },
+      "expected_output": 1040576
+    },
+    {
+      "parameters": {
+        "nums": [
+          15,
+          31,
+          127
+        ]
+      },
+      "expected_output": 65535
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          15,
+          20
+        ]
+      },
+      "expected_output": 8020
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          4,
+          2
+        ]
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          100,
+          101
+        ]
+      },
+      "expected_output": 1667683
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          14,
+          28
+        ]
+      },
+      "expected_output": 4060
+    },
+    {
+      "parameters": {
+        "nums": [
+          6,
+          12,
+          24
+        ]
+      },
+      "expected_output": 3480
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30
+        ]
+      },
+      "expected_output": 15700
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          5,
+          7
+        ]
+      },
+      "expected_output": 985
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          15,
+          7
+        ]
+      },
+      "expected_output": 8191
+    },
+    {
+      "parameters": {
+        "nums": [
+          6,
+          12,
+          24
+        ]
+      },
+      "expected_output": 3480
+    },
+    {
+      "parameters": {
+        "nums": [
+          31,
+          30,
+          29
+        ]
+      },
+      "expected_output": 32733
+    },
+    {
+      "parameters": {
+        "nums": [
+          126,
+          125,
+          124
+        ]
+      },
+      "expected_output": 2080508
+    },
+    {
+      "parameters": {
+        "nums": [
+          101,
+          56,
+          29
+        ]
+      },
+      "expected_output": 244837
+    },
+    {
+      "parameters": {
+        "nums": [
+          45,
+          30,
+          60
+        ]
+      },
+      "expected_output": 126765
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          64,
+          32
+        ]
+      },
+      "expected_output": 1044544
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          127,
+          64
+        ]
+      },
+      "expected_output": 32704
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          7,
+          2
+        ]
+      },
+      "expected_output": 2046
+    },
+    {
+      "parameters": {
+        "nums": [
+          11,
+          22,
+          44
+        ]
+      },
+      "expected_output": 23980
+    },
+    {
+      "parameters": {
+        "nums": [
+          111,
+          44,
+          88
+        ]
+      },
+      "expected_output": 915032
+    },
+    {
+      "parameters": {
+        "nums": [
+          123,
+          45,
+          67
+        ]
+      },
+      "expected_output": 1013443
+    },
+    {
+      "parameters": {
+        "nums": [
+          85,
+          17,
+          34
+        ]
+      },
+      "expected_output": 175202
+    },
+    {
+      "parameters": {
+        "nums": [
+          15,
+          14,
+          13
+        ]
+      },
+      "expected_output": 4077
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          10,
+          20
+        ]
+      },
+      "expected_output": 2900
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          75
+        ]
+      },
+      "expected_output": 832075
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 985
+    },
+    {
+      "parameters": {
+        "nums": [
+          45,
+          44,
+          43
+        ]
+      },
+      "expected_output": 187179
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          6,
+          9
+        ]
+      },
+      "expected_output": 489
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          6,
+          9
+        ]
+      },
+      "expected_output": 489
+    },
+    {
+      "parameters": {
+        "nums": [
+          12,
+          15,
+          9
+        ]
+      },
+      "expected_output": 4041
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          32,
+          16
+        ]
+      },
+      "expected_output": 130080
+    },
+    {
+      "parameters": {
+        "nums": [
+          120,
+          96,
+          64
+        ]
+      },
+      "expected_output": 1978432
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25
+        ]
+      },
+      "expected_output": 211300
+    },
+    {
+      "parameters": {
+        "nums": [
+          63,
+          126,
+          96
+        ]
+      },
+      "expected_output": 1048416
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "nums": [
+          126,
+          63,
+          31
+        ]
+      },
+      "expected_output": 262142
+    },
+    {
+      "parameters": {
+        "nums": [
+          31,
+          3,
+          15
+        ]
+      },
+      "expected_output": 2047
+    },
+    {
+      "parameters": {
+        "nums": [
+          120,
+          121,
+          122
+        ]
+      },
+      "expected_output": 2014456
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          65,
+          32
+        ]
+      },
+      "expected_output": 815200
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          88,
+          77
+        ]
+      },
+      "expected_output": 1633357
+    },
+    {
+      "parameters": {
+        "nums": [
+          120,
+          124,
+          126
+        ]
+      },
+      "expected_output": 2080376
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          99,
+          101
+        ]
+      },
+      "expected_output": 1667683
+    },
+    {
+      "parameters": {
+        "nums": [
+          127,
+          1,
+          2
+        ]
+      },
+      "expected_output": 1022
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          5,
+          9
+        ]
+      },
+      "expected_output": 985
+    },
+    {
+      "parameters": {
+        "nums": [
+          80,
+          81,
+          82
+        ]
+      },
+      "expected_output": 1353936
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          18,
+          27
+        ]
+      },
+      "expected_output": 14130
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          127,
+          64
+        ]
+      },
+      "expected_output": 32704
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          15,
+          3
+        ]
+      },
+      "expected_output": 1018
+    },
+    {
+      "parameters": {
+        "nums": [
+          31,
+          15,
+          7
+        ]
+      },
+      "expected_output": 4095
+    },
+    {
+      "parameters": {
+        "nums": [
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 15700
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          9,
+          3
+        ]
+      },
+      "expected_output": 473
+    },
+    {
+      "parameters": {
+        "nums": [
+          23,
+          45,
+          67
+        ]
+      },
+      "expected_output": 194243
+    },
+    {
+      "parameters": {
+        "nums": [
+          73,
+          28,
+          14
+        ]
+      },
+      "expected_output": 61001
+    },
+    {
+      "parameters": {
+        "nums": [
+          77,
+          22,
+          88
+        ]
+      },
+      "expected_output": 371789
+    },
+    {
+      "parameters": {
+        "nums": [
+          60,
+          30,
+          15
+        ]
+      },
+      "expected_output": 32700
+    }
+  ]
+}

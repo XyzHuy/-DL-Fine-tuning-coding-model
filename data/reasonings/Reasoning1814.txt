@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) with i < j where nums[i] + rev(nums[j]) equals nums[j] + rev(nums[i]), modulo 10^9 + 7.
+2. Problem type / algorithm category: Hash Map, Mathematical Property Derivation.
+3. Step-by-step approach: Rearrange the condition to nums[i] - rev(nums[i]) == nums[j] - rev(nums[j]). Use a hash map to store counts of (num - rev(num)) values. For each count K > 1, add K*(K-1)/2 to the total.
+4. Edge cases: Single element array (no pairs), large numbers requiring careful modulo arithmetic.
+5. Time and space complexity: Time O(N*log10(max(nums))) due to reversing numbers, Space O(N) for the hash map.
+</thinking>

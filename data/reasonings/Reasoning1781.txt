@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of the "beauty" for all possible substrings of a given string, where beauty is defined as the difference between the highest and lowest character frequencies within a substring.
+2. Problem type / algorithm category: String manipulation, brute force, frequency counting.
+3. Step-by-step approach: Iterate through all possible start and end indices of substrings. For each substring, maintain a frequency count of its characters. Calculate the beauty of the substring by finding the max and min frequencies and subtracting them. Sum up all calculated beauties.
+4. Edge cases: Substrings with only one unique character (beauty is 0, not explicitly added in the solution's logic which is correct as we check len(counter) > 1), empty input string (not possible by constraints).
+5. Time and space complexity: O(n^3) time due to three nested loops (outer for start, inner for end, and inside implicitly for frequency calculation for each substring) and O(1) space (character set is fixed to 26 lowercase English letters).
+</thinking>

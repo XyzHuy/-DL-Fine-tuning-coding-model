@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the number of distinct rooted trees that can be formed from given pairs where each pair represents an ancestor-descendant relationship, returning 0, 1, or 2.
+2. Problem type / algorithm category: Graph theory, Tree construction, Parent/Child relationship identification.
+3. Step-by-step approach: Build an adjacency list for the graph, identify a potential root (node with highest degree), verify if the root has n-1 neighbors, then for each non-root node, find its unique parent (a neighbor with a degree greater than or equal to its own), check if all other neighbors of the node are descendants of this parent, and if any node has multiple valid parent candidates (same degree as potential parent), indicate multiple ways.
+4. Edge cases: No pairs given, disconnected graph, a node having no valid parent, a node having more than one valid parent.
+5. Time and space complexity: O(N*V + E) time where N is number of pairs, V is number of unique values and E is number of edges, O(V + E) space for graph representation.
+</thinking>

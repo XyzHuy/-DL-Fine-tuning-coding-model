@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings of a given word where the sum of mapped character values is divisible by the substring's length.
+2. Problem type / algorithm category: Brute Force / Iteration, String manipulation.
+3. Step-by-step approach: Create a mapping from characters to values. Iterate through all possible substrings. For each substring, calculate the sum of mapped character values and check divisibility by its length. Increment a counter if divisible.
+4. Edge cases: The constraints specify word length is at least 1 and consists of lowercase English letters. Single character substrings are the smallest case.
+5. Time and space complexity: O(N^3) time due to nested loops for substrings and calculating sum. O(1) space for the map and variables. (Note: Solution provided is O(N^2) time, O(1) space)
+</thinking>

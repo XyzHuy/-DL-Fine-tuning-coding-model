@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest contiguous substring in 'word' that does not contain any substring present in the 'forbidden' list.
+2. Problem type / algorithm category: Sliding Window, String Manipulation.
+3. Step-by-step approach: Use a sliding window approach. Iterate with a right pointer `j`. For each `j`, check substrings ending at `j` for forbidden patterns. If a forbidden pattern is found starting at index `end`, advance the left pointer `i` to `end + 1`. Otherwise, update the maximum valid length.
+4. Edge cases: Empty word or forbidden list, all substrings being forbidden, no forbidden substrings.
+5. Time and space complexity: Time complexity is O(N*M*L) where N is word length, M is number of forbidden strings, L is max forbidden string length if naive substring check. With optimization of checking limited length substrings ending at j, it's closer to O(N * min(N, L_max)^2) or O(N*L_max^2) with pre-processing. Space complexity is O(F) where F is the total length of all forbidden strings for the set.
+</thinking>

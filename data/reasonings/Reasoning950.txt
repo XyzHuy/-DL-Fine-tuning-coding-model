@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a deck of unique cards, find an order to arrange the deck such that revealing cards one by one and moving the next card to the bottom results in revealing the cards in increasing order.
+2. Problem type / algorithm category: Array manipulation, simulation, queue (deque)
+3. Step-by-step approach: Sort the input deck. Use a deque to represent the indices of the cards in the result. Simulate the revealing process by placing the sorted cards into the deque indices in the correct order, moving the next card to the bottom as described in the problem.
+4. Edge cases: Empty deck (should return an empty list), deck with one or two cards.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(N) because of the deque and result list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate pouring water onto an elevation map at a specific index, allowing water to flow left or right to lower positions until it settles.
+2. Problem type / algorithm category: Simulation, Array manipulation
+3. Step-by-step approach: For each unit of water, attempt to move it left, then right, then keep it at its current location. Moving left involves iterating until a lower position is found or the boundary is reached. Same approach is applied for moving right.
+4. Edge cases: The problem states that the terrain extends infinitely on both sides, so no explicit boundary checks are needed beyond the given array.
+5. Time and space complexity: Time complexity is O(V * N), where V is the volume and N is the number of height elements. Space complexity is O(1) as it modifies the input array in-place.
+</thinking>

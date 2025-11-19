@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a graph represented by a number of nodes and a list of edges, find the number of connected components.
+2. Problem type / algorithm category: Graph traversal / Depth First Search (DFS)
+3. Step-by-step approach: Build an adjacency list representation of the graph. Use a visited array to keep track of visited nodes. Iterate through each node, and if it hasn't been visited, perform a DFS starting from that node. Each DFS represents a new connected component, so increment the component count.
+4. Edge cases: Empty graph (n=0 or edges=[]), disconnected graph, and fully connected graph.
+5. Time and space complexity: Time complexity is O(V+E) where V is the number of vertices (nodes) and E is the number of edges. Space complexity is O(V+E) for the adjacency list and O(V) for the visited array and recursion stack.
+</thinking>

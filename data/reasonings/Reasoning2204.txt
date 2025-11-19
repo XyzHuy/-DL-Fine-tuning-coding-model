@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum distance from each node to any node in the single cycle of a connected undirected graph.
+2. Problem type / algorithm category: Graph traversal (specifically, Kahn's algorithm variant for cycle detection and BFS for shortest paths).
+3. Step-by-step approach: First, identify nodes that are not part of the cycle by iteratively removing leaf nodes (degree 1). Nodes remaining after this process form the cycle. Then, perform a Breadth-First Search (BFS) starting simultaneously from all nodes identified as part of the cycle to calculate the minimum distance for every other node.
+4. Edge cases: The graph is guaranteed to be connected and contain exactly one cycle, so edge cases like disconnected components or multiple cycles are not a concern. The minimum number of nodes is 3.
+5. Time and space complexity: Time complexity is O(N) because building the graph, identifying leaves, trimming leaves, and BFS all take linear time with respect to the number of nodes and edges. Space complexity is O(N) for storing the graph, degrees, queue, and result array.
+</thinking>

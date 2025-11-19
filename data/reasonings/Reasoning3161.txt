@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a series of queries to add obstacles to an infinite line and to check if a block of a certain size can fit within a given range without overlapping obstacles.
+2. Problem type / algorithm category: Data structures, specifically sorted arrays or interval management.
+3. Step-by-step approach: Maintain a sorted list of obstacle positions. For type 1 queries, insert the obstacle position into the sorted list. For type 2 queries, find the range to check [0, x]. Iterate through obstacles less than or equal to x, checking the gaps between consecutive obstacles (and from 0 to the first obstacle) to see if the block size sz fits.
+4. Edge cases: Obstacles at the beginning or end of the range, block size exactly matching a gap, empty obstacle list, or range limit x being very small.
+5. Time and space complexity: Time complexity is O(Q log N) where Q is number of queries and N is number of obstacles, due to sorted insertion and search. Space complexity is O(N) to store obstacles.
+</thinking>

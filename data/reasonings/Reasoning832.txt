@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, flip it horizontally and then invert it.
+2. Problem type / algorithm category: Array manipulation.
+3. Step-by-step approach: Iterate through each row. Use two pointers to swap elements and invert if they are the same. Invert the middle element if the row length is odd.
+4. Edge cases: Empty matrix, single-element matrix, matrix with even or odd row length.
+5. Time and space complexity: Time complexity is O(n*n), Space complexity is O(1).
+</thinking>

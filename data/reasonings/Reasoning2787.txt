@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of ways to express an integer n as a sum of unique positive integers raised to the power of x, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, Subset Sum variation.
+3. Step-by-step approach: Precompute all possible i^x values less than or equal to n. Use a DP array where dp[i] stores the number of ways to form sum i. Iterate through each precomputed power, and for each sum j from n down to the current power, update dp[j] by adding dp[j - power], ensuring uniqueness by iterating downwards.
+4. Edge cases: n=0 (handled by dp[0]=1), the modulo operation for large results.
+5. Time and space complexity: Time complexity is O(max_base * n), where max_base is roughly n^(1/x). Space complexity is O(n) for the DP array.
+</thinking>

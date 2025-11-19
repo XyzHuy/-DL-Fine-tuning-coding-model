@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, find the minimum number of character deletions required so that no two distinct characters have the same frequency.
+2. Problem type / algorithm category: Greedy, Frequency Counting, Set.
+3. Step-by-step approach: Count character frequencies, store frequencies in a set. For each frequency, if it's already in the set, decrement it and increment deletions until it's unique or zero. Add unique positive frequencies to the set.
+4. Edge cases: Empty string (though constraints say length >= 1), string with all unique characters, string with all same characters.
+5. Time and space complexity: Time O(N + K^2) where N is string length and K is alphabet size (26). Space O(K).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum score to triangulate a convex polygon by dividing it into triangles, where the score is the sum of the products of the vertices of each triangle.
+2. Problem type / algorithm category: Dynamic Programming (DP).
+3. Step-by-step approach: Use a DP table `dp[i][j]` to store the minimum score to triangulate the polygon from vertex `i` to vertex `j`. Iterate through all possible lengths of the polygon section (from 2 to n-1) and starting vertices. For each section, try all possible vertices `k` between `i` and `j` to form a triangle and update `dp[i][j]` with the minimum score among all possible `k`.
+4. Edge cases: The input polygon must have at least 3 vertices.
+5. Time and space complexity: Time complexity is O(n^3) due to the three nested loops. Space complexity is O(n^2) for the DP table.
+</thinking>

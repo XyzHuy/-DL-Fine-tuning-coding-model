@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of ways to color an n x 3 grid with 3 colors (R, Y, G) such that no adjacent cells share the same color, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, State Compression (implicitly through DP states).
+3. Step-by-step approach: Use dynamic programming where dp[i][0] represents the number of ways to color row i ending with a "type A" coloring pattern (e.g., RY G) and dp[i][1] represents ending with a "type B" pattern (e.g., R Y R). Transitions are based on valid colorings of the next row given the current row's pattern. The base case for n=1 has 6 ways for each type.
+4. Edge cases: The problem constraints specify n >= 1, so n=0 is not a concern. The modulo operation handles large results.
+5. Time and space complexity: O(n) time due to iterating through n rows, O(n) space for the DP table.
+</thinking>

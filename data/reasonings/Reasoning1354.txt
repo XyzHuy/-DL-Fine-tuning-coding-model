@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a target array, determine if it can be constructed starting from an array of all 1s, where each step involves replacing an element with the sum of all elements.
+2. Problem type / algorithm category: Greedy, Max Heap.
+3. Step-by-step approach: Work backward from the target array. In each step, find the largest element, calculate the sum of the rest, and determine the previous value of the largest element using modulo. Repeat until all elements are 1 or an impossible state is reached.
+4. Edge cases: Array with all 1s, single element array, cases where largest element is not greater than the sum of the rest, cases where modulo results in 0.
+5. Time and space complexity: Time complexity is O(N log N) in the worst case, space complexity is O(N) for the heap.
+</thinking>

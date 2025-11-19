@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum distance between any two houses that have different colors.
+2. Problem type / algorithm category: Greedy approach, brute force optimization.
+3. Step-by-step approach: Iterate from the beginning to find the first house with a different color than the last house, and calculate the distance. Iterate from the end to find the first house with a different color than the first house, and calculate the distance. The maximum of these two distances is the answer.
+4. Edge cases: The problem statement guarantees at least two houses have different colors, so we don't need to worry about all houses being the same color. The constraints ensure n is at least 2.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array at most twice. Space complexity is O(1) as we only use a few variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` and an integer `k`, remove `k` adjacent duplicate characters repeatedly until no more removals can be made. Return the final string.
+2. Problem type / algorithm category: Stack-based string manipulation.
+3. Step-by-step approach: Iterate through the string, maintaining a stack `t` of character and count pairs. If the current character matches the top of the stack, increment the count. If the count becomes `k`, pop the stack. Otherwise, push the character and count onto the stack. Finally, construct the result string from the stack.
+4. Edge cases: Empty string, k=1, string with no duplicates, large k.
+5. Time and space complexity: Time: O(n), where n is the length of the string. Space: O(n) in the worst case, where the stack stores all characters.
+</thinking>

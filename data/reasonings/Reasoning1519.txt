@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a tree, count for each node, how many nodes in its subtree have the same label as the node itself.
+2. Problem type / algorithm category: Tree traversal, Depth First Search (DFS), Counter/Hash Map.
+3. Step-by-step approach: Build an adjacency list for the tree. Perform a DFS starting from the root (node 0). During the DFS, for each node, recursively call DFS on its children. Collect the label counts from all children's subtrees. Add the current node's label to the collected counts. The final count for the current node's label in its subtree is then stored in the result array for that node.
+4. Edge cases: A tree with a single node. The root node itself is always counted in its subtree.
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited once during DFS. Space complexity is O(N) for the adjacency list, recursion stack, and the result array/counters.
+</thinking>

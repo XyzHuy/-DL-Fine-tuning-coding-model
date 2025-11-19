@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of cutting a wooden stick of length n at specified positions, where the cost of each cut is the length of the stick being cut.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (or Top-Down DP), Interval DP.
+3. Step-by-step approach: Add boundary points (0 and n) to cuts, sort cuts, and define a recursive DP function dp(left_idx, right_idx) representing the minimum cost to cut the stick segment between cuts[left_idx] and cuts[right_idx]. The base case is when there are no cuts between them (right_idx - left_idx <= 1), returning 0. Otherwise, iterate through all possible intermediate cuts (k), calculate the cost as (cuts[right_idx] - cuts[left_idx]) + dp(left_idx, k) + dp(k, right_idx), and find the minimum. Memoize results.
+4. Edge cases: No cuts to perform, a single cut, stick length very small, number of cuts very small. The sorted cuts array with added 0 and n handles boundary conditions.
+5. Time and space complexity: O(m^3) time and O(m^2) space, where m is the number of cuts plus two (for 0 and n).
+</thinking>

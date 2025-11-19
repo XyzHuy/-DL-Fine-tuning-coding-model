@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize profit by buying stocks within a budget, where each stock can be bought at most once, given current and future prices.
+2. Problem type / algorithm category: Dynamic Programming (0/1 Knapsack variation).
+3. Step-by-step approach: Calculate potential profits for each stock, filter for profitable ones, sort them by purchase cost, and use DP to find the optimal combination of stocks within the budget.
+4. Edge cases: No profitable stocks, budget too low to buy any profitable stock, all stocks have negative profit.
+5. Time and space complexity: Time O(N log N + N*B), Space O(B) where N is the number of stocks and B is the budget.
+</thinking>

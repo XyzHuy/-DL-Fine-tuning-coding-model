@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a stamp and a target string, find the sequence of stamp placements on a string of question marks that result in the target string.
+2. Problem type / algorithm category: Graph problem / Topological sort. We can think of each potential stamp placement as a node in a graph, and edges exist between placements that overlap and have matching characters.
+3. Step-by-step approach: Build a graph representing dependencies between stamp placements. Use topological sort to find the order in which stamps can be applied to reach the target. The indegree array counts how many stamp characters are still unmatched for each possible stamp position. The queue holds stamp positions that have all their characters matched.
+4. Edge cases: If the target string cannot be reached by stamping, return an empty list. This is determined by checking if all target characters have been "visited" or stamped over.
+5. Time and space complexity: Time complexity is O(m*n), where m is the length of stamp and n is the length of target. Space complexity is also O(n) due to the graph and other data structures.
+</thinking>

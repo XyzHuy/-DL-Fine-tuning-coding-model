@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, determine if it can be split into two non-empty subarrays with equal averages.
+2. Problem type / algorithm category: Dynamic Programming, Subset Sum problem.
+3. Step-by-step approach: Calculate the total sum of the array. Iterate through possible sizes of the first subset from 1 to n//2. For each size, check if a subset exists whose sum makes the average equal to the remaining subset's average. Memoization is used to optimize subset sum calculation.
+4. Edge cases: If the array has only one element, it cannot be split.
+5. Time and space complexity: Time complexity is O(n^2 * sum(nums)), space complexity is O(n^2 * sum(nums)) due to memoization.
+</thinking>

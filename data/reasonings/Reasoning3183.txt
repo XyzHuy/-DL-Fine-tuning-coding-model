@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of unique combinations to form sum n using coins of values 1, 2, 6 (infinite supply) and 4 (two coins), modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming (Coin Change variant).
+3. Step-by-step approach: Use DP to count combinations for infinite coins (1, 2, 6). Then, add combinations using zero, one, or two 4-coins by adjusting the target sum in the pre-calculated DP table.
+4. Edge cases: n being less than 4 or 8 to handle cases where one or two 4-coins cannot be used. The base case dp[0] = 1 is crucial.
+5. Time and space complexity: O(n) time due to the DP table iteration. O(n) space for the DP table.
+</thinking>

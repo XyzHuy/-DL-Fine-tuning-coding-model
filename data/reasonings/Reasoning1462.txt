@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if course U is a prerequisite for course V, considering direct and indirect dependencies, for multiple queries.
+2. Problem type / algorithm category: Graph traversal (DFS) with memoization (dynamic programming).
+3. Step-by-step approach: Build an adjacency list graph. For each query (u, v), perform a Depth First Search (DFS) starting from u to see if v is reachable. Use a cache to store results of (u, v) reachability to avoid redundant computations.
+4. Edge cases: No prerequisites, no queries, graph with no cycles (guaranteed by problem statement).
+5. Time and space complexity: O(Q * (V + E) + V^2) time due to DFS for each query and potentially all pairs for cache, O(V^2) space for cache.
+</thinking>

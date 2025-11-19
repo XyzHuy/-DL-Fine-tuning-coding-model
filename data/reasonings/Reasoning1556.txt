@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Format an integer by inserting dots as thousands separators.
+2. Problem type / algorithm category: String manipulation, built-in formatting functions.
+3. Step-by-step approach: Convert the integer to a string using a format specifier that includes a thousands separator, then replace the default separator (comma) with a dot.
+4. Edge cases: The input number can be 0 or a single digit, which requires no separators. The maximum integer constraint means the number of separators will be manageable.
+5. Time and space complexity: Time complexity is O(log10(n)) due to string conversion, and space complexity is O(log10(n)) for storing the resulting string.
+</thinking>

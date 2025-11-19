@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the common elements between two input arrays, ensuring the output contains only unique elements and can be in any order.
+2. Problem type / algorithm category: Set intersection.
+3. Step-by-step approach: Convert both input arrays into sets to eliminate duplicates. Then, find the intersection of the two sets using the built-in set intersection method. Finally, convert the resulting set back into a list and return it.
+4. Edge cases: Empty input arrays, arrays with no common elements, arrays with duplicate elements.
+5. Time and space complexity: Time complexity is O(m + n) where m and n are the lengths of the input arrays due to set creation and intersection. Space complexity is O(min(m, n)) in the worst case where all the elements of the shorter array are present in both arrays.
+</thinking>

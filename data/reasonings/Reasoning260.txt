@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers where exactly two elements appear once and all other elements appear twice, find the two unique elements.
+2. Problem type / algorithm category: Bit manipulation, specifically XOR operations.
+3. Step-by-step approach: XOR all elements to get the XOR of the two unique numbers. Find the rightmost set bit in the XOR result. Divide the numbers into two groups based on whether this bit is set. XOR each group to isolate the two unique numbers.
+4. Edge cases: The array must contain at least two elements. The numbers can be negative or zero.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array a few times. Space complexity is O(1) as we only use a few constant extra variables.
+</thinking>

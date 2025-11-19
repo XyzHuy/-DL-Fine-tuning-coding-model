@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a ring and a key, find the minimum number of steps to spell the key by rotating the ring and pressing a button.
+2. Problem type / algorithm category: Dynamic programming (memoization), string manipulation.
+3. Step-by-step approach: Use dynamic programming with memoization to explore all possible rotations. Store the positions of each character in the ring. Define a recursive function that calculates the minimum steps to spell the remaining key, given the current ring position and key index. Iterate through all positions of the current key character in the ring, calculate the steps to rotate to each position, and recursively call the function for the next key character. Return the minimum steps among all positions.
+4. Edge cases: Empty ring or key, key not spellable by ring (though problem guarantees it is spellable).
+5. Time and space complexity: Time complexity is O(m*n*k), where n is the length of the ring, m is the length of the key, and k is the number of occurrences of each character in the ring. Space complexity is O(m*n) due to the memoization cache.
+</thinking>

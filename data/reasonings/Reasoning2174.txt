@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to turn all 1s in a binary matrix to 0s, where an operation clears a chosen row and column if the intersection cell is 1.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (or Recursion with Memoization).
+3. Step-by-step approach: Recursively explore all possible operations. For each '1' found, simulate an operation by clearing its row and column, then recursively solve for the remaining grid. Use memoization to store results for already encountered grid states.
+4. Edge cases: An all-zero grid requires zero operations. The grid dimensions are small (m*n <= 15).
+5. Time and space complexity: The state space is determined by possible grid configurations. Given m*n <= 15, there are 2^(m*n) possible grids. Each state might involve iterating through the grid and creating a new grid, leading to roughly O(2^(m*n) * m*n) time and O(2^(m*n)) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine how many times a sentence can be typed completely on a screen with given rows and columns, following specific formatting rules.
+2. Problem type / algorithm category: String manipulation, simulation.
+3. Step-by-step approach: Concatenate the sentence into a single string with spaces. Simulate filling the screen row by row, keeping track of the current position in the concatenated string. If a word doesn't fit, backtrack to the previous space. Calculate the number of complete cycles of the sentence.
+4. Edge cases: Empty sentence, very long words, small screen dimensions, rows or cols are zero.
+5. Time and space complexity: Time complexity is O(rows), space complexity is O(N), where N is the total length of the sentence.
+</thinking>

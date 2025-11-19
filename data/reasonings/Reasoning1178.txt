@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words and puzzles, determine for each puzzle how many words from the word list are valid according to the problem definition. A word is valid if it contains the first character of the puzzle and all its characters are present in the puzzle.
+2. Problem type / algorithm category: Bit manipulation, subsets generation, counting.
+3. Step-by-step approach: Convert each word and puzzle into a bitmask. Iterate through each puzzle and generate all possible submasks. For each submask that contains the first character of the puzzle, check how many words have the same bitmask. Sum up the counts to get the number of valid words for the puzzle.
+4. Edge cases: Empty words and puzzles, words or puzzles with non-lowercase English characters. These cases are implicitly handled by the problem constraints.
+5. Time and space complexity: Time complexity is O(N + M * 2^7), where N is the number of words and M is the number of puzzles. Space complexity is O(N), due to the word_count Counter.
+</thinking>

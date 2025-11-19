@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to find the number of pairs (row_index, col_index) where the row at row_index is identical to the column at col_index in a given square matrix.
+2. Problem type / algorithm category: Hash Map / Counting / Comparison.
+3. Step-by-step approach: First, iterate through each row of the matrix and store its representation (e.g., as a tuple) and its frequency in a hash map. Then, iterate through each column, create its tuple representation, and check if this tuple exists in the hash map. If it exists, add its frequency from the hash map to the total count of equal pairs.
+4. Edge cases: The matrix size is at least 1x1. All elements are positive integers. The matrix is guaranteed to be square.
+5. Time and space complexity: Time complexity is O(n^2) because we iterate through all n^2 elements twice (once for rows, once for columns). Space complexity is O(n^2) in the worst case to store all unique row tuples in the hash map.
+</thinking>

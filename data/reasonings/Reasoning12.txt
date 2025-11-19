@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert an integer to a Roman numeral. The integer is between 1 and 3999.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Create a list of value-symbol pairs, ordered from largest to smallest value. Iterate through these pairs. For each pair, determine how many times the integer fits into the current number, append the symbol that many times to the result, and subtract the corresponding value from the number.
+4. Edge cases: The problem statement specifies the input range 1 <= num <= 3999, covering all possible cases.
+5. Time and space complexity: Time complexity is O(1) since the loop iterates a fixed number of times (number of Roman numeral symbols). Space complexity is O(1) as well, as the size of the roman_numeral string is bounded.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given tasks with enqueue times and processing times, schedule them on a single-threaded CPU to minimize completion time, prioritizing shortest processing time then smallest index.
+2. Problem type / algorithm category: Simulation, Priority Queue (Min-Heap).
+3. Step-by-step approach: Sort tasks by enqueue time. Maintain current time. Use a min-heap for available tasks (prioritized by processing time, then index). Iterate, adding newly available tasks to the heap. If CPU is idle and tasks are available, pop from heap, process, and update time. If CPU is idle and no tasks are available, advance time to the next task's enqueue time.
+4. Edge cases: All tasks available at the same time; CPU idle and no tasks; tasks with same processing time.
+5. Time and space complexity: Time: O(N log N) due to sorting and heap operations. Space: O(N) for storing tasks and the heap.
+</thinking>

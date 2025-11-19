@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the lexicographically smallest number of length n+1 using digits 1-9 at most once, satisfying increasing ('I') or decreasing ('D') constraints at each index i based on the given pattern.
+2. Problem type / algorithm category: Backtracking, Combinatorial Search.
+3. Step-by-step approach: Use recursion to build the number digit by digit. At each step, try placing digits from 1 to 9. If a digit hasn't been used and satisfies the current pattern constraint ('I' or 'D') with the last placed digit, proceed recursively. If a full valid number is formed, return it. The first valid number found will be the lexicographically smallest due to trying digits in increasing order.
+4. Edge cases: Empty pattern (not possible due to constraints), pattern of length 1, patterns with only 'I' or only 'D'.
+5. Time and space complexity: Time complexity is roughly O(9! * n) in the worst case for brute force, but with pruning and specific constraints, it's better. Space complexity is O(n) for the recursion depth and path storage.
+</thinking>

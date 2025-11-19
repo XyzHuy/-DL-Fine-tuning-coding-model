@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Capitalize each word in a given string title. Words with 1 or 2 letters become lowercase, while longer words have their first letter capitalized and the rest lowercased.
+2. Problem type / algorithm category: String manipulation, conditional logic.
+3. Step-by-step approach: Split the input string into individual words. For each word, check its length. If the length is 2 or less, convert the entire word to lowercase. Otherwise, convert the word to its capitalized form (first letter uppercase, rest lowercase). Join the processed words back into a single string with spaces.
+4. Edge cases: Words with lengths 1 and 2 are handled specifically. All words are guaranteed to be non-empty and separated by single spaces, with no leading/trailing spaces.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the title string, due to splitting, iterating, and joining. Space complexity is O(N) to store the words and the resulting capitalized string.
+</thinking>

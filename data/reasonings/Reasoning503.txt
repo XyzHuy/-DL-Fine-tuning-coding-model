@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the next greater element in a circular array for each element; if no such element exists, return -1.
+2. Problem type / algorithm category: Stack, array traversal, circular array.
+3. Step-by-step approach: Use a stack to keep track of indices. Iterate through the array twice to simulate circularity. For each element, pop elements from the stack that are smaller than the current element, setting their next greater element to the current element. Push the current element's index onto the stack during the first iteration.
+4. Edge cases: Empty input array, array with monotonically decreasing elements (all -1s).
+5. Time and space complexity: Time complexity is O(n) because each element is visited at most twice and pushed/popped from the stack at most once. Space complexity is O(n) due to the stack and result array.
+</thinking>

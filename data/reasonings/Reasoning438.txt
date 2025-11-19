@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all starting indices of substrings in string `s` that are anagrams of string `p`.
+2. Problem type / algorithm category: String manipulation, sliding window, hash map (Counter).
+3. Step-by-step approach: Use a sliding window of size `len(p)` to iterate through `s`. Maintain a frequency count of characters in the current window and compare it with the frequency count of characters in `p`. If the counts are equal, the starting index of the window is added to the result.
+4. Edge cases: Empty strings, `len(p) > len(s)`. No anagrams found.
+5. Time and space complexity: Time complexity is O(n), where n is the length of string s. Space complexity is O(1), because the size of the Counters is bounded by the size of the alphabet (26 in this case).
+</thinking>

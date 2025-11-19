@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if there exists a pair of nodes, one from each of the two given binary search trees, such that their values sum to a target value.
+2. Problem type / algorithm category: Binary Search Tree, Two Pointers
+3. Step-by-step approach: Perform an inorder traversal on both BSTs to obtain sorted lists of their node values. Then, use the two-pointer technique on these sorted lists to check if there exist two numbers, one from each list, that sum up to the target.
+4. Edge cases: Empty trees, target value is very large or very small.
+5. Time and space complexity: Time complexity is O(N+M) to traverse both trees and O(N+M) in the worst case where N and M are sizes of the trees root1 and root2 respectively, where N and M are number of nodes, and space complexity is O(N+M) to store the lists.
+</thinking>

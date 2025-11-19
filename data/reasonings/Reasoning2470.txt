@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays whose least common multiple (LCM) equals a given integer k.
+2. Problem type / algorithm category: Brute Force with Optimization, Number Theory (LCM, GCD).
+3. Step-by-step approach: Iterate through all possible start indices (i) and for each start, iterate through all possible end indices (j). Maintain the LCM of the current subarray [i...j]. If the LCM equals k, increment the count. If the LCM exceeds k, break the inner loop as further elements will only increase the LCM.
+4. Edge cases: Empty input array (not possible due to constraints), k not divisible by any element, LCM exceeding k early.
+5. Time and space complexity: Time complexity is O(n^2 * log(max(nums))), space complexity is O(1).
+</thinking>

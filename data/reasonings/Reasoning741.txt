@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum cherries collectible by moving from (0, 0) to (n-1, n-1) and back to (0, 0) in a grid, picking up cherries (1) along the way and avoiding thorns (-1). A picked cherry becomes 0.
+2. Problem type / algorithm category: Dynamic Programming. This is a path-finding problem with constraints, best solved using dynamic programming to optimize overlapping subproblems.
+3. Step-by-step approach: Use 3D DP to store the maximum cherries collected with two people at (r1, c1) and (r2, c2) respectively, but track paths by steps, 't' instead, where t = r + c. Iterate through all possible steps and valid coordinates (r1, c1) and (r2, c2) for each step. Transition from the possible previous states (up or left). Update the DP table with max cherries attainable from those previous states.
+4. Edge cases: Cases where no path exists (return 0), grids with size 1, paths blocked by thorns, cherries already picked on return path. Ensure the starting and ending cells are not thorns. Handle cases where the two people are at the same cell to avoid double-counting cherries.
+5. Time and space complexity: Time complexity is O(N^3) due to three nested loops iterating up to N. Space complexity is O(N^3) due to the size of the 3D DP table.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of consecutive enemy forts (0s) that can be captured by moving an army between two of your own forts (1s or -1s, though the problem implies it's always 1 vs 1). The path must only consist of enemy forts between the starting and ending forts.
+2. Problem type / algorithm category: Array traversal, greedy approach.
+3. Step-by-step approach: Iterate through the forts array. Keep track of the position of the last encountered fort (either yours or an enemy's). When a new fort (yours or enemy's) is encountered, check if it's possible to form a capture path. If the current fort and the last fort are opposing types (e.g., 1 and -1), calculate the number of captured forts between them and update the maximum. Then, update the last fort's position.
+4. Edge cases: No forts of your command (all -1 or 0s), no enemy forts to capture, forts array with only one type of fort.
+5. Time and space complexity: O(N) time complexity as we iterate through the array once. O(1) space complexity as we only use a few variables.
+</thinking>

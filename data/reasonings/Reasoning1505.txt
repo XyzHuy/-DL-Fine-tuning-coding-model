@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize a large integer string by performing at most k adjacent swaps.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation.
+3. Step-by-step approach: Iterate through the string. For each position, find the smallest digit within reachable k swaps. Move that smallest digit to the current position, consuming swaps. Repeat until k is exhausted or the string is processed.
+4. Edge cases: k is very large, k is zero, string contains zeros, string length.
+5. Time and space complexity: O(N*K) time, O(N) space in worst case for naive implementation of swaps. With optimized swap (list manipulation), it's O(N^2) time, O(N) space. Given K can be large, the loop over K range is capped by N, making it effectively O(N^2).
+</thinking>

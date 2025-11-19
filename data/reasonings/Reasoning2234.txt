@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total beauty by planting new flowers, where beauty is sum of (completed gardens * full) and (min incomplete flowers * partial).
+2. Problem type / algorithm category: Greedy, Binary Search, Two Pointers, Prefix Sums.
+3. Step-by-step approach: Sort flowers. Iterate through possible number of complete gardens (from most flowers to least). For each count, calculate flowers needed to complete them. If sufficient new flowers, use binary search to find max flowers for incomplete gardens to maximize partial beauty. Calculate total beauty and update max.
+4. Edge cases: All gardens can be completed, no new flowers available, target is very high, all flowers already meet target.
+5. Time and space complexity: Time: O(N log N + N log N) due to sorting and outer loop with binary search. Space: O(N) for prefix sums.
+</thinking>

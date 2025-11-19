@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Connect n computers using existing cables by moving them, find the minimum moves or -1 if impossible.
+2. Problem type / algorithm category: Graph traversal, connected components, Union-Find.
+3. Step-by-step approach: Check if enough cables exist (at least n-1). Build graph and find connected components using DFS/BFS. The minimum moves required is the number of components minus 1.
+4. Edge cases: Not enough cables to connect all computers initially. A single computer or no connections.
+5. Time and space complexity: Time O(V + E), Space O(V + E), where V is n (number of computers) and E is the number of connections.
+</thinking>

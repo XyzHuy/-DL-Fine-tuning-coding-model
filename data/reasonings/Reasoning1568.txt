@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary grid representing land (1) and water (0), find the minimum number of land cells to change to water to disconnect the single island into multiple islands or no islands.
+2. Problem type / algorithm category: Graph traversal (DFS/BFS), Grid problems, Brute force with optimization.
+3. Step-by-step approach: First, check if the initial grid is already disconnected. If so, return 0. Otherwise, iterate through each land cell, temporarily change it to water, and check if the grid becomes disconnected. If it does, return 1. If no single land cell change disconnects the grid, it's guaranteed that changing two land cells will disconnect it, so return 2. The check for disconnectedness involves counting the number of islands using DFS or BFS.
+4. Edge cases: The grid might be initially disconnected (0 islands or multiple islands), or it might consist of only land cells. It's also possible to have a single land cell.
+5. Time and space complexity: Time complexity is O((MN)^2) because we potentially iterate through M*N cells and for each, perform a DFS/BFS on the grid (O(MN)). Space complexity is O(MN) for the visited array and recursion stack/queue.
+</thinking>

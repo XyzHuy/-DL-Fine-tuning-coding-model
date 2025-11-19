@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the probability that Alice's score is less than or equal to n when she stops drawing cards, given that she stops drawing when her score is k or more, and each card draw adds a value between 1 and maxPts with equal probability.
+2. Problem type / algorithm category: Dynamic Programming / Recursion with Memoization (or Sliding Window).
+3. Step-by-step approach: Use dynamic programming (top-down with memoization or bottom-up with sliding window) to calculate the probability of reaching each score from 0 up to n. The base case is when the score is greater than or equal to k, the probability is 1 if the score is less than or equal to n, and 0 otherwise. Build up the probabilities using the probabilities of reaching the previous maxPts scores.
+4. Edge cases: k=0, n>=k, n<k. Handle these edge cases to avoid errors. If k=0, Alice starts with k or more points, so if n>=0 return 1 else 0.
+5. Time and space complexity: Time complexity is O(N) where N is the maximum possible score. Space complexity is O(K) due to the cache used by the recursive function, or O(1) with the sliding window approach.
+</thinking>

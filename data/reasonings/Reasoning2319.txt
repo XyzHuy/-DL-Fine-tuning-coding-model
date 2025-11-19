@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given square matrix is an X-Matrix, where diagonal elements must be non-zero and all other elements must be zero.
+2. Problem type / algorithm category: Matrix traversal, conditional checking.
+3. Step-by-step approach: Iterate through each element of the matrix. If an element is on either diagonal (i.e., i == j or i + j == n - 1), check if it's non-zero. If it's not on a diagonal, check if it's zero. Return false immediately if any condition is violated. If all elements satisfy their respective conditions, return true.
+4. Edge cases: The problem constraints specify n >= 3, so empty matrices or 1x1/2x2 matrices are not considered. All elements within the given constraints need to be checked.
+5. Time and space complexity: Time complexity is O(n^2) because every element in the n x n matrix is visited once. Space complexity is O(1) as only a few variables are used for iteration and storage.
+</thinking>

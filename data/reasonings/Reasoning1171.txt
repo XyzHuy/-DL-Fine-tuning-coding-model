@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a linked list, repeatedly remove consecutive sequences of nodes that sum to zero until no such sequences exist. Return the head of the resulting list.
+2. Problem type / algorithm category: Linked list manipulation, hash map, prefix sum.
+3. Step-by-step approach: Use a hash map to store the prefix sum at each node. Iterate through the list, calculating the prefix sum and storing the sum and the corresponding node in the map. Iterate again. If a prefix sum is seen again, it means the elements between the first occurrence of the prefix sum and the current element sum to zero. Remove those elements by adjusting the next pointer of the first occurrence to the element after the current.
+4. Edge cases: Empty list, list with no zero-sum sequences, list where the entire list sums to zero, zero-sum sequences at the beginning or end of the list, multiple overlapping zero-sum sequences. A dummy node is used to simplify handling the head of the list.
+5. Time and space complexity: Time complexity is O(n), where n is the number of nodes in the linked list, because the list is traversed at most twice. Space complexity is O(n) due to the hash map potentially storing prefix sums for all nodes.
+</thinking>

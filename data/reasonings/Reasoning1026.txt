@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum absolute difference between any ancestor and descendant node in a binary tree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Perform a DFS traversal of the tree. At each node, maintain the maximum and minimum ancestor values encountered so far. Calculate the difference between the current node's value and these maximum and minimum ancestor values. Update the global maximum difference if necessary.
+4. Edge cases: Empty tree (though the problem constraints say there will be at least two nodes, it's good practice to consider).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, leading to O(N) space complexity. In the best case (balanced tree), H is log(N), leading to O(log(N)) space complexity.
+</thinking>

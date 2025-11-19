@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the indices of the k weakest rows in a binary matrix, where weakness is determined by the count of soldiers (1s) and then by the row index.
+2. Problem type / algorithm category: Sorting, Binary Search (for efficient soldier count).
+3. Step-by-step approach: For each row, calculate the number of soldiers (1s). This can be done efficiently by reversing the row and using binary search to find the first 0. Create a list of (soldier_count, row_index) tuples. Sort this list based on soldier_count primarily and row_index secondarily. Return the first k row indices from the sorted list.
+4. Edge cases: Rows with all soldiers, rows with no soldiers, k equal to the number of rows.
+5. Time and space complexity: Time complexity is O(m * log n + m log m) due to calculating soldier counts for each row using binary search and then sorting. Space complexity is O(m) for storing soldier counts and indices.
+</thinking>

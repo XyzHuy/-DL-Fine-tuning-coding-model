@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the number of car fleets that will arrive at a target destination, given the position and speed of each car, considering that cars can form fleets if they catch up to each other.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: First, calculate the time each car takes to reach the target. Then, sort the cars by their starting positions in reverse order. Iterate through the sorted cars. If a car takes more time to reach the target than the current fleet's time, it forms a new fleet. Otherwise, it joins the current fleet.
+4. Edge cases: Empty input arrays. Target is less than or equal to zero. Speed is zero.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(n) to store the time to target for each car.
+</thinking>

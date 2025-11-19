@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of apples that can fit in a basket with a weight limit of 5000, given an array of apple weights.
+2. Problem type / algorithm category: Greedy algorithm / Sorting.
+3. Step-by-step approach: Sort the apple weights in ascending order. Iterate through the sorted weights, adding each apple to the basket as long as the total weight does not exceed 5000. Keep track of the number of apples added.
+4. Edge cases: Empty input array (should return 0). All weights exceeding 5000 (should return 0). Basket can fit all apples.
+5. Time and space complexity: Time complexity is dominated by the sorting step, O(n log n), where n is the number of apples. Space complexity is O(1) or O(n) depending on the sorting algorithm's implementation (in-place vs. creating a copy).
+</thinking>

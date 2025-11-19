@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks for the maximum number of operations to move all '1's to the right of all '0's in a binary string, where an operation involves moving a '1' past a '0'.
+2. Problem type / algorithm category: Greedy approach, counting inversions.
+3. Step-by-step approach: Iterate through the string. Maintain a count of preceding '1's. When a '0' is encountered that follows a '1', add the current count of preceding '1's to the total operations, as each of those '1's can be moved past this '0'.
+4. Edge cases: Strings with only '0's or only '1's will result in 0 operations.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the string. Space complexity is O(1) as only a few variables are used for counting.
+</thinking>

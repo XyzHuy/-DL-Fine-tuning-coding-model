@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum average of a contiguous subarray with length greater than or equal to k within a given integer array.
+2. Problem type / algorithm category: Binary search, prefix sum
+3. Step-by-step approach: Use binary search to find the maximum average. The search space is between the minimum and maximum values in the array. The check function determines if a given average is achievable. It transforms the problem into finding if there is a subarray with sum >= 0 after subtracting the average from each element.
+4. Edge cases: Single element array, k equals the length of the array.
+5. Time and space complexity: Time complexity is O(n log (max - min)), where n is the length of the array and max and min are the maximum and minimum values in the array. Space complexity is O(1).
+</thinking>

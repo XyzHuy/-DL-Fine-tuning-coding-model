@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a target value exists within a rotated sorted array which may contain duplicate values.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use a modified binary search. If the middle element is greater than the right element, the left side is sorted. If the middle element is less than the right element, the right side is sorted. If they are equal, decrement the right pointer to shrink the search space due to possible duplicates.
+4. Edge cases: Empty array, target smaller/larger than all elements, duplicate values causing issues with determining sorted portions.
+5. Time and space complexity: Average time complexity is O(log n), worst-case O(n) due to duplicates. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest alternating red-blue paths from node 0 to all other nodes in a directed graph.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Create adjacency lists for red and blue edges. Use BFS starting from node 0 with both red and blue as initial edge colors. Keep track of the distance to each node for both red and blue ending edges. Return the minimum distance to each node or -1 if unreachable.
+4. Edge cases: Empty redEdges or blueEdges, unreachable nodes.
+5. Time and space complexity: Time complexity is O(n + E) where E is the total number of edges. Space complexity is O(n + E) for the adjacency lists and queue.
+</thinking>

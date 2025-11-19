@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return the list of node values in preorder traversal.
+2. Problem type / algorithm category: Tree Traversal / Iterative Preorder Traversal
+3. Step-by-step approach: Use a stack to simulate the recursion. Push the root node onto the stack. While the stack is not empty, pop the node, add its value to the result list, and then push the right and left children onto the stack (right first so left is processed first).
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree. Space complexity is O(N) in the worst case (skewed tree).
+</thinking>

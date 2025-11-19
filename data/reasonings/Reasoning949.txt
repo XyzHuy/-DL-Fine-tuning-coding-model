@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of four digits, find the latest valid 24-hour time that can be formed using each digit exactly once. Return an empty string if no valid time can be formed.
+2. Problem type / algorithm category: Permutations, backtracking (implicitly via itertools), brute force.
+3. Step-by-step approach: Generate all possible permutations of the four digits. For each permutation, check if it represents a valid 24-hour time. If it is valid, convert it to total minutes and update the maximum valid time found so far. Finally, format the largest time as "HH:MM" or return an empty string if no valid time was found.
+4. Edge cases: Input array contains digits that cannot form a valid time (e.g., [9,9,9,9] or [5,5,5,5]). Empty input array is not specified as a possible input, but the algorithm handles the case where no valid time is formed, effectively handling this edge case as well.
+5. Time and space complexity: Time complexity is O(n!), where n is the number of digits (n=4 here), because we generate all permutations. Space complexity is O(1) as we are using a fixed amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of ages, determine the total number of friend requests that will be made according to the provided constraints.
+2. Problem type / algorithm category: Counting, array manipulation.
+3. Step-by-step approach: Count the occurrences of each age. Iterate through all possible age combinations (x, y) and check if x would send a friend request to y based on the problem's conditions.  Sum up the number of valid friend requests. Subtract self-requests (when x and y are the same age) to avoid overcounting.
+4. Edge cases: Ages below 15 cannot send friend requests. Handling duplicate ages correctly by accounting for all possible pairings.
+5. Time and space complexity: Time complexity is O(n + a^2) where n is the number of people and a is the age range (1 to 120).  Space complexity is O(a) due to the count array.
+</thinking>

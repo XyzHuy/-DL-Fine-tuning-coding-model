@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two strings s and t, count the number of distinct subsequences of s that equal t.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a DP table where dp[i][j] represents the number of distinct subsequences of s[:i] which equals t[:j]. Initialize the first column to 1 (empty t). Iterate through the DP table, if s[i-1] == t[j-1], then dp[i][j] = dp[i-1][j-1] + dp[i-1][j]. Otherwise, dp[i][j] = dp[i-1][j]. The result is dp[m][n].
+4. Edge cases: Empty string t, empty string s. The constraints ensure the answer fits in a 32-bit integer.
+5. Time and space complexity: Time complexity is O(m*n), where m and n are the lengths of s and t, respectively. Space complexity is O(m*n) due to the DP table.
+</thinking>

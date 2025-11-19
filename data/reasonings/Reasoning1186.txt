@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the maximum sum of a non-empty subarray with at most one element deletion.
+2. Problem type / algorithm category: Dynamic Programming / Kadane's Algorithm
+3. Step-by-step approach: Use dynamic programming to maintain two states: `max_ending_here` (maximum sum ending at the current index without deletion) and `max_ending_here_with_deletion` (maximum sum ending at the current index with one deletion). Iterate through the array, updating these states and the overall maximum sum found so far.
+4. Edge cases: Array with a single element.
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the array. Space complexity is O(1) as we are using a constant number of variables.
+</thinking>

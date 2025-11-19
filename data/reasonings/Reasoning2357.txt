@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of non-negative integers, find the minimum operations to make all elements zero by repeatedly subtracting the smallest non-zero element from all positive elements.
+2. Problem type / algorithm category: Greedy, Set.
+3. Step-by-step approach: Collect all unique positive numbers in the array. Each unique positive number represents one distinct subtraction value needed. The count of these unique positive numbers is the minimum number of operations.
+4. Edge cases: An array containing only zeros requires zero operations.
+5. Time and space complexity: Time complexity is O(N) to iterate through the list and O(N) in the worst case for set insertion. Space complexity is O(N) in the worst case to store unique elements in the set.
+</thinking>

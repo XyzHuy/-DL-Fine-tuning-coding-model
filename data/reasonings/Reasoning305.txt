@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D grid initially filled with water, and a list of positions to add land, return the number of islands after each add land operation.
+2. Problem type / algorithm category: Union Find / Disjoint Set. This problem can be efficiently solved using the Union Find data structure to track connected components (islands).
+3. Step-by-step approach: Initialize a UnionFind data structure. Iterate through the positions, and for each position, check its four neighbors. If a neighbor is land, perform a union operation between the current position and the neighbor. Keep track of the number of islands.
+4. Edge cases: Handle duplicate positions (adding land to a cell that is already land), and boundary conditions when checking neighbors.
+5. Time and space complexity: Time complexity is O(k log(mn)) where k is the number of positions and mn is the grid size due to the Union Find operations. Space complexity is O(mn) for the Union Find data structure and the grid.
+</thinking>

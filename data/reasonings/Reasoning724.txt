@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the pivot index in an array where the sum of elements to the left equals the sum of elements to the right.
+2. Problem type / algorithm category: Array manipulation, prefix sum.
+3. Step-by-step approach: Calculate the total sum of the array. Iterate through the array, maintaining a running left sum. For each index, check if the left sum equals the right sum (total sum - left sum - current element). If they are equal, return the index. If no such index is found, return -1.
+4. Edge cases: Empty array (although the problem states the length will be at least 1), array with only one element, pivot index at the beginning or end of the array.
+5. Time and space complexity: Time complexity is O(n) due to the single iteration through the array. Space complexity is O(1) as we only use a few constant space variables.
+</thinking>

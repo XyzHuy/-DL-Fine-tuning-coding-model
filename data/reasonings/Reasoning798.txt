@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the rotation index `k` of an array `nums` that maximizes the number of elements less than or equal to their index after the rotation.
+2. Problem type / algorithm category: Array manipulation, rotation, prefix sum.
+3. Step-by-step approach: Calculate the changes in score for each rotation index using a `points` array. Iterate through `nums`, and for each number, determine the range of rotations where it contributes to the score. Update the `points` array to reflect these changes. Calculate the prefix sum of the `points` array to determine the total score for each rotation. Finally, find the rotation with the maximum score and return the smallest such index.
+4. Edge cases: Empty input array, all elements equal. Handle cases where the number is greater than its original index, and vice versa. Consider modular arithmetic when calculating rotation indices.
+5. Time and space complexity: Time complexity is O(n) due to the single loop and prefix sum calculation. Space complexity is O(n) due to the `points` array.
+</thinking>

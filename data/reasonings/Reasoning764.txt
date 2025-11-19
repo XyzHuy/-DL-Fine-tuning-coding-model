@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an n x n grid initialized with ones, except for positions specified in the mines array, find the largest axis-aligned plus sign of ones.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming to calculate the longest consecutive ones in all four directions (up, down, left, right) for each cell. Then, for each cell, find the minimum of these four lengths, which represents the order of a plus sign centered at that cell. The maximum of these orders is the result.
+4. Edge cases: An empty grid (n=0), a grid full of mines, or a grid where no plus sign can be formed.
+5. Time and space complexity: Time complexity is O(n^2) due to iterating over the grid multiple times. Space complexity is O(n^2) to store the DP table.
+</thinking>

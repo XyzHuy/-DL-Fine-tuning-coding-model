@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total happiness in an m x n grid by placing a given number of introverts and extroverts, considering neighbor interactions and placement constraints.
+2. Problem type / algorithm category: Dynamic programming with bitmask or state compression, using recursion with memoization.
+3. Step-by-step approach: Use a recursive function (DFS) to explore placing people cell by cell. The state should include current row, column, remaining introverts and extroverts, and the configuration of the previous row (or current row's left neighbors) to check interactions. Memoization is used to store and retrieve results for already computed states.
+4. Edge cases: No people to place, grid dimensions are small (m, n <= 5), zero introverts or extroverts.
+5. Time and space complexity: Time complexity is roughly O(m * n * 3^n * introverts * extroverts), where 3^n represents states of a row. Space complexity is O(m * n * 3^n) due to memoization.
+</thinking>

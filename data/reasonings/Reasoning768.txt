@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of chunks that can be made from an array such that sorting each chunk and concatenating them results in the sorted array.
+2. Problem type / algorithm category: Array manipulation, Greedy approach.
+3. Step-by-step approach: Iterate through the array, keeping track of the maximum value seen so far. If the maximum value seen so far is less than or equal to the minimum value in the rest of the array, then a chunk can be formed. Increment the chunk count.
+4. Edge cases: Empty array, array with one element, array already sorted, array in reverse sorted order, duplicate elements.
+5. Time and space complexity: Time complexity is O(n^2) because of min() on sub-array, space complexity is O(1).
+</thinking>

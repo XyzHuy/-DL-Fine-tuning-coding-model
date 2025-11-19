@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of rabbits in a forest, given an array of answers to the question "How many rabbits have the same color as you?".
+2. Problem type / algorithm category: Greedy algorithm, counting, and math.
+3. Step-by-step approach: Count the occurrences of each answer. For each answer, calculate the minimum number of rabbits required. If the count is a multiple of (answer + 1), the number of rabbits is the count. Otherwise, round up to the nearest multiple of (answer + 1). Sum the results for all answers.
+4. Edge cases: Empty input array, zero answers, large answer values.
+5. Time and space complexity: Time complexity is O(n) where n is the length of answers. Space complexity is O(k) where k is the number of distinct answers.
+</thinking>

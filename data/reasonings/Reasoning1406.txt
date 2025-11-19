@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Players take turns taking 1, 2, or 3 stones from the start of a row, aiming for the highest total value. The player with the higher score wins.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down) / Minimax.
+3. Step-by-step approach: Use a recursive function with memoization. The function `dfs(index)` returns the maximum score difference the current player can achieve starting from `index`. For each possible move (taking 1, 2, or 3 stones), calculate the current player's score and subtract the result of the recursive call for the remaining stones (which represents the opponent's optimal gain). Maximize this difference. The base case is when `index` reaches the end of the array, returning 0. The initial call `dfs(0)` will determine Alice's net score advantage.
+4. Edge cases: The end of the stone array (`index == n` or `index > n`). If `n` is small (e.g., 1, 2, 3), the logic still applies.
+5. Time and space complexity: Time complexity is O(N) because each state (index) is computed once. Space complexity is O(N) due to the memoization cache and recursion stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the number of mountains whose peaks are not contained within another mountain's boundaries. Mountains are right-angled isosceles triangles with slopes of 1 and -1.
+2. Problem type / algorithm category: Sorting and Sweep Line.
+3. Step-by-step approach: Convert mountain peaks (x, y) into their left (x-y) and right (x+y) boundary coordinates. Sort these boundaries. Iterate through sorted boundaries, maintaining the maximum right boundary seen so far. If a mountain's right boundary exceeds the current maximum, it's visible, and the maximum right boundary is updated. Handle overlapping mountains.
+4. Edge cases: Duplicate peaks (mountains that perfectly overlap), mountains that are completely contained by others.
+5. Time and space complexity: O(N log N) time due to sorting, O(N) space for storing transformed mountain boundaries.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a frog can cross a river by jumping on stones, given the stone positions and jump rules (k-1, k, or k+1, where k is the previous jump size).
+2. Problem type / algorithm category: Dynamic Programming / Recursion with Memoization (lru_cache)
+3. Step-by-step approach: Use recursion to explore possible jump sequences. Memoize the results to avoid redundant computations. Base cases are reaching the last stone (success) or landing in water or invalid jump size (failure). Start the recursion with a jump size of 1 from the first stone (position 0).
+4. Edge cases: Empty stones list, no path exists, first jump is not possible.
+5. Time and space complexity: Time complexity is O(n^2) due to memoization, where n is the number of stones. Space complexity is O(n^2) due to the memoization cache.
+</thinking>

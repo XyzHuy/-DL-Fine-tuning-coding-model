@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum cost of any substring in a given string 's', where character costs are defined by a mapping 'chars' and 'vals' or by their alphabetical position.
+2. Problem type / algorithm category: Dynamic Programming / Kadane's Algorithm variation.
+3. Step-by-step approach: Map characters from 'chars' to 'vals'. Iterate through 's', calculating the value of each character. Maintain a running 'current_cost', adding the character's value. If 'current_cost' becomes negative, reset it to 0 (as an empty substring has cost 0). Update 'max_cost' with the highest 'current_cost' encountered.
+4. Edge cases: Empty string 's' (implicitly handled by loop not running), all characters having negative values (resulting in 0 max cost), and characters not in 'chars' (using alphabetical value).
+5. Time and space complexity: Time complexity is O(N + M) where N is length of s and M is length of chars. Space complexity is O(M) for storing character mappings.
+</thinking>

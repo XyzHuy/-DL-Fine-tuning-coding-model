@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of positive integers that divide both input integers 'a' and 'b'.
+2. Problem type / algorithm category: Number Theory, Brute Force Iteration.
+3. Step-by-step approach: Determine the smaller of the two numbers. Iterate from 1 up to this smaller number. For each number in the iteration, check if it divides both 'a' and 'b' evenly. Increment a counter if it does.
+4. Edge cases: The minimum possible common factor is always 1. The maximum possible common factor is the smaller of 'a' and 'b'. Constraints ensure positive integers.
+5. Time and space complexity: Time complexity is O(min(a, b)) due to the loop. Space complexity is O(1) as only a few variables are used.
+</thinking>

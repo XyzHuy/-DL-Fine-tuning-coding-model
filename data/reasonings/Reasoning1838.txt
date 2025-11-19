@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum frequency of any element in an array after performing at most k increment operations.
+2. Problem type / algorithm category: Sliding Window, Sorting.
+3. Step-by-step approach: Sort the array. Use a sliding window where the right pointer expands. Maintain the sum of elements within the window. If the cost to make all elements in the current window equal to the rightmost element exceeds k, shrink the window from the left. Update the maximum frequency found so far.
+4. Edge cases: Empty array (though constraints say nums.length >= 1), k = 0, all elements are the same.
+5. Time and space complexity: O(N log N) time for sorting, O(N) for the sliding window traversal. O(1) or O(N) space depending on sort implementation.
+</thinking>

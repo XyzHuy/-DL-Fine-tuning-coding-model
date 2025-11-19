@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest path with the minimum cost to reach the last index of an array, given a maximum jump length and costs associated with each index.
+2. Problem type / algorithm category: Dynamic Programming, Graph Traversal (implicitly).
+3. Step-by-step approach: Use dynamic programming to store the minimum cost to reach each index and the parent index in the optimal path. Iterate backwards from the end, calculating minimum costs and parent pointers. Then, reconstruct the path from the start using the parent array. Handle the case where the last index is unreachable.
+4. Edge cases: Unreachable last index, cases where multiple paths have the same minimum cost (lexicographical smallest is chosen implicitly by the DP's inner loop).
+5. Time and space complexity: Time complexity is O(n * maxJump) due to the nested loops. Space complexity is O(n) for the dp and parent arrays.
+</thinking>

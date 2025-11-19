@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the starting index of the first occurrence of a needle string within a haystack string, or return -1 if it doesn't exist.
+2. Problem type / algorithm category: String searching.
+3. Step-by-step approach: Check if needle is empty, if so return 0. Check if needle is a substring of haystack, if not, return -1. If it is, use the index() method to find the starting index of the first occurrence and return it.
+4. Edge cases: Empty needle string, needle string not found in haystack.
+5. Time and space complexity: Time complexity is O(n*m) in the worst case where n is the length of haystack and m is the length of needle, due to the potential `in` and `index` operations. Space complexity is O(1).
+</thinking>

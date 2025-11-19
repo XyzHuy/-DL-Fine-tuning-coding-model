@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k most frequent elements in an integer array.
+2. Problem type / algorithm category: Hashing, Bucket Sort.
+3. Step-by-step approach: Count element frequencies, store elements in buckets based on frequency, and then retrieve top k elements from buckets.
+4. Edge cases: Empty input array, k greater than the number of unique elements, array with only one element.
+5. Time and space complexity: Time: O(n), Space: O(n) where n is the length of the input array.
+</thinking>

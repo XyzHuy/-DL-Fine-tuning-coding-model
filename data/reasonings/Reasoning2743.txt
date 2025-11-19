@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of substrings in a given string that contain no repeating characters.
+2. Problem type / algorithm category: Sliding window, Two pointers.
+3. Step-by-step approach: Use a sliding window approach. Maintain a `left` pointer and iterate with a `right` pointer. Use a map to store the last seen index of each character. If a character at `right` is encountered again within the current window, move `left` to the right of its previous occurrence. The number of special substrings ending at `right` is `right - left + 1`. Sum these counts.
+4. Edge cases: Empty string (constraint states length >= 1), string with all unique characters, string with all same characters.
+5. Time and space complexity: Time complexity is O(N) because each character is visited at most twice (by `right` and potentially `left`). Space complexity is O(K) where K is the size of the alphabet (26 lowercase English letters) for the character index map.
+</thinking>

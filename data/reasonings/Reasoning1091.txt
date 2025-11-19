@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path from the top-left to the bottom-right cell in a binary matrix, where the path consists of only 0s and allows 8-directional movement.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore the matrix. Start from the top-left cell, add it to the queue, and mark it as visited. Iterate through the queue, exploring all 8 adjacent cells. If a cell is within bounds, is a 0, and has not been visited, mark it as visited and add it to the queue with an incremented path length. If the bottom-right cell is reached, return the path length. If the queue is empty and the bottom-right cell hasn't been reached, return -1.
+4. Edge cases: If the starting or ending cell is 1, return -1. If the matrix is empty or invalid, handle appropriately (implicitly handled by constraints here). If no path exists, return -1.
+5. Time and space complexity: Time complexity is O(N^2) where N is the dimension of the grid, as each cell is visited at most once. Space complexity is O(N^2) in the worst case, as the queue could contain all cells.
+</thinking>

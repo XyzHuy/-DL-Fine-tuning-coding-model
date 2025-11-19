@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform nums1 to nums2 by repeatedly adding/subtracting k from elements, minimizing operations.
+2. Problem type / algorithm category: Greedy approach, number theory (divisibility).
+3. Step-by-step approach: Calculate differences between corresponding elements. Check if differences are divisible by k. Sum up positive differences divided by k (decrements) and negative differences divided by k (increments). If total increments equal total decrements, return either count. Otherwise, impossible.
+4. Edge cases: Arrays are already equal (0 operations). k is 0 (impossible unless arrays are equal). Differences not divisible by k (impossible). Total increments not matching total decrements (impossible).
+5. Time and space complexity: O(n) time complexity for iterating through arrays. O(1) space complexity as only a few variables are used.
+</thinking>

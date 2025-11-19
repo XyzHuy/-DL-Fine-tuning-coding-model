@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest interval in a list of hours worked per day where the number of tiring days (hours > 8) is greater than the number of non-tiring days.
+2. Problem type / algorithm category: Prefix sum, Hash map.
+3. Step-by-step approach: Convert the hours list to a score list (1 for tiring days, -1 for non-tiring days). Iterate through the score list, calculating the prefix sum. Store the first occurrence of each prefix sum in a hash map. If the current prefix sum is positive, update the maximum length. If not, check if a previous prefix sum (prefix_sum - 1) exists, and if so, update the maximum length with the difference in indices.
+4. Edge cases: Empty input list, no well-performing interval (return 0), all days are tiring, all days are not tiring.
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the hours list. Space complexity is O(n) in the worst case where all prefix sums are distinct and stored in the hash map.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be sorted non-decreasingly by swapping elements that share a common prime factor (gcd > 1).
+2. Problem type / algorithm category: Union-Find (Disjoint Set Union) and Prime Factorization.
+3. Step-by-step approach: 1. Initialize a Union-Find structure for numbers up to the maximum value in the input array. 2. For each number in the input array, find its prime factors and unite the number with each of its prime factors in the Union-Find structure. This groups numbers that can be swapped transitively. 3. Create a sorted version of the input array. 4. Compare the original array with its sorted version element by element. If for any pair of elements at the same index, their representative roots in the Union-Find structure are different, then sorting is impossible. Otherwise, it is possible.
+4. Edge cases: An already sorted array is a trivial case. The maximum value in the array can be large, affecting the size of the Union-Find structure and prime factorization.
+5. Time and space complexity: Time complexity is dominated by prime factorization and Union-Find operations, approximately O(N * sqrt(M) + N * alpha(M)), where N is the number of elements and M is the maximum value. Space complexity is O(M) for the Union-Find structure and auxiliary storage.
+</thinking>

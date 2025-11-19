@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum cost to reach each stop from stop 0, considering two routes (regular and express) and a cost to switch from regular to express.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Maintain two DP arrays: one for the minimum cost to reach stop i via the regular route, and another for the minimum cost to reach stop i via the express route. For each stop, calculate these minimums by considering transitions from the previous stop on either route, including the express transfer cost.
+4. Edge cases: The problem constraints guarantee n is at least 1, so no empty input or zero stops. The initial cost at stop 0 needs to be handled, where regular is 0 and express requires the expressCost.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the stops once. Space complexity is O(n) to store the DP arrays for regular and express route costs.
+</thinking>

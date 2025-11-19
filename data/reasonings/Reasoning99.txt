@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Recover a binary search tree where exactly two nodes have been swapped, restoring the BST property.
+2. Problem type / algorithm category: Binary Search Tree, In-order Traversal, Morris Traversal.
+3. Step-by-step approach: Perform an in-order traversal of the BST. Identify the two swapped nodes by comparing adjacent nodes during the traversal. Use Morris traversal to achieve O(1) space complexity. Finally, swap the values of the identified nodes.
+4. Edge cases: Empty tree, tree with only two nodes, adjacent swapped nodes, non-adjacent swapped nodes.
+5. Time and space complexity: Time complexity: O(N), where N is the number of nodes. Space complexity: O(1) due to Morris traversal.
+</thinking>

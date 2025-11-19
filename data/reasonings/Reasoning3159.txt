@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of the k-th occurrence of a target element 'x' in an array 'nums' for multiple queries, returning -1 if the k-th occurrence doesn't exist.
+2. Problem type / algorithm category: Array Traversal, Indexing, Linear Search.
+3. Step-by-step approach: First, iterate through the 'nums' array to record all indices where 'x' appears. Then, for each query 'k', check if the recorded occurrences list has at least 'k' elements. If yes, return the (k-1)-th index from the recorded list; otherwise, return -1.
+4. Edge cases: The target element 'x' might not exist in 'nums'. A query 'k' might be larger than the total number of occurrences of 'x'. Queries can be 1-indexed.
+5. Time and space complexity: Time complexity is O(N + Q), where N is the length of nums and Q is the length of queries. Space complexity is O(N) in the worst case to store occurrences.
+</thinking>

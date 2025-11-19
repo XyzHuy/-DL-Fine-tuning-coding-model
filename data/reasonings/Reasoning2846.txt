@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to find the minimum operations to make all edge weights on the path between two nodes in a tree equal. An operation involves changing any edge's weight.
+2. Problem type / algorithm category: Tree traversal, Lowest Common Ancestor (LCA), Binary Lifting, Precomputation.
+3. Step-by-step approach: 1. Build an adjacency list representation of the tree. 2. Perform a DFS from an arbitrary root (e.g., node 0) to precompute the depth of each node and the counts of each edge weight on the path from the root to that node. 3. Utilize binary lifting to efficiently find ancestors for LCA. 4. For each query (a, b), find their LCA. The path length is (depth[a] - depth[lca]) + (depth[b] - depth[lca]). Calculate the count of each edge weight on the path from a to LCA and b to LCA. The maximum count among these weights will be the target weight. The number of operations is the path length minus the maximum count of any single weight on the path.
+4. Edge cases: A query where both nodes are the same (path length is 0, operations is 0). Root node handling during DFS. Weights are between 1 and 26.
+5. Time and space complexity: Time: O(N log N + M log N) where N is the number of nodes and M is the number of queries. O(N log N) for precomputation (DFS and binary lifting), and O(M log N) for processing queries. Space: O(N log N) for storing parent pointers in binary lifting and O(N * W) where W is the maximum weight (26) for storing edge weight counts.
+</thinking>

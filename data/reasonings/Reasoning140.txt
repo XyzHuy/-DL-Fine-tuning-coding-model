@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string and a dictionary of words, find all possible ways to break the string into a sequence of dictionary words, where words can be reused.
+2. Problem type / algorithm category: Dynamic Programming, Depth-First Search (DFS) with Memoization.
+3. Step-by-step approach: Use DFS to explore all possible segmentations of the string. Memoize the results to avoid redundant calculations. Convert the wordDict to a set for faster lookups. Base case for DFS is when start reaches the end of string.
+4. Edge cases: Empty string, no possible segmentation, repeated words in dictionary.
+5. Time and space complexity: Time complexity is O(N^3) where N is the length of the string. Space complexity is O(N^2) due to the memoization table and recursion depth.
+</thinking>

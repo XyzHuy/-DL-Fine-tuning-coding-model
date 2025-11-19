@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an even length array nums and a limit, find the minimum moves to make nums[i] + nums[n-1-i] equal to a constant for all i. A move involves changing an element to a value between 1 and limit.
+2. Problem type / algorithm category: Array manipulation, prefix sums (or difference arrays).
+3. Step-by-step approach: Iterate through the first half of the array. For each pair (nums[i], nums[n-1-i]), determine the range of possible sums and the number of moves required for each potential target sum. Use a difference array (prefix_sum) to efficiently calculate the total moves for each possible target sum by accumulating changes. Find the minimum accumulated value in the prefix sum array.
+4. Edge cases: The array length n is always even and at least 2. Values are within the limit.
+5. Time and space complexity: Time complexity is O(limit) due to iterating through possible sums. Space complexity is O(limit) for the prefix sum array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays where the bitwise AND of all elements equals a given integer k.
+2. Problem type / algorithm category: Brute force (with optimization), Subarray manipulation.
+3. Step-by-step approach: Iterate through all possible start indices, and for each start, iterate through all possible end indices to form subarrays. Calculate the bitwise AND of elements within each subarray. If the AND equals k, increment a counter. Optimize by breaking early if the current AND becomes 0, as further AND operations will also result in 0.
+4. Edge cases: Empty input array (though constraints prevent this), k being 0, all elements being the same, k not being achievable.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a string by concatenating a subsequence from word1 and a subsequence from word2, and find the length of the longest palindrome that can be formed.
+2. Problem type / algorithm category: Dynamic Programming, Longest Palindromic Subsequence (LPS).
+3. Step-by-step approach: Concatenate word1 and word2 into a single string s. Calculate the LPS for all substrings of s using dynamic programming. Then, iterate through all possible split points where the first part of the palindrome comes from word1 and the second part comes from word2, and check for character matches at the boundaries. The final length is derived from the LPS of the combined substring in s that corresponds to these parts.
+4. Edge cases: If no palindrome can be formed (e.g., no common characters between word1 and word2 that can form a palindrome), return 0. Single-character subsequences form palindromes of length 1.
+5. Time and space complexity: Time complexity is O((N+M)^2) and space complexity is O((N+M)^2), where N and M are the lengths of word1 and word2 respectively.
+</thinking>

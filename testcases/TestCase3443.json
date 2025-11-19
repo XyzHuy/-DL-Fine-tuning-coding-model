@@ -1,0 +1,761 @@
+{
+  "function_name": "maxDistance",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "NSWWEW",
+        "k": 3
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "EEEEEE",
+        "k": 0
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "NNN",
+        "k": 0
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "NWSE",
+        "k": 1
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "EEEE",
+        "k": 4
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "NNNN",
+        "k": 0
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "SSSSS",
+        "k": 5
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "NNNSSS",
+        "k": 3
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "WEWEWEW",
+        "k": 1
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "NSEW",
+        "k": 4
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "NENENE",
+        "k": 2
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "EEEEEE",
+        "k": 2
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "NESW",
+        "k": 2
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "NESW",
+        "k": 0
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "s": "NNNSSS",
+        "k": 2
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "NSEW",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "WWWW",
+        "k": 4
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "NNSSEW",
+        "k": 2
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "EEEEE",
+        "k": 3
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "EWEWWE",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "NEENSWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWW",
+        "k": 25
+      },
+      "expected_output": 83
+    },
+    {
+      "parameters": {
+        "s": "EWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEWEW",
+        "k": 100
+      },
+      "expected_output": 124
+    },
+    {
+      "parameters": {
+        "s": "NNSSSSSSNNSSSSSS",
+        "k": 5
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "NNSWWSWWSSSWSSS",
+        "k": 6
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEEEEEEEEE",
+        "k": 15
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "s": "NNNSSSWWEEEEE",
+        "k": 12
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+        "k": 20
+      },
+      "expected_output": 38
+    },
+    {
+      "parameters": {
+        "s": "WSSSNNNEEEWWWEWWWSSEENEEEEEWWEWWEWEEWWWW",
+        "k": 15
+      },
+      "expected_output": 34
+    },
+    {
+      "parameters": {
+        "s": "NNNSSSSEEEEEWWWWWW",
+        "k": 5
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSS",
+        "k": 10
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+        "k": 10
+      },
+      "expected_output": 108
+    },
+    {
+      "parameters": {
+        "s": "NNNEEESWWWWW",
+        "k": 5
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "EEEEWWWWEEEEWWWWEEEEWWWW",
+        "k": 20
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "EWWWNNEEESSSSS",
+        "k": 7
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "NESWNESWNESWNESWNESW",
+        "k": 10
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "NNNNNSSSSS",
+        "k": 5
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEWWWWWWWWWW",
+        "k": 10
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEEEEE",
+        "k": 7
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "NNNSSSSSSSSSSEEEEEEEWWWWWWWWWWWWWW",
+        "k": 15
+      },
+      "expected_output": 34
+    },
+    {
+      "parameters": {
+        "s": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+        "k": 20
+      },
+      "expected_output": 118
+    },
+    {
+      "parameters": {
+        "s": "NENEWENEWENEWENEWENEWENEWENEWENEWENEWENEWEN",
+        "k": 12
+      },
+      "expected_output": 43
+    },
+    {
+      "parameters": {
+        "s": "NESESWNWSWNENWSESNWENS",
+        "k": 7
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "E",
+        "k": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "NESEWESWESWNWNEN",
+        "k": 12
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "NENWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNWENWNWNWSWNWNW",
+        "k": 30
+      },
+      "expected_output": 116
+    },
+    {
+      "parameters": {
+        "s": "WWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWWEWW",
+        "k": 10
+      },
+      "expected_output": 57
+    },
+    {
+      "parameters": {
+        "s": "NENWNWNWSENWSW",
+        "k": 4
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "NENENENENENENENENEN",
+        "k": 10
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "s": "NSEWNNSEWNNSEWNNSEWNNSEWNNSEWNNSEW",
+        "k": 15
+      },
+      "expected_output": 34
+    },
+    {
+      "parameters": {
+        "s": "WNNNWWNNEEENSSS",
+        "k": 7
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "NESWNESWNESWNESWNESWNESWNESWNESWNESWNESWNESW",
+        "k": 10
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSSSSSSSSSS",
+        "k": 10
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "s": "WWSWNWNWNWWSWNWSWWSWNWNW",
+        "k": 15
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "NENENENENENENENENENENE",
+        "k": 20
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+        "k": 10
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "s": "NESENESWNWSWNENE",
+        "k": 7
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "NNNNSSSSSSSSEEEE",
+        "k": 10
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "EWSWNESWNWESWNESWNWESWNESWNWESWNESWNWESWNWESW",
+        "k": 15
+      },
+      "expected_output": 37
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+        "k": 25
+      },
+      "expected_output": 49
+    },
+    {
+      "parameters": {
+        "s": "WNWWSWEESSNNNSSWWS",
+        "k": 12
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "NENWSWESWNENWSWESWNENWSW",
+        "k": 15
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "WSSSWNWEWEW",
+        "k": 5
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW",
+        "k": 30
+      },
+      "expected_output": 50
+    },
+    {
+      "parameters": {
+        "s": "SWNESWSESWSWSEWSEWSEWSEWSEWSEWSEWSEWSEWSEWS",
+        "k": 25
+      },
+      "expected_output": 43
+    },
+    {
+      "parameters": {
+        "s": "NNNSSSSSSSSSSSSSSSSS",
+        "k": 5
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "SSSSWWWWNNNNEEEE",
+        "k": 10
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSEEEEEEEEEEWWWWWWWWWWWNNNNNNNNNNN",
+        "k": 20
+      },
+      "expected_output": 42
+    },
+    {
+      "parameters": {
+        "s": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+        "k": 50
+      },
+      "expected_output": 46
+    },
+    {
+      "parameters": {
+        "s": "NSEWNESEWNESEWNESEWNESEW",
+        "k": 15
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+        "k": 30
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "s": "NNNSSWSSWEEWWNNNSSW",
+        "k": 10
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "s": "EEWWEWNEWEWNENW",
+        "k": 10
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSNNNNNNNNNNEEEEEEEEEEWWWWWWWWWW",
+        "k": 10
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "s": "NSWWWNWWWNWSW",
+        "k": 5
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "NNNWWWEESSEENNNWWEESSEENNNWWEESSEENNNWWEESSEENNNWWEESSEENNNWWEESSEENNN",
+        "k": 25
+      },
+      "expected_output": 70
+    },
+    {
+      "parameters": {
+        "s": "WNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNWNW",
+        "k": 50
+      },
+      "expected_output": 125
+    },
+    {
+      "parameters": {
+        "s": "EESSWWNNNNNSSSWEWEWNWNWSSNENENESWEWEWWSWWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWWSWSWSWWSWSW",
+        "k": 50
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "s": "NNSSEEEWW",
+        "k": 10
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "NENEWNWNENEW",
+        "k": 6
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "NNNNEEEEWWWWSSSSNNNNEEEEWWWWSSSS",
+        "k": 20
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "s": "WWSWWSWWSWWSWWSWWSWWSWWSWWSWWSWWSWWSWWSWWSWW",
+        "k": 20
+      },
+      "expected_output": 44
+    },
+    {
+      "parameters": {
+        "s": "SWWNSWEWNEWNNSWEN",
+        "k": 6
+      },
+      "expected_output": 17
+    },
+    {
+      "parameters": {
+        "s": "NNNNNSSSSSNEEWWW",
+        "k": 3
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "EEENSSSSSNWWSWEEWEESSSNWWSWEEW",
+        "k": 10
+      },
+      "expected_output": 29
+    },
+    {
+      "parameters": {
+        "s": "NNSWNNWSSWNNWSSW",
+        "k": 8
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+        "k": 15
+      },
+      "expected_output": 114
+    },
+    {
+      "parameters": {
+        "s": "SWWNSESNWNENWNWS",
+        "k": 8
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "NSEWNESEWNESEW",
+        "k": 8
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "NSSSNSSSNSSSNSSSNSSSNSSSNSSSNSSSNSSSNSSSNSSS",
+        "k": 15
+      },
+      "expected_output": 44
+    },
+    {
+      "parameters": {
+        "s": "WSSSWWSSSWWSSSWWSSSWW",
+        "k": 15
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "EESSWWNN",
+        "k": 4
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "SSSSNNNNSSSSNNNN",
+        "k": 8
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "NSSSNSEWEEW",
+        "k": 5
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "NSEWSEWNSEW",
+        "k": 2
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "SSSSNNNNWWWWEEEEWWWWWWWWWSSSSSSSSSNNNNNNNNNNEEEEEEEEENNNNNNNNNNWWWWWWWWWEEEEEEEEESSSSSSSSSSSSSNNNNNNNNNNNNWWWWWWWW",
+        "k": 25
+      },
+      "expected_output": 70
+    },
+    {
+      "parameters": {
+        "s": "NNNNNNNNNNNSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+        "k": 15
+      },
+      "expected_output": 38
+    },
+    {
+      "parameters": {
+        "s": "NWNWNWNWNWNSNSNSNS",
+        "k": 7
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "SSSSSSSSSSSSSSSS",
+        "k": 10
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "EWNESWNWNENEWNEWWNWNWNE",
+        "k": 15
+      },
+      "expected_output": 23
+    },
+    {
+      "parameters": {
+        "s": "N",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "WENWENWENWENWENWENWENWENWENWENWENWENWENWENWE",
+        "k": 30
+      },
+      "expected_output": 44
+    },
+    {
+      "parameters": {
+        "s": "NEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE",
+        "k": 10
+      },
+      "expected_output": 43
+    },
+    {
+      "parameters": {
+        "s": "EWEWNEWNENW",
+        "k": 7
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "SNENWNWNWNENEWSNWNWNWNWNWNWNWNW",
+        "k": 12
+      },
+      "expected_output": 31
+    },
+    {
+      "parameters": {
+        "s": "NNNNWWWWSSSSEEEEWWWWSSSSEEEEWWWWSSSSEEEE",
+        "k": 25
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "s": "NNSWWNWWSWNESEWEEWSSSNNNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWESWNWES",
+        "k": 40
+      },
+      "expected_output": 103
+    },
+    {
+      "parameters": {
+        "s": "NENENENENENENENENENENENENENENENENENENENENENENENENENENENENENE",
+        "k": 20
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "s": "NNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEEWWNNSSEE",
+        "k": 30
+      },
+      "expected_output": 62
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total units on a truck with limited box capacity, given box types with counts and units per box.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Sort box types by units per box descending. Iterate through sorted types, taking as many boxes as possible until truck is full. Accumulate units.
+4. Edge cases: Truck capacity is zero, no boxes available, all boxes fit on truck.
+5. Time and space complexity: Time: O(N log N) for sorting, O(N) for iteration. Space: O(1) or O(N) depending on sort implementation.
+</thinking>

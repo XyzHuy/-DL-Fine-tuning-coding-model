@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to merge a row of stone piles into one single pile. A move merges k consecutive piles, and its cost is the sum of stones in those piles.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: A 3D DP state, dp[i][j][m], stores the minimum cost to merge piles i through j into m piles. We build the solution for larger subarrays from smaller ones. To compute dp[i][j][m], we split the range [i, j] at all valid midpoints and combine the costs of merging [i, mid] into 1 pile and [mid+1, j] into m-1 piles. Merging to 1 pile is a special final step, costing the sum of all stones in the range on top of the cost to first get to k piles.
+4. Edge cases: Each merge reduces the pile count by k-1. To go from n piles to 1 requires n-1 piles to be eliminated. Thus, if (n-1) is not divisible by (k-1), it is impossible.
+5. Time and space complexity: Time complexity is O(n^3) due to iterating through all start points, end points, and split points. Space complexity is O(n^2 * k) for the 3D DP table.
+</thinking>

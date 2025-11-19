@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of envelopes that can be nested inside each other, where one envelope can fit inside another if both its width and height are greater.
+2. Problem type / algorithm category: Dynamic Programming, Longest Increasing Subsequence (LIS), Sorting.
+3. Step-by-step approach: Sort the envelopes based on width (ascending) and height (descending if widths are equal). Extract the heights after sorting. Then, find the longest increasing subsequence of the heights using dynamic programming.
+4. Edge cases: Empty input list, duplicate envelopes, envelopes with the same width.
+5. Time and space complexity: Time complexity is O(NlogN) for sorting + O(N^2) for LIS, so O(N^2) in total. Space complexity is O(N) for storing heights and the dp array.
+</thinking>

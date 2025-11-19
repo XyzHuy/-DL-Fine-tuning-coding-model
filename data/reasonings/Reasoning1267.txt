@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count servers in a grid that can communicate with at least one other server in the same row or column.
+2. Problem type / algorithm category: Array traversal, Counting.
+3. Step-by-step approach: First, iterate through the grid to count the total number of servers in each row and each column. Then, iterate through the grid again, and for each server found, check if its row or its column has more than one server. If either condition is true, increment the communication count.
+4. Edge cases: A grid with no servers, a grid where all servers are isolated, and a grid where all servers are in the same row or column.
+5. Time and space complexity: Time complexity is O(m*n) due to two traversals of the grid. Space complexity is O(m+n) for storing row and column counts.
+</thinking>

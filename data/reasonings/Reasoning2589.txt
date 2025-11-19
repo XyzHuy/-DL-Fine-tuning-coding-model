@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total ON time for a computer to complete all tasks, each with a start, end, and required duration. Tasks can run non-continuously within their allowed window.
+2. Problem type / algorithm category: Greedy algorithm, interval scheduling.
+3. Step-by-step approach: Sort tasks by their end times. Iterate through sorted tasks. For each task, check how many required duration seconds are already covered by previously scheduled ON times. If more duration is needed, greedily schedule the remaining duration by picking the latest available time slots within the task's interval and not already in use.
+4. Edge cases: Tasks with overlapping intervals, tasks that entirely fit within another task's interval, tasks requiring the full duration of their interval.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(M) where M is the maximum end time, for storing the ON times in a set. In the worst case, M can be 2000, so O(max_end_time).
+</thinking>

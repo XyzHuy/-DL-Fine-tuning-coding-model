@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total number of people knowing a secret by day n, considering daily sharing and forgetting, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, Simulation.
+3. Step-by-step approach: Use dynamic programming where dp[i] represents people knowing the secret on day i. Initialize dp[1] to 1. For each day i from 2 to n, calculate new secret spreaders by summing dp[j] for days j where people who learned on day j are still sharing (i.e., j is between max(1, i - forget + 1) and i - delay + 1). The final answer is the sum of dp values for days where people haven't forgotten yet (i.e., from n - forget + 1 to n).
+4. Edge cases: The constraints on n, delay, and forget are handled by the loops and sums. The modulo operation handles large numbers.
+5. Time and space complexity: Time complexity is O(n * forget) due to nested loops. Space complexity is O(n) for the DP array.
+</thinking>

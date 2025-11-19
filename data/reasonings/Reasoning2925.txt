@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an undirected tree with node values, find the maximum score by clearing node values to zero, such that the sum of values on any root-to-leaf path remains non-zero.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming (on tree), Depth-First Search.
+3. Step-by-step approach: Use DFS to traverse the tree. For each node, calculate two values: the maximum sum of values that can be cleared in its subtree (preserving root-to-leaf sums), and the minimum sum of values that must be kept to maintain healthy paths. The decision at each node depends on its children's results.
+4. Edge cases: The root node cannot be cleared if it's the only node on a path to a leaf that would otherwise sum to zero. Leaves must be handled to ensure their path sums are non-zero.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, due to DFS visiting each node and edge once. Space complexity is O(N) for the recursion stack and adjacency list.
+</thinking>

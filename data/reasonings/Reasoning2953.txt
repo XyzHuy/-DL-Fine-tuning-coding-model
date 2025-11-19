@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings where each character appears exactly k times and adjacent characters' alphabet difference is at most 2.
+2. Problem type / algorithm category: String manipulation, sliding window, brute-force with optimization.
+3. Step-by-step approach: Iterate through possible numbers of unique characters (1-26). For each, calculate the required substring length (unique_chars * k). Then, iterate through all substrings of that length. For each substring, check if all adjacent characters satisfy the difference condition and if each character within it appears exactly k times.
+4. Edge cases: Short words, k=1, words with limited character variety, k equal to word length.
+5. Time and space complexity: Time complexity is roughly O(N * 26 * (N/1 * k)), where N is word length, due to nested loops and checks. Space complexity is O(1) for frequency maps.
+</thinking>

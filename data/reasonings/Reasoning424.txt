@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring containing the same character after performing at most k replacements of characters in the given string.
+2. Problem type / algorithm category: Sliding window
+3. Step-by-step approach: Use a sliding window to iterate through the string. Maintain a dictionary to store the frequency of each character in the current window. Keep track of the most frequent character in the window. If the number of replacements needed (window size - most frequent character count) exceeds k, shrink the window from the left. Update the maximum length of the valid window.
+4. Edge cases: Empty string, k = 0, k >= string length
+5. Time and space complexity: Time: O(n), Space: O(26) = O(1) since the string contains only uppercase English letters.
+</thinking>

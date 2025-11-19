@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest integer strictly greater than n that is numerically balanced, meaning each digit d appears exactly d times.
+2. Problem type / algorithm category: Brute force search with a helper function for validation.
+3. Step-by-step approach: Increment n by 1. Check if the current number is numerically balanced. If it is, return it. Otherwise, repeat the increment and check process.
+4. Edge cases: The input n can be 0. The constraints on n (up to 10^6) suggest the search won't go indefinitely large.
+5. Time and space complexity: Time complexity is not easily determinable due to the unpredictable gap to the next balanced number, but it's likely bounded by the maximum possible gap within the constraints. Space complexity is O(1).
+</thinking>

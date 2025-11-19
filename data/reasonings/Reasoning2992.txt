@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count permutations of [1, 2, ..., n] where each element a[i] is coprime to its 1-indexed position i.
+2. Problem type / algorithm category: Backtracking / Permutations.
+3. Step-by-step approach: Use recursion (backtracking) to build permutations. At each position 'pos', try placing an unused number 'num' such that gcd(num, pos) == 1. If all positions are filled, increment the count.
+4. Edge cases: n=1 is the smallest valid input, requiring no special handling as the loop and conditions naturally work.
+5. Time and space complexity: Time complexity is roughly O(n!) because we explore all permutations, with a gcd check at each step. Space complexity is O(n) for the recursion depth and the 'used' array.
+</thinking>

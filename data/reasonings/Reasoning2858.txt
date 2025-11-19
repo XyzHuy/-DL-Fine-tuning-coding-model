@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a tree structure represented by directed edges, find for each node the minimum edge reversals needed to make it reachable from all other nodes.
+2. Problem type / algorithm category: Graph traversal, Depth First Search (DFS), dynamic programming on trees.
+3. Step-by-step approach: Build an adjacency list representing the graph, storing edge direction. Perform a DFS from an arbitrary root (e.g., node 0) to calculate the cost for node 0. Then, perform another DFS to propagate the costs to other nodes by adjusting the cost based on the parent-child relationship and edge direction.
+4. Edge cases: The problem guarantees a tree structure, so no cycles or disconnected components initially. The base case for DFS is a leaf node.
+5. Time and space complexity: Time complexity is O(N) for building the graph and performing two DFS traversals, where N is the number of nodes. Space complexity is O(N) for storing the graph and the recursion stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest wiggle subsequence in a given integer array. A wiggle sequence alternates between increasing and decreasing differences.
+2. Problem type / algorithm category: Dynamic Programming / Greedy approach. This particular solution implements a greedy approach.
+3. Step-by-step approach: Iterate through the array, tracking the direction (up or down) of the previous wiggle. If the current difference changes the direction, increment the wiggle length. The initial direction can be either up or down, and we only update the length when there's a change in direction.
+4. Edge cases: Handle arrays with fewer than two elements, as they are trivially wiggle sequences. Cases where consecutive elements are equal should be skipped, as they do not contribute to the wiggle sequence.
+5. Time and space complexity: The time complexity is O(n) because we iterate through the array once. The space complexity is O(1) because we only use a few constant extra variables.
+</thinking>

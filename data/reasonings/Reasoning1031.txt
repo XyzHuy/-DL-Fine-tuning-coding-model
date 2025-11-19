@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of two non-overlapping subarrays of given lengths within an array.
+2. Problem type / algorithm category: Dynamic Programming / Sliding Window / Prefix Sum
+3. Step-by-step approach: Use prefix sums to efficiently compute subarray sums. Iterate through possible start positions for one subarray and maintain the maximum sum seen so far for that subarray. Calculate the sum of the second non-overlapping subarray and update the overall maximum sum. Consider both possible orderings of the two subarrays (firstLen before secondLen and vice versa).
+4. Edge cases: None specified in problem description. Array length must be at least the sum of the two lengths.
+5. Time and space complexity: Time: O(n) due to the single pass through the array. Space: O(n) for the prefix sum array.
+</thinking>

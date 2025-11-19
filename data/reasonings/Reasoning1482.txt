@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of days to make 'm' bouquets, where each bouquet requires 'k' adjacent blooming flowers.
+2. Problem type / algorithm category: Binary Search on Answer.
+3. Step-by-step approach: First, check if the total flowers needed (m * k) exceed the available flowers; if so, return -1. Define a helper function to check if 'm' bouquets can be made by a given 'day'. This function iterates through bloom days, counting consecutive bloomed flowers and forming bouquets. Perform binary search on the range of possible bloom days (from the minimum to maximum bloom day) to find the smallest day satisfying the condition.
+4. Edge cases: The total number of flowers required (m * k) is greater than the number of flowers available.
+5. Time and space complexity: Time complexity is O(N log D), where N is the number of flowers and D is the range of bloom days. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Arrange red and blue balls into a triangle where row `i` has `i` balls, colors alternate between adjacent rows, and all balls in a row are the same color, to maximize triangle height.
+2. Problem type / algorithm category: Greedy approach, simulation.
+3. Step-by-step approach: Define a helper function that simulates building a triangle starting with a specific color. This function iteratively adds rows, decreasing the ball count for the current color, and switching the target color for the next row, until not enough balls of the required color are available. The main function calls this helper twice, once starting with red and once with blue, and returns the maximum height found.
+4. Edge cases: Cases where only one color is available, or very few balls of one color, preventing certain row constructions.
+5. Time and space complexity: O(H) time where H is the maximum possible height, and O(1) space.
+</thinking>

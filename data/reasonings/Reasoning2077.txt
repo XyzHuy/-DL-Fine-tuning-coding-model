@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to find the number of distinct cycles of length 3 (triangles) in a given maze represented by rooms and corridors.
+2. Problem type / algorithm category: Graph traversal, specifically counting cycles or cliques of size 3 in an undirected graph.
+3. Step-by-step approach: Build an adjacency list representation of the graph. Iterate through each room `u`, then through its neighbors `v` where `v > u`. For each such pair `(u, v)`, iterate through neighbors `w` of `v` where `w > v`. If `w` is also a neighbor of `u`, a cycle of length 3 (`u` -> `v` -> `w` -> `u`) has been found. Increment a counter for each such cycle.
+4. Edge cases: Mazes with no corridors, mazes with no cycles, mazes with less than 3 rooms, disconnected components in the maze. The condition `v > u` and `w > v` handles duplicate cycle counting.
+5. Time and space complexity: Space is O(N + E) for the adjacency list, where N is the number of rooms and E is the number of corridors. Time complexity is O(N * D^2) in the worst case where D is the maximum degree of a node, but can be up to O(N^3) or O(E * avg_degree), or more precisely O(sum of degree[u] * degree[v]) over all edges (u,v), bounded by O(E*N) or O(N^3). A more precise analysis for triangle counting in general graphs is O(E^(3/2)) or O(N^3). For sparse graphs this is efficient. Given constraints, it's closer to O(N*E) or O(N^3).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of index triplets (i, j, k) in an array such that the bitwise AND of nums[i], nums[j], and nums[k] is 0.
+2. Problem type / algorithm category: Bit manipulation, counting.
+3. Step-by-step approach: Precompute the counts of all possible pairwise AND combinations. Then, iterate through the array and for each element, check the precomputed AND combinations and increment the counter if the AND of the element and precomputed AND is zero.
+4. Edge cases: Empty array, array with zeros, array with large numbers (up to 2^16).
+5. Time and space complexity: Time complexity is O(N^2 + N*M), where N is the length of the input array and M is the number of unique pairwise AND results. Space complexity is O(M) where M is the number of unique pairwise AND results.
+</thinking>

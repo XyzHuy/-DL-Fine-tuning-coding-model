@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all numbers in a matrix that are the minimum in their row and the maximum in their column.
+2. Problem type / algorithm category: Matrix Traversal, Set Operations.
+3. Step-by-step approach: First, find the minimum value for each row. Second, find the maximum value for each column. Third, find the intersection of these two sets of values to identify the lucky numbers.
+4. Edge cases: The problem constraints indicate a non-empty matrix with distinct elements, so no empty matrix or duplicate elements to handle. The matrix dimensions are within limits.
+5. Time and space complexity: Time complexity is O(m*n) for iterating through the matrix to find row minimums and column maximums. Space complexity is O(m + n) to store row minimums and column maximums.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of any peak element in an array where a peak is strictly greater than its adjacent elements, assuming elements outside the array are negative infinity.
+2. Problem type / algorithm category: Binary search.
+3. Step-by-step approach: Use binary search to narrow down the search range. If the middle element is greater than the next, search the left half; otherwise, search the right half. The loop continues until left and right pointers converge, indicating a peak.
+4. Edge cases: Single element array, multiple peak elements, peak at the beginning or end of the array.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it uses constant extra space.
+</thinking>

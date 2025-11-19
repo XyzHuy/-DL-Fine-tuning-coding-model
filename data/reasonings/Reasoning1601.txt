@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest subset of employee transfer requests such that for every building, the number of employees entering equals the number of employees leaving.
+2. Problem type / algorithm category: Subset enumeration, backtracking, bit manipulation. This problem can be solved by checking all possible subsets of requests.
+3. Step-by-step approach: Iterate through all possible subsets of requests. For each subset, check if it's achievable by calculating the net change of employees for each building. If the net change is zero for all buildings, update the maximum achievable requests. Start checking from the largest possible subsets downwards to find the maximum size first.
+4. Edge cases: No requests, all requests are to the same building, requests where n=1.
+5. Time and space complexity: Time complexity is O(2^R * R * N) where R is the number of requests and N is the number of buildings, due to iterating through all 2^R subsets and checking each subset in O(R*N) time. Space complexity is O(N) for storing the balance array.
+</thinking>

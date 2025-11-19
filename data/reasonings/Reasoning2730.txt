@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring in a given digit string that contains at most one adjacent pair of identical digits.
+2. Problem type / algorithm category: Sliding Window, String Manipulation.
+3. Step-by-step approach: Use a sliding window approach. Maintain a `start` pointer and an `end` pointer. Iterate `end` through the string. If a new adjacent pair is found, update `start` to be one position after the previous pair's starting index. Keep track of the maximum window size (`end - start + 1`).
+4. Edge cases: Strings with length 0 or 1, strings with all identical digits, strings with no adjacent identical digits.
+5. Time and space complexity: Time O(n) because each character is visited at most twice (by `end` and potentially by `start` updates). Space O(1) as only a few variables are used.
+</thinking>

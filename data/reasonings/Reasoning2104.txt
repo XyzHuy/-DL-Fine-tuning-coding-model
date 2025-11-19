@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of ranges (max - min) for all contiguous subarrays in a given integer array.
+2. Problem type / algorithm category: Brute Force / Iterative.
+3. Step-by-step approach: Iterate through all possible start points of a subarray. For each start point, iterate through all possible end points, maintaining the minimum and maximum element encountered within the current subarray. Add the difference between the current maximum and minimum to the total sum.
+4. Edge cases: An array with a single element, where the range is always 0. Large integer values for elements might require careful handling of data types, though Python handles this implicitly.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops iterating through all subarrays. Space complexity is O(1) as only a few variables are used for storage.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k highest-ranked reachable items within a given price range in a grid, starting from a specified cell. Ranking is based on distance, price, row, and column.
+2. Problem type / algorithm category: Breadth-First Search (BFS) for shortest path, followed by sorting and selection.
+3. Step-by-step approach: Perform a BFS starting from the given 'start' cell to find the shortest distance to all reachable cells. During BFS, check if a cell's price is within the 'pricing' range and store it along with its distance, price, row, and column. After exploring all reachable cells, sort the collected items based on the ranking criteria (distance, price, row, column). Finally, return the coordinates of the top k items from the sorted list.
+4. Edge cases: No items within the price range are reachable. Fewer than k items are reachable within the price range. The grid contains walls (0s) blocking paths. The starting cell itself might have an item within the price range.
+5. Time and space complexity: Time complexity is O(m*n log(m*n)) due to BFS (O(m*n)) and sorting (O(m*n log(m*n))), where m and n are the dimensions of the grid. Space complexity is O(m*n) for the visited set and the queue in BFS.
+</thinking>

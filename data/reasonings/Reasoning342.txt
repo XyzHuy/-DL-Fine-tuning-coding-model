@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given integer n is a power of four.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Check if n is positive, a power of two, and if it's a power of four using a bitmask.
+4. Edge cases: Negative numbers, zero, one, and large powers of two that are not powers of four.
+5. Time and space complexity: O(1) time and O(1) space.
+</thinking>

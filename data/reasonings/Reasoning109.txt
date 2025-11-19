@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a sorted linked list to a height-balanced BST.
+2. Problem type / algorithm category: Linked list, Binary Search Tree, Divide and Conquer.
+3. Step-by-step approach: Convert the sorted linked list to a sorted array. Recursively build a BST from the sorted array by finding the middle element, creating a node, and recursively building the left and right subtrees.
+4. Edge cases: Empty list should return None.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the linked list. Space complexity is O(N) due to the array created from the linked list and potentially the recursion stack.
+</thinking>

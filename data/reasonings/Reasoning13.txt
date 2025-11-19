@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a given Roman numeral string to its integer representation.
+2. Problem type / algorithm category: String manipulation, Hash Map.
+3. Step-by-step approach: Iterate through the Roman numeral string. If a numeral's value is less than the next numeral's value, subtract it from the total; otherwise, add it to the total. Use a dictionary to store the values of Roman numerals.
+4. Edge cases: Empty string (although the problem states the string length is between 1 and 15), single-character Roman numerals, subtractive cases like IV and IX.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the Roman numeral string. Space complexity is O(1) because the hash map storing Roman numeral values has a fixed size.
+</thinking>

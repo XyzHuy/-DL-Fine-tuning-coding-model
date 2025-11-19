@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all indices in an array `nums` that are within a distance `k` of any index where the value equals `key`.
+2. Problem type / algorithm category: Array traversal, brute force with optimization using a set.
+3. Step-by-step approach: Iterate through the `nums` array. If an element equals `key`, add all indices within `k` distance (inclusive) of that element's index to a set. Finally, convert the set to a sorted list.
+4. Edge cases: Array with single element, `k` equals `nums.length`, `key` appearing at the beginning or end of the array.
+5. Time and space complexity: Time O(N*K) due to nested loops in worst case, Space O(N) for the set.
+</thinking>

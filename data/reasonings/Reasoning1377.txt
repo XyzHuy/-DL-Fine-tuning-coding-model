@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: A frog starts at vertex 1 of an undirected tree and jumps to an unvisited adjacent vertex with uniform probability at each second. The goal is to find the probability of the frog being at a specific target vertex after exactly t seconds.
+2. Problem type / algorithm category: Graph traversal (BFS), Probability calculation.
+3. Step-by-step approach: Build an adjacency list for the tree. Use BFS starting from vertex 1 with (current_vertex, current_probability, current_time). At each step, explore unvisited neighbors, divide the current probability by the number of unvisited neighbors for each jump, and increment time. If the current vertex is the target, return its probability if time matches t or if it's a terminal node for jumping. If time runs out before reaching the target, or if the target is reached at the wrong time, the probability is 0.
+4. Edge cases: The tree has only one node (n=1), where the frog is always at the target with probability 1. The target vertex is the starting vertex (1) and t=0. The target vertex is a leaf node and the frog reaches it exactly at time t. The frog gets stuck at a non-target vertex before time t.
+5. Time and space complexity: Time complexity is O(N) because BFS visits each node and edge at most once. Space complexity is O(N) for storing the graph, visited set, and BFS queue.
+</thinking>

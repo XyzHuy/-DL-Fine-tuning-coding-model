@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subarray where elements alternate with a difference of +1 and -1, starting with +1.
+2. Problem type / algorithm category: Array traversal, Sliding Window (implicit).
+3. Step-by-step approach: Iterate through the array, checking for the start of an alternating sequence (nums[i+1] == nums[i] + 1). If found, extend the sequence by checking nums[j] == nums[j-2] and update the maximum length.
+4. Edge cases: No alternating subarrays found (return -1), array length less than 2 (problem constraints handle this).
+5. Time and space complexity: O(N) time complexity, O(1) space complexity.
+</thinking>

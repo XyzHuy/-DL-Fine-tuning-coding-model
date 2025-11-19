@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Combine two lists of items, where each item has a unique value and a weight. For items with the same value across the lists, sum their weights. The final output should be a list of [value, total_weight] pairs, sorted by value.
+2. Problem type / algorithm category: Hash Map / Dictionary, Sorting.
+3. Step-by-step approach: Use a hash map (dictionary) to store the sum of weights for each distinct item value encountered. Iterate through the first list and add each item's weight to its corresponding value in the map. Then, iterate through the second list and similarly update the weights in the map. Finally, convert the map entries into a list of [value, weight] pairs and sort this list based on the values in ascending order.
+4. Edge cases: One of the input lists might be empty. An item value might appear in only one of the lists. The constraints specify unique values within each input list, but not across both.
+5. Time and space complexity: Time complexity is O(N log N + M log M) if we sort first, or O(N + M + K log K) if we use a hash map where K is the number of unique values. Space complexity is O(K) to store the hash map.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of a word in wordsContainer that has the longest common suffix with a word in wordsQuery, prioritizing shorter words and earlier indices in case of ties.
+2. Problem type / algorithm category: String matching, Suffix Trie.
+3. Step-by-step approach: Build a suffix trie from wordsContainer, storing the index and length of the shortest word ending at each node. For each query word, traverse the trie from its end to find the deepest matching node, returning the stored index.
+4. Edge cases: Empty strings (not allowed by constraints), no common suffix (defaults to empty suffix, root node), all words sharing the same suffix.
+5. Time and space complexity: Time O(S + Q), where S is total length of wordsContainer and Q is total length of wordsQuery. Space O(S).
+</thinking>

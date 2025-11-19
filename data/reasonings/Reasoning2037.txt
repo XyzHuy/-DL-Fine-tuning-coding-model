@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize total moves to assign each student to a unique seat by moving students to seat positions.
+2. Problem type / algorithm category: Greedy algorithm, Sorting.
+3. Step-by-step approach: Sort both the seats and students arrays. Iterate through the sorted arrays and sum the absolute differences between corresponding seat and student positions.
+4. Edge cases: Empty input arrays (though constraints prevent this), all students and seats at the same positions, large number of students/seats.
+5. Time and space complexity: O(N log N) time for sorting, O(1) or O(N) space depending on sort implementation.
+</thinking>

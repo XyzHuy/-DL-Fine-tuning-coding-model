@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify the central node in an undirected star graph given its edges.
+2. Problem type / algorithm category: Graph Traversal/Properties.
+3. Step-by-step approach: Since a star graph has a single center connected to all other n-1 nodes, the center node must be present in every edge. Therefore, the common node between any two distinct edges is the center. We can pick the first two edges and find their common node.
+4. Edge cases: The problem constraints guarantee at least 3 nodes and edges.length == n-1, implying a valid star graph structure.
+5. Time and space complexity: Time O(1) as we only inspect the first two edges, and Space O(1) as we use a constant amount of extra space.
+</thinking>

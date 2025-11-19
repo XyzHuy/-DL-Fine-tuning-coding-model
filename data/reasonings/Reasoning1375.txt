@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We are given a sequence of bit flips in a binary string, and need to count how many times the string becomes "prefix-aligned" after each flip, meaning the first 'i' bits are 1s and the rest are 0s after the 'i'-th flip.
+2. Problem type / algorithm category: Simulation and Greedy Approach.
+3. Step-by-step approach: Iterate through the flips. Keep track of the maximum index flipped so far. If the maximum flipped index equals the current step number, it means all bits up to the current step are 1s, and the string is prefix-aligned. Increment the count.
+4. Edge cases: The input array `flips` is a permutation of [1, n], so `n` is always at least 1. The constraints ensure valid input.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the flips array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

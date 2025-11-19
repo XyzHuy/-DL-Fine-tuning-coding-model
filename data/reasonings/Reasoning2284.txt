@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify the sender with the highest total word count across all messages. In case of a tie in word count, select the sender whose name is lexicographically largest.
+2. Problem type / algorithm category: Hash Map / Dictionary, String Manipulation, Sorting.
+3. Step-by-step approach: Iterate through messages and senders simultaneously. For each message, split it into words to get the word count and add this to the sender's total word count stored in a hash map. After processing all messages, find the maximum word count. Then, collect all senders who achieved this maximum count. Finally, return the sender from this collected list whose name is lexicographically largest.
+4. Edge cases: All senders have the same word count, requiring lexicographical comparison. A single sender might send multiple messages.
+5. Time and space complexity: Time complexity is O(N*L) where N is the number of messages and L is the average message length due to splitting strings, and O(S*logS) if sorting is implicitly done for finding max sender, where S is number of unique senders. Space complexity is O(S) to store word counts per sender.
+</thinking>

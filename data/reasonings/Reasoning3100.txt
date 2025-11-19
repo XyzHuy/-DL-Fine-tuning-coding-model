@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum number of water bottles one can drink given an initial count and an exchange rate for empty bottles to new full bottles, where the exchange rate increases after each successful exchange.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Start with the initial number of bottles drunk. In a loop, check if enough empty bottles are available for exchange. If yes, perform the exchange, add the new full bottles to the total drunk count, update empty bottles, and increment the exchange rate. Repeat until no more exchanges are possible.
+4. Edge cases: The loop condition `empty_bottles >= numExchange` correctly handles cases where no more exchanges can be made. Initial `numBottles` and `numExchange` are within constraints.
+5. Time and space complexity: Time complexity is O(numBottles / (initial numExchange)), as the exchange rate increases, reducing the number of iterations. Space complexity is O(1).
+</thinking>

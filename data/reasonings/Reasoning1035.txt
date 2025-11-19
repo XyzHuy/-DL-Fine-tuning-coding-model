@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of non-intersecting lines that can be drawn between two integer arrays where lines connect equal values.
+2. Problem type / algorithm category: Dynamic Programming, Longest Common Subsequence (LCS) variant.
+3. Step-by-step approach: Create a DP table where dp[i][j] stores the maximum number of uncrossed lines considering nums1[:i] and nums2[:j]. If nums1[i-1] == nums2[j-1], then dp[i][j] = dp[i-1][j-1] + 1. Otherwise, dp[i][j] = max(dp[i-1][j], dp[i][j-1]). The final result is dp[m][n].
+4. Edge cases: Empty arrays, arrays with no common elements, arrays with all same elements.
+5. Time and space complexity: Time complexity is O(m*n) due to the nested loops. Space complexity is O(m*n) for the DP table.
+</thinking>

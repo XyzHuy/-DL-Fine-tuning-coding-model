@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary array, find the minimum number of swaps to group all 1's together.
+2. Problem type / algorithm category: Sliding window, array manipulation.
+3. Step-by-step approach: Count total ones, use sliding window of size equal to the total ones to find the maximum number of ones in any window, and subtract it from total ones to get the minimum swaps.
+4. Edge cases: Empty array or array with zero or one 1's, array with all 1's or all 0's.
+5. Time and space complexity: Time: O(n), Space: O(1).
+</thinking>

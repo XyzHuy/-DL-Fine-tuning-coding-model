@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Pair distinct unmarked indices i and j if 2 * nums[i] <= nums[j], mark both, and maximize total marked indices.
+2. Problem type / algorithm category: Greedy algorithm, Two Pointers.
+3. Step-by-step approach: Sort the array. Use two pointers, one starting at the beginning (left) and another at the middle (right). Greedily try to pair the smallest available element with the smallest available element from the second half that satisfies the condition. If a pair is found, increment count and move both pointers. If not, move the right pointer to find a larger potential partner.
+4. Edge cases: Array with length less than 2, all elements too large to form pairs, all elements small enough to form pairs.
+5. Time and space complexity: O(N log N) time for sorting, O(1) space if sorting in-place, or O(N) if a copy is made.
+</thinking>

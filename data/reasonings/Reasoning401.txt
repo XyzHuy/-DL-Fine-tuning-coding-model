@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all possible times on a binary watch given the number of LEDs that are turned on.
+2. Problem type / algorithm category: Backtracking / Bit Manipulation
+3. Step-by-step approach: Iterate through all possible hours (0-11) and minutes (0-59). Count the number of set bits in the binary representation of the hour and minute. If the sum of set bits equals the given turnedOn value, format the time as "hour:minute" (with leading zero for minutes if needed) and add it to the result.
+4. Edge cases: The hour must be between 0 and 11 inclusive. The minute must be between 0 and 59 inclusive. If turnedOn is greater than the maximum possible set bits (3 for hour + 5 for minute = 8), return an empty list.
+5. Time and space complexity: Time complexity is O(1) since the loops iterate a fixed number of times (12 * 60 = 720). Space complexity is O(1) as the result list's size is limited by the possible combinations.
+</thinking>

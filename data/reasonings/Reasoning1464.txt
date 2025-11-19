@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum product of (nums[i]-1)*(nums[j]-1) by selecting two distinct indices i and j from the given array.
+2. Problem type / algorithm category: Array manipulation, finding maximum values.
+3. Step-by-step approach: Iterate through the array to find the two largest numbers. Then, subtract 1 from each of these two largest numbers and multiply the results.
+4. Edge cases: The input array will always have at least two elements. The values in the array are positive.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables to store the maximum values.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a given binary search tree (BST) into a balanced BST while preserving the same node values.
+2. Problem type / algorithm category: Tree Traversal (In-order), Recursive Construction.
+3. Step-by-step approach: First, perform an in-order traversal of the input BST to obtain a sorted list of its node values. Then, recursively build a balanced BST from this sorted list by repeatedly selecting the middle element as the root and constructing its left and right subtrees from the remaining halves of the list.
+4. Edge cases: An empty input tree (represented by a null root) should result in an empty tree. A tree with a single node is already balanced.
+5. Time and space complexity: Time complexity is O(N) for traversal and O(N) for building, totaling O(N). Space complexity is O(N) for storing sorted values and O(log N) to O(N) for recursion stack depth, totaling O(N).
+</thinking>

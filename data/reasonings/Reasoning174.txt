@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The knight needs to rescue the princess, navigating a dungeon with health penalties and bonuses. The goal is to find the minimum initial health for the knight to survive.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Start from the destination and calculate the minimum health required for each cell to reach the princess. Iterate backward from the bottom-right to the top-left cell, using the minimum of the health required from the cell below and the cell to the right.
+4. Edge cases: Empty dungeon, dungeon with only one cell, very large negative or positive values in the dungeon. The health can never be zero or negative.
+5. Time and space complexity: Time complexity is O(m*n) and space complexity is O(m*n), where m and n are the dimensions of the dungeon.
+</thinking>

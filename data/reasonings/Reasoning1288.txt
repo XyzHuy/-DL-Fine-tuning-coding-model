@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove intervals that are fully contained within another interval and count the remaining unique intervals.
+2. Problem type / algorithm category: Greedy algorithm, Interval management.
+3. Step-by-step approach: Sort intervals by start time ascending, and end time descending. Iterate through sorted intervals, keeping track of the furthest endpoint seen so far. If a new interval extends beyond this furthest endpoint, increment the count and update the furthest endpoint.
+4. Edge cases: Empty input array (though constraints say length >= 1), intervals with identical start and end points (not possible by constraints li < ri), single interval in the input.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(1) if sorting is done in-place or O(N) if a new list is created for sorting.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of common days Alice and Bob are in Rome, given their arrival and departure dates.
+2. Problem type / algorithm category: Date manipulation and interval overlap calculation.
+3. Step-by-step approach: Convert all given MM-DD dates into their respective day-of-year ordinal numbers. Find the latest arrival date and the earliest departure date between Alice and Bob. The overlap starts at the latest arrival and ends at the earliest departure. If the start of the overlap is after the end, there's no overlap. Otherwise, the count is the end day minus the start day plus one.
+4. Edge cases: No overlap between Alice's and Bob's stays (e.g., one leaves before the other arrives).
+5. Time and space complexity: O(1) time complexity because the number of months is constant and date conversions are fixed operations. O(1) space complexity as only a few variables are used regardless of input size.
+</thinking>

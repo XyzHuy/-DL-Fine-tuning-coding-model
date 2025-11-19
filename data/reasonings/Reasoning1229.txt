@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the earliest common time interval of a given duration from two lists of available time slots.
+2. Problem type / algorithm category: Two pointers, interval intersection.
+3. Step-by-step approach: Sort both slot lists by start time. Use two pointers to iterate through both lists simultaneously. For each pair of slots, find their intersection. If the intersection's length is sufficient for the duration, return the earliest possible slot. Otherwise, advance the pointer of the slot that ends earlier.
+4. Edge cases: No common slots available, empty input slot lists, duration larger than any common slot.
+5. Time and space complexity: O(N log N + M log M) time for sorting, O(1) space (excluding input storage).
+</thinking>

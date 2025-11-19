@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count distinct partitions of an array into two ordered groups, where the sum of elements in each group is at least k. Return the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming (Subset Sum variation), Combinatorics.
+3. Step-by-step approach: Calculate the total sum of the array. If total_sum < 2*k, return 0. Use DP to find the number of subsets with sums less than k. The total number of partitions is 2^n. Subtract twice the count of invalid partitions (subsets with sum < k) from 2^n.
+4. Edge cases: The total sum of the array is less than 2*k, meaning no partition can satisfy the condition. The array can be empty or contain single elements.
+5. Time and space complexity: Time complexity is O(n*k) due to the DP table, and space complexity is O(n*k) for the DP table, which can be optimized to O(k) if needed. The provided solution uses O(n*k) space implicitly with lru_cache.
+</thinking>

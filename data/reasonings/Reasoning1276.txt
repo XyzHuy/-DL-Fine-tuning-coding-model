@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the number of jumbo and small burgers to make to use exactly all given tomato and cheese slices, given their respective ingredient requirements.
+2. Problem type / algorithm category: Algebraic equation solving / system of linear equations.
+3. Step-by-step approach: Set up two linear equations based on the ingredients for jumbo and small burgers, solve for the number of jumbo burgers (x) and small burgers (y).
+4. Edge cases: The calculated number of jumbo or small burgers must be non-negative integers. If not, return an empty list.
+5. Time and space complexity: O(1) time complexity as it involves constant time arithmetic operations, and O(1) space complexity as it uses a fixed amount of memory.
+</thinking>

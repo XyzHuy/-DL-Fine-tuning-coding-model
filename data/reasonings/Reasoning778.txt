@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum time 't' such that we can swim from the top-left cell (0, 0) to the bottom-right cell (n-1, n-1) in an n x n grid, where we can only swim between adjacent cells if their elevation is at most 't'.
+2. Problem type / algorithm category: Union-Find / DSU, Binary Search (can also be solved using priority queue - Dijkstra).
+3. Step-by-step approach: The solution uses Union-Find to connect cells that can be reached at a given time 't'.  It iterates through time from 0 to n*n-1, at each time it unions the current cell with its neighbors if their elevation is less than or equal to the current time. The algorithm terminates when the top-left and bottom-right cells are connected. The hi array stores the row and column indices based on height (grid value).
+4. Edge cases: The input grid is valid (n >= 1, all grid values are unique).
+5. Time and space complexity: Time complexity is O(N^2 * α(N^2)), where N is the length of the grid and α is the inverse Ackermann function (effectively constant). Space complexity is O(N^2) due to the parent array p and the hi array.
+</thinking>

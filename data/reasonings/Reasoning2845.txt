@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays where the count of elements divisible by `modulo` equals `k` (modulo `modulo`) is itself divisible by `modulo` and equal to `k`.
+2. Problem type / algorithm category: Prefix sums and hash map (frequency counting).
+3. Step-by-step approach: Iterate through the array, maintaining a running count of elements satisfying `num % modulo == k`. Use a hash map to store frequencies of these running counts modulo `modulo`. For each element, calculate the 'target' previous running count needed for the current subarray to be interesting and add its frequency from the hash map to the total count. Update the hash map with the current running count.
+4. Edge cases: The initial prefix sum (before processing any elements) should be 0 with a count of 1 to correctly handle subarrays starting from the beginning. Empty array is not possible due to constraints.
+5. Time and space complexity: Time complexity is O(N) where N is the length of nums, as we iterate through the array once. Space complexity is O(min(N, modulo)) due to the hash map storing prefix counts modulo `modulo`.
+</thinking>

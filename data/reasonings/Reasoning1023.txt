@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We need to determine for each query string if it can be formed by starting with a pattern string and inserting any number of lowercase letters anywhere, while preserving the original order of pattern characters.
+2. Problem type / algorithm category: String Matching, Regular Expressions.
+3. Step-by-step approach: The solution transforms the matching problem into a regular expression task. It constructs a regex pattern that represents the rule: characters from the original pattern must appear in sequence, separated by any number of lowercase letters. For a pattern like "FB", the regex becomes `^[a-z]*F[a-z]*B[a-z]*$`, which is then applied to each query string to check for a full match. The anchors `^` and `$` are crucial to ensure the entire query string adheres to the pattern and contains no extra uppercase letters.
+4. Edge cases: The regex approach elegantly handles most edge cases. If a query contains an uppercase letter not in the pattern, the match will fail because the regex only allows lowercase letters (`[a-z]*`) between the required uppercase characters. If the pattern characters are not in the correct order, the match also fails.
+5. Time and space complexity: The time complexity is O(P + N * L), where P is the pattern length, N is the number of queries, and L is the max query length. This comes from building the regex once and then matching each of N queries. The space complexity is O(P + N) to store the regex pattern and the final boolean answer array.
+</thinking>

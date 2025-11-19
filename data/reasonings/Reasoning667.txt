@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct an array of n distinct integers from 1 to n such that the array of absolute differences between adjacent elements has exactly k distinct values.
+2. Problem type / algorithm category: Array construction, greedy algorithm.
+3. Step-by-step approach: Use two pointers, 'lo' and 'hi', initialized to 1 and n, respectively. Alternate appending 'lo' and 'hi' to the result list k-1 times. After that, append the remaining numbers in either increasing or decreasing order, depending on whether 'lo' or 'hi' was added last, to achieve just k distinct differences.
+4. Edge cases: The constraint 1 <= k < n ensures that k is always less than n and greater than or equal to 1, so there are no specific edge cases to consider.
+5. Time and space complexity: The time complexity is O(n) because we iterate through the array once. The space complexity is O(n) to store the result array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct a binary tree from its preorder and postorder traversals.
+2. Problem type / algorithm category: Tree construction, recursion.
+3. Step-by-step approach: The root is the first element of preorder. Find the left child (second element of preorder) in postorder. Divide the preorder and postorder arrays into left and right subtrees. Recursively construct the left and right subtrees.
+4. Edge cases: Empty preorder/postorder arrays, single-node tree.
+5. Time and space complexity: O(N), where N is the number of nodes in the tree, due to the recursive calls and list slicing. The space complexity is O(N) in the worst case (skewed tree) due to the call stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given array of integers represents a valid preorder traversal sequence of a binary search tree.
+2. Problem type / algorithm category: Stack / Binary Search Tree / Preorder Traversal.
+3. Step-by-step approach: Use a stack to maintain a decreasing sequence of nodes encountered so far. Use a lower bound to track the smallest value a node can have in the right subtree. If a value is smaller than the lower bound, it's invalid.
+4. Edge cases: Empty input array, single element array, array with duplicate values (though the problem states unique values are guaranteed).
+5. Time and space complexity: Time: O(N), where N is the length of the preorder array. Space: O(N) in the worst case, when the stack contains all elements.
+</thinking>

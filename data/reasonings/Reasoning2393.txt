@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of contiguous subarrays within a given array of positive integers that are in strictly increasing order.
+2. Problem type / algorithm category: Sliding Window / Two Pointers.
+3. Step-by-step approach: Iterate through the array maintaining a 'start' pointer. When an element is no longer strictly greater than the previous one, calculate the count of strictly increasing subarrays within the segment from 'start' to the current 'end-1' using the arithmetic series formula for combinations, and then reset 'start' to the current index. Finally, calculate the count for the last increasing segment.
+4. Edge cases: An empty input array should return 0. An array with a single element has one subarray (itself). An array that is entirely strictly increasing. An array with duplicate consecutive elements.
+5. Time and space complexity: Time complexity is O(N) because each element is visited at most twice (by 'start' and 'end' pointers). Space complexity is O(1) as only a few variables are used.
+</thinking>

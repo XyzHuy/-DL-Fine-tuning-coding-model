@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange spaces in a string to distribute them equally between words, maximizing this equal distribution, and placing any remaining spaces at the end.
+2. Problem type / algorithm category: String manipulation, distribution, arithmetic.
+3. Step-by-step approach: Count total spaces and words. Calculate spaces per gap and remaining spaces. Join words with calculated spaces and append remaining spaces.
+4. Edge cases: A single word in the text, where all spaces are appended at the end.
+5. Time and space complexity: Time complexity is O(N) due to counting spaces and splitting/joining the string. Space complexity is O(N) for storing the words and the resulting string.
+</thinking>

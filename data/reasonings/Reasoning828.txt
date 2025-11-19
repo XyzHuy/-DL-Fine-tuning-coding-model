@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, calculate the sum of unique characters in all its substrings.
+2. Problem type / algorithm category: String manipulation, dynamic programming (though not explicitly used, the pre-calculation of `prev` and `next` can be seen as a form of it).
+3. Step-by-step approach: The solution optimizes by pre-calculating `prev` and `next` arrays for each character in the string. `prev[i]` stores the index of the previous occurrence of `s[i]`, and `next[i]` stores the index of the next occurrence. The number of substrings where `s[i]` appears exactly once is then calculated as `(i - prev[i]) * (next[i] - i)`, which is added to the result.
+4. Edge cases: Empty string (handled implicitly), single-character string, repeated characters.
+5. Time and space complexity: Time complexity is O(n) due to the iterations to fill `prev`, `next`, and calculate the result. Space complexity is O(n) to store `prev` and `next` arrays.
+</thinking>

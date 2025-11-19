@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Create a sorted array from given instructions by inserting elements one by one, incurring a cost equal to the minimum of elements already present that are strictly less than or strictly greater than the current element.
+2. Problem type / algorithm category: Data Structures, Fenwick Tree (Binary Indexed Tree), Prefix Sums, Modulo Arithmetic.
+3. Step-by-step approach: Iterate through each number in instructions. For each number, use a Fenwick Tree to efficiently query the count of numbers already inserted that are strictly less than the current number and strictly greater than the current number. Calculate the insertion cost as the minimum of these two counts. Add this cost to the total cost (modulo 10^9 + 7). Update the Fenwick Tree to include the current number.
+4. Edge cases: Empty instructions array (though constraints prevent this), duplicate numbers in instructions, maximum value of numbers.
+5. Time and space complexity: Time complexity is O(N log M) where N is the length of instructions and M is the maximum value in instructions, due to N queries and N updates on the Fenwick Tree. Space complexity is O(M) for the Fenwick Tree.
+</thinking>

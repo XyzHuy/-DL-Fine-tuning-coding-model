@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if the number of global and local inversions in a permutation are equal.
+2. Problem type / algorithm category: Array, permutation, inversions.
+3. Step-by-step approach: Iterate through the array, checking if any element nums[i] is smaller than any element nums[j] where j < i - 1. If such an element exists, it implies a global inversion that is not a local inversion.
+4. Edge cases: Arrays of length 1 and 2 should return true.
+5. Time and space complexity: Time complexity is O(n), and space complexity is O(1).
+</thinking>

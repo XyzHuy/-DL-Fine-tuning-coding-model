@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find k scores from an array such that the difference between the maximum and minimum of these k scores is minimized.
+2. Problem type / algorithm category: Sorting, Sliding Window.
+3. Step-by-step approach: Sort the array. Iterate through the sorted array using a sliding window of size k. For each window, calculate the difference between the last and first element. Keep track of the minimum difference found.
+4. Edge cases: When k is 1, the difference is always 0. The array length is at least k.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(1) or O(N) depending on the sorting implementation.
+</thinking>

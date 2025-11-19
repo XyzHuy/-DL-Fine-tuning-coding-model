@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find an integer x between 1 and n (inclusive) such that the sum of numbers from 1 to x equals the sum of numbers from x to n.
+2. Problem type / algorithm category: Arithmetic series, Iteration.
+3. Step-by-step approach: Calculate the total sum from 1 to n. Iterate from 1 to n, maintaining a running left sum and progressively reducing the total sum to represent the right sum. Check if the left sum equals the remaining total sum at each step.
+4. Edge cases: n = 1 is a valid pivot. Cases where no such integer exists return -1.
+5. Time and space complexity: O(n) time complexity due to a single loop up to n. O(1) space complexity as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest positive integer whose digits multiply to a given number.
+2. Problem type / algorithm category: Number theory, factorization, greedy algorithm.
+3. Step-by-step approach: Factorize the number by dividing it from 9 down to 2. Store the factors. If the remaining number is not 1, then return 0. Sort the factors in ascending order and combine them into a single integer. Check if the result exceeds the 32-bit integer limit.
+4. Edge cases: Input is less than 10, no possible factorization, result overflows.
+5. Time and space complexity: Time: O(log num), Space: O(log num).
+</thinking>

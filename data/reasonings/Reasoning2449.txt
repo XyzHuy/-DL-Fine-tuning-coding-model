@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform array nums into target array using operations that add 2 to one element and subtract 2 from another, minimizing operations. Arrays are similar if element frequencies match.
+2. Problem type / algorithm category: Greedy, Sorting, Simulation.
+3. Step-by-step approach: Sort both arrays. The total difference between corresponding elements, when summed and divided by 4, gives the minimum operations because each operation changes the sum of differences by 4.
+4. Edge cases: Already similar arrays (zero operations), arrays with identical elements.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(1) or O(N) depending on sort implementation.
+</thinking>

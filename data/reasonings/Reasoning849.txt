@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum distance Alex can be from the closest person when choosing a seat in a row of seats.
+2. Problem type / algorithm category: Array traversal, Greedy
+3. Step-by-step approach: Find the distance to the first person, the max distance between two people, and the distance to the last person, then return the max of the three.
+4. Edge cases: Empty seats at the beginning or end of the row affect maximum distance.
+5. Time and space complexity: Time: O(n), Space: O(1)
+</thinking>

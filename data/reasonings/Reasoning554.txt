@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of bricks crossed by a vertical line drawn through a brick wall, where crossing only the edge of a brick doesn't count.
+2. Problem type / algorithm category: Hash table / Counting.
+3. Step-by-step approach: Iterate through each row of the wall, calculate the cumulative width at each brick edge (excluding the last brick in each row), and store the frequency of each edge position in a hash map. The maximum frequency represents the maximum number of rows that share an edge at the same position. Subtract this maximum frequency from the total number of rows to get the minimum number of crossed bricks.
+4. Edge cases: Empty wall, wall with only one brick in each row, all edges aligned, no edges aligned.
+5. Time and space complexity: Time complexity is O(N), where N is the total number of bricks in the wall. Space complexity is O(M), where M is the number of unique edge positions.
+</thinking>

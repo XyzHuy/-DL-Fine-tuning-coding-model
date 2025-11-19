@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum profit achievable by buying and selling a stock with a one-day cooldown period after each sell.
+2. Problem type / algorithm category: Dynamic programming.
+3. Step-by-step approach: Use three states: `hold` (holding stock), `sold` (just sold stock), and `rest` (cooldown). Iterate through prices, updating each state based on possible transitions from the previous day's states.
+4. Edge cases: Empty prices array.
+5. Time and space complexity: Time complexity is O(n), and space complexity is O(1), where n is the number of days.
+</thinking>

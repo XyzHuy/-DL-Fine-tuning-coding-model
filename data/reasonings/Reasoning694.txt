@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the number of distinct islands, where an island is a group of 1s connected 4-directionally. Two islands are considered the same if one can be translated to equal the other.
+2. Problem type / algorithm category: Graph traversal / Depth-First Search (DFS).
+3. Step-by-step approach: Iterate through the grid. If a cell is 1, perform DFS to find the shape of the island. During DFS, record the path taken to traverse the island, which represents its shape. Store the shapes as tuples in a set to automatically handle duplicates. Return the size of the set.
+4. Edge cases: Empty grid, grid with no islands, single island, multiple identical islands, islands touching each other.
+5. Time and space complexity: Time complexity is O(m*n), where m and n are the dimensions of the grid, due to visiting each cell at most once. Space complexity is O(m*n) in the worst case where the grid is all ones, and the path length in the DFS becomes m*n. Also, the set of shapes can grow to O(m*n).
+</thinking>

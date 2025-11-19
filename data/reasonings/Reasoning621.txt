@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of tasks and a cooling period n, find the minimum time to execute all tasks.
+2. Problem type / algorithm category: Greedy algorithm / Scheduling.
+3. Step-by-step approach: Count task frequencies, identify the most frequent task, calculate idle slots based on n and the frequency, and ensure the total intervals are not less than the number of tasks.
+4. Edge cases: When the cooling period is 0, the result is simply the number of tasks. When the number of tasks is large, the idle slots might become negative, so we take the maximum of the calculated time and the total number of tasks.
+5. Time and space complexity: Time complexity is O(N) due to counting task frequencies. Space complexity is O(1) as the number of tasks is limited to uppercase English letters, giving a constant size hash map.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total count of vowels across all possible substrings of a given word.
+2. Problem type / algorithm category: String manipulation, combinatorial counting.
+3. Step-by-step approach: Iterate through the word. If a character is a vowel, add its contribution to the total count. The contribution of a vowel at index i in a string of length n is (i+1) * (n-i), representing the number of substrings that include this vowel.
+4. Edge cases: The input word can be long, requiring a 64-bit integer for the total count. The word may contain no vowels, resulting in a total count of 0.
+5. Time and space complexity: O(n) time complexity because we iterate through the string once. O(1) space complexity as we only use a few variables.
+</thinking>

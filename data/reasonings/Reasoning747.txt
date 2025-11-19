@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if the largest number in an array is at least twice as large as every other number. If so, return its index; otherwise, return -1.
+2. Problem type / algorithm category: Array traversal, finding maximum, comparison.
+3. Step-by-step approach: Find the largest element and its index. Iterate through the array, and for each element that is not the largest, check if the largest element is at least twice as big. If not, return -1. If the loop completes, return the index of the largest element.
+4. Edge cases: Array with only two elements; array with all elements being zero (the problem statement says largest is unique so all zeros isn't a possibility); array where the largest element is at the beginning.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array twice. Space complexity is O(1) because we only use a few variables to store the largest number and its index.
+</thinking>

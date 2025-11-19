@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count continuous subarrays containing exactly k odd numbers.
+2. Problem type / algorithm category: Prefix sums and hash map (Counter).
+3. Step-by-step approach: Iterate through the array, maintaining a running count of odd numbers encountered so far (prefix odd count). For each element, if the current prefix odd count is 't', we are looking for previous prefix odd counts 't-k'. The number of subarrays ending at the current position with exactly k odd numbers is the count of previous prefix odd counts equal to 't-k'. A hash map stores the frequencies of these prefix odd counts. Initialize with {0: 1} to handle subarrays starting from the beginning.
+4. Edge cases: Array with no odd numbers, k being larger than the total number of odd numbers, k=1. The approach naturally handles these.
+5. Time and space complexity: Time complexity is O(N) because we iterate through the array once. Space complexity is O(N) in the worst case for the hash map, if all prefix sums are unique.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count integer triples (a, b, c) where a^2 + b^2 = c^2 and 1 <= a, b, c <= n.
+2. Problem type / algorithm category: Brute Force with optimization.
+3. Step-by-step approach: Iterate through all possible values of 'a' from 1 to n. For each 'a', iterate through possible values of 'b' from 'a' to n. Calculate c_squared = a^2 + b^2. Find the integer square root 'c'. If 'c' is less than or equal to n and c^2 equals c_squared, increment the count by 2 (to account for both (a, b, c) and (b, a, c)).
+4. Edge cases: n = 1 (no triples possible).
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(1) as only a few variables are used.
+</thinking>

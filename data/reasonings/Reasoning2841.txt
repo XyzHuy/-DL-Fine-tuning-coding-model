@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a contiguous subarray of a given length k that contains at least m distinct elements.
+2. Problem type / algorithm category: Sliding Window, Hashing (Frequency Map).
+3. Step-by-step approach: Use a sliding window of size k. Maintain the sum and the count of distinct elements within the window using a frequency map. Expand the window by adding a new element and shrink it by removing the oldest element. Update the maximum sum found if the current window meets the distinct element criteria.
+4. Edge cases: If no subarray of length k has at least m distinct elements, return 0. Array length less than k. All elements are the same.
+5. Time and space complexity: Time O(N), Space O(K) where N is the length of nums.
+</thinking>

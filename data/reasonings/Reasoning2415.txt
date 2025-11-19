@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the values of nodes at odd levels in a perfect binary tree.
+2. Problem type / algorithm category: Tree traversal, Level order traversal (BFS).
+3. Step-by-step approach: Perform a level order traversal. For each odd level encountered, collect all nodes in that level, then swap their values from the ends inwards.
+4. Edge cases: An empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited once. Space complexity is O(W) where W is the maximum width of the tree, for the queue, which is O(N) in the worst case for a complete binary tree.
+</thinking>

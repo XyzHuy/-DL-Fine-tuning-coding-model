@@ -1,0 +1,1867 @@
+{
+  "function_name": "generateString",
+  "test_cases": [
+    {
+      "parameters": {
+        "str1": "FF",
+        "str2": "z"
+      },
+      "expected_output": "aa"
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "c"
+      },
+      "expected_output": "ac"
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "yz"
+      },
+      "expected_output": "ayz"
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "aaa"
+      },
+      "expected_output": "aaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "ab"
+      },
+      "expected_output": "aba"
+    },
+    {
+      "parameters": {
+        "str1": "FFF",
+        "str2": "a"
+      },
+      "expected_output": "bbb"
+    },
+    {
+      "parameters": {
+        "str1": "TFTF",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "a"
+      },
+      "expected_output": "aa"
+    },
+    {
+      "parameters": {
+        "str1": "F",
+        "str2": "fgh"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFF",
+        "str2": "xyz"
+      },
+      "expected_output": "aaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFT",
+        "str2": "ij"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "F",
+        "str2": "a"
+      },
+      "expected_output": "b"
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "a"
+      },
+      "expected_output": "ba"
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "a"
+      },
+      "expected_output": "ab"
+    },
+    {
+      "parameters": {
+        "str1": "FTF",
+        "str2": "aaa"
+      },
+      "expected_output": "baaab"
+    },
+    {
+      "parameters": {
+        "str1": "FFT",
+        "str2": "aaa"
+      },
+      "expected_output": "abaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FF",
+        "str2": "aa"
+      },
+      "expected_output": "aba"
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "xy"
+      },
+      "expected_output": "xya"
+    },
+    {
+      "parameters": {
+        "str1": "T",
+        "str2": "z"
+      },
+      "expected_output": "z"
+    },
+    {
+      "parameters": {
+        "str1": "T",
+        "str2": "a"
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "aaa"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "ab"
+      },
+      "expected_output": "aab"
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "de"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFF",
+        "str2": "aaa"
+      },
+      "expected_output": "aabaa"
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "b"
+      },
+      "expected_output": "ba"
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "ab"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "T",
+        "str2": "de"
+      },
+      "expected_output": "de"
+    },
+    {
+      "parameters": {
+        "str1": "TFTF",
+        "str2": "ab"
+      },
+      "expected_output": "ababa"
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "aa"
+      },
+      "expected_output": "aab"
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "aa"
+      },
+      "expected_output": "baa"
+    },
+    {
+      "parameters": {
+        "str1": "TFF",
+        "str2": "aaa"
+      },
+      "expected_output": "aaaba"
+    },
+    {
+      "parameters": {
+        "str1": "FF",
+        "str2": "xy"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "str1": "F",
+        "str2": "d"
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "aa"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "str1": "F",
+        "str2": "abc"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "mn"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "T",
+        "str2": "abc"
+      },
+      "expected_output": "abc"
+    },
+    {
+      "parameters": {
+        "str1": "TFFFTTFT",
+        "str2": "dddd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "mnopqrstu"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "F",
+        "str2": "z"
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTFTFF",
+        "str2": "generated"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFT",
+        "str2": "uv"
+      },
+      "expected_output": "uvuvuvuv"
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "qrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "xyz"
+      },
+      "expected_output": "aaaaaaaaaxyz"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTTTT",
+        "str2": "qrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFTFTFTFTFTFTFT",
+        "str2": "abcdef"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "ijklmnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "stuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTFTFTFT",
+        "str2": "test"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFF",
+        "str2": "abc"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "yz"
+      },
+      "expected_output": "yzyzyzyzyzyz"
+    },
+    {
+      "parameters": {
+        "str1": "FTTTFFTTTTFFFF",
+        "str2": "sample"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFT",
+        "str2": "mnopq"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTF",
+        "str2": "test"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFTFT",
+        "str2": "zzz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTFFF",
+        "str2": "efgh"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTFTFFTFF",
+        "str2": "ghijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTTFT",
+        "str2": "xyzw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFTTT",
+        "str2": "ijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+        "str2": "uvw"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTTFFTF",
+        "str2": "eeee"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "wxyz"
+      },
+      "expected_output": "aaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFT",
+        "str2": "xy"
+      },
+      "expected_output": "xyxyxyxyxy"
+    },
+    {
+      "parameters": {
+        "str1": "TFFFT",
+        "str2": "abc"
+      },
+      "expected_output": "abcaabc"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "abcdefghi"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTFFT",
+        "str2": "hhhh"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTFTFTF",
+        "str2": "complex"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTTFTF",
+        "str2": "cccc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "abcdefg"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTTTT",
+        "str2": "z"
+      },
+      "expected_output": "zzzzzzzzzzzz"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFF",
+        "str2": "a"
+      },
+      "expected_output": "bbbbbbbbbbbb"
+    },
+    {
+      "parameters": {
+        "str1": "TTTFTTTT",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "abcdef"
+      },
+      "expected_output": "aaaaaaaaaabcdef"
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "aaa"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTT",
+        "str2": "ghijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTT",
+        "str2": "opqrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFF",
+        "str2": "qrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFT",
+        "str2": "mnopqr"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FF",
+        "str2": "wx"
+      },
+      "expected_output": "aaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFTTFFFTTTFTFT",
+        "str2": "qrstuvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTFTTTFTTT",
+        "str2": "mnopqrstuvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "ghijkl"
+      },
+      "expected_output": "aaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTT",
+        "str2": "world"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFT",
+        "str2": "uvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFTFFTFTFFTFT",
+        "str2": "example"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "abc"
+      },
+      "expected_output": "aaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFFT",
+        "str2": "lmnopqrstu"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "def"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFF",
+        "str2": "abcd"
+      },
+      "expected_output": "aaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFT",
+        "str2": "abcdef"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFT",
+        "str2": "vwxyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFTFTFTT",
+        "str2": "world"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFFFFFFF",
+        "str2": "wxyz"
+      },
+      "expected_output": "wxyzaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "abcdef"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTTFTFFT",
+        "str2": "gggg"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFTFT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFTFTFFT",
+        "str2": "lexicographically"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTT",
+        "str2": "stuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFT",
+        "str2": "abc"
+      },
+      "expected_output": "aaabcabc"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "yz"
+      },
+      "expected_output": "yza"
+    },
+    {
+      "parameters": {
+        "str1": "TTFT",
+        "str2": "jklmno"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "mnopqrstuvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTF",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTT",
+        "str2": "a"
+      },
+      "expected_output": "aaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "mnopqr"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "k"
+      },
+      "expected_output": "kkk"
+    },
+    {
+      "parameters": {
+        "str1": "TFFTFF",
+        "str2": "bcb"
+      },
+      "expected_output": "bcbbcbaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTFTFTFT",
+        "str2": "a"
+      },
+      "expected_output": "abababababababababa"
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "uvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "stuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTTTTTTTTTT",
+        "str2": "solution"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFFT",
+        "str2": "example"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "efghij"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFT",
+        "str2": "wxyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTT",
+        "str2": "abcdefghi"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTF",
+        "str2": "abcd"
+      },
+      "expected_output": "aabcda"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTF",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTF",
+        "str2": "uvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTF",
+        "str2": "zz"
+      },
+      "expected_output": "azza"
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "efghijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTT",
+        "str2": "yzab"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTF",
+        "str2": "mnopqr"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "def"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTT",
+        "str2": "aaa"
+      },
+      "expected_output": "aaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FTFT",
+        "str2": "pqrstu"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "mnopqrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "abcd"
+      },
+      "expected_output": "aaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTTFFTT",
+        "str2": "abcdefgh"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFTFTFTFTFTFTFTFTFTFTFTFT",
+        "str2": "defghijklm"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "abcdefgh"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TF",
+        "str2": "zzz"
+      },
+      "expected_output": "zzza"
+    },
+    {
+      "parameters": {
+        "str1": "FTTFFTFF",
+        "str2": "uvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFF",
+        "str2": "aaaa"
+      },
+      "expected_output": "aaabaaabaaab"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "pqrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTFTFTFT",
+        "str2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTTTFFFFTTFF",
+        "str2": "abcdefghi"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "efghijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFFFFTT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FT",
+        "str2": "mnopqr"
+      },
+      "expected_output": "amnopqr"
+    },
+    {
+      "parameters": {
+        "str1": "FF",
+        "str2": "abcdef"
+      },
+      "expected_output": "aaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "yz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTT",
+        "str2": "aaa"
+      },
+      "expected_output": "aaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFTFT",
+        "str2": "yz"
+      },
+      "expected_output": "ayzyzyzyzyzyz"
+    },
+    {
+      "parameters": {
+        "str1": "TFFT",
+        "str2": "rstuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTFTFF",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFF",
+        "str2": "abcde"
+      },
+      "expected_output": "aaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFT",
+        "str2": "xyz"
+      },
+      "expected_output": "aaxyzxyz"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "abcde"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "abcdefgh"
+      },
+      "expected_output": "aaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTTFFFF",
+        "str2": "aaaa"
+      },
+      "expected_output": "aaaaaabaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "a"
+      },
+      "expected_output": "babababa"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTTTTTTTT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFFT",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "qrstuv"
+      },
+      "expected_output": "aaaaaaaaaqrstuv"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTT",
+        "str2": "aaaa"
+      },
+      "expected_output": "aaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFF",
+        "str2": "hijklmnop"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFFTFTFTFFT",
+        "str2": "xyzxyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTT",
+        "str2": "mnopqrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFTTFFT",
+        "str2": "qrstu"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTT",
+        "str2": "ab"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "abcdefgh"
+      },
+      "expected_output": "aaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTFT",
+        "str2": "abcdefg"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "cdefgh"
+      },
+      "expected_output": "aaaaaaaaacdefgh"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFF",
+        "str2": "zyxwvut"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFFTFTF",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTF",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFT",
+        "str2": "abcdefghijk"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFT",
+        "str2": "abcde"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTT",
+        "str2": "yz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFTTF",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTTFFT",
+        "str2": "solution"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTTFF",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTF",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTFTFT",
+        "str2": "yz"
+      },
+      "expected_output": "aayzyzyzyz"
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFFFFFFFFFF",
+        "str2": "mnopqrstuvwxyz"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTTTF",
+        "str2": "abcde"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFT",
+        "str2": "zz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "abcdabcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTTFFTFTT",
+        "str2": "possible"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFFTF",
+        "str2": "mnop"
+      },
+      "expected_output": "mnopmnopa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFTTFT",
+        "str2": "output"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "qrstuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTF",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFF",
+        "str2": "abcde"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFTT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFF",
+        "str2": "yz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "zz"
+      },
+      "expected_output": "aaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "xyz"
+      },
+      "expected_output": "aaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFT",
+        "str2": "yz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "zzz"
+      },
+      "expected_output": "aaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFF",
+        "str2": "zzz"
+      },
+      "expected_output": "aaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTFTFT",
+        "str2": "complex"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "qrstuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "z"
+      },
+      "expected_output": "aaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FTF",
+        "str2": "mnop"
+      },
+      "expected_output": "amnopa"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFT",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFT",
+        "str2": "efghijklmno"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "pqrstuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFTFFT",
+        "str2": "string"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "ab"
+      },
+      "expected_output": "aabababab"
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTF",
+        "str2": "bcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFT",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTF",
+        "str2": "uvw"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTT",
+        "str2": "efghijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFTFTFT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFFFT",
+        "str2": "def"
+      },
+      "expected_output": "defaadef"
+    },
+    {
+      "parameters": {
+        "str1": "TFTTFF",
+        "str2": "hello"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFF",
+        "str2": "challenge"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFFTFF",
+        "str2": "ffff"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "zzz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTT",
+        "str2": "abcdefghijk"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFTFT",
+        "str2": "abcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFT",
+        "str2": "wxyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFFTTT",
+        "str2": "smaller"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFTFTFTFT",
+        "str2": "mnopqr"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTTTT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTFTF",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "ab"
+      },
+      "expected_output": "aababababab"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFT",
+        "str2": "ijklmn"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTTFFTT",
+        "str2": "stuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFTFTFT",
+        "str2": "jklmnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFFTTT",
+        "str2": "input"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+        "str2": "zzzzzzzzzz"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "mnopqr"
+      },
+      "expected_output": "aaaaaaaaamnopqr"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFT",
+        "str2": "bbbb"
+      },
+      "expected_output": "aaaaaabbbb"
+    },
+    {
+      "parameters": {
+        "str1": "FTTFFTFTF",
+        "str2": "hello"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFTFT",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "lmnop"
+      },
+      "expected_output": "aaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFFFFFFFF",
+        "str2": "zzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFT",
+        "str2": "stuv"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTFFTFFT",
+        "str2": "qrst"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFF",
+        "str2": "mnopqr"
+      },
+      "expected_output": "aaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFFFFTT",
+        "str2": "uvwxy"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "vwxyz"
+      },
+      "expected_output": "aaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TT",
+        "str2": "abcdef"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTTF",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFF",
+        "str2": "abcdefghijklmno"
+      },
+      "expected_output": "aaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "str1": "TTFFTT",
+        "str2": "mnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTT",
+        "str2": "abc"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TTTTTTTFT",
+        "str2": "stuvwx"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFFT",
+        "str2": "uvwxyz"
+      },
+      "expected_output": "aaaaaaaaauvwxyz"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFTFTFTFTFT",
+        "str2": "abcdabcd"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFTTF",
+        "str2": "xyz"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFFFFF",
+        "str2": "a"
+      },
+      "expected_output": "bbbbbbbbb"
+    },
+    {
+      "parameters": {
+        "str1": "TFTFT",
+        "str2": "ijkl"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "TFFTFT",
+        "str2": "bca"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FTFTFT",
+        "str2": "ijklmnop"
+      },
+      "expected_output": ""
+    },
+    {
+      "parameters": {
+        "str1": "FFFFFT",
+        "str2": "zyxwvut"
+      },
+      "expected_output": "aaaaazyxwvut"
+    }
+  ]
+}

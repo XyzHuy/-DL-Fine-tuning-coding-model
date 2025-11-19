@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the best poker hand from five given cards based on rank and suit, prioritizing Flush, then Three of a Kind, then Pair, and finally High Card.
+2. Problem type / algorithm category: Rule-based evaluation, counting, set operations.
+3. Step-by-step approach: First, check if all suits are the same for a "Flush". If not, count the occurrences of each rank. Check if any rank appears 3 or more times for "Three of a Kind". If not, check if any rank appears exactly 2 times for a "Pair". If none of these conditions are met, the hand is "High Card".
+4. Edge cases: The problem constraints guarantee exactly 5 cards, valid ranks and suits, and no duplicate cards. The order of checking hand types is crucial for correctness (Flush > Three of a Kind > Pair > High Card).
+5. Time and space complexity: Time complexity is O(1) as the input size is fixed at 5. Space complexity is O(1) for storing counts and sets of fixed size.
+</thinking>

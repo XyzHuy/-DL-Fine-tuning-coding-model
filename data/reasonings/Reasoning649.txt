@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine which party (Radiant or Dire) will win in a senate voting game based on a given strategy.
+2. Problem type / algorithm category: Simulation, Queue
+3. Step-by-step approach: Use queues to simulate the voting process. Each senator bans a senator from the opposing party. The senator with the smaller index bans the other. Repeat until one party is eliminated.
+4. Edge cases: Empty senate string (invalid input based on constraints), senate with only one party.
+5. Time and space complexity: Time: O(N), where N is the number of senators. Space: O(N)
+</thinking>

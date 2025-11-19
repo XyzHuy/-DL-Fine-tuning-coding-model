@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify edges that lie on any shortest path from node 0 to node n-1 in a weighted undirected graph.
+2. Problem type / algorithm category: Shortest Path, Graph Traversal, Dijkstra's Algorithm.
+3. Step-by-step approach: 1. Build an adjacency list representation of the graph. 2. Run Dijkstra's algorithm twice: once from node 0 to find shortest distances to all nodes, and once from node n-1 to find shortest distances to all nodes. 3. For each edge (u, v) with weight w, check if dist_from_0[u] + w + dist_from_n_minus_1[v] equals the shortest distance from 0 to n-1, or if dist_from_0[v] + w + dist_from_n_minus_1[u] equals it. If either condition is true, the edge is part of a shortest path.
+4. Edge cases: The graph might not be connected. Nodes might be unreachable from node 0 or node n-1.
+5. Time and space complexity: Time complexity is O(E log V) due to Dijkstra's algorithm, where E is the number of edges and V is the number of vertices. Space complexity is O(V + E) for storing the graph and distances.
+</thinking>

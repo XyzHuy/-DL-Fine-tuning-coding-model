@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest subarray of ones after deleting exactly one element from a binary array.
+2. Problem type / algorithm category: Sliding window or two pointers, single pass iteration.
+3. Step-by-step approach: Iterate through the array, maintaining the length of the current consecutive ones (`current_length`) and the length of the preceding consecutive ones (`prev_length`) separated by a single zero. When a zero is encountered, update the maximum length by summing `prev_length` and `current_length`, then reset `current_length` and update `prev_length`. Handle the case where the array consists only of ones.
+4. Edge cases: The array contains only ones (return length - 1), the array contains no ones, the array has only one element.
+5. Time and space complexity: O(n) time complexity because we iterate through the array once. O(1) space complexity because we only use a few variables.
+</thinking>

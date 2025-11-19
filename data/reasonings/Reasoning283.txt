@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Move all zeros in an array to the end while maintaining the relative order of non-zero elements, modifying the array in-place.
+2. Problem type / algorithm category: Array manipulation, Two Pointers.
+3. Step-by-step approach: Use a pointer to track the position to place the next non-zero element. Iterate through the array, and if an element is non-zero, move it to the position indicated by the pointer and increment the pointer. After the first loop, fill the remaining positions with zeros.
+4. Edge cases: Empty array, array with all zeros, array with no zeros.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the array, as we iterate through the array twice. Space complexity is O(1) since the operation is in-place.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a binary string of length n that is not present in a given list of n unique binary strings, each of length n.
+2. Problem type / algorithm category: Constructive algorithm, Bit manipulation.
+3. Step-by-step approach: Count the number of set bits ('1's) in each string in nums. Use a bitmask to record which counts of '1's have been seen. Iterate through possible counts of '1's (0 to n) and construct a string with the first unobserved count of '1's.
+4. Edge cases: The problem guarantees unique strings and n unique strings of length n, implying a solution always exists. The smallest n is 1.
+5. Time and space complexity: O(n^2) time for iterating through strings and counting '1's, O(1) space for the bitmask.
+</thinking>

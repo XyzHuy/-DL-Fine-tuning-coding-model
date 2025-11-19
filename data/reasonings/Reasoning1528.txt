@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string s and an array of indices, shuffle the string s according to the mapping provided by indices.
+2. Problem type / algorithm category: Array manipulation, string building.
+3. Step-by-step approach: Create a result array of the same length as s. Iterate through s and indices simultaneously, placing the character s[i] at the position indices[i] in the result array. Finally, join the result array into a string.
+4. Edge cases: The constraints guarantee unique indices and that s.length == indices.length, so no complex edge cases like missing characters or index out of bounds are expected. An empty string input is also prevented by the constraints (1 <= n).
+5. Time and space complexity: O(n) time to iterate and build the new string, and O(n) space for the new string/list.
+</thinking>

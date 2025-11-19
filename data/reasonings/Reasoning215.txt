@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth largest element in an unsorted array.
+2. Problem type / algorithm category: Heap, Priority Queue.
+3. Step-by-step approach: Use a min-heap of size k. Iterate through the array. If an element is greater than the root of the min-heap, replace the root with the element and heapify. The root of the final min-heap is the kth largest element.
+4. Edge cases: k = 1 (largest element), k = nums.length (smallest element), duplicate elements in the array.
+5. Time and space complexity: Time: O(N log K) where N is the length of nums and K is k. Space: O(K) for the min-heap.
+</thinking>

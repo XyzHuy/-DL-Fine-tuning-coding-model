@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a square matrix, rotate it by 90 degrees clockwise in-place.
+2. Problem type / algorithm category: Matrix manipulation.
+3. Step-by-step approach: First transpose the matrix, then reverse each row.
+4. Edge cases: Empty matrix, 1x1 matrix, general nxn matrix.
+5. Time and space complexity: Time complexity is O(n^2), space complexity is O(1).
+</thinking>

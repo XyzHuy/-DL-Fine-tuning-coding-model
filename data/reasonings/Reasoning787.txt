@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the cheapest flight route from a source city to a destination city with at most k stops, given flight connections and their prices. Return -1 if no such route exists.
+2. Problem type / algorithm category: Graph Traversal, Priority Queue (Heap), Dijkstra's Algorithm (modified)
+3. Step-by-step approach: Build an adjacency list representing the flights. Use a min-heap to explore possible routes, prioritizing those with lower costs. Keep track of the number of stops taken. Stop exploring a route if the number of stops exceeds k. Return the cost if the destination is reached. If the heap is exhausted without finding a valid path, return -1.
+4. Edge cases: No valid route exists from source to destination within k stops. Source and destination are the same. Empty flight list.
+5. Time and space complexity: Time complexity is O(E + V * k * log(V * k)), where E is the number of flights and V is the number of cities. Space complexity is O(V + E), for the adjacency list and the heap.
+</thinking>

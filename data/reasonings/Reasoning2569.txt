@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to process three types of queries on two arrays, nums1 and nums2. Type 1 flips bits (0 to 1, 1 to 0) in a range of nums1. Type 2 updates nums2 by adding p times the corresponding element of nums1. Type 3 queries the total sum of nums2.
+2. Problem type / algorithm category: Range updates and point queries, and range updates with sum queries. The solution uses a difference array or prefix XOR logic for range flips and maintains a running sum.
+3. Step-by-step approach: Initialize the total sum of nums2 and the count of ones in nums1. Use a flip_state array to efficiently track range flips. For type 1, update flip_state at the start and end of the range. For type 2, iterate through nums1, determine the effective value of nums1[i] after flips, calculate the new count of ones, and update the total sum. For type 3, append the current total sum to the result.
+4. Edge cases: Empty queries, ranges spanning the entire array, single element ranges. The flip_state logic handles these correctly by using indices and boolean XOR.
+5. Time and space complexity: Time complexity is O(Q * N) in the worst case due to type 2 queries iterating through nums1. Space complexity is O(N) for the flip_state array.
+</thinking>

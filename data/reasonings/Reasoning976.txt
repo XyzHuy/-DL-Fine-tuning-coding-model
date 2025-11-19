@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers representing side lengths, find the largest perimeter of a triangle that can be formed with a non-zero area. If no such triangle exists, return 0.
+2. Problem type / algorithm category: Sorting and Greedy approach.
+3. Step-by-step approach: Sort the array in ascending order. Iterate from the end of the array, checking if the triangle inequality theorem (a + b > c) holds for the last three elements. If it does, return their sum. If no such triplet is found, return 0.
+4. Edge cases: Array with less than 3 elements (handled implicitly by the loop condition). Cases where no triangle can be formed (returns 0).
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1) as sorting is done in place.
+</thinking>

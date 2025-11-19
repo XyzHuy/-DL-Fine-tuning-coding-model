@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous subarrays where the minimum element is exactly minK and the maximum element is exactly maxK.
+2. Problem type / algorithm category: Sliding Window / Two Pointers.
+3. Step-by-step approach: Iterate through the array, maintaining the most recent positions of minK and maxK, and the boundary of invalid elements. For each position, calculate how many valid subarrays can end at that position.
+4. Edge cases: Numbers outside the [minK, maxK] range reset the valid subarray start. minK or maxK not present in the array.
+5. Time and space complexity: O(n) time, O(1) space.
+</thinking>

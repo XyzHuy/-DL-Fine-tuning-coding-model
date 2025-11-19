@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations (add, subtract, XOR with elements from nums) to transform 'start' to 'goal', staying within [0, 1000] for intermediate steps, unless the final 'goal' itself is outside this range.
+2. Problem type / algorithm category: Breadth-First Search (BFS) on a state space graph.
+3. Step-by-step approach: Use BFS. Start with 'start' at 0 operations. Explore reachable states by applying add, subtract, and XOR operations with each number in 'nums'. Keep track of visited states to avoid cycles and redundant computations. If 'goal' is reached, return the number of operations. If the queue is empty and 'goal' is not found, return -1.
+4. Edge cases: Goal is unreachable, goal is one of the initial operations from start, intermediate values going out of [0, 1000] are valid if they are not the final goal.
+5. Time and space complexity: Time complexity is O(N * R), where N is the length of nums and R is the range of possible values (1001). Space complexity is O(R) for storing visited states and the queue.
+</thinking>

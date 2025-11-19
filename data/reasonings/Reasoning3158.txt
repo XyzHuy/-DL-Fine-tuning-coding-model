@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the bitwise XOR of all numbers that appear exactly twice in a given array, returning 0 if no number appears twice.
+2. Problem type / algorithm category: Hashing / Frequency Counting.
+3. Step-by-step approach: Use a hash map (dictionary) to store the frequency of each number. Iterate through the array, updating counts. Then, iterate through the hash map; if a number's count is 2, XOR it with a running result.
+4. Edge cases: An empty input array (though constraints say length >= 1), or an array where all numbers appear only once.
+5. Time and space complexity: Time O(N) for iterating through the array and then the hash map. Space O(N) in the worst case to store counts for distinct numbers.
+</thinking>

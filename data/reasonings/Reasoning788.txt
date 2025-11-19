@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of integers between 1 and n (inclusive) that are "good". A number is good if, after rotating each digit 180 degrees, it becomes a valid and different number.
+2. Problem type / algorithm category: Number theory, brute force.
+3. Step-by-step approach: Iterate through each number from 1 to n. For each number, check if it's a good number by converting it to a string and examining each digit. A number is good if it contains at least one of the digits 2, 5, 6, or 9, and none of the digits 3, 4, or 7.
+4. Edge cases: n = 1, n = 2, n = 10. The upper bound is 10^4.
+5. Time and space complexity: Time complexity is O(n*log(n)) because we iterate from 1 to n and for each number we iterate through its digits. Space complexity is O(1), excluding the space used by the input string.
+</thinking>

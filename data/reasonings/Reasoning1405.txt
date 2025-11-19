@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the longest possible string using counts of 'a', 'b', and 'c' such that no three consecutive identical characters appear and the counts of 'a', 'b', and 'c' do not exceed their given limits.
+2. Problem type / algorithm category: Greedy algorithm with a max-heap.
+3. Step-by-step approach: Use a max-heap to store character counts. Repeatedly pick the character with the highest count, adding at most two instances to the result if it doesn't violate the "no three consecutive" rule. If the most frequent character cannot be added, try the second most frequent. Update counts and re-insert into the heap.
+4. Edge cases: Cases where one or more counts are zero, or when a character's count becomes depleted.
+5. Time and space complexity: Time complexity is O((a+b+c) * logK) where K is the number of distinct characters (3). Space complexity is O(K) for the heap.
+</thinking>

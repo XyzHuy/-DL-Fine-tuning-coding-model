@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count distinct ways to build a house of cards using exactly n cards, where each row has triangles and horizontal cards, and higher rows are supported by lower rows.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Use a recursive function with memoization. The function takes remaining cards and maximum base width for the next row. It iterates through possible numbers of triangles in the current row, calculates cards needed, and recursively calls itself for the remaining cards and new maximum base width.
+4. Edge cases: Cases where cards_left becomes negative (invalid state) or zero (valid house built). Also, ensuring cards_needed does not exceed cards_left.
+5. Time and space complexity: Time complexity is roughly O(N^2 * log N) or O(N^3) due to states (cards_left, max_base_width) and the loop within DP. Space complexity is O(N^2) for memoization.
+</thinking>

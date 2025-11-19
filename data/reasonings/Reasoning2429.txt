@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find an integer x with the same number of set bits as num2, such that x XOR num1 is minimized.
+2. Problem type / algorithm category: Bit manipulation, greedy approach.
+3. Step-by-step approach: Count set bits in num2. Iterate from most significant bit to least significant bit. Prioritize setting bits in x that match num1's bits to minimize XOR, until the target set bit count is met. If more set bits are needed, set remaining unset bits in x.
+4. Edge cases: num1 and num2 are positive integers up to 10^9. The test cases guarantee a unique solution.
+5. Time and space complexity: O(log M) time where M is the maximum value of num1/num2 (since we iterate through bits), O(1) space.
+</thinking>

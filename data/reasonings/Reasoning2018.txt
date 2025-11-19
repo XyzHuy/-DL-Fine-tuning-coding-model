@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given word can be placed horizontally or vertically in a crossword grid, respecting existing letters and avoiding blocking cells ('#') and adjacent non-word cells.
+2. Problem type / algorithm category: String matching and grid traversal.
+3. Step-by-step approach: Iterate through each row of the board to check for horizontal placements of the word and its reverse. Then, transpose the board and repeat the check for vertical placements. A helper function `can_place` checks if a word fits in a given linear sequence (row or column) by ensuring boundary conditions and character matches.
+4. Edge cases: The word can be placed forwards or backwards. The placement must be bounded by '#' characters or the grid edges. Existing letters on the board must match the word's letters.
+5. Time and space complexity: Time complexity is O(m*n*L) where m is rows, n is columns, and L is word length, due to iterating through the grid and word. Space complexity is O(m*n) for the transposed board if transposition is done explicitly, otherwise O(1) if done implicitly.
+</thinking>

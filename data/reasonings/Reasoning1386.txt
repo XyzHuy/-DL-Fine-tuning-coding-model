@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of 4-person groups that can be seated in a cinema with 'n' rows and 10 seats per row, given a list of already reserved seats. A group needs 4 adjacent seats in a single row.
+2. Problem type / algorithm category: Greedy approach, optimization, data structures (hash map/dictionary).
+3. Step-by-step approach: Group reserved seats by row using a dictionary. For each row with reservations, check available contiguous 4-seat blocks (left {2,3,4,5}, middle {4,5,6,7}, right {6,7,8,9}). Prioritize fitting two families if possible (left and right blocks available), otherwise fit one family. Add 2 families for each row with no reservations.
+4. Edge cases: Rows with no reserved seats, rows with only a few seats reserved that still allow for family groupings, and the constraint of 'n' being very large.
+5. Time and space complexity: Time complexity is O(R) where R is the number of reserved seats, as we iterate through them once to build the dictionary and then iterate through the unique rows. Space complexity is O(R) in the worst case to store the reserved seats per row in the dictionary.
+</thinking>

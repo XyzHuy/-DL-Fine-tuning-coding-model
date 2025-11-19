@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two binary trees have the same leaf value sequence when traversed from left to right.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Define a function to extract the leaf value sequence of a tree using DFS. Apply this function to both input trees. Compare the two resulting sequences for equality.
+4. Edge cases: Empty trees, single-node trees, and trees with only one leaf.
+5. Time and space complexity: Time complexity is O(N1 + N2), where N1 and N2 are the number of nodes in the two trees. Space complexity is O(H1 + H2), where H1 and H2 are the heights of the two trees, due to the recursion stack in DFS.
+</thinking>

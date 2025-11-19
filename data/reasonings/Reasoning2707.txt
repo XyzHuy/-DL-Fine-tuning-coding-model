@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize extra characters in a string `s` by breaking it into dictionary words, allowing unused characters.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use DP where dp[i] is the minimum extra characters for the prefix s[:i]. Initialize dp[i] to dp[i-1] + 1 (current char is extra). Iterate through all possible start points j for a substring ending at i. If s[j:i] is in the dictionary, update dp[i] with the minimum of its current value and dp[j].
+4. Edge cases: Empty string (not possible by constraints), dictionary containing all possible substrings.
+5. Time and space complexity: O(n^2 * L) time where L is max word length (substring check), O(n) space for DP table.
+</thinking>

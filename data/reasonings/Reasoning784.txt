@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, generate all possible strings by changing each letter to either lowercase or uppercase.
+2. Problem type / algorithm category: Backtracking / String manipulation.
+3. Step-by-step approach: Use depth-first search (DFS) to explore all possible combinations. For each character in the string, either keep it as is or, if it's a letter, toggle its case and explore the next character.
+4. Edge cases: Empty string, string with no letters, string with only digits.
+5. Time and space complexity: O(2^N * N) time, where N is the number of letters in the string. O(2^N * N) space to store the results and the temporary string.
+</thinking>

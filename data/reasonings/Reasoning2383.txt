@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate minimum training hours to defeat all opponents, requiring strictly greater energy and experience than each opponent, and gaining experience while losing energy after each fight.
+2. Problem type / algorithm category: Greedy approach, simulation.
+3. Step-by-step approach: First, calculate the total energy required to survive all battles, and determine the energy training hours needed. Then, iterate through opponents, accumulating experience gained. If current experience is not strictly greater than opponent's, calculate and add the necessary experience training hours.
+4. Edge cases: No training hours needed if initial energy/experience is already sufficient for all opponents. All opponents have low requirements.
+5. Time and space complexity: Time complexity is O(n) due to iterating through opponents, space complexity is O(1) as we only use a few variables.
+</thinking>

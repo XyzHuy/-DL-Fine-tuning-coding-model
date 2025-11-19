@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest integer whose frequency in the array matches its value. Return -1 if none exists.
+2. Problem type / algorithm category: Frequency Counting, Hash Map.
+3. Step-by-step approach: Count the occurrences of each number using a hash map. Iterate through the map, and if a number's value equals its count, update the maximum lucky number found so far.
+4. Edge cases: An empty array or an array with no lucky numbers, in which case -1 should be returned.
+5. Time and space complexity: Time O(N) to count frequencies and iterate, Space O(N) in the worst case for the frequency map.
+</thinking>

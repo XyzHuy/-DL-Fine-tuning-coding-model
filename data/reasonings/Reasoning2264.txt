@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest substring of length 3 in a given string that consists of only one unique digit.
+2. Problem type / algorithm category: String manipulation, Sliding window (implicit).
+3. Step-by-step approach: Iterate through the string checking every substring of length 3. If a substring has all the same digits, compare it with the current maximum good integer found so far and update if it's larger.
+4. Edge cases: The input string might not contain any good integers, in which case an empty string should be returned. The constraints guarantee a minimum string length of 3.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the input string, as we iterate through the string once. Space complexity is O(1) as we only use a few variables to store the result.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a date (day, month, year), determine the corresponding day of the week.
+2. Problem type / algorithm category: Date calculation, Zeller's Congruence.
+3. Step-by-step approach: Implement Zeller's Congruence algorithm to calculate the day of the week as a number. Adjust month and year if month is January or February. Calculate intermediate values k and j. Apply the Zeller's formula. Map the resulting number to the correct day name using an array.
+4. Edge cases: Dates outside the specified range (1971-2100), although the problem states that the given dates are valid. February 29th on non-leap years is handled correctly by the algorithm itself through the month adjustment.
+5. Time and space complexity: Time complexity is O(1) as the algorithm involves a fixed number of calculations. Space complexity is O(1) as the extra space used is constant.
+</thinking>

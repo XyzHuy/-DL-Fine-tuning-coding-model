@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given number n is an ugly number, meaning its prime factors are limited to 2, 3, and 5.
+2. Problem type / algorithm category: Number theory, prime factorization.
+3. Step-by-step approach: If n is not positive, return false. Iteratively divide n by 2, 3, and 5 until it is no longer divisible. If the final result is 1, then it's an ugly number; otherwise, it's not.
+4. Edge cases: n <= 0 should return False. n = 1 is an ugly number and should return True.
+5. Time and space complexity: Time complexity is O(log n) because n is divided by 2, 3, and 5. Space complexity is O(1) because no extra space is used.
+</thinking>

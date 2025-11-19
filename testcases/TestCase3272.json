@@ -1,0 +1,397 @@
+{
+  "function_name": "countGoodIntegers",
+  "test_cases": [
+    {
+      "parameters": {
+        "n": 6,
+        "k": 8
+      },
+      "expected_output": 5221
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 9
+      },
+      "expected_output": 4610368
+    },
+    {
+      "parameters": {
+        "n": 1,
+        "k": 4
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 9
+      },
+      "expected_output": 1248
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 1
+      },
+      "expected_output": 41457015
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 2
+      },
+      "expected_output": 563392
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 5
+      },
+      "expected_output": 19284856
+    },
+    {
+      "parameters": {
+        "n": 3,
+        "k": 5
+      },
+      "expected_output": 27
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 5
+      },
+      "expected_output": 237112
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 2
+      },
+      "expected_output": 37728000
+    },
+    {
+      "parameters": {
+        "n": 2,
+        "k": 3
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 2
+      },
+      "expected_output": 39718144
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 3
+      },
+      "expected_output": 84
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 7
+      },
+      "expected_output": 3044
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 6
+      },
+      "expected_output": 2468
+    },
+    {
+      "parameters": {
+        "n": 2,
+        "k": 2
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 7
+      },
+      "expected_output": 76
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "k": 9
+      },
+      "expected_output": 68739
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 2
+      },
+      "expected_output": 9064
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "k": 8
+      },
+      "expected_output": 292692
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 4
+      },
+      "expected_output": 33175696
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 8
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 9
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 5
+      },
+      "expected_output": 15814071
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "k": 3
+      },
+      "expected_output": 206217
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 8
+      },
+      "expected_output": 30771543
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 1
+      },
+      "expected_output": 10935
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 5
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 3
+      },
+      "expected_output": 13831104
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "k": 2
+      },
+      "expected_output": 509248
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 9
+      },
+      "expected_output": 1191
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 2
+      },
+      "expected_output": 7400
+    },
+    {
+      "parameters": {
+        "n": 3,
+        "k": 9
+      },
+      "expected_output": 23
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 6
+      },
+      "expected_output": 13249798
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "k": 4
+      },
+      "expected_output": 393948
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 7
+      },
+      "expected_output": 2665
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 3
+      },
+      "expected_output": 207840
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 4
+      },
+      "expected_output": 494818
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 4
+      },
+      "expected_output": 6992
+    },
+    {
+      "parameters": {
+        "n": 2,
+        "k": 9
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 7
+      },
+      "expected_output": 506388
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 3
+      },
+      "expected_output": 13726509
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 2
+      },
+      "expected_output": 172
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 5
+      },
+      "expected_output": 2231
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 6
+      },
+      "expected_output": 12476696
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 3
+      },
+      "expected_output": 3573
+    },
+    {
+      "parameters": {
+        "n": 9,
+        "k": 7
+      },
+      "expected_output": 36789447
+    },
+    {
+      "parameters": {
+        "n": 3,
+        "k": 8
+      },
+      "expected_output": 27
+    },
+    {
+      "parameters": {
+        "n": 3,
+        "k": 1
+      },
+      "expected_output": 243
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 3
+      },
+      "expected_output": 3744
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 6
+      },
+      "expected_output": 3109
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "k": 8
+      },
+      "expected_output": 2231
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "k": 6
+      },
+      "expected_output": 58
+    },
+    {
+      "parameters": {
+        "n": 8,
+        "k": 8
+      },
+      "expected_output": 460048
+    },
+    {
+      "parameters": {
+        "n": 6,
+        "k": 5
+      },
+      "expected_output": 3256
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "k": 7
+      },
+      "expected_output": 40242031
+    }
+  ]
+}

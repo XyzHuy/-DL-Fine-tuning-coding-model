@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize painting cost for houses to achieve exactly `target` neighborhoods, considering pre-painted houses and varying paint costs.
+2. Problem type / algorithm category: Dynamic Programming with memoization.
+3. Step-by-step approach: Use a recursive function `dp(i, prev_color, groups)` to calculate the minimum cost. `i` is the current house index, `prev_color` is the color of the previous house, and `groups` is the current number of neighborhoods formed. If the house is pre-painted, use its color and update `groups`. If not, iterate through all possible colors, calculate the cost with each color, and recursively call `dp` for the next house, updating `groups` if a new neighborhood is formed. Memoize results to avoid redundant computations.
+4. Edge cases: Houses already painted, no valid painting combination (return -1), target neighborhoods exceeded, and reaching the end of houses with fewer than target neighborhoods.
+5. Time and space complexity: Time complexity is O(m * n * target * n) due to states (m houses, n previous colors, target groups, n possible current colors). Space complexity is O(m * n * target) for memoization.
+</thinking>

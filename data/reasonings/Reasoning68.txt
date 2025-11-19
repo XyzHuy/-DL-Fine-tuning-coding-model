@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of words and a maximum width, format the text to be fully justified within the given width, distributing spaces evenly between words. The last line should be left-justified.
+2. Problem type / algorithm category: String manipulation, greedy algorithm.
+3. Step-by-step approach: Iterate through the words, greedily packing words into lines until a line exceeds the maximum width. For each line (except the last), calculate the number of spaces needed and distribute them as evenly as possible. Handle the edge case where a line contains only one word or is the last line by left-justifying it.
+4. Edge cases: Last line should be left-justified, single-word lines should be left-justified, the number of spaces does not divide evenly between words, input is empty.
+5. Time and space complexity: Time complexity is O(N), where N is the total number of characters in all words, due to iterating through the words and manipulating strings. Space complexity is O(M), where M is the number of lines in the output, to store the formatted lines.
+</thinking>

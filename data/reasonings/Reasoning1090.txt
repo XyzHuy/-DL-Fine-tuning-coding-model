@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given values and labels of items, find a subset of items that maximizes the sum of values, with constraints on the number of items and the number of items per label.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort items by value in descending order. Iterate through the sorted items, adding them to the subset if the number of selected items is less than numWanted and the number of items with the same label is less than useLimit.
+4. Edge cases: Empty input arrays, numWanted or useLimit being zero. Cases where no items can be selected.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(n) to store the zipped values and labels and O(n) in worst case for the label_count defaultdict.
+</thinking>

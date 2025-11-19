@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the top five average score for each student given a list of student IDs and scores, and return the result sorted by student ID.
+2. Problem type / algorithm category: Hash map / sorting.
+3. Step-by-step approach: Use a hash map (defaultdict) to store scores for each student. Iterate through the input, populate the hash map. Then iterate through the sorted keys of the hash map, sort the scores in descending order, take the top five, compute the integer division average, and store it in the result list.
+4. Edge cases: The input list could be empty. Each student must have at least 5 scores. Scores are non-negative integers.
+5. Time and space complexity: Time complexity is O(n + k log k), where n is the number of items and k is the maximum number of scores for a single student. Space complexity is O(n) to store the hash map.
+</thinking>

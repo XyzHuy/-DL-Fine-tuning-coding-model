@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort an array of integers based on the frequency of their values, with ties broken by sorting values in descending order.
+2. Problem type / algorithm category: Sorting, Frequency Counting.
+3. Step-by-step approach: Count the frequency of each number. Then, sort the original array using a custom comparison: first by frequency in ascending order, and second by the number itself in descending order for ties.
+4. Edge cases: Array with all unique elements, array with all same elements, array with negative numbers.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(N) for frequency map.
+</thinking>

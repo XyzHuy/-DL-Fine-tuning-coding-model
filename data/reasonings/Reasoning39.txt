@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique combinations of numbers from a given array `candidates` that sum up to a given `target`. The same number can be used multiple times.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Use a recursive backtracking function. The function takes the remaining target value, the starting index in the candidates array, the current path (combination), and the result list as input. The base cases are: if the remaining value is 0, add the current path to the result; if the remaining value is negative, return. Iterate through the candidates array from the starting index. For each candidate, add it to the path, recursively call the function with the updated remaining value and the same starting index (allowing for reuse), and then remove the candidate from the path (backtrack).
+4. Edge cases: Empty input array, target is less than the smallest candidate. The candidates array can contain duplicates, but the prompt states that all elements are distinct.
+5. Time and space complexity: Time complexity is difficult to precisely determine due to the nature of backtracking, but it's roughly O(N^(T/M)), where N is the number of candidates, T is the target, and M is the minimum value in candidates. Space complexity is O(T), where T is the target value, due to the depth of the recursion stack and the space used to store the intermediate combinations.
+</thinking>

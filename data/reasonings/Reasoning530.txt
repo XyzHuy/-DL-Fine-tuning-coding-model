@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum absolute difference between any two distinct node values in a given Binary Search Tree.
+2. Problem type / algorithm category: Tree traversal, Binary Search Tree, Inorder Traversal.
+3. Step-by-step approach: Perform an inorder traversal of the BST to get a sorted list of node values. Iterate through the sorted list and compute the difference between consecutive elements, maintaining the minimum difference encountered.
+4. Edge cases: Empty tree (though the problem statement guarantees at least 2 nodes), tree with only two nodes.
+5. Time and space complexity: Time complexity is O(N) due to the inorder traversal. Space complexity is O(N) in the worst case (skewed tree) to store the inorder traversal result, and O(H) for the recursion stack, where H is the height of the tree.
+</thinking>

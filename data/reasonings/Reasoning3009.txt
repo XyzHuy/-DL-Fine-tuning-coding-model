@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array representing y-coordinates of points on a line chart, find the maximum number of intersections a horizontal line can have with this chart.
+2. Problem type / algorithm category: Sweep Line Algorithm, Difference Array.
+3. Step-by-step approach: Iterate through consecutive pairs of points. For each pair (a, b), a horizontal line intersects the segment between them if its y-value is strictly between a and b. This can be modeled by incrementing a counter at the start of the intersection range and decrementing it after the end. We use a scaled y-axis (doubled) to handle integer coordinates precisely. A sweep line processes these start and end points to calculate the maximum concurrent intersections.
+4. Edge cases: The problem guarantees at least two points and no horizontal segments. The constraints on y-values are large but do not affect the algorithm's logic beyond needing appropriate data types.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting the event points for the sweep line. Space complexity is O(N) to store the event points.
+</thinking>

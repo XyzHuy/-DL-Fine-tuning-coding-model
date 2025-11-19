@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of "patches" needed to add to a sorted array `nums` such that every number in the range `[1, n]` can be represented as a sum of elements from the array (including patches).
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Maintain a variable `miss` representing the smallest missing positive integer. Iterate while `miss <= n`. If the current number in `nums` is less than or equal to `miss`, we can increment `miss` by `nums[i]` and move to the next number in `nums`. Otherwise, we need to add `miss` to our "patches", and increment `miss` by itself (doubling it).
+4. Edge cases: When the input array is empty, we need to add 1 to reach 1, then 2 to reach 3, then 4 to reach 7, etc. Consider the case where nums[i] > n from the start. Also, when `miss` becomes very large, ensure that we are not overflowing.
+5. Time and space complexity: Time complexity is O(m + log n) where m is the length of nums, and space complexity is O(1).
+</thinking>

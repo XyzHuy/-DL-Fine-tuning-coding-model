@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest index to split an array such that the product of elements before and after the split are coprime.
+2. Problem type / algorithm category: Number theory (GCD, prime factorization), prefix/suffix sums.
+3. Step-by-step approach: Precompute prime factors for each number. Iterate through potential split points, maintaining counts of prime factors in the prefix product and suffix product using prefix and suffix dictionaries. Check for common prime factors between prefix and suffix products at each split point.
+4. Edge cases: An array with a single element cannot be split, return -1.
+5. Time and space complexity: Time complexity is dominated by prime factorization (O(N * sqrt(max(nums)))), and prefix/suffix computations (O(N * log(max(nums))) in worst case for hash map operations). Space complexity is O(N * log(max(nums))) to store prime factors.
+</thinking>

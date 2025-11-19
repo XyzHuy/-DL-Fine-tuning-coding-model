@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of subarrays where the leftmost element is the minimum element within that subarray.
+2. Problem type / algorithm category: Stack, array manipulation.
+3. Step-by-step approach: Iterate through the array, maintaining a stack of elements encountered so far in non-decreasing order. For each element, pop elements from the stack that are greater than the current element. The length of the stack after processing each element represents the number of valid subarrays ending at that element. Accumulate these lengths to get the total count.
+4. Edge cases: Empty input array (should return 0, handled implicitly), array with duplicate elements, array with all elements in increasing/decreasing order.
+5. Time and space complexity: Time complexity is O(n) because each element is pushed and popped at most once. Space complexity is O(n) in the worst case when the stack contains all elements of the input array.
+</thinking>

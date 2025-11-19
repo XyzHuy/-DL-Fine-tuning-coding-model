@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given binary matrix `mat` can be transformed into another binary matrix `target` by rotating `mat` by 90-degree increments.
+2. Problem type / algorithm category: Matrix manipulation, Brute force check.
+3. Step-by-step approach: Check if the original `mat` matches `target`. If not, rotate `mat` 90 degrees clockwise and check again. Repeat this rotation process up to three times (for 90, 180, and 270-degree rotations). If any of these rotated versions match `target`, return true. Otherwise, return false after all rotations are checked.
+4. Edge cases: The matrices might already be equal without any rotation. The constraints on n (1 <= n <= 10) are small, making brute-force rotations feasible.
+5. Time and space complexity: Time complexity is O(n^2) because each rotation and comparison takes O(n^2) time, and we do this at most 4 times. Space complexity is O(n^2) to store the rotated matrix.
+</thinking>

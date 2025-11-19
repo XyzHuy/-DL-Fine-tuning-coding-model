@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a contiguous subarray where elements are strictly increasing.
+2. Problem type / algorithm category: Array traversal, Greedy approach.
+3. Step-by-step approach: Iterate through the array maintaining a current sum of the strictly increasing subarray. If the current element is greater than the previous, add it to the current sum. Otherwise, update the maximum sum found so far and reset the current sum to the current element. Finally, compare the maximum sum with the last current sum.
+4. Edge cases: An empty input array should return 0. The last subarray sum needs to be considered after the loop finishes.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Schedule jobs with dependencies and daily maximum difficulty to minimize total difficulty across d days.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use DP where dp[i][j] represents the minimum difficulty to schedule the first i jobs in j days. Iterate through jobs and days, considering all possible last-day job splits.
+4. Edge cases: If the number of jobs is less than the number of days, no valid schedule exists (-1). If dp[n][d] remains infinity, no solution is found.
+5. Time and space complexity: O(n*n*d) time and O(n*d) space, where n is the number of jobs and d is the number of days.
+</thinking>

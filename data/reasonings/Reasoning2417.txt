@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest integer greater than or equal to a given integer n, where the count of even digits equals the count of odd digits.
+2. Problem type / algorithm category: Iterative search, Number theory.
+3. Step-by-step approach: Check if the current number n is fair. If not, increment n and repeat. If the number of digits in n is odd, jump to the next power of 10 to ensure an even number of digits.
+4. Edge cases: The smallest possible n is 1. The number of digits in n can be odd or even.
+5. Time and space complexity: Time complexity is hard to determine precisely due to the unknown distribution of fair numbers, but on average it's better than brute-forcing every number. Space complexity is O(1).
+</thinking>

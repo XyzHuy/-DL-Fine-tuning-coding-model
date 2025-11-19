@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize array length by merging adjacent elements whose product is <= k.
+2. Problem type / algorithm category: Greedy approach, Stack-based processing.
+3. Step-by-step approach: Iterate through numbers, maintain a stack. If the current number can be merged with the top of the stack (product <= k), pop and merge, repeating until merge is not possible or stack is empty. Then push the current (or merged) number onto the stack. The final stack length is the answer.
+4. Edge cases: Empty input array, and cases where no merges are possible.
+5. Time and space complexity: O(N) time complexity as each number is pushed and popped at most once. O(N) space complexity for the stack in the worst case.
+</thinking>

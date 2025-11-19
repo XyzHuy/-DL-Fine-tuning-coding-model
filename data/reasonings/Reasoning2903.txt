@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two indices i and j in an array such that the absolute difference between indices is at least indexDifference and the absolute difference between their values is at least valueDifference.
+2. Problem type / algorithm category: Array traversal, Greedy approach.
+3. Step-by-step approach: Iterate through the array starting from indexDifference. Maintain the minimum and maximum values encountered so far within the indexDifference window. For each current element, check if its difference with the minimum or maximum within the window meets the valueDifference criteria.
+4. Edge cases: Empty array (though constraints say n>=1), indexDifference or valueDifference being 0, all elements being the same, no pair satisfying conditions.
+5. Time and space complexity: O(n) time complexity, O(1) space complexity.
+</thinking>

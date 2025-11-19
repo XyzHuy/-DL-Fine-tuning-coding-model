@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate all combinations of k numbers from the range [1, n].
+2. Problem type / algorithm category: Combinations, Backtracking.
+3. Step-by-step approach: Use a recursive backtracking approach to build combinations. Start from 1, and at each step, either include the current number in the combination or exclude it. If the combination reaches length k, add it to the result.
+4. Edge cases: n = 1, k = 1. Also, k can be equal to n.
+5. Time and space complexity: Time complexity is O(C(n, k) * k) where C(n, k) is the binomial coefficient, and space complexity is O(k) for the recursion depth and path.
+</thinking>

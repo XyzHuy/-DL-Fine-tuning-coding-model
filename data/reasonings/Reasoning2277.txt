@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the node on the path between two nodes in a tree that is closest to a third given node.
+2. Problem type / algorithm category: Graph Traversal (DFS/BFS), Shortest Path.
+3. Step-by-step approach: Build an adjacency list for the tree. For each query, find the path between start and end nodes using DFS. Then, calculate the shortest distances from the query node to all other nodes using BFS. Finally, iterate through the path nodes to find the one with the minimum distance.
+4. Edge cases: Path is a single node (start equals end). The query node might be on the path or not.
+5. Time and space complexity: Time O(M * (N + E)) where M is number of queries, N is number of nodes, E is number of edges. Space O(N + E) for adjacency list and BFS distances.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum initial minutes the person can wait at (0,0) and still reach (m-1, n-1) safely, considering fire spread.
+2. Problem type / algorithm category: Binary Search on Answer, Breadth-First Search (BFS).
+3. Step-by-step approach: First, calculate the time it takes for fire to reach every grass cell using BFS. Then, use binary search on the initial waiting time. For each waiting time (mid), check if the person can reach the destination by performing another BFS, ensuring the person's arrival time at any cell is strictly less than the fire's arrival time. If possible, try a larger waiting time; otherwise, try a smaller one.
+4. Edge cases: No path to the safehouse, fire blocks all paths immediately, safehouse reachable regardless of fire (return 10^9), initial position is a wall or fire (problem constraints prevent this).
+5. Time and space complexity: Time complexity is O(m*n*log(10^9)) due to binary search and two BFS traversals. Space complexity is O(m*n) for storing fire and person arrival times and queues.
+</thinking>

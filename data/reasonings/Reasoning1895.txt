@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest square subgrid within a given grid where all row sums, column sums, and both diagonal sums are equal.
+2. Problem type / algorithm category: Brute force with optimization, dynamic programming (prefix sums).
+3. Step-by-step approach: Precompute prefix sums for rows, columns, and diagonals. Iterate through possible square sizes from largest to smallest. For each size, check all possible top-left corners. Use prefix sums to efficiently verify if a subgrid is a magic square. Return the first size found.
+4. Edge cases: A 1x1 grid is always a magic square. The smallest possible magic square size is 1.
+5. Time and space complexity: O(m*n*min(m,n)^2) time for checking all subgrids and sizes, O(m*n) space for prefix sums.
+</thinking>

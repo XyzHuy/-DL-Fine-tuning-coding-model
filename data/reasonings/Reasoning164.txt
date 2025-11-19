@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an unsorted array, find the maximum difference between two successive elements in its sorted form. The solution should run in linear time and space.
+2. Problem type / algorithm category: Bucket Sort. The problem requires a linear time solution, which is achievable using bucket sort.
+3. Step-by-step approach: First, find the minimum and maximum values in the array. Then, create buckets based on the range of the input and distribute the elements into these buckets. Finally, iterate through the buckets and find the maximum difference between the maximum value of the previous bucket and the minimum value of the current bucket.
+4. Edge cases: If the array has fewer than two elements, return 0. If all elements are the same, return 0. Empty buckets should be skipped when calculating the maximum gap.
+5. Time and space complexity: Time complexity is O(N) due to the linear passes through the array for finding min/max, distributing elements, and finding the maximum gap. Space complexity is O(N) due to the creation of buckets.
+</thinking>

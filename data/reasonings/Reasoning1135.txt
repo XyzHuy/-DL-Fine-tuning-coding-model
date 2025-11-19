@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to connect all cities given a list of possible connections and their costs. Return -1 if it's impossible to connect all cities.
+2. Problem type / algorithm category: Minimum Spanning Tree (MST), Union-Find, Kruskal's algorithm.
+3. Step-by-step approach: Sort the connections by cost. Use Union-Find to track connected components. Iterate through the sorted connections, adding an edge if it connects two unconnected components, updating the total cost, and incrementing the edge count. Stop when n-1 edges are used. Return -1 if all edges are processed but not all cities are connected.
+4. Edge cases: Empty connections list, connections that do not connect all cities, single city case (n=1).
+5. Time and space complexity: Time complexity is dominated by sorting the connections, O(E log E), and the Union-Find operations which are nearly O(1) each. Space complexity is O(N) for the Union-Find data structures.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to traverse a linked list and remove nodes in a pattern: keep m nodes, then delete n nodes, and repeat this process until the end of the list.
+2. Problem type / algorithm category: Linked List manipulation, iterative traversal.
+3. Step-by-step approach: Iterate through the linked list. For each segment, advance a pointer `m-1` steps to the last node to keep. Then, from that node, advance another pointer `n+1` steps to find the node after the ones to be deleted. Connect the last kept node to this new target node, effectively skipping the `n` nodes. Move the current pointer to the node after deletion and repeat.
+4. Edge cases: The list might be empty, or shorter than `m` or `n` nodes in subsequent segments. The loop must handle these conditions by checking for `None` pointers.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited a constant number of times. Space complexity is O(1) as the modification is done in-place without using extra data structures proportional to input size.
+</thinking>

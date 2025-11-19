@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of positive integers and a list of queries, where each query involves marking a specific index and then marking a certain number of smallest unmarked elements, the goal is to return the sum of unmarked elements after each query.
+2. Problem type / algorithm category: Heap (Priority Queue) and Set operations.
+3. Step-by-step approach: Maintain the sum of unmarked elements. Use a min-heap to efficiently retrieve smallest unmarked elements and a set to track marked indices. For each query, mark the specified index if not already marked, update the sum. Then, repeatedly extract from the heap, mark the element if not already marked, update the sum, and decrement the count of elements to mark until the count reaches zero or the heap is empty.
+4. Edge cases: The specified index in a query might already be marked. The number of smallest unmarked elements to mark (k) might be greater than the available unmarked elements.
+5. Time and space complexity: Time complexity is O(m log n + n log n) due to heap operations and set lookups. Space complexity is O(n) for the heap and the set.
+</thinking>

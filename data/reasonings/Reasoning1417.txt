@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange an alphanumeric string such that no two adjacent characters are of the same type (both letters or both digits).
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Separate letters and digits into two lists. Check if the length difference is greater than 1, if so, return empty. Determine which list is longer to start the interleaved result. Iterate and append from both lists, then append any remaining character from the longer list.
+4. Edge cases: The string contains only letters or only digits; the length difference between letters and digits is more than one.
+5. Time and space complexity: O(N) time for iteration and list manipulation, O(N) space for storing separated characters and the result.
+</thinking>

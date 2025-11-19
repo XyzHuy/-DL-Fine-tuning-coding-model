@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array, determine the number of starting indices from which you can reach the end of the array by making alternating odd and even jumps, where odd jumps go to the smallest value greater than or equal to the current and even jumps go to the largest value less than or equal to the current.
+2. Problem type / algorithm category: Dynamic Programming, Sorted Data Structures (SortedDict)
+3. Step-by-step approach: Iterate backward through the array. Use dynamic programming to determine if a given index is "good" (can reach the end). Use a SortedDict to efficiently find the next odd and even jumps. Store boolean values representing whether reaching the end is possible with odd or even jump from each index.
+4. Edge cases: Empty array (not possible based on constraints), reaching the end of the array, no possible next jump.
+5. Time and space complexity: Time: O(N log N) due to the SortedDict operations. Space: O(N) for the odd_jump, even_jump arrays, and the SortedDict.
+</thinking>

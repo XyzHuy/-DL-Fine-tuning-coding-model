@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Merge two sorted linked lists into one sorted linked list.
+2. Problem type / algorithm category: Linked list, recursion, merge sort.
+3. Step-by-step approach: Recursively compare the head nodes of the two lists. The smaller node becomes the head of the merged list, and its `next` pointer is set to the result of merging the rest of the list with the other list.
+4. Edge cases: One or both lists are empty.
+5. Time and space complexity: Time complexity is O(n+m), where n and m are the lengths of the two lists. Space complexity is O(n+m) due to recursion depth.
+</thinking>

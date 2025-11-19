@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of indices `i` in a 0-indexed array `nums` such that the sum of elements from index 0 to `i` is greater than or equal to the sum of elements from index `i+1` to the end, and `i` is not the last index.
+2. Problem type / algorithm category: Array manipulation, prefix sums, greedy approach.
+3. Step-by-step approach: Calculate the total sum of the array. Iterate through the array from the first element up to the second-to-last element. Maintain a running sum of the left part. For each index `i`, calculate the sum of the right part by subtracting the current left sum from the total sum. If the left sum is greater than or equal to the right sum, increment a counter for valid splits.
+4. Edge cases: The constraint `nums.length >= 2` ensures there's always at least one possible split point. The loop correctly stops before the last element to satisfy the condition of having at least one element to the right.
+5. Time and space complexity: Time complexity is O(n) due to a single pass to calculate the total sum and another single pass to check splits. Space complexity is O(1) as only a few variables are used.
+</thinking>

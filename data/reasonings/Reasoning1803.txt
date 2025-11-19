@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) such that i < j and low <= (nums[i] XOR nums[j]) <= high.
+2. Problem type / algorithm category: Trie (Prefix Tree) for bitwise operations, Counting.
+3. Step-by-step approach: For each number, query a Trie for numbers already inserted that satisfy the XOR condition with the current number. The condition is rephrased as finding numbers `x` such that `(num XOR x) < (high + 1)` minus `(num XOR x) < low`. Then, insert the current number into the Trie.
+4. Edge cases: Empty input array (handled by loop), all numbers same, low/high values.
+5. Time and space complexity: Time O(N * log(max_val)), Space O(N * log(max_val)).
+</thinking>

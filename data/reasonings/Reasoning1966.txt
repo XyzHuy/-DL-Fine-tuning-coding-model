@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count numbers in an array that are guaranteed to be found by a modified binary search algorithm, regardless of pivot choices.
+2. Problem type / algorithm category: Array processing, conditional logic, precomputation.
+3. Step-by-step approach: Precompute the maximum value to the left of each element and the minimum value to the right of each element. An element is guaranteed to be found if it's greater than or equal to the maximum of its left and less than or equal to the minimum of its right.
+4. Edge cases: An empty input array. For elements at the boundaries (first and last), only consider the relevant precomputed array.
+5. Time and space complexity: O(n) time for precomputation and counting, O(n) space for storing left_max and right_min arrays.
+</thinking>

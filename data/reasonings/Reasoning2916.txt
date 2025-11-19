@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of squares of distinct counts for all possible subarrays of a given integer array, modulo 10^9 + 7.
+2. Problem type / algorithm category: Brute Force / Iteration with Set.
+3. Step-by-step approach: Iterate through all possible start indices `i` of a subarray. For each `i`, iterate through all possible end indices `j` from `i` to the end of the array. Maintain a set of distinct elements encountered in the current subarray `nums[i..j]`. Calculate the square of the size of this set and add it to a running total, applying modulo at each step.
+4. Edge cases: Empty input array (though constraints say length >= 1), array with all same elements, array with all distinct elements.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops, and space complexity is O(N) in the worst case for the set if all elements are distinct.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We are given an array of stone weights and must simulate smashing the two heaviest stones until at most one remains, returning its weight or 0 if none remain.
+2. Problem type / algorithm category: Heap (Priority Queue)
+3. Step-by-step approach: Use a max-heap to store the stone weights. In each iteration, extract the two largest stones, calculate their difference, and insert the difference back into the heap if it's not zero. Repeat until at most one stone remains. Convert stone values to negative to utilize heapq as a max-heap.
+4. Edge cases: Empty input array, array with a single element.
+5. Time and space complexity: Time complexity is O(n log n) due to heap operations. Space complexity is O(n) to store the heap.
+</thinking>

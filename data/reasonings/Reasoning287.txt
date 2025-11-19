@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the duplicate number in an array of n+1 integers where each integer is in the range [1, n] inclusive, without modifying the array and using constant extra space.
+2. Problem type / algorithm category: Binary search. The problem leverages the pigeonhole principle and applies binary search on the range of numbers to find the duplicate.
+3. Step-by-step approach: Use binary search to find the smallest number x such that the count of numbers in `nums` that are less than or equal to x is greater than x. This x is the duplicate number.
+4. Edge cases: The problem statement guarantees that there's exactly one duplicate number, so edge cases related to multiple duplicates or no duplicates do not need specific handling.
+5. Time and space complexity: Time complexity is O(n log n) due to the binary search and the O(n) operation within each binary search step. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a new array where each element at index `i` is derived from applying the `nums` mapping twice: `nums[nums[i]]`.
+2. Problem type / algorithm category: Array manipulation, direct computation.
+3. Step-by-step approach: Iterate through the input array `nums`. For each index `i`, access `nums[i]` to get the first index, then use that result as an index into `nums` again to get the final value `nums[nums[i]]`. Store this value in the corresponding position `i` of the result array.
+4. Edge cases: The input array length is at least 1. All elements are distinct and within the valid index range. These constraints simplify handling by avoiding empty arrays or out-of-bounds indices.
+5. Time and space complexity: O(N) time complexity because we iterate through the array once. O(N) space complexity to store the resulting array.
+</thinking>

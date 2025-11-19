@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a given nested ternary expression string.
+2. Problem type / algorithm category: Recursion, String parsing.
+3. Step-by-step approach: Recursively parse the string from left to right. If it is T, evaluate the expression after the first question mark; otherwise evaluate the expression after the second question mark. Handle the nested structure by keeping track of question mark and colon balance.
+4. Edge cases: Single character input like "T", "F", or "number". Cases where the condition is true or false and nested ternary expressions.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the expression string, due to the recursion. Space complexity is O(N) in the worst case for the recursion stack.
+</thinking>

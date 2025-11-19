@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D elevation map, calculate the amount of water that can be trapped after raining.
+2. Problem type / algorithm category: Heap, Graph Traversal. The problem is solved using a priority queue (heap) to process cells from the boundary inwards, similar to Dijkstra's algorithm.
+3. Step-by-step approach: First, push all boundary cells into a min-heap. Then, iteratively pop the smallest cell from the heap and check its neighbors. If a neighbor is shorter, water can be trapped. Update the trapped water and push the neighbor into the heap with the maximum height seen so far. Mark visited cells to avoid reprocessing.
+4. Edge cases: Empty heightMap or heightMap with no rows or columns, which should return 0. The heightmap can contain 0 values.
+5. Time and space complexity: Time complexity is O(M * N * log(M * N)) because we potentially insert all cells into the heap and heap operations take logarithmic time. Space complexity is O(M * N) to store the visited set and the heap.
+</thinking>

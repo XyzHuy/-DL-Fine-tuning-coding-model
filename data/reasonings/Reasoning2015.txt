@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to compress a list of buildings, each defined by a start, end, and height, into a minimal set of non-overlapping segments representing the street. Each output segment should have a constant average height of buildings covering it.
+2. Problem type / algorithm category: Sweep line algorithm.
+3. Step-by-step approach: Create event points at the start and end of each building. Sort these events by position. Iterate through the sorted events, maintaining the current sum of heights and the count of active buildings. When the position changes, calculate the average height for the previous segment. If this segment can be merged with the last output segment (same average height and contiguous), extend the last segment; otherwise, add a new segment. Update the active building counts and total height based on whether a building starts or ends.
+4. Edge cases: No buildings, empty street segments, buildings with zero height (not possible by constraints), buildings starting/ending at the same point. Segments with no buildings between them should not be included.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting events, where N is the number of buildings. Space complexity is O(N) to store the events and the result.
+</thinking>

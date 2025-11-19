@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count all valid pyramidal and inverse pyramidal plots formed by fertile cells (1s) in a binary grid.
+2. Problem type / algorithm category: Dynamic Programming, Grid Traversal.
+3. Step-by-step approach: Use dynamic programming to compute the maximum height of a pyramid/inverse pyramid ending at each cell. For pyramidal plots, DP state `dp[r][c]` represents the height of the pyramid with apex at `(r, c)`. For inverse pyramidal plots, reverse the grid vertically and apply the same logic. Sum up all valid plot counts.
+4. Edge cases: Empty grid, single row/column grid, grid with all barren cells.
+5. Time and space complexity: O(m * n) time for DP table computation and O(m * n) space for the DP table.
+</thinking>

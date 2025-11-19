@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the frequency of an element in an array by changing other elements, with a cost limit k.
+2. Problem type / algorithm category: Sliding Window, Two Pointers, Prefix Sums.
+3. Step-by-step approach: Sort the array. Use a sliding window with `left` and `right` pointers. For each window, calculate the cost to make all elements in the window equal to the median element within that window using prefix sums. Expand the window by moving `right`. If the cost exceeds `k`, shrink the window by moving `left`. Track the maximum window size.
+4. Edge cases: Empty array (not possible by constraints), k = 0, all elements already same.
+5. Time and space complexity: Time O(N log N) due to sorting, O(N) for prefix sum and sliding window. Space O(N) for prefix sum array.
+</thinking>

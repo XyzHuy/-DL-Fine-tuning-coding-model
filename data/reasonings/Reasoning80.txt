@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted array, remove duplicates in-place such that each unique element appears at most twice, and return the new length of the modified array.
+2. Problem type / algorithm category: Two Pointers / In-place modification.
+3. Step-by-step approach: Use a slow pointer 'k' to track the index of the next valid element. Iterate through the array starting from the third element. If the current element is different from the element at (k-2), it means we can add it to the result, so we copy the current element to nums[k] and increment k.
+4. Edge cases: If the array has length less than or equal to 2, no modification is needed, and the original length is returned.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because the modification is done in-place.
+</thinking>

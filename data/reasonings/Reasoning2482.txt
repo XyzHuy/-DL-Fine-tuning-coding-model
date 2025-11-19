@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate a difference matrix where each element diff[i][j] is the sum of ones in row i and column j minus the sum of zeros in row i and column j of the input binary grid.
+2. Problem type / algorithm category: Matrix manipulation, prefix sums (implicitly), counting.
+3. Step-by-step approach: First, iterate through the grid to precompute the counts of ones and zeros for each row and each column. Then, iterate through the grid again to construct the difference matrix by applying the given formula using the precomputed counts for each cell.
+4. Edge cases: The problem constraints guarantee a non-empty grid with dimensions at least 1x1. The grid only contains 0s and 1s.
+5. Time and space complexity: Time complexity is O(m*n) for precomputing counts and O(m*n) for constructing the difference matrix, resulting in O(m*n) overall. Space complexity is O(m + n) for storing row and column counts, and O(m*n) for the output difference matrix.
+</thinking>

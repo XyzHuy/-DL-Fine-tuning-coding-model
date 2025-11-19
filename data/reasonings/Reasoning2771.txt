@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct an array nums3 by choosing elements from corresponding indices in nums1 or nums2 to maximize the length of its longest non-decreasing subarray.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use DP where dp[i][0] stores the max length ending at index i using nums1[i], and dp[i][1] using nums2[i]. For each index i, calculate these values by considering the choices at i-1 and the non-decreasing condition. The overall maximum is the answer.
+4. Edge cases: The input arrays can have a single element. The DP initialization handles this as the minimum length is 1.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the arrays once. Space complexity is O(n) to store the DP table.
+</thinking>

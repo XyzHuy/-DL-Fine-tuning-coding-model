@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k strongest elements in an array, where strength is defined by distance from the median and then by value.
+2. Problem type / algorithm category: Sorting with custom comparator.
+3. Step-by-step approach: First, sort the input array to determine the median. Then, sort the array again using a custom key that prioritizes elements with a greater absolute difference from the median, and for ties, prioritizes larger element values. Finally, return the first k elements from this custom-sorted array.
+4. Edge cases: Array length of 1, k equal to array length, duplicate values in the array.
+5. Time and space complexity: O(N log N) time due to sorting, O(N) space for the sorted array (or O(log N) to O(N) depending on sorting algorithm implementation).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a pair of indices (i, j) with i < j such that the Manhattan distance |nums1[i] - nums1[j]| + |nums2[i] - nums2[j]| is minimized. If multiple such pairs exist, return the lexicographically smallest one.
+2. Problem type / algorithm category: Optimization, Sorting, Manhattan Distance.
+3. Step-by-step approach: Sort the arrays based on nums1 values and check adjacent elements. Then sort based on nums2 values and check adjacent elements. For each pair of adjacent elements in the sorted lists, calculate the Manhattan distance using their original indices and update the minimum distance and the corresponding lexicographically smallest pair.
+4. Edge cases: The input arrays are guaranteed to have at least two elements. The minimum value could be 0. Lexicographical comparison handles ties.
+5. Time and space complexity: O(N log N) time due to sorting. O(N) space for storing indexed lists.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of paths from (0,0) to (m-1, n-1) in a grid, moving only down or right, such that the sum of elements along the path is divisible by k. Return the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a 3D DP table dp[i][j][r] storing the count of paths to (i, j) with path sum modulo k equal to r. Initialize dp[0][0] based on grid[0][0] % k. Iterate through the grid, and for each cell (i, j), update dp[i][j][(r + grid[i][j]) % k] by summing values from dp[i-1][j][r] and dp[i][j-1][r] for all possible remainders r. The final answer is dp[m-1][n-1][0].
+4. Edge cases: The grid can be 1x1. The starting cell's value itself can satisfy the condition. k=1 means all paths are valid.
+5. Time and space complexity: Time complexity is O(m * n * k) due to iterating through the grid and k remainders for each cell. Space complexity is O(m * n * k) for the DP table.
+</thinking>

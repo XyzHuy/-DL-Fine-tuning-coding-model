@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the room ID closest to a preferred ID among rooms that meet a minimum size requirement, prioritizing smaller IDs in case of ties.
+2. Problem type / algorithm category: Sorting, Binary Search (using bisect module).
+3. Step-by-step approach: Sort rooms by size descending. Sort queries by minSize descending, keeping original indices. Iterate through sorted queries. For each query, add qualifying rooms (based on minSize) to a sorted list of available room IDs. Use binary search (bisect_left) to find the insertion point for the preferred ID and check neighbors for the closest room ID.
+4. Edge cases: No rooms meet the minimum size requirement, preferred ID is smaller than all available room IDs, preferred ID is larger than all available room IDs.
+5. Time and space complexity: Time: O(N log N + K log K + N log N + K log N) which simplifies to O((N+K)log(N+K)). Space: O(N) for storing available rooms and sorted queries.
+</thinking>

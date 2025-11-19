@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize profit by selling a given number of balls, where each ball's value is its current count in inventory, from multiple colored ball types.
+2. Problem type / algorithm category: Greedy algorithm, optimization, arithmetic series sum.
+3. Step-by-step approach: Sort inventory descending. Iterate, selling as many balls as possible from the current highest stock down to the next highest stock, using a greedy approach to maximize value at each step. Calculate sums of arithmetic series for full groups and individual balls for remaining orders.
+4. Edge cases: All balls in one color, selling all inventory, orders exactly matching a price drop, insufficient orders to reach next price drop.
+5. Time and space complexity: Time O(N log N) for sorting, Space O(1) or O(N) depending on sort implementation.
+</thinking>

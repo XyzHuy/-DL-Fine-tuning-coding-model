@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse only the English letters in a string, leaving other characters in their original positions.
+2. Problem type / algorithm category: String manipulation / Two Pointers (although the solution uses a list and index).
+3. Step-by-step approach: Extract all letters, reverse them, and then iterate through the original string, replacing letters with the reversed letters.
+4. Edge cases: Empty string, string with no letters, string with only letters, string with only non-letter characters.
+5. Time and space complexity: Time: O(n), where n is the length of the string. Space: O(n) to store the list of characters and the reversed letters.
+</thinking>

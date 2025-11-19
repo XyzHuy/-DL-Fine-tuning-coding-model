@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of intervals, merge all overlapping intervals and return a list of non-overlapping intervals that cover all the input intervals.
+2. Problem type / algorithm category: Array manipulation, interval merging, sorting.
+3. Step-by-step approach: First, sort the intervals based on their start times. Then, iterate through the sorted intervals, merging overlapping intervals by updating the end time of the last merged interval if the current interval overlaps. If no overlap exists, append the current interval to the merged list.
+4. Edge cases: Empty input list, already merged intervals, intervals with the same start time.
+5. Time and space complexity: Time complexity is O(n log n) due to the sorting step. Space complexity is O(n) in the worst case where no intervals overlap and a new list of size n is created, or O(log n) to O(n) depending on the sorting algorithm implementation.
+</thinking>

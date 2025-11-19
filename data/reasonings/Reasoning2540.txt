@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest integer that exists in both sorted integer arrays, or return -1 if no common integer exists.
+2. Problem type / algorithm category: Two Pointers.
+3. Step-by-step approach: Initialize two pointers, one for each array, at their respective beginnings. Move the pointers forward. If elements at current pointers match, return that element. If element in first array is smaller, advance its pointer. Otherwise, advance the second array's pointer. If loop finishes without finding a match, return -1.
+4. Edge cases: One or both arrays are empty (though constraints say they are not), no common elements exist.
+5. Time and space complexity: Time O(m+n), Space O(1).
+</thinking>

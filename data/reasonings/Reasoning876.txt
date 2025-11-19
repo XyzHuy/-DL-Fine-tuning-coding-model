@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the middle node of a singly linked list. If there are two middle nodes, return the second one.
+2. Problem type / algorithm category: Linked list, two pointers (slow and fast)
+3. Step-by-step approach: Use two pointers, slow and fast. The slow pointer moves one step at a time, while the fast pointer moves two steps at a time. When the fast pointer reaches the end, the slow pointer will be at the middle node.
+4. Edge cases: Empty list (not possible based on the constraints), list with one node.
+5. Time and space complexity: Time: O(N), where N is the number of nodes in the list. Space: O(1).
+</thinking>

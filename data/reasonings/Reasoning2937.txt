@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations (deleting rightmost character) to make three strings equal, or -1 if impossible.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate from the beginning of the strings, comparing characters at each index. Stop when a mismatch is found or the shortest string ends. If no common prefix exists (mismatch at index 0), return -1. Otherwise, the number of operations is the total length minus three times the length of the common prefix.
+4. Edge cases: Strings that are already equal, strings with no common prefix, strings where one is a prefix of another.
+5. Time and space complexity: O(min(len(s1), len(s2), len(s3))) time, O(1) space.
+</thinking>

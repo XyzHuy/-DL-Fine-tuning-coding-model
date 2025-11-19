@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a sorted array of integers can be split into one or more subsequences, each of length at least 3, where each subsequence is a consecutive increasing sequence.
+2. Problem type / algorithm category: Array processing, greedy algorithm, subsequence checking.
+3. Step-by-step approach: Iterate through the input array, maintaining two counters. One counter tracks the frequency of each number. The other counter tracks how many subsequences end with a particular number. For each number, first try to extend an existing subsequence. If that's not possible, try to start a new subsequence of length 3. If neither is possible, the array cannot be split.
+4. Edge cases: Empty input array (should return true). Cases where a number appears only once or twice and cannot form a subsequence of length 3. Cases where a sequence can be extended vs. creating a new one.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input array. Space complexity is O(n) due to the use of the `Counter` objects.
+</thinking>

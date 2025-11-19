@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove duplicate characters from a string such that each character appears only once, and the resulting string is the smallest lexicographically.
+2. Problem type / algorithm category: String manipulation, Stack, Greedy Algorithm.
+3. Step-by-step approach: Use a stack to maintain the resulting string. Iterate through the input string. If a character is already in the stack, skip it. While the stack is not empty, the current character is smaller than the last character in the stack, and the last character has another occurrence later in the string, pop the last character from the stack. Push the current character onto the stack.
+4. Edge cases: Empty string, string with only one character, string with already unique characters.
+5. Time and space complexity: Time complexity is O(N), where N is the length of the string. Space complexity is O(1), as the stack and other data structures can store at most 26 characters (lowercase English letters).
+</thinking>

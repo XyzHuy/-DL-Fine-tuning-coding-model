@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count positive integers with distinct digits in the range [1, n].
+2. Problem type / algorithm category: Digit DP (Dynamic Programming on digits).
+3. Step-by-step approach: Use a recursive DP function with memoization. The state includes the current digit position, a bitmask representing used digits, and a flag indicating if the current digit is bounded by the digits of n. The function explores valid digit choices and sums up the counts.
+4. Edge cases: Leading zeros (handled by not counting them if mask is 0), and the tight constraint from n's digits.
+5. Time and space complexity: Time complexity is O(log N * 2^10 * 2) which simplifies to O(log N) since 10 is constant. Space complexity is O(log N) due to recursion depth and memoization.
+</thinking>

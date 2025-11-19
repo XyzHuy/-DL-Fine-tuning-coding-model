@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all numbers in the range [1, n] that are not present in the input array nums.
+2. Problem type / algorithm category: Array manipulation, set usage.
+3. Step-by-step approach: Convert the input list into a set. Iterate through the range [1, n] and add each number to the result if it is not present in the set.
+4. Edge cases: Empty input array, array containing all numbers from 1 to n, array containing duplicate numbers.
+5. Time and space complexity: Time complexity is O(n) due to set conversion and iteration. Space complexity is O(n) to store the set.
+</thinking>

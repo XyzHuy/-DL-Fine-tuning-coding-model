@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all the modes (most frequent values) in a binary search tree.
+2. Problem type / algorithm category: Tree traversal, frequency counting, binary search tree.
+3. Step-by-step approach: Perform an inorder traversal of the BST to get values in sorted order. Count the frequency of each value using a dictionary. Find the maximum frequency. Collect all values that have the maximum frequency and return them as a list.
+4. Edge cases: Empty tree (root is None), tree with only one node, multiple modes with the same frequency.
+5. Time and space complexity: Time complexity is O(N) for inorder traversal and frequency counting, where N is the number of nodes. Space complexity is O(N) in the worst case for the frequency dictionary and the result list.
+</thinking>

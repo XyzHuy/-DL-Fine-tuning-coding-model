@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest substring consisting of a single repeating character.
+2. Problem type / algorithm category: String traversal, greedy approach.
+3. Step-by-step approach: Initialize max_power and current_power to 1. Iterate through the string starting from the second character. If the current character is the same as the previous, increment current_power. If different, update max_power with the maximum of max_power and current_power, and reset current_power to 1. After the loop, compare max_power with the final current_power.
+4. Edge cases: A string of length 1.
+5. Time and space complexity: O(n) time complexity, O(1) space complexity.
+</thinking>

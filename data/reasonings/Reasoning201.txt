@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Compute the bitwise AND of all numbers within the inclusive range [left, right].
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Right shift both left and right until they are equal, counting the number of shifts. The common prefix bits are found. Left shift the result by the shift count to restore the common prefix to its original position, effectively zeroing out the differing bits at the end.
+4. Edge cases: When left equals right, the result is left (or right).
+5. Time and space complexity: Time complexity is O(log(N)), where N is the range size, because the while loop iterates a maximum of the number of bits in the input. Space complexity is O(1).
+</thinking>

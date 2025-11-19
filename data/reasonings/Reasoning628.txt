@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum product of three numbers in a given integer array.
+2. Problem type / algorithm category: Array manipulation, sorting.
+3. Step-by-step approach: Sort the array. Calculate the product of the three largest numbers and the product of the two smallest numbers and the largest number. Return the maximum of these two products.
+4. Edge cases: Array with negative numbers, array with all positive numbers, array with zeros. The problem statement ensures a minimum array length of 3 and value constraints.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1) as sorting is done in place or uses a small constant amount of extra space.
+</thinking>

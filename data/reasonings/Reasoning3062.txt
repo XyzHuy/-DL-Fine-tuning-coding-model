@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a linked list of even length where even-indexed nodes have even values and odd-indexed nodes have odd values, compare values in pairs (even-indexed, odd-indexed) and award points to "Even" or "Odd" teams based on which value is higher. Return the team with more points or "Tie".
+2. Problem type / algorithm category: Linked List Traversal, Iteration.
+3. Step-by-step approach: Initialize scores for Even and Odd teams to zero. Iterate through the linked list, taking two nodes at a time (a pair). Compare the value of the even-indexed node with its subsequent odd-indexed node. Increment the score of the appropriate team based on the comparison. Advance the pointer by two nodes to process the next pair. Finally, compare the total scores and return "Even", "Odd", or "Tie".
+4. Edge cases: The problem statement guarantees a linked list of even length with at least two nodes, so an empty list or a list with an odd number of nodes is not a concern according to constraints.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as we traverse the list once. Space complexity is O(1) as we only use a few variables to store scores and the current node.
+</thinking>

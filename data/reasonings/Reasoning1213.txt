@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the common elements present in three sorted integer arrays.
+2. Problem type / algorithm category: Array intersection / Set operations.
+3. Step-by-step approach: Convert the arrays to sets, find the intersection of the three sets, and then convert the resulting set back to a sorted list.
+4. Edge cases: Empty input arrays, no common elements.
+5. Time and space complexity: Time: O(n) where n is the total number of elements in the three arrays due to converting arrays to sets. Space: O(min(len(arr1), len(arr2), len(arr3))) in the best case, O(len(arr1) + len(arr2) + len(arr3)) in the worst case, for storing the sets and the resulting intersection.
+</thinking>

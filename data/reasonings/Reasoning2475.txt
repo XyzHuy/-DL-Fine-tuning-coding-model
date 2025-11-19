@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count triplets (i, j, k) from an array such that 0 <= i < j < k and the elements nums[i], nums[j], nums[k] are all distinct.
+2. Problem type / algorithm category: Brute Force / Counting
+3. Step-by-step approach: Iterate through all possible combinations of three distinct indices (i, j, k) ensuring i < j < k. For each triplet of indices, check if the corresponding elements in nums are pairwise distinct. If they are, increment a counter. Finally, return the total count.
+4. Edge cases: The problem constraints guarantee at least 3 elements, so no need to handle arrays smaller than 3. All elements being the same (e.g., [1,1,1,1,1]) will result in zero valid triplets.
+5. Time and space complexity: Time complexity is O(n^3) due to three nested loops. Space complexity is O(1) as only a few variables are used.
+</thinking>

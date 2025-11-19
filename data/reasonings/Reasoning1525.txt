@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of ways to split a string into two non-empty parts such that both parts have the same number of unique characters.
+2. Problem type / algorithm category: String manipulation, prefix/suffix counts, hash maps.
+3. Step-by-step approach: Initialize counts for all characters. Iterate through the string, moving one character at a time from the right set to the left set. After each move, check if the number of distinct characters in the left set equals the number of distinct characters in the right set. If they are equal, increment the good splits counter.
+4. Edge cases: String length of 1 is not possible for a valid split into two non-empty strings. The problem constraints guarantee a minimum length of 1, but a string of length 1 cannot be split.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, as we iterate through the string twice (once to pre-count and once to check splits). Space complexity is O(K) where K is the size of the alphabet (26 for lowercase English letters) to store character counts.
+</thinking>

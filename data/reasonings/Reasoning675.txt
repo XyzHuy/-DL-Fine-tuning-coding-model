@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum steps to cut trees in a forest from shortest to tallest, starting from (0,0).
+2. Problem type / algorithm category: Graph Traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: First, extract tree locations and sort them by height. Then, use BFS to find the shortest path between consecutive tree locations, starting from (0,0). Sum up the steps. Return -1 if a tree is unreachable.
+4. Edge cases: Empty forest, unreachable trees.
+5. Time and space complexity: Time complexity is O(m*n*log(m*n) + T*(m*n)), where T is the number of trees, and space complexity is O(m*n) due to the BFS queue and visited set.
+</thinking>

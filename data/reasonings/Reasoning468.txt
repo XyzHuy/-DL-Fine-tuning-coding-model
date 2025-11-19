@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given string is a valid IPv4 address, a valid IPv6 address, or neither.
+2. Problem type / algorithm category: String manipulation, validation.
+3. Step-by-step approach: Check if the string contains '.' or ':', then call the corresponding validation function. The validation functions split the string by the delimiter and check each part according to the rules for IPv4 and IPv6 addresses.
+4. Edge cases: Empty string, invalid characters, incorrect number of parts, leading zeros in IPv4, parts exceeding the valid range, and handling of uppercase and lowercase hex characters in IPv6.
+5. Time and space complexity: Time complexity is O(1) because the number of parts is fixed (4 for IPv4 and 8 for IPv6). Space complexity is O(1) since the size of the parts array is fixed.
+</thinking>

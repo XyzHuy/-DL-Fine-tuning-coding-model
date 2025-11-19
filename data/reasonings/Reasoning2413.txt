@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest positive integer that is divisible by both 2 and a given positive integer n.
+2. Problem type / algorithm category: Number theory, Least Common Multiple (LCM) concept.
+3. Step-by-step approach: Check if n is even. If it is, n is the answer. If n is odd, 2*n is the smallest common multiple.
+4. Edge cases: The constraint 1 <= n <= 150 covers all positive integers within a reasonable range; no explicit edge cases need separate handling beyond the odd/even logic.
+5. Time and space complexity: O(1) time complexity as it's a single check and O(1) space complexity as only a constant amount of memory is used.
+</thinking>

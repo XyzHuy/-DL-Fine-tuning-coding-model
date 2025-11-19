@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty substrings where the number of vowels equals the number of consonants, and their product is divisible by k.
+2. Problem type / algorithm category: Brute-force substring generation and checking.
+3. Step-by-step approach: Iterate through all possible start and end indices to form all substrings. For each substring, count vowels and consonants. If vowel count equals consonant count and their product is divisible by k, increment the result.
+4. Edge cases: Empty string (not possible due to constraints), k=1, string with only vowels or only consonants.
+5. Time and space complexity: Time O(n^3) due to nested loops and substring operations (though direct counting makes it O(n^2)), Space O(1).
+</thinking>

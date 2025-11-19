@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a graph with one redundant edge, find and return the redundant edge that appears last in the input such that removing it makes the graph a tree.
+2. Problem type / algorithm category: Graph theory, Disjoint Set Union (DSU), Cycle Detection
+3. Step-by-step approach: Iterate through the edges of the graph. For each edge, use the DSU to check if the two nodes are already in the same component. If they are, it means adding this edge creates a cycle, so this is the redundant edge. Otherwise, union the two nodes.
+4. Edge cases: The input graph is guaranteed to be connected and contain exactly one cycle. The nodes are labeled from 1 to n.
+5. Time and space complexity: Time complexity is O(n) on average due to path compression in DSU, where n is the number of edges. Space complexity is O(n) to store the parent array for the DSU.
+</thinking>

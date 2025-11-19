@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest integer greater than a given integer n, using the same digits as n. Return -1 if no such integer exists or if it exceeds the 32-bit integer limit.
+2. Problem type / algorithm category: Permutation / Next Greater Element.
+3. Step-by-step approach: Convert the integer to a list of digits, find the first decreasing digit from the right, find the smallest digit to the right of it that's larger, swap them, reverse the digits to the right of the swapped digit, convert back to an integer, and check for overflow.
+4. Edge cases: Input n has no next greater element (decreasing order), the result exceeds the 32-bit integer limit.
+5. Time and space complexity: Time complexity is O(N), where N is the number of digits in the input integer. Space complexity is O(N) due to storing the digits in a list.
+</thinking>

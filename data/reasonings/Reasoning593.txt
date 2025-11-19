@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if four given points in 2D space form a valid square.
+2. Problem type / algorithm category: Geometry, distance calculation.
+3. Step-by-step approach: Calculate the squared distances between all pairs of points, count the occurrences of each distance, and check if there are exactly two unique distances (sides and diagonals) with the correct frequencies (4 and 2 respectively).
+4. Edge cases: Coinciding points resulting in zero distance, which would not form a valid square.
+5. Time and space complexity: Time complexity is O(1) because it always calculates 6 distances. Space complexity is O(1) due to the constant number of distances stored.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify indices in string s where substring a occurs, and for which there's an occurrence of substring b within a distance k.
+2. Problem type / algorithm category: String matching, Two Pointers.
+3. Step-by-step approach: First, find all occurrences of substring a and substring b in s. Then, use two pointers to iterate through these occurrences, checking the distance condition for each potential beautiful index.
+4. Edge cases: Substrings a or b not present in s, k being larger than string length, overlapping occurrences of a and b.
+5. Time and space complexity: Time complexity is dominated by finding occurrences of a and b, which is O(N*M) in naive string matching, but optimized to O(N) using KMP or similar. The two-pointer scan is O(N). Space complexity is O(N) for storing indices.
+</thinking>

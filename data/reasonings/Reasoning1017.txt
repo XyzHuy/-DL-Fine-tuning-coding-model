@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to convert a non-negative integer from base 10 to its equivalent string representation in base -2.
+2. Problem type / algorithm category: This is a mathematical problem involving number base conversion.
+3. Step-by-step approach: The algorithm iteratively finds the digits from least to most significant. In each step, it calculates the remainder and quotient of the current number divided by -2. If the remainder is negative, it's adjusted to be positive (by adding 2), and the quotient is incremented to compensate. The process repeats until the number becomes zero, and the collected remainders are reversed to form the final string.
+4. Edge cases: The main edge case is an input of 0, which should directly return "0" as the loop condition `while n != 0` would not execute.
+5. Time and space complexity: The time complexity is O(log n) because the input number is roughly halved in each iteration. The space complexity is also O(log n) to store the list of digits before joining them into a string.
+</thinking>

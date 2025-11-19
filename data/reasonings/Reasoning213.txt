@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a circular array of house values, find the maximum robbery amount without robbing adjacent houses.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Solve the linear house robbery problem twice: once excluding the first house and once excluding the last house. Return the maximum of the two results.
+4. Edge cases: Empty input array, single house array, and short arrays must be handled correctly.
+5. Time and space complexity: Time complexity is O(N), where N is the number of houses. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s`, the goal is to find the number of distinct non-empty subsequences modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Iterate through the string. For each character, double the number of subsequences seen so far. If the character has appeared before, subtract the number of subsequences ending at the previous occurrence to avoid duplicates.  Finally, subtract 1 to exclude the empty subsequence. Use a hashmap to store the last occurrence of each character.
+4. Edge cases: Empty string is implicitly handled by the initialization.  The result must be modulo 10^9 + 7 to avoid overflow.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(n) for the DP table and O(1) (at most 26) for the hashmap, since the string contains lowercase English letters.
+</thinking>

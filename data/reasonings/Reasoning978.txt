@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the maximum size turbulent subarray in a given integer array. Turbulent means the comparison sign flips between each adjacent pair.
+2. Problem type / algorithm category: Dynamic Programming / Sliding Window
+3. Step-by-step approach: Iterate through the array, keeping track of the current turbulent subarray's length and the last comparison sign (greater than or less than). If the current comparison sign flips as expected, increment the length. If it doesn't, reset the length to 2. If elements are equal reset length to 1. Update the maximum length found so far.
+4. Edge cases: Empty array, array with one element, array with all equal elements, array with two elements.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the array. Space complexity is O(1).
+</thinking>

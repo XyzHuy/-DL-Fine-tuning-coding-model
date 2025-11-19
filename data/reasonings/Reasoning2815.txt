@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of two numbers from an array where both numbers share the same largest digit.
+2. Problem type / algorithm category: Hash Map / Dictionary, Iteration.
+3. Step-by-step approach: Iterate through each number, find its largest digit, and store the two largest numbers encountered so far for each largest digit in a hash map. Then, iterate through the hash map to find pairs with two stored numbers and calculate their sums, keeping track of the maximum sum.
+4. Edge cases: No pair found with the same largest digit, meaning the maximum sum remains -1.
+5. Time and space complexity: Time complexity is O(N*log10(M)) where N is the number of elements in nums and M is the maximum value of an element, due to digit extraction. Space complexity is O(K) where K is the number of distinct largest digits (at most 10).
+</thinking>

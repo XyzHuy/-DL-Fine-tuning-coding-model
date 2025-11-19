@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically largest substring of a given string.
+2. Problem type / algorithm category: String manipulation, greedy algorithm.
+3. Step-by-step approach: Iterate through the string, comparing substrings starting at different indices. Maintain the index of the current largest substring. When a larger substring is found, update the index. Handle ties by incrementing an offset until a difference is found.
+4. Edge cases: Empty string (though the problem statement says length is at least 1), string with all the same characters, string with already lexicographically sorted characters.
+5. Time and space complexity: Time complexity is O(n) because each index is visited a constant number of times. Space complexity is O(1) as it uses constant extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the element in an array that appears more than n/2 times, assuming such an element always exists.
+2. Problem type / algorithm category: Boyer-Moore Voting Algorithm.
+3. Step-by-step approach: Initialize a count to 0 and a candidate to None. Iterate through the array, if count is 0, set the current element as the candidate. Increment the count if the current element is equal to the candidate, otherwise decrement it. The final candidate is the majority element.
+4. Edge cases: The problem statement guarantees that a majority element always exists, so empty array or cases where no majority exists do not need to be considered.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we only use a constant amount of extra space for the count and candidate variables.
+</thinking>

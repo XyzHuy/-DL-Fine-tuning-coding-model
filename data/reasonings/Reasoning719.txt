@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth smallest absolute difference between any two numbers in the input array.
+2. Problem type / algorithm category: Binary search, sorting, two pointers.
+3. Step-by-step approach: Sort the array. Use binary search on the range of possible distances (0 to max-min). For each distance (mid) in binary search, count the number of pairs with a distance less than or equal to mid using the two-pointer technique. Adjust the binary search range based on whether the count is less than k.
+4. Edge cases: Empty array (not possible based on constraints). Duplicate numbers in the array. k is 1 (smallest possible distance). k is n*(n-1)/2 (largest possible distance).
+5. Time and space complexity: Time complexity: O(N log N) for sorting + O(N log W) for binary search, where N is the length of nums and W is the width of the range of numbers in nums. Space complexity: O(1).
+</thinking>

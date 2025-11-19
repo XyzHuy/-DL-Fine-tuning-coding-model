@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the largest absolute difference among p pairs of indices from an array, ensuring each index is used at most once.
+2. Problem type / algorithm category: Binary Search on Answer, Greedy.
+3. Step-by-step approach: Sort the array. Perform binary search on the possible maximum difference. For a given maximum difference, greedily form as many pairs as possible by checking adjacent elements. If enough pairs can be formed, try a smaller maximum difference; otherwise, try a larger one.
+4. Edge cases: p is 0 (return 0), array length is small, all elements are identical.
+5. Time and space complexity: Time O(N log N + N log D), Space O(log N) or O(N) for sorting depending on implementation. D is the range of differences.
+</thinking>

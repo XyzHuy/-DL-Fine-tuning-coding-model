@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted matrix (rows and columns sorted in ascending order), determine if a target value exists within the matrix.
+2. Problem type / algorithm category: Matrix searching, specifically utilizing the sorted nature of rows and columns to optimize search.
+3. Step-by-step approach: Start at the top-right corner of the matrix. If the current element is equal to the target, return true. If the current element is greater than the target, move one column to the left. If the current element is less than the target, move one row down. Repeat until the target is found or the search goes out of bounds.
+4. Edge cases: Empty matrix, target smaller than the smallest element or larger than the largest element.
+5. Time and space complexity: Time complexity is O(m+n) where m is the number of rows and n is the number of columns. Space complexity is O(1).
+</thinking>

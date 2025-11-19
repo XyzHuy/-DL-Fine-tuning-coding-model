@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 32-bit unsigned integer, reverse its bits.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Convert the integer to a 32-bit binary string, reverse the string, and convert the reversed string back to an integer.
+4. Edge cases: The input is always a 32-bit integer, no invalid input.
+5. Time and space complexity: Time complexity is O(1) because the number of bits is fixed at 32. Space complexity is O(1) as well because the binary string's size is constant.
+</thinking>

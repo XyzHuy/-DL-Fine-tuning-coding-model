@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest subarray of a given array whose sum is at least k.
+2. Problem type / algorithm category: Sliding window / Prefix sum / Monotonic Queue
+3. Step-by-step approach: Calculate prefix sums, use a deque to maintain a "sliding window" of prefix sums. The deque stores indices, and we maintain it in increasing order of prefix sums. When the difference between the current prefix sum and the prefix sum at the front of the deque is at least k, update the minimum length and remove the front index. Maintain the increasing order in deque by removing elements from the back if they are greater than current prefix sum.
+4. Edge cases: Empty array, no subarray with sum at least k. k is negative.
+5. Time and space complexity: Time: O(n), Space: O(n)
+</thinking>

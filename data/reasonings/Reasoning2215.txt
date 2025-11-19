@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find distinct elements in nums1 not in nums2, and distinct elements in nums2 not in nums1.
+2. Problem type / algorithm category: Set operations, difference.
+3. Step-by-step approach: Convert both input lists into sets to handle duplicates automatically. Calculate the set difference between set1 and set2 for the first result. Calculate the set difference between set2 and set1 for the second result. Convert the resulting sets back to lists.
+4. Edge cases: Empty lists are not possible due to constraints. Lists with all common elements. Lists with no common elements.
+5. Time and space complexity: Time O(N + M), Space O(N + M) where N and M are lengths of nums1 and nums2.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of the peak element in a mountain array.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use binary search to narrow down the range. If the middle element is less than the next element, the peak is to the right. Otherwise, the peak is at the middle or to the left.
+4. Edge cases: The array is guaranteed to be a mountain array.
+5. Time and space complexity: Time complexity is O(log n) and space complexity is O(1).
+</thinking>

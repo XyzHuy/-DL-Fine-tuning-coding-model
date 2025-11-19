@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if string s is a subsequence of string t.
+2. Problem type / algorithm category: String matching, subsequence checking, two pointers.
+3. Step-by-step approach: Iterate through both strings s and t using two pointers. If the characters at the pointers match, increment the s pointer. Always increment the t pointer. After iterating, check if the s pointer has reached the end of s, indicating that s is a subsequence of t.
+4. Edge cases: Empty strings, s longer than t, s contains characters not in t.
+5. Time and space complexity: Time complexity is O(n) where n is the length of t. Space complexity is O(1).
+</thinking>

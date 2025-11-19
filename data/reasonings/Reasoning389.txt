@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the single character that is present in string t but not in string s, where t is a shuffled version of s with one extra character added.
+2. Problem type / algorithm category: String manipulation, Hash table/Dictionary.
+3. Step-by-step approach: Use a dictionary to store the character counts of string s. Iterate through string t, decrementing counts in the dictionary if the character is found. If a character is not found or its count is already zero, then this is the extra character.
+4. Edge cases: Empty string s, t has only one character which is the added character.
+5. Time and space complexity: Time complexity is O(n + m), where n is the length of s and m is the length of t. Space complexity is O(1) since there are only 26 possible lowercase English letters.
+</thinking>

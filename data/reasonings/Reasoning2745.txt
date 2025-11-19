@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a concatenated string using given counts of "AA", "BB", and "AB" strings without forming "AAA" or "BBB" substrings.
+2. Problem type / algorithm category: Greedy approach, String manipulation.
+3. Step-by-step approach: Prioritize alternating "AA" and "BB" strings as much as possible, then use all "AB" strings, and if counts of "AA" and "BB" differ, add one extra of the more frequent type.
+4. Edge cases: Cases where x or y is 0, or when x, y, and z are small. The logic holds as min(x,y) will be 0, and the difference check handles remaining single types.
+5. Time and space complexity: O(1) time and O(1) space, as calculations are direct arithmetic operations.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all occurrences of the word immediately following the sequence "first second" in a given text.
+2. Problem type / algorithm category: String manipulation / Sequence matching.
+3. Step-by-step approach: Split the text into a list of words. Iterate through the list, checking if the current word and the next word match 'first' and 'second', respectively. If they do, append the subsequent word to the result list.
+4. Edge cases: Empty text, first or second not found, 'first second' sequence at the end of the text, overlapping occurrences.
+5. Time and space complexity: Time complexity is O(n), where n is the number of words in the text. Space complexity is O(n) in the worst case, where n is the number of words in the text (for storing the list of words and the result list).
+</thinking>

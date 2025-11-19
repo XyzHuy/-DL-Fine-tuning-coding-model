@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the child holding a ball after k seconds, given n children in a line and the ball passing back and forth.
+2. Problem type / algorithm category: Simulation or Pattern Recognition, Modular Arithmetic.
+3. Step-by-step approach: Calculate full back-and-forth cycles and remaining steps. Use remaining steps to determine the final child position, considering direction changes.
+4. Edge cases: The constraints specify n >= 2 and k >= 1, so no empty line or zero steps. The logic handles reaching ends and reversing direction correctly.
+5. Time and space complexity: O(1) time complexity as calculations are constant. O(1) space complexity as only a few variables are used.
+</thinking>

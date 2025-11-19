@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Decode a message using a substitution cipher where the key determines the mapping of the alphabet based on the first appearance of each character in the key.
+2. Problem type / algorithm category: Substitution cipher, mapping, string manipulation.
+3. Step-by-step approach: Create a mapping from key characters to standard alphabet characters by iterating through the key and assigning them in order of appearance. Then, iterate through the message, substituting each character based on the created map, preserving spaces.
+4. Edge cases: The key contains all 26 lowercase English letters at least once. Spaces in the message are preserved. The key might have duplicate characters.
+5. Time and space complexity: Time complexity is O(N + M) where N is the length of the key and M is the length of the message, due to iterating through both strings. Space complexity is O(1) because the substitution table size is fixed at 26 characters, independent of input string lengths.
+</thinking>

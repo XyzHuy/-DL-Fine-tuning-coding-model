@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest possible number (lexicographically) that can be formed by digits whose painting costs sum up to a given target, where each digit from 1 to 9 has an associated cost.
+2. Problem type / algorithm category: Dynamic programming, string manipulation.
+3. Step-by-step approach: Use dynamic programming where dp[i] stores the largest number that can be formed with a total cost of i. Iterate through costs and digits, updating dp[i] if a larger or longer number can be formed by appending a digit.
+4. Edge cases: Target cost is not achievable, resulting in "0". Empty number for cost 0.
+5. Time and space complexity: O(target * 9) for time, O(target * L) for space where L is the max length of the resulting number.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count all contiguous substrings composed entirely of '1's in a binary string, returning the count modulo 10^9 + 7.
+2. Problem type / algorithm category: String manipulation, counting, dynamic programming (implicit in the current count logic).
+3. Step-by-step approach: Iterate through the string. Maintain a `current_length` of consecutive '1's. When a '1' is encountered, increment `current_length` and add this new length to the total `count` (modulo 10^9 + 7). If a '0' is encountered, reset `current_length` to 0.
+4. Edge cases: The string could contain only '0's, only '1's, or be empty (though constraints state length >= 1). A single '1' contributes 1 to the count.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the string, as we iterate through it once. Space complexity is O(1) as we only use a few variables.
+</thinking>

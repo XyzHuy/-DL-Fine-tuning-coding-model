@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate a list of numbers from 1 to n, sorted lexicographically.
+2. Problem type / algorithm category: Depth-first search (DFS), Lexicographical order.
+3. Step-by-step approach: Use a recursive DFS function to explore the number space. Start with numbers 1 to 9. In the DFS, append the current number to the result, and then explore its children (current * 10 + i), where i is from 0 to 9. The search stops when the current number exceeds n.
+4. Edge cases: n is small (e.g., 1, 2), n is large (e.g., 50000). The constraint 1 <= n <= 5 * 10^4 needs to be considered to avoid stack overflow.
+5. Time and space complexity: Time complexity is O(n) since we visit each number from 1 to n once. Space complexity is O(1) extra space, excluding the output array, since the recursive calls are bounded and the depth of recursion is limited by the number of digits in n.
+</thinking>

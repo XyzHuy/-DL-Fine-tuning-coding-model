@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest uncommon subsequence (LUS) between two strings a and b. LUS is a subsequence of one string but not the other. Return -1 if no LUS exists.
+2. Problem type / algorithm category: String manipulation, subsequence identification.
+3. Step-by-step approach: If the two strings are identical, no uncommon subsequence exists, so return -1. Otherwise, the longer string (or either if they have equal length) will always be an uncommon subsequence. Return the length of the longer string.
+4. Edge cases: Identical strings, strings of different lengths, empty strings (though the constraints indicate the strings are not empty).
+5. Time and space complexity: Time complexity is O(1) since it only involves comparing the strings and finding their lengths. Space complexity is O(1).
+</thinking>

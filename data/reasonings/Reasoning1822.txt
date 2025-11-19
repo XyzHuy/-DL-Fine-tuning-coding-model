@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the sign of the product of all numbers in an integer array.
+2. Problem type / algorithm category: Iteration, Arithmetic.
+3. Step-by-step approach: Iterate through the array, maintain a sign variable initialized to 1. If a 0 is encountered, return 0 immediately. For each negative number, flip the sign variable. After iterating, return the final sign variable.
+4. Edge cases: The presence of a zero in the array, which makes the product zero.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a constant amount of extra space for the sign variable.
+</thinking>

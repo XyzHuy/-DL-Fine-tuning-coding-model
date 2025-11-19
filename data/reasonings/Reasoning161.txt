@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two strings are one edit distance apart (insert, delete, or replace).
+2. Problem type / algorithm category: String manipulation.
+3. Step-by-step approach: Ensure the first string is shorter, check length difference, iterate and compare characters, check for replace/insert/delete possibilities, handle the case where strings are identical except for one additional character.
+4. Edge cases: Empty strings, length difference greater than 1, identical strings, strings differing only at the end.
+5. Time and space complexity: Time: O(N), where N is the length of the shorter string. Space: O(1).
+</thinking>

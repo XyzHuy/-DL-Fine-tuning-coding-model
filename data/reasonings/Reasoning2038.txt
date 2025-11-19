@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Two players, Alice and Bob, take turns removing pieces of specific colors based on their neighbors. Alice removes 'A' if neighbors are 'A', Bob removes 'B' if neighbors are 'B'. Neither can remove edge pieces. The player who cannot move loses. Determine if Alice wins assuming optimal play.
+2. Problem type / algorithm category: Game Theory, Simulation, Greedy.
+3. Step-by-step approach: Count the total number of valid moves for Alice (an 'A' with two 'A' neighbors, not on edges) and Bob (a 'B' with two 'B' neighbors, not on edges). Alice wins if and only if her total potential moves are strictly greater than Bob's potential moves.
+4. Edge cases: String length less than 3 means no valid moves are possible for either player. If Alice has no moves, she loses.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(1) as we only use a few variables to store counts.
+</thinking>

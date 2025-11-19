@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of unique substrings a given string can be split into.
+2. Problem type / algorithm category: Backtracking / Depth First Search.
+3. Step-by-step approach: Use DFS to explore all possible splits. Maintain a set of seen substrings. If a substring is not in the set, add it, recurse, and then remove it to backtrack. Update the maximum count of unique substrings found.
+4. Edge cases: String length of 1, strings with all same characters.
+5. Time and space complexity: Exponential time complexity due to exploring all splits, O(2^N) where N is the string length. Space complexity is O(N) for the recursion depth and substring storage.
+</thinking>

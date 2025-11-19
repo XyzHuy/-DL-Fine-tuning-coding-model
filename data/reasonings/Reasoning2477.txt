@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum fuel cost to send representatives from all cities to the capital (city 0) in a tree-like road network, given car seats per car.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Greedy approach.
+3. Step-by-step approach: Build an adjacency list for the tree. Use DFS starting from the capital. For each node, recursively calculate the number of representatives in its subtrees. For each subtree, calculate the number of cars needed to transport its representatives to the current node, and add the fuel cost (number of cars) to the total. The number of cars is the ceiling of (representatives / seats). The total representatives for a node is 1 (for itself) plus the sum of representatives from its children's subtrees.
+4. Edge cases: An empty list of roads (n=1, only the capital), where the fuel cost is 0.
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited once during DFS. Space complexity is O(N) for the adjacency list and the recursion stack depth in the worst case (a skewed tree).
+</thinking>

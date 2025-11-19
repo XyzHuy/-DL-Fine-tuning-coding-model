@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the earliest day all flower seeds bloom, given individual planting and growing times, and the ability to plant in any order.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Combine plant and grow times, sort seeds by descending grow time, then iterate. For each seed, add its plant time to the current day, calculate its bloom day (current day + grow time), and track the maximum bloom day encountered.
+4. Edge cases: A single seed (n=1), where the bloom day is simply plantTime[0] + growTime[0]. All plant times are 1, or all grow times are 1.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N). Space complexity is O(N) for storing combined flower data.
+</thinking>

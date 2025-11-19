@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest square submatrix whose elements sum to a value less than or equal to a given threshold.
+2. Problem type / algorithm category: 2D Prefix Sum and Binary Search.
+3. Step-by-step approach: First, construct a 2D prefix sum matrix to efficiently calculate the sum of any rectangular submatrix. Then, use binary search on the possible side lengths of the square. For each side length, iterate through all possible top-left corners and check if a square of that side length starting there has a sum within the threshold using the prefix sum matrix.
+4. Edge cases: An empty matrix, a threshold of 0, or a matrix where no square satisfies the condition (resulting in 0).
+5. Time and space complexity: Time complexity is O(m*n*log(min(m,n))) due to prefix sum calculation and binary search over side lengths, where each check within binary search takes O(m*n). Space complexity is O(m*n) for the prefix sum matrix.
+</thinking>

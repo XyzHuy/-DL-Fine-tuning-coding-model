@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all pairs of elements in an array that have the minimum absolute difference between any two elements in the array.
+2. Problem type / algorithm category: Array manipulation, sorting, finding minimum difference.
+3. Step-by-step approach: Sort the input array, iterate through the sorted array and calculate the difference between consecutive elements, keep track of the minimum difference found so far and the pairs that have that difference.
+4. Edge cases: Empty or single-element arrays (handled implicitly by the problem constraints), duplicate elements (the problem specifies distinct integers), very large or very small numbers (handled by int type).
+5. Time and space complexity: Time complexity is dominated by the sorting step, which is O(n log n). Space complexity is O(n) in the worst case if all pairs have the same minimum difference.
+</thinking>

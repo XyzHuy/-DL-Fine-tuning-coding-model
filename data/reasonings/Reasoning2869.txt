@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to collect numbers 1 through k by removing elements from the end of an array.
+2. Problem type / algorithm category: Array traversal, Greedy.
+3. Step-by-step approach: Iterate the array from right to left. Maintain a set or boolean array to track collected numbers from 1 to k. Increment an operation count and mark the number as collected if it's within the range 1 to k and not yet collected. Stop when all k numbers are collected and return the total operations.
+4. Edge cases: k equals nums.length, or k is small. Numbers in nums greater than k can be ignored.
+5. Time and space complexity: Time O(N) where N is nums.length, Space O(K) for tracking collected elements.
+</thinking>

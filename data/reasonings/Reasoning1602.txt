@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the nearest node to the right of a given node 'u' at the same level in a binary tree.
+2. Problem type / algorithm category: Binary Tree Traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Perform a level-order traversal. For each level, iterate through its nodes. If the target node 'u' is found, check if it's the last node in the current level; if not, return the next node in the queue, otherwise return null. Add children to the queue for the next level.
+4. Edge cases: The target node 'u' being the rightmost node in its level, or the tree only containing 'u'.
+5. Time and space complexity: Time complexity is O(N) because each node is visited once. Space complexity is O(W) where W is the maximum width of the tree (for the queue), which can be O(N) in the worst case (a complete binary tree).
+</thinking>

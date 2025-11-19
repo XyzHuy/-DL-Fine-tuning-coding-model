@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Compare two version strings, handling missing revisions and leading zeros.
+2. Problem type / algorithm category: String manipulation, comparison.
+3. Step-by-step approach: Split strings into revisions, iterate up to the longest revision list, convert revisions to integers (or 0 if missing), and compare.
+4. Edge cases: Different lengths of version strings, leading zeros in revisions.
+5. Time and space complexity: Time: O(max(len(version1), len(version2))); Space: O(len(version1) + len(version2)) due to the split arrays.
+</thinking>

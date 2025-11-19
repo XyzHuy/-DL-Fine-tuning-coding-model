@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted array and a range [lower, upper], find the missing ranges within that range that are not present in the array.
+2. Problem type / algorithm category: Array traversal, range finding.
+3. Step-by-step approach: Iterate through the array, keeping track of the previous number. Calculate the range between the previous number + 1 and the current number - 1. Add this range to the result list if it's not empty. The edge cases of lower-1 and upper+1 are handled by prepending the lower bound - 1 and appending the upper bound + 1.
+4. Edge cases: Empty input array, lower equals upper, handling the cases where the first number is greater than lower, and the last number is less than upper, and duplicate numbers.
+5. Time and space complexity: Time complexity is O(n) due to iterating through the input array once. Space complexity is O(n) in the worst case if all numbers in the range are missing and need to be stored.
+</thinking>

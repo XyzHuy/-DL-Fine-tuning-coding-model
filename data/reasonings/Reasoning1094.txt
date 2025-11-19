@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a car, given its capacity, can complete all trips without exceeding its passenger limit at any point along the route.
+2. Problem type / algorithm category: Simulation / Prefix Sum / Hash Map
+3. Step-by-step approach: Use a dictionary to store the changes in passenger count at each location. Iterate through the trips, adding passengers at the start location and subtracting them at the end location. Then, iterate through the sorted locations, accumulating the passenger count. If the count exceeds the capacity at any point, return false. Otherwise, return true.
+4. Edge cases: Empty trips array, capacity of 0, trips with the same start and end location.
+5. Time and space complexity: Time: O(N + KlogK) where N is the number of trips and K is the number of unique locations. Space: O(K) where K is the number of unique locations.
+</thinking>

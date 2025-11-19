@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a robot, given a string of movement instructions (U, D, L, R), returns to its starting position (0, 0).
+2. Problem type / algorithm category: String manipulation, simulation.
+3. Step-by-step approach: Initialize x and y coordinates to 0. Iterate through the input string 'moves'. For each character, update x and y based on the move ('R' increments x, 'L' decrements x, 'U' increments y, 'D' decrements y). After processing all moves, check if both x and y are 0.
+4. Edge cases: Empty input string (should return True), input string with only one move (should return False), very long input string.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the moves string. Space complexity is O(1), as we only use a fixed number of variables.
+</thinking>

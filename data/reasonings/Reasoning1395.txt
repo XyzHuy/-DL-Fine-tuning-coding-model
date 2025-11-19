@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of triplets (i, j, k) such that 0 <= i < j < k < n and either rating[i] < rating[j] < rating[k] or rating[i] > rating[j] > rating[k].
+2. Problem type / algorithm category: Brute Force with Optimization, Counting triplets.
+3. Step-by-step approach: Iterate through each soldier as a potential middle element (j). For each middle element, count soldiers to its left that are smaller and larger, and count soldiers to its right that are smaller and larger. Combine these counts to find valid increasing and decreasing triplets.
+4. Edge cases: The minimum number of soldiers is 3, ensuring at least one possible middle element. Ratings are unique.
+5. Time and space complexity: O(n^2) time complexity due to nested loops, O(1) space complexity as only a few counter variables are used.
+</thinking>

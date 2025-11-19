@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a starting point (sx, sy) can reach a target point (tx, ty) through repeated operations of either (x, y) -> (x, x+y) or (x, y) -> (x+y, y).
+2. Problem type / algorithm category: Math, backtracking (but optimized to avoid explicit recursion/backtracking), Euclidean algorithm-like approach.
+3. Step-by-step approach: Work backward from the target point. If tx > ty, then the previous point must have been (tx - ty, ty). If ty > tx, the previous point must have been (tx, ty - tx). Repeatedly apply this until either tx == sx and ty == sy (success), or tx < sx or ty < sy (failure), or tx == ty. If tx==ty, there are two possible previous points and to avoid ambiguity, the loop breaks and we need to perform a final check using modulo operator.
+4. Edge cases: sx = tx and sy = ty; cases where either tx or ty becomes smaller than sx or sy respectively. The special cases where ty == sy or tx == sx requires modulo operation to check if we can reach the target in a single step.
+5. Time and space complexity: O(log(max(tx, ty))) time complexity due to the while loop and modulo operations. O(1) space complexity since it uses constant extra space.
+</thinking>

@@ -1,0 +1,2612 @@
+{
+  "function_name": "maxEnergyBoost",
+  "test_cases": [
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          100000,
+          1
+        ],
+        "energyDrinkB": [
+          100000,
+          1,
+          100000
+        ]
+      },
+      "expected_output": 200001
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          4,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          3
+        ]
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30
+        ],
+        "energyDrinkB": [
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          100000,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected_output": 300000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          100000,
+          100000
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 300000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          6,
+          7
+        ],
+        "energyDrinkB": [
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          1
+        ],
+        "energyDrinkB": [
+          3,
+          1,
+          1
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          3,
+          2,
+          5,
+          10,
+          7
+        ],
+        "energyDrinkB": [
+          8,
+          4,
+          1,
+          9,
+          6
+        ]
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          20000,
+          30000,
+          40000,
+          10000
+        ],
+        "energyDrinkB": [
+          10000,
+          40000,
+          20000,
+          30000,
+          50000
+        ]
+      },
+      "expected_output": 150000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 50
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ],
+        "energyDrinkB": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      },
+      "expected_output": 500000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          5,
+          7,
+          9
+        ],
+        "energyDrinkB": [
+          2,
+          4,
+          6,
+          8,
+          10
+        ]
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 200
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ],
+        "energyDrinkB": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected_output": 500000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          3,
+          5,
+          1,
+          7,
+          2,
+          8,
+          4,
+          6,
+          9,
+          0
+        ],
+        "energyDrinkB": [
+          0,
+          9,
+          6,
+          4,
+          8,
+          2,
+          7,
+          1,
+          5,
+          3
+        ]
+      },
+      "expected_output": 46
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          99999,
+          1,
+          99999,
+          1,
+          99999
+        ],
+        "energyDrinkB": [
+          2,
+          99999,
+          2,
+          99999,
+          2
+        ]
+      },
+      "expected_output": 299999
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ],
+        "energyDrinkB": [
+          90,
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10,
+          1
+        ]
+      },
+      "expected_output": 700
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "energyDrinkB": [
+          1,
+          9,
+          2,
+          8,
+          3,
+          7,
+          4,
+          6,
+          5,
+          1
+        ]
+      },
+      "expected_output": 64
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "energyDrinkB": [
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 168
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "energyDrinkB": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 74
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          200,
+          300,
+          400,
+          500
+        ],
+        "energyDrinkB": [
+          50,
+          100,
+          150,
+          200,
+          250
+        ]
+      },
+      "expected_output": 1500
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19
+        ],
+        "energyDrinkB": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      },
+      "expected_output": 110
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          1
+        ],
+        "energyDrinkB": [
+          10,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          1
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "energyDrinkB": [
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 180
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "energyDrinkB": [
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ]
+      },
+      "expected_output": 83
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          2,
+          4,
+          5,
+          6
+        ],
+        "energyDrinkB": [
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          1,
+          1,
+          1,
+          10
+        ],
+        "energyDrinkB": [
+          1,
+          10,
+          10,
+          10,
+          1
+        ]
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100
+        ]
+      },
+      "expected_output": 505
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "energyDrinkB": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      },
+      "expected_output": 500000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 200017
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "energyDrinkB": [
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10
+        ]
+      },
+      "expected_output": 180
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ],
+        "energyDrinkB": [
+          1000,
+          900,
+          800,
+          700,
+          600,
+          500,
+          400,
+          300,
+          200,
+          100
+        ]
+      },
+      "expected_output": 7400
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          1,
+          3,
+          1,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          1,
+          3,
+          1,
+          3,
+          1
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000
+        ]
+      },
+      "expected_output": 500005
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          3,
+          8,
+          6,
+          2
+        ],
+        "energyDrinkB": [
+          4,
+          7,
+          1,
+          9,
+          5
+        ]
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100
+        ],
+        "energyDrinkB": [
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1
+        ]
+      },
+      "expected_output": 403
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 116
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "energyDrinkB": [
+          20,
+          19,
+          18,
+          17,
+          16,
+          15,
+          14,
+          13,
+          12,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 299
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 200007
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          10,
+          1,
+          10,
+          1,
+          10
+        ],
+        "energyDrinkB": [
+          10,
+          1,
+          10,
+          1,
+          10,
+          1
+        ]
+      },
+      "expected_output": 33
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ]
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50,
+          100,
+          150,
+          200,
+          250,
+          300,
+          350,
+          400,
+          450,
+          500
+        ],
+        "energyDrinkB": [
+          500,
+          450,
+          400,
+          350,
+          300,
+          250,
+          200,
+          150,
+          100,
+          50
+        ]
+      },
+      "expected_output": 3700
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          10000,
+          90000,
+          60000,
+          20000
+        ],
+        "energyDrinkB": [
+          20000,
+          80000,
+          30000,
+          40000,
+          90000
+        ]
+      },
+      "expected_output": 260000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 550
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "energyDrinkB": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "energyDrinkB": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ]
+      },
+      "expected_output": 500000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          50001,
+          50002,
+          50003,
+          50004,
+          50005,
+          50006,
+          50007,
+          50008,
+          50009
+        ],
+        "energyDrinkB": [
+          50009,
+          50008,
+          50007,
+          50006,
+          50005,
+          50004,
+          50003,
+          50002,
+          50001,
+          50000
+        ]
+      },
+      "expected_output": 500045
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          20,
+          10
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 90
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "energyDrinkB": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 65
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          1,
+          2,
+          3,
+          1,
+          2,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1,
+          100000,
+          1
+        ]
+      },
+      "expected_output": 500005
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          2,
+          7,
+          8,
+          10
+        ],
+        "energyDrinkB": [
+          3,
+          6,
+          1,
+          9,
+          4
+        ]
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          2,
+          4,
+          3,
+          5,
+          4,
+          6,
+          5,
+          7
+        ],
+        "energyDrinkB": [
+          2,
+          4,
+          3,
+          5,
+          4,
+          6,
+          5,
+          7,
+          6,
+          8
+        ]
+      },
+      "expected_output": 50
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 74
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          99999,
+          99998,
+          99997,
+          99996,
+          99995,
+          99994,
+          99993,
+          99992,
+          99991
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 999955
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600
+        ],
+        "energyDrinkB": [
+          600,
+          500,
+          400,
+          300,
+          200,
+          100
+        ]
+      },
+      "expected_output": 2600
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected_output": 1500000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        "energyDrinkB": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          50,
+          100,
+          50,
+          100,
+          50,
+          100,
+          50
+        ],
+        "energyDrinkB": [
+          50,
+          100,
+          50,
+          100,
+          50,
+          100,
+          50,
+          100
+        ]
+      },
+      "expected_output": 600
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "energyDrinkB": [
+          3,
+          1,
+          4,
+          1,
+          5
+        ]
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          2,
+          4,
+          3,
+          5,
+          4,
+          6,
+          5,
+          7
+        ],
+        "energyDrinkB": [
+          7,
+          5,
+          6,
+          4,
+          5,
+          3,
+          4,
+          2,
+          3,
+          1
+        ]
+      },
+      "expected_output": 49
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ],
+        "energyDrinkB": [
+          100,
+          90,
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 740
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          100,
+          100
+        ],
+        "energyDrinkB": [
+          100,
+          100,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 400
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 200054
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          1,
+          100000,
+          1,
+          100000
+        ],
+        "energyDrinkB": [
+          1,
+          100000,
+          1,
+          100000,
+          1
+        ]
+      },
+      "expected_output": 300002
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3
+        ],
+        "energyDrinkB": [
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 900000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          90000,
+          90000,
+          90000,
+          90000,
+          90000,
+          90000,
+          90000,
+          90000,
+          90000,
+          90000
+        ],
+        "energyDrinkB": [
+          10000,
+          10000,
+          10000,
+          10000,
+          10000,
+          10000,
+          10000,
+          10000,
+          10000,
+          10000
+        ]
+      },
+      "expected_output": 900000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000,
+          50000
+        ],
+        "energyDrinkB": [
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000,
+          100000
+        ]
+      },
+      "expected_output": 1000000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          90000,
+          80000,
+          70000,
+          60000,
+          50000,
+          40000,
+          30000,
+          20000,
+          10000
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 550000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100000,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100000
+        ]
+      },
+      "expected_output": 200007
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          3,
+          1,
+          4,
+          1,
+          5,
+          9,
+          2,
+          6,
+          5,
+          3,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          9,
+          7,
+          9,
+          3,
+          2,
+          3,
+          8,
+          4,
+          6,
+          2
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          3,
+          8,
+          6,
+          2
+        ],
+        "energyDrinkB": [
+          2,
+          6,
+          3,
+          8,
+          5
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "energyDrinkB": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 50
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "energyDrinkB": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 74
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "energyDrinkB": [
+          99,
+          99,
+          99,
+          99,
+          99,
+          99
+        ]
+      },
+      "expected_output": 600
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "energyDrinkB": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          5,
+          15,
+          25,
+          35,
+          45,
+          55
+        ],
+        "energyDrinkB": [
+          55,
+          45,
+          35,
+          25,
+          15,
+          5
+        ]
+      },
+      "expected_output": 235
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          1,
+          10,
+          100,
+          1000,
+          10000
+        ],
+        "energyDrinkB": [
+          10000,
+          1000,
+          100,
+          10,
+          1
+        ]
+      },
+      "expected_output": 22000
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "energyDrinkB": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          10,
+          20,
+          30,
+          40,
+          50
+        ],
+        "energyDrinkB": [
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 180
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          100,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100
+        ],
+        "energyDrinkB": [
+          1,
+          100,
+          1,
+          1,
+          1,
+          1,
+          1,
+          100,
+          1,
+          1
+        ]
+      },
+      "expected_output": 306
+    },
+    {
+      "parameters": {
+        "energyDrinkA": [
+          50000,
+          90000,
+          30000,
+          70000,
+          60000,
+          20000,
+          80000,
+          40000,
+          10000,
+          100000
+        ],
+        "energyDrinkB": [
+          100000,
+          10000,
+          80000,
+          20000,
+          40000,
+          60000,
+          10000,
+          70000,
+          50000,
+          30000
+        ]
+      },
+      "expected_output": 550000
+    }
+  ]
+}

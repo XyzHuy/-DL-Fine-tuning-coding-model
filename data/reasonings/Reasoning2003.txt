@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a family tree and genetic values for each node, find the smallest missing genetic value in the subtree rooted at each node.
+2. Problem type / algorithm category: Tree traversal, Depth First Search (DFS), Greedy.
+3. Step-by-step approach: First, build an adjacency list representation of the tree. If genetic value 1 is not present in the entire tree, all answers are 1. Otherwise, find the node with value 1. Start a traversal from this node upwards towards the root. Maintain a set of genetic values encountered in the current subtree being considered. While traversing upwards, for each node, perform a DFS on its children to collect all genetic values in their subtrees and add them to the current set. Then, find the smallest positive integer not present in the set and assign it as the answer for the current node.
+4. Edge cases: The genetic value 1 might not be present in the tree. The tree might be a single node. All nodes might have genetic values such that 1 is the smallest missing value in all subtrees.
+5. Time and space complexity: Time complexity is O(N*M) in worst case if not optimized, but with optimizations (like only processing relevant subtrees), it becomes closer to O(N log N) or O(N) in practice. Space complexity is O(N) for the adjacency list and recursion stack.
+</thinking>

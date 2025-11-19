@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count indices `i` where there are at least `k` elements smaller than `nums[i]` to its left and at least `k` elements smaller than `nums[i]` to its right.
+2. Problem type / algorithm category: Array traversal, Counting, Sorted Data Structures (e.g., SortedList or Fenwick Tree).
+3. Step-by-step approach: Iterate from left to right, maintaining a sorted list of seen elements and counting elements smaller than the current one to its left. Do the same from right to left for the right side counts. Finally, iterate through the array and sum up indices where both left and right counts are at least `k`.
+4. Edge cases: `k` being larger than `nums.length`, all elements being the same, empty input array (though constraints prevent this).
+5. Time and space complexity: O(N log N) time due to sorting operations within loops, O(N) space for storing counts and sorted lists.
+</thinking>

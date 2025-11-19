@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subsets whose product is a product of distinct primes.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking.
+3. Step-by-step approach: Use bitmasks to represent sets of distinct prime factors. Iterate through numbers, and for each number, update DP states representing subsets with combined prime factors. Handle the count of the number 1 separately.
+4. Edge cases: Numbers that are squares of primes (e.g., 4, 9), the number 1, and duplicate numbers in the input array.
+5. Time and space complexity: Time O(N * 2^P + M*P), Space O(2^P), where N is length of nums, P is the count of primes <= 30, and M is max value in nums.
+</thinking>

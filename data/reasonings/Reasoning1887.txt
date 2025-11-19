@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reduce all elements in an array to a single equal value by repeatedly replacing the largest element with the next largest distinct element.
+2. Problem type / algorithm category: Greedy, Sorting, Frequency Counting.
+3. Step-by-step approach: Count frequencies, sort unique numbers, and sum up operations where each operation involves reducing a group of numbers to the next smaller distinct number.
+4. Edge cases: Array with all equal elements (0 operations), array with only two distinct elements.
+5. Time and space complexity: O(N log N) time for sorting, O(N) space for frequency counting.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer, split its digits into two new numbers such that their sum is minimized. The new numbers must use exactly the same digits as the original number.
+2. Problem type / algorithm category: Greedy, String manipulation, Digit manipulation.
+3. Step-by-step approach: Sort the digits of the input number in ascending order. Then, construct two new numbers by alternating digits from the sorted list. Convert these digit combinations back to integers and return their sum.
+4. Edge cases: The input number is guaranteed to be positive and within a certain range. Leading zeros are allowed in the resulting numbers.
+5. Time and space complexity: Time complexity is dominated by sorting the digits, which is O(N log N) where N is the number of digits. Space complexity is O(N) for storing the digits.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count ways to distribute n candies to 3 children, each receiving at most limit candies.
+2. Problem type / algorithm category: Combinatorics, inclusion-exclusion principle.
+3. Step-by-step approach: Start with total combinations without limit (n+2 choose 2), then subtract cases where one child exceeds limit, and add back cases where two children exceed limit to correct overcounting.
+4. Edge cases: If n is too large (greater than 3*limit), no valid distribution is possible.
+5. Time and space complexity: O(1) time and O(1) space due to direct calculation using combinations.
+</thinking>

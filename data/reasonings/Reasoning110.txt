@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a binary tree is height-balanced (the difference in height between the left and right subtrees of every node is not more than 1).
+2. Problem type / algorithm category: Tree traversal, recursion, height calculation.
+3. Step-by-step approach: Use a recursive helper function to calculate the height of each subtree and check if it is balanced. The recursive function returns both the height and a boolean indicating if the subtree is balanced.
+4. Edge cases: Empty tree (should return True), a single node tree (should return True), unbalanced trees.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, since we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H = N, so space complexity becomes O(N). In the best case (balanced tree), H = log N, so space complexity becomes O(log N).
+</thinking>

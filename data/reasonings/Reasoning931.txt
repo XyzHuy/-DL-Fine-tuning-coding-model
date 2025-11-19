@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum sum of a falling path in a square matrix, where a falling path consists of choosing one element from each row such that adjacent elements are either directly below or diagonally left/right.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Iterate through the matrix row by row. For each element in the current row, calculate the minimum sum to reach that element from the previous row using the valid falling path moves (directly below, diagonally left, or diagonally right). Store the minimum sums for the current row and use them to compute the minimum sums for the next row. Finally, return the minimum value in the last row's minimum sums.
+4. Edge cases: The matrix can contain negative numbers. The size of the matrix can be as small as 1x1.
+5. Time and space complexity: Time complexity is O(n^2) because we iterate through all the elements in the n x n matrix. Space complexity is O(n) because we only store the intermediate sums of the current row.
+</thinking>

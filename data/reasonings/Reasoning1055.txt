@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a source and target string, find the minimum number of subsequences from source that concatenate to form the target. Return -1 if impossible.
+2. Problem type / algorithm category: String manipulation, subsequence, greedy algorithm.
+3. Step-by-step approach: Iterate through the target string. At each position, find the longest possible subsequence of target starting at that position which is also a subsequence of the source. Increment the subsequence count and move the target pointer to the end of this subsequence. If no subsequence is found return -1.
+4. Edge cases: If any character in the target is not present in the source, return -1. Empty source or target strings need not be explicitly handled as the logic accounts for them.
+5. Time and space complexity: Time complexity is O(M*N*L) where M is the length of target, N is the length of source and L is the maximum possible length of a subsequence from target which is bounded by the target's length. The space complexity is O(1).
+</thinking>

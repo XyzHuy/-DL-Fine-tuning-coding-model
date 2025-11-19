@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize deletions to make an array beautiful, where beautiful means even length and `nums[i] != nums[i + 1]` for even `i`.
+2. Problem type / algorithm category: Greedy approach.
+3. Step-by-step approach: Iterate through the array, maintaining a count of deletions. If the current effective index is even and the current element equals the next, increment deletions. After the loop, check if the final effective length is odd and add one more deletion if necessary.
+4. Edge cases: The empty array is beautiful. The case where the remaining array length is odd.
+5. Time and space complexity: O(N) time and O(1) space.
+</thinking>

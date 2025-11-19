@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a hand of cards can be arranged into groups of size groupSize, where each group consists of consecutive cards.
+2. Problem type / algorithm category: Array manipulation, hashmap, sorting.
+3. Step-by-step approach: Check if the hand size is divisible by groupSize. Count card occurrences using a hashmap. Sort the hand. Iterate through the sorted hand, and for each card, check if consecutive cards exist to form a group, decreasing their counts in the hashmap.
+4. Edge cases: Empty hand, groupSize larger than hand size, hand size not divisible by groupSize, missing consecutive cards.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, where N is the length of the hand. Space complexity is O(N) to store the card counts in the hashmap.
+</thinking>

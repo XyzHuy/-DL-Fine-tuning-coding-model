@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize points by fighting unmarked enemies (costing energy and gaining a point) or marking unmarked enemies (gaining energy).
+2. Problem type / algorithm category: Greedy algorithm with sorting and iterative refinement.
+3. Step-by-step approach: Sort energies. Repeatedly use the weakest enemy to gain points as many times as possible with current energy. Then, use remaining energy to gain energy from the strongest unmarked enemy to potentially fight more weakest enemies. Repeat this process.
+4. Edge cases: Initial energy is less than the weakest enemy's energy, meaning no points can be gained initially.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and O(N) for the loop. Space complexity is O(1) if sorting in-place, or O(N) depending on sorting implementation.
+</thinking>

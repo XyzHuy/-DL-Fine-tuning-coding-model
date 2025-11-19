@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given positions of hens and grains on a line, find the minimum time for all grains to be eaten by hens, where hens move simultaneously and can eat multiple grains.
+2. Problem type / algorithm category: Binary Search on Answer, Greedy.
+3. Step-by-step approach: Binary search for the minimum time `t`. For a given `t`, use a greedy approach: iterate through sorted hens and sorted grains, assigning grains to hens that can reach them within time `t`. A hen at `x` can eat grains in a range.
+4. Edge cases: No hens or no grains, hens and grains at same positions, hens/grains at extreme positions.
+5. Time and space complexity: O(N log(MaxPos) + M log(MaxPos)) time due to binary search and greedy check, O(1) space if input arrays can be modified, O(N+M) otherwise for sorting.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an amount and a list of coin denominations, find the number of possible combinations of coins that sum up to the given amount.
+2. Problem type / algorithm category: Dynamic Programming (Coin Change)
+3. Step-by-step approach: Initialize a DP array of size (amount + 1) with all elements set to 0, except for dp[0] which is set to 1. Iterate through each coin denomination. For each coin, iterate through the DP array from the coin value to the amount. Update each element dp[x] by adding dp[x - coin] to it. Finally, return dp[amount].
+4. Edge cases: If the amount is 0, return 1 (base case). If the amount cannot be made up by any combination of coins, the algorithm will return 0.
+5. Time and space complexity: Time complexity is O(amount * n), where n is the number of coins. Space complexity is O(amount).
+</thinking>

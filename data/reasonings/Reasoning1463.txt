@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize cherry collection by two robots starting at top-left and top-right, moving downwards one row at a time, with specific movement constraints.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Use a recursive function `dp(row, col1, col2)` representing the maximum cherries collected from `row` downwards, with robot 1 at `col1` and robot 2 at `col2`. The base case is when robots are out of bounds (return 0). Calculate current cherries and add the maximum cherries from subsequent states by exploring all nine possible next moves for both robots.
+4. Edge cases: Robots moving out of grid boundaries, robots occupying the same cell, reaching the last row.
+5. Time and space complexity: Time complexity is O(rows * cols * cols) due to states (row, col1, col2). Space complexity is O(rows * cols * cols) for memoization.
+</thinking>

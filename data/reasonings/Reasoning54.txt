@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D matrix, return all elements in spiral order.
+2. Problem type / algorithm category: Matrix traversal, Array.
+3. Step-by-step approach: Use four pointers (top, bottom, left, right) to track the boundaries of the matrix. Iterate through the matrix in a spiral manner, updating the boundaries after each iteration.
+4. Edge cases: Empty matrix or null matrix should return an empty list. Consider rectangular matrices.
+5. Time and space complexity: Time complexity is O(m*n), where m is the number of rows and n is the number of columns. Space complexity is O(1) excluding the output array, O(m*n) including the output array.
+</thinking>

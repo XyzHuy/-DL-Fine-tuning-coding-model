@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of trailing zeros in the factorial of a given non-negative integer n.
+2. Problem type / algorithm category: Math / Number Theory
+3. Step-by-step approach: The number of trailing zeros is determined by the number of times 5 appears as a factor in the prime factorization of n!. Count multiples of 5, 25, 125 and so on, up to n. Divide n repeatedly by 5 and sum the quotients.
+4. Edge cases: n = 0 should return 0.
+5. Time and space complexity: Time complexity is O(log5(n)) which is O(log n). Space complexity is O(1).
+</thinking>

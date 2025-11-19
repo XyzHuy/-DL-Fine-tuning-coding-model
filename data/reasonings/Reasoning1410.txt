@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert HTML entities in a given string to their corresponding characters.
+2. Problem type / algorithm category: String manipulation, replacement.
+3. Step-by-step approach: Create a mapping from HTML entities to characters. Iterate through this mapping and use string replacement to substitute each entity with its character.
+4. Edge cases: The input string might contain no entities, only entities, or a mix. Entities that are part of larger invalid sequences (e.g., &ambassador;) should not be replaced.
+5. Time and space complexity: Time complexity is O(N*M) where N is text length and M is the number of entities, due to repeated string replacements. Space complexity is O(N) for the new string created by replacements.
+</thinking>

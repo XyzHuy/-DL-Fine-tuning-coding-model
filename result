@@ -1,0 +1,24 @@
+Chấm trên problem-test-50
+
+qwen - no reasoning 
+
+====================================
+Total problems evaluated: 50
+Problems timeout/error: 1
+Average score across all problems: 27.14%
+====================================
+
+
+========================================================================
+
+qwen - reasoning 
+
+====================================
+Total problems evaluated: 50
+Problems timeout/error: 0
+Average score across all problems: 40.67%
+====================================
+
+
+deep-seek - no reasoning
+

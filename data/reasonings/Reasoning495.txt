@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total time Ashe is poisoned given attack times and duration of the poison effect, with overlapping poison durations resetting the timer.
+2. Problem type / algorithm category: Array traversal, greedy algorithm.
+3. Step-by-step approach: Iterate through the timeSeries, calculating the overlap between consecutive poison durations, and adding the non-overlapping portion to the total time. Add the full duration for the last attack.
+4. Edge cases: Empty timeSeries array, duration is zero, consecutive attacks with small intervals.
+5. Time and space complexity: Time complexity is O(n), where n is the length of timeSeries. Space complexity is O(1).
+</thinking>

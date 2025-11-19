@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves for a 2-cell snake to reach the bottom right corner of an n x n grid, avoiding blocked cells and using right, down, and rotate moves.
+2. Problem type / algorithm category: Breadth-First Search (BFS), Graph Traversal. The grid and snake moves can be represented as a graph where each state (snake position and orientation) is a node.
+3. Step-by-step approach: Use BFS to explore possible snake movements. Maintain a queue of snake states (row, col, orientation) and the number of moves. Mark visited states to avoid cycles. For each state, try moving right, down, and rotating (clockwise or counterclockwise), if the move is valid and the new state has not been visited, add it to the queue.
+4. Edge cases: If the target is unreachable, return -1. Consider grid boundaries and blocked cells when determining valid moves and rotations.
+5. Time and space complexity: Time complexity is O(N^3) because each state (r, c, is_horizontal) takes O(1) time to process, and there are O(N^2) possible states and at most 2 orientations. The space complexity is O(N^2) to store the visited states.
+</thinking>

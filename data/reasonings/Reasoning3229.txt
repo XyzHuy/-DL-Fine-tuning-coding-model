@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum operations to transform array nums to array target by incrementing/decrementing contiguous subarrays.
+2. Problem type / algorithm category: Greedy approach, difference array.
+3. Step-by-step approach: Calculate the initial difference at index 0. For subsequent indices, compare the current difference with the previous one. If they have the same sign, add the absolute difference between the current difference and the previous difference to the total operations if the current difference is larger. If they have different signs or one is zero, add the absolute current difference to the total operations.
+4. Edge cases: The arrays can be empty or have a single element. The differences can be zero.
+5. Time and space complexity: Time complexity is O(n) and space complexity is O(1).
+</thinking>

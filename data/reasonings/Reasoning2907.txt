@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum total profit of three items (i, j, k) such that their indices are strictly increasing (i < j < k) and their prices are also strictly increasing (prices[i] < prices[j] < prices[k]). Return -1 if no such triplet exists.
+2. Problem type / algorithm category: Dynamic Programming / Brute Force Optimization.
+3. Step-by-step approach: Iterate through all possible middle elements j. For each j, precompute the maximum profit obtainable from an item i (where i < j and prices[i] < prices[j]). Then, iterate through all possible last elements k (where k > j). If prices[j] < prices[k] and a valid profit from an item i exists, update the maximum overall profit by summing profits[i] (max profit before j) + profits[j] + profits[k].
+4. Edge cases: The minimum number of items is 3. If no valid triplet can be formed according to the conditions, the result should be -1. This is handled by initializing max_profit to -1.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(n) for storing precomputed best profits.
+</thinking>

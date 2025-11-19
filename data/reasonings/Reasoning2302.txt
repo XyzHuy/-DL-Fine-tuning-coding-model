@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of non-empty subarrays whose sum multiplied by their length is strictly less than a given integer k.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: Use a sliding window approach. Expand the window by moving the right pointer and adding the current element to the sum. If the score of the current window (sum * length) is not less than k, shrink the window from the left by removing the leftmost element from the sum and advancing the left pointer. For each valid window ending at the right pointer, all subarrays starting from the left pointer up to the right pointer are valid, so add the number of such subarrays (right - left + 1) to the total count.
+4. Edge cases: Empty input array (though constraints say nums.length >= 1), k being very small or very large.
+5. Time and space complexity: Time complexity is O(n) because both left and right pointers traverse the array at most once. Space complexity is O(1) as we only use a few variables.
+</thinking>

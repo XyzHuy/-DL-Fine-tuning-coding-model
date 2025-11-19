@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path from a given entrance to any border cell that is not the entrance itself, avoiding walls in a maze.
+2. Problem type / algorithm category: Breadth-First Search (BFS) for shortest path in an unweighted graph.
+3. Step-by-step approach: Use BFS starting from the entrance. Explore neighboring cells layer by layer. Mark visited cells to avoid cycles. When an exit (border cell not the entrance) is reached, return the current step count.
+4. Edge cases: Maze with no exits, entrance is itself an exit (but not counted), maze with only walls, maze with a single row/column.
+5. Time and space complexity: O(m*n) time complexity for visiting each cell at most once, and O(m*n) space complexity for the queue and visited set.
+</thinking>

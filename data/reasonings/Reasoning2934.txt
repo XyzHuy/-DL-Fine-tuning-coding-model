@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum swaps to make the last elements of nums1 and nums2 the maximum in their respective arrays.
+2. Problem type / algorithm category: Greedy with case analysis.
+3. Step-by-step approach: Determine the target maximums for nums1 and nums2 based on the last elements, considering two possibilities: either the last elements are swapped or not. For each possibility, iterate through the arrays and count necessary swaps. If an element violates the target maximums and cannot be fixed by swapping with its pair, it's impossible. Return the minimum swaps from the valid possibilities.
+4. Edge cases: It might be impossible to satisfy the conditions, in which case -1 should be returned. This occurs if any element, even after potential swaps, exceeds the target maximum for its array.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the arrays a constant number of times. Space complexity is O(1) as we only use a few variables.
+</thinking>

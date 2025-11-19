@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum total Manhattan distance from all houses (marked as 1 in a grid) to a meeting point.
+2. Problem type / algorithm category: Optimization problem, median finding.
+3. Step-by-step approach: Extract row and column indices of houses. Calculate the median of row indices and column indices separately. The meeting point is determined by these medians. Sum Manhattan distances from each house to the meeting point.
+4. Edge cases: Empty grid (handled by constraints), single house (not possible due to constraints), grids with all houses in one row or column.
+5. Time and space complexity: Time complexity is O(m*n) to collect row and column indices, and O(m+n) to calculate the distance. Space complexity is O(m+n) to store the row and column indices.
+</thinking>

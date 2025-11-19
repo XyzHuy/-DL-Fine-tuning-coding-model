@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all paths from the source node (0) to the target node (n-1) in a directed acyclic graph represented as an adjacency list.
+2. Problem type / algorithm category: Graph traversal, Depth-First Search (DFS) or Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore all possible paths starting from node 0. Maintain a queue of paths. For each path, extend it by adding neighbors of the last node in the path. If the last node is the target node, add the path to the result.
+4. Edge cases: The graph is guaranteed to be a DAG and have at least two nodes. There are no self-loops, and the neighbors of a node are unique.
+5. Time and space complexity: Time complexity is O(2^n * n) in the worst case, where n is the number of nodes (each node can have at most 2 choices). Space complexity is O(2^n * n) to store all possible paths.
+</thinking>

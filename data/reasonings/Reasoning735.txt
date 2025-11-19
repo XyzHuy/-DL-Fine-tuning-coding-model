@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate collisions of asteroids moving in opposite directions to determine the final state of asteroids.
+2. Problem type / algorithm category: Stack data structure, simulation.
+3. Step-by-step approach: Iterate through asteroids. If positive, push onto the stack. If negative, resolve collisions with positive asteroids on top of the stack until the stack is empty, the stack top is negative, or the stack top is equal to the absolute value of the current asteroid.
+4. Edge cases: Empty stack, all asteroids moving in the same direction, equal sized asteroids colliding.
+5. Time and space complexity: Time: O(n), Space: O(n).
+</thinking>

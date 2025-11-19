@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays that, when removed, leave the remaining array strictly increasing.
+2. Problem type / algorithm category: Brute Force / Subarray Enumeration.
+3. Step-by-step approach: Iterate through all possible start and end points of subarrays. For each subarray, construct the remaining array by concatenation. Check if the remaining array is strictly increasing. If it is, increment the count.
+4. Edge cases: Empty remaining array (considered strictly increasing), arrays with duplicate adjacent elements.
+5. Time and space complexity: O(N^3) time due to N^2 subarrays and O(N) for checking strict increase, O(N) space for creating remaining array.
+</thinking>

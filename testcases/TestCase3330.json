@@ -1,0 +1,329 @@
+{
+  "function_name": "possibleStringCount",
+  "test_cases": [
+    {
+      "parameters": {
+        "word": "aaabbbccc"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "abbcccc"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word": "mississippi"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzz"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzzzzz"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "word": "aabbccdd"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word": "aabbbaaccc"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "banana"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeff"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzzzz"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "word": "clumsytyping"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aaaa"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "aabbcc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "hello"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "abcde"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "abcd"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "zzzzz"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word": "abcabcabc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "alice"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "a"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "programming"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "ppppppqqqqqqrrrrrr"
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "word": "xyxxyxyxyx"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "aaaaaaaaaabbbbbbbbbb"
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "word": "aaaaaaaaaabbbbbbbbbbcccccccccc"
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeeffffggg"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeefffggg"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "word": "aabbbcccccdddddeeeeeeffffffgggggghhhhhiiiiiijjjjjkkkkklllllmmmmmnnnnnooooooopppppqqqqqrrrrrssssstttttuuuuuvvvvvwwwwxxxyyyyzzzz"
+      },
+      "expected_output": 101
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeffgg"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeffggzzzz"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "word": "aabbbcccdddeeefff"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "word": "abaaac"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "word": "aaabbbcccdddeeefffggghhhiii"
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "word": "aaaaabbccddd"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnop"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "xyzzzzzzzzzzzzzzzzzzyx"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "word": "aaaabbbbccccdddd"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "word": "ppppqqqqqqrrrrrr"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeffggzzzzzzzzzz"
+      },
+      "expected_output": 17
+    },
+    {
+      "parameters": {
+        "word": "ababababab"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz"
+      },
+      "expected_output": 27
+    },
+    {
+      "parameters": {
+        "word": "abcdefg"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "abcabcabcabcabc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aabbbcccccdddddeeeeeeffffffgggggghhhhhiiiiiijjjjjkkkkklllllmmmmmnnnnnooooooopppppqqqqqrrrrrssssstttttuuuuuvvvvvwwwwxxxyyyyzzzzzz"
+      },
+      "expected_output": 103
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijjjjjjjjjjjklmnopqrstuuuuuuuuuuuuuuuuuuuvwxyzzzzzzzzzzzz"
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "word": "aaaaaaaaaabbbbbbbbbccccccccddddddddeeeeeeeeeffffffffgggggggghhhhhhhhiiiiiiiijjjjjjjjkkkkkkkkllllllllmmmmmmmmnnnnnnnnooooooooooppppppppqqqqqqqqrrrrrrrrssssssssttttttttuuuuuuuuvvvvvvvvwwwwwwwwxxxxxxxxxyyyyyyyyzzzzzzzzz"
+      },
+      "expected_output": 191
+    },
+    {
+      "parameters": {
+        "word": "bookkeeper"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzyy"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "abcdaabbccddeeff"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "aabbaaabbbaaaa"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "word": "xxyyzzxxxyyzz"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 94
+    },
+    {
+      "parameters": {
+        "word": "abcabcabcabc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "zzzzyyyy"
+      },
+      "expected_output": 7
+    }
+  ]
+}

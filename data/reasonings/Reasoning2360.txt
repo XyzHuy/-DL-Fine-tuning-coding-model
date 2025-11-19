@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest cycle in a directed graph where each node has at most one outgoing edge.
+2. Problem type / algorithm category: Graph traversal (Depth-First Search).
+3. Step-by-step approach: Iterate through each node. If a node hasn't been visited, start a DFS. During DFS, track the distance from the starting node and mark visited nodes with their distances. If a visited node is encountered again, a cycle is found, and its length is calculated. Backtrack by unmarking nodes to allow detection of other cycles. Keep track of the maximum cycle length found.
+4. Edge cases: No cycles in the graph (return -1), graph with isolated nodes or paths ending in -1.
+5. Time and space complexity: O(n) time complexity due to visiting each node and edge at most once. O(n) space complexity for the visited array and recursion stack.
+</thinking>

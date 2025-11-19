@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem is to find the h-index of a researcher given an array of their paper citations, where the h-index is the maximum value h such that the researcher has at least h papers with at least h citations.
+2. Problem type / algorithm category: This is an array problem that can be solved using sorting and iteration.
+3. Step-by-step approach: First, sort the citations array in descending order. Then, iterate through the sorted array, incrementing the h-index as long as the current citation is greater than the current h-index. Stop when the citation is no longer greater than the current h-index.
+4. Edge cases: Empty array, array with all zero citations, array with a single citation. The case where all citations are greater or equal to the number of papers.
+5. Time and space complexity: The time complexity is O(n log n) due to the sorting step. The space complexity is O(1) as we are only using a few extra variables.
+</thinking>

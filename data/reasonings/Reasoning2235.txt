@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of two given integers.
+2. Problem type / algorithm category: Basic arithmetic operation.
+3. Step-by-step approach: Directly add num1 and num2 using the plus operator.
+4. Edge cases: Negative numbers and zero are handled by standard integer addition.
+5. Time and space complexity: O(1) time and O(1) space.
+</thinking>

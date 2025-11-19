@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate x to the power of n.
+2. Problem type / algorithm category: Math, recursion/iteration, divide and conquer.
+3. Step-by-step approach: Use a helper function to calculate the power using binary exponentiation. If n is negative, calculate x to the power of -n and return its reciprocal.
+4. Edge cases: n=0 returns 1, n is negative, x is 0. Handle integer overflow by using bitwise operators.
+5. Time and space complexity: Time complexity is O(log n), and space complexity is O(1).
+</thinking>

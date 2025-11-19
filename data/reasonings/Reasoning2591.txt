@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute money to children with rules: all money used, each child gets at least $1, no child gets $4. Maximize children receiving exactly $8.
+2. Problem type / algorithm category: Greedy algorithm, Integer division and modulo operations.
+3. Step-by-step approach: First, ensure each child gets $1. Then, greedily give $7 more to as many children as possible (total $8). Handle cases where the remaining money creates conflicts with rules.
+4. Edge cases: Not enough money for $1 per child, more children designated for $8 than available, remaining money forces one child to exceed $8 or have exactly $3 when only one child is left.
+5. Time and space complexity: O(1) time and O(1) space.
+</thinking>

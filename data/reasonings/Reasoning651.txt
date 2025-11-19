@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of 'A' characters that can be printed on a screen using at most 'n' keystrokes, given the options to print 'A', select all, copy, and paste.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming to store the maximum number of 'A's achievable for each keystroke count from 1 to n. Iterate through the possible keystroke counts, and for each count, consider all possible split points where we perform Ctrl-A, Ctrl-C, and then multiple Ctrl-V operations. Calculate the number of 'A's achievable with that split and update the maximum accordingly.
+4. Edge cases: When n is small (n <= 3), the maximum number of 'A's is simply n.
+5. Time and space complexity: Time complexity is O(n^2) due to the nested loops. Space complexity is O(n) to store the DP table.
+</thinking>

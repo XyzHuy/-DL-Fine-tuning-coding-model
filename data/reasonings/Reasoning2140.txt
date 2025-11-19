@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum points earned by solving questions in order, where solving a question prevents solving subsequent questions based on its brainpower.
+2. Problem type / algorithm category: Dynamic Programming (specifically, a variation of the knapsack problem or house robber problem).
+3. Step-by-step approach: Iterate backwards. For each question i, the maximum points can be either skipping it (taking the max points from i+1) or solving it (points[i] + max points from i + brainpower[i] + 1). The DP state dp[i] stores the maximum points achievable starting from question i.
+4. Edge cases: When `i + brainpower + 1` or `i + 1` goes beyond the array bounds, the contribution from that path is 0. The final answer is dp[0].
+5. Time and space complexity: Time O(N), Space O(N) where N is the number of questions.
+</thinking>

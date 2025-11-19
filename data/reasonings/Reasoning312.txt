@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of balloon values, find the maximum coins obtainable by bursting balloons in an optimal order, where bursting balloon i yields nums[i-1] * nums[i] * nums[i+1] coins, treating out-of-bounds indices as balloons with value 1.
+2. Problem type / algorithm category: Dynamic Programming. The problem is solved by considering all possible subarrays and the last balloon to be burst in each subarray.
+3. Step-by-step approach: Pad the input array with 1s at the beginning and end. Initialize a DP table dp[i][j] to store the maximum coins obtained by bursting balloons between indices i and j. Iterate through possible lengths of subarrays and for each subarray, iterate through all possible last balloons to burst within that range. Update dp[i][j] using the recurrence relation: dp[i][j] = max(dp[i][j], nums[i] * nums[k] * nums[j] + dp[i][k] + dp[k][j]), where k is the index of the last balloon to burst.
+4. Edge cases: The addition of 1s at the beginning and end of the array handles the edge cases where i-1 or i+1 are out of bounds.
+5. Time and space complexity: Time complexity is O(n^3) due to the three nested loops. Space complexity is O(n^2) to store the DP table.
+</thinking>

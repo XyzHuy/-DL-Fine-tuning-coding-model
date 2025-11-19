@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays where the maximum element appears at least k times.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: Find the maximum element. Use a sliding window [left, right]. Expand the window to the right. If the maximum element count reaches k, all subarrays ending at `right` and starting from `left` up to the current position of the maximum element are valid. Shrink the window from the left when the condition is met, updating the count.
+4. Edge cases: Array with no occurrences of the maximum element, or fewer than k occurrences. k larger than array length.
+5. Time and space complexity: O(N) time, O(1) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a non-negative integer `c` can be represented as the sum of two squares (a^2 + b^2 = c).
+2. Problem type / algorithm category: Number theory, two-pointer approach.
+3. Step-by-step approach: Initialize two pointers, `left` to 0 and `right` to the square root of `c`. Iterate while `left` is less than or equal to `right`. Calculate the sum of squares. If the sum equals `c`, return True. If the sum is less than `c`, increment `left`. Otherwise, decrement `right`. If no solution is found, return False.
+4. Edge cases: c = 0, c = 1, large values of c, perfect square values of c.
+5. Time and space complexity: Time complexity is O(sqrt(c)) because the while loop iterates up to the square root of c. Space complexity is O(1) as only constant extra space is used.
+</thinking>

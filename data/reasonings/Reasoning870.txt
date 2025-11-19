@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays nums1 and nums2 of the same length, find a permutation of nums1 that maximizes the number of indices i where nums1[i] > nums2[i].
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort nums1. Sort nums2 with indices. Iterate through sorted nums1. If the current number in nums1 is greater than the smallest remaining element in sorted nums2, assign it to the index of that smallest element. Otherwise, assign the current number to the index of the largest remaining element in sorted nums2.
+4. Edge cases: When nums1 is empty. When nums1 contains duplicate values. When all elements in nums1 are smaller than or equal to the elements in nums2. When all elements in nums1 are larger than elements in nums2.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(n) for storing the sorted indices of nums2 and the result array.
+</thinking>

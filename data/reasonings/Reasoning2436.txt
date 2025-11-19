@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of positive integers, split it into the minimum number of contiguous subarrays such that the greatest common divisor (GCD) of elements in each subarray is strictly greater than 1.
+2. Problem type / algorithm category: Greedy approach, Dynamic Programming (implicitly, as a greedy choice works).
+3. Step-by-step approach: Initialize the number of splits to 1 and the current GCD to the first element. Iterate through the array, updating the current GCD by taking the GCD with the current element. If the current GCD becomes 1, it means the current subarray cannot extend further while maintaining a GCD > 1, so increment the split count and reset the current GCD to the current element to start a new subarray.
+4. Edge cases: An array where the GCD of all elements is greater than 1, meaning only one split is needed. An array where elements are pairwise coprime or individual elements force a GCD of 1. The problem constraints guarantee positive integers, so no negative or zero inputs.
+5. Time and space complexity: Time complexity is O(N * log(max(nums))) due to GCD calculations for each element, where N is the length of the array. Space complexity is O(1) as we only use a few variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of splitting a sentence into rows, where each row's character count is at most k, and the cost of a row is (k - length)^2 (excluding the last row).
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming where dp[i] represents the minimum cost to partition the first i words. Iterate through possible previous split points j for the i-th word, calculate the cost of the current row, and update dp[i] using the minimum cost from dp[j-1].
+4. Edge cases: A sentence with a single word (cost is 0), and the last row's cost is not included.
+5. Time and space complexity: O(N^2) time complexity and O(N) space complexity, where N is the number of words in the sentence.
+</thinking>

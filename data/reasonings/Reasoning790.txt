@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, find the number of ways to tile a 2 x n board using 2 x 1 dominoes and trominoes.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming to build the solution from smaller subproblems. `dp[i]` stores the number of ways to tile a 2 x i board, and `dp1[i]` stores the number of ways to tile a 2 x i board with one corner missing. Derive recurrence relations for `dp[i]` and `dp1[i]` based on how the last tile is placed. Take modulo at each step to avoid overflow.
+4. Edge cases: n = 1, n = 2 need to be handled specifically as base cases.
+5. Time and space complexity: Time complexity is O(n) because we iterate up to n. Space complexity is O(n) because we store dp array of size n+1 and dp1 array of size n+1.
+</thinking>

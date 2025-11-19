@@ -1,0 +1,767 @@
+{
+  "function_name": "hasSameDigits",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "9876543210"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "100100"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "123321"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "111"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1234567890"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "55555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "13579"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "222222"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "99999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "9999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "3902"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "11111"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123456"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "789"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "34789"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "12121"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "987654"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "24680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "55"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "101010"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "456"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "987654321"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "00000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123456789"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "101010101010101010"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "43210987654321098765"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "989796959493929190"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "5432109876543210"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9090909090"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "66666666666666666666"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "10987654321"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "12345678987654321"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1919191919"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "37373737373737373737373"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "98765432101234567890"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "135791357913579135791357913579"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "4444444444444444444444444444444444444444444444444444444"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "0000000000000000000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "6666666666"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "99887766554433221100"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "1232123212"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "87654321098765432109876543210987654321098765432109876"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "0246802468024680246802468024680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "555555555555555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "112233445566778899"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "0000000000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1223344556677889900"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "12987645302198765430"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "12345678901234567890123"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "1010101010101010"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "111122223333"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "86420864208642086420"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "4646464646"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "12312312312312312312"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "5500550055"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "909090909090909090"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "0000000001"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9080706050403020100"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "4444444444"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "8282828282"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1098765432109876543210"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "135791357913579"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "99999999999999999999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "11111111111111111111"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "864208642086420864"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "99999999999999999999999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "111111111111111111"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "246802468024680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "5555555555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "3692581470369258147036925814"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "12345432100987656789"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "5959595959"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "12345678901234567890"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "28282828282828282828282"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "2468024680246802468"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "98765432109876543210"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "2468024680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "543210987654321098"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "864204680246802468024680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "3737373737"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1919191919191919"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1122334455667788990011"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "5983476201"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "987654321987654321"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "00000000000000000000000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1357913579"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "90909090909090909090"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "9999999999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1234321234"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9898989898989898"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "246802468024680246"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "555555555555555555555555555555555555555555555555555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "121212121212121212"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "55555555555555555555555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1234321098767890"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "111222333444"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9753197531"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "55555555555555555555"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "6464646464"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "00000000000000000000"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "90817263544536271809"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123123123123123123"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9999999999999999999999999999999999999999999999999999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "111222333444555666"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "19191919191919191919191"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "13579246801357924680"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "9876543210987654321098"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "46464646464646464646464"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1231231231"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "2468135791"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "432143214321432143"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1111111111"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "98798798798798798798"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "2828282828"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "00112233445566778899"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "999999999999999999999999999999"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123123123123123"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "09876543210987654321"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "10101010101010101010"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "3693693693693693693"
+      },
+      "expected_output": false
+    },
+    {
+      "parameters": {
+        "s": "1212121212"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "12121212121212121212121212121212121212121212121212121212"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "1212121212121212"
+      },
+      "expected_output": true
+    },
+    {
+      "parameters": {
+        "s": "123456789012345678901234567890"
+      },
+      "expected_output": false
+    }
+  ]
+}

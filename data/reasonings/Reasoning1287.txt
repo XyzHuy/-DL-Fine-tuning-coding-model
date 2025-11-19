@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the single element in a sorted array that appears more than 25% of the time.
+2. Problem type / algorithm category: Array, Counting.
+3. Step-by-step approach: Calculate the threshold (length / 4). Count occurrences of each element. Return the element whose count exceeds the threshold.
+4. Edge cases: Array with only one or two elements.
+5. Time and space complexity: Time O(N), Space O(N) where N is the length of the array.
+</thinking>

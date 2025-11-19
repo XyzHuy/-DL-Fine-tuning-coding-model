@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of a target value in a sorted array. If not found, return the index where it would be inserted to maintain the sorted order.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Initialize left and right pointers. While left is less than or equal to right, calculate the middle index. If the middle element is equal to the target, return the middle index. If the middle element is less than the target, move the left pointer to mid + 1. Otherwise, move the right pointer to mid - 1. If the target is not found, return the left pointer, which indicates the insertion index.
+4. Edge cases: Empty array, target smaller than the first element, target larger than the last element, target already present in the array.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it uses constant extra space.
+</thinking>

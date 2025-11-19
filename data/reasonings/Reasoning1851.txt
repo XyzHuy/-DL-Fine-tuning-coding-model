@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest interval size that contains each query point, returning -1 if no interval contains the point.
+2. Problem type / algorithm category: Sweep line, sorting, and min-heap.
+3. Step-by-step approach: Sort intervals by start time and queries by value. Iterate through sorted queries. For each query, add relevant intervals (starting before or at the query) to a min-heap ordered by interval size. Remove intervals from the heap that end before the current query. The top of the heap then holds the smallest valid interval.
+4. Edge cases: Queries that fall outside all intervals, intervals that completely contain other intervals, intervals that start exactly at a query point.
+5. Time and space complexity: Time complexity is O(N log N + M log M) due to sorting and heap operations, where N is the number of intervals and M is the number of queries. Space complexity is O(N) for the heap and storing query results.
+</thinking>

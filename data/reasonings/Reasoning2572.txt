@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty subsets of a given array whose product is square-free, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking, Number Theory.
+3. Step-by-step approach: Precompute primes up to 30. Use dynamic programming where dp[mask] stores the count of subsets whose product has prime factors represented by the bitmask. Iterate through numbers from 2 to 30. If a number is valid (not divisible by any perfect square other than 1), calculate its prime factor mask. Update dp states using the current number's count and the dp states it can transition from. Handle the number 1 separately as it doesn't affect square-freeness. Finally, subtract 1 to exclude the empty subset.
+4. Edge cases: The number 1 in the input array. Numbers that are not square-free themselves (e.g., 4, 8, 9, 12). Empty subsets.
+5. Time and space complexity: Time complexity is O(N + M * 2^P * M'), where N is the length of nums, M is the maximum value in nums (30), P is the number of primes less than M (10), and M' is the number of distinct values in nums. Space complexity is O(2^P).
+</thinking>

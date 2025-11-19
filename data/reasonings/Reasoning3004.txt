@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a rooted tree and node colors, find the largest subtree where all nodes have the same color.
+2. Problem type / algorithm category: Tree traversal, Depth First Search (DFS), Subtree property.
+3. Step-by-step approach: Build an adjacency list for the tree. Perform a DFS starting from the root. During DFS, for each node, recursively check its children. A subtree is valid if the current node's color matches its child's color and the child's subtree is also valid. Accumulate subtree sizes and track the maximum valid subtree size.
+4. Edge cases: A single node tree. A tree where all nodes have different colors. A tree where all nodes have the same color.
+5. Time and space complexity: Time complexity is O(N) for building the graph and O(N) for DFS, resulting in O(N) overall. Space complexity is O(N) for the adjacency list and recursion stack.
+</thinking>

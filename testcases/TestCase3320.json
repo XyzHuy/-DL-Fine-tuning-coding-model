@@ -1,0 +1,185 @@
+{
+  "function_name": "countWinningSequences",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "WFWFWFWFWFWFWFWFWFWF"
+      },
+      "expected_output": 730500
+    },
+    {
+      "parameters": {
+        "s": "WFW"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "FWEFWEFW"
+      },
+      "expected_output": 157
+    },
+    {
+      "parameters": {
+        "s": "FWFWFWFWFWFWFWFWFWFW"
+      },
+      "expected_output": 730500
+    },
+    {
+      "parameters": {
+        "s": "EWE"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "WFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+      },
+      "expected_output": 377759202
+    },
+    {
+      "parameters": {
+        "s": "EEEEEEEEEEEE"
+      },
+      "expected_output": 2364
+    },
+    {
+      "parameters": {
+        "s": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFWE"
+      },
+      "expected_output": 697784136
+    },
+    {
+      "parameters": {
+        "s": "FWEFWFWFEF"
+      },
+      "expected_output": 671
+    },
+    {
+      "parameters": {
+        "s": "EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+      },
+      "expected_output": 942021245
+    },
+    {
+      "parameters": {
+        "s": "EWFEWFWEWFWEWFWEWFWE"
+      },
+      "expected_output": 723067
+    },
+    {
+      "parameters": {
+        "s": "FFFFFFFFFFFF"
+      },
+      "expected_output": 2364
+    },
+    {
+      "parameters": {
+        "s": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+      },
+      "expected_output": 486882611
+    },
+    {
+      "parameters": {
+        "s": "WWE"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "FWFWFW"
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "s": "FWFEWFWEWF"
+      },
+      "expected_output": 670
+    },
+    {
+      "parameters": {
+        "s": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
+      },
+      "expected_output": 956577544
+    },
+    {
+      "parameters": {
+        "s": "FFF"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "WFWFWFW"
+      },
+      "expected_output": 86
+    },
+    {
+      "parameters": {
+        "s": "FWEFW"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "F"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "EWW"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "FWFWFWFW"
+      },
+      "expected_output": 168
+    },
+    {
+      "parameters": {
+        "s": "EFEFEF"
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "s": "FFFFFFFFFFFFFFFFFF"
+      },
+      "expected_output": 158972
+    },
+    {
+      "parameters": {
+        "s": "FWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFW"
+      },
+      "expected_output": 380726528
+    },
+    {
+      "parameters": {
+        "s": "EEWEEWEEWE"
+      },
+      "expected_output": 678
+    },
+    {
+      "parameters": {
+        "s": "FWFWFWFWFW"
+      },
+      "expected_output": 688
+    },
+    {
+      "parameters": {
+        "s": "EEEE"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "FWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWFWE"
+      },
+      "expected_output": 116417994
+    }
+  ]
+}

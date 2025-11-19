@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be non-decreasing with at most one element modification.
+2. Problem type / algorithm category: Array manipulation / Greedy algorithm.
+3. Step-by-step approach: Iterate through the array, checking for decreasing pairs. If a decreasing pair is found, attempt to correct it by modifying either the current or previous element. Track the number of modifications, and return false if more than one modification is required.
+4. Edge cases: Empty array, array with one element, array with two elements, and the decision of which element to modify when a decreasing pair is encountered (consider elements before i-1).
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the array. Space complexity is O(1) as it uses constant extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of floor(nums[i] / nums[j]) for all pairs (i, j) in an integer array nums, modulo 10^9 + 7.
+2. Problem type / algorithm category: Arithmetic, Counting, Prefix Sums, Optimization.
+3. Step-by-step approach: Count frequencies of each number. Compute prefix sums of frequencies. Iterate through possible divisors `x`. For each `x`, iterate through possible quotient values `k`. Find the range of numbers `y` such that floor(y/x) = k. Use prefix sums to count occurrences of such `y`. Sum up `k * count[y] * count[x]` for all valid `y` and `k`.
+4. Edge cases: Array with duplicate numbers, large sums requiring modulo. Maximum value of numbers in the array determines array sizes for counting and prefix sums.
+5. Time and space complexity: O(M log M + N) time, O(M) space, where N is the length of nums and M is the maximum value in nums.
+</thinking>

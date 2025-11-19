@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum nesting depth of parentheses in a given valid parentheses string.
+2. Problem type / algorithm category: String traversal, simple counter.
+3. Step-by-step approach: Initialize current depth and maximum depth to zero. Iterate through the string. Increment current depth for '(' and decrement for ')'. Update maximum depth whenever current depth increases.
+4. Edge cases: Empty string (not possible by constraints), string with no parentheses, string with only opening or closing parentheses (guaranteed valid string handles this).
+5. Time and space complexity: O(N) time complexity, O(1) space complexity.
+</thinking>

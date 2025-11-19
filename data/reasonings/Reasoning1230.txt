@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the probability of achieving exactly 'target' number of heads after tossing a series of coins, where each coin has a given probability of landing heads.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Initialize a DP table where dp[i][j] represents the probability of getting j heads using the first i coins. The base case is dp[0][0] = 1. Iterate through each coin, and for each possible number of heads, update dp[i][j] by considering the probability of getting j-1 heads and the current coin being heads, OR getting j heads and the current coin being tails.
+4. Edge cases: Target being 0 or equal to the number of coins. The probabilities in `prob` can be 0 or 1.
+5. Time and space complexity: O(n * target) time and O(n * target) space, where n is the number of coins.
+</thinking>

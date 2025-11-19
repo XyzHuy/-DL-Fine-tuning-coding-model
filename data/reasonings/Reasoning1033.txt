@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given three stone positions, find the minimum and maximum moves to arrange them consecutively.
+2. Problem type / algorithm category: Math, Sorting.
+3. Step-by-step approach: Sort the positions. Calculate the gaps between them. Determine min moves based on the gaps (0 if consecutive, 1 if gap <= 2, 2 otherwise). Max moves is the sum of the gaps minus 2.
+4. Edge cases: Already consecutive stones (min moves = 0). Small gaps requiring only one move. Large gaps requiring two moves.
+5. Time and space complexity: Time: O(1) due to sorting a fixed number of elements (3). Space: O(1).
+</thinking>

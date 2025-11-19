@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize points by taking one stone from two different non-empty piles, game ends when less than two piles are non-empty.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Sort the piles, repeatedly take stones from the two largest piles, re-sort, and increment score until condition is met.
+4. Edge cases: One or two piles are initially empty or become empty early; cases where one pile is significantly larger than the sum of the other two.
+5. Time and space complexity: Time complexity is O(log n * n) due to sorting within the loop, space complexity is O(1) excluding input storage.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of connected components in a graph that are also complete graphs.
+2. Problem type / algorithm category: Graph traversal (DFS), Connectivity, Graph properties.
+3. Step-by-step approach: Build an adjacency list for the graph. Iterate through all nodes, performing DFS for each unvisited node to find its connected component. For each component, verify if it's complete by checking if every node within the component has degree equal to the component size minus one. Increment a counter for each complete component found.
+4. Edge cases: An empty graph (n=0), a graph with no edges, or a graph with isolated vertices which form complete components of size 1.
+5. Time and space complexity: Time complexity is O(V + E) where V is the number of vertices and E is the number of edges, due to graph construction and DFS. Space complexity is O(V + E) for the adjacency list and visited set.
+</thinking>

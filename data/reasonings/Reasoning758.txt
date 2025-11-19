@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` and a list of keywords `words`, wrap all occurrences of the keywords in `s` with `<b>` and `</b>` tags such that the number of tags used is minimized.
+2. Problem type / algorithm category: String manipulation / pattern matching.
+3. Step-by-step approach: First, create a boolean array `bold` to mark the indices in `s` that should be bolded. Iterate through each word in `words` and find all occurrences of the word in `s`. For each occurrence, mark the corresponding indices in `bold` as True. Then, iterate through `s` and construct the result string, adding `<b>` and `</b>` tags based on the `bold` array.
+4. Edge cases: Empty input string, empty word list, overlapping keywords, keywords that are substrings of other keywords.
+5. Time and space complexity: Time complexity is O(N*M*K) where N is the length of s, M is the number of words, and K is the average length of the words. Space complexity is O(N) for the `bold` array and the result string.
+</thinking>

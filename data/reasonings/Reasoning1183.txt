@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of 1s in a matrix of given dimensions, where any square submatrix of a specified size can contain at most a certain number of 1s.
+2. Problem type / algorithm category: Greedy algorithm, counting.
+3. Step-by-step approach: Calculate the frequency of each cell within a sideLength x sideLength block appearing in the full matrix. Sort these frequencies in descending order and sum the top maxOnes frequencies.
+4. Edge cases: width or height being smaller than sideLength, maxOnes being 0.
+5. Time and space complexity: Time complexity is O(sideLength^2 * log(sideLength^2)) due to sorting. Space complexity is O(sideLength^2) to store the frequencies.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the winner of a coin game between Alice and Bob where players take turns selecting coins totaling 115.
+2. Problem type / algorithm category: Game Theory, Simulation.
+3. Step-by-step approach: Simulate the game turn by turn, with Alice going first. In each turn, a player tries to take 1 coin of value 75 and 4 coins of value 10 (totaling 115). If a player cannot make a move, they lose. Track whose turn it is and update coin counts.
+4. Edge cases: The game ends when either the number of 75-value coins or 10-value coins becomes insufficient for a valid move. The constraints ensure positive initial coin counts.
+5. Time and space complexity: The loop runs at most min(x, y/4) times. Space complexity is O(1) as only a few variables are used.
+</thinking>

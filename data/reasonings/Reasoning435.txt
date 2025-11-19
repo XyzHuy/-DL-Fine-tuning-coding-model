@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of intervals to remove to make the remaining intervals non-overlapping.
+2. Problem type / algorithm category: Greedy algorithm, interval scheduling.
+3. Step-by-step approach: Sort intervals by end times. Iterate through sorted intervals, keeping track of the end time of the last non-overlapping interval. If a new interval overlaps, increment the removal count; otherwise, update the end time.
+4. Edge cases: Empty input list, intervals with same start and end times, already non-overlapping intervals.
+5. Time and space complexity: Time: O(n log n) due to sorting, Space: O(1) excluding the input.
+</thinking>

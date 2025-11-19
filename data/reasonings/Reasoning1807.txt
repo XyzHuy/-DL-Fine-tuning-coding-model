@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace bracketed keys in a string with their corresponding values from a knowledge base, using '?' if a key is unknown.
+2. Problem type / algorithm category: String manipulation, dictionary/hash map usage.
+3. Step-by-step approach: Convert knowledge to a dictionary for efficient lookups. Iterate through the input string, identify bracketed keys, and replace them with their dictionary values or '?'. Append non-bracketed characters directly.
+4. Edge cases: Keys not found in knowledge, empty string, string with no brackets, repeated keys.
+5. Time and space complexity: Time complexity is O(N + K), where N is the length of s and K is the total length of keys in knowledge. Space complexity is O(K) for the dictionary.
+</thinking>

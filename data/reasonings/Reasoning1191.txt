@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum subarray sum in an array created by repeating the input array k times. Return the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming / Kadane's Algorithm
+3. Step-by-step approach: First, calculate the maximum subarray sum of the original array using Kadane's algorithm. Then, calculate the sum of the original array. If k=1, return the maximum subarray sum. Otherwise, calculate the maximum subarray sum of the array concatenated twice. If the sum of the original array is positive, the result is the maximum of the single array's max sum, the double array's max sum, and the sum of the array repeated k-2 times plus the max sum of the double array. If the sum is non-positive, the result is the maximum of the single and double array's max sum.
+4. Edge cases: k = 1, the sum of the array is positive, the sum of the array is negative or zero, the array contains all negative numbers.
+5. Time and space complexity: Time complexity is O(n) because Kadane's algorithm runs in O(n) and concatenation of the array happens at most twice. Space complexity is O(n) due to the concatenation of arrays in the worst case.
+</thinking>

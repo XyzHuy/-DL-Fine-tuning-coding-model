@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring that can be rearranged to form a palindrome.
+2. Problem type / algorithm category: Bit manipulation, Prefix sums (implicitly), Dynamic Programming (state compression).
+3. Step-by-step approach: Use a bitmask to represent the parity of character counts. Iterate through the string, updating the bitmask. Store the first occurrence of each bitmask. For each current bitmask, check if it or any bitmask differing by one bit has been seen before to maximize the substring length.
+4. Edge cases: Single character substrings are always palindromic. Empty string is not possible due to constraints. All characters being the same.
+5. Time and space complexity: O(N*logK) time where N is string length and K=10 (number of digits), O(2^K) space for the seen dictionary.
+</thinking>

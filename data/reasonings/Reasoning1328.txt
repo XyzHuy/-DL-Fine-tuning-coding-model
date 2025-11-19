@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a palindromic string, change exactly one character to make it non-palindromic and lexicographically smallest.
+2. Problem type / algorithm category: String manipulation, greedy algorithm.
+3. Step-by-step approach: Iterate through the first half of the string. If a character is not 'a', change it to 'a' and return. If all characters in the first half are 'a', change the last character to 'b'.
+4. Edge cases: Single-character strings cannot be broken. Strings consisting entirely of 'a's need special handling for the last character.
+5. Time and space complexity: O(N) time for iterating through the string, O(N) space for creating a mutable list.
+</thinking>

@@ -1,0 +1,481 @@
+{
+  "function_name": "countOfSubstrings",
+  "test_cases": [
+    {
+      "parameters": {
+        "word": "qwertyuiopasdfghjklzxcvbnmaeiou",
+        "k": 10
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "uoieaouoieaouoieaouoieaoiueaouieaouieaouieao",
+        "k": 4
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzz",
+        "k": 5
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aeioqq",
+        "k": 1
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyz",
+        "k": 5
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aaaaaeeeeiiioooouuuu",
+        "k": 0
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "word": "aeiou",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyz",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "uuuuuaeiouuuuuu",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyz",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "uuiiooeaa",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiou",
+        "k": 1
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aaaaaeeeeeeiiiiioooooouuuuuu",
+        "k": 5
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiou",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeeiiouu",
+        "k": 0
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "uaeiouaeiouaeeioouioiaeaou",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiaeaouaeiou",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "zzzaeiouzzz",
+        "k": 3
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "uuuuuaeiouuuuu",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyz",
+        "k": 20
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "uoiea",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "ieaouqqieaouqq",
+        "k": 1
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "word": "aeiaaioeaou",
+        "k": 1
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiou",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 3
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "vwxyzaeiouvwxyz",
+        "k": 3
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word": "bcdfgahijklmnopqrstuevwxyoz",
+        "k": 10
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklaeioumnopqrstuvw",
+        "k": 15
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzaeiou",
+        "k": 10
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aeiouabcdeiouaeioufghijaeiouklmnoaeiou",
+        "k": 7
+      },
+      "expected_output": 61
+    },
+    {
+      "parameters": {
+        "word": "eiouaieouaieouaieouaieouaieouaieouaieouaieouaieou",
+        "k": 2
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 10
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "uoieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieao",
+        "k": 0
+      },
+      "expected_output": 1952
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 5
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeioubcdfghijklmnopqrstuvwxyz",
+        "k": 20
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aeiouabcde",
+        "k": 2
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word": "uoieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieaouieao",
+        "k": 20
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaaaaaeiouaaaaaeiouaaaaaeiouaaaaaeiouaaaaaeiou",
+        "k": 5
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouuioeuaoieuaeiou",
+        "k": 0
+      },
+      "expected_output": 117
+    },
+    {
+      "parameters": {
+        "word": "uoieaouoieaouoieaouoieaoiueaouieaouieaouieao",
+        "k": 10
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 0
+      },
+      "expected_output": 666
+    },
+    {
+      "parameters": {
+        "word": "bcdfgqqqqqqqqqaeiouqqqqqqqqqbcdfgqqqqqqqqqaeiou",
+        "k": 5
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word": "aaaeeeeiiioouuuuaaaeeeeiiioouuuuaaaeeeeiiioouuuu",
+        "k": 10
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijaeiouklmnopqrstuvwxyz",
+        "k": 5
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "word": "qazwsxedcrfvtgbyhnujmikolpaeiouaeiou",
+        "k": 8
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aueioayuieoayuieoayuieoayuieoayuieoay",
+        "k": 3
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "word": "aeiouzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aeiouabcdefghijklmnopqrstuvwxyzaeiou",
+        "k": 15
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "word": "xyzabcdeaeiouaeiouaeiouaeiouxyz",
+        "k": 3
+      },
+      "expected_output": 51
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 5
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 15
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiou",
+        "k": 0
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 0
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiouaeiou",
+        "k": 0
+      },
+      "expected_output": 1596
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouaeiou",
+        "k": 3
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzaeiou",
+        "k": 0
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word": "aeioaeioaeioaeioaeiouuuoieaouieaoieaouieaoieaouieaoieaoieaouieao",
+        "k": 7
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "zxcvbnmlkjhgfdsapoiuytrewqaeiouqwertyuiopasdfghjklzxcvbnmaeiou",
+        "k": 15
+      },
+      "expected_output": 42
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 20
+      },
+      "expected_output": 43
+    },
+    {
+      "parameters": {
+        "word": "ieaouqqieaouqqieaouqqieaouqqieaouqqieaouqqieaouqq",
+        "k": 2
+      },
+      "expected_output": 133
+    },
+    {
+      "parameters": {
+        "word": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 10
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word": "zzzzzaeiouzzzzzzzz",
+        "k": 5
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word": "zzzzzuaaaaaeeeeiiioouuuuuuaaaaaeeeeiiioouuuuuu",
+        "k": 5
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word": "ieaouqieaouqieaouqieaouqieaouqieaouqieaouqieaouqieaouqieaouqieaouq",
+        "k": 3
+      },
+      "expected_output": 294
+    },
+    {
+      "parameters": {
+        "word": "aeiouaeiouaeiouzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 10
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "word": "qweqrtyuiopasdlkjfhgyxcvbnmaeiouqwertyuiopaesd",
+        "k": 8
+      },
+      "expected_output": 23
+    }
+  ]
+}

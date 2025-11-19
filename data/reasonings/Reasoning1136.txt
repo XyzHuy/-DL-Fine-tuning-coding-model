@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given n courses and prerequisite relationships, determine the minimum number of semesters to complete all courses.
+2. Problem type / algorithm category: Topological sort / Directed Acyclic Graph (DAG).
+3. Step-by-step approach: Build a graph representing course dependencies and an in-degree array. Use a queue to store courses with no prerequisites. Process courses semester by semester, decrementing the in-degree of their dependent courses. If a cycle exists, it's impossible to finish all courses.
+4. Edge cases: Cyclic dependencies, no dependencies, all courses depend on each other.
+5. Time and space complexity: Time complexity is O(n + r) where n is the number of courses and r is the number of relations. Space complexity is O(n + r) due to the graph and in-degree array.
+</thinking>

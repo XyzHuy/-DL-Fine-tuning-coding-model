@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum moves to make an array zigzag, where a move is decrementing an element by 1. A zigzag array has either even-indexed elements greater than adjacent elements or odd-indexed elements greater than adjacent elements.
+2. Problem type / algorithm category: Array manipulation, greedy algorithm.
+3. Step-by-step approach: Calculate moves for both even and odd zigzag patterns. For each index, compare the element with its neighbors. If it's greater than the smaller neighbor, calculate the moves needed to make it smaller. Return the minimum moves between the two patterns.
+4. Edge cases: Handle array boundaries by using infinity for non-existent neighbors.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a constant amount of extra space.
+</thinking>

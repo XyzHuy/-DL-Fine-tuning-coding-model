@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total tax owed based on a tiered tax bracket system and a given income.
+2. Problem type / algorithm category: Iteration and arithmetic calculation.
+3. Step-by-step approach: Iterate through each tax bracket, determine the amount of income falling into that bracket, apply the corresponding tax percentage, and sum up the taxes.
+4. Edge cases: Income of 0, and cases where income falls entirely within the first bracket or exceeds the last bracket.
+5. Time and space complexity: Time complexity is O(N) where N is the number of tax brackets, and space complexity is O(1).
+</thinking>

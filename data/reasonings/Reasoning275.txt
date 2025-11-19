@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the h-index of a researcher given their citations in ascending order.
+2. Problem type / algorithm category: Binary search.
+3. Step-by-step approach: Use binary search to find the smallest index such that citations[index] >= n - index. The h-index is then n - index.
+4. Edge cases: Empty array, all citations are 0, all citations are large.
+5. Time and space complexity: Time: O(log n), Space: O(1).
+</thinking>

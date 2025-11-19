@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reshape a 1D array into a 2D array of given dimensions m x n, filling row by row from the 1D array.
+2. Problem type / algorithm category: Array manipulation, reshaping.
+3. Step-by-step approach: First, check if the length of the original 1D array is equal to m * n. If not, it's impossible to form the 2D array. If it is, iterate m times. In each iteration, extract a slice of size n from the original array starting from index i * n and append it as a row to the result 2D array.
+4. Edge cases: The primary edge case is when the total number of elements in the original array does not exactly equal m * n, in which case an empty 2D array should be returned.
+5. Time and space complexity: Time complexity is O(K) where K is the number of elements in original, as we iterate through the array once. Space complexity is O(K) to store the resulting 2D array.
+</thinking>

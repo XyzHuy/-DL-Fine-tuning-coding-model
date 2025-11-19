@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an undirected graph, count pairs of nodes that cannot reach each other.
+2. Problem type / algorithm category: Graph traversal (BFS/DFS), Connected Components.
+3. Step-by-step approach: Build an adjacency list, then use BFS/DFS to find all connected components and their sizes. The number of unreachable pairs is the sum of (size of component * remaining nodes outside component) for each component, divided by 2.
+4. Edge cases: Graph with no edges (all nodes are isolated components), fully connected graph (0 unreachable pairs), single node graph.
+5. Time and space complexity: Time O(N + E), Space O(N + E) where N is nodes and E is edges.
+</thinking>

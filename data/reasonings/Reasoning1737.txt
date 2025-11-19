@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize character changes in two strings 'a' and 'b' so that either all characters in 'a' are lexicographically smaller than all in 'b', all in 'b' are smaller than all in 'a', or both strings contain only one distinct character.
+2. Problem type / algorithm category: Greedy, String manipulation, Frequency counting.
+3. Step-by-step approach: Calculate character frequencies for both strings. Iterate through all possible split points ('a' to 'z') to find the minimum operations. For condition 1 (a < b), this means finding the smallest character 'x' in 'a' and the largest character 'y' in 'b' such that 'x' < 'y'. The operations involve changing characters in 'a' that are >= 'x' and characters in 'b' that are <= 'y'. The solution cleverly calculates this by fixing a split character and counting characters that need to be changed. Specifically, for a split character 'k', we calculate operations to make all chars in 'a' < 'k' and all chars in 'b' >= 'k', and vice-versa. Condition 3 is handled by considering making both strings consist of the same single character.
+4. Edge cases: Strings can be empty (though constraints say 1 <= length). All characters in one string are already smaller/larger than all characters in the other. Strings consist of only one type of character.
+5. Time and space complexity: Time complexity is O(N + M + 26), where N and M are lengths of strings a and b, dominated by frequency counting and iteration over alphabet. Space complexity is O(26) for frequency arrays.
+</thinking>

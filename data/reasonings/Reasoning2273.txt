@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove adjacent anagrams from a list of words until no more adjacent anagrams exist.
+2. Problem type / algorithm category: Iterative processing, string manipulation, anagram check.
+3. Step-by-step approach: Initialize a result list with the first word. Iterate through the remaining words. For each word, check if it's an anagram of the last word added to the result. If not, add the current word to the result. To efficiently check for anagrams, sort the characters of both words and compare the sorted strings.
+4. Edge cases: An empty input list of words. A list with only one word.
+5. Time and space complexity: Time complexity is O(N * K log K) where N is the number of words and K is the maximum length of a word, due to sorting each word. Space complexity is O(N * K) in the worst case to store the result.
+</thinking>

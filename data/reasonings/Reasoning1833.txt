@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of ice cream bar costs and an initial amount of coins, determine the maximum number of ice cream bars that can be purchased, with the constraint to use counting sort.
+2. Problem type / algorithm category: Greedy algorithm with Counting Sort.
+3. Step-by-step approach: First, find the maximum cost to define the range for counting sort. Create a frequency array to store the counts of each cost. Iterate through costs from the smallest to largest. For each cost, buy as many ice creams as possible without exceeding the available coins. If all ice creams of a specific cost can be bought, add their count and cost. Otherwise, buy them one by one until coins run out or all are purchased.
+4. Edge cases: No ice cream bars can be afforded (coins are insufficient for the cheapest bar), all ice cream bars can be afforded, empty input array (though constraints state n >= 1).
+5. Time and space complexity: Time complexity is O(N + M) where N is the number of costs and M is the maximum cost. Space complexity is O(M) for the frequency array.
+</thinking>

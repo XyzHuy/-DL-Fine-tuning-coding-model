@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the cost to make two fruit baskets equal by swapping fruits between them, where swap cost is the minimum of the two swapped fruits. Equality means sorted baskets are identical.
+2. Problem type / algorithm category: Greedy, Frequency Counting, Two Pointers (implicitly via sorting and pairing).
+3. Step-by-step approach: Count fruit frequencies in both baskets. If any fruit count is odd in total, return -1. Determine target frequencies (half of total). Identify fruits that are in excess in one basket and deficient in the other. Sort these excess fruits by cost. Pair them up and swap, taking the minimum cost to achieve the swap.
+4. Edge cases: Impossible to balance if total fruit counts are odd. All fruits might need to be swapped.
+5. Time and space complexity: Time complexity is dominated by sorting the fruits to be swapped, O(N log N), where N is the total number of fruits. Space complexity is O(M) for frequency maps, where M is the number of distinct fruit types.
+</thinking>

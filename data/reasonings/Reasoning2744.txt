@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of pairs of strings where one string is the reverse of the other, considering distinct strings and each string used at most once.
+2. Problem type / algorithm category: Hash map / frequency counting.
+3. Step-by-step approach: Iterate through each word, reverse it, and check if the reversed word exists in a frequency map of previously seen words. If it does, increment the pair count and consume both words from potential future pairings. If not, add the current word to the frequency map.
+4. Edge cases: Palindromic strings (e.g., "aa") cannot form a pair with themselves unless duplicates are allowed, but problem states distinct strings. Empty input list is handled by loop naturally. All words are length 2.
+5. Time and space complexity: Time complexity is O(N*L) where N is the number of words and L is the length of each word, due to string reversal and hash map operations. Space complexity is O(N*L) in the worst case to store all words in the hash map.
+</thinking>

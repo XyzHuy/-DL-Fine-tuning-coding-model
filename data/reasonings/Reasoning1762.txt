@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify buildings in a line that have an unobstructed view of the ocean to their right, meaning all buildings to their right must be shorter. Return their 0-indexed indices sorted in increasing order.
+2. Problem type / algorithm category: Array traversal, Greedy.
+3. Step-by-step approach: Iterate through the buildings from right to left. Maintain the maximum height encountered so far. If the current building's height is greater than the maximum height to its right, it has an ocean view; add its index to a result list and update the maximum height. Finally, reverse the result list to get indices in increasing order.
+4. Edge cases: An empty input array (though constraints state length >= 1), or an array with only one building.
+5. Time and space complexity: Time complexity is O(n) because we traverse the array once. Space complexity is O(n) in the worst case for storing the result list (e.g., if all buildings have an ocean view).
+</thinking>

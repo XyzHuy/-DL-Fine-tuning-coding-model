@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum difference between x-coordinates of any two points after sorting them by their x-coordinates, ensuring no points lie strictly between them.
+2. Problem type / algorithm category: Sorting and Linear Scan.
+3. Step-by-step approach: Extract all x-coordinates, sort them in ascending order, then iterate through the sorted x-coordinates to find the maximum difference between adjacent elements.
+4. Edge cases: The problem constraints guarantee at least two points, so an empty or single-point input is not possible.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), and space complexity is O(N) for storing x-coordinates (or O(1) if sorting in-place is possible and allowed).
+</thinking>

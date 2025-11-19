@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given integer is an Armstrong number, where the sum of each digit raised to the power of the number of digits equals the original number.
+2. Problem type / algorithm category: Number theory, digit manipulation.
+3. Step-by-step approach: Convert the integer to a string, calculate the number of digits, iterate through the digits, raise each digit to the power of the number of digits, sum the results, and compare the sum to the original integer.
+4. Edge cases: Single-digit numbers, numbers with leading zeros (handled by problem constraints).
+5. Time and space complexity: Time complexity is O(d) where d is the number of digits in n. Space complexity is O(d) due to the string representation of the number.
+</thinking>

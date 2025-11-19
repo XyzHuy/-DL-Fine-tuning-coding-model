@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a robot cleaning a grid, starting at (0,0) facing right, moving straight until blocked or edge, then turning 90 degrees clockwise. Count all cleaned empty cells.
+2. Problem type / algorithm category: Grid traversal, simulation, Depth First Search (DFS) with state.
+3. Step-by-step approach: Use DFS to simulate the robot's movement. Track visited states (cell and direction) to detect cycles. Mark cleaned cells in a set. Move straight until blocked or boundary, then turn clockwise and recurse if the new state is unvisited.
+4. Edge cases: Room with only one cell, room completely filled with objects (except start), room with no objects.
+5. Time and space complexity: Time O(m*n*4) because each cell can be visited at most 4 times (once for each direction). Space O(m*n*4) for the visited state tracking, plus O(m*n) for the cleaned set.
+</thinking>

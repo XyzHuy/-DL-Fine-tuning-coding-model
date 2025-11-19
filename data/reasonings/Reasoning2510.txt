@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a path exists from the top-left to the bottom-right of a binary matrix, moving only down or right, such that the path contains an equal count of 0s and 1s.
+2. Problem type / algorithm category: Dynamic Programming with state compression using sets to track path differences.
+3. Step-by-step approach: Initialize a DP table where each cell stores a set of possible differences (number of 1s - number of 0s) encountered on paths reaching that cell. Iterate through the grid, updating the sets based on possible moves from adjacent cells and the current cell's value. The difference is calculated as (current_value * 2 - 1), which is 1 for a '1' and -1 for a '0'. Finally, check if 0 is present in the set for the bottom-right cell.
+4. Edge cases: The total number of cells in any valid path from (0,0) to (m-1, n-1) is m + n - 1. If this sum is odd, an equal number of 0s and 1s is impossible, so return false immediately.
+5. Time and space complexity: Time complexity is O(m * n * (m + n)) because for each cell, we iterate through the possible differences from previous cells, and the maximum number of differences can be up to m+n-1. Space complexity is O(n * (m + n)) to store the sets of differences for each column.
+</thinking>

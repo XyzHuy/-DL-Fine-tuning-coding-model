@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique quadruplets in a given array that sum up to the target value.
+2. Problem type / algorithm category: Array manipulation, sorting, two pointers.
+3. Step-by-step approach: Sort the array. Iterate through the array using two nested loops for the first two elements of the quadruplet. Use two pointers to find the remaining two elements such that the sum equals the target. Skip duplicate elements to avoid duplicate quadruplets.
+4. Edge cases: Empty array, array with fewer than four elements, duplicate numbers in the array.
+5. Time and space complexity: Time complexity is O(n^3) due to the nested loops and two-pointer approach. Space complexity is O(1) or O(n) depending on the sorting algorithm implementation since the extra space is used to store the result which depends on the number of quadruplets.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid of oranges (fresh, rotten, empty), determine the minimum time for all fresh oranges to rot.
+2. Problem type / algorithm category: Breadth-First Search (BFS), Graph Traversal.
+3. Step-by-step approach: Initialize a queue with rotten oranges, count fresh oranges. Perform BFS, each level representing a minute. In each iteration, poll rotten oranges and rot adjacent fresh ones, decrementing the fresh orange count. Return the elapsed minutes if no fresh oranges remain; otherwise, return -1.
+4. Edge cases: Empty grid, no fresh oranges initially, oranges that cannot be reached by rotten oranges.
+5. Time and space complexity: Time: O(m*n), where m and n are the dimensions of the grid. Space: O(m*n) in the worst case (all oranges are rotten).
+</thinking>

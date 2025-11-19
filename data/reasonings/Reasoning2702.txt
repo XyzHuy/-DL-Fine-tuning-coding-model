@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make all array elements non-positive, where each operation decrements one element by x and others by y.
+2. Problem type / algorithm category: Binary Search on Answer (Number of Operations) with Greedy Sub-problem Solving.
+3. Step-by-step approach: Binary search for the minimum number of operations k. For a given k, check if it's possible to make all elements non-positive by calculating the minimum additional operations needed for each element beyond the y-decrement applied k times. If the sum of these additional operations is <= k, then k is feasible.
+4. Edge cases: All numbers initially non-positive (0 operations), large input values for nums, x, and y.
+5. Time and space complexity: O(N log M) time where N is nums.length and M is max(nums), O(1) space.
+</thinking>

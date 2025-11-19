@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of task difficulties, find the minimum number of rounds to complete all tasks, where each round allows completing 2 or 3 tasks of the same difficulty. Return -1 if impossible.
+2. Problem type / algorithm category: Greedy approach, Frequency Counting, Math.
+3. Step-by-step approach: First, count the frequency of each task difficulty. For each difficulty, if its count is 1, return -1. Otherwise, calculate the minimum rounds by dividing the count by 3 and adding 1 if there's a remainder, effectively handling groups of 3 and leftover groups of 2.
+4. Edge cases: A task count of 1 for any difficulty makes it impossible to complete.
+5. Time and space complexity: O(N) time to count frequencies and O(K) space where K is the number of unique task difficulties.
+</thinking>

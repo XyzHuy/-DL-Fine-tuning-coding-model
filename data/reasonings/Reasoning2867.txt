@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count undirected paths in a tree where the path contains exactly one prime-numbered node.
+2. Problem type / algorithm category: Tree traversal (DFS), Number theory (Prime checking), Combinatorics.
+3. Step-by-step approach: Precompute primes up to n using a sieve. Build an adjacency list for the tree. Iterate through each node: if it's prime, perform DFS from its children to count non-prime nodes in their respective subtrees and sum up combinations to find valid paths centered at this prime.
+4. Edge cases: Nodes 0 and 1 are not prime. A path could consist of only non-prime nodes or multiple prime nodes. The tree might be a single node or a line.
+5. Time and space complexity: Time: O(N log log N) for sieve + O(N) for tree building + O(N) for DFS traversal and path counting, resulting in O(N log log N). Space: O(N) for sieve, adjacency list, and recursion stack.
+</thinking>

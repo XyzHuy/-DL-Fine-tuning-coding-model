@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid of bricks and a series of hit locations, determine how many bricks fall after each hit. A brick is stable if connected to the top or an adjacent stable brick.
+2. Problem type / algorithm category: Union Find, Graph Traversal
+3. Step-by-step approach: Apply hits to a copy of the grid. Use Union Find to connect stable bricks. Iterate through hits in reverse, "adding" bricks back and calculating the number of bricks that become stable as a result.
+4. Edge cases: Hitting an empty cell, bricks only connected by the hit location, bricks already stable, grid is empty.
+5. Time and space complexity: O(H * M * N) time, where H is the number of hits and M*N is the size of the grid. O(M * N) space for the Union Find data structure and grid copy.
+</thinking>

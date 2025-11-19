@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify days in a security guard schedule where the guards were non-increasing for 'time' days before and non-decreasing for 'time' days after the current day.
+2. Problem type / algorithm category: Dynamic Programming, Array Traversal.
+3. Step-by-step approach: Calculate prefix counts of non-increasing guard numbers (before) and suffix counts of non-decreasing guard numbers (after). Then, iterate through potential good days and check if both 'before' and 'after' counts meet the 'time' threshold.
+4. Edge cases: When the array length is less than 2*time + 1, no day can satisfy the condition. When time is 0, all days are good.
+5. Time and space complexity: Time complexity is O(N) due to three linear passes through the array. Space complexity is O(N) to store the 'before' and 'after' arrays.
+</thinking>

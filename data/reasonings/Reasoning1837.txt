@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a base-10 integer to base-k, then sum its digits.
+2. Problem type / algorithm category: Number theory, Base conversion, Iteration.
+3. Step-by-step approach: Repeatedly take the number modulo k to get the last digit in base-k, add it to a running sum, and then integer divide the number by k until it becomes 0.
+4. Edge cases: n = 1 (already a single digit), k = 10 (no conversion needed, just sum base-10 digits).
+5. Time and space complexity: Time complexity is O(log_k n) as we repeatedly divide n by k. Space complexity is O(1) as we only store a few variables.
+</thinking>

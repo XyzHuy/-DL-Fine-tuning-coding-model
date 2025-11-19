@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum difference in counts between any two characters within any substring of a given string.
+2. Problem type / algorithm category: String manipulation, Kadane's algorithm variation, permutations.
+3. Step-by-step approach: Iterate through all possible pairs of distinct characters (x, y) from the unique characters in the string. For each pair, perform a single pass through the string to find the maximum variance. This pass uses a modified Kadane's-like approach: maintain counts of x and y, reset counts if y count exceeds x count, and update max variance. Handle cases where x appears but y doesn't and vice-versa. Also, consider the case where one character appears at the end and the other does not, requiring a final adjustment.
+4. Edge cases: String with only one unique character (variance is 0). String where all characters appear equally often (variance is 0). Pairs where one character is absent from the string.
+5. Time and space complexity: Time complexity is O(26^2 * N) where N is the length of the string, due to iterating over all character pairs and then the string. Space complexity is O(26) for storing unique characters and counts.
+</thinking>

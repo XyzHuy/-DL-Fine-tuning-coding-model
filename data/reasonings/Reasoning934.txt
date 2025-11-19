@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest bridge (minimum number of 0's to flip to 1's) to connect two islands in a binary matrix.
+2. Problem type / algorithm category: Graph Traversal (DFS and BFS)
+3. Step-by-step approach: First, use DFS to find one island and mark its cells as -1 and add all of its cell coordinates to a queue. Then, use BFS starting from that island to expand outwards. The first time the BFS encounters the other island (value 1), the current BFS level represents the shortest bridge length.
+4. Edge cases: The problem statement guarantees that there are exactly two islands, so we don't need to handle cases where there are zero, one, or more than two islands. Also, we assume the input grid is valid based on the constraints, so we don't need to handle invalid matrix dimensions.
+5. Time and space complexity: Time complexity is O(N^2), where N is the dimension of the grid, due to DFS and BFS traversing at most all cells. Space complexity is O(N^2) in the worst case, when the first island covers almost the entire grid, for the queue and the recursion stack in DFS.
+</thinking>

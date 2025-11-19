@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given integer n is a power of three.
+2. Problem type / algorithm category: Math, Logarithm
+3. Step-by-step approach: If n is not positive, return false. Otherwise, calculate the base-3 logarithm of n. Round the logarithm to the nearest integer and check if 3 raised to the power of the rounded logarithm equals n.
+4. Edge cases: n <= 0, large values of n
+5. Time and space complexity: O(1) time, O(1) space
+</thinking>

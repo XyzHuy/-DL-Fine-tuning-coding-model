@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate watering plants in order from left to right, refilling the watering can at the river (x=-1) whenever there isn't enough water for the next plant. Calculate total steps taken.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Iterate through plants, maintain current water in the can. If enough water, water plant and move to next. If not enough, add steps to go back to river, refill, and water current plant, then reset current water.
+4. Edge cases: Capacity is sufficient for all plants without refills, or capacity is barely enough for each plant, requiring a refill before every plant.
+5. Time and space complexity: O(n) time because we iterate through plants once. O(1) space as we only use a few variables.
+</thinking>

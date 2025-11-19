@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all words in a given list that can be formed by concatenating other words from the same list.
+2. Problem type / algorithm category: String manipulation, Trie, Depth First Search (DFS).
+3. Step-by-step approach: Sort words by length, build a Trie with shorter words, and use DFS to check if a longer word can be formed by concatenating shorter words already in the Trie.
+4. Edge cases: Empty input list, empty strings in the input list, and words that can be formed by repeating the same word.
+5. Time and space complexity: Time complexity is O(N * L^2), where N is the number of words and L is the average length of a word. Space complexity is O(S), where S is the total number of characters in all words.
+</thinking>

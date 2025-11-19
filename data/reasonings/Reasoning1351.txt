@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the total number of negative integers in a matrix sorted in non-increasing order both row-wise and column-wise.
+2. Problem type / algorithm category: Matrix Traversal, Two Pointers.
+3. Step-by-step approach: Start from the bottom-left corner of the matrix. If the current element is negative, all elements to its right in the same row are also negative, so add the remaining count of elements in that row to the total and move up to the next row. If the current element is non-negative, move right to the next column. Continue until the pointers go out of bounds.
+4. Edge cases: An empty grid, a grid with all positive numbers, a grid with all negative numbers, a grid with only one row or one column.
+5. Time and space complexity: Time complexity is O(m + n) because in each step, either the row index decreases or the column index increases, traversing at most m + n steps. Space complexity is O(1) as only a few variables are used.
+</thinking>

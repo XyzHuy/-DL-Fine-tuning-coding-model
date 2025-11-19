@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find three numbers in an array whose sum is closest to a given target value.
+2. Problem type / algorithm category: Two Pointers, Sorting.
+3. Step-by-step approach: Sort the input array. Iterate through the array, and for each element, use the two-pointer technique to find two other elements such that their sum is closest to target minus the current element. Update the closest sum found so far.
+4. Edge cases: Empty array (handled by constraint), array with fewer than 3 elements (handled by constraint), very large or very small target or numbers which cause overflow (handled by using 'inf' and updating closest_sum accordingly).
+5. Time and space complexity: Time complexity is O(n^2) due to sorting O(n log n) and the two-pointer approach O(n^2). Space complexity is O(1) since we are not using any extra space (in-place sort).
+</thinking>

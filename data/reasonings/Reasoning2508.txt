@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an undirected graph, determine if it's possible to make all node degrees even by adding at most two new edges.
+2. Problem type / algorithm category: Graph theory, Degree analysis, Combinatorics.
+3. Step-by-step approach: Calculate node degrees, identify nodes with odd degrees. If zero odd degrees, return true. If more than four odd degrees, return false. If two odd degrees (u, v), check if direct edge (u,v) is possible or if a third node w can connect to both. If four odd degrees (a,b,c,d), check if any pairing (e.g., (a,b) and (c,d), or (a,c) and (b,d), or (a,d) and (b,c)) can be formed with available nodes. Otherwise, return false.
+4. Edge cases: Graph with no initial odd degree nodes; graph requiring exactly one new edge; graph requiring exactly two new edges; graph with more than four odd degree nodes.
+5. Time and space complexity: Time O(N + E), Space O(N + E) where N is the number of nodes and E is the number of edges.
+</thinking>

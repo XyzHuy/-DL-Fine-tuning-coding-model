@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the shortest cycle in an undirected graph, or return -1 if no cycles exist.
+2. Problem type / algorithm category: Graph traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Build an adjacency list for the graph. Iterate through each node, performing a BFS starting from that node to find the shortest cycle involving it. During BFS, if a visited node is encountered that is not the immediate parent, a cycle is detected. Track the minimum cycle length found across all starting nodes.
+4. Edge cases: Graphs with no cycles, graphs with only two nodes.
+5. Time and space complexity: Time complexity is O(V * (V + E)) where V is the number of vertices and E is the number of edges, due to running BFS from each vertex. Space complexity is O(V + E) for the adjacency list and BFS queue/distance arrays.
+</thinking>

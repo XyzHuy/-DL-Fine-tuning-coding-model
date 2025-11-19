@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of balanced substrings to partition a given string. A balanced substring has all characters appearing an equal number of times.
+2. Problem type / algorithm category: Dynamic Programming, String manipulation.
+3. Step-by-step approach: Use dynamic programming where dp[i] stores the minimum partitions for the prefix s[:i]. Iterate through all possible split points j for each i, and if s[j:i] is balanced, update dp[i] with min(dp[i], dp[j] + 1).
+4. Edge cases: Empty string (though constraints say length >= 1), string that is already balanced (should return 1), string with no possible balanced partitions within it (handled by initial infinite dp values).
+5. Time and space complexity: O(N^3) time due to nested loops and substring balancing check, O(N) space for DP array.
+</thinking>

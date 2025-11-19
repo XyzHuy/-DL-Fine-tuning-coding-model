@@ -1,0 +1,481 @@
+{
+  "function_name": "stringHash",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "aaaa",
+        "k": 2
+      },
+      "expected_output": "aa"
+    },
+    {
+      "parameters": {
+        "s": "mnopqr",
+        "k": 3
+      },
+      "expected_output": "nw"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohellohello",
+        "k": 5
+      },
+      "expected_output": "vvvv"
+    },
+    {
+      "parameters": {
+        "s": "ababababababababababababab",
+        "k": 3
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "ababababab",
+        "k": 2
+      },
+      "expected_output": "bbbbb"
+    },
+    {
+      "parameters": {
+        "s": "zzzz",
+        "k": 4
+      },
+      "expected_output": "w"
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "k": 2
+      },
+      "expected_output": "bf"
+    },
+    {
+      "parameters": {
+        "s": "mxz",
+        "k": 3
+      },
+      "expected_output": "i"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzaa",
+        "k": 5
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "zzzz",
+        "k": 2
+      },
+      "expected_output": "yy"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 26
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbbcccc",
+        "k": 4
+      },
+      "expected_output": "aei"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "k": 26
+      },
+      "expected_output": "n"
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddeeefffggghhhiiiijjjkkkllllmmmnnnooopppqqqrrrssstttuuuvvvwwwxxxxyyyyzzzz",
+        "k": 4
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyza",
+        "k": 1
+      },
+      "expected_output": "abcdefghijklmnopqrstuvwxyza"
+    },
+    {
+      "parameters": {
+        "s": "pythonprogrammingisfun",
+        "k": 6
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "k": 3
+      },
+      "expected_output": "dddddddddddddddddd"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohellohellohellohellohellohellohellohello",
+        "k": 5
+      },
+      "expected_output": "vvvvvvvvvv"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "k": 5
+      },
+      "expected_output": "ghijghij"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 26
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "k": 5
+      },
+      "expected_output": "dfd"
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacabadabacaba",
+        "k": 3
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "quickbrownfoxjumpsoverthelazydog",
+        "k": 5
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "mnbvcxzlkjhgfdsapoiuytrewq",
+        "k": 8
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "qrstuvwx",
+        "k": 4
+      },
+      "expected_output": "si"
+    },
+    {
+      "parameters": {
+        "s": "thisisanotherexampleofstrings",
+        "k": 7
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "k": 4
+      },
+      "expected_output": "gggggggggg"
+    },
+    {
+      "parameters": {
+        "s": "onetwothreefourfivesixseveneightninetenonetwothreefourfivesixseveneightnine",
+        "k": 9
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "thequickbrownfoxjumpsoverthelazydog",
+        "k": 4
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringthatwillbehashed",
+        "k": 7
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "pythonprogrammingisfunandchallenging",
+        "k": 8
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "hellotherehellothere",
+        "k": 5
+      },
+      "expected_output": "vzvz"
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "k": 3
+      },
+      "expected_output": "dddddddddddddddddddddddd"
+    },
+    {
+      "parameters": {
+        "s": "qwertqwertqwertqwertqwertqwertqwertqwertqwertqwertqwert",
+        "k": 5
+      },
+      "expected_output": "aaaaaaaaaaa"
+    },
+    {
+      "parameters": {
+        "s": "mnopqrnopqrmnopqrnopqrmnopqr",
+        "k": 7
+      },
+      "expected_output": "wxca"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 26
+      },
+      "expected_output": "aa"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzyxwvutsrqponmlkjihgfedcba",
+        "k": 25
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "xylophoneisaveryfuninstrument",
+        "k": 4
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 13
+      },
+      "expected_output": "kqxd"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 26
+      },
+      "expected_output": "nn"
+    },
+    {
+      "parameters": {
+        "s": "aaabbbcccdddeeefffggghhhiii",
+        "k": 3
+      },
+      "expected_output": "adgjmpsvy"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 25
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringforhashing",
+        "k": 10
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 26
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "zyxwvutsrqponmlkjihgfedcbaabcdefghijklmnopqrstuvwxyz",
+        "k": 13
+      },
+      "expected_output": "naan"
+    },
+    {
+      "parameters": {
+        "s": "qwerasdfzxcvqwertyuiopasdfghjklzxcvbnmqwertyuiop",
+        "k": 10
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "jqphmdfucybzvochwnygexskfr",
+        "k": 5
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "ababababababababababababababababab",
+        "k": 5
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "mnopqrabcdefg",
+        "k": 7
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringthatneedstobehashedproperly",
+        "k": 7
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "allthesmalllettersofthealphabetarehereeverywhere",
+        "k": 8
+      },
+      "expected_output": "ebgfav"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "k": 10
+      },
+      "expected_output": "nrnr"
+    },
+    {
+      "parameters": {
+        "s": "thisteststringisaverylongstringthatwillhashproperly",
+        "k": 7
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "qpwoeirutyalskdjfhgzmxncbv",
+        "k": 5
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 10
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "quickbrownfoxjumpsoverthelazydogquickbrownfoxjumpsoverthelazydog",
+        "k": 9
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 13
+      },
+      "expected_output": "na"
+    },
+    {
+      "parameters": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 1
+      },
+      "expected_output": "zyxwvutsrqponmlkjihgfedcba"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "k": 100
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 78
+      },
+      "expected_output": "n"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 52
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "k": 52
+      },
+      "expected_output": "a"
+    },
+    {
+      "parameters": {
+        "s": "thisisanotherlongteststringthatwillbehashedcorrectly",
+        "k": 6
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "k": 4
+      },
+      "expected_output": "cksaiqygowemu"
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyz",
+        "k": 3
+      },
+      "expected_output": "uuu"
+    },
+    {
+      "parameters": {
+        "s": "thequickbrownfoxjumpsoverthelazydog",
+        "k": 9
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "s": "mnopqrxyzuvw",
+        "k": 3
+      },
+      "expected_output": "nwul"
+    },
+    {
+      "parameters": {
+        "s": "zyxwvutsrqponmlkjihgfedcba",
+        "k": 26
+      },
+      "expected_output": "n"
+    }
+  ]
+}

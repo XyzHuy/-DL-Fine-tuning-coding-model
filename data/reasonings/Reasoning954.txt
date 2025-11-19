@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array of even length can be reordered such that each element at an even index is half of the element at the next odd index.
+2. Problem type / algorithm category: Array manipulation, hashmap (Counter), sorting.
+3. Step-by-step approach: Count the occurrences of each number. Iterate through the sorted array (by absolute value). For each number, check if its double exists in the remaining numbers. If it does, decrease the counts of both numbers. If not, return false.
+4. Edge cases: Handle zero values correctly; also, negative numbers require consideration of their absolute values before doubling.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(N) due to the counter.
+</thinking>

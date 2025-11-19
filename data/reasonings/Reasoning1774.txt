@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a dessert combination (one base, zero to two of each topping) whose total cost is closest to a given target. Return the lower cost if multiple combinations have the same minimum difference to the target.
+2. Problem type / algorithm category: Combinatorial Search / Backtracking / Depth-First Search (DFS).
+3. Step-by-step approach: Iterate through each base flavor. For each base, recursively explore all possible combinations of toppings (0, 1, or 2 of each type). Maintain a global variable to track the closest cost found so far, updating it whenever a new combination is closer to the target or equally close but lower.
+4. Edge cases: Minimum number of bases and toppings is 1. Target can be up to 10^4. A topping can be taken 0, 1, or 2 times. The problem asks for the lower cost if differences are equal.
+5. Time and space complexity: Time complexity is roughly O(N * 3^M) due to iterating through N bases and exploring 3^M topping combinations for each. Space complexity is O(M) for the recursion depth.
+</thinking>

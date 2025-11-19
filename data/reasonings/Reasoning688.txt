@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the probability a knight remains on an n x n chessboard after making k random moves from a starting position (row, column).
+2. Problem type / algorithm category: Dynamic programming.
+3. Step-by-step approach: Use a 3D DP table f[h][i][j] to store the probability of being at cell (i, j) after h moves. Initialize f[0][i][j] to 1 for all valid cells. Iterate through the number of moves from 1 to k. For each cell (i, j) and each possible knight move (a, b), check if the new position (x, y) = (i + a, j + b) is within the board. If it is, update f[h][i][j] by adding f[h-1][x][y] / 8. Finally, return f[k][row][column].
+4. Edge cases: n = 1, k = 0 (probability is 1), invalid input (though constraints prevent this), and cases where the knight immediately moves off the board.
+5. Time and space complexity: Time complexity is O(k * n * n) due to the three nested loops. Space complexity is O(k * n * n) to store the DP table.
+</thinking>

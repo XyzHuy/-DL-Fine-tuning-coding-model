@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a perfect binary tree with node costs, find the minimum total increments to make all root-to-leaf path sums equal.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming (via recursion with memoization conceptually), Greedy.
+3. Step-by-step approach: Traverse the tree from the leaves upwards (implicitly using DFS). For each node, calculate the maximum path sum from its children. The difference between the children's path sums is the necessary increments for the current node's subtrees. Sum up these increments.
+4. Edge cases: The problem states n >= 3, so a tree with only a root and two children is the smallest case. n+1 is a power of 2 ensures a perfect binary tree.
+5. Time and space complexity: Time complexity is O(N) because each node is visited once. Space complexity is O(log N) for the recursion stack in a balanced tree.
+</thinking>

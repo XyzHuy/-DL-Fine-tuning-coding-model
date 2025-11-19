@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given Tic-Tac-Toe board state is valid based on the rules of the game.
+2. Problem type / algorithm category: Game theory, validation.
+3. Step-by-step approach: Count the number of 'X' and 'O's. Check if the counts are valid (X count equals O count or X count equals O count + 1). Check if either player has won and validate the counts based on the winner.
+4. Edge cases: Both players winning, 'X' winning when count is invalid, 'O' winning when count is invalid, invalid 'X' and 'O' counts.
+5. Time and space complexity: Time complexity is O(1) as the board size is fixed. Space complexity is O(1) as we only use a few variables.
+</thinking>

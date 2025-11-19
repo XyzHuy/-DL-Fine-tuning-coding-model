@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring that doesn't contain any characters present outside of it, and is not the entire string.
+2. Problem type / algorithm category: String manipulation, substring search, greedy approach.
+3. Step-by-step approach: Precompute the first and last occurrences of each character. Iterate through each unique character. For each character, consider it as the start of a potential self-contained substring. Expand the substring to the right, checking if all characters within the current substring have their first occurrences at or after the substring's start. If a character's first occurrence is before the substring's start, break the expansion. If the substring's rightmost character is also its last occurrence and the substring is not the entire original string, update the maximum length found.
+4. Edge cases: No self-contained substring exists (return -1). The string length is the minimum allowed (2). All characters are unique. All characters are the same.
+5. Time and space complexity: Time complexity is O(N*alphabet_size) where N is the length of the string, due to nested loops. Space complexity is O(alphabet_size) for storing first and last occurrences.
+</thinking>

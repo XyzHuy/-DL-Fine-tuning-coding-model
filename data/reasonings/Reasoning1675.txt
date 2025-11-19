@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the difference between the maximum and minimum elements in an array by repeatedly dividing even numbers by 2 or multiplying odd numbers by 2.
+2. Problem type / algorithm category: Greedy approach with a max-heap.
+3. Step-by-step approach: Transform all odd numbers to their largest possible even form (multiply by 2). Use a max-heap to store these numbers. Iteratively extract the maximum element, divide it by 2 (if even), and re-insert it, updating the minimum value seen and the current minimum deviation. Continue until the maximum element becomes odd.
+4. Edge cases: Arrays with all even numbers, arrays with all odd numbers, arrays with a mix of even and odd numbers. Initial minimum value tracking.
+5. Time and space complexity: Time complexity is O(N log N * log M) where N is the number of elements and M is the maximum possible value after initial multiplication, due to heap operations. Space complexity is O(N) for the heap.
+</thinking>

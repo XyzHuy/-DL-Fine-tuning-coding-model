@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Partition a string into the minimum number of substrings where each substring contains only unique characters.
+2. Problem type / algorithm category: Greedy approach, String manipulation.
+3. Step-by-step approach: Iterate through the string, maintaining a set of characters in the current substring. If a character is encountered that is already in the set, increment the substring count and start a new set with that character. Otherwise, add the character to the current set.
+4. Edge cases: The input string can have a length of 1, and all characters are lowercase English letters.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string because each character is processed once. Space complexity is O(K) where K is the number of unique characters in the alphabet (26 in this case) for the set.
+</thinking>

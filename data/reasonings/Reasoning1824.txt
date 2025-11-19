@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum side jumps for a frog to travel from point 0, lane 2, to point n, across 3 lanes, avoiding obstacles.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Maintain a DP array representing minimum side jumps to reach each lane at the current point. Iterate through points, updating DP considering direct moves and side jumps if no obstacle exists.
+4. Edge cases: Obstacles at a point, starting at point 0, ending at point n, and no obstacles.
+5. Time and space complexity: Time O(n), Space O(1).
+</thinking>

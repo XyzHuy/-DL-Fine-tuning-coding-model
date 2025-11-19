@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of song durations, count pairs whose sum is divisible by 60.
+2. Problem type / algorithm category: Array, Hash Table, Counting.
+3. Step-by-step approach: Use an array to store the count of each remainder when divided by 60. Iterate through the input, calculate the remainder for each duration, and update the pair count by adding the number of durations with the complement remainder.
+4. Edge cases: Empty input list, list with only one element.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input list. Space complexity is O(1), because the size of the remainder count array is constant (60).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem requires repeatedly summing the digits of a non-negative integer until a single-digit result is obtained.
+2. Problem type / algorithm category: Number theory, digit manipulation, mathematical formula.
+3. Step-by-step approach: The solution utilizes the congruence formula (num - 1) % 9 + 1 to directly compute the digital root without iteration. If the input is 0, return 0.
+4. Edge cases: num = 0 should return 0. Large numbers within the constraints should be handled correctly by the modulo operator.
+5. Time and space complexity: Time complexity is O(1) because it's a direct calculation. Space complexity is O(1) as it uses constant extra space.
+</thinking>

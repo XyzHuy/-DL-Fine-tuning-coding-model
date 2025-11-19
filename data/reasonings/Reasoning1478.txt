@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize total distance from houses to nearest mailboxes by strategically placing k mailboxes.
+2. Problem type / algorithm category: Dynamic Programming, Optimization.
+3. Step-by-step approach: Sort houses. Define a recursive function `cost(i, j)` to find the minimum cost for one mailbox serving houses from index i to j. Define a DP function `dp(n, m)` for the minimum distance using `m` mailboxes for the first `n` houses, breaking it down into subproblems.
+4. Edge cases: When k equals the number of houses, each house gets its own mailbox, resulting in zero distance. When k is 1, all houses must be served by a single mailbox.
+5. Time and space complexity: O(N^3) time for DP states and transitions, O(N^2) space for DP table and cost calculations.
+</thinking>

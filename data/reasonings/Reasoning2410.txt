@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of player-trainer matches where player ability <= trainer capacity, with each player and trainer used at most once.
+2. Problem type / algorithm category: Greedy algorithm, Two Pointers.
+3. Step-by-step approach: Sort both players and trainers. Use two pointers, one for players and one for trainers. Iterate, if a player can be trained by the current trainer, increment match count and advance both pointers. If not, advance only the trainer pointer.
+4. Edge cases: Empty player or trainer lists, all players too strong for all trainers, all trainers too weak for all players, single player or trainer.
+5. Time and space complexity: Time O(P log P + T log T) for sorting, O(P+T) for two pointers, total O(P log P + T log T). Space O(1) or O(log P + log T) depending on sort implementation.
+</thinking>

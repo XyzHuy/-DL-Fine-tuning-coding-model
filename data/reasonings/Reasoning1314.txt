@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Compute a new matrix where each element is the sum of a k-sized block centered at the corresponding element in the original matrix.
+2. Problem type / algorithm category: 2D Prefix Sum (Integral Image).
+3. Step-by-step approach: First, build a 2D prefix sum matrix from the input matrix. Then, for each cell in the output matrix, use the prefix sum matrix to efficiently calculate the sum of the elements within the specified k-sized block boundaries.
+4. Edge cases: Block boundaries might extend beyond the matrix dimensions, requiring clamping to valid matrix indices.
+5. Time and space complexity: O(m*n) time for prefix sum calculation and block sum calculation, O(m*n) space for the prefix sum matrix.
+</thinking>

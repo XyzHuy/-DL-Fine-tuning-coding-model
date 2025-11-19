@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the top-left corner of the first submatrix in a given board that matches a pattern, where pattern characters can be digits or letters that map to unique digits in the board.
+2. Problem type / algorithm category: Submatrix search, pattern matching, constraint satisfaction.
+3. Step-by-step approach: Iterate through all possible top-left corners of submatrices in the board. For each submatrix, check if it matches the pattern by verifying digit consistency and establishing unique mappings for pattern letters to board digits. Return the first matching submatrix's coordinates.
+4. Edge cases: No matching submatrix found, pattern dimensions larger than board dimensions, pattern contains only digits, pattern contains only letters.
+5. Time and space complexity: Time complexity is O(R * C * P_R * P_C), where R and C are board dimensions and P_R and P_C are pattern dimensions. Space complexity is O(U) for storing character-to-digit mappings, where U is the number of unique characters in the pattern.
+</thinking>

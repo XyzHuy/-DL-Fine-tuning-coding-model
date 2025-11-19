@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a non-decreasing array achievable by merging contiguous subarrays into their sum.
+2. Problem type / algorithm category: Dynamic Programming, Greedy.
+3. Step-by-step approach: Use dynamic programming where dp[i] stores the maximum length of a non-decreasing subarray ending at index i and its sum. Iterate from left to right, for each element nums[i], find the best previous non-decreasing subarray ending at j (j < i) such that its sum is less than or equal to nums[i] (potentially after merging elements between j and i). Update dp[i] with the extended length.
+4. Edge cases: An array with a single element is always non-decreasing. The input array may already be non-decreasing.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops, and space complexity is O(N) for the DP table.
+</thinking>

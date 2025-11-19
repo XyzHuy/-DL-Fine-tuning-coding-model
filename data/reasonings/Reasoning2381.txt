@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Apply a series of shifts (forward or backward by 1, with wrap-around) to specified ranges of characters in a string and return the modified string.
+2. Problem type / algorithm category: String manipulation, Difference Array / Prefix Sum.
+3. Step-by-step approach: Use a difference array to record the net change at each index. For each shift operation, increment the start index and decrement the end index + 1 in the difference array. Convert the difference array into prefix sums to get the total shift at each character's index. Apply the cumulative shifts to the original string characters, handling wrap-around using modulo 26.
+4. Edge cases: Empty string (not possible due to constraints), shifts that cover the entire string, shifts at the beginning or end of the string, multiple overlapping shifts.
+5. Time and space complexity: Time complexity is O(N + M) where N is the length of string s and M is the number of shifts, for processing shifts and then string. Space complexity is O(N) for the difference array and the result string.
+</thinking>

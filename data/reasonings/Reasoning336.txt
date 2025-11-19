@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all pairs of distinct indices (i, j) in a list of strings such that the concatenation words[i] + words[j] is a palindrome.
+2. Problem type / algorithm category: String manipulation, palindrome checking, hash table (dictionary).
+3. Step-by-step approach: Iterate through each word in the input list. For each word, iterate through all possible prefixes and suffixes. Check if the reverse of the prefix or suffix exists in the dictionary and if the remaining suffix or prefix is a palindrome. If both conditions are met, add the pair of indices to the result.
+4. Edge cases: Empty string, single character string, duplicate words, palindrome words, and cases where the prefix/suffix is the entire word. Avoid adding the same index twice to the result.
+5. Time and space complexity: Time complexity is O(N * K^2), where N is the number of words and K is the maximum length of a word. Space complexity is O(N), where N is the number of words to store the dictionary.
+</thinking>

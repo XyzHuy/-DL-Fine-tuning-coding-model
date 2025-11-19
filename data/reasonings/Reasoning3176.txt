@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subsequence where consecutive elements differ at most k times.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use DP where dp[i][h] stores the maximum length of a good subsequence ending at index i with at most h differences. Iterate through all possible previous elements j to update dp[i][h] based on whether nums[i] == nums[j] or nums[i] != nums[j] and h > 0.
+4. Edge cases: k=0 (no differences allowed), empty array (though constraints prevent this).
+5. Time and space complexity: Time O(n^3 * k), Space O(n * k).
+</thinking>

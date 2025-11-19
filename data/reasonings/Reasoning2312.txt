@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize profit by cutting an m x n piece of wood into smaller pieces and selling them based on a given price list for specific dimensions. Cuts must be horizontal or vertical across the entire piece.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Initialize a DP table `dp[h][w]` to store the maximum profit for an h x w piece. For each `(h, w)`: 1. Set `dp[h][w]` to the direct selling price if available, otherwise 0. 2. Iterate through all possible horizontal cuts `i` (1 to h-1) and update `dp[h][w]` with `max(dp[h][w], dp[i][w] + dp[h-i][w])`. 3. Iterate through all possible vertical cuts `j` (1 to w-1) and update `dp[h][w]` with `max(dp[h][w], dp[h][j] + dp[h][w-j])`. The final answer is `dp[m][n]`.
+4. Edge cases: Wood pieces with dimensions not in the price list have an initial value of 0. The DP table dimensions are (m+1)x(n+1) to handle 1-based indexing for dimensions.
+5. Time and space complexity: Time complexity is O(m*n*(m+n)) due to nested loops for DP states and cuts. Space complexity is O(m*n) for the DP table.
+</thinking>

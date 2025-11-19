@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Filter a list of restaurants based on vegan-friendliness, maximum price, and maximum distance, then return their IDs sorted by rating (descending) and ID (descending) for ties.
+2. Problem type / algorithm category: Filtering and Sorting.
+3. Step-by-step approach: First, iterate through all restaurants and apply the vegan-friendly, max price, and max distance filters. Then, sort the remaining restaurants primarily by rating in descending order, and secondarily by ID in descending order for restaurants with the same rating. Finally, extract and return the IDs of the sorted restaurants.
+4. Edge cases: The veganFriendly filter can be 0 (no vegan requirement) or 1 (vegan only). The input lists might be empty. Restaurant properties (ID, rating, price, distance) have defined ranges.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, where N is the number of restaurants. Space complexity is O(N) in the worst case to store filtered restaurants and their IDs.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given stone positions on a line, find the minimum and maximum moves to arrange them in consecutive positions by moving endpoint stones.
+2. Problem type / algorithm category: Sorting, Sliding Window, Greedy
+3. Step-by-step approach: Sort the stone positions. Calculate max moves by considering gaps at both ends. Calculate min moves using a sliding window to find the longest consecutive sequence and then moving the other stones into the gaps.
+4. Edge cases: Handle the case where all but one stone are already consecutive, requiring only 2 moves.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1).
+</thinking>

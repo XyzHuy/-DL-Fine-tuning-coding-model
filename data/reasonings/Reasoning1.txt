@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to find two numbers in an array that sum to a given target and return their indices. It is guaranteed that exactly one solution exists.
+2. Problem type / algorithm category: This is an array problem that can be optimized using a hash map for efficient lookups.
+3. Step-by-step approach: We iterate through the array once. For each element, we calculate its complement (target - element). We then check if this complement already exists in our hash map. If it does, we have found our pair and can return the indices. If not, we add the current element and its index to the hash map to be checked against later elements.
+4. Edge cases: The problem constraints state a solution always exists and the array has at least two elements, so we do not need to handle cases with no solution or empty arrays. The approach correctly handles inputs with duplicate numbers that form a valid pair.
+5. Time and space complexity: The time complexity is O(n) because we make a single pass through the array, and hash map lookups are O(1) on average. The space complexity is O(n) because, in the worst case, we might store all n elements in the hash map.
+</thinking>

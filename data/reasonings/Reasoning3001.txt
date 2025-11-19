@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum moves for a white rook and a white bishop to capture a stationary black queen on an 8x8 chessboard, considering piece movement rules and blockages.
+2. Problem type / algorithm category: Chess logic, Case analysis, Greedy approach.
+3. Step-by-step approach: First, check if the rook can capture the queen in one move (same row or column), verifying if the bishop blocks this path. If not, check if the bishop can capture the queen in one move (same diagonal), verifying if the rook blocks this path. If either is true, return 1. Otherwise, return 2 as a maximum of two moves is always sufficient.
+4. Edge cases: Blocking pieces. The rook might block the bishop's diagonal path, and the bishop might block the rook's horizontal/vertical path.
+5. Time and space complexity: Time complexity is O(1) because the board size is fixed and we perform a constant number of checks. Space complexity is O(1) as we only use a few variables.
+</thinking>

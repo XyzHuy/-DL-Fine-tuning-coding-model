@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth smallest element in a given binary search tree (BST).
+2. Problem type / algorithm category: Binary Search Tree, Inorder Traversal, Iterative Approach.
+3. Step-by-step approach: Perform an iterative inorder traversal of the BST. Decrement k with each visited node. When k becomes 0, return the current node's value.
+4. Edge cases: Empty tree (though constraints prevent this), k out of range (though constraints prevent this).
+5. Time and space complexity: Time complexity is O(H + k), where H is the height of the tree and k is the target. In the worst case (skewed tree), it becomes O(N). Space complexity is O(H), where H is the height of the tree, due to the stack used for the iterative inorder traversal. In the worst case, it becomes O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if customer orders of specific quantities can be fulfilled using available numbers, where each customer must receive numbers of the same value.
+2. Problem type / algorithm category: Backtracking with optimization (greedy approach for sorting quantities).
+3. Step-by-step approach: Count frequencies of numbers, sort customer quantities in descending order, then use a recursive backtracking function to try assigning quantities to available number frequencies, reverting if a path fails.
+4. Edge cases: Empty input arrays (though constraints prevent this), cases where a single customer's quantity exceeds the frequency of any available number.
+5. Time and space complexity: Time complexity is roughly O(m! * n), where m is number of customers and n is number of unique items in nums, due to backtracking. Space complexity is O(n) for frequency map and O(m) for recursion depth.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of digits, calculate the number of ways to decode it into a sequence of letters, where '1' corresponds to 'A', '2' to 'B', ..., '26' to 'Z'. Invalid sequences such as leading zeros result in 0 ways.
+2. Problem type / algorithm category: Dynamic Programming
+3. Step-by-step approach: Use dynamic programming to store the number of ways to decode substrings ending at each index. Iterate through the string, checking if the single digit and two-digit combinations at each position are valid. If valid, update the dp table by adding the corresponding previous values.
+4. Edge cases: Empty string, leading zeros, single '0', two digit numbers greater than 26 or less than 10.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the string, as we iterate through the string once. Space complexity is O(n) due to the dp array of size n+1.
+</thinking>

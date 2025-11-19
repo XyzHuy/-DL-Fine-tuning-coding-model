@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a sequence of length 2n-1 containing 1 once and numbers 2 to n twice, such that the distance between duplicates of i is i. Prioritize lexicographically largest sequences.
+2. Problem type / algorithm category: Backtracking with pruning.
+3. Step-by-step approach: Iterate through positions from left to right. For each empty position, try placing unused numbers from n down to 1. If placing num=1, place it and recurse. If placing num>1, check if the position num steps away is also empty, then place num at both positions and recurse. If a valid sequence is found, return it.
+4. Edge cases: n=1 (sequence is [1]). The problem guarantees a solution exists.
+5. Time and space complexity: Time complexity is roughly O(n!), space complexity is O(n) for the sequence and recursion stack.
+</thinking>

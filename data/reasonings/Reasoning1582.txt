@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count cells with value 1 where the entire row and column only contain that single 1.
+2. Problem type / algorithm category: Matrix traversal, counting.
+3. Step-by-step approach: First, precompute the count of ones in each row and each column. Then, iterate through the matrix again; if a cell contains a 1 and its corresponding row count and column count are both 1, increment the special position counter.
+4. Edge cases: Matrices with all zeros, matrices with all ones, single row or single column matrices. The constraints ensure a non-empty matrix.
+5. Time and space complexity: Time complexity is O(m*n) for two passes over the matrix. Space complexity is O(m+n) for storing row and column counts.
+</thinking>

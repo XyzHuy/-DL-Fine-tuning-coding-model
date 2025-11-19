@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score by hopping from index 0 to the last element, where each hop from i to j scores (j - i) * nums[j].
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a DP array where dp[i] stores the maximum score to reach the end from index i. Iterate backward from n-2 to 0, and for each i, calculate the maximum score by considering all possible jumps j > i, adding the jump score (j - i) * nums[j] to dp[j].
+4. Edge cases: The last element has a score of 0. The array length is at least 2.
+5. Time and space complexity: O(N^2) time complexity due to nested loops, O(N) space complexity for the DP array.
+</thinking>

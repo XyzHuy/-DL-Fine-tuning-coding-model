@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count all submatrices within a given binary matrix that consist entirely of ones.
+2. Problem type / algorithm category: Dynamic Programming, Prefix Sums, Matrix Traversal.
+3. Step-by-step approach: First, precompute for each cell, the width of consecutive ones ending at that cell in its row. Then, iterate through each cell as a potential bottom-right corner of a submatrix of ones. For each such cell, iterate upwards, maintaining the minimum width encountered so far. This minimum width, combined with the current height (number of rows iterated upwards), defines the number of valid submatrices ending at that cell. Sum these counts.
+4. Edge cases: Empty matrix or matrix with empty rows should return 0.
+5. Time and space complexity: Time complexity is O(m*m*n) and space complexity is O(m*n) for the DP table.
+</thinking>

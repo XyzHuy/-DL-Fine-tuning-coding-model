@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate robot collisions on a line based on their positions, health, and directions ('L' or 'R') to determine the final health of surviving robots.
+2. Problem type / algorithm category: Simulation, Stack-based algorithm.
+3. Step-by-step approach: Combine robot data, sort by position. Process robots: 'R' robots go to a stack. 'L' robots collide with 'R' robots on the stack, reducing health or removing both. Surviving 'L' robots are recorded. Remaining 'R' robots on the stack are survivors. Finally, sort survivors by original index and return their health.
+4. Edge cases: No collisions (all move same direction), all robots removed, robots with equal health colliding.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and O(N) for stack operations. Space complexity is O(N) for storing robot data and the stack.
+</thinking>

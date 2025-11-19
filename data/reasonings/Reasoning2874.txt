@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value of (nums[i] - nums[j]) * nums[k] for all i < j < k, return 0 if all such values are negative.
+2. Problem type / algorithm category: Array traversal, dynamic programming (prefix/suffix maximums).
+3. Step-by-step approach: Precompute maximums from the left for potential nums[i] and maximums from the right for potential nums[k]. Then iterate through all possible nums[j] indices and combine with the precomputed maximums to find the overall maximum triplet value.
+4. Edge cases: Array length less than 3, all triplet values being negative (return 0).
+5. Time and space complexity: Time O(n) due to three linear passes, Space O(n) for storing prefix and suffix maximums.
+</thinking>

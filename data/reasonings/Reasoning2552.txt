@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count quadruplets (i, j, k, l) such that 0 <= i < j < k < l < n and nums[i] < nums[k] < nums[j] < nums[l].
+2. Problem type / algorithm category: Brute force with optimization / Counting.
+3. Step-by-step approach: Iterate through all possible pairs of (j, k) where j < k. For each such pair, count the number of valid 'i's (i < j and nums[i] < nums[k]) and valid 'l's (l > k and nums[l] > nums[j]). The product of these counts gives the number of quadruplets for that (j, k) pair. Sum these products.
+4. Edge cases: The constraints state n >= 4, so there are always enough elements to form a quadruplet. All numbers are unique from 1 to n.
+5. Time and space complexity: O(n^4) time complexity due to nested loops and summations. O(1) space complexity.
+</thinking>

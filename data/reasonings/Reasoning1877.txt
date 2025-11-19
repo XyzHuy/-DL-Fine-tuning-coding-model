@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of even length, pair up all elements into n/2 pairs to minimize the largest sum among all pairs.
+2. Problem type / algorithm category: Greedy algorithm, Sorting.
+3. Step-by-step approach: Sort the array. Then, iterate from both ends, pairing the smallest remaining element with the largest remaining element and calculating their sum. Keep track of the maximum sum found so far.
+4. Edge cases: The input array length is guaranteed to be even and at least 2. All elements are positive. No empty array or odd length array needs to be handled.
+5. Time and space complexity: Sorting takes O(N log N) time. The iteration takes O(N) time. Space complexity is O(1) if sorting is in-place, or O(N) if a copy is made.
+</thinking>

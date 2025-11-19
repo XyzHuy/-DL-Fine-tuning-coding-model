@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Traverse a 2D array and collect elements in diagonal order, starting from the top-left.
+2. Problem type / algorithm category: Array traversal, Hash Map (Dictionary) usage.
+3. Step-by-step approach: Group elements by the sum of their row and column indices (i+j) into a dictionary. Then, iterate through the dictionary keys in increasing order and append the reversed list of elements for each diagonal to the final result.
+4. Edge cases: Empty input array, arrays with varying row lengths.
+5. Time and space complexity: Time O(N) where N is the total number of elements, Space O(N) to store diagonals.
+</thinking>

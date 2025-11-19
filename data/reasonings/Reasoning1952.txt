@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an integer n has exactly three positive divisors.
+2. Problem type / algorithm category: Number theory, prime factorization, checking for perfect squares.
+3. Step-by-step approach: First, handle small numbers by returning false if n < 4. Then, calculate the integer square root of n. If n is not a perfect square, return false. If it is a perfect square, check if its square root is a prime number by iterating from 2 up to the square root of the candidate prime. If the square root is prime, return true; otherwise, return false.
+4. Edge cases: Numbers less than 4 (1, 2, 3) cannot have exactly three divisors. Non-perfect squares do not have an odd number of divisors. The square root of n might not be prime.
+5. Time and space complexity: Time complexity is O(sqrt(sqrt(n))) or O(n^(1/4)) due to the primality test on the square root. Space complexity is O(1) as only a few variables are used.
+</thinking>

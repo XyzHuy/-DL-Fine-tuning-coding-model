@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify people whose favorite company lists are not contained within any other person's favorite company list.
+2. Problem type / algorithm category: Set operations, brute force comparison.
+3. Step-by-step approach: Convert each person's favorite companies list into a set. For each person, iterate through all other people's company sets. If the current person's set is a proper subset of any other person's set, mark them as a subset. Collect indices of people who were not marked as subsets.
+4. Edge cases: A person's list being empty (not possible by constraints), a person's list being identical to another (problem states lists are distinct after sorting), single person input.
+5. Time and space complexity: Let N be the number of people and M be the maximum number of favorite companies for a person. Space complexity is O(N*M) to store sets. Time complexity is O(N^2 * M) due to nested loops and set subset checks.
+</thinking>

@@ -1,0 +1,11 @@
+<thinking>
+1. Problem summary: Find two lines in the given array `height` that form a container with the x-axis, such that the container holds the maximum amount of water.
+2. Problem type / algorithm category: Two Pointers.
+3. Step-by-step approach:
+    - Initialize two pointers, `left` and `right`, at the beginning and end of the array, respectively.
+    - Calculate the area formed by the lines at `left` and `right` and update the `max_area`.
+    - Move the pointer pointing to the shorter line inward.
+    - Repeat until `left` and `right` meet.
+4. Edge cases: Array of size 2.
+5. Time and space complexity: Time: O(n), Space: O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the largest rectangle containing only 1s and return its area.
+2. Problem type / algorithm category: Dynamic Programming / Stack / Histogram Area
+3. Step-by-step approach: Iterate through each row, updating the height of each column based on whether the current cell is '1' or '0'. For each row, treat the heights array as a histogram and find the largest rectangular area in the histogram using a stack. Update the overall maximum area found so far.
+4. Edge cases: Empty matrix, matrix with only 0s, matrix with only 1s.
+5. Time and space complexity: Time: O(rows * cols), Space: O(cols)
+</thinking>

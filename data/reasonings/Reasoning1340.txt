@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of indices reachable by jumping from one index to another, subject to distance and height constraints.
+2. Problem type / algorithm category: Dynamic Programming with optimization using sorted processing.
+3. Step-by-step approach: Iterate through indices sorted by their array values. For each index, calculate the maximum jumps possible by considering jumps to valid left and right neighbors. A jump is valid if the neighbor's value is strictly less than the current index's value, and all intermediate indices (if any) are also strictly smaller. Update the maximum jumps for the current index based on jumps from valid neighbors.
+4. Edge cases: Array with all same elements (no jumps possible), array sorted in increasing or decreasing order.
+5. Time and space complexity: O(N*D) time complexity and O(N) space complexity, where N is the length of the array and D is the maximum jump distance.
+</thinking>

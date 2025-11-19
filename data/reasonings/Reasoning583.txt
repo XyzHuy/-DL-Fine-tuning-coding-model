@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of deletions required to make two strings equal.
+2. Problem type / algorithm category: Dynamic Programming, Longest Common Subsequence (LCS).
+3. Step-by-step approach: Calculate the length of the longest common subsequence between the two strings using dynamic programming. Then, the number of deletions needed is the sum of the lengths of the original strings minus twice the length of the LCS.
+4. Edge cases: Empty strings, strings that are already equal.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the lengths of the input strings. Space complexity is O(m*n) due to the DP table.
+</thinking>

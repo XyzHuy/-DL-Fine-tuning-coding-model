@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum sum score across all indices, where the score at an index is the maximum of the prefix sum up to that index and the suffix sum starting from that index.
+2. Problem type / algorithm category: Array manipulation, prefix sums, sliding window (implicitly).
+3. Step-by-step approach: Initialize total sum and left sum. Iterate through the array, updating left sum. For each index, calculate the current score as max(left_sum, total_sum - left_sum + current_element) and update the overall maximum score.
+4. Edge cases: Array with a single element, all positive numbers, all negative numbers, mixed numbers.
+5. Time and space complexity: Time complexity is O(n) due to a single pass. Space complexity is O(1) as only a few variables are used.
+</thinking>

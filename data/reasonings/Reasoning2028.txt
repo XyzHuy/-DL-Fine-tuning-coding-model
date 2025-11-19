@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given observed dice rolls, the count of missing rolls (n), and the overall mean, find n missing rolls (1-6) that satisfy the mean.
+2. Problem type / algorithm category: Arithmetic, Distribution.
+3. Step-by-step approach: Calculate the total sum required for all rolls. Subtract the sum of observed rolls to find the sum needed for missing rolls. Check if this missing sum is feasible (between n and 6*n). If feasible, distribute this sum as evenly as possible among the n missing rolls, adding any remainder to the initial rolls.
+4. Edge cases: The missing sum is too small (less than n) or too large (greater than 6*n), making a solution impossible.
+5. Time and space complexity: Time is O(m) for summing observed rolls, space is O(n) for the result array.
+</thinking>

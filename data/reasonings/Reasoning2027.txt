@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert all 'X' characters in a string to 'O' using a minimum number of moves, where a move converts three consecutive characters to 'O'.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Iterate through the string. If an 'X' is found, increment the move count and advance the index by 3 to cover the effect of the move. Otherwise, advance the index by 1.
+4. Edge cases: The string contains only 'O's (0 moves required), string length is at minimum 3.
+5. Time and space complexity: Time O(n), Space O(1).
+</thinking>

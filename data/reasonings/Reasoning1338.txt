@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of distinct integers to remove from an array such that at least half of the original elements are removed.
+2. Problem type / algorithm category: Greedy algorithm, Frequency counting, Sorting.
+3. Step-by-step approach: Count the frequency of each element. Sort these frequencies in descending order. Iterate through the sorted frequencies, greedily picking the most frequent elements to remove, and stop when the remaining count is less than or equal to half the original array length. The number of elements picked is the minimum set size.
+4. Edge cases: Array with all same elements. Array with many distinct elements.
+5. Time and space complexity: Time complexity is dominated by sorting frequencies O(N log N) or O(K log K) where K is the number of distinct elements and N is the array length. Space complexity is O(K) for storing frequencies.
+</thinking>

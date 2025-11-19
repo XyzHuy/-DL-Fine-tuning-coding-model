@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two sorted integer arrays, merge the second array into the first array in sorted order, modifying the first array in-place.
+2. Problem type / algorithm category: Array manipulation, merging, two pointers.
+3. Step-by-step approach: Use three pointers, one for the end of the merged array in nums1, one for the end of the first array, and one for the end of the second array. Compare the elements at the pointers of the two arrays and place the larger element at the end of the merged array, decrementing the corresponding pointers. Handle the case where elements remain in the second array after the first array is exhausted.
+4. Edge cases: Empty arrays, one array is empty while the other is not.
+5. Time and space complexity: Time complexity is O(m+n) because we iterate through both arrays at most once. Space complexity is O(1) as the merge is done in-place.
+</thinking>

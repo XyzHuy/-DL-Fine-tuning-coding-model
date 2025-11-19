@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of chairs required to accommodate people entering and leaving a waiting room based on a sequence of 'E' (enter) and 'L' (leave) events.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Iterate through the input string, maintaining a count of current people in the room. Increment for 'E' and decrement for 'L'. Keep track of the maximum value this count reaches, as this represents the minimum chairs needed.
+4. Edge cases: The string length is at least 1 and at most 50. The string consists only of 'E' and 'L'. The sequence is valid, meaning no one tries to leave if the room is empty (implicitly handled by `current_chairs` not going below zero if the problem guarantees validity).
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, as we iterate through it once. Space complexity is O(1) as we only use a few variables to store counts.
+</thinking>

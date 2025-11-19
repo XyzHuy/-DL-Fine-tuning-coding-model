@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous subarrays where each element is exactly one less than the previous one, including single-element subarrays.
+2. Problem type / algorithm category: Dynamic programming / Sliding window / Combinatorics.
+3. Step-by-step approach: Initialize total periods to the number of elements (for single-day periods). Iterate, tracking the current contiguous descent length. If descent continues, increment length. If descent breaks, calculate and add periods from the completed descent using the formula for combinations (n * (n-1) / 2), then reset length to 1. Finally, add periods from the last contiguous descent.
+4. Edge cases: An empty input array should return 0. An array with a single element should return 1.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum deletions to remove both the smallest and largest elements from an array by removing from either end.
+2. Problem type / algorithm category: Array manipulation, finding min/max, greedy approach.
+3. Step-by-step approach: Locate the indices of the minimum and maximum elements. Calculate the cost of removing both from the left, both from the right, and one from the left and the other from the right. Return the minimum of these three costs.
+4. Edge cases: An array with a single element where the minimum and maximum are the same.
+5. Time and space complexity: Time complexity is O(N) due to finding min/max and their indices. Space complexity is O(1) as only a few variables are used.
+</thinking>

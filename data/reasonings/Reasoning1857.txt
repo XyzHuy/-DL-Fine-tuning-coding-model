@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest color value on any valid path in a directed graph with colored nodes, or -1 if a cycle exists.
+2. Problem type / algorithm category: Graph traversal, Topological Sort, Dynamic Programming.
+3. Step-by-step approach: Build an adjacency list graph and compute indegrees. Initialize a DP table to store color counts. Use a queue for topological sort starting with nodes of indegree 0. Process nodes, update DP table for the current node's color, and propagate max color counts to neighbors. Decrement neighbor indegrees and add to queue if indegree becomes 0. If not all nodes are processed, a cycle exists. Otherwise, the max value in the DP table is the answer.
+4. Edge cases: Graph containing a cycle, graph with no edges, graph with a single node.
+5. Time and space complexity: Time O(N + M) due to graph traversal and DP updates. Space O(N * 26) for DP table, which simplifies to O(N) for storing color counts per node.
+</thinking>

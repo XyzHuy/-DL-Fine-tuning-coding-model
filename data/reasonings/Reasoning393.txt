@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given integer array, representing byte data, is a valid UTF-8 encoding.
+2. Problem type / algorithm category: String/Character encoding, bit manipulation.
+3. Step-by-step approach: Iterate through the data array, checking the leading bits of each byte to determine the number of bytes for the current character. Validate subsequent bytes based on the UTF-8 encoding rules.
+4. Edge cases: Empty input, incomplete multi-byte character sequences, invalid starting byte patterns (leading ones outside the range 0-4), continuation bytes not starting with '10'.
+5. Time and space complexity: Time: O(N), where N is the length of the data array. Space: O(1).
+</thinking>

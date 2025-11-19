@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of digits, return all possible letter combinations that the digits could represent based on a phone keypad mapping.
+2. Problem type / algorithm category: String manipulation, Backtracking (although implemented iteratively here).
+3. Step-by-step approach: If the input is empty, return an empty list. Otherwise, iterate through the digits, and for each digit, replace each existing combination with all possible combinations formed by adding the letters corresponding to the current digit.
+4. Edge cases: Empty input string.
+5. Time and space complexity: O(4^N) time, where N is the length of the input string, since each digit maps to at most 4 letters. O(4^N) space to store the output list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum number of new rungs to add to a ladder, given existing rung heights and a maximum climbing distance, to be able to reach the top.
+2. Problem type / algorithm category: Greedy approach.
+3. Step-by-step approach: Initialize current height to 0 and additional rungs count to 0. Iterate through the existing rungs. For each rung, if the gap from the current height to the new rung exceeds the allowed distance, calculate how many rungs are needed by dividing the excess distance by the maximum distance, and add them to the count. Update the current height to the new rung's height.
+4. Edge cases: The first rung might be unreachable from the ground (height 0). The gaps between consecutive rungs might require multiple new rungs.
+5. Time and space complexity: Time complexity is O(N) where N is the number of rungs, as we iterate through the rungs once. Space complexity is O(1) as we only use a few variables.
+</thinking>

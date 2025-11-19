@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Fill each empty room in a grid with the distance to its nearest gate, where -1 is a wall, 0 is a gate, and INF is an empty room.
+2. Problem type / algorithm category: Breadth-First Search (BFS), Graph Traversal.
+3. Step-by-step approach: First, find all gates and add them to a queue. Then, perform BFS from each gate, updating adjacent empty rooms with the distance from the gate. The distance is the current cell's value + 1.
+4. Edge cases: Empty grid, grid with no gates, grid where some rooms cannot reach any gate.
+5. Time and space complexity: Time complexity is O(m*n), where m is the number of rows and n is the number of columns. Space complexity is O(m*n) in the worst case, where the queue contains all the rooms.
+</thinking>

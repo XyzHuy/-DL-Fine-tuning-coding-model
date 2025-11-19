@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform a binary matrix into one where all rows are palindromic OR all columns are palindromic, by flipping the minimum number of cells.
+2. Problem type / algorithm category: Greedy, Matrix manipulation.
+3. Step-by-step approach: Calculate flips needed for each row to be palindromic. Sum these to get total row flips. Calculate flips for each column. Sum these to get total column flips. Return the minimum of total row flips and total column flips.
+4. Edge cases: Single row or single column matrices. Matrices where rows or columns are already palindromic.
+5. Time and space complexity: Time O(m*n*max(m,n)), Space O(m+n).
+</thinking>

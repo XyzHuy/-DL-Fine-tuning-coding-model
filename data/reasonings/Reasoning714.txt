@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of stock prices and a transaction fee, find the maximum profit by buying and selling stocks with the fee applied to each transaction.
+2. Problem type / algorithm category: Dynamic Programming / Greedy
+3. Step-by-step approach: Iterate through the prices array, maintaining two variables: `cash` representing the maximum profit with no stock in hand, and `hold` representing the maximum profit with a stock in hand. Update `cash` by either keeping the previous `cash` or selling the stock at the current price (hold + price - fee). Update `hold` by either keeping the previous `hold` or buying the stock at the current price (cash - price). Return the final `cash`.
+4. Edge cases: Empty prices array, fee being zero, prices are non-increasing.
+5. Time and space complexity: Time: O(n), where n is the length of the prices array. Space: O(1).
+</thinking>

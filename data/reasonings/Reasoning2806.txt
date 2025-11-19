@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate final bank balance after rounding a purchase amount to the nearest multiple of 10 and deducting it from an initial balance of 100.
+2. Problem type / algorithm category: Arithmetic, rounding.
+3. Step-by-step approach: Add 5 to the purchase amount, perform integer division by 10, round the result to the nearest whole number, multiply by 10 to get the rounded purchase amount, and subtract this from 100.
+4. Edge cases: Purchase amount of 0, purchase amounts ending in 5 (which round up).
+5. Time and space complexity: O(1) time and O(1) space.
+</thinking>

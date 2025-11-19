@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total tastiness of fruits purchased within a budget (maxAmount) and a limit on coupon usage (maxCoupons), where coupons halve the price of a fruit.
+2. Problem type / algorithm category: Dynamic Programming (specifically, a variation of the unbounded knapsack problem or 0/1 knapsack with an additional dimension for coupons).
+3. Step-by-step approach: Define a recursive function with memoization (or a DP table) that takes the current fruit index, remaining budget, and remaining coupons as state. For each fruit, consider three options: skip it, buy it at full price, or buy it with a coupon if available and affordable. Choose the option that yields maximum tastiness.
+4. Edge cases: No fruits to buy (n=0, though constraints say n>=1), maxAmount is 0, maxCoupons is 0, all prices exceed maxAmount, all coupon prices exceed maxAmount.
+5. Time and space complexity: Time complexity is O(n * maxAmount * maxCoupons) due to the DP states. Space complexity is O(n * maxAmount * maxCoupons) for the memoization table.
+</thinking>

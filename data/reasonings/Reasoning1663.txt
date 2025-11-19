@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the lexicographically smallest string of length n with a total numeric value of k, where character values are 1-indexed alphabet positions.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation.
+3. Step-by-step approach: Initialize the string with all 'a's. Adjust the value k by subtracting n (the initial sum of 'a's). Iterate from the end of the string, adding the maximum possible value (up to 25) to the current character without exceeding the remaining k, and update k.
+4. Edge cases: The constraints ensure k is at least n and at most 26*n, meaning a valid string always exists. Smallest n or k values are implicitly handled.
+5. Time and space complexity: O(n) time for string initialization and iteration, O(n) space for storing the result string.
+</thinking>

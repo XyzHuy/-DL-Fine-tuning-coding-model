@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the single string in a list of strings that has a different difference array compared to all other strings. The difference array is formed by the character code differences between adjacent characters.
+2. Problem type / algorithm category: Hash Map / Dictionary, String Manipulation.
+3. Step-by-step approach: Calculate the difference array for each word. Store these difference arrays (as tuples for hashability) in a dictionary where keys are the difference arrays and values are lists of words that produce them. Since only one word is different, its corresponding difference array will map to a list with a single word. Iterate through the dictionary to find this list and return the single word.
+4. Edge cases: The constraints guarantee at least 3 words, so there will always be a majority difference array and a single odd one. The length of strings is at least 2.
+5. Time and space complexity: Time complexity is O(N * L) where N is the number of words and L is the length of each word, as we iterate through each word and its characters. Space complexity is O(N * L) in the worst case if all difference arrays are unique, but effectively O(L) as the dictionary keys are tuples of length L.
+</thinking>

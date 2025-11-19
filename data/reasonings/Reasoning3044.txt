@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the most frequent prime number greater than 10 formed by traversing adjacent cells in a matrix in a straight line, returning the largest prime if frequencies are tied.
+2. Problem type / algorithm category: Matrix traversal, Prime number checking, Frequency counting, Greedy algorithm (for tie-breaking).
+3. Step-by-step approach: Iterate through each cell in the matrix. From each cell, explore all 8 directions. For each direction, construct numbers by appending digits as you move along the path. Check if these numbers are prime and greater than 10. Count the frequency of each such prime number. Finally, find the prime with the highest frequency, selecting the largest prime in case of a tie.
+4. Edge cases: No prime numbers greater than 10 are found in the matrix. A matrix with a single element.
+5. Time and space complexity: Time complexity is roughly O(m * n * 8 * max_path_length * sqrt(max_number)), where max_path_length is bounded by max(m, n) and max_number is bounded by 10^max_path_length. Space complexity is O(P), where P is the number of unique prime numbers found.
+</thinking>

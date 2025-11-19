@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange the characters in a given string such that no two adjacent characters are the same, returning an empty string if it's impossible.
+2. Problem type / algorithm category: String manipulation, greedy algorithm, and heap (priority queue) can be used.
+3. Step-by-step approach: Count character frequencies, sort characters by frequency, then iteratively place characters in the result string at even indices. If an even index is filled, move to odd indices. If any character's count is greater than (n+1)/2, return "" as it is impossible to rearrange.
+4. Edge cases: Empty string, string with only one character, string where one character appears more than half the time, and strings that can be rearranged successfully.
+5. Time and space complexity: Time complexity is O(N log A) where N is the length of s and A is the alphabet size. Space complexity is O(N).
+</thinking>

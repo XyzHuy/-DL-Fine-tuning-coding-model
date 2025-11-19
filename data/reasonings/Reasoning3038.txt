@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of operations possible by repeatedly taking the first two elements of an array, summing them to form a score, and continuing only if the score remains consistent across all operations.
+2. Problem type / algorithm category: Greedy, Array traversal.
+3. Step-by-step approach: Calculate the target score using the first two elements. Then, iterate through the array taking elements two at a time, incrementing an operation count if the sum matches the target score. Stop if the sum differs or fewer than two elements remain.
+4. Edge cases: An array with fewer than two elements cannot perform any operations.
+5. Time and space complexity: Time complexity is O(N) where N is the length of nums, as we traverse the array once. Space complexity is O(1) as we use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a permutation of [0, ..., n-1] that minimizes a cyclic score defined by differences between permuted elements and mapped values from a given array nums, returning the lexicographically smallest one if ties exist.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking, Traveling Salesperson Problem (TSP) variation.
+3. Step-by-step approach: Use dynamic programming with a bitmask to represent visited elements. The state `dfs(mask, pre)` computes the minimum score from the current state where `mask` indicates visited elements and `pre` is the last element added to the permutation. A separate greedy reconstruction function `g` is used to build the lexicographically smallest permutation by iterating through possible next elements and choosing the one that matches the precomputed minimum score.
+4. Edge cases: The constraint n >= 2 ensures there are at least two elements. The problem guarantees nums is a permutation. The base case for recursion is when all elements are visited.
+5. Time and space complexity: Time complexity is O(n^2 * 2^n) due to the DP states and transitions. Space complexity is O(n * 2^n) for storing the DP table and O(n) for the recursion stack.
+</thinking>

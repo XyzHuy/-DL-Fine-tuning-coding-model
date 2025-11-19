@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Check if all numbers in a sentence string are in strictly increasing order.
+2. Problem type / algorithm category: String parsing, numerical comparison.
+3. Step-by-step approach: Split the sentence into tokens. Iterate through tokens, identify numbers. Maintain a previous number and compare the current number with it, ensuring current > previous. If not, return false. If loop finishes, return true.
+4. Edge cases: Sentence with only two numbers, numbers that are equal, numbers that decrease.
+5. Time and space complexity: Time O(N), where N is the length of the string (due to split and iteration). Space O(T), where T is the number of tokens (for storing tokens in list).
+</thinking>

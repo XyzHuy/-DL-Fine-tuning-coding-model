@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum sum of a triplet (i, j, k) such that i < j < k and nums[i] < nums[j] and nums[k] < nums[j]. Return -1 if no such triplet exists.
+2. Problem type / algorithm category: Brute force with optimization, Iteration.
+3. Step-by-step approach: Iterate through each possible middle element j. For each j, find the minimum element to its left (min_left) and the minimum element to its right (min_right). If min_left < nums[j] and nums[j] > min_right, then a mountain triplet is formed. Update the minimum sum with the current triplet sum (min_left + nums[j] + min_right).
+4. Edge cases: If no mountain triplet is found after checking all possible middle elements, return -1. Array length is at least 3.
+5. Time and space complexity: Time complexity is O(n^2) because for each j, we iterate through elements to its left and right. Space complexity is O(1) as we only use a few variables.
+</thinking>

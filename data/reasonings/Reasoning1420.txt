@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count arrays of length n with elements from 1 to m such that the cost to find the maximum element is exactly k.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a 3D DP state dp(i, j, c) representing ways to build an array of length i with max element j and search cost c. The transitions involve considering the next element either being less than or equal to the current max (maintaining cost) or greater than the current max (incrementing cost and updating max).
+4. Edge cases: When i equals n, check if c equals k. If c exceeds k at any point, return 0. Initialize DP by iterating through possible first elements (1 to m) and their initial search cost of 1.
+5. Time and space complexity: O(n * m^2 * k) time and O(n * m * k) space due to the DP table and transitions.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the total cost of subarrays by splitting an integer array, where subarray cost alternates signs.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down DP).
+3. Step-by-step approach: Use a recursive function with memoization `dfs(i, j)` representing the max cost from index `i` with `j` indicating if the current subarray started with a positive or negative sign. At each step, decide whether to extend the current subarray or start a new one.
+4. Edge cases: An array of length 1 cannot be split, so its cost is its only element. An empty array has a cost of 0.
+5. Time and space complexity: Time complexity is O(n) because each state (i, j) is computed once. Space complexity is O(n) for the recursion stack and memoization table.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Alice plays a game where she repeatedly splits a row of stones into two non-empty sub-rows. Bob discards the sub-row with the larger sum, and Alice gets the sum of the discarded sub-row. The goal is to maximize Alice's total score.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down approach) and Prefix Sums.
+3. Step-by-step approach: Calculate prefix sums for efficient subarray sum computation. Use a recursive function with memoization `dfs(left, right)` that represents the maximum score Alice can get from stones between indices `left` and `right`. Iterate through all possible split points `i` for the current range. For each split, calculate the sums of the left and right subarrays. Based on the comparison of these sums, recursively call `dfs` on the remaining subarray and update the maximum score.
+4. Edge cases: When the range `left >= right` (i.e., only one stone or an empty row), the score is 0.
+5. Time and space complexity: Time complexity is O(N^3) due to N^2 states in DP and O(N) for iterating split points, optimized to O(N^2) with prefix sums. Space complexity is O(N^2) for the memoization table.
+</thinking>

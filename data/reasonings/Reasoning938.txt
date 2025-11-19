@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary search tree and a range [low, high], find the sum of all nodes whose values fall within the range (inclusive).
+2. Problem type / algorithm category: Tree Traversal / Binary Search Tree / Depth-First Search (DFS) / Recursion.
+3. Step-by-step approach: Perform a recursive traversal of the BST. At each node, check if its value is within the range [low, high]. If so, add it to the running sum. Recursively call the function on the left subtree if the current node's value is greater than low, and on the right subtree if the current node's value is less than high.
+4. Edge cases: Empty tree (root is None). The low and high values can be the same, or can be present in the tree or not.
+5. Time and space complexity: Time complexity is O(N) in the worst case where N is the number of nodes if the range spans almost all nodes. In the best case where the range is small, it can be O(k + log N) where k is the number of nodes within the range. Space complexity is O(H) where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree) it is O(N), and in the best case (balanced tree) it is O(log N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to transform startValue to target using multiplication by 2 and subtraction by 1.
+2. Problem type / algorithm category: Greedy algorithm, Reverse thinking.
+3. Step-by-step approach: Work backward from the target. If the target is even, divide by 2. If odd, add 1. Increment the operation count in each step. If the target becomes smaller than startValue, add the difference to the operation count, as only subtraction can be used.
+4. Edge cases: When startValue is equal to the target, the number of operations is zero. When startValue is greater than the target, only subtractions are possible.
+5. Time and space complexity: Time complexity is O(log(target)), Space complexity is O(1).
+</thinking>

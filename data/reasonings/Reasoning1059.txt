@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all paths from a source node in a directed graph lead to a specific destination node.
+2. Problem type / algorithm category: Graph traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Build an adjacency list representation of the graph. Check if the destination has outgoing edges. Perform a DFS starting from the source, tracking visited and visiting nodes to detect cycles. Ensure all leaf nodes (nodes with no outgoing edges) are the destination.
+4. Edge cases: Destination node having outgoing edges, cycles in the graph, paths not leading to the destination.
+5. Time and space complexity: Time complexity is O(V+E) where V is the number of vertices and E is the number of edges. Space complexity is O(V+E) for the graph representation and recursion stack.
+</thinking>

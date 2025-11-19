@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a string `typed` could be formed by long pressing characters in the string `name`.
+2. Problem type / algorithm category: Two Pointers / String Matching
+3. Step-by-step approach: Use two pointers, one for `name` and one for `typed`. If the characters at both pointers match, increment the `name` pointer. If the characters don't match, check if the current character in `typed` is the same as the previous character in `typed`. If not, return `False`. Increment the `typed` pointer in each iteration. Finally, check if the `name` pointer reached the end of `name`.
+4. Edge cases: Empty strings, `typed` is shorter than `name`, characters in `typed` that are not a long press of the corresponding character in `name` or the previous character in `typed`.
+5. Time and space complexity: Time complexity is O(T), where T is the length of the `typed` string, and space complexity is O(1).
+</thinking>

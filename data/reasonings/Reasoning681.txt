@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a time in "HH:MM" format, find the next closest time using only the digits present in the original time.
+2. Problem type / algorithm category: String manipulation, brute force.
+3. Step-by-step approach: Extract the digits from the input time, generate all possible valid times using those digits, convert the input time to minutes, find the next greater valid time in minutes, if no greater time exists, return the smallest valid time.
+4. Edge cases: When the generated time is same as the original time or when all generated times are smaller than the input time, the smallest generated time is returned.
+5. Time and space complexity: Time complexity is O(1) since the number of possible times is limited by the 4 nested loops and sorting is also O(1) due to the constant size of the valid_times. Space complexity is O(1) because the number of digits is at most 4 and the valid times array's size is also bounded.
+</thinking>

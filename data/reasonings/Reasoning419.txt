@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix representing a board, count the number of battleships where battleships are represented by 'X's and are either horizontal or vertical.
+2. Problem type / algorithm category: Matrix traversal, counting.
+3. Step-by-step approach: Iterate through the matrix and increment the count only if the current 'X' is the start of a battleship. The start of a battleship is defined as an 'X' that either has no adjacent 'X' above it or to its left, or is at the boundary.
+4. Edge cases: Empty board, board with no battleships, board with only one battleship.
+5. Time and space complexity: Time complexity is O(m*n) where m is the number of rows and n is the number of columns, and space complexity is O(1).
+</thinking>

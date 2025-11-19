@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest odd integer that is a substring of a given large integer string.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate from the end of the string backwards. The first odd digit encountered signifies the end of the largest possible odd number substring. Return the substring from the beginning up to and including this digit. If no odd digit is found, no odd substring exists.
+4. Edge cases: The input string contains no odd digits, resulting in an empty string output. The input string itself is an odd number.
+5. Time and space complexity: O(N) time complexity for iterating through the string, O(1) space complexity as only a few variables are used.
+</thinking>

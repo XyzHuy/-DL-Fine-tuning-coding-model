@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value of (nums[i] - nums[j]) * nums[k] for indices i < j < k. Return 0 if all such triplet values are negative.
+2. Problem type / algorithm category: Optimization, Dynamic Programming (prefix/suffix maximums).
+3. Step-by-step approach: Precompute maximum values to the right of each index. Iterate through the array with `j` as the middle element. For each `j`, maintain the maximum `nums[i]` seen so far (where `i < j`) and use the precomputed maximum `nums[k]` (where `k > j`) to calculate the triplet value and update the overall maximum.
+4. Edge cases: The problem guarantees at least 3 elements, so no empty or too short arrays. The initial maximum value is 0 to handle cases where all triplet values are negative.
+5. Time and space complexity: Time O(n) due to single passes for precomputation and iteration. Space O(n) for storing maximums to the right.
+</thinking>

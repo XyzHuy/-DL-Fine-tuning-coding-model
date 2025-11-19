@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a full binary tree where leaf nodes are boolean values (0 or 1) and internal nodes represent boolean operations (2 for OR, 3 for AND).
+2. Problem type / algorithm category: Tree Traversal, Recursion, Divide and Conquer.
+3. Step-by-step approach: Use a recursive approach. If the node is a leaf, return its boolean value. Otherwise, recursively evaluate its left and right children and apply the node's operation (OR or AND).
+4. Edge cases: The tree might consist of only a single leaf node (the root).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited once. Space complexity is O(H) due to recursion stack, where H is the height of the tree (O(log N) for a balanced tree, O(N) in worst case).
+</thinking>

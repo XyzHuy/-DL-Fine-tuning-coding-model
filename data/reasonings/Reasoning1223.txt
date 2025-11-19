@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count distinct sequences of n die rolls, respecting consecutive roll limits per face.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Define a DP state `dp(remaining, last_face, last_count)` representing sequences for `remaining` rolls, given the `last_face` rolled and its consecutive `last_count`. Iterate through possible next faces, respecting `rollMax` constraints, and sum up valid recursive calls.
+4. Edge cases: `n = 0` (base case, one valid sequence), initial call with no preceding roll.
+5. Time and space complexity: Time O(n * 6 * 15), Space O(n * 6 * 15) due to memoization state.
+</thinking>

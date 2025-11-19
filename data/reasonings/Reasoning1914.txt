@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rotate the layers of a given m x n matrix (where m and n are even) counter-clockwise by k steps.
+2. Problem type / algorithm category: Layer traversal, simulation.
+3. Step-by-step approach: Iterate through each layer of the matrix from the outermost to the innermost. For each layer, extract all its elements into a list, perform a cyclic rotation on this list by k steps (modulo the number of elements in the layer), and then place the rotated elements back into the layer.
+4. Edge cases: The number of rotations k can be very large, so it must be taken modulo the number of elements in a layer. The matrix dimensions m and n are guaranteed to be even and at least 2.
+5. Time and space complexity: Time complexity is O(m*n) because each element is visited and processed a constant number of times. Space complexity is O(m*n) in the worst case if we consider the temporary storage for layer elements.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count sub-multisets of a given array `nums` whose sum falls within a range [l, r].
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: First, count frequencies of numbers. Then, use DP where dp[i] stores the count of sub-multisets summing to i. Iterate through unique numbers, updating DP by considering adding 1 to `freq` copies of the current number. Finally, sum DP values from l to r and adjust for zeros.
+4. Edge cases: The presence of zero in `nums` needs special handling as it can be included any number of times. Empty sub-multiset sum is 0.
+5. Time and space complexity: Time complexity is O(N*r*max_freq) where N is number of unique elements, space is O(r).
+</thinking>

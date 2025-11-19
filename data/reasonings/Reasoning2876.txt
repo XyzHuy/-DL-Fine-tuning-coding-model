@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a directed graph where each node has exactly one outgoing edge, find for each node, the number of distinct nodes visited starting from it until a node is revisited.
+2. Problem type / algorithm category: Graph traversal, Cycle detection, Depth First Search (DFS).
+3. Step-by-step approach: Use DFS to traverse the graph from each unvisited node. During DFS, mark nodes as visiting to detect cycles. When a cycle is found, calculate its length and assign it to all nodes within that cycle. For nodes not part of a cycle, their visit count is determined by their path length to the cycle (or to a previously visited path).
+4. Edge cases: All nodes are part of a single large cycle, or multiple disconnected components, some of which might have cycles.
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited at most a constant number of times. Space complexity is O(N) for storing visited states, answers, cycle mappings, and recursion stack.
+</thinking>

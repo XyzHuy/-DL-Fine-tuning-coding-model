@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum possible score of any path between city 1 and city n, where the score of a path is the minimum distance of any road within that path.
+2. Problem type / algorithm category: Graph traversal, Depth First Search (DFS) or Breadth First Search (BFS).
+3. Step-by-step approach: Build an adjacency list representation of the graph. Traverse the graph starting from city 1, exploring all reachable cities and their connected roads. Keep track of the minimum road distance encountered during this traversal. Since there is guaranteed to be a path from 1 to n, all cities and roads in the connected component of city 1 will be visited.
+4. Edge cases: The problem guarantees at least one path between 1 and n, so disconnected components not containing 1 or n are irrelevant. The minimum distance could be 1.
+5. Time and space complexity: Time complexity is O(V + E) where V is the number of cities and E is the number of roads, due to graph traversal. Space complexity is O(V + E) for storing the graph and visited set.
+</thinking>

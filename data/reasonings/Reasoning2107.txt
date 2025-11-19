@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize unique candy flavors kept by giving away k consecutive candies.
+2. Problem type / algorithm category: Sliding window with frequency map.
+3. Step-by-step approach: Initialize a frequency map of all candies. Iterate through the array using a sliding window of size k. For each window position, simulate giving away k candies by decrementing their counts in the frequency map. Calculate the number of unique flavors remaining. Keep track of the maximum unique flavors found. When sliding the window, add back the candy leaving the window.
+4. Edge cases: k = 0 (no candies given away), all candies are the same flavor, all candies are unique flavors.
+5. Time and space complexity: O(N) time complexity, O(F) space complexity where F is the number of unique flavors.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest element that exists in all rows of a given matrix where each row is sorted. Return -1 if no such element exists.
+2. Problem type / algorithm category: Array search, set intersection.
+3. Step-by-step approach: Initialize a set with the elements of the first row. Iterate through the remaining rows, updating the set by taking the intersection with the current row's elements. If the set becomes empty at any point, return -1. Finally, if the set is not empty, return the smallest element in the set.
+4. Edge cases: Empty matrix, matrix with only one row, no common elements.
+5. Time and space complexity: Time complexity is O(m*n) in the worst case, where m is the number of rows and n is the number of columns. Space complexity is O(n) in the worst case, to store the common elements in a set.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k-th largest sum of any subsequence from a given array of integers.
+2. Problem type / algorithm category: Heap-based priority queue, Greedy, Dynamic Programming (implicit).
+3. Step-by-step approach: Calculate the maximum possible sum (sum of all positive elements). Transform the problem to finding the k-th smallest "deduction" from this maximum sum by considering absolute values and using a min-heap to explore sums systematically.
+4. Edge cases: Empty subsequence (sum 0), all negative numbers, k=1, k close to 2^n.
+5. Time and space complexity: Time O(N log N + K log K), Space O(K).
+</thinking>

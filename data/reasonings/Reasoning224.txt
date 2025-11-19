@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a given string expression containing digits, '+', '-', '(', ')', and spaces. No built-in eval function is allowed.
+2. Problem type / algorithm category: Stack, String parsing
+3. Step-by-step approach: Iterate through the string, keeping track of the current number, sign, and using a stack to store the intermediate results and signs when encountering parentheses. When a '(' is encountered, push the current result and sign onto the stack and reset them. When a ')' is encountered, pop the sign and previous result from the stack and update the current result accordingly.
+4. Edge cases: Empty input string, leading/trailing spaces, single number input, nested parentheses.
+5. Time and space complexity: Time complexity: O(n), where n is the length of the string. Space complexity: O(n) in the worst case (nested parentheses).
+</thinking>

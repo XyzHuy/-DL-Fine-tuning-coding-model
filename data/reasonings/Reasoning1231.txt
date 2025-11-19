@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sweetness that can be obtained after dividing a chocolate bar into k+1 pieces and keeping the piece with the minimum total sweetness, where the division is performed optimally.
+2. Problem type / algorithm category: Binary Search. The problem asks for maximization of the minimum sweetness, which is a typical pattern for binary search.
+3. Step-by-step approach: Use binary search to find the maximum possible minimum sweetness. The search space is from the minimum sweetness of a chunk to the average sweetness of all chunks divided by (k+1). A helper function `canDivide` checks if it's possible to divide the chocolate bar into at least k+1 pieces, each with sweetness at least equal to the mid value.
+4. Edge cases: The constraint specifies that 0 <= k < sweetness.length <= 10^4 and 1 <= sweetness[i] <= 10^5. The lower bound of the binary search can be the minimum sweetness of a chunk, and the upper bound can be the sum of sweetnesses divided by k+1.
+5. Time and space complexity: Time complexity is O(N * log(S)), where N is the length of the sweetness array and S is the sum of sweetness. Space complexity is O(1).
+</thinking>

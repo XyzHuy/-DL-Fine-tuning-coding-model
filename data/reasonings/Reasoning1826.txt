@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two sensor readings where at most one sensor has a single dropped data point causing a shift and a random last value, identify the defective sensor (1 or 2) or return -1 if no defect or indeterminate.
+2. Problem type / algorithm category: Array comparison, Difference detection.
+3. Step-by-step approach: Find the first index where sensor readings differ. Then, check if the subsequent readings indicate a single shift in either sensor1 or sensor2. Specifically, compare sensor1[i+1] with sensor2[i] and sensor1[i] with sensor2[i+1] to deduce the defect.
+4. Edge cases: Arrays with no differences, or where the difference could be explained by either sensor being defective. This also covers the case where the defect might be at the very beginning or end.
+5. Time and space complexity: O(N) time complexity for iterating through the arrays. O(1) space complexity as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a number, find its complement by flipping the bits of its binary representation.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: Convert the number to binary, create a mask of all 1's with the same length as the binary representation, and XOR the number with the mask.
+4. Edge cases: The input is between 1 and 2^31.
+5. Time and space complexity: O(1) time complexity because the maximum number of bits is fixed (31). O(1) space complexity.
+</thinking>

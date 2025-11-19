@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum subarray sum after replacing exactly one element with its square.
+2. Problem type / algorithm category: Dynamic Programming, Kadane's Algorithm variation.
+3. Step-by-step approach: Maintain two DP states: `max_ending_here_no_op` (max subarray sum ending at current index without any operation) and `max_ending_here_with_op` (max subarray sum ending at current index with one operation already applied). Iterate through the array, updating these states by considering options of starting a new subarray or extending an existing one, and also considering squaring the current element. Keep track of the overall maximum sum found.
+4. Edge cases: An empty input array (though constraints state at least one element), and cases where all numbers are negative.
+5. Time and space complexity: O(n) time complexity due to a single pass through the array, and O(1) space complexity as only a few variables are used.
+</thinking>

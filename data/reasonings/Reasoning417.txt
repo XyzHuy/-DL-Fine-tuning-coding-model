@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix of heights, find all cells from which water can flow to both the Pacific and Atlantic oceans, where water can flow to adjacent cells with heights less than or equal to the current cell.
+2. Problem type / algorithm category: Graph traversal, Breadth-First Search (BFS).
+3. Step-by-step approach: Perform BFS from the Pacific (top and left edges) and Atlantic (bottom and right edges) oceans to find all reachable cells for each ocean. Use two sets to track visited cells for each ocean. The result is the intersection of the two sets.
+4. Edge cases: Empty matrix, matrix with a single cell.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the dimensions of the matrix. Space complexity is O(m*n) due to the visited sets and the queues used in BFS.
+</thinking>

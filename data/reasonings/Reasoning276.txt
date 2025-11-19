@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of ways to paint n posts with k colors such that no three consecutive posts have the same color.
+2. Problem type / algorithm category: Dynamic programming.
+3. Step-by-step approach: Use dynamic programming. Keep track of the number of ways to paint the fence such that the last two posts are the same color and the number of ways such that the last two posts are different colors. Iterate from 3 to n, updating the counts at each step using the formulas: new_same = diff, new_diff = total * (k - 1), where total = same + diff.
+4. Edge cases: n = 0, n = 1, n = 2.
+5. Time and space complexity: Time complexity is O(n), space complexity is O(1).
+</thinking>

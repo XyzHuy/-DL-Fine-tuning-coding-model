@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two binary trees are flip equivalent, meaning one can be transformed into the other by flipping some nodes (swapping left and right children).
+2. Problem type / algorithm category: Tree Traversal / Recursion
+3. Step-by-step approach: Recursively check if the roots are the same. If not, return false. Then, recursively check if the left and right subtrees are equivalent without flipping and with flipping. Return true if either is true.
+4. Edge cases: Empty trees, one tree empty and the other not, different root values.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the smaller tree. Space complexity is O(H), where H is the height of the tree, due to the recursion stack.
+</thinking>

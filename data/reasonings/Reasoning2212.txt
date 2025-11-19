@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Bob wants to maximize his score by distributing a fixed number of arrows across 12 scoring sections, given Alice's arrow distribution, where Bob scores if he uses more arrows than Alice in a section, otherwise Alice scores.
+2. Problem type / algorithm category: Bitmasking and exhaustive search (or brute force with optimization).
+3. Step-by-step approach: Iterate through all 2^12 possible combinations of sections Bob can aim to win. For each combination, calculate the minimum arrows Bob needs to win those sections. If Bob has enough arrows, calculate his potential score and update the maximum if it's better. After finding the best winning combination, assign any remaining arrows to section 0.
+4. Edge cases: The number of arrows Bob needs to win a section might exceed the total available arrows. If Bob cannot win any section, he gets 0 points. All remaining arrows can be allocated to section 0 if there's no other strategic place.
+5. Time and space complexity: Time complexity is O(2^N * N) where N=12 is the number of sections, due to iterating through all bitmasks and processing each section. Space complexity is O(N) to store the arrow distribution for Bob.
+</thinking>

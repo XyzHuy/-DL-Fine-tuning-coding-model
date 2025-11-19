@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum alternating sum of any contiguous subarray in a given integer array. The alternating sum starts with addition for the first element, then subtraction for the second, and so on.
+2. Problem type / algorithm category: Dynamic Programming, Kadane's Algorithm variation.
+3. Step-by-step approach: Iterate through the array maintaining two sums: `even_sum` representing the maximum alternating sum ending at the current index with the current element being added, and `odd_sum` representing the maximum alternating sum ending at the current index with the current element being subtracted. Update `max_sum` with the maximum of these sums at each step.
+4. Edge cases: An array with a single element is a base case. All elements are positive or negative.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used to store sums.
+</thinking>

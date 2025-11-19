@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of paths from a start cell to an end cell in a grid, visiting every non-obstacle cell exactly once.
+2. Problem type / algorithm category: Backtracking / Depth-First Search (DFS)
+3. Step-by-step approach: 1) Find start, end, and number of empty cells. 2) Implement a recursive DFS function to explore paths. 3) The DFS function checks if the end is reached and if all empty cells have been visited. 4) During DFS, mark cells as visited to avoid cycles and backtrack to explore other paths.
+4. Edge cases: Grid with no valid paths, start and end cells adjacent or far apart, obstacles blocking paths.
+5. Time and space complexity: Time: O(4^(m*n)), where m and n are the dimensions of the grid. Space: O(m*n) due to the recursion depth.
+</thinking>

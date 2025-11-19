@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest palindromic subsequence with even length and no adjacent equal characters (except middle ones).
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down).
+3. Step-by-step approach: Use a recursive function with memoization where dp(left, right, prev_char) calculates the longest good palindromic subsequence for the substring s[left:right+1] given the previously chosen character `prev_char`. If s[left] equals s[right] and is different from `prev_char`, we can include them and recurse on the inner substring. Otherwise, we explore excluding s[left] or s[right] and take the maximum.
+4. Edge cases: An empty substring (left >= right) returns 0. The initial call uses an empty string as `prev_char`.
+5. Time and space complexity: O(N^3) time due to states (left, right, prev_char) and O(N^3) space for memoization.
+</thinking>

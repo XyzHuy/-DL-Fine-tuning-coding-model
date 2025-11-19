@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum operations to make the median of an array equal to a target value k by increasing or decreasing elements by 1.
+2. Problem type / algorithm category: Array manipulation, sorting, greedy.
+3. Step-by-step approach: Sort the array. Identify the median element(s). If the median is less than k, iterate from the median index onwards, adding the difference to operations for each element less than k. If the median is greater than k, iterate from the median index backwards, adding the difference for each element greater than k.
+4. Edge cases: The array might already have k as the median. The array length could be even or odd. All elements might need adjustment.
+5. Time and space complexity: O(N log N) time for sorting, O(1) or O(N) space depending on sort implementation.
+</thinking>

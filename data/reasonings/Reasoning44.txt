@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` and a pattern `p` containing `'?'` and `'*'`, determine if the pattern matches the entire string. `'?'` matches any single character and `'*'` matches any sequence of characters.
+2. Problem type / algorithm category: Dynamic Programming / String Matching.
+3. Step-by-step approach: Use a 2D DP table where `dp[i][j]` indicates if `s[:i]` matches `p[:j]`. Initialize `dp[0][0]` to true. Handle cases where the pattern starts with `'*'`. Iterate through the string and pattern, updating the DP table based on whether the current characters match, are `'?'`, or are `'*'`.
+4. Edge cases: Empty string, empty pattern, pattern starting with '*', '*' matching an empty sequence, and general mismatches.
+5. Time and space complexity: Time complexity is O(m*n), where n is the length of string s and m is the length of pattern p. Space complexity is O(m*n) due to the DP table.
+</thinking>

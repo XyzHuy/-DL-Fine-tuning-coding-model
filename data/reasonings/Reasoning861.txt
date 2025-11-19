@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the score of a binary matrix by toggling rows and columns. The score is the sum of the binary numbers represented by each row.
+2. Problem type / algorithm category: Greedy algorithm / Matrix manipulation.
+3. Step-by-step approach: First, ensure the most significant bit (first column) of each row is 1 by toggling the row if the first element is 0. Then, for each column (except the first), toggle the column if the number of 0s is greater than the number of 1s. Finally, calculate the score by converting each row to a binary number and summing them up.
+4. Edge cases: Empty matrix, matrix with only one row or column, matrix with all 0s or 1s. The provided code implicitly handles these cases.
+5. Time and space complexity: Time complexity is O(m*n) due to iterating through the matrix multiple times. Space complexity is O(1) as we are modifying the input matrix in-place.
+</thinking>

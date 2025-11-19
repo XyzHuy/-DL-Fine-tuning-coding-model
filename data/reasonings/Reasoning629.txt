@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of arrays of length n containing numbers from 1 to n that have exactly k inverse pairs.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a 2D DP table dp[i][j] to store the number of arrays of length i with j inverse pairs. The base case is dp[0][0] = 1. Iterate from i = 1 to n and j = 0 to k. The value of dp[i][j] can be calculated using the values from the previous row. Specifically, dp[i][j] is the sum of dp[i-1][0] to dp[i-1][j], subtracting dp[i-1][j-i] if j >= i to avoid overcounting. The prefix sum optimization is used.
+4. Edge cases: n and k can be 0. The result should be returned modulo 10^9 + 7.
+5. Time and space complexity: Time complexity is O(n*k), and space complexity is O(n*k).
+</thinking>

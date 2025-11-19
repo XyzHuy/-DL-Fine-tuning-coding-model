@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Partition graph nodes into groups such that adjacent nodes have group indices differing by exactly 1, maximizing the total number of groups.
+2. Problem type / algorithm category: Graph traversal, Bipartite coloring, Connected components.
+3. Step-by-step approach: Build the graph adjacency list, find connected components using DFS/BFS, check if each component is bipartite, and for each bipartite component, calculate the maximum number of groups (diameter-like traversal) and sum them up.
+4. Edge cases: Disconnected graph (handled by finding components), graphs that are not bipartite (return -1).
+5. Time and space complexity: Time O(N + E) for graph construction and traversal, Space O(N + E) for graph representation and visited arrays.
+</thinking>

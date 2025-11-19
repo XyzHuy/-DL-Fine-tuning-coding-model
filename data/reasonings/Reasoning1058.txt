@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of string prices, round each price to either its floor or ceiling value such that the sum of rounded prices equals a target value. Return the minimum rounding error, or "-1" if impossible.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Convert prices to floats, calculate the sum of floors and ceilings. If the target is outside of these bounds, return "-1". Determine how many numbers need to be rounded up. Sort the prices based on their fractional parts in descending order and calculate the rounding error accordingly.
+4. Edge cases: Target is unreachable (outside the range of floor_sum and ceil_sum), prices are already integers (fractional part is zero).
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(n) because of storing the float prices.
+</thinking>

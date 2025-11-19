@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a special binary string, reorder its special substrings to produce the lexicographically largest possible special string.
+2. Problem type / algorithm category: String manipulation, recursion, sorting.
+3. Step-by-step approach: Recursively decompose the input string into special substrings. Sort these substrings in reverse lexicographical order and then concatenate them. The recursion handles nested special substrings.
+4. Edge cases: Empty or single-character strings are base cases for the recursion and are returned directly.
+5. Time and space complexity: Time complexity is difficult to precisely determine due to the recursion and sorting, but is approximately O(n^2) or O(n^3) in the worst case. Space complexity is O(n) due to the recursion depth and storage of substrings.
+</thinking>

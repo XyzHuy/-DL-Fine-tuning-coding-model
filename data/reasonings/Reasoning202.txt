@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a number is a happy number, where a happy number is defined by repeatedly replacing the number with the sum of the squares of its digits until it reaches 1 or loops indefinitely.
+2. Problem type / algorithm category: Number theory, cycle detection.
+3. Step-by-step approach: Implement a function to calculate the next number in the sequence. Use a set to keep track of seen numbers. Iterate, calculating the next number and adding it to the set, until the number is 1 (happy) or the number is already in the set (cycle).
+4. Edge cases: The input n is already 1. The sequence loops endlessly without reaching 1.
+5. Time and space complexity: Time complexity is O(log n) in best cases and O(n) in worst cases because we store visited numbers in the set. Space complexity is O(log n) due to the space used by the seen set.
+</thinking>

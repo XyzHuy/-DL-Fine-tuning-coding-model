@@ -1,0 +1,2415 @@
+{
+  "function_name": "countValidSelections",
+  "test_cases": [
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          0,
+          2,
+          0,
+          3,
+          0,
+          0,
+          4
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          2,
+          1,
+          0,
+          3,
+          0,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          3,
+          4,
+          0,
+          4,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          3,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          2,
+          0,
+          3
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          3
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          0,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          0,
+          6,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0,
+          6
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          2,
+          0,
+          4,
+          0,
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0,
+          6,
+          0,
+          7,
+          0,
+          8,
+          0,
+          9,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          2,
+          1,
+          0,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          3,
+          0,
+          2,
+          0,
+          4,
+          0,
+          1,
+          0,
+          6
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          0,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          5
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0,
+          6,
+          0,
+          7,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          2,
+          2,
+          2,
+          0,
+          3,
+          3,
+          3,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          0,
+          99,
+          0,
+          98,
+          0,
+          97,
+          0,
+          96,
+          0,
+          95,
+          0,
+          94,
+          0,
+          93,
+          0,
+          92,
+          0,
+          91,
+          0,
+          90
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          6,
+          0,
+          7,
+          8,
+          0,
+          9,
+          10,
+          11,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0,
+          6,
+          0,
+          7,
+          0,
+          8,
+          0,
+          9,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          4,
+          5,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          0,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          0,
+          9,
+          0,
+          8,
+          0,
+          7,
+          0,
+          6,
+          0,
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          3,
+          3,
+          3,
+          3,
+          3,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          6,
+          0,
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          0,
+          22,
+          24,
+          26,
+          28,
+          30,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0,
+          5,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          2,
+          2,
+          0,
+          3,
+          3,
+          0,
+          2,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          2,
+          1,
+          0,
+          3,
+          2,
+          0,
+          1,
+          0,
+          4,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          0
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          3,
+          0,
+          0,
+          0,
+          4,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0,
+          6,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          0,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          0,
+          1,
+          2,
+          3,
+          0,
+          0,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          2,
+          0,
+          3,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          5,
+          6,
+          0,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          1,
+          2,
+          0,
+          1,
+          0,
+          2,
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 40
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0,
+          5
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          1,
+          0,
+          3,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          0,
+          2,
+          0,
+          0,
+          3,
+          0,
+          0,
+          4
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          0,
+          40,
+          50,
+          0,
+          60,
+          70,
+          0,
+          80,
+          90,
+          0,
+          100,
+          110,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0,
+          2,
+          0,
+          3,
+          0,
+          4,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          0,
+          4,
+          0,
+          3,
+          0,
+          2,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 0
+    }
+  ]
+}

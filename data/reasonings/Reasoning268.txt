@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the missing number in an array of distinct numbers in the range [0, n], where n is the length of the array.
+2. Problem type / algorithm category: Array manipulation, bit manipulation (XOR).
+3. Step-by-step approach: Initialize a variable `missing` to n. Iterate through the array, XORing `missing` with the index `i` and the value `nums[i]`. This leverages the property that a ^ a = 0 and a ^ 0 = a. The final value of `missing` will be the missing number.
+4. Edge cases: The input array can have a missing number at any position, including 0 or n. The provided XOR solution handles these cases correctly.
+5. Time and space complexity: Time complexity is O(n) because of the single loop. Space complexity is O(1) because we only use a single variable to store the missing number.
+</thinking>

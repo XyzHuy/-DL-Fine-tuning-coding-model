@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an n x n matrix initialized with zeros, update rows or columns with a given value based on a list of queries and return the total sum of the matrix after all updates.
+2. Problem type / algorithm category: Greedy algorithm, processing updates in reverse to prioritize later operations.
+3. Step-by-step approach: Iterate through queries in reverse. For each query, if the row/column hasn't been updated yet, apply the update to all remaining cells in that row/column and mark it as used. Decrement the count of available rows/columns.
+4. Edge cases: Queries might target the same row/column multiple times; only the last update for a specific row/column matters. All cells might be covered by queries.
+5. Time and space complexity: Time complexity is O(Q) where Q is the number of queries. Space complexity is O(N) for tracking used rows and columns.
+</thinking>

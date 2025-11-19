@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, replace each element with its rank based on its magnitude, with equal elements receiving the same rank.
+2. Problem type / algorithm category: Sorting and Mapping.
+3. Step-by-step approach: First, identify unique elements and sort them. Then, create a mapping from each unique element to its rank (1-based index). Finally, iterate through the original array and replace each element with its corresponding rank from the mapping.
+4. Edge cases: An empty input array, and an array with all identical elements.
+5. Time and space complexity: O(N log N) time due to sorting, and O(N) space for storing unique elements and the rank map.
+</thinking>

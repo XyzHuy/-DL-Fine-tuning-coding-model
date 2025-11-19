@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the frequency of integers in the range [0, 255], calculate the minimum, maximum, mean, median, and mode.
+2. Problem type / algorithm category: Statistics calculation / Array traversal.
+3. Step-by-step approach: Iterate through the count array. Find the minimum and maximum values based on non-zero counts. Calculate the total sum and count for the mean. Determine the mode by tracking the highest count. Calculate the median by finding the middle element(s) after conceptually sorting based on counts.
+4. Edge cases: Empty sample (all counts are zero - but constraints prevent this), large counts exceeding integer limits (handled by using 64bit variables implicitly or explicitly).
+5. Time and space complexity: Time complexity is O(N), where N is the range of integers (256). Space complexity is O(1) as we are using a fixed number of variables.
+</thinking>

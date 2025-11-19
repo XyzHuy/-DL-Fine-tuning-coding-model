@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Move characters from string s to string t, and then from t to the final string, aiming for the lexicographically smallest final string.
+2. Problem type / algorithm category: Greedy, Stack, String manipulation.
+3. Step-by-step approach: Precompute the minimum character available from each position in s to the right. Iterate through s, pushing characters onto a stack (t). If the top of the stack is less than or equal to the minimum character available from the current position in s, pop it and append to the result. Finally, append any remaining characters in the stack to the result.
+4. Edge cases: String s has only one character. String s is already sorted or reverse sorted.
+5. Time and space complexity: Time complexity is O(n) due to single passes. Space complexity is O(n) for the stack and the precomputed minimums array.
+</thinking>

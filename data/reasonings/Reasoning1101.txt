@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the earliest timestamp when all people are acquainted with each other, given a list of friendship logs.
+2. Problem type / algorithm category: Union-Find (Disjoint Set Union)
+3. Step-by-step approach: Sort the logs by timestamp, iterate through the logs, and use Union-Find to merge friend groups. Check if all people are in the same group (n-1 connections) after each merge.
+4. Edge cases: If all people never become acquainted, return -1.
+5. Time and space complexity: Time: O(mlogm + n) where m is the length of logs and n is the number of people. Space: O(n)
+</thinking>

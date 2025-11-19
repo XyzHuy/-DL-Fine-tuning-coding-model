@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given number is a perfect number, i.e., equals the sum of its proper divisors.
+2. Problem type / algorithm category: Number theory, divisor calculation.
+3. Step-by-step approach: Iterate from 2 up to the square root of the input number, checking for divisibility. If a divisor is found, add both the divisor and its corresponding quotient to the sum of divisors. Handle the case where the divisor and quotient are the same to avoid double-counting. Finally, compare the sum of divisors to the original number.
+4. Edge cases: Handle the case where the number is less than or equal to 1, which cannot be a perfect number.
+5. Time and space complexity: Time complexity is O(sqrt(n)) due to iterating up to the square root of n. Space complexity is O(1) as it only uses a few constant space variables.
+</thinking>

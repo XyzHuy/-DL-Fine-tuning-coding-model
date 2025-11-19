@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the contiguous subarray within a given array of integers which has the largest product.
+2. Problem type / algorithm category: Dynamic Programming. This problem can be solved using Kadane's algorithm approach.
+3. Step-by-step approach: Iterate through the array, maintaining both the maximum and minimum product ending at each position. When a negative number is encountered, swap the max and min products. Update the overall maximum product at each step.
+4. Edge cases: Empty array (though the prompt says the length is at least 1), array with a single element, array with zeros, array with all negative numbers. The code handles the case when the array is empty with `if not nums: return 0`.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we only use a few variables to store the maximum product, minimum product, and result.
+</thinking>

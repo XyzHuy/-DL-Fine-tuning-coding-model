@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lowest common ancestor of the deepest leaves in a given binary tree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Lowest Common Ancestor.
+3. Step-by-step approach: Perform a DFS traversal. At each node, recursively find the LCA and depth of the left and right subtrees. If the depths are equal, the current node is the LCA. Otherwise, the LCA is the LCA of the deeper subtree.
+4. Edge cases: Empty tree (root is None), single node tree.
+5. Time and space complexity: Time complexity is O(N) because we visit each node once. Space complexity is O(H) in the worst case (skewed tree) and O(log N) in the best case (balanced tree) due to the recursion stack, where N is the number of nodes and H is the height of the tree.
+</thinking>

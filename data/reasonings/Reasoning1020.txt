@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to count the number of land cells (1s) in a 2D grid from which it is impossible to walk to the boundary of the grid.
+2. Problem type / algorithm category: Graph Traversal, Depth-First Search (DFS).
+3. Step-by-step approach: The core idea is to find all land cells that can reach the boundary and eliminate them. First, iterate through the cells on the grid's border. If a border cell is land, start a DFS from it. During the DFS, visit all connected land cells and change their value from 1 to 0, effectively "sinking" them. After all border-connected land masses are sunk, the remaining 1s in the grid are the enclosed enclaves. Finally, count these remaining 1s.
+4. Edge cases: An empty grid, a grid where all land cells are connected to the boundary, or a grid with no land cells at all.
+5. Time and space complexity: Time complexity is O(m * n) as each cell is visited at most a constant number of times. Space complexity is O(m * n) in the worst case for the recursion stack depth.
+</thinking>

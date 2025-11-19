@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum distance a truck can travel given fuel in two tanks and a fuel transfer rule.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Iteratively simulate the truck's journey. In each step, use 5 liters from the main tank, add 50 km to distance, and if additional fuel is available, transfer 1 liter to the main tank. If main tank has less than 5 liters, use remaining fuel.
+4. Edge cases: The main tank having less than 5 liters initially, or running out of additional fuel.
+5. Time and space complexity: Time complexity is O(min(mainTank, additionalTank)) due to the loop, space complexity is O(1).
+</thinking>

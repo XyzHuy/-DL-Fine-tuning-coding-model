@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count steps to reduce a non-negative integer to zero by dividing by 2 if even, or subtracting 1 if odd.
+2. Problem type / algorithm category: Simulation, Iteration.
+3. Step-by-step approach: Initialize a step counter. While the number is greater than zero, check if it's even or odd, perform the corresponding operation (divide by 2 or subtract 1), and increment the step counter.
+4. Edge cases: The input number can be zero.
+5. Time and space complexity: Time complexity is O(log num) due to division by 2, space complexity is O(1).
+</thinking>

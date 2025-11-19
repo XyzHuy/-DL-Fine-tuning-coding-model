@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of rectangles, find the largest possible square side length obtainable from any rectangle and then count how many rectangles can form a square of that maximum side length.
+2. Problem type / algorithm category: Array manipulation, finding maximum, counting occurrences.
+3. Step-by-step approach: Iterate through each rectangle, determine the largest square that can be cut from it (which is the minimum of its length and width), find the overall maximum of these possible square side lengths across all rectangles, and finally, count how many rectangles can yield a square of this maximum side length.
+4. Edge cases: Rectangles with very large dimensions, though the core logic handles this. All rectangles are distinct in the sense of their dimensions but can produce the same square size. The constraints guarantee at least one rectangle.
+5. Time and space complexity: O(N) time to iterate through rectangles and O(N) space to store potential square lengths, or O(1) space if calculated on the fly and max/count tracked simultaneously.
+</thinking>

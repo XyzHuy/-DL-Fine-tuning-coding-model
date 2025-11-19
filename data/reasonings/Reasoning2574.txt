@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the absolute difference between the sum of elements to the left and the sum of elements to the right for each element in a given array.
+2. Problem type / algorithm category: Array manipulation, prefix sums.
+3. Step-by-step approach: First, iterate from left to right to compute the `leftSum` array, where each element stores the sum of preceding elements. Second, iterate from right to left to compute the `rightSum` array, storing the sum of succeeding elements. Finally, iterate through both arrays to compute the absolute difference for each index and store it in the `answer` array.
+4. Edge cases: An array with a single element, where both left and right sums are zero.
+5. Time and space complexity: O(n) time complexity due to three separate linear traversals of the array. O(n) space complexity to store the `leftSum`, `rightSum`, and `answer` arrays.
+</thinking>

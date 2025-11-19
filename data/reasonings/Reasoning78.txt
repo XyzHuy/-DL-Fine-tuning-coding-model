@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of unique integers, return all possible subsets (the power set).
+2. Problem type / algorithm category: Recursion / Backtracking.
+3. Step-by-step approach: Recursively find the subsets of the remaining elements after removing the first element, and then combine these subsets with new subsets formed by adding the first element to each of the previous subsets.
+4. Edge cases: Empty input array.
+5. Time and space complexity: Time complexity is O(N*2^N) and Space complexity is O(N*2^N), where N is the number of elements in the input array.
+</thinking>

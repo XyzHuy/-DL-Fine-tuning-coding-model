@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the maximum length of a contiguous subarray that sums to a target value k.
+2. Problem type / algorithm category: Hash Map / Prefix Sum
+3. Step-by-step approach: Compute prefix sums, store the first index of each prefix sum in a hash map, and check if `current_sum - k` exists in the hash map. If it does, update the maximum length accordingly.
+4. Edge cases: Empty array, no subarray sums to k, negative numbers, zero sum subarray.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) in the worst case where we store all prefix sums in the hash map.
+</thinking>

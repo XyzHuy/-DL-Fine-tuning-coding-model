@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count employees whose worked hours meet or exceed a target value.
+2. Problem type / algorithm category: Array traversal, simple counting.
+3. Step-by-step approach: Iterate through the hours array, increment a counter if an employee's hours are greater than or equal to the target.
+4. Edge cases: Empty hours array (though constraints say 1 <= n), all employees meet target, no employees meet target.
+5. Time and space complexity: Time O(n) because we iterate through the array once. Space O(1) as we only use a single counter variable.
+</thinking>

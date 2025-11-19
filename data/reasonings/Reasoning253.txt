@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of conference rooms required to accommodate a given list of meeting time intervals.
+2. Problem type / algorithm category: Greedy algorithm, Sorting, and Heap (although heap is not explicitly used in this provided solution, the concept is relevant).
+3. Step-by-step approach: Create a list of start and end events from the intervals. Sort these events by time. Iterate through the sorted events, incrementing the room count when a meeting starts and decrementing when a meeting ends. Keep track of the maximum number of rooms needed at any point.
+4. Edge cases: Empty input list (should return 0), overlapping intervals, intervals starting at the same time.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(N) to store the events.
+</thinking>

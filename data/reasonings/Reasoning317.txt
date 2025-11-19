@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest total travel distance to reach all buildings from an empty land in a grid.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Iterate through the grid, perform BFS from each building to calculate distances to all reachable empty lands, track how many buildings can reach each empty land, and then find the minimum total distance among empty lands reachable by all buildings.
+4. Edge cases: Empty grid, no empty land reachable by all buildings, only buildings, single building.
+5. Time and space complexity: Time: O(m^2 * n^2) in worst case. Space: O(m * n).
+</thinking>

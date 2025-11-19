@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to check if two given binary trees are structurally identical and have the same values at corresponding nodes.
+2. Problem type / algorithm category: Tree, Depth-First Search, Recursion.
+3. Step-by-step approach: The solution uses a recursive approach to compare the trees node by node. It first handles the base cases where one or both nodes are null. If both are non-null, it checks if their values are equal. If they are, it proceeds to recursively compare the left subtrees and the right subtrees, returning true only if all checks pass.
+4. Edge cases: The primary edge cases are when one or both of the input trees are empty. The checks for null nodes at the beginning of the recursive function handle these scenarios correctly.
+5. Time and space complexity: The time complexity is O(N), where N is the number of nodes in the smaller tree, because every node is visited once. The space complexity is O(H) for the recursion stack, where H is the height of the tree; in the worst-case of a skewed tree, this is O(N).
+</thinking>

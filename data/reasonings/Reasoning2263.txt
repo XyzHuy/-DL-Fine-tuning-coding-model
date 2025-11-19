@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make an array non-decreasing or non-increasing by changing elements by +/- 1.
+2. Problem type / algorithm category: Dynamic Programming, Optimization.
+3. Step-by-step approach: Calculate the minimum operations for non-decreasing order and non-increasing order separately using dynamic programming and take the minimum of the two. For DP, f[i][j] represents the minimum operations to make the first i elements non-decreasing (or non-increasing) with the i-th element being j. The transition involves taking the minimum operations for the previous element and adding the cost of changing the current element to j.
+4. Edge cases: Empty array (not possible by constraints), single element array (0 operations), already sorted array (0 operations).
+5. Time and space complexity: O(n*k*k) time and O(n*k) space where k is the maximum possible value of an element, or O(n*k) time and O(n*k) space with optimization of DP transition. The provided solution with the optimized DP transition is O(n*k) time and O(n*k) space, where k = 1001.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Merge two sorted arrays of [id, value] pairs, summing values for common ids and including unique ids from both. The output must be sorted by id.
+2. Problem type / algorithm category: Hash Map / Dictionary and Sorting.
+3. Step-by-step approach: Iterate through both input arrays, storing id-value sums in a hash map. Then, convert the hash map into a list of [id, value] pairs and sort it by id.
+4. Edge cases: One or both input arrays can be empty. All ids can be unique across both arrays, or all ids can be common.
+5. Time and space complexity: Time complexity is O((N+M)log(N+M)) due to sorting, where N and M are lengths of nums1 and nums2. Space complexity is O(N+M) for the hash map.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of stock prices, find the maximum profit that can be made by buying and selling stocks, with the constraint of holding at most one stock at a time.
+2. Problem type / algorithm category: Dynamic Programming / Greedy Algorithm
+3. Step-by-step approach: Iterate through the prices array and accumulate the profit whenever the current price is greater than the previous price. This is equivalent to buying at the previous price and selling at the current price.
+4. Edge cases: If the prices array is empty or has only one element, the maximum profit is 0. Also, if the prices are continuously decreasing, the profit will be 0.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the prices array once. Space complexity is O(1) because we only use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two strings of equal length can be made equal by performing at most one swap on one of the strings.
+2. Problem type / algorithm category: String manipulation, comparison, and counting differences.
+3. Step-by-step approach: Iterate through both strings simultaneously, count the number of differing characters, and store the differing character pairs. If zero differences, return true. If two differences, check if swapping the characters at these differing positions in one string makes it equal to the other. If more than two differences, return false.
+4. Edge cases: Strings are already equal (zero differences), strings have exactly two differences that can be resolved by a swap.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the strings. Space complexity is O(1) because the list of differences will store at most 2 pairs of characters.
+</thinking>

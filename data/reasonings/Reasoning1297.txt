@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum frequency of any substring that has at most maxLetters unique characters and a length between minSize and maxSize.
+2. Problem type / algorithm category: String manipulation, frequency counting, sliding window.
+3. Step-by-step approach: Iterate through all possible substrings of length minSize. For each substring, check if it meets the maxLetters constraint. If it does, increment its count in a frequency map. The maximum value in the frequency map is the answer. Substrings larger than minSize but within maxSize will implicitly be covered by valid minSize substrings they contain.
+4. Edge cases: Empty string (not possible due to constraints), string length less than minSize, no substrings meeting criteria.
+5. Time and space complexity: O(N * K) time where N is string length and K is minSize for substring extraction and set creation, O(N) space for the counter.
+</thinking>

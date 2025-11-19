@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove duplicate nodes from a sorted linked list, such that only distinct numbers remain.
+2. Problem type / algorithm category: Linked list manipulation, two pointers.
+3. Step-by-step approach: Use a dummy node and a current pointer. Iterate through the list, and if duplicates are found, skip all duplicate nodes. Otherwise, move the current pointer forward.
+4. Edge cases: Empty list, list with no duplicates, list with all duplicates.
+5. Time and space complexity: Time: O(n), where n is the number of nodes. Space: O(1).
+</thinking>

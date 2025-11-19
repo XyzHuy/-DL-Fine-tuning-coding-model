@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given binary tree is uni-valued, meaning all nodes have the same value.
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Use a recursive helper function to traverse the tree. The helper function checks if the current node's value matches the root's value. If it doesn't, return `False`. Otherwise, recursively check the left and right subtrees.
+4. Edge cases: Empty tree (should return `True`).
+5. Time and space complexity: Time: O(N), where N is the number of nodes. Space: O(H), where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H = N, so O(N).
+</thinking>

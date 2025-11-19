@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid with walls, enemies, and empty cells, find the maximum number of enemies that can be killed by placing a bomb in an empty cell. The bomb kills enemies in the same row and column until a wall is hit.
+2. Problem type / algorithm category: Dynamic Programming / Matrix Traversal
+3. Step-by-step approach: Create a 3D DP array to store the number of enemies that can be killed from each cell in four directions (left, right, up, down). Iterate through the grid, populating the DP array. Iterate through the grid again, and if a cell is empty, calculate the total number of enemies that can be killed by placing a bomb in that cell by summing the enemies from all four directions. Update the maximum kills.
+4. Edge cases: Empty grid or None grid.
+5. Time and space complexity: Time complexity is O(m*n) due to iterating through the grid multiple times. Space complexity is O(m*n) due to the 3D DP array.
+</thinking>

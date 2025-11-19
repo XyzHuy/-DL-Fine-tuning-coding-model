@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of digits, find all possible ways to insert '+', '-', or '*' operators between the digits such that the resulting expression evaluates to a given target value.
+2. Problem type / algorithm category: Backtracking, String manipulation, Expression evaluation.
+3. Step-by-step approach: Use backtracking to explore all possible combinations of operators and operands. The backtrack function takes the current index, the current expression path, the current value of the expression, and the previous operand as input. In each recursive call, iterate through all possible lengths of the next operand and try adding '+', '-', or '*' operators. Handle leading zeros appropriately.
+4. Edge cases: Empty input string, target value is not achievable, leading zeros in operands.
+5. Time and space complexity: Time complexity is O(4^n) in the worst case because each digit can have +, -, *, or no operator. Space complexity is O(n) due to the recursion depth and the space used to store the expression string.
+</thinking>

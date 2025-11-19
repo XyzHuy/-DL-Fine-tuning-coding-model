@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of dice rolls to reach the last square of a Snakes and Ladders board, given a Boustrophedon-style numbering.
+2. Problem type / algorithm category: Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore possible moves, starting from square 1. Convert the square number to row and column. Check for snakes and ladders at each step and update the next square accordingly. Keep track of visited squares to avoid cycles.
+4. Edge cases: If the target square is unreachable, return -1.
+5. Time and space complexity: Time: O(N^2), Space: O(N^2) where N is the length of the board.
+</thinking>

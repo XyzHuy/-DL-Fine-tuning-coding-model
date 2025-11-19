@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a sentence to Goat Latin according to the given rules involving vowel/consonant checks, adding "ma", and appending 'a' characters based on word index.
+2. Problem type / algorithm category: String manipulation.
+3. Step-by-step approach: Split the sentence into words, iterate through each word, apply the Goat Latin rules based on whether the word starts with a vowel or consonant, and construct the new Goat Latin sentence by joining the modified words.
+4. Edge cases: Empty sentence, sentence with only one word, words starting with uppercase or lowercase vowels, words starting with uppercase or lowercase consonants.
+5. Time and space complexity: Time complexity is O(n*m) where n is the number of words and m is the maximum length of a word. Space complexity is O(n*m) because we are storing the modified words in a list.
+</thinking>

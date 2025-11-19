@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Players take turns removing leftmost stones, summing their values, adding the sum to their score, and replacing them with a single stone of that sum. The game ends with one stone. Alice maximizes score difference, Bob minimizes.
+2. Problem type / algorithm category: Dynamic Programming (with optimization), Game Theory.
+3. Step-by-step approach: Calculate prefix sums. Iterate backward from the second-to-last prefix sum. For each prefix sum `prefix_sums[i]`, the optimal score difference ending at this point is `prefix_sums[i]` minus the best score difference achievable from the next state (`max_diff` from previous iteration). Update `max_diff` by taking the maximum of current `max_diff` and this newly calculated score difference. The final `max_diff` is the answer.
+4. Edge cases: The initial state has `n` stones. The game ends when 1 stone is left. The constraints ensure `n >= 2`. The case where Alice takes all stones initially is covered by the backward iteration.
+5. Time and space complexity: Time complexity is O(n) due to prefix sum calculation and a single pass. Space complexity is O(n) for storing prefix sums.
+</thinking>

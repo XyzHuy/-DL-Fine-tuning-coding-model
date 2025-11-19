@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum time all n computers can run simultaneously given a set of batteries with varying runtimes, where batteries can be swapped between computers at any time.
+2. Problem type / algorithm category: Binary Search on the Answer.
+3. Step-by-step approach: Binary search for the maximum possible run time `x`. For a given `x`, check if all `n` computers can run for `x` minutes. This is feasible if the sum of minutes each battery can contribute up to `x` (i.e., min(battery_runtime, x)) is at least `n * x`. Adjust binary search range based on feasibility.
+4. Edge cases: All batteries have very low runtimes, or a few batteries have extremely high runtimes compared to `n`. The total runtime of all batteries might be less than `n`.
+5. Time and space complexity: Time complexity is O(B log S), where B is the number of batteries and S is the sum of all battery runtimes. Space complexity is O(1).
+</thinking>

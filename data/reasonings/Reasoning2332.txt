@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the latest possible arrival time to catch a bus, given bus departure times, passenger arrival times, and bus capacity, ensuring no arrival at the same time as another passenger.
+2. Problem type / algorithm category: Greedy algorithm with sorting and two pointers.
+3. Step-by-step approach: Sort buses and passengers. Iterate through sorted buses, filling them with earliest arriving passengers up to capacity. Track the last successful boarding time. If a bus has remaining capacity, the latest arrival can be at the bus departure time. Finally, adjust the latest arrival time downwards to avoid coinciding with any existing passenger arrival.
+4. Edge cases: Empty passenger list, buses with full capacity, arriving exactly at a passenger's arrival time.
+5. Time and space complexity: O(N log N + M log M) time due to sorting, O(M) space for the passenger set.
+</thinking>

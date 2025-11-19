@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, find the most frequent subtree sum(s).
+2. Problem type / algorithm category: Tree traversal, recursion, hash map (defaultdict).
+3. Step-by-step approach: Use a recursive function to calculate the subtree sum for each node. Store the sums and their frequencies in a defaultdict. Find the maximum frequency and return all sums with that frequency.
+4. Edge cases: Empty tree (root is None), tie in frequencies of sums.
+5. Time and space complexity: Time: O(N), where N is the number of nodes. Space: O(N) to store the subtree sums in the hash map and for recursion stack in the worst case (skewed tree).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count ways to form a target string from characters in given words, where each character used restricts future choices to characters at or after its original index.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Pre-calculate character frequencies at each column index of words. Use DP where dp[i][j] stores ways to form target[:j] using first i columns of words. Transition involves either not using column i (dp[i-1][j]) or using column i for target[j-1] (dp[i-1][j-1] * char_freq).
+4. Edge cases: Empty target string (one way), empty words list (zero ways if target not empty), target string longer than achievable using available columns.
+5. Time and space complexity: O(M*W + M*N) time, O(M*N) space. (M=number of words, W=length of words, N=length of target).
+</thinking>

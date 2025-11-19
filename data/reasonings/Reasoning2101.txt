@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of bombs with coordinates and radii, find the maximum number of bombs that can be detonated by initiating a single bomb's explosion.
+2. Problem type / algorithm category: Graph traversal, specifically Breadth-First Search (BFS) or Depth-First Search (DFS), to model cascading explosions.
+3. Step-by-step approach: 1. Represent the bombs and their detonation relationships as a directed graph where an edge from bomb A to bomb B means bomb A detonates bomb B. 2. For each bomb, perform a graph traversal (BFS or DFS) starting from it to count all reachable bombs. 3. The maximum count obtained across all starting bombs is the answer.
+4. Edge cases: A single bomb, no bombs detonate each other, all bombs detonate each other.
+5. Time and space complexity: Time complexity is O(N^3) due to building the graph (N^2 edges) and then performing BFS/DFS from each node (N times), where each BFS/DFS can visit up to N nodes and edges. Space complexity is O(N^2) for the adjacency list representation of the graph and O(N) for BFS/DFS visited set and queue.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest contiguous subarray where the bitwise AND of any two distinct elements is 0.
+2. Problem type / algorithm category: Sliding Window, Bit Manipulation.
+3. Step-by-step approach: Use a sliding window where `left` and `right` pointers define the current subarray. Maintain a bitmask `current_and` representing the OR of all elements within the current window. Expand the window by moving `right`. If the new element `nums[right]` has any common set bits with `current_and` (i.e., `current_and & nums[right] != 0`), shrink the window from the left by removing `nums[left]` from `current_and` (using XOR) and incrementing `left` until the condition is met. Update the maximum length at each valid expansion.
+4. Edge cases: Subarrays of length 1 are always nice. The input array can be empty or contain only one element.
+5. Time and space complexity: O(N) time because each element is added and removed from the window at most once. O(1) space as we only use a few variables.
+</thinking>

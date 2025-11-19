@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks for the minimum number of balls from a hand needed to clear a Zuma game board by inserting balls and removing consecutive groups of three or more of the same color.
+2. Problem type / algorithm category: Depth-First Search (DFS) with memoization (although memoization is not explicitly used in this solution but could be an optimization).
+3. Step-by-step approach: The solution uses a recursive DFS approach. It iterates through the board, identifies consecutive groups of balls, and checks if the hand has enough balls to eliminate the group. The board is cleaned after each insertion/removal using a stack to collapse groups of three or more. The DFS explores all possible insertions and returns the minimum steps.
+4. Edge cases: Empty board (base case for recursion). Cases where the hand doesn't have enough balls to clear the board, returning -1.
+5. Time and space complexity: The time complexity is difficult to precisely determine due to the recursive nature and board cleaning. It is roughly O(N * (H!)), where N is the length of the board and H is the length of the hand, because of exploring different combinations of hand balls for insertion. The space complexity is O(N + H) due to the recursive call stack and the hand counter.
+</thinking>

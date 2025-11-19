@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings in a given string 's' that begin and end with a specific character 'c'.
+2. Problem type / algorithm category: String manipulation, Counting.
+3. Step-by-step approach: Iterate through the string. Maintain a count of character 'c' encountered so far. When 'c' is found, add the current count of 'c' to the total result.
+4. Edge cases: String 's' contains no occurrences of character 'c'. String 's' has only one character.
+5. Time and space complexity: O(n) time complexity, O(1) space complexity.
+</thinking>

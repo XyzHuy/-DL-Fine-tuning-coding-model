@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We are given n items that belong to m groups (or no group), and dependencies between items. We need to sort the items such that items in the same group are together and the dependencies are satisfied.
+2. Problem type / algorithm category: Topological sort, graph algorithms.
+3. Step-by-step approach: First, assign unique group IDs to items that do not belong to any group. Then, build two graphs: a group-level graph and an item-level graph (within each group). Perform topological sort on the groups, and then perform topological sort on the items within each group based on the group order. Combine the sorted items from each group to obtain the final sorted list.
+4. Edge cases: If the topological sort on groups or on items within a group results in a cycle, return an empty list. Also, cases where beforeItems contains cycles are handled by the topological sort returning an empty list.
+5. Time and space complexity: Time complexity is O(N + M + E) where N is the number of items, M is the number of groups and E is the number of edges in the dependency graphs. Space complexity is O(N + M) to store the graphs and other auxiliary data structures.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix of size m x n initialized with zeros and a list of operations, where each operation increments a submatrix, return the count of maximum integers in the matrix after all operations.
+2. Problem type / algorithm category: Math, Matrix manipulation
+3. Step-by-step approach: If there are no operations, the entire matrix remains zero, so the maximum integer is zero and its count is m * n. Otherwise, find the minimum 'a' and minimum 'b' from all operations, where 'a' and 'b' define the top-left corner of the incremented submatrices. The area defined by these minimum 'a' and 'b' (min_a * min_b) represents the count of the maximum integers in the final matrix.
+4. Edge cases: When the input ops is empty, the entire matrix remains 0, and we should return m * n.
+5. Time and space complexity: Time complexity is O(k) where k is the number of operations, for finding the minimum a and b. Space complexity is O(1).
+</thinking>

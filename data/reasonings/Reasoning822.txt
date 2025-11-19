@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays representing the front and back of cards, find the smallest number that can appear only on the back of some cards after flipping any number of cards.
+2. Problem type / algorithm category: Array manipulation, set operations, and finding minimum value.
+3. Step-by-step approach: First, identify numbers that appear on both the front and back of the same card. These numbers can never be "good". Then, create a set of all numbers present in either the front or back arrays, excluding the "bad" numbers. Finally, return the minimum value in this set, or 0 if the set is empty.
+4. Edge cases: Empty input arrays (though the constraints prevent this). All numbers are the same on front and back, leading to an empty set of possible good numbers. The minimum possible good integer might be larger than other integers if those other integers appear on both sides of the same card.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the arrays a few times. Space complexity is O(n) because, in the worst case, the sets `same` and `possible_numbers` can store all the elements of the input arrays.
+</thinking>

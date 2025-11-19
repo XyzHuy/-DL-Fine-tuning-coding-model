@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two numbers in an array that form a "strong pair" (|x - y| <= min(x, y)) and maximize their bitwise XOR.
+2. Problem type / algorithm category: Trie (prefix tree) for bitwise operations and two pointers for range filtering.
+3. Step-by-step approach: Sort the array. Iterate through the array with a right pointer `y`. Maintain a Trie of numbers encountered so far within the "strong pair" range relative to `y`. Use a left pointer `i` to remove numbers from the Trie that are too small (i.e., `nums[i] * 2 < y` which implies `y - nums[i] > nums[i]`, violating the strong pair condition). For each `y`, query the Trie to find the number `x` that maximizes `y XOR x` among the numbers currently in the Trie.
+4. Edge cases: Array with single element (pairs with itself), all elements identical, no strong pairs other than self-pairing.
+5. Time and space complexity: Time O(N*log(max_val)), Space O(N*log(max_val)) where max_val is the maximum value in nums. The log factor comes from Trie operations.
+</thinking>

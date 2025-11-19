@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a consecutive subarray of robots such that their total cost (max charge time + k * sum of running costs) is within a given budget.
+2. Problem type / algorithm category: Sliding Window with Deque.
+3. Step-by-step approach: Use a sliding window approach. Expand the window to the right by including new robots. Maintain a deque to efficiently find the maximum charge time within the current window. While the total cost exceeds the budget, shrink the window from the left. Update the maximum valid window size.
+4. Edge cases: No robots can be run within budget (output 0). All robots can be run within budget.
+5. Time and space complexity: Time complexity is O(n) because each element is added and removed from the deque and sum at most once. Space complexity is O(n) in the worst case for the deque.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of stone coordinates, find the maximum number of stones that can be removed, where a stone can be removed if it shares the same row or column with another stone.
+2. Problem type / algorithm category: Graph theory, connected components, Union Find.
+3. Step-by-step approach: Use Union Find to find connected components. Two stones are connected if they share a row or column. The number of removable stones is the total number of stones minus the number of connected components.
+4. Edge cases: Empty input, single stone.
+5. Time and space complexity: Time complexity is O(N), where N is the number of stones, due to the Union Find operations with path compression. Space complexity is O(N) for the Union Find data structures.
+</thinking>

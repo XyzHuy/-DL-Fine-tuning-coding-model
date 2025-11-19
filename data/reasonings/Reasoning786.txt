@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth smallest fraction formed by pairs of elements in a sorted array of 1 and primes.
+2. Problem type / algorithm category: Binary search.
+3. Step-by-step approach: Use binary search on the possible fraction values. For a given mid value, count the number of fractions smaller than mid and update the search range accordingly. The helper function `count_and_find_mid` counts the number of fractions less than or equal to mid.
+4. Edge cases: Empty array, k = 1, very large k.
+5. Time and space complexity: Time complexity is O(N log N * log(1/epsilon)), where N is the length of the array and epsilon is the precision of the binary search. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if the frequency of each distinct number in an array is unique.
+2. Problem type / algorithm category: Hashing / Counting.
+3. Step-by-step approach: Count the occurrences of each number, store the frequencies, and check if the frequencies are all unique.
+4. Edge cases: Empty array, array with one element, array with all same elements, array with negative numbers.
+5. Time and space complexity: Time: O(n), Space: O(n).
+</thinking>

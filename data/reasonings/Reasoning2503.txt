@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum points obtainable for each query by traversing a grid, starting from the top-left, where points are awarded for visiting a cell with a value strictly less than the query value, and movement is allowed to adjacent cells.
+2. Problem type / algorithm category: Greedy algorithm with Priority Queue (Heap) and Sorting.
+3. Step-by-step approach: Sort queries in ascending order. Use a min-heap to explore cells reachable with values less than the current query. Maintain a visited set. For each sorted query, process all cells from the heap whose values are less than the query, incrementing a point counter and adding valid neighbors to the heap. Assign the current point count to the original query index.
+4. Edge cases: The starting cell's value is already greater than or equal to the query. No cells can be visited or no points can be scored. The grid is small or large, and the number of queries is small or large.
+5. Time and space complexity: Time complexity is dominated by sorting queries and heap operations, O(k log k + m*n log(m*n)). Space complexity is O(m*n) for the visited set and heap.
+</thinking>

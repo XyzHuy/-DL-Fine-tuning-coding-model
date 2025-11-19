@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum network rank for any pair of distinct cities, where network rank is the sum of direct roads to each city, subtracting one if they are directly connected.
+2. Problem type / algorithm category: Graph traversal and brute-force search (with optimization).
+3. Step-by-step approach: Build an adjacency list to store road connections. Calculate the degree (number of roads) for each city. Sort cities by degree. Iterate through pairs of cities, prioritizing those with higher degrees, calculate their network rank, and find the maximum. If the top two cities are connected, the rank is sum of degrees minus one; otherwise, it's the sum of degrees.
+4. Edge cases: Cities with the same maximum degree, cities with the second maximum degree, and whether the top-degree cities are directly connected.
+5. Time and space complexity: O(N^2) time for checking all pairs, O(N + E) space for adjacency list and degrees, where N is the number of cities and E is the number of roads.
+</thinking>

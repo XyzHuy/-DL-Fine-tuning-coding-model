@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, prune subtrees that do not contain the value 1.
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Use a recursive helper function to traverse the tree in a post-order manner. For each node, recursively check if its left and right subtrees contain a 1. If a subtree does not contain a 1, prune it by setting the corresponding child pointer to None. Return True if the current node or any of its subtrees contain a 1, otherwise return False. Finally, return the root if it contains a 1, otherwise return None.
+4. Edge cases: Empty tree (root is None). A tree where all nodes are 0. A tree where only the root is 0 and its children are pruned.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H = N, and in the best case (balanced tree), H = log N.
+</thinking>

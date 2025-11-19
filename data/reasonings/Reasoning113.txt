@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree and a target sum, find all root-to-leaf paths whose node values sum up to the target sum, and return these paths as lists of node values.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Backtracking.
+3. Step-by-step approach: Use DFS to traverse the tree. Maintain a path list to store the nodes in the current path. At each node, subtract the node's value from the remaining target sum. If a leaf node is reached and the remaining sum is zero, add a copy of the current path to the result. Backtrack by removing the current node from the path after exploring its children.
+4. Edge cases: Empty tree (root is None), negative node values, targetSum can be negative, no paths sum up to the target sum.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H) in the average case (balanced tree) and O(N) in the worst case (skewed tree), where H is the height of the tree, due to the recursion stack and the path list. In the worst case, the path list may contain all nodes. Additionally, in the worst case, the number of paths could be exponential, potentially leading to O(N^2) space.
+</thinking>

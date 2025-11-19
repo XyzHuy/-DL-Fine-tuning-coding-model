@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign unique integer values from 1 to n to n cities connected by roads to maximize the sum of importance of all roads, where a road's importance is the sum of its connected cities' assigned values.
+2. Problem type / algorithm category: Greedy algorithm, Graph theory.
+3. Step-by-step approach: Calculate the degree of each city. Sort the cities by their degrees in ascending order. Assign the smallest available integer values (1, 2, ...) to cities with smaller degrees and larger values to cities with larger degrees. Sum up the products of each city's degree and its assigned value.
+4. Edge cases: Minimum n is 2. All cities might be connected in a line or a star graph.
+5. Time and space complexity: Time complexity is O(E + N log N) due to degree calculation and sorting, where E is the number of roads and N is the number of cities. Space complexity is O(N) for storing degrees.
+</thinking>

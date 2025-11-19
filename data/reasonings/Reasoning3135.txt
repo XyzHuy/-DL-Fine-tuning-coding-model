@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform 'initial' string into 'target' string using minimum operations of adding/removing characters from either end.
+2. Problem type / algorithm category: Dynamic Programming, String matching, Longest Common Subsequence variant.
+3. Step-by-step approach: The core idea is to find the longest common suffix between the initial and target strings. The characters before this suffix in 'initial' need to be removed, and the characters after this suffix in 'target' need to be added. The total operations will be the sum of removals from 'initial' and additions to 'target'. The DP approach calculates the length of the longest common suffix by iterating through both strings and building a DP table.
+4. Edge cases: If initial and target are identical, zero operations are needed. If one string is a substring of another, the logic should correctly identify the common part. Empty strings are not allowed by constraints.
+5. Time and space complexity: Time complexity is O(m*n) due to the DP table calculation, where m and n are the lengths of initial and target strings. Space complexity is O(m*n) for storing the DP table.
+</thinking>

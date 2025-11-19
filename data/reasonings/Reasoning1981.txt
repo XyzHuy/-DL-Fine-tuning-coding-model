@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the absolute difference between a target value and the sum of one element chosen from each row of a matrix.
+2. Problem type / algorithm category: Dynamic Programming with memoization.
+3. Step-by-step approach: Use recursion with memoization (dp function). The state is (current row, current sum). For each row, iterate through its elements, add to the current sum, and recursively call for the next row. If the sum exceeds the target, prune the search for that row due to sorted elements. Base case is when all rows are processed.
+4. Edge cases: Matrix with a single row or column, target value being very small or large, all matrix elements being the same.
+5. Time and space complexity: Time complexity is O(m * n * target), space complexity is O(m * target) for memoization.
+</thinking>

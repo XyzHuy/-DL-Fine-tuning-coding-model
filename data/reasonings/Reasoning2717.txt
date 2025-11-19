@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to find the minimum swaps of adjacent elements to move the number 1 to the first position and the number n to the last position in a given permutation.
+2. Problem type / algorithm category: Greedy approach, array manipulation.
+3. Step-by-step approach: Find the index of 1 and the index of n. The number of swaps to bring 1 to index 0 is its current index. The number of swaps to bring n to index n-1 is (n-1) minus its current index. If 1 appears after n, one swap is double-counted, so subtract 1 from the total.
+4. Edge cases: The permutation might already be semi-ordered (0 swaps). The case where 1 is initially to the right of n requires adjustment because the swaps to move 1 and n can interfere.
+5. Time and space complexity: Time complexity is O(n) to find the indices of 1 and n. Space complexity is O(1) as we only use a few variables.
+</thinking>

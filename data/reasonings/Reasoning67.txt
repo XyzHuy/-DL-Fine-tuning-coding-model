@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two binary strings, return their sum as a binary string.
+2. Problem type / algorithm category: String manipulation / Binary arithmetic.
+3. Step-by-step approach: Convert the binary strings to integers using base 2, add the integers, and then convert the result back to a binary string, removing the "0b" prefix.
+4. Edge cases: Empty strings (although constraints specify length >= 1), strings with leading zeros (although constraints specify no leading zeros except for "0").
+5. Time and space complexity: O(N) time complexity where N is the maximum length of the input strings, due to the int() conversion. O(1) space complexity because the space used for the intermediate integer representation is constant.
+</thinking>

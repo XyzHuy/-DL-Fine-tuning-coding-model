@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the probability that two boxes, each receiving half of a shuffled collection of balls of distinct colors, end up with the same number of distinct colors.
+2. Problem type / algorithm category: Dynamic programming with combinatorics. Specifically, a recursive approach with memoization (or caching) to count valid distributions.
+3. Step-by-step approach: Use a recursive function (DFS) to iterate through ball colors. For each color, try distributing its balls between the two boxes, keeping track of remaining balls for the first box and the difference in distinct colors encountered so far. Sum up valid combinations and divide by the total number of ways to distribute balls.
+4. Edge cases: The base case of the recursion is when all ball colors have been considered. Other conditions include invalid states like running out of balls for the first box before reaching n or having an impossible difference in distinct colors.
+5. Time and space complexity: Time complexity is related to the number of states in the DP, which is approximately O(k * n * k), where k is the number of colors and n is half the total balls. Space complexity is O(k * n * k) due to memoization.
+</thinking>

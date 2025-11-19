@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count numbers in a given range [a, b] that have all unique digits.
+2. Problem type / algorithm category: Brute-force iteration with digit checking.
+3. Step-by-step approach: Iterate through each number from a to b. For each number, convert it to a string and check if all its digits are unique by comparing the string's length to the length of its set of characters. Increment a counter if digits are unique.
+4. Edge cases: The range includes single-digit numbers (always unique), and numbers where digits might repeat (like 11, 22, etc.). The constraints specify positive integers.
+5. Time and space complexity: Time complexity is O((b-a+1) * D), where D is the average number of digits in the range. Space complexity is O(D) for the set conversion.
+</thinking>

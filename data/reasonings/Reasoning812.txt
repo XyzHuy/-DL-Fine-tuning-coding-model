@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest triangle area that can be formed from any three points in a given list of 2D points.
+2. Problem type / algorithm category: Geometry, brute force.
+3. Step-by-step approach: Iterate through all possible combinations of three points from the given list, calculate the area of the triangle formed by each combination using the Shoelace formula, and keep track of the maximum area found so far.
+4. Edge cases: The problem statement says all points are unique and the number of points is between 3 and 50, so we don't need to handle duplicate points or lists with fewer than 3 points.
+5. Time and space complexity: Time complexity is O(n^3) due to the three nested loops to check all possible combinations of points. Space complexity is O(1) as we only use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to make num1 zero by repeatedly subtracting (2^i + num2).
+2. Problem type / algorithm category: Number Theory, Bit Manipulation, Iteration.
+3. Step-by-step approach: Iterate through possible operation counts (k) from 1 up to 60. For each k, calculate the required remaining value as num1 - k * num2. Check if this remaining value is non-negative and if its binary representation has at most k set bits, and if k itself is less than or equal to this remaining value. If all conditions are met, return k.
+4. Edge cases: The problem statement implies num1 is positive, but num2 can be negative. The iteration limit of 60 is a heuristic based on the constraints of 2^i. If no solution is found within this range, return -1.
+5. Time and space complexity: Time complexity is O(1) because the loop runs a fixed number of times (up to 60), and bit_count() is also efficient. Space complexity is O(1) as only a few variables are used.
+</thinking>

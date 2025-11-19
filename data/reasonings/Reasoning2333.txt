@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the sum of squared differences between two arrays by reducing their elements using a total of k1+k2 operations, where each operation increments or decrements an element by 1.
+2. Problem type / algorithm category: Greedy, Heap (Priority Queue), Frequency Counting.
+3. Step-by-step approach: Calculate absolute differences, combine k1 and k2, use a max-heap to prioritize reducing the largest differences first. For each largest difference, reduce as many occurrences as possible using available 'k' operations, potentially creating new smaller differences or increasing counts of existing smaller differences.
+4. Edge cases: k1 and k2 are both 0 (no modifications possible), all differences are already 0, or all remaining differences become 0.
+5. Time and space complexity: O(N log N) time due to sorting/heap operations and O(N) space for storing differences and counts.
+</thinking>

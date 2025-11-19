@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a binary tree can be partitioned into two subtrees with equal sums by removing a single edge.
+2. Problem type / algorithm category: Tree traversal, recursion, divide and conquer.
+3. Step-by-step approach: Calculate the total sum of the tree. Recursively traverse the tree, at each node calculating the sum of its subtree. Check if any subtree sum is equal to half of the total sum.
+4. Edge cases: Empty tree (handled by base cases in recursion), tree with total sum that's odd (cannot be partitioned).
+5. Time and space complexity: O(N) time complexity, where N is the number of nodes in the tree, due to the tree traversal. O(H) space complexity, where H is the height of the tree, due to the recursion stack.
+</thinking>

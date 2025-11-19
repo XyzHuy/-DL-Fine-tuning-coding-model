@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to supply water to all houses either by building wells or connecting them via pipes, given the cost of building wells and the cost of laying pipes between houses.
+2. Problem type / algorithm category: Minimum Spanning Tree (MST) problem, solved using Kruskal's algorithm and Union-Find data structure.
+3. Step-by-step approach: Add a virtual node connected to each house with the well cost. Sort all edges by cost. Use Kruskal's algorithm to select edges (pipes or well connections) to form the MST. Use Union-Find to efficiently check for cycles during MST construction.
+4. Edge cases: Empty pipes list, zero well costs, and cases where connecting all houses is cheaper than building individual wells.
+5. Time and space complexity: Time complexity is dominated by sorting the edges O(E log E) where E is the number of pipes plus n (well connections). Union-Find operations are nearly constant time. Space complexity is O(N) for the parent array in Union-Find.
+</thinking>

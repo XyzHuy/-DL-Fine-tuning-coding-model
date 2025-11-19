@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid size, starting robot position, and a sequence of moves, calculate for each starting instruction in the sequence, how many moves the robot can make before going out of bounds.
+2. Problem type / algorithm category: Simulation, Brute Force.
+3. Step-by-step approach: Iterate through each possible starting instruction index `i` from 0 to `m-1`. For each `i`, simulate the robot's movement from `startPos` using instructions `s[i:]`. Keep track of the robot's current position and increment a counter for each valid move. Stop simulation if the robot moves out of bounds or all instructions from `i` onwards are processed. Store the count for index `i` in the result array.
+4. Edge cases: Robot starts on the edge of the grid, robot is immediately out of bounds with the first instruction, grid size is 1x1, all instructions lead out of bounds immediately.
+5. Time and space complexity: Time complexity is O(m^2) because for each of the m starting positions, we might iterate through up to m instructions. Space complexity is O(m) to store the result array.
+</thinking>

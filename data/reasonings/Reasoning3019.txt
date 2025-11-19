@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of key presses that are different from the immediately preceding key press, ignoring case differences.
+2. Problem type / algorithm category: String traversal and comparison.
+3. Step-by-step approach: Convert the input string to lowercase. Iterate through the string from the first character up to the second-to-last character. For each character, compare it with the next character. If they are different, increment a counter for key changes. Finally, return the counter.
+4. Edge cases: The input string has at least one character. The string consists only of English letters.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, due to a single pass. Space complexity is O(N) for storing the lowercase version of the string, or O(1) if modification in-place is allowed or string conversion is considered constant space relative to input.
+</thinking>

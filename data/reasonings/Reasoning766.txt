@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given m x n matrix is a Toeplitz matrix, where each top-left to bottom-right diagonal has the same element.
+2. Problem type / algorithm category: Matrix traversal, pattern recognition.
+3. Step-by-step approach: Iterate through the matrix, comparing each element with the element diagonally above and to the left. If any adjacent diagonal elements are different, return false. If the entire matrix is checked and no differences are found, return true.
+4. Edge cases: Empty matrix (should return true, handled implicitly by the loops). Matrix with only one row or one column (should also return true).
+5. Time and space complexity: Time complexity is O(m*n) because we potentially iterate through every element of the matrix. Space complexity is O(1) because we use a constant amount of extra space.
+</thinking>

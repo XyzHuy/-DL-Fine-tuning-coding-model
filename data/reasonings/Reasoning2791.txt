@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of nodes (u, v) with u < v in a tree where the path between them has characters that can form a palindrome.
+2. Problem type / algorithm category: Tree traversal (DFS), Bitmasking, Hashing (using counts of masks).
+3. Step-by-step approach: Build an adjacency list for the tree. Use DFS starting from the root. Maintain a bitmask representing character parity on the path from the root to the current node. For each node, update the count of the current bitmask. The number of valid paths ending at the current node is the sum of counts of masks that differ from the current mask by at most one bit (representing palindrome property).
+4. Edge cases: Single node tree, tree with all same characters on edges, paths of length 1 (single edge).
+5. Time and space complexity: Time O(N * alpha), Space O(N * alpha), where N is the number of nodes and alpha is the size of the alphabet (26).
+</thinking>

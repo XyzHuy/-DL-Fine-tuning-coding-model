@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return a list of lists representing the vertical order traversal of its node values, from left to right column-wise. Nodes at the same row and column are ordered from left to right.
+2. Problem type / algorithm category: Binary Tree Traversal, Breadth-First Search (BFS), Hash Map (defaultdict)
+3. Step-by-step approach: Use BFS to traverse the tree level by level, keeping track of the column index of each node. Store node values in a dictionary (column_table) where keys are column indices and values are lists of node values. Maintain min_col and max_col to determine the range of column indices. Finally, iterate through the column indices from min_col to max_col and collect the node values from the dictionary into the result list.
+4. Edge cases: Empty tree (root is None), nodes with null left or right children, skewed trees.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, due to the BFS traversal. Space complexity is O(N) in the worst case where the tree is skewed, to store the nodes in the queue and the column_table.
+</thinking>

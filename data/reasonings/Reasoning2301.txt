@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if string 'sub' can become a substring of 's' after applying character replacements defined by 'mappings', where each character in 'sub' can be replaced at most once.
+2. Problem type / algorithm category: String matching, Sliding window with character mapping.
+3. Step-by-step approach: 1. Preprocess mappings into a dictionary for efficient lookup of valid replacements. 2. Iterate through all possible starting positions in 's' where 'sub' could align. 3. For each alignment, compare characters between 's' and 'sub'. If characters don't match directly, check if the character in 's' is a valid replacement for the character in 'sub' based on the preprocessed mappings. 4. If a full alignment is found where all characters match directly or via mapping, return true. 5. If no such alignment is found after checking all possibilities, return false.
+4. Edge cases: Empty strings are not allowed by constraints. Substring length equal to string length. All characters in sub are mappable. No mappings provided.
+5. Time and space complexity: Time: O(N * M), where N is length of s and M is length of sub. Space: O(K), where K is the number of unique characters in sub that have mappings.
+</thinking>

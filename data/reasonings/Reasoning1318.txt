@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum bit flips required in numbers `a` and `b` so that their bitwise OR equals `c`.
+2. Problem type / algorithm category: Bit Manipulation.
+3. Step-by-step approach: Iterate through each bit position from least significant to most significant. For each bit, compare the bits of `a`, `b`, and `c`. If `c`'s bit is 0, both `a`'s and `b`'s bits must be 0; add their sum to flips. If `c`'s bit is 1, at least one of `a`'s or `b`'s bits must be 1; if both are 0, increment flips by 1.
+4. Edge cases: The constraints ensure `a`, `b`, and `c` are positive. The iteration limit (32 bits) handles the maximum possible integer value.
+5. Time and space complexity: Time complexity is O(log(max(a, b, c))) or O(1) as the number of bits is fixed (32). Space complexity is O(1).
+</thinking>

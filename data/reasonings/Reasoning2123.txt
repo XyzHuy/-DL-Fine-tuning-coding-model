@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the minimum flips of 1s to 0s so that no two 1s are adjacent horizontally or vertically.
+2. Problem type / algorithm category: Graph theory, Bipartite Matching (specifically, Maximum Bipartite Matching using Hopcroft-Karp algorithm).
+3. Step-by-step approach: Model the problem as a bipartite graph where cells (i, j) with (i+j) even are in one set and cells (i, j) with (i+j) odd are in the other. An edge exists between two '1' cells if they are adjacent. The goal is to find the maximum matching; the number of operations is the total number of '1's minus the size of the maximum matching.
+4. Edge cases: An empty grid or a grid with no '1's requires 0 operations.
+5. Time and space complexity: Time complexity is O(E * sqrt(V)) for Hopcroft-Karp, where V is the number of '1's and E is the number of adjacencies. In the worst case, V is m*n and E is roughly 4*m*n, so O((m*n)^2.5). Space complexity is O(m*n) to store the graph and matching information.
+</thinking>

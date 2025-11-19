@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer, perform two digit replacement operations to maximize the difference between the resulting numbers, ensuring no leading zeros or zero values.
+2. Problem type / algorithm category: Brute force (implicit via iterating through replacements) and string manipulation.
+3. Step-by-step approach: To maximize the difference, we aim to create the largest possible number and the smallest possible number. The largest number is achieved by replacing a digit with '9'. The smallest is achieved by replacing a digit with '0' (or '1' if the first digit is '0').
+4. Edge cases: The input number can be a single digit. The first digit cannot be replaced by '0' if it's the leading digit. If all digits are '9' for max, or '1' for min, no replacement occurs.
+5. Time and space complexity: Time complexity is O(L) where L is the number of digits in num, as we iterate through the digits a constant number of times. Space complexity is O(L) to store the string representation of the number.
+</thinking>

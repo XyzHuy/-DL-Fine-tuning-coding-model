@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of points, find the number of boomerangs, where a boomerang is defined as a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k.
+2. Problem type / algorithm category: Hash map / Geometry. The problem requires calculating distances and counting occurrences.
+3. Step-by-step approach: Iterate through each point i. For each point i, calculate the distance to all other points j. Store the distances in a hash map (dictionary) to count the occurrences of each distance. After calculating all distances from point i, iterate through the hash map and count the number of boomerangs that can be formed using point i as the center. The number of boomerangs for a given distance is n * (n - 1) where n is the number of points at that distance from i. Accumulate the count for each center point.
+4. Edge cases: Empty input list. Input list with only one or two points. Duplicate points are not allowed based on the problem statement.
+5. Time and space complexity: Time complexity is O(n^2), where n is the number of points. This is due to the nested loops. The outer loop iterates through each point, and the inner loop calculates the distances to all other points. Space complexity is O(n), where n is the number of points, because the hash map can store at most n distances for each center point.
+</thinking>

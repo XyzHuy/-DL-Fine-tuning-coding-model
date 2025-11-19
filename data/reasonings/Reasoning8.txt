@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Implement a function that converts a string to a 32-bit signed integer, handling whitespace, signs, and out-of-range values.
+2. Problem type / algorithm category: String parsing.
+3. Step-by-step approach: First, remove leading whitespace. Then, determine the sign. After that, iterate through the string, converting digits to an integer until a non-digit is encountered. Finally, apply the sign and clamp the result to the 32-bit integer range.
+4. Edge cases: Empty string, no digits, leading whitespace, multiple signs, non-digit characters before digits, integer overflow.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(1).
+</thinking>

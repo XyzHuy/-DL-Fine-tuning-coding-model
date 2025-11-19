@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum overlap of two binary square matrices after translating one of them.
+2. Problem type / algorithm category: Matrix manipulation, translation, counting.
+3. Step-by-step approach: Convert matrices to lists of coordinates where value is 1. Calculate translation vectors between all pairs of 1s in the two matrices. Count the frequency of each translation vector. Return the maximum frequency.
+4. Edge cases: Empty matrices (all zeros), matrices with no overlap, 1x1 matrices.
+5. Time and space complexity: Time: O(n^4) in the worst case (dense matrices). Space: O(n^2) in the worst case (to store translation counts).
+</thinking>

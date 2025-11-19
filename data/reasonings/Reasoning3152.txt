@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if subarrays specified by queries are "special", meaning adjacent elements have different parities.
+2. Problem type / algorithm category: Prefix sums or precomputation with range queries.
+3. Step-by-step approach: First, precompute an auxiliary array indicating adjacent element parity differences. For each query, check if all adjacent pairs within the subarray have different parities using the precomputed information.
+4. Edge cases: Subarrays of length 1 are always special. Ensure correct indexing for queries and parity checks.
+5. Time and space complexity: O(N + Q) time complexity for precomputation and query processing, and O(N) space complexity for storing precomputed data.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a secret number and a guess, determine the number of "bulls" (digits in the correct position) and "cows" (digits present but in the wrong position), and return the hint in the format "xAyB".
+2. Problem type / algorithm category: String manipulation, counting, hashmap (defaultdict).
+3. Step-by-step approach: Iterate through the secret and guess strings simultaneously. Count the bulls directly. For non-bulls, store the counts of digits in separate hashmaps for secret and guess. Iterate through the hashmaps to find common digits and calculate the number of cows using the minimum count of each digit in both hashmaps. Finally, format the result string.
+4. Edge cases: Empty strings, strings of different lengths (though the problem statement says they're always equal), strings with non-digit characters (the problem statement specifies only digits).
+5. Time and space complexity: Time complexity is O(N) where N is the length of the strings (secret and guess). Space complexity is O(1) because the size of the hashmaps is limited by the number of digits (0-9), making it constant space.
+</thinking>

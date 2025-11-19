@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all stepping numbers within the inclusive range [low, high]. A stepping number is defined as a number where adjacent digits have an absolute difference of 1.
+2. Problem type / algorithm category: Breadth-First Search (BFS), Number Theory.
+3. Step-by-step approach: Start with single-digit numbers (1-9) as the initial stepping numbers. Use BFS to explore possible stepping numbers by appending digits that differ by 1 from the last digit of the current number. Add valid stepping numbers to the result set if they fall within the given range [low, high]. Finally, sort the result set and return it as a list. Special handling for 0 is required since the BFS only starts from 1-9.
+4. Edge cases: Empty range (low > high), inclusion of 0 in the range. Numbers exceeding the high range limit during BFS generation.
+5. Time and space complexity: The time complexity is O(N * log N) where N is the number of stepping numbers within the range [low, high] due to sorting the result. Space complexity is O(N) to store the stepping numbers in the result set and the queue during BFS.
+</thinking>

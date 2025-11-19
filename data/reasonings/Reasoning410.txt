@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to split an array into k subarrays such that the maximum sum of any subarray is minimized. The goal is to find this minimized largest sum.
+2. Problem type / algorithm category: Binary Search. We are searching for the minimum largest sum within a range of possible sums.
+3. Step-by-step approach: Use binary search on the possible range of largest sums, which ranges from the maximum element of the array to the sum of all elements. For each potential largest sum (mid), check if the array can be split into k or fewer subarrays such that no subarray sum exceeds mid. If it can, try a smaller largest sum (move right to mid). Otherwise, try a larger largest sum (move left to mid + 1).
+4. Edge cases: An empty array will not happen according to the prompt. Ensure that a single element is handled correctly. If any number is bigger than the maxSum it cannot be split.
+5. Time and space complexity: Time complexity is O(N * log(sum of array)), where N is the length of the array and the sum of array represents the range of binary search. Space complexity is O(1).
+</thinking>

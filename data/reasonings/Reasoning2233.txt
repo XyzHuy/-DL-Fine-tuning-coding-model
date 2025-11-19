@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the product of array elements after performing at most k increments, returning the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Greedy approach, Heap (Priority Queue).
+3. Step-by-step approach: Repeatedly find the smallest element in the array, increment it by 1, and perform this k times. Finally, calculate the product of all elements modulo 10^9 + 7.
+4. Edge cases: Array contains zeros; k is large relative to array size; all elements are identical.
+5. Time and space complexity: O(N log N + K log N) time, O(N) space for the heap.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of points (Alice, Bob) where Alice is the top-left and Bob is the bottom-right of a rectangle, and no other point is inside or on the boundary of this rectangle.
+2. Problem type / algorithm category: Brute force with optimization, nested loops, geometric problem.
+3. Step-by-step approach: Iterate through all possible points for Alice. For each Alice point, iterate through subsequent points (ordered by x-coordinate and then descending y-coordinate) as potential Bob points. For a valid Bob, ensure its y-coordinate is less than or equal to Alice's y-coordinate and greater than the maximum y-coordinate seen so far for valid Bob points between Alice and this potential Bob.
+4. Edge cases: n < 2 (not possible due to constraints), all points on a line, points with identical x or y coordinates.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops. Space complexity is O(1) if sorting is done in-place, or O(N) if a copy is made for sorting.
+</thinking>

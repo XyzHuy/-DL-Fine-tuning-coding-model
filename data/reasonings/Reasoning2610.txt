@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer array, create a 2D array where each row has distinct elements and the number of rows is minimized.
+2. Problem type / algorithm category: Greedy, Frequency Counting.
+3. Step-by-step approach: Count the occurrences of each number. Repeatedly create new rows by taking one instance of each number that still needs to be placed, until all numbers are placed. Decrement counts as numbers are used.
+4. Edge cases: An empty input array (though constraints say length >= 1), an array with all distinct elements, an array with all identical elements.
+5. Time and space complexity: Time complexity is O(N) where N is the number of elements in nums, as each element is processed a constant number of times. Space complexity is O(N) to store the counts and the resulting 2D array.
+</thinking>

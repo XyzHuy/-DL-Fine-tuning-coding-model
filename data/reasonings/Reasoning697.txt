@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest subarray that has the same degree as the input array, where the degree is the maximum frequency of any element in the array.
+2. Problem type / algorithm category: Array manipulation, hash map, frequency analysis.
+3. Step-by-step approach: First, create a dictionary to store the frequency, first index, and last index of each number. Then, find the degree of the array. Finally, iterate through the dictionary and find the shortest subarray length among the numbers that have a frequency equal to the degree.
+4. Edge cases: Empty array (though the problem statement says the input array is non-empty), array with all unique elements (degree is 1).
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once to build the hash map and once to find the shortest subarray. Space complexity is O(n) because the hash map can store up to n distinct elements.
+</thinking>

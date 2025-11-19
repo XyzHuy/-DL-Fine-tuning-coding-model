@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the total sum of multiple range sum queries on an array by permuting the array elements.
+2. Problem type / algorithm category: Greedy algorithm, prefix sums, sorting.
+3. Step-by-step approach: First, determine how many times each index in the original array is part of any request. This can be done efficiently using difference arrays (prefix sums). Then, sort the counts of index requests in descending order and sort the input numbers in descending order. Finally, pair the largest numbers with the indices that are requested most frequently to maximize the total sum.
+4. Edge cases: Empty requests array, single element array, requests that span the entire array, requests with identical start and end points.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N + R log R) where N is length of nums and R is number of requests. Space complexity is O(N) for storing frequencies.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Traverse an rows x cols grid in a clockwise spiral starting from (rStart, cStart), returning the coordinates of all cells visited. The spiral continues even when going out of bounds.
+2. Problem type / algorithm category: Array traversal, spiral matrix.
+3. Step-by-step approach: Initialize direction vectors and the result list with the starting point. Iterate until all cells have been visited. In each iteration, move in the current direction a certain number of steps, adding valid coordinates to the result. Change direction after each step or two steps, increasing the step count as needed.
+4. Edge cases: The initial starting position. Continuing the spiral outside the bounds of the grid.
+5. Time and space complexity: Time complexity is O(rows * cols) because each cell is visited once. Space complexity is O(rows * cols) to store the resulting list of coordinates.
+</thinking>

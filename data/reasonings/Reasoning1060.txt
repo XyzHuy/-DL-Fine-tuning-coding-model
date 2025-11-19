@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth missing positive integer in a sorted array of unique integers.
+2. Problem type / algorithm category: Binary Search. The problem involves searching in a sorted array to find the position where the cumulative number of missing elements meets a specific criteria (k).
+3. Step-by-step approach: Calculate the number of missing elements up to each index. Perform binary search to find the index where the number of missing elements is just greater than or equal to k. Calculate the kth missing number based on the element just before this index and the remaining missing count. Handle the case where k is greater than all missing elements in the array.
+4. Edge cases: k is larger than the total number of missing elements, requiring calculation beyond the end of the array. Handle the case where the binary search lands on index 0.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it uses constant extra space.
+</thinking>

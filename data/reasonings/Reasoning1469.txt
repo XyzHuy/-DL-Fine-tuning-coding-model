@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify nodes in a binary tree that are the sole child of their parent.
+2. Problem type / algorithm category: Tree Traversal (Depth-First Search).
+3. Step-by-step approach: Traverse the tree using DFS. For each node, check if it has exactly one child. If so, add the child's value to the result list. Recurse on both children.
+4. Edge cases: An empty tree (root is None) will return an empty list. A tree with only a root node will have no lonely nodes.
+5. Time and space complexity: Time complexity is O(N) as each node is visited once. Space complexity is O(H) for the recursion stack, where H is the height of the tree.
+</thinking>

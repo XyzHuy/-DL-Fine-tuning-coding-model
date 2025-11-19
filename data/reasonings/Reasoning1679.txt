@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize operations by removing pairs from an array that sum up to k.
+2. Problem type / algorithm category: Hash Map / Counting.
+3. Step-by-step approach: Use a frequency map (Counter) to store counts of each number. Iterate through the map. For each number, find its complement (k - number). If the complement exists and is different, form pairs by taking the minimum count of the number and its complement, and zero out their counts. If the complement is the same number, form pairs from its own count by integer division by 2.
+4. Edge cases: Numbers that are their own complement (num * 2 == k), and ensuring each number is used at most once for pairing.
+5. Time and space complexity: Time O(N) due to iterating through nums once to build the counter and then iterating through the unique elements in the counter. Space O(N) in the worst case for storing the counter if all elements are unique.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array with half even and half odd integers, rearrange it such that even numbers are at even indices and odd numbers are at odd indices.
+2. Problem type / algorithm category: Array manipulation / Two Pointers.
+3. Step-by-step approach: Use two pointers, one for even indices and one for odd indices. Iterate through the array. If an even number is at an even index, move the even pointer forward. If an odd number is at an odd index, move the odd pointer forward. If an even number is at an odd index or an odd number is at an even index, swap them and move both pointers forward.
+4. Edge cases: Empty array, array with only two elements. The length of the array is always even and has equal number of even and odd integers, so no special cases need to be considered for array size or content.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array at most once. Space complexity is O(1) because we are doing it in-place.
+</thinking>

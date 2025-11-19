@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two strings, determine if they are equal after applying backspace operations denoted by '#'.
+2. Problem type / algorithm category: String manipulation, two pointers.
+3. Step-by-step approach: Use a helper function to iterate backwards through each string while handling backspaces. Compare the characters obtained from both strings in each iteration.
+4. Edge cases: Empty string after backspaces, strings with different lengths, backspaces at the beginning of the string.
+5. Time and space complexity: Time complexity is O(m+n) where m and n are the lengths of the input strings. Space complexity is O(1).
+</thinking>

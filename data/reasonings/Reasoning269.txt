@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words from an alien language, determine the order of the letters based on the lexicographical order of the words. If the order is invalid, return an empty string.
+2. Problem type / algorithm category: Topological sort / Graph problem
+3. Step-by-step approach: Build a graph representing the order of the letters. Use topological sort to find the order of the letters. Detect cycles in the graph, and return "" if a cycle is found.
+4. Edge cases: Empty input, invalid order (cycle in the graph), words with different lengths, and cases where one word is a prefix of another but appears later in the list.
+5. Time and space complexity: Time complexity is O(V+E) where V is the number of unique letters and E is the number of edges. Space complexity is O(V+E) to store the graph and indegree array.
+</thinking>

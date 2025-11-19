@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score of a path from the top-left to the bottom-right corner of a grid, where the score is the minimum value encountered along the path.
+2. Problem type / algorithm category: Graph traversal / Heap (Priority Queue) / Pathfinding.
+3. Step-by-step approach: Use a max-heap to explore cells in decreasing order of their values. Maintain a visited set to avoid cycles. At each step, pop the cell with the largest value from the heap. If the destination is reached, return the current path's minimum value. Otherwise, explore unvisited neighbors, and push them onto the heap with the updated path minimum.
+4. Edge cases: Empty grid (though the constraints state m, n >= 1, this could still be a test case), disconnected grid (though the problem implies a path always exists).
+5. Time and space complexity: Time complexity is O(m*n*log(m*n)) due to the heap operations. Space complexity is O(m*n) for the heap and visited set.
+</thinking>

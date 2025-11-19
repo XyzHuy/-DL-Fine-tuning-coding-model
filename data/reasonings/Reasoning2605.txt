@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest number formed by at least one digit from each of two given unique digit arrays.
+2. Problem type / algorithm category: Greedy, Set Operations.
+3. Step-by-step approach: First, check for any common digits present in both arrays. If found, the smallest common digit is the answer. If no common digits, find the smallest digit from each array and form the smallest possible two-digit number using these two smallest digits (by placing the smaller of the two as the tens digit).
+4. Edge cases: No common digits between the two arrays.
+5. Time and space complexity: Time O(N + M) where N and M are lengths of nums1 and nums2, space O(N + M) for sets.
+</thinking>

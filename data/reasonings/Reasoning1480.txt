@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the cumulative sum for each element in an array.
+2. Problem type / algorithm category: Array manipulation, prefix sum.
+3. Step-by-step approach: Initialize an empty list for the running sum and a variable for the current sum. Iterate through the input array, adding each element to the current sum and appending the current sum to the running sum list.
+4. Edge cases: An empty input array is not possible due to constraints. Single element array will result in an array with that single element.
+5. Time and space complexity: O(n) time complexity and O(n) space complexity.
+</thinking>

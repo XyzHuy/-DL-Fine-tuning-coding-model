@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array and an integer k, count the number of subarrays that have exactly k distinct elements.
+2. Problem type / algorithm category: Sliding window, counting.
+3. Step-by-step approach: Use the inclusion-exclusion principle. The number of subarrays with exactly k distinct elements is equal to the number of subarrays with at most k distinct elements minus the number of subarrays with at most k-1 distinct elements. Implement a sliding window to count the number of subarrays with at most k distinct elements.
+4. Edge cases: Empty array, k = 0, k > array length.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input array. Space complexity is O(k), where k is the maximum number of distinct elements allowed, corresponding to the dictionary size.
+</thinking>

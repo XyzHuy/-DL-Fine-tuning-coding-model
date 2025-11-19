@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace all '?' characters in a string with lowercase letters such that no adjacent characters are the same.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate through the string. If a '?' is found, try replacing it with 'a', then 'b', and so on, until a character is found that is different from its immediate neighbors.
+4. Edge cases: The string can start or end with a '?'. A '?' might have only one neighbor to consider (at string boundaries).
+5. Time and space complexity: Time is O(N*K) where N is string length and K is alphabet size (constant 26). Space is O(N) for string conversion to list.
+</thinking>

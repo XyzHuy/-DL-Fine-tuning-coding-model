@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of non-overlapping substrings where each substring containing a character must contain all its occurrences in the original string. Among solutions with the maximum number of substrings, return the one with minimum total length.
+2. Problem type / algorithm category: Greedy algorithm, Interval scheduling.
+3. Step-by-step approach: First, determine the first and last occurrence of each character. Then, for each character, find the minimal valid substring that encompasses all its occurrences and any other characters whose occurrences fall within this range. Sort these valid substrings by their end points. Finally, use a greedy approach to select non-overlapping substrings by iterating through the sorted substrings and picking one if it starts after the previously selected substring ends.
+4. Edge cases: Empty input string (though constraints say length >= 1), string with only one distinct character, string where all characters appear only once.
+5. Time and space complexity: Time complexity is dominated by finding character ranges and sorting intervals, O(N + K log K) where N is the string length and K is the alphabet size (26). Space complexity is O(K) to store character ranges and intervals.
+</thinking>

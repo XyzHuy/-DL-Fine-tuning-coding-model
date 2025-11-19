@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum adjacent swaps to make a string a palindrome.
+2. Problem type / algorithm category: Greedy, string manipulation.
+3. Step-by-step approach: Iterate from both ends of the string inwards. For each character at the left pointer, find its matching character from the right. If found, move it to the right pointer's position by swapping, counting moves. If not found (odd length string, center character), move it to the middle, counting moves.
+4. Edge cases: Strings that can always form a palindrome (guaranteed by problem statement), odd length strings (single middle character), even length strings.
+5. Time and space complexity: O(n^2) time due to nested loops, O(n) space for character list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two sentences can be made identical by inserting an arbitrary sentence (possibly empty) into one of them.
+2. Problem type / algorithm category: String manipulation, Two Pointers.
+3. Step-by-step approach: Split both sentences into word lists. Ensure the first list is longer or equal to the second. Use two pointers, one from the start and one from the end, to find matching prefixes and suffixes between the two word lists. If the total number of matched words from both ends covers the entire shorter sentence, they are similar.
+4. Edge cases: Sentences with only one word, empty inserted sentence, identical sentences, sentences where one is a prefix/suffix of the other.
+5. Time and space complexity: Time O(N) where N is the total number of words, Space O(N) for storing word lists.
+</thinking>

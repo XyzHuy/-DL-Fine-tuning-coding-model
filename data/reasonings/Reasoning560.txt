@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the number of subarrays that sum to a target value k.
+2. Problem type / algorithm category: Hash Map / Prefix Sum
+3. Step-by-step approach: Iterate through the array, maintaining a cumulative sum. Use a hash map to store the frequency of each cumulative sum encountered. For each element, check if (current_sum - k) exists in the hash map. If it does, increment the count by the frequency of (current_sum - k). Update the frequency of the current cumulative sum in the hash map.
+4. Edge cases: Empty array, k=0, large input array. Initializing the hashmap with {0:1} handles cases where a subarray starting from index 0 sums to k.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) in the worst case, where n is the length of the array, as the hash map could store up to n distinct cumulative sums.
+</thinking>

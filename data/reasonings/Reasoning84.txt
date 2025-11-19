@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest rectangular area possible within a histogram represented by an array of bar heights.
+2. Problem type / algorithm category: Stack, Array, Largest Rectangle Area
+3. Step-by-step approach: Use a stack to keep track of increasing bar indices. When a smaller bar is encountered, pop the stack and calculate the area with the popped bar as the smallest height within the range. Continue until the entire array is processed, and then process remaining elements in the stack.
+4. Edge cases: Empty input array, all bars of same height, increasing/decreasing bar sequence.
+5. Time and space complexity: Time complexity is O(N) because each bar is pushed and popped at most once. Space complexity is O(N) in the worst case where the stack stores all the bar indices.
+</thinking>

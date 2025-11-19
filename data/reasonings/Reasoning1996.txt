@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count characters that are strictly weaker in both attack and defense than at least one other character.
+2. Problem type / algorithm category: Sorting, Greedy approach.
+3. Step-by-step approach: Sort characters by attack descending, then defense ascending. Iterate through sorted characters, maintaining the maximum defense seen so far. If the current character's defense is less than the max defense, it's weak. Otherwise, update max defense.
+4. Edge cases: All characters are equally strong (output 0), one character is significantly stronger than all others. Minimum 2 characters are guaranteed.
+5. Time and space complexity: Time: O(N log N) due to sorting, Space: O(1) if in-place sort, O(N) for recursion stack if not.
+</thinking>

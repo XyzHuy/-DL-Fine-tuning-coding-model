@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` containing only digits, the task is to find all possible valid IP addresses that can be formed by inserting dots into `s`.
+2. Problem type / algorithm category: String manipulation, backtracking.
+3. Step-by-step approach: Use backtracking to explore all possible combinations of IP address segments. At each step, try adding a segment of length 1, 2, or 3. Before adding a segment, check if it is valid (between 0 and 255, and no leading zeros). If we have 4 segments and have reached the end of the string, add the IP address to the result.
+4. Edge cases: The input string can be empty or very long, leading to no possible valid IP addresses. Leading zeros in a segment make it invalid unless the segment is just "0". Check that the segments are within the valid range [0, 255].
+5. Time and space complexity: The time complexity is difficult to precisely determine due to backtracking, but it's roughly O(3^n) where n is length of string. The space complexity is O(n) due to recursion depth and storing the result.
+</thinking>

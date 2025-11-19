@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a linked list, swap adjacent nodes without modifying the node values.
+2. Problem type / algorithm category: Linked list manipulation, iterative approach.
+3. Step-by-step approach: Use a dummy node to handle the head case. Iterate through the list, swapping pairs of nodes by adjusting the `next` pointers. Move the `prev` and `head` pointers to the next pair.
+4. Edge cases: Empty list, list with only one node, list with an odd number of nodes.
+5. Time and space complexity: Time complexity is O(n), where n is the number of nodes, and space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of subarrays in a split of a non-negative integer array such that the sum of bitwise AND scores of subarrays is minimized.
+2. Problem type / algorithm category: Greedy, Bitwise Operations.
+3. Step-by-step approach: First, calculate the bitwise AND of all elements in the array. If this overall AND is not zero, the minimum sum of scores is achieved with a single subarray, hence the answer is 1. If the overall AND is zero, iterate through the array, maintaining a running bitwise AND of the current subarray. When the running AND becomes zero, start a new subarray and increment the count. Reset the running AND to -1 (all bits set) for the new subarray.
+4. Edge cases: An array with a single element. The case where the overall AND of the array is not zero.
+5. Time and space complexity: Time complexity is O(N) because we iterate through the array a constant number of times. Space complexity is O(1) as we only use a few variables.
+</thinking>

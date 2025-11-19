@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings in a binary string where the count of '0's to '1's has a specific ratio num1:num2.
+2. Problem type / algorithm category: Substring problem, Prefix sum / balance tracking, Hash map for counting occurrences.
+3. Step-by-step approach: Iterate through the string, maintaining a 'balance' that increases by num2 for '0' and decreases by num1 for '1'. Use a hash map to store the frequency of each balance encountered. If the current balance is seen before, it implies a substring between the previous occurrence and the current position satisfies the ratio. Add the count of previous occurrences of this balance to the result. Update the hash map with the current balance's frequency.
+4. Edge cases: Empty string (not possible by constraints), string with only '0's or only '1's, num1/num2 values relative to string length, coprime condition.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) in the worst case to store balance counts in the hash map.
+</thinking>

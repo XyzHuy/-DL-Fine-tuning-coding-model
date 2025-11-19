@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Combine elements from two Binary Search Trees (BSTs) into a single sorted list.
+2. Problem type / algorithm category: Tree Traversal (In-order), Two Pointers / Merging Sorted Lists.
+3. Step-by-step approach: Perform an in-order traversal on the first BST to get a sorted list of its elements. Repeat for the second BST. Then, merge the two sorted lists into a single sorted list using a two-pointer approach.
+4. Edge cases: One or both trees can be empty.
+5. Time and space complexity: Time complexity is O(N + M) where N and M are the number of nodes in root1 and root2 respectively, due to traversals and merging. Space complexity is O(N + M) to store the elements from both trees and the result.
+</thinking>

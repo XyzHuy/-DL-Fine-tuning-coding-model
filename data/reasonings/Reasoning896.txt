@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array is monotonic (either entirely non-decreasing or non-increasing).
+2. Problem type / algorithm category: Array traversal, boolean logic.
+3. Step-by-step approach: Iterate through the array, checking if it's non-decreasing and non-increasing simultaneously. If either condition becomes false, the corresponding boolean flag is set to false. Finally, return true if either flag is still true.
+4. Edge cases: Empty array.
+5. Time and space complexity: Time: O(n), Space: O(1)
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign tasks to processors with a fixed number of cores per processor to minimize the total completion time, considering processor availability and task durations.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort processor availability times in ascending order. Sort task durations in ascending order. Pair the earliest available processors with the longest tasks, assigning 4 tasks per processor. Calculate the maximum completion time for each processor (availability time + longest assigned task) and find the overall maximum.
+4. Edge cases: Empty input arrays (though constraints prevent this), processors with identical availability times, tasks with identical durations.
+5. Time and space complexity: Time complexity is dominated by sorting, O(P log P + T log T) where P is the number of processors and T is the number of tasks. Space complexity is O(1) if sorting is in-place, or O(log P + log T) or O(P + T) depending on the sort implementation.
+</thinking>

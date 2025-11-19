@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to find the minimum radius required for heaters to cover all houses given the positions of houses and heaters on a line.
+2. Problem type / algorithm category: Binary search / Sorting. The core algorithm uses binary search (bisect) to efficiently find the nearest heaters for each house.
+3. Step-by-step approach: Sort the heaters' positions. For each house, find the nearest heater to its left and the nearest heater to its right using binary search. Compute the distances to these heaters and determine the minimum radius needed for that house. Update the overall maximum radius needed to cover all houses.
+4. Edge cases: When a house is to the left of all heaters or to the right of all heaters, consider the distance to the closest heater accordingly. Handle cases where there are no heaters to the left or right by assigning infinite distance.
+5. Time and space complexity: Time complexity is O(n log m) where n is the number of houses and m is the number of heaters due to sorting the heaters O(mlogm) and using binary search for each house O(nlogm). Space complexity is O(1) as we only store a few variables.
+</thinking>

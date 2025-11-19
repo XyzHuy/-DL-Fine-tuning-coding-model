@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a non-empty subarray in a circular integer array, where each element can only be included once.
+2. Problem type / algorithm category: Dynamic Programming / Kadane's Algorithm
+3. Step-by-step approach: Calculate the maximum subarray sum using Kadane's algorithm. Calculate the total sum of the array. Invert the array and use Kadane's algorithm to find the minimum subarray sum. The maximum circular subarray sum is the total sum plus the minimum subarray sum of the inverted array. Return the maximum of the Kadane's result and the circular sum.
+4. Edge cases: If all numbers are negative, the circular sum will be zero, so return the normal Kadane's result instead.
+5. Time and space complexity: Time complexity is O(n) due to the linear scans. Space complexity is O(1) as we only use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to find the number of distinct ways to place n queens on an n x n chessboard such that no two queens attack each other.
+2. Problem type / algorithm category: This is a backtracking problem.
+3. Step-by-step approach: The solution uses a backtracking algorithm to explore all possible placements of queens. It uses three arrays (cols, hills, dales) to keep track of which columns and diagonals are under attack. The backtrack function recursively tries placing a queen in each column of a row, and if a valid placement is found, it moves on to the next row. If all rows are filled, it increments the count of solutions. After exploring a placement, the queen is removed (backtracking).
+4. Edge cases: The base case for the recursion is when all rows have been filled (row + 1 == n), at which point a solution is found.
+5. Time and space complexity: The time complexity is difficult to express precisely but is roughly O(n!), since in the worst case it explores almost all possible arrangements. The space complexity is O(n) due to the auxiliary arrays cols, hills, and dales, as well as the recursion depth.
+</thinking>

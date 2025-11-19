@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of ordered, non-empty groups that can be formed from a list of student grades, such that each subsequent group has a strictly greater sum of grades and a strictly greater number of students than the previous group.
+2. Problem type / algorithm category: Greedy approach, Combinatorial problem.
+3. Step-by-step approach: Sort the grades to make it easier to fulfill the conditions. Intuitively, to maximize the number of groups, we want each group to be as "small" as possible in terms of student count and sum. The constraints on group size and sum are minimized when group i has i students and a sum that is just slightly larger than group i-1. The total number of students needed for k groups following this pattern is 1 + 2 + ... + k, which is k*(k+1)/2. We find the largest k such that this total number of students does not exceed the total number of students available. The maximum number of groups will be k-1.
+4. Edge cases: When no groups can be formed (e.g., all grades are equal and only one group is possible). The logic holds as the loop condition will fail for k=2 if n=1.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, but the provided solution does not sort and is O(sqrt(N)) or O(log N) depending on the interpretation of k's growth. Space complexity is O(1) if sorting is in-place, otherwise O(N). The provided solution has O(1) space.
+</thinking>

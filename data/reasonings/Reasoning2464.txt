@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of contiguous subarrays to split an array such that the GCD of the first and last element of each subarray is greater than 1. Return -1 if impossible.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Use a recursive function `dp(start)` that returns the minimum subarrays from index `start` to the end. Iterate through all possible `end` indices for the current subarray starting at `start`. If `gcd(nums[start], nums[end-1]) > 1`, recursively call `dp(end)` and update the minimum subarrays. Memoize results to avoid recomputation.
+4. Edge cases: Array with a single element, elements with GCD 1, impossibility of splitting.
+5. Time and space complexity: O(n^2) time complexity due to nested loops and O(n) space complexity for memoization.
+</thinking>

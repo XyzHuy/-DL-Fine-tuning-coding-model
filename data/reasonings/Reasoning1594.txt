@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the path with the maximum non-negative product from the top-left to the bottom-right of a grid, allowing only down or right moves. Return the result modulo 10^9 + 7, or -1 if no non-negative product is possible.
+2. Problem type / algorithm category: Dynamic Programming. Specifically, it's a variation of pathfinding problems on a grid where we need to track both maximum and minimum possible products due to negative numbers.
+3. Step-by-step approach: Use two DP tables, dp_max and dp_min, to store the maximum and minimum products ending at each cell. Initialize the first row and column. For each subsequent cell, calculate the max and min products by considering paths from the cell above and to the left, taking into account the sign of the current cell's value. The final result is the max product at the bottom-right cell, modulo 10^9 + 7 if non-negative.
+4. Edge cases: The grid might contain zeros, leading to a product of zero. If the maximum product at the end is negative, return -1. The grid dimensions are small (1 <= m, n <= 15).
+5. Time and space complexity: Time complexity is O(m*n) because each cell is visited once. Space complexity is O(m*n) for the two DP tables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of the first non-repeating character in a string, or return -1 if none exists.
+2. Problem type / algorithm category: String manipulation / Hash table (dictionary)
+3. Step-by-step approach: First, count the occurrences of each character in the string using a hash map. Then, iterate through the string and check if the character's count in the hash map is 1. If found, return the index. If the loop finishes without finding a unique character, return -1.
+4. Edge cases: Empty string (although the constraints say the string length is at least 1), string with all repeating characters.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string twice. Space complexity is O(1) since the size of the character count dictionary is bounded by the number of possible characters (26 lowercase English letters).
+</thinking>

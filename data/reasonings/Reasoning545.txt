@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return the boundary of the tree, which consists of the root, left boundary, leaves, and reversed right boundary.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Identify and implement helper functions to find the left boundary, leaves, and right boundary separately using recursive DFS traversals. Combine these results in the specified order: root, left boundary, leaves, and reversed right boundary.
+4. Edge cases: Handle empty tree, root-only tree, and cases where the left or right subtrees are missing. Ensure the root is not included in the leaves and that leaf nodes are not added to left/right boundaries.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as each node is visited at most a constant number of times. Space complexity is O(H) in the average case where H is the height of the tree due to the recursion stack, and O(N) in the worst case (skewed tree). The space used to store the result is also O(N).
+</thinking>

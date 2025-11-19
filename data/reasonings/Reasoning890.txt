@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words and a pattern, find all words that match the pattern based on the permutation rule.
+2. Problem type / algorithm category: String matching, bijection, hashing.
+3. Step-by-step approach: Iterate through each word, check if it matches the pattern using a helper function. The helper function uses two arrays to store the mapping between characters of the word and the pattern. If the mapping is inconsistent at any index, the function returns false.
+4. Edge cases: Empty word list, empty pattern, words of different lengths than pattern. The provided solution implicitly handles empty cases correctly.
+5. Time and space complexity: Time complexity is O(N * K), where N is the number of words and K is the length of the pattern. Space complexity is O(1), since the size of the mapping arrays is fixed (128).
+</thinking>

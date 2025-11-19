@@ -1,0 +1,1209 @@
+{
+  "function_name": "shortestMatchingSubstring",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "ab",
+        "p": "a*b"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*bcd*fg"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcabcabc",
+        "p": "*bc*bc"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*si*"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "baccbaadbc",
+        "p": "cc*baa*adb"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "aaaaa",
+        "p": "*aaa*"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "xyz",
+        "p": "*x*z"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "xyxyxyxy",
+        "p": "xy*xy*"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*c*e*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abaacbaecebce",
+        "p": "ba*c*ce"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "p": "*a"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "p": "he*lo"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "aaaa",
+        "p": "aa*aa"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaaa",
+        "p": "a*a*a"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "p": "*c*f*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellothere",
+        "p": "he*lo*re"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "p": "**"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "s": "abcde",
+        "p": "*c*"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "test",
+        "p": "*est"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "abababab",
+        "p": "a*b*a*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyz",
+        "p": "*z*"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "madlogic",
+        "p": "*adlogi*"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "",
+        "p": "**"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "p": "a*"
+      },
+      "expected_output": "Error: not enough values to unpack (expected 3, got 2)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*iss*ippi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "mis*is*ip"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*issi*"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "*bra*bra"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "zxyabcabcdezy",
+        "p": "*abc*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "p": "*bbcc*eeff"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*def*g*j*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "*llohe*llo"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "aaaaabaaaaaaabaaaaa",
+        "p": "*aaaa*a*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "thisisatest",
+        "p": "*sis*est*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaabbbbbbb",
+        "p": "*aaa*bbb*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "*bra*cad*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "*ell*lo*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*iss*iss"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "xyxxyxyxyx",
+        "p": "*xyx*yx*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xxyyxxyyxxyy",
+        "p": "x*y*x*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbbcccc",
+        "p": "*bbb*ccc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "*ra*c*bra"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "multimatches",
+        "p": "*ult*mat*hes*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "overlappingpatterns",
+        "p": "*ver*lap*patt*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaabbbb",
+        "p": "*aaaa*bbb"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabc",
+        "p": "*abc*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaabaaaabaaaa",
+        "p": "*aaa*a*aaa*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghabcdefgh",
+        "p": "*cde*fgh*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "p": "zz*zz*zz"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "*log*i*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "repeatedcharacters",
+        "p": "*eat*char*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcdabcdabcdabcd",
+        "p": "*bcd*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyxxyxyxyx",
+        "p": "*xx*yy*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijkxyz",
+        "p": "*def*xyz"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "abababab",
+        "p": "*aba*ba*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabc",
+        "p": "*abc*abc*abc*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "patternmatchingexample",
+        "p": "*ern*ampl*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeff",
+        "p": "*bb*ee*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcxyzabcxyzabcxyz",
+        "p": "*bc*xy*z*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippiissi",
+        "p": "*iss*issi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "he*ll*ohello"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*def*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "repeatedpattern",
+        "p": "*peat*pat*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "longestsubstring",
+        "p": "*long*string*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "complexpattern",
+        "p": "*plex*ern*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "p": "*tern*match*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeff",
+        "p": "*bb*cc*dd*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*issi*ppi"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabc",
+        "p": "*abc*abc"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "thisisateststring",
+        "p": "*test*string"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "repeatedsubstring",
+        "p": "*peat*string*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "thelongestsubstring",
+        "p": "*long*sub*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "p": "*bra*bra*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "noonnoon",
+        "p": "*on*on*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcde",
+        "p": "*bc*de*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "p": "*aca*aba*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*de*f*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississipi",
+        "p": "*iss*issi"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcd",
+        "p": "*bcd*abcd*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "algorithm",
+        "p": "*log*a*th*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghijabcdefghij",
+        "p": "abc*efg*ij"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "*ell*ello*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "substringsearch",
+        "p": "*bstr*sea*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "repeatedstringrepeatedstring",
+        "p": "*ated*s*ing*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbb",
+        "p": "*aaa*bbb*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefgh",
+        "p": "*bc*d*f*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "p": "*ace*car"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "repeatedrepeated",
+        "p": "*peat*eat*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "*na*na"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "abxycxyzb",
+        "p": "*xy*z*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*def*g*i*j*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "nestednestednestednested",
+        "p": "*est*nest*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "p": "aa*bb*cc"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "pneumonoultramicroscopicsilicovolcanoconiosis",
+        "p": "*micro*cono*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippiissippi",
+        "p": "*iss*ppi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "patternmatchings",
+        "p": "*tern*match*ings"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbb",
+        "p": "*aaaa*b*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "p": "*def*ghijghij"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "ababababab",
+        "p": "*aba*aba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbbccccdddd",
+        "p": "*bbb*ccc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "thisisateststring",
+        "p": "*test*str*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyxyxyxyxyxy",
+        "p": "*xyx*yxy*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "p": "*ace*ca*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "ababababab",
+        "p": "ab*a*ab"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "ababababa",
+        "p": "*aba*aba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "xyzxyzxyz",
+        "p": "*yz*x*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefgh",
+        "p": "*cde*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "programming",
+        "p": "*gram*ming*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzzz",
+        "p": "zz*zz*zz"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "sequenceofcharacters",
+        "p": "*qu*ar*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abababab",
+        "p": "*bab*ab"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaaaaa",
+        "p": "*aaaaa*aa"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*c*gh*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongstringwithseveraloccurrencesofthesubstring",
+        "p": "*is*a*ng*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyxzyzyx",
+        "p": "*xyz*zyx"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "*na*na*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaabaaaabaaaab",
+        "p": "*aaa*b*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "p": "*def*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcde",
+        "p": "*bc*d*e*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "uniquestring",
+        "p": "*niq*ing*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcd",
+        "p": "*bcd*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabc",
+        "p": "*bc*a*bc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "ababababab",
+        "p": "*aba*aba*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*pho*ne*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "*an*a*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "ello*hello*"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "ababababa",
+        "p": "*aba*aba*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*def*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "complexpattern",
+        "p": "*ple*pat*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyxxyxyxyxyx",
+        "p": "*xyx*yx*xyx*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "longerstringhere",
+        "p": "*onge*here*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijj",
+        "p": "*bbcc*ddee*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "exampleexample",
+        "p": "*amp*ple*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "xyzyzyzyzyz",
+        "p": "*zyz*zyz"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "nestednested",
+        "p": "*nes*t*es*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcde",
+        "p": "*bcde*bc"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "zzzzyyyxxxwwww",
+        "p": "*yyy*xxx"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "xylophone",
+        "p": "*pho*ne"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "xyzzzzxyzzzzxyzzzz",
+        "p": "*zzzz*x*y*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "qwertyuiopasdfghjklzxcvbnm",
+        "p": "qw*rt*yui*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "p": "*def*g*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*iss*si*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabcabc",
+        "p": "*bc*ca*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "pneumonoultramicroscopicsilicovolcanoconiosis",
+        "p": "*ultra*micro*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "p": "*def*ghi*def*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "p": "*def*ghi*j*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "p": "*bcd*ef*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcd",
+        "p": "*bcd*abc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aaaaaaaabbbbaaaaa",
+        "p": "*bbb*aaa*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aquickbrownfoxjumpsoverthelazydog",
+        "p": "*quick*dog*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijklmnopqrstuvwxyz",
+        "p": "abc*xyz*"
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "s": "1234567890",
+        "p": "*34*78*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "p": "*cde*ghi*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "*ello*lo*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgghhiijjkk",
+        "p": "*bb*ff*jj*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*def*ghij"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabcabc",
+        "p": "*abc*abcabc"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeff",
+        "p": "*bbcc*ccdd"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "s": "qwertyuiopasdfghjklzxcvbnm",
+        "p": "*ghj*k*xc*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghij",
+        "p": "*abc*def*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "qwertyuiopasdfghjklzxcvbnm",
+        "p": "*qwe*cvb*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijabcdefghij",
+        "p": "*def*g*h*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdeabcdeabcde",
+        "p": "*bcde*bcde"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "thisisaverylongteststring",
+        "p": "*very*test*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "*iss*ss*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "longstringwithvariouscharacters",
+        "p": "*with*char*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "p": "miss*ss*"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcdabcdabcd",
+        "p": "*abc*d*d*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "p": "*an*na*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "patternmatching",
+        "p": "*tern*atch*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "abcdefgabcdefg",
+        "p": "*abc*def*g*"
+      },
+      "expected_output": "Error: too many values to unpack (expected 3)"
+    },
+    {
+      "parameters": {
+        "s": "hellohellohello",
+        "p": "*hello*lo"
+      },
+      "expected_output": 10
+    }
+  ]
+}

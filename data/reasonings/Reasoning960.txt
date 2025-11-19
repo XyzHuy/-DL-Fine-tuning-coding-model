@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of strings, find the minimum number of columns to delete such that each row is lexicographically sorted.
+2. Problem type / algorithm category: Dynamic programming, longest increasing subsequence.
+3. Step-by-step approach: Iterate through each column. For each column, check if it can be added to an increasing subsequence of columns (lexicographically sorted rows). Use dynamic programming to store the longest increasing subsequence ending at each column index. The final answer is the total number of columns minus the length of the longest increasing subsequence.
+4. Edge cases: Empty input, single-character strings, already sorted strings.
+5. Time and space complexity: Time complexity is O(n*m^2) where n is the number of strings and m is the length of the strings. Space complexity is O(m).
+</thinking>

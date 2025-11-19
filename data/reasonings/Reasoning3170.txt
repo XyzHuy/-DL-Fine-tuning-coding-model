@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove all '*' characters from a string by repeatedly deleting the leftmost '*' and its smallest non-'*' character to the left, aiming for the lexicographically smallest result.
+2. Problem type / algorithm category: String manipulation, Greedy approach using a stack-like structure.
+3. Step-by-step approach: Iterate through the string, pushing non-'*' characters onto a list. When a '*' is encountered, find the smallest character in the list to its left and remove it. The "smallest" character is determined by lexicographical order.
+4. Edge cases: String with no '*' characters, string where all characters are '*' (though constraints prevent this if '*' must be removed). The input guarantees all '*' can be removed.
+5. Time and space complexity: Time complexity is O(N^2) in the worst case due to finding the minimum element for each '*' in the list. Space complexity is O(N) for storing the intermediate list.
+</thinking>

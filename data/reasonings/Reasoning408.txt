@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a word can be abbreviated to a given abbreviation string. The abbreviation consists of characters and numbers representing lengths of skipped characters.
+2. Problem type / algorithm category: String manipulation / Two Pointers.
+3. Step-by-step approach: Use two pointers, one for the word and one for the abbreviation. If the abbreviation character is a digit, parse the number and advance the word pointer by that number. If the abbreviation character is a letter, compare it with the corresponding character in the word and advance both pointers if they match. Return false if any mismatch occurs or a leading zero is encountered.
+4. Edge cases: Leading zeros in number abbreviations, the abbreviation reaching the end before the word, or the word reaching the end before the abbreviation.
+5. Time and space complexity: Time complexity is O(N), where N is the length of the abbreviation. Space complexity is O(1).
+</thinking>

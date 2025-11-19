@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to traverse a binary tree and collect the values of its nodes, grouped by level, from left to right.
+2. Problem type / algorithm category: This is a tree traversal problem, specifically solved using Breadth-First Search (BFS) with a queue data structure.
+3. Step-by-step approach: Initialize a queue with the root. While the queue is not empty, determine the number of nodes on the current level. Process exactly that many nodes: dequeue each node, add its value to a temporary list for the current level, and enqueue its children. After processing all nodes of the level, add the temporary list to the final result.
+4. Edge cases: The main edge case is an empty tree (a null root), which should result in an empty list. The solution handles this with an initial check.
+5. Time and space complexity: The time complexity is O(N) because each node is visited once. The space complexity is O(W), where W is the maximum width of the tree, as the queue holds at most one level's nodes at any time. In the worst case of a complete tree, this is O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the percentage of a specific character within a given string, rounding down to the nearest whole number.
+2. Problem type / algorithm category: String manipulation, counting.
+3. Step-by-step approach: Count the occurrences of the target character in the string, divide by the total length of the string, multiply by 100, and cast to an integer to truncate the decimal part.
+4. Edge cases: An empty input string should result in 0%.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string due to the counting operation. Space complexity is O(1) as only a few variables are used.
+</thinking>

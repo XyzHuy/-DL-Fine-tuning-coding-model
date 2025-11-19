@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each node in a linked list, find the value of the first subsequent node that has a strictly larger value. If no such node exists, use 0.
+2. Problem type / algorithm category: Monotonic Stack, Array.
+3. Step-by-step approach: First, convert the linked list to an array for easier random access. Then, iterate through the array, using a monotonic stack to keep track of the indices of elements for which we haven't found a greater element yet. When a new element is found to be greater than the element corresponding to the index at the top of the stack, we pop the stack and update the result for that index.
+4. Edge cases: An empty or single-node list is handled correctly. A list sorted in descending order will result in all zeros, as no element will have a greater one after it.
+5. Time and space complexity: The time complexity is O(N) because we traverse the list to create the array and then iterate through the array once. The space complexity is O(N) for storing the array, the result, and the stack.
+</thinking>

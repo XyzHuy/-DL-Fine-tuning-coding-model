@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find common strings in two lists with the minimum sum of their indices.
+2. Problem type / algorithm category: Hash map, string manipulation.
+3. Step-by-step approach: Store the strings of the second list and their indices in a hash map. Iterate through the first list, check for common strings in the hash map, and update the minimum index sum and the result list accordingly.
+4. Edge cases: Empty lists (handled implicitly), multiple strings with the same minimum index sum.
+5. Time and space complexity: Time: O(m+n), Space: O(min(m,n)), where m and n are lengths of the two lists.
+</thinking>

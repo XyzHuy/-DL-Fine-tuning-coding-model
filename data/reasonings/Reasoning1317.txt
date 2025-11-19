@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two positive integers a and b, both without any zero digits, that sum up to a given integer n.
+2. Problem type / algorithm category: Brute Force / Iterative Search.
+3. Step-by-step approach: Iterate through possible values for the first integer 'a' starting from 1 up to n-1. For each 'a', calculate the second integer 'b' as n-a. Check if both 'a' and 'b' contain any zero digits. If they do not, return [a, b].
+4. Edge cases: The constraint n >= 2 guarantees that at least one solution exists, so we don't need to worry about no possible splits. The loop terminates once a valid pair is found.
+5. Time and space complexity: Time complexity is O(n * log n) due to the loop and string conversions. Space complexity is O(log n) for string conversions.
+</thinking>

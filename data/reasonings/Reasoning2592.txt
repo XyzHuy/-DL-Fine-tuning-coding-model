@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange an array to maximize the count of indices where the permuted element is strictly greater than the original element.
+2. Problem type / algorithm category: Greedy algorithm, Sorting.
+3. Step-by-step approach: Sort the input array `nums`. Use two pointers, one for the sorted `nums` and another for a conceptual permuted array (which can also be represented by the sorted `nums` itself). Iterate through the sorted `nums` using the first pointer. For the second pointer, advance it until it points to an element strictly greater than the current element pointed to by the first pointer. If such an element is found, increment the greatness count and advance both pointers.
+4. Edge cases: Array with all identical elements (greatness will be 0), array with distinct and already sorted elements (greatness will be n-1 if n > 0), empty array (though constraints say length >= 1).
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(N) or O(log N) depending on the sorting algorithm's space usage, or O(1) if in-place sorting is considered.
+</thinking>

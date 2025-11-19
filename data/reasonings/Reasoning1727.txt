@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest rectangular submatrix of all 1s in a binary matrix, where columns can be rearranged.
+2. Problem type / algorithm category: Dynamic Programming and Greedy approach.
+3. Step-by-step approach: Iterate through each row. For each cell, calculate its height of consecutive 1s upwards. Then, sort these heights in descending order for the current row. The maximum area for that row is found by multiplying each sorted height by its rank (index + 1). The overall maximum area is the maximum found across all rows.
+4. Edge cases: Empty matrix or matrix with empty rows.
+5. Time and space complexity: Time complexity is O(m * n log n) due to sorting heights in each of the m rows. Space complexity is O(n) to store the heights.
+</thinking>

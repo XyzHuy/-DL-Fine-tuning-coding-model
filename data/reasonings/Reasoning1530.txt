@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of distinct leaf nodes in a binary tree whose shortest path distance is less than or equal to a given value.
+2. Problem type / algorithm category: Tree Traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Use a post-order DFS traversal. For each node, recursively process its left and right children. The DFS function returns a list of distances from the current node to all leaf nodes in its subtree. When combining results from left and right children, check all pairs of distances (one from left, one from right) to see if their sum is within the allowed distance; if so, increment the global count. Finally, return the updated distances for the current node's subtree (incremented by 1).
+4. Edge cases: An empty tree (root is None), a tree with only one node (which is a leaf), distance value.
+5. Time and space complexity: O(N^2) time in worst case (skewed tree where distance is large), O(N) space for recursion stack and storing distances.
+</thinking>

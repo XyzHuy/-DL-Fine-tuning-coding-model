@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate dropping n balls from the top of an m x n grid, where each cell contains a diagonal board directing the ball left (-1) or right (1). Determine the final column each ball exits or if it gets stuck.
+2. Problem type / algorithm category: Simulation, Grid Traversal.
+3. Step-by-step approach: Iterate through each ball, starting at its initial column. For each ball, traverse down the rows. In each row, determine the next column based on the current column and the board direction. Check for invalid moves (hitting walls or forming a V-shape). If a ball successfully traverses all rows, record its exit column; otherwise, mark it as stuck (-1).
+4. Edge cases: A single column grid, a grid where all balls get stuck immediately, or a grid where all balls exit.
+5. Time and space complexity: Time complexity is O(m*n) because each ball (n balls) traverses at most m rows. Space complexity is O(n) for storing the result array.
+</thinking>

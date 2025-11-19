@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute piles of candies to k children such that each child gets an equal amount, aiming for the maximum possible equal amount per child. Piles can be split but not merged.
+2. Problem type / algorithm category: Binary Search on the answer.
+3. Step-by-step approach: Determine a range for the possible maximum candies per child (1 to max(candies)). Use binary search to find the largest value 'x' such that we can get at least 'k' piles of size 'x' from the given candies. A helper function checks if a given 'x' is feasible by summing up how many piles of size 'x' can be formed from each original pile.
+4. Edge cases: Total candies less than k (return 0). Single pile or very large k.
+5. Time and space complexity: Time complexity is O(N * log(M)) where N is the number of candy piles and M is the maximum number of candies in a pile. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest path in a binary tree where all nodes on the path have the same value. The path doesn't need to pass through the root.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Use DFS to traverse the tree. At each node, recursively find the longest univalue paths in its left and right subtrees. Calculate the lengths of the "arms" extending from the current node to its children if the child's value matches the current node's value. Update the global maximum path length found so far. Return the length of the longer arm to the parent node.
+4. Edge cases: Empty tree (root is None), a single node tree, and paths that do not include the root node.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, making the space complexity O(N). In the best case (balanced tree), H is log(N), making space complexity O(log(N)).
+</thinking>

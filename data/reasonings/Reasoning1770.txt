@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize score by picking elements from either end of nums, multiplying by corresponding multipliers, for m operations.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down).
+3. Step-by-step approach: Define a recursive function `dp(left, i)` representing the maximum score achievable from operation `i` onwards, given that `left` elements have been taken from the beginning of `nums`. At each step, consider taking the element from the current left end or the current right end, calculate the score for both, and return the maximum. Use memoization to store results of subproblems.
+4. Edge cases: When all `m` operations are completed (`i == m`), the score contribution is 0. The base case is implicitly handled by the recursion stopping when `i == m`.
+5. Time and space complexity: Time complexity is O(m*m) because the state is defined by `left` (0 to m) and `i` (0 to m). Space complexity is O(m*m) due to the memoization table (or cache).
+</thinking>

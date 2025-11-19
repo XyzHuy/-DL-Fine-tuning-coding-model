@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subsequence where the sum of adjacent elements modulo k is constant.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a DP table (dictionary) where dp[(i, remainder)] stores the longest valid subsequence ending at index i with the last two elements summing to 'remainder' modulo k. Iterate through all pairs of previous elements to extend subsequences.
+4. Edge cases: A subsequence of length 1 is always valid. The minimum length of nums is 2, so at least one pair can be formed.
+5. Time and space complexity: O(n^2) time due to nested loops, O(n*k) space for the DP table in the worst case.
+</thinking>

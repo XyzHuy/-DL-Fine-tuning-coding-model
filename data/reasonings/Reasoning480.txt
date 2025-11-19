@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers `nums` and an integer `k`, find the median of each sliding window of size `k` as it moves from left to right across the array.
+2. Problem type / algorithm category: Sliding Window, Median Finding, Sorted List (using `sortedcontainers` library).
+3. Step-by-step approach: Use a sorted list (`SortedList`) to maintain the elements within the current window. For each window, calculate the median based on whether `k` is even or odd. Slide the window by removing the element that is no longer in the window and adding the new element.
+4. Edge cases: Empty input array, k=1, k larger than array size (handled by the problem constraints). Cases where k is even or odd need different median calculations.
+5. Time and space complexity: Time complexity is O(n log k) because we iterate through n elements and each add/remove operation on the sorted list takes O(log k) time. Space complexity is O(k) to store the sorted list representing the window, and O(n) for the result list.
+</thinking>

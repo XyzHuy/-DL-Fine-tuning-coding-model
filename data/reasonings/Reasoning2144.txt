@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of buying all candies, given a buy-two-get-one-free deal where the free candy must be less than or equal to the minimum of the two bought.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Sort the candies by cost in descending order. Iterate through the sorted candies, adding every candy's cost to the total. For every third candy encountered (which will be the cheapest of a group of three), subtract its cost from the total, effectively making it free.
+4. Edge cases: When the number of candies is less than 3, no candy can be free, so the sum of all costs is the minimum cost.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N). Space complexity is O(1) if sorting in-place, or O(N) if a new sorted list is created.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate Pascal's triangle up to a specified number of rows. Each element is the sum of the two elements directly above it.
+2. Problem type / algorithm category: Dynamic Programming / Array
+3. Step-by-step approach: Initialize the triangle with the first row [1]. Iterate from the second row up to numRows. For each row, the first and last elements are always 1. The intermediate elements are the sum of the two elements directly above them in the previous row.
+4. Edge cases: numRows = 0 (return []), numRows = 1 (return [[1]]).
+5. Time and space complexity: Time complexity is O(numRows^2) because we iterate through each row and each element in the row. Space complexity is O(numRows^2) to store the triangle.
+</thinking>

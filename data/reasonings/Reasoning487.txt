@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary array, find the maximum number of consecutive 1's achievable by flipping at most one 0 to 1.
+2. Problem type / algorithm category: Sliding window.
+3. Step-by-step approach: Use a sliding window to maintain a window with at most one 0. Expand the window to the right. If the number of 0's exceeds 1, shrink the window from the left until the number of 0's is at most 1. Update the maximum length of consecutive ones during the sliding window process.
+4. Edge cases: Empty array (should return 0, although the constraint says array length is at least 1), array with all 1s (should return array length).
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input array. Space complexity is O(1).
+</thinking>

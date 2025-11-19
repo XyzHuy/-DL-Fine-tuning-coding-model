@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an m x n matrix, sort each diagonal in ascending order.
+2. Problem type / algorithm category: Matrix traversal and sorting.
+3. Step-by-step approach: Group matrix elements by their diagonal identifier (row - col), sort each group, and then place the sorted elements back into the matrix.
+4. Edge cases: Empty matrix, single row/column matrix, matrix with all same elements.
+5. Time and space complexity: O(m*n*log(min(m,n))) time, O(m*n) space for storing diagonals.
+</thinking>

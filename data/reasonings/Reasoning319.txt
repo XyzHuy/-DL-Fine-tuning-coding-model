@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine how many bulbs are left on after n rounds of toggling, where in the ith round, every ith bulb is toggled.
+2. Problem type / algorithm category: Math, number theory.
+3. Step-by-step approach: A bulb will be on at the end if it has been toggled an odd number of times. The number of times a bulb is toggled corresponds to the number of its divisors. Only perfect squares have an odd number of divisors. Therefore, we need to find the number of perfect squares less than or equal to n. This is equivalent to the integer square root of n.
+4. Edge cases: n = 0, n = 1.
+5. Time and space complexity: Time complexity is O(1) due to the square root operation. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of ways to distribute n candies among 3 children, where each child receives at most 'limit' candies.
+2. Problem type / algorithm category: Combinatorics, Inclusion-Exclusion Principle.
+3. Step-by-step approach: Use the stars and bars method to find total combinations without limits, then apply inclusion-exclusion to subtract invalid combinations where one or more children exceed the limit.
+4. Edge cases: The total number of candies 'n' might be too large to distribute even with the limit (n > 3 * limit), or 'n' might be so small that no child can exceed the limit naturally.
+5. Time and space complexity: Time complexity is O(1) as it involves constant time mathematical operations. Space complexity is O(1).
+</thinking>

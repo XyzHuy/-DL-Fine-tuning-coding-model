@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform all elements in nums to a target value from queries using increment/decrement operations, minimizing operations for each query independently.
+2. Problem type / algorithm category: Prefix Sums and Binary Search.
+3. Step-by-step approach: Sort nums. Precompute prefix sums of sorted nums. For each query, use binary search (bisect_left) to find the split point in sorted nums. Calculate operations for elements smaller than the query and elements larger than or equal to the query using prefix sums and the split point. Sum these operations.
+4. Edge cases: Empty nums or queries array. All numbers in nums are smaller than the query. All numbers in nums are larger than the query. Single element in nums.
+5. Time and space complexity: Time O(N log N + M log N), Space O(N).
+</thinking>

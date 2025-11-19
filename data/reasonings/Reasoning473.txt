@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given array of matchstick lengths can be used to form a square without breaking any sticks and using each stick exactly once.
+2. Problem type / algorithm category: Backtracking / Depth-First Search (DFS), Combinatorial search
+3. Step-by-step approach: Calculate the perimeter and check if it's divisible by 4. If not, return false. Calculate side length. Sort matchsticks in descending order for optimization. Use DFS to try assigning each matchstick to one of the four sides. Backtrack if a placement doesn't lead to a solution.
+4. Edge cases: Array length less than 4, perimeter not divisible by 4, a single matchstick being longer than the side length.
+5. Time and space complexity: Time complexity is O(4^n) in the worst case where n is the number of matchsticks. Space complexity is O(n) due to recursion depth.
+</thinking>

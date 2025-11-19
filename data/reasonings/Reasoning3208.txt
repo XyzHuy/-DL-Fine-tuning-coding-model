@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous segments of length k in a circular array where colors alternate.
+2. Problem type / algorithm category: Sliding window, array traversal.
+3. Step-by-step approach: Iterate through all possible starting positions of a group of size k. For each starting position, check if the k tiles form an alternating pattern, considering the circular nature. Increment a counter if the pattern is alternating.
+4. Edge cases: The input array represents a circle, so checks must wrap around. Minimum k is 3. Minimum array length is 3.
+5. Time and space complexity: Time complexity is O(N*K) because for each of the N possible starting points, we check K elements. Space complexity is O(1) as we only use a few variables.
+</thinking>

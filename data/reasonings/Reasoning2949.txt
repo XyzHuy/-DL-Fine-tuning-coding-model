@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-empty substrings where the count of vowels equals the count of consonants, and their product is divisible by k.
+2. Problem type / algorithm category: Brute Force with Prefix Sum Optimization.
+3. Step-by-step approach: Iterate through all possible substrings. For each substring, calculate the number of vowels and consonants using precomputed prefix sums. Check if the vowel count equals the consonant count and if their product is divisible by k. Increment a counter if both conditions are met.
+4. Edge cases: Empty string (not possible per constraints), string with only vowels or only consonants, k=1, no beautiful substrings.
+5. Time and space complexity: O(n^2) time due to nested loops for substrings, O(n) space for prefix sum array.
+</thinking>

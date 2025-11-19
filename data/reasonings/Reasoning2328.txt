@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count all strictly increasing paths in a grid, starting and ending anywhere, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down DFS).
+3. Step-by-step approach: Use DFS with memoization to calculate the number of strictly increasing paths starting from each cell. Sum these counts for all cells, modulo 10^9 + 7.
+4. Edge cases: A single cell constitutes a path of length 1. Ensure valid boundary checks for adjacent cells.
+5. Time and space complexity: Time complexity is O(m*n) due to visiting each cell and its neighbors once. Space complexity is O(m*n) for the memoization table and recursion stack.
+</thinking>

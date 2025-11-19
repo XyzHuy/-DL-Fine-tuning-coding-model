@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of special subsequences (0s followed by 1s followed by 2s, each appearing at least once) in a given array of 0s, 1s, and 2s. Return the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, Counting subsequences.
+3. Step-by-step approach: Iterate through the array maintaining counts of subsequences ending with 0 (end0), 1 (end1), and 2 (end2). When a 0 is encountered, update end0 by doubling existing subsequences ending in 0 and adding 1 for the new 0. For a 1, double existing end1 subsequences and add all end0 subsequences. For a 2, double existing end2 subsequences and add all end1 subsequences. Perform calculations modulo 10^9 + 7.
+4. Edge cases: Empty array (not possible due to constraints), arrays with only one type of number, arrays where the order is not strictly increasing 0s, 1s, 2s. The modulo operation handles large numbers.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

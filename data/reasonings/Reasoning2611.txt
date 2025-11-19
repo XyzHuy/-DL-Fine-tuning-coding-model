@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total points by assigning n cheese types to two mice, where the first mouse eats exactly k types and the second eats the rest.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Calculate the reward difference (reward1[i] - reward2[i]) for each cheese. Sort these differences in descending order. The first mouse should take the k cheeses with the largest positive differences to maximize its gain. The total score is the sum of all reward2[i] plus the top k differences.
+4. Edge cases: k = 0 (first mouse eats nothing, second mouse eats all), k = n (first mouse eats all, second mouse eats nothing).
+5. Time and space complexity: Time is dominated by sorting the differences, O(n log n). Space complexity is O(n) to store the differences.
+</thinking>

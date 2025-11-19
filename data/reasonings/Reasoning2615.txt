@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate for each element in an array, the sum of absolute differences between its index and the indices of all other elements with the same value.
+2. Problem type / algorithm category: Array manipulation, Hash Map, Prefix Sum.
+3. Step-by-step approach: Group indices by their corresponding values using a hash map. For each group of indices with the same value, calculate the sum of distances by iterating through the indices and using prefix and suffix sums for efficient calculation of sums of distances to the left and right.
+4. Edge cases: Elements that appear only once in the array have a sum of distances of 0.
+5. Time and space complexity: Time complexity is O(N) and space complexity is O(N), where N is the length of the input array.
+</thinking>

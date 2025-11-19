@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all index pairs [i, j] in the input string `text` such that the substring `text[i:j+1]` exists in the input array of strings `words`. Return the index pairs in sorted order.
+2. Problem type / algorithm category: String searching / Brute force
+3. Step-by-step approach: Iterate through all possible substrings of the given text by using nested loops. The outer loop iterates from `i = 0` to `n-1`, and the inner loop iterates from `j = i` to `n-1`, where `n` is the length of `text`. For each substring `text[i:j+1]`, check if it exists in the `words` array. If it does, add the index pair `[i, j]` to the result list. Finally, sort the result list and return it. Convert words to a set for faster lookup.
+4. Edge cases: Empty text, empty words array, overlapping matches.
+5. Time and space complexity: Time complexity is O(n^3 + m log m), where n is the length of the text and m is the number of matching index pairs. The n^3 comes from the nested for loops O(n^2) to create substrings and the string comparison with words O(n). The m log m comes from the sorting. The space complexity is O(m), where m is the number of matching index pairs, since we store the result in a list of pairs. Converting the word array to a set takes O(k) space where k is the number of words.
+</thinking>

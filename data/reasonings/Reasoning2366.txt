@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make an array non-decreasing by splitting elements into two numbers that sum to the original.
+2. Problem type / algorithm category: Greedy algorithm, Array manipulation.
+3. Step-by-step approach: Iterate from right to left. If an element is greater than its right neighbor, split it into multiple parts such that each part is less than or equal to the right neighbor, minimizing splits. The number of splits is determined by dividing the current element by its right neighbor, rounded up. Update the current element to be the largest possible value after splitting, and add the number of splits minus one to the total operations.
+4. Edge cases: Array is already sorted (0 operations), array with a single element (0 operations).
+5. Time and space complexity: Time: O(N), Space: O(1).
+</thinking>

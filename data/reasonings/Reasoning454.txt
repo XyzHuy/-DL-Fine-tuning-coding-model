@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given four integer arrays, find the number of tuples (i, j, k, l) such that nums1[i] + nums2[j] + nums3[k] + nums4[l] == 0.
+2. Problem type / algorithm category: Hashing, Two Pointers (not applicable here but the idea of reducing to 2sum), Counting.
+3. Step-by-step approach: Create a hash map to store the sum of each pair from nums1 and nums2, along with the frequency. Then, iterate through nums3 and nums4, and for each pair, check if the negative of their sum exists in the hash map. If it exists, increment the count by the frequency of that negative sum.
+4. Edge cases: Empty arrays, arrays with a single element, arrays with large numbers (though constraints limit size). The constraints specify the range, so overflow isn't a major concern.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(n^2) in the worst case, to store the sums in the hash map.
+</thinking>

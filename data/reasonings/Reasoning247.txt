@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, generate all strobogrammatic numbers of length n.
+2. Problem type / algorithm category: Backtracking, Recursion.
+3. Step-by-step approach: Use a recursive depth-first search (DFS) approach. The base cases are n=0 and n=1. For n > 1, recursively generate strobogrammatic numbers of length n-2, and then add pairs ('11', '88', '69', '96') around them. For the case when the current length is not the initial n, also add '0' at both ends.
+4. Edge cases: n = 0, n = 1. Also avoid leading zeros except for the single digit "0".
+5. Time and space complexity: Time complexity is O(5^(n/2)) because each recursion branches into 5 possibilities. Space complexity is O(n*5^(n/2)) to store the strobogrammatic numbers and the call stack.
+</thinking>

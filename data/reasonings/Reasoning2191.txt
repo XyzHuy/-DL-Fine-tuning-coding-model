@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort an array of integers based on their mapped values, where digits are remapped according to a given rule, maintaining relative order for equal mapped values.
+2. Problem type / algorithm category: Sorting, Custom Sort Key, Number Transformation.
+3. Step-by-step approach: Define a helper function to transform a number by applying the mapping to each of its digits. Create tuples for each number containing its mapped value, original index, and the original number. Sort these tuples primarily by mapped value and secondarily by original index. Extract the original numbers from the sorted tuples to form the final result.
+4. Edge cases: The number 0 needs special handling. Numbers with leading zeros in their mapped form should be treated as if the zeros are removed (e.g., 007 becomes 7). Identical mapped values require stable sorting.
+5. Time and space complexity: Time complexity is dominated by the sorting step, which is O(N log N) where N is the number of elements in nums. The mapping transformation takes time proportional to the number of digits in each number. Space complexity is O(N) to store the mapped values and original indices.
+</thinking>

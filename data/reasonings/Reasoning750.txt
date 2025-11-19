@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix of 0s and 1s, count the number of axis-aligned rectangles formed by four distinct 1s.
+2. Problem type / algorithm category: Matrix traversal, combinatorics.
+3. Step-by-step approach: Iterate through all pairs of rows. For each pair, count the number of columns that have 1s in both rows. If this count is greater than or equal to 2, calculate the number of ways to choose 2 columns from these common columns (n choose 2), which represents the number of rectangles that can be formed with these two rows as the top and bottom.
+4. Edge cases: Empty grid, grid with dimensions 1xN or Mx1, cases with no rectangles.
+5. Time and space complexity: Time complexity is O(m^2 * n) where m is the number of rows and n is the number of columns. Space complexity is O(1).
+</thinking>

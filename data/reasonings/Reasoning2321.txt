@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two integer arrays nums1 and nums2 of equal length, we can swap a subarray from nums1 with the corresponding subarray in nums2 once. The goal is to maximize the score, which is the maximum of the sums of the modified nums1 and nums2.
+2. Problem type / algorithm category: Dynamic Programming (Kadane's Algorithm variant) for Maximum Subarray Sum.
+3. Step-by-step approach: Calculate the initial sums of nums1 and nums2. For each array, consider the effect of swapping a subarray from the other array. This can be framed as finding the maximum subarray sum of the difference array (e.g., nums2[i] - nums1[i]). Apply Kadane's algorithm to find the maximum possible increase in sum for nums1 by swapping a subarray from nums2, and vice-versa. The final answer is the maximum of the initial sums and the sums after the best possible swap.
+4. Edge cases: The subarray swap can be of length 0 (i.e., no swap, which means no operation performed). The Kadane's algorithm variant needs to handle cases where all differences are negative, correctly returning 0 for no effective swap.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the arrays a constant number of times. Space complexity is O(1) as we only use a few variables to store sums and maximum differences.
+</thinking>

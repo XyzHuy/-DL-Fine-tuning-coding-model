@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a positive integer, find the minimum number of operations to reduce it to 1 by either dividing by 2 if even, or adding/subtracting 1 if odd.
+2. Problem type / algorithm category: Math, Bit Manipulation, Recursion (can be solved iteratively too)
+3. Step-by-step approach: Iteratively apply the operations based on whether n is even or odd. If even, divide by 2. If odd, decide whether to add or subtract 1. Special care is taken for odd numbers. If n is 3 or if the last two bits of n are '01', subtracting 1 is the better choice. Otherwise, adding 1 is the better choice.
+4. Edge cases: n = 1 (already at 1, 0 operations), n = 3 (specifically handled to subtract), large values of n up to 2^31 - 1.
+5. Time and space complexity: O(log n) time complexity, since n is roughly halved in each iteration. O(1) space complexity, as only a counter is used.
+</thinking>

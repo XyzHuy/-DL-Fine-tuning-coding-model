@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign non-negative heights to cells in a grid, where water cells have height 0 and adjacent cells have an absolute height difference of at most 1, maximizing the overall maximum height.
+2. Problem type / algorithm category: Breadth-First Search (BFS) on a grid.
+3. Step-by-step approach: Initialize all land cells with an unknown height (-1) and all water cells with height 0, adding water cells to a queue. Perform BFS, exploring neighbors of cells in the queue. If a neighbor is a land cell that hasn't been visited, assign it a height one greater than its parent and add it to the queue.
+4. Edge cases: The grid can contain only water cells (guaranteed at least one), or only land cells (not possible by constraints). All land cells will eventually be reached from water cells if the grid is connected.
+5. Time and space complexity: Time complexity is O(m*n) because each cell is visited and processed at most once. Space complexity is O(m*n) to store the height matrix and the BFS queue in the worst case.
+</thinking>

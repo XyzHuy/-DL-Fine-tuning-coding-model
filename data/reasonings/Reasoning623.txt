@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, add a row of nodes with a given value at a specified depth.
+2. Problem type / algorithm category: Tree traversal, specifically level-order traversal (BFS).
+3. Step-by-step approach: If depth is 1, create a new root. Otherwise, use level-order traversal to reach depth-1. At depth-1, create new nodes with the given value as children, shifting the existing subtrees.
+4. Edge cases: Empty tree, depth is 1 (insert at the root), depth is greater than the tree's depth.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node. Space complexity is O(W), where W is the maximum width of the tree, due to the queue used in level-order traversal.
+</thinking>

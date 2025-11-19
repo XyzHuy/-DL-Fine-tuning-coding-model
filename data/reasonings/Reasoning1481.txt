@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reduce the number of unique integers in an array by removing exactly k elements.
+2. Problem type / algorithm category: Greedy, Frequency Counting, Sorting.
+3. Step-by-step approach: Count frequencies of each number, sort unique numbers by their frequencies, then greedily remove numbers with lowest frequencies until k removals are exhausted.
+4. Edge cases: k=0 (no removals), k equals array length (all elements removed), array with all same elements.
+5. Time and space complexity: Time O(N log N) due to sorting frequencies, Space O(N) for frequency map.
+</thinking>

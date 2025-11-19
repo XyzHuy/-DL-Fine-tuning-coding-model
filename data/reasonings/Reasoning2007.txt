@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a shuffled array `changed` that might be formed by doubling elements of an `original` array and appending those doubles, determine if `changed` is indeed a doubled array and return `original` if it is, otherwise return an empty array.
+2. Problem type / algorithm category: Array manipulation, frequency counting, greedy approach.
+3. Step-by-step approach: First, check if the length of `changed` is odd; if so, it cannot be a doubled array. Then, count the occurrences of each number in `changed`. Iterate through the sorted `changed` array. For each number `x`, if its count is greater than zero, check if its double `2*x` also exists and has a count greater than zero. If both exist, add `x` to the `original` array and decrement the counts of both `x` and `2*x`. If `2*x` does not exist or has a count of zero, `changed` is not a doubled array.
+4. Edge cases: The length of `changed` being odd, the presence of zero as an element, and elements not having their corresponding double in the array.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(N) for the frequency counter.
+</thinking>

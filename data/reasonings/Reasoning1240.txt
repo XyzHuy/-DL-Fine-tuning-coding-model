@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Tile an n x m rectangle using the minimum number of integer-sided squares.
+2. Problem type / algorithm category: Backtracking, Dynamic Programming (implicit through overlapping subproblems, though the provided solution is pure backtracking).
+3. Step-by-step approach: Use a recursive backtracking function. Maintain the current height of filled columns. Find the lowest uncovered column, then try placing squares of decreasing sizes starting from that column, updating the heights and recursively calling for the remaining area. Prune branches if the current number of moves exceeds the minimum found so far.
+4. Edge cases: The constraints n, m <= 13 are small, suggesting that an exponential solution like backtracking is feasible. Cases where n == m are trivial (1 square).
+5. Time and space complexity: The exact complexity is hard to determine due to the nature of the state space and pruning, but it's exponential in the worst case. Space complexity is dominated by the recursion depth, which can be O(n*m) in the worst case.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique subsets of an integer array that may contain duplicate numbers.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Sort the array. Use a recursive depth-first search (DFS) to explore including or excluding each number. Skip duplicate numbers to avoid duplicate subsets. Add a copy of the current subset to the result when the end of the array is reached.
+4. Edge cases: Empty input array, array with only one element, array with all duplicate elements.
+5. Time and space complexity: O(N * 2^N) time complexity where N is the number of elements, due to generating all possible subsets. O(N) space complexity due to the recursion stack and the subset list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct an array of n distinct positive integers such that no two elements sum to target, minimizing the total sum modulo 10^9 + 7.
+2. Problem type / algorithm category: Greedy approach with number theory for sum calculation.
+3. Step-by-step approach: To minimize the sum, greedily pick the smallest available positive integers. If picking a number `x` would create a pair `(x, target - x)` that sums to `target`, avoid `x` and consider the next smallest available number. This suggests picking numbers less than or equal to `target / 2` first, as these are less likely to have their complements already picked.
+4. Edge cases: When n is small enough to fit within numbers less than target/2, or when n is larger and requires including numbers greater than or equal to target.
+5. Time and space complexity: O(1) time complexity and O(1) space complexity due to direct calculation.
+</thinking>

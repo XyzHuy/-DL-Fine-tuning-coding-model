@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate passing a pillow in a line of n people, changing direction at the ends, and find who has it after a given time.
+2. Problem type / algorithm category: Simulation, Pattern Recognition, Modular Arithmetic.
+3. Step-by-step approach: Calculate the total length of a full forward and backward pass (2 * (n - 1)). Determine how many full cycles occur and the remaining time. Use the remaining time to find the final position by checking if it's a forward or backward movement within the last partial cycle.
+4. Edge cases: The problem constraints ensure n >= 2, so there are always at least two people. time is positive. The logic handles cases where time is less than a full cycle and where it is a multiple of a full cycle.
+5. Time and space complexity: O(1) time complexity as calculations are constant time. O(1) space complexity as only a few variables are used.
+</thinking>

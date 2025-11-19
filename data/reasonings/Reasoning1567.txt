@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a contiguous subarray with a strictly positive product.
+2. Problem type / algorithm category: Dynamic Programming / Array traversal.
+3. Step-by-step approach: Iterate through the array, maintaining the current length of subarrays ending at the current position with positive and negative products. Update these lengths based on the current element. Zeros reset both lengths. The maximum positive length encountered is the answer.
+4. Edge cases: Arrays containing only zeros, arrays containing only negative numbers, arrays with a single element, and arrays with no negative numbers.
+5. Time and space complexity: O(n) time complexity and O(1) space complexity.
+</thinking>

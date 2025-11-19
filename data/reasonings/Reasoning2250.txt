@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of rectangles defined by their top-right corners (bottom-left is at 0,0) and a list of points, count how many rectangles contain each point.
+2. Problem type / algorithm category: Geometric Counting, Data Structures (Hash Map/Dictionary), Binary Search.
+3. Step-by-step approach: Group rectangle lengths by their heights. Sort these lengths for efficient searching. For each point, iterate through possible heights from the point's y-coordinate up to the maximum possible height (100). For each relevant height, use binary search to find how many rectangles have a length greater than or equal to the point's x-coordinate. Sum these counts.
+4. Edge cases: Points with y-coordinates greater than 100 will not be contained by any rectangle (as max height is 100). Rectangles with heights not present in the input will not contribute. Points on the edge of a rectangle are considered contained.
+5. Time and space complexity: Time complexity is O(N*H + M*log(N)) where N is the number of rectangles, M is the number of points, and H is the maximum height (100). Space complexity is O(N) for storing grouped lengths.
+</thinking>

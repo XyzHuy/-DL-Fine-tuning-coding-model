@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the count of numbers in an unknown array (n) and all possible subset sums (2^n sums), reconstruct the original array.
+2. Problem type / algorithm category: Backtracking, meet-in-the-middle, or constructive algorithm using properties of subset sums.
+3. Step-by-step approach: Start with the smallest subset sum (0). At each step, identify a potential element of the original array by finding the smallest remaining sum and its difference from 0. Remove sums that can be formed with this element and existing elements. Repeat for n elements. Adjust signs if necessary based on the smallest negative sum.
+4. Edge cases: An array containing only zeros, or arrays with positive and negative numbers. The problem guarantees at least one solution exists.
+5. Time and space complexity: The time complexity is dominated by subset sum generation and removal, potentially O(n * 2^n * n) or O(n * 2^n) depending on implementation details of sum removal. Space complexity is O(2^n) to store the sums.
+</thinking>

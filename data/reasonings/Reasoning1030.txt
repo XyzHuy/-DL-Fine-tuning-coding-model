@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix and a center cell, return all cells sorted by Manhattan distance from the center.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS starting from the center cell. Maintain a visited matrix to avoid cycles. Add valid neighbors to the queue. Append the current cell to the answer list.
+4. Edge cases: Empty matrix (rows or cols is 0), center is out of bounds (handled implicitly by constraints), ensure all cells are reachable.
+5. Time and space complexity: Time complexity is O(rows * cols) as each cell is visited once. Space complexity is O(rows * cols) for the queue and visited matrix.
+</thinking>

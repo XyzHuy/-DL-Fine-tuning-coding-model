@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total number of beans removed from bags so that all remaining non-empty bags have an equal number of beans.
+2. Problem type / algorithm category: Greedy, Sorting.
+3. Step-by-step approach: Sort the array of beans. Iterate through each possible target bean count (which must be one of the original bean counts after sorting). For each target count `x` at index `i`, the beans to keep are `x` for all bags from index `i` onwards (total `n-i` bags). Calculate the total beans to remove for this target, and find the minimum across all targets.
+4. Edge cases: An array with a single bean bag, or all bean bags having the same number of beans.
+5. Time and space complexity: Time: O(N log N) for sorting, O(N) for iteration, overall O(N log N). Space: O(1) or O(N) depending on sort implementation.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Modify an array by doubling adjacent equal elements and zeroing the second, then move all zeros to the end.
+2. Problem type / algorithm category: Array manipulation, Linear scan.
+3. Step-by-step approach: Iterate through the array, applying the doubling and zeroing rule for adjacent equal elements. Then, create a new array by filtering out non-zero elements and appending the required number of zeros.
+4. Edge cases: Array with only zeros, array with no adjacent equal elements, array with all elements equal, minimum array size of 2.
+5. Time and space complexity: Time O(n) due to two passes, space O(n) for the new result array.
+</thinking>

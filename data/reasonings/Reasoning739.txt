@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of daily temperatures, find for each day how many days one has to wait until a warmer day.
+2. Problem type / algorithm category: Stack, Array
+3. Step-by-step approach: Iterate through the temperatures, maintain a stack of indices of days for which we haven't found a warmer day. If current day is warmer than the day at the top of the stack, pop the stack and calculate the waiting days.
+4. Edge cases: Empty input list, monotonically decreasing temperatures.
+5. Time and space complexity: Time: O(n), Space: O(n)
+</thinking>

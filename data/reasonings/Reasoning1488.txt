@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array representing rain events on specific lakes, where 0 indicates a dry day, determine a schedule to dry lakes on dry days to prevent floods. If a lake receives rain and is already full, it floods. Return the schedule or an empty array if impossible.
+2. Problem type / algorithm category: Greedy algorithm with data structures (dictionary and sorted list/binary search).
+3. Step-by-step approach: Iterate through the days. If it rains, mark the lake as full and check if it was already full; if so, find the earliest available dry day *after* the last rain to dry it. If it's a dry day, add it to a list of available drying days. If a flood is unavoidable, return an empty array.
+4. Edge cases: No dry days available to prevent a flood, all lakes dry up successfully, empty input array (though constraints prevent this).
+5. Time and space complexity: O(N log N) time due to binary search on dry days for each rain event, O(N) space for storing full lake history and dry days.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the size of the largest subset of `candidates` whose bitwise AND is greater than 0.
+2. Problem type / algorithm category: Bit manipulation, greedy approach.
+3. Step-by-step approach: Iterate through each bit position. For each bit position, count how many numbers in `candidates` have that bit set to 1. The maximum count across all bit positions represents the size of the largest combination because if a bit is set in multiple numbers, their bitwise AND will also have that bit set, resulting in a positive AND value.
+4. Edge cases: The input array `candidates` can contain duplicate numbers. All numbers are positive integers. The constraints on the length of `candidates` and the value of its elements are important.
+5. Time and space complexity: Time complexity is O(N * K) where N is the number of candidates and K is the number of bits in the largest candidate (approximately log(max(candidates))). Space complexity is O(K) to store the counts for each bit position.
+</thinking>

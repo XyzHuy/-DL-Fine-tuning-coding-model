@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum possible value of a number after swapping two of its digits at most once.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Convert the number to a string, then iterate through the digits. For each digit, search for a larger digit that appears later in the number. If such a digit is found, swap them and return the resulting number. If no swap is made, return the original number.
+4. Edge cases: Single-digit numbers, already maximum valued numbers (e.g., 9973), numbers starting with 0 (the problem statement doesn't specify any behavior in that case, so no special handling is required).
+5. Time and space complexity: Time complexity is O(N), where N is the number of digits in the input number. Space complexity is O(1), considering the dictionary size is at most 10 (for digits 0-9).
+</thinking>

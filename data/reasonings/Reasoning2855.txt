@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum right shifts to sort an array of distinct positive integers or return -1 if impossible.
+2. Problem type / algorithm category: Array manipulation, searching for a pattern.
+3. Step-by-step approach: Locate the first "descent" in the array. If none, it's sorted (0 shifts). If one descent, check if the remaining elements maintain order and if the last element is smaller than the first. If these conditions hold, calculate shifts based on the descent point. Otherwise, it's impossible (-1).
+4. Edge cases: Array is already sorted, array has more than one "descent" point, or the last element is greater than the first element after a potential single descent.
+5. Time and space complexity: O(n) time complexity as we iterate through the array at most twice. O(1) space complexity as we only use a few variables.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum difference between the longest and shortest price sum paths starting from any node as the root in an undirected tree.
+2. Problem type / algorithm category: Tree traversal (DFS), Dynamic Programming on Trees.
+3. Step-by-step approach: 1. Build an adjacency list representation of the tree. 2. For each node, perform a Depth First Search (DFS) to calculate the maximum and second maximum path sums that can be formed starting from that node and going down into its subtrees. 3. The cost for a chosen root is the difference between its maximum path sum and its own price (which represents the minimum path sum to itself). 4. Iterate through all possible roots, calculate their costs, and return the maximum cost found.
+4. Edge cases: A single node tree (n=1), a linear tree (path graph).
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited a constant number of times during graph construction and DFS. Space complexity is O(N) for storing the adjacency list and recursion stack.
+</thinking>

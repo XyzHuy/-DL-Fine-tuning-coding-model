@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the median of a matrix with an odd number of elements where each row is sorted.
+2. Problem type / algorithm category: Binary search on the answer, with binary search within rows.
+3. Step-by-step approach: Determine the search space for the median (min to max element). Perform binary search on this range. For each candidate median `mid`, count elements less than or equal to `mid` in the entire matrix using binary search on each sorted row. Adjust the search space based on whether the count is sufficient for the median position.
+4. Edge cases: Matrix with a single row or column. All elements are the same.
+5. Time and space complexity: O(m * log n * log(max_val - min_val)) time, O(1) space.
+</thinking>

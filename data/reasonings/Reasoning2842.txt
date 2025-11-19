@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of k-length subsequences with unique characters that achieve the maximum possible beauty, where beauty is the sum of frequencies of characters in the subsequence.
+2. Problem type / algorithm category: Combinatorics, Frequency Counting, Greedy Approach.
+3. Step-by-step approach: Calculate character frequencies, sort frequencies descending. The max beauty is the sum of the top k frequencies. Identify the k-th largest frequency and count how many characters have this frequency. Calculate combinations to choose characters for the k-th frequency. Multiply counts and frequencies to get the total number of combinations, modulo 10^9 + 7.
+4. Edge cases: String length less than k, not enough unique characters.
+5. Time and space complexity: Time complexity is O(N + U log U) where N is string length and U is number of unique characters (at most 26). Space complexity is O(U) for frequency map.
+</thinking>

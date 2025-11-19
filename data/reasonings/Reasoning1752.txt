@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array is a rotated version of a non-decreasingly sorted array.
+2. Problem type / algorithm category: Array manipulation, pattern recognition.
+3. Step-by-step approach: Iterate through the array, counting the number of "breaks" where a number is greater than the next (considering wrap-around). If there's more than one break, it's not a valid rotated sorted array.
+4. Edge cases: Arrays with all identical elements (zero breaks), arrays that are already sorted (zero breaks), arrays with a single break (one break).
+5. Time and space complexity: O(n) time complexity for a single pass, O(1) space complexity for constant extra variables.
+</thinking>

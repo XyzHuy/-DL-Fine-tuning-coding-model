@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) in an array where i < j and j - i != nums[j] - nums[i].
+2. Problem type / algorithm category: Counting, Hash Map (Dictionary/Counter).
+3. Step-by-step approach: Rearrange the bad pair condition to nums[j] - j != nums[i] - i. Count total pairs and subtract good pairs. Good pairs are those where nums[j] - j == nums[i] - i. Use a hash map to count frequencies of nums[k] - k. For each frequency f, f*(f-1)/2 is the number of good pairs with that specific difference.
+4. Edge cases: Array with one element (no pairs, 0 bad pairs), array with all elements forming good pairs.
+5. Time and space complexity: Time complexity O(N) due to single pass for differences and counter. Space complexity O(N) for the hash map to store differences.
+</thinking>

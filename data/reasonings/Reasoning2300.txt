@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (spell, potion) where spell strength * potion strength >= success.
+2. Problem type / algorithm category: Array manipulation, Sorting, Binary Search.
+3. Step-by-step approach: Sort potions. For each spell, calculate the minimum required potion strength. Use binary search on sorted potions to find the first potion meeting this minimum. The count of successful pairs for that spell is the number of potions from that index to the end.
+4. Edge cases: Empty spells or potions array (handled by constraints as 1 <= n, m). Success value being very large or small. Potions or spells values being 1.
+5. Time and space complexity: Time: O(M log M + N log M), Space: O(1) or O(N) for output.
+</thinking>

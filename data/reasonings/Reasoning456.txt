@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find if there exists a subsequence of three integers nums[i], nums[j] and nums[k] such that i < j < k and nums[i] < nums[k] < nums[j].
+2. Problem type / algorithm category: Array, Stack, Pattern finding.
+3. Step-by-step approach: Iterate through the array from right to left. Use a stack to maintain potential 'j' values and a variable 'third' to represent the largest 'k' encountered so far. If we find an element smaller than 'third', we have found a 132 pattern.
+4. Edge cases: Array with length less than 3. Duplicate numbers in the array.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) because the stack can potentially store all elements of the array.
+</thinking>

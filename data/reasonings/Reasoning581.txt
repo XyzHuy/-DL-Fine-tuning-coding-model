@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest continuous subarray that, when sorted, makes the entire array sorted.
+2. Problem type / algorithm category: Array manipulation, sorting, two pointers.
+3. Step-by-step approach: Create a sorted copy of the array. Iterate through the original array, comparing each element to its corresponding element in the sorted array. Track the first and last indices where the elements differ. The length of the unsorted subarray is the difference between the last and first differing indices plus one.
+4. Edge cases: Empty array, already sorted array, array sorted in reverse order, array with duplicate elements.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting, and space complexity is O(n) because of the sorted copy.
+</thinking>

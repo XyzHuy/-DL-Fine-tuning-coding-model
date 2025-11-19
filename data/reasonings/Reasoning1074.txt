@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix and a target value, find the number of non-empty submatrices whose elements sum up to the target.
+2. Problem type / algorithm category: Dynamic programming, prefix sum, hashmap.
+3. Step-by-step approach: Iterate through all possible top and bottom rows. For each pair of top and bottom rows, calculate the sum of elements in each column between those rows. Use a hashmap to count subarrays in the resulting array that sum to the target.
+4. Edge cases: Empty matrix, target is zero, matrix contains only one element.
+5. Time and space complexity: Time complexity is O(m^2 * n), where m is the number of rows and n is the number of columns. Space complexity is O(n).
+</thinking>

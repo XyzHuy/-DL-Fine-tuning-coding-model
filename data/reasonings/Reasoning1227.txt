@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the probability that the nth passenger finds their assigned seat available, given the first passenger picks a seat randomly and subsequent passengers take their own seat if available or a random available seat if not.
+2. Problem type / algorithm category: Probability, Dynamic Programming (though not strictly required for the final solution), Mathematical Insight.
+3. Step-by-step approach: For n=1, the nth person is the first person, who always takes their seat (seat 1), so probability is 1. For n>1, analyze the symmetry: either seat 1 is taken by someone else, or the nth person's seat (seat n) is taken by someone else. The crucial insight is that the first person can either take seat 1 (leading to a chain of correct seating until seat n might be taken), seat n (guaranteeing the nth person gets their seat), or any other seat. Due to symmetry, the process essentially has two equally likely outcomes for the nth person: they get their seat, or they don't.
+4. Edge cases: The primary edge case is n = 1, where the probability is 1. For larger n, the logic converges to 0.5.
+5. Time and space complexity: Time O(1), Space O(1).
+</thinking>

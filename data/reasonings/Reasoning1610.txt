@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the maximum number of points visible within a given angular field of view from a fixed location, considering rotation.
+2. Problem type / algorithm category: Geometry, angles, sliding window.
+3. Step-by-step approach: Count points at the location separately. Convert other points' relative positions to angles. Sort these angles and duplicate them to handle circularity. Use a sliding window to find the maximum count of angles within the given field of view.
+4. Edge cases: Points located at the viewer's position, angles that span across the 0/360 degree boundary.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(N) to store angles.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of balloon colors and an array of removal times, find the minimum time to remove balloons such that no two adjacent balloons have the same color.
+2. Problem type / algorithm category: Greedy approach.
+3. Step-by-step approach: Iterate through the colors, identifying consecutive groups of the same color. For each group, sum the removal times and find the maximum removal time. The cost for that group is the sum minus the maximum. Accumulate these costs.
+4. Edge cases: The input string has only one character, or all characters are already unique, requiring no removals.
+5. Time and space complexity: Time complexity is O(n) because each balloon is visited at most twice. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Place minimum food buckets in empty spots ('.') to feed all hamsters ('H'). A hamster is fed if it has a bucket to its immediate left or right. Return -1 if impossible.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation.
+3. Step-by-step approach: Iterate through the string. If a hamster is found, check if it's already fed by a bucket to its left. If not, check for a bucket to its right. If neither is present, try to place a bucket to its right if the spot is empty. If that's not possible, try to place a bucket to its left if the spot is empty. If a hamster cannot be fed by any of these means, return -1. Otherwise, increment the bucket count.
+4. Edge cases: Hamsters at the beginning or end of the string, consecutive hamsters.
+5. Time and space complexity: Time O(N), Space O(N) due to creating a list from the string.
+</thinking>

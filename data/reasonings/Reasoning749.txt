@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to calculate the minimum number of walls needed to quarantine virus-infected regions in a grid, where each day we build walls around the region that threatens the most uninfected cells, and the virus spreads from remaining regions.
+2. Problem type / algorithm category: Graph traversal (DFS), Greedy algorithm.
+3. Step-by-step approach: The solution uses Depth First Search (DFS) to identify infected regions, calculate the number of walls needed to isolate each region, and determine the number of uninfected cells each region threatens. The greedy approach involves choosing the region threatening the most uninfected cells each day to quarantine by constructing walls around it. This continues until no more regions exist.
+4. Edge cases: Empty grid, all cells infected, a single infected cell, no infected cells.
+5. Time and space complexity: Time complexity is O(m*n*k) where k is the number of infected regions. Space complexity is O(m*n) due to the visited set and recursion stack in DFS.
+</thinking>

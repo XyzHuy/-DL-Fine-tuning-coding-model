@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the second smallest value in a special binary tree where each node's value is the minimum of its children's values.
+2. Problem type / algorithm category: Tree traversal (Depth-First Search).
+3. Step-by-step approach: Perform a DFS traversal of the tree. Maintain the minimum value (root's value) and a second minimum value. If a node's value is greater than the minimum but smaller than the current second minimum, update the second minimum.
+4. Edge cases: If no second minimum exists (all nodes have the same value), return -1. Handle empty tree implicitly through the base case of the recursive DFS.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree because we visit each node once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack in DFS. In the worst case, H can be N (skewed tree).
+</thinking>

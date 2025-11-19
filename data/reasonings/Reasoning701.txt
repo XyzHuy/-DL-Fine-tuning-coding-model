@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Insert a new node with a given value into a Binary Search Tree (BST) while maintaining the BST property.
+2. Problem type / algorithm category: Binary Search Tree, Tree Traversal, Insertion.
+3. Step-by-step approach: If the tree is empty, create a new node with the value and return it. Otherwise, traverse the tree starting from the root. If the value is less than the current node's value, move to the left subtree. If the value is greater than the current node's value, move to the right subtree. If we reach a null node, create a new node with the value and attach it as the left or right child of the parent node, depending on whether the value is less than or greater than the parent's value.
+4. Edge cases: Empty tree, value smaller than all nodes, value larger than all nodes, inserting in the middle of the tree.
+5. Time and space complexity: Time complexity is O(H), where H is the height of the tree. In the worst case (skewed tree), H can be N, where N is the number of nodes. In the average case (balanced tree), H is log(N). Space complexity is O(1) as it's done iteratively, excluding the recursive stack space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays of even length n, remove n/2 elements from each array such that the union of the remaining elements forms a set s of maximum possible size.
+2. Problem type / algorithm category: Greedy, Set operations.
+3. Step-by-step approach: Count unique elements in each array. Determine how many unique elements from each array can be kept without exceeding n/2 removals. Fill the remaining allowed removals with common elements to maximize the set size.
+4. Edge cases: Arrays with all identical elements, arrays with no common elements, arrays where n/2 unique elements can be taken from each.
+5. Time and space complexity: O(n) time to create sets and O(n) space for the sets.
+</thinking>

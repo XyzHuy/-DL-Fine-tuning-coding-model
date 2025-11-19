@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings in a given string (composed of 'a', 'b', 'c') that contain at least one 'a', 'b', and 'c'.
+2. Problem type / algorithm category: Sliding Window or Prefix Sum logic with character counts.
+3. Step-by-step approach: Iterate through the string. For each character, update its last seen index. The number of valid substrings ending at the current index is determined by the earliest last seen index of 'a', 'b', or 'c', plus one. Sum these counts.
+4. Edge cases: The problem constraints guarantee a minimum string length of 3, ensuring that a valid substring is possible. The string only contains 'a', 'b', 'c'.
+5. Time and space complexity: Time complexity is O(N) because we iterate through the string once. Space complexity is O(1) as we use a fixed-size dictionary to store character counts.
+</thinking>

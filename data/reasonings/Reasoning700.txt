@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a BST and a value, find the node with the given value and return the subtree rooted at that node. If the node is not found, return null.
+2. Problem type / algorithm category: Binary Search Tree, Tree Traversal, Iterative Search
+3. Step-by-step approach: Iterate through the BST. At each node, compare the node's value with the target value. If the values are equal, return the current node. If the target value is less than the current node's value, move to the left child. If the target value is greater than the current node's value, move to the right child. If the end of a branch is reached (current node is None), it implies the value is not present in the BST so return None.
+4. Edge cases: Empty tree (root is None), value is smaller/larger than any value in the tree, value is the root value.
+5. Time and space complexity: Time complexity is O(H) where H is the height of the tree, which is O(log N) in a balanced tree and O(N) in a skewed tree. Space complexity is O(1) because it's iterative.
+</thinking>

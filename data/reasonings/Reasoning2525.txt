@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Classify a box into "Bulky", "Heavy", "Both", or "Neither" based on its dimensions (length, width, height) and mass, with specific thresholds for each category and combined conditions.
+2. Problem type / algorithm category: Conditional logic and arithmetic operations.
+3. Step-by-step approach: First, determine if the box is "Bulky" by checking if any dimension exceeds 10^4 or if the volume (product of dimensions) exceeds 10^9. Second, determine if the box is "Heavy" by checking if its mass is 100 or more. Then, combine these boolean results to return "Both", "Bulky", "Heavy", or "Neither" according to the specified priority.
+4. Edge cases: The constraints on dimensions (1 to 10^5) and mass (1 to 10^3) imply that no input values will be zero or negative, and potential overflow for volume calculation needs consideration but is handled by standard integer types in Python.
+5. Time and space complexity: O(1) time complexity as it involves a fixed number of comparisons and arithmetic operations. O(1) space complexity as it uses a constant amount of extra memory regardless of input size.
+</thinking>

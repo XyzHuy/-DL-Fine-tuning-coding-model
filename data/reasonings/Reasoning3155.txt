@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given server counts, upgrade costs, sell prices, and initial money for multiple data centers, find the maximum number of servers that can be upgraded for each data center independently, where money from one center cannot be used for another.
+2. Problem type / algorithm category: Brute Force / Iterative Improvement within each data center.
+3. Step-by-step approach: For each data center, iterate through all possible numbers of servers to sell (from zero up to the total count). For each sale scenario, calculate the total available money and then determine the maximum number of servers that can be upgraded by dividing the total money by the upgrade cost, capped by the remaining servers. Keep track of the maximum upgrades found for that data center.
+4. Edge cases: When initial money is insufficient to upgrade even one server, or when selling all servers still doesn't provide enough money for any upgrades. Zero servers to upgrade.
+5. Time and space complexity: Time complexity is O(N*C) where N is the number of data centers and C is the maximum count of servers in any data center. Space complexity is O(N) for storing the answer array.
+</thinking>

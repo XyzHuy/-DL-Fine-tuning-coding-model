@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to purchase a given quantity of items using individual prices and special offers, without exceeding the desired quantity of any item.
+2. Problem type / algorithm category: Dynamic Programming / Recursion with memoization (using @cache).
+3. Step-by-step approach: The solution uses a recursive depth-first search (DFS) approach with memoization to explore different combinations of special offers and individual item purchases. The base case is when no offers can be applied, in which case the cost is calculated by buying all items individually. The recursive step iterates through each special offer, checks if the current needs can satisfy the offer, and if so, applies the offer and recursively calculates the remaining cost. Memoization is used to avoid recomputing the same subproblems.
+4. Edge cases: Cases where no special offers are applicable (buy all items individually). Cases where a special offer cannot be applied because the required quantity of some items in the offer exceeds the desired quantity.
+5. Time and space complexity: Time complexity is difficult to precisely determine but is bounded by the number of possible states, which depends on the needs and number of items and offers. The space complexity is dominated by the memoization cache, which stores the results for different states of needs.
+</thinking>

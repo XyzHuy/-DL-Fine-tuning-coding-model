@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the largest possible number from a given set of digits that is also a multiple of three.
+2. Problem type / algorithm category: Greedy, Number Theory, Digit manipulation.
+3. Step-by-step approach: Count digit frequencies, calculate total sum modulo 3, remove smallest digits to make sum divisible by 3, and then form the largest number from remaining digits.
+4. Edge cases: No valid multiple of three can be formed, all digits are zero, or the resulting number has leading zeros.
+5. Time and space complexity: O(N) time to count digits and construct the result, O(1) space as digit counts are fixed at 10.
+</thinking>

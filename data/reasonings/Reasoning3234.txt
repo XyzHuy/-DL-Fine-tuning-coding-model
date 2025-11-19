@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings in a binary string where the number of ones is greater than or equal to the square of the number of zeros.
+2. Problem type / algorithm category: Brute force with counting / Substring enumeration.
+3. Step-by-step approach: Iterate through all possible substrings. For each substring, count the number of zeros and ones. If the condition (ones >= zeros * zeros) is met, increment a counter. Alternatively, count non-dominant substrings and subtract from total substrings.
+4. Edge cases: Strings with only '0's, strings with only '1's, short strings, long strings up to the constraint.
+5. Time and space complexity: O(n^3) time due to nested loops and string counting within, or O(n^2) if counting is optimized within the inner loop. O(1) space.
+</thinking>

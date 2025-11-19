@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of rectangles with the same width-to-height ratio.
+2. Problem type / algorithm category: Hashing / Frequency Counting.
+3. Step-by-step approach: Calculate the ratio for each rectangle, store counts of each ratio in a hash map, and for each ratio with count k > 1, add k*(k-1)/2 to the total pairs.
+4. Edge cases: Rectangles with identical dimensions, empty input (though constraints say n >= 1).
+5. Time and space complexity: O(N) time and O(N) space, where N is the number of rectangles.
+</thinking>

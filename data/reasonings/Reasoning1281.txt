@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the difference between the product of all digits and the sum of all digits of a given integer.
+2. Problem type / algorithm category: Arithmetic, digit manipulation.
+3. Step-by-step approach: Initialize product to 1 and sum to 0. Iterate through each digit of the number, updating the product by multiplying and the sum by adding. Finally, return the product minus the sum.
+4. Edge cases: Single-digit numbers (product and sum are the same, difference is 0), numbers containing zero (product becomes 0).
+5. Time and space complexity: Time complexity is O(log10(n)) because we process each digit, and the number of digits is logarithmic to the value of n. Space complexity is O(log10(n)) due to string conversion or O(1) if using modulo arithmetic.
+</thinking>

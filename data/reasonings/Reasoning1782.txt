@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of nodes (a, b) with a < b where the total number of edges incident to either a or b exceeds a given query threshold, considering potential multiple edges between nodes.
+2. Problem type / algorithm category: Graph traversal, counting, two-pointer technique, frequency map.
+3. Step-by-step approach: Calculate node degrees and count edge overlaps between pairs. Sort degrees for efficient counting. For each query, use a two-pointer approach on sorted degrees to find initial pairs exceeding the threshold. Then, adjust this count by subtracting pairs that exceed the threshold but would not have exceeded it if specific overlapping edges were counted only once.
+4. Edge cases: Graph with no edges, graph with only two nodes, queries with thresholds larger than any possible incident count.
+5. Time and space complexity: Time complexity is dominated by sorting degrees and processing queries with two pointers and overlap adjustments, roughly O(E + N log N + Q * N). Space complexity is O(N + E) for storing degrees, overlaps, and sorted degrees.
+</thinking>

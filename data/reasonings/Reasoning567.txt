@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two strings s1 and s2, determine if any permutation of s1 is a substring of s2.
+2. Problem type / algorithm category: String manipulation / Sliding window.
+3. Step-by-step approach: Use a sliding window of length len(s1) to iterate through s2, checking if the character counts in the current window match the character counts in s1.
+4. Edge cases: If s1 is longer than s2, return false. Handle the case where a character count becomes zero after decrementing.
+5. Time and space complexity: Time complexity is O(len(s2)) and space complexity is O(1) because the counter only contains lowercase English letters.
+</thinking>

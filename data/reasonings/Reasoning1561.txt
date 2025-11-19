@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize your total coins by repeatedly choosing three piles, where Alice takes the largest, you take the second largest, and Bob takes the smallest, until no piles remain.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort the piles in ascending order. Then, iterate from the third largest element to the end, picking every second element (which represents your coins). This ensures Alice always gets the absolute largest available in each triplet, you get the second largest, and Bob gets the smallest.
+4. Edge cases: The problem constraints guarantee that piles.length is a multiple of 3 and at least 3, so there are always valid triplets to form.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of piles. Space complexity is O(1) if sorting is done in-place, or O(N) if a new sorted array is created.
+</thinking>

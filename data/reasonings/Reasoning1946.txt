@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest number possible by changing at most one contiguous substring of digits using a given mapping.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate through the number, apply the change if it increases the digit, and stop when applying the change decreases the digit or the substring ends.
+4. Edge cases: The input number might be a single digit, or no change might result in a larger number.
+5. Time and space complexity: Time complexity is O(N) where N is the length of num, and space complexity is O(N) for storing the modified string.
+</thinking>

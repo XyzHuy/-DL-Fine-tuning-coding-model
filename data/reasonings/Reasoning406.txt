@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reconstruct a queue of people based on their height and the number of people in front of them with equal or greater height.
+2. Problem type / algorithm category: Sorting, Greedy Algorithm.
+3. Step-by-step approach: Sort the people by descending height and ascending k value. Then, iterate through the sorted people and insert each person into the queue at the index specified by their k value.
+4. Edge cases: Empty input list.
+5. Time and space complexity: Time complexity is O(N^2) due to the insert operation in a list, where N is the number of people. Space complexity is O(N) for the output queue.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of ways to distribute n candies among 3 children, with each child receiving at most limit candies.
+2. Problem type / algorithm category: Combinatorics / Brute Force / Iterative Enumeration.
+3. Step-by-step approach: Iterate through all possible candy counts for the first child (from 0 up to min(n, limit)). For each count, iterate through all possible candy counts for the second child (from 0 up to min(remaining_candies, limit)). Calculate the candies for the third child. If the third child's candy count is within the limit, increment a counter.
+4. Edge cases: n=0, limit=0 (though constraints say positive), n < limit, n = limit, n > limit. The solution correctly handles these by using min().
+5. Time and space complexity: Time complexity is O(limit^2) due to nested loops. Space complexity is O(1) as only a few variables are used.
+</thinking>

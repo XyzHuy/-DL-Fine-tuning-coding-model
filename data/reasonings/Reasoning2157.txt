@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Group strings into connected components based on character set relationships (add, delete, replace one character) and return the number of groups and the size of the largest group.
+2. Problem type / algorithm category: Graph / Union-Find
+3. Step-by-step approach: Represent each word's character set as a bitmask. Use a hash map to store indices for each mask. Iterate through words, connecting words with identical masks. Then, for each word, check for connections by creating masks for adding, deleting, or replacing a single character and perform union operations. Finally, count unique roots (groups) and find the maximum group size using Union-Find.
+4. Edge cases: Empty input list of words is not possible per constraints. Words with single characters are handled. All words being connected or no words being connected.
+5. Time and space complexity: Time complexity is O(N * (L + 26^2)) where N is the number of words and L is the max length of a word, primarily due to checking all possible single-character modifications. Space complexity is O(N + 2^26) for storing masks and Union-Find structure.
+</thinking>

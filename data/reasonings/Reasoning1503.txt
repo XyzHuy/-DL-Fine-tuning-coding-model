@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the time when the last ant falls off a plank of length n, given initial positions of ants moving left and right. Ants move at 1 unit/sec and reverse direction upon collision.
+2. Problem type / algorithm category: Simulation (simplified), Greedy.
+3. Step-by-step approach: Consider ants moving left; the time they fall is their position. Consider ants moving right; the time they fall is their distance from the right end (n - position). The maximum of all these times is the answer. Ants effectively pass through each other.
+4. Edge cases: No ants moving left, no ants moving right, plank length 1, ants starting at the ends.
+5. Time and space complexity: Time O(L + R), Space O(1), where L and R are the number of ants moving left and right respectively.
+</thinking>

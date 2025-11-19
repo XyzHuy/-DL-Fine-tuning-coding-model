@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to sum up all the numbers represented by root-to-leaf paths in a binary tree where each node is either a 0 or a 1. Each path forms a binary number with the root being the most significant bit.
+2. Problem type / algorithm category: This is a classic tree traversal problem, solved using a Depth-First Search (DFS) approach with recursion.
+3. Step-by-step approach: The solution uses a recursive helper function that traverses the tree, maintaining the decimal value of the path from the root to the current node. At each node, the current number is updated by shifting its bits to the left by one (multiplying by 2) and then adding the current node's value. If a leaf node is encountered, this final number is returned. Otherwise, the results from the recursive calls on the left and right children are summed up.
+4. Edge cases: The primary edge case is an empty tree (root is null), for which the function correctly returns 0. A tree with a single node is also handled as it is a leaf, and its value is returned.
+5. Time and space complexity: The time complexity is O(N), where N is the number of nodes, because every node is visited exactly once. The space complexity is O(H) due to the recursion stack, where H is the height of the tree. In a worst-case skewed tree, this can be O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate how many times an ant returns to its starting boundary position after a series of movements.
+2. Problem type / algorithm category: Simulation, Iteration.
+3. Step-by-step approach: Initialize the ant's position to 0 and a counter for boundary returns to 0. Iterate through the movement instructions. For each instruction, update the ant's position by adding the movement value. If the ant's position becomes 0 after the move, increment the boundary return counter. Finally, return the counter.
+4. Edge cases: The input array can be empty (although constraints say length >= 1), all movements could be in one direction leading to no returns, or movements could perfectly cancel out leading to multiple returns.
+5. Time and space complexity: Time complexity is O(n) where n is the number of movements, as we iterate through the array once. Space complexity is O(1) as we only use a few variables to store the position and count.
+</thinking>

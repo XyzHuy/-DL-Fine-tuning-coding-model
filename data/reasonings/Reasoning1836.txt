@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove all nodes from an unsorted linked list whose values appear more than once.
+2. Problem type / algorithm category: Linked List manipulation, Frequency Counting.
+3. Step-by-step approach: First, iterate through the list to count the frequency of each node's value. Then, iterate through the list again, using a dummy node, to build a new list by appending only those nodes whose values have a frequency of one. Finally, ensure the new list is properly terminated.
+4. Edge cases: An empty list, a list with all unique elements, a list where all elements are duplicates.
+5. Time and space complexity: Time O(N) for two passes, Space O(N) to store counts.
+</thinking>

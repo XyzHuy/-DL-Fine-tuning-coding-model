@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two strings are isomorphic, meaning there's a one-to-one mapping between their characters.
+2. Problem type / algorithm category: Hash table / string manipulation.
+3. Step-by-step approach: Use two dictionaries to track the mappings from characters in string s to string t and vice-versa. Iterate through the strings, checking for mapping conflicts. If a conflict is found, return false; otherwise, update the mappings. If the entire loop completes without conflicts, the strings are isomorphic, so return true.
+4. Edge cases: Empty strings, strings of different lengths (handled implicitly by the problem statement constraint), strings with repeating characters.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the strings. Space complexity is O(1), because the size of the dictionaries is bounded by the size of the character set (ASCII).
+</thinking>

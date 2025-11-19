@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Select the maximum count of unique integers within the range [1, n] that are not in the banned list and whose sum does not exceed maxSum.
+2. Problem type / algorithm category: Greedy approach, Set usage.
+3. Step-by-step approach: Convert the banned list into a set for efficient lookups. Iterate through numbers from 1 to n. If a number is not banned and adding it to the current sum does not exceed maxSum, add it and increment the count. Stop when adding the current number would exceed maxSum.
+4. Edge cases: If n is small and maxSum is large, all non-banned numbers up to n might be chosen. If many numbers are banned, or maxSum is very small, it might be impossible to choose any numbers. If banned contains all numbers in the range [1, n].
+5. Time and space complexity: Time complexity is O(n + b) where b is the length of banned, due to set creation and iteration up to n. Space complexity is O(b) for storing the banned set.
+</thinking>

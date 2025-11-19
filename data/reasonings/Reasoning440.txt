@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth lexicographically smallest integer in the range [1, n].
+2. Problem type / algorithm category: Tree traversal, lexicographical order.
+3. Step-by-step approach: Start with 1. Calculate how many numbers are under the current number. If the count is less than or equal to k, increment current and decrement k by the count. Otherwise, move to the next level by multiplying current by 10 and decrement k by 1.
+4. Edge cases: n=1, k=1. Large n and k.
+5. Time and space complexity: O(log(n)^2) time, O(1) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest increasing path in a given matrix, where movement is allowed up, down, left, or right.
+2. Problem type / algorithm category: Dynamic Programming, Depth-First Search (DFS).
+3. Step-by-step approach: Use DFS to explore each cell and find the length of the longest increasing path starting from that cell. Memoize the results using a DP table to avoid redundant calculations. Iterate through each cell in the matrix and update the overall longest path found so far.
+4. Edge cases: Empty matrix, matrix with only one element.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are dimensions of the matrix due to DP. Space complexity is O(m*n) for the DP table and recursion stack in the worst case.
+</thinking>

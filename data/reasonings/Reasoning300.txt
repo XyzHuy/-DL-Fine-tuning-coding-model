@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest strictly increasing subsequence within a given integer array.
+2. Problem type / algorithm category: Dynamic Programming, Binary Search. Specifically, it's an optimized dynamic programming approach using binary search.
+3. Step-by-step approach: Iterate through the input array. Maintain a `tails` list, which stores the smallest tail of all increasing subsequences of different lengths. For each number, use binary search to find the smallest tail that is greater than or equal to the current number. If the number is greater than all tails, extend the longest subsequence by appending the number to tails. Otherwise, update the smallest tail with the current number, potentially forming a longer increasing subsequence. The final length of `tails` is the length of the LIS.
+4. Edge cases: Empty input array. Input array with all same elements. Input array already sorted.
+5. Time and space complexity: Time complexity is O(n log n) due to the binary search within the loop. Space complexity is O(n) in the worst case (increasing input) to store the `tails` list.
+</thinking>

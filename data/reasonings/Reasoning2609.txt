@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring in a binary string where all '0's appear before all '1's and the counts of '0's and '1's are equal.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate through the string, identifying consecutive blocks of '0's followed by consecutive blocks of '1's. For each such pair, calculate the maximum balanced length possible (twice the minimum of the zero count and one count). Keep track of the overall maximum balanced length found.
+4. Edge cases: Strings with only '0's, strings with only '1's, strings with no '0's before '1's, empty string (implicitly handled by problem constraints).
+5. Time and space complexity: Time complexity is O(n) because each character is visited at most twice. Space complexity is O(1) as only a few variables are used.
+</thinking>

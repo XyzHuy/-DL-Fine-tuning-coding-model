@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize capital by selecting at most k projects from a list of projects, each requiring a certain capital and yielding a profit, given an initial capital w.
+2. Problem type / algorithm category: Greedy algorithm, Heap (Priority Queue).
+3. Step-by-step approach: Sort projects by capital, use a max-heap to store available project profits, iterate k times, add available projects to the heap, choose the most profitable project from the heap, and update capital.
+4. Edge cases: Empty heap (no available projects), k is larger than the number of projects, initial capital is enough for all projects.
+5. Time and space complexity: Time: O(n log n) for sorting + O(k log n) for heap operations. Space: O(n) for storing projects and the heap.
+</thinking>

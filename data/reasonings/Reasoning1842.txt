@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest palindrome that can be formed by rearranging the digits of a given large palindrome number, which is lexicographically larger than the input.
+2. Problem type / algorithm category: Next lexicographical permutation on the first half of the palindrome.
+3. Step-by-step approach: Treat the first half of the palindrome as a string. Find the next lexicographical permutation of this first half. If a next permutation exists, reconstruct the full palindrome. If not, return an empty string.
+4. Edge cases: When no next lexicographical permutation can be found for the first half (e.g., the first half is in descending order), indicating no larger palindrome can be formed.
+5. Time and space complexity: O(N) time to find the permutation and construct the palindrome, O(N) space to store and manipulate the string halves, where N is the length of the input number.
+</thinking>

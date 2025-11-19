@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest subsequence in a given array that sums exactly to a target value.
+2. Problem type / algorithm category: Dynamic Programming (0/1 Knapsack variation).
+3. Step-by-step approach: Use a DP array where dp[i] stores the maximum length of a subsequence summing to i. Initialize dp[0] to 0 and others to -1. Iterate through each number in nums, and for each number, update the DP array backwards from target down to the number itself. If dp[j - num] is reachable (not -1), update dp[j] with the maximum of its current value and dp[j - num] + 1.
+4. Edge cases: No subsequence sums to the target (return -1). Target itself is 0 (should return 0 if allowed, but constraints say target >= 1). Empty input array (not possible based on constraints).
+5. Time and space complexity: Time complexity is O(n * target) where n is the length of nums. Space complexity is O(target).
+</thinking>

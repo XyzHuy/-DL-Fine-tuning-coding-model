@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Check if a linked list's values form a downward path within a binary tree.
+2. Problem type / algorithm category: Tree traversal (DFS), Linked List traversal.
+3. Step-by-step approach: Traverse the binary tree using DFS. At each node, initiate a separate DFS check to see if the linked list starts from that tree node. The linked list check also uses DFS and moves down the tree and the list simultaneously.
+4. Edge cases: Empty linked list (always true), empty tree (always false), single node tree/list.
+5. Time and space complexity: Time O(N * L), Space O(H) where N is number of nodes in tree, L is length of linked list, H is height of tree.
+</thinking>

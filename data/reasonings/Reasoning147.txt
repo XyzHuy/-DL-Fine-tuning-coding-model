@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort a singly linked list using the insertion sort algorithm.
+2. Problem type / algorithm category: Linked List, Sorting, Insertion Sort.
+3. Step-by-step approach: Iterate through the linked list, maintaining a sorted portion. For each node, find its correct position in the sorted portion and insert it there. Use a dummy head to simplify insertion at the beginning of the list.
+4. Edge cases: Empty list, list with one element.
+5. Time and space complexity: Time: O(n^2) in the worst case, Space: O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a target coordinate (targetX, targetY) is reachable from (1, 1) on an infinite grid using specific allowed moves: (x, y-x), (x-y, y), (2x, y), (x, 2y).
+2. Problem type / algorithm category: Number theory, GCD, Properties of moves.
+3. Step-by-step approach: Observe that all moves preserve the GCD of the coordinates. If we start at (1,1) with GCD 1, any reachable point (x,y) must have gcd(x,y) divisible by gcd(1,1)=1. More importantly, consider moving backwards from the target. The reverse moves are (x, y+x), (x+y, y), (x/2, y) if x is even, and (x, y/2) if y is even. Repeatedly applying these reverse moves implies that if (targetX, targetY) is reachable, then gcd(targetX, targetY) must be a power of 2. This is because any common factor greater than 1 will persist through the subtractions, and the doublings only increase the powers of 2. The base case (1,1) has a GCD of 1, which is 2^0. Thus, any reachable point must have a GCD that is a power of 2.
+4. Edge cases: The constraints 1 <= targetX, targetY <= 10^9 mean that inputs are always positive integers. The GCD of any two positive integers is always at least 1. The condition (g & (g - 1)) == 0 correctly identifies powers of 2, including 1 (2^0).
+5. Time and space complexity: The time complexity is dominated by the GCD calculation, which is logarithmic with respect to the input numbers. The space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix, return its transpose. The transpose swaps the row and column indices.
+2. Problem type / algorithm category: Matrix manipulation.
+3. Step-by-step approach: Use the zip function to unpack the matrix and then convert the resulting tuples into a list.
+4. Edge cases: Empty matrix, rectangular matrix.
+5. Time and space complexity: Time complexity is O(m*n) where m is the number of rows and n is the number of columns. Space complexity is O(m*n) to store the transposed matrix.
+</thinking>

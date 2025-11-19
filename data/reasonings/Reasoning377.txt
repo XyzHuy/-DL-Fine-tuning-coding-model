@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of distinct integers and a target, find the number of combinations that sum up to the target, where order matters.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a DP array where dp[i] stores the number of combinations that sum up to i. Initialize dp[0] to 1. Iterate from 1 to target, and for each i, iterate through the nums array. If i - num >= 0, then dp[i] += dp[i - num].
+4. Edge cases: Empty input array (handled implicitly), target is 0, no combinations exist (return 0).
+5. Time and space complexity: Time complexity is O(target * n), where n is the length of nums. Space complexity is O(target).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score of a valid node sequence of length 4 in an undirected graph, where node sequence validity requires adjacent nodes to be connected by an edge and no node repetition. The score is the sum of node scores.
+2. Problem type / algorithm category: Graph traversal, Brute force with optimization, Heap (priority queue).
+3. Step-by-step approach: Build an adjacency list representation of the graph where each neighbor stores its score and node index. For each node, keep only its top 3 highest-scoring neighbors using a min-heap or nlargest. Iterate through all edges (u, v) and consider them as the middle two nodes of a potential length-4 sequence. For each such edge, iterate through the top neighbors of u (say w) and top neighbors of v (say x), ensuring w, x are distinct and not u or v, to form a sequence u-w-v-x or similar, then calculate the score and update the maximum.
+4. Edge cases: No valid sequence of length 4 exists, in which case -1 should be returned. The graph might be disconnected.
+5. Time and space complexity: Time complexity is O(E * k^2) where E is the number of edges and k is the maximum number of top neighbors considered (k=3 in this solution). Space complexity is O(N + E) for storing the graph.
+</thinking>

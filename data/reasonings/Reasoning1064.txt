@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest index i in a sorted array such that arr[i] == i. Return -1 if no such index exists.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use binary search to find a potential index where arr[mid] == mid. If found, check if it's the smallest such index by verifying that the preceding element does not also satisfy the condition. If it is not the smallest, adjust the right boundary to search the left subarray. If arr[mid] < mid, search the right subarray; otherwise, search the left subarray.
+4. Edge cases: Empty array (although the problem states the array length is at least 1), no fixed point exists, the fixed point is at the beginning or end of the array.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it uses constant extra space.
+</thinking>

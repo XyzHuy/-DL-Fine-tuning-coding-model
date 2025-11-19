@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Concatenate binary representations of integers from 1 to n and return the decimal value modulo 10^9 + 7.
+2. Problem type / algorithm category: Bit manipulation, iterative calculation.
+3. Step-by-step approach: Initialize result and current binary length. Iterate from 1 to n. If current number is a power of 2, increment binary length. Shift the current result left by binary length and OR it with the current number, taking modulo at each step.
+4. Edge cases: The constraint 1 <= n <= 10^5 means n is always positive. The modulo operation handles potential overflow.
+5. Time and space complexity: Time complexity is O(n) due to the single loop. Space complexity is O(1) as only a few variables are used.
+</thinking>

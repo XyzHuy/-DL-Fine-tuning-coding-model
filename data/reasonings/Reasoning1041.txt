@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a robot, given a series of movement instructions (G, L, R) that repeat infinitely, stays within a bounded circle.
+2. Problem type / algorithm category: Simulation, geometry.
+3. Step-by-step approach: Simulate one full cycle of the given instructions. After the cycle, check if the robot returned to the origin (0, 0) or if it's not facing North. If either is true, then the robot is bounded.
+4. Edge cases: Empty instruction string, only 'G' instructions, only 'L' or 'R' instructions.
+5. Time and space complexity: Time: O(N), where N is the length of the instruction string. Space: O(1), constant space.
+</thinking>

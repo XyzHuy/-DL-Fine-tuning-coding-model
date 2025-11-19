@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rotate an array to the right by k steps in-place.
+2. Problem type / algorithm category: Array manipulation, in-place algorithm, reversal technique.
+3. Step-by-step approach: First, reduce k modulo the array length. Then, reverse the entire array, reverse the first k elements, and reverse the remaining n-k elements.
+4. Edge cases: Empty array, k=0, k is a multiple of the array's length, large k values.
+5. Time and space complexity: Time complexity is O(n) due to the three reversals. Space complexity is O(1) as it's an in-place operation.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest contiguous range of non-special floors within a given rental range [bottom, top], considering a list of special floors.
+2. Problem type / algorithm category: Array manipulation, sorting, finding maximum difference.
+3. Step-by-step approach: Sort the special floors. Calculate the gaps between `bottom` and the first special floor, between consecutive special floors, and between the last special floor and `top`. The maximum of these gaps, minus one for the special floor itself, is the answer.
+4. Edge cases: The special array might contain floors at the `bottom` or `top` boundaries. The `special` array could potentially cover all floors between `bottom` and `top`.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of special floors. Space complexity is O(1) if sorting is in-place, or O(N) for some sorting algorithms.
+</thinking>

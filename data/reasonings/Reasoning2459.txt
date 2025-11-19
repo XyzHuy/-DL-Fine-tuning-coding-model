@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array where elements are from 0 to n-1, with 0 as an empty space, find the minimum moves to sort the array such that elements are in ascending order and 0 is at either end.
+2. Problem type / algorithm category: Array manipulation, cycle sort, permutation analysis.
+3. Step-by-step approach: The problem can be solved by considering two target sorted states: 0 at the beginning and 0 at the end. For each state, count the number of cycles in the permutation formed by the current array and the target state. The minimum number of moves is related to the total number of elements involved in cycles that are not in their correct position, minus twice the indicator for whether the element 0 is in its correct final position.
+4. Edge cases: The array can already be sorted (0 moves). The constraint n >= 2 is given.
+5. Time and space complexity: Time complexity is O(n) due to iterating through the array to find cycles. Space complexity is O(n) for the visited array used in cycle detection.
+</thinking>

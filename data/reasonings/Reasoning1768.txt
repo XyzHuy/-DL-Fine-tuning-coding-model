@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Combine two strings by alternating characters, starting with the first string, and append any remaining characters from the longer string.
+2. Problem type / algorithm category: String manipulation, iterative merging.
+3. Step-by-step approach: Iterate through both strings up to the length of the shorter string, appending characters alternately. Then, append the rest of the longer string.
+4. Edge cases: One string is longer than the other, or both strings have equal length. Empty strings are not possible due to constraints.
+5. Time and space complexity: O(N+M) time and O(N+M) space, where N and M are the lengths of word1 and word2 respectively.
+</thinking>

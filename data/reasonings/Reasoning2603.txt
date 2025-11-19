@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Collect all coins in a tree by moving between adjacent nodes or collecting coins within a distance of 2, minimizing total edges traversed to return to the start.
+2. Problem type / algorithm category: Graph traversal, Tree manipulation, Greedy approach.
+3. Step-by-step approach: First, iteratively remove leaf nodes that do not contain coins and are not adjacent to coins. Repeat this process twice to handle nodes two hops away from coinless branches. Finally, count the remaining edges that connect non-removed nodes and multiply by two for the round trip.
+4. Edge cases: Trees with no coins, trees with coins only at leaves, trees where all nodes need to be visited.
+5. Time and space complexity: O(N) time complexity for graph construction and pruning, O(N) space complexity for storing the graph.
+</thinking>

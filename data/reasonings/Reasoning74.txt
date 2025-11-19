@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted matrix, determine if a target value exists in the matrix. The matrix is sorted row-wise and column-wise.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Treat the matrix as a sorted 1D array and apply binary search. Convert the 1D index to 2D matrix indices using division and modulo operations.
+4. Edge cases: Empty matrix, target smaller than the smallest element, target larger than the largest element.
+5. Time and space complexity: Time complexity is O(log(m*n)), space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest contiguous subarray where each element appears at most k times.
+2. Problem type / algorithm category: Sliding window.
+3. Step-by-step approach: Use a sliding window with a frequency map. Expand the window by moving the right pointer. If the frequency of the element at the right pointer exceeds k, shrink the window from the left until the condition is met. Update the maximum length at each valid step.
+4. Edge cases: Empty input array (though constraints say length >= 1), k=1, all elements are the same.
+5. Time and space complexity: Time complexity is O(N) because each element is visited at most twice (by the right and left pointers). Space complexity is O(U) where U is the number of unique elements in nums, for the frequency map.
+</thinking>

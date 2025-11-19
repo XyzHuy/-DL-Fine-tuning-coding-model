@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an LCP matrix, find the lexicographically smallest string that generates this matrix.
+2. Problem type / algorithm category: String construction, LCP array properties, backtracking/greedy approach.
+3. Step-by-step approach: Greedily assign characters to positions in the string, starting with 'a'. If a position hasn't been assigned a character, assign the next available character. Propagate this assignment to other positions based on non-zero LCP values. Finally, verify if the constructed string's LCP matrix matches the given one.
+4. Edge cases: If more than 26 distinct characters are required, return "". If the constructed string's LCP matrix doesn't match the input, return "". Invalid LCP values (e.g., lcp[i][i] < n-i).
+5. Time and space complexity: O(N^3) time due to the verification step, O(N) space for storing the constructed string.
+</thinking>

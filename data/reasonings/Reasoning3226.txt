@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum bitwise changes (1 to 0) required to transform integer n into integer k, returning -1 if impossible.
+2. Problem type / algorithm category: Bit manipulation, Comparison.
+3. Step-by-step approach: Iterate through the binary representations of n and k, counting necessary 1-to-0 flips in n. If k requires a 0 to become 1 where n has a 1, it's impossible.
+4. Edge cases: n and k are equal (0 changes), n has a 0 bit where k has a 1 bit (impossible, -1).
+5. Time and space complexity: O(log N) time for binary conversion and iteration, O(log N) space for binary string representation, where N is the maximum value of n or k.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Modify a sentence by applying a discount to words representing prices (dollar amount).
+2. Problem type / algorithm category: String manipulation, parsing, mathematical operations.
+3. Step-by-step approach: Split the sentence into words. Iterate through each word. Check if a word starts with '$' and the rest are digits. If so, convert to an integer, calculate the discounted price, format it to two decimal places with a preceding '$', and replace the original word. Finally, join the modified words back into a sentence.
+4. Edge cases: Words that are just '$', words with non-digit characters after '$', discount of 0% or 100%, prices with single digits.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the sentence, due to splitting, iterating, and joining. Space complexity is O(N) for storing the list of words and the resulting sentence.
+</thinking>

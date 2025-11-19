@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total price of items in a bag with a given capacity, where items can be split.
+2. Problem type / algorithm category: Greedy algorithm, Fractional Knapsack.
+3. Step-by-step approach: Sort items by price-to-weight ratio descending. Iterate through sorted items, taking whole items if they fit, or a fraction to fill remaining capacity.
+4. Edge cases: Bag cannot be completely filled (return -1), single item exceeding capacity.
+5. Time and space complexity: O(N log N) time for sorting, O(1) space (or O(N) if considering input storage).
+</thinking>

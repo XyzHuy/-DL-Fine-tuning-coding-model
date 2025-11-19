@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest contiguous subarray to remove from an array of positive integers such that the sum of the remaining elements is divisible by p. Do not remove the entire array.
+2. Problem type / algorithm category: Prefix sums, modulo arithmetic, hash map (dictionary) for efficient lookups.
+3. Step-by-step approach: Calculate the total sum modulo p. If it's 0, no removal is needed. Otherwise, iterate through the array, maintaining prefix sums modulo p. For each prefix sum, determine the target prefix sum modulo p that, when subtracted from the current prefix sum, would result in a sum divisible by p. Use a hash map to store the indices of previously seen prefix sums modulo p. If the target prefix sum is found in the map, update the minimum subarray length.
+4. Edge cases: The initial sum is already divisible by p (return 0). It's impossible to make the remaining sum divisible by p (return -1). The smallest subarray length found is equal to the entire array length (return -1). An empty subarray removal is implied if the initial sum is divisible by p.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(n) in the worst case for the hash map storing prefix sum remainders.
+</thinking>

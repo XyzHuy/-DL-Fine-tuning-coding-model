@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be partitioned into contiguous subarrays, where each subarray is either two equal elements, three equal elements, or three consecutive increasing elements.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use dynamic programming where dp[i] indicates if the prefix nums[0...i-1] can be validly partitioned. Iterate through the array and for each index i, check if a valid partition ending at i can be formed by appending one of the three allowed subarray types to a previously valid partition (dp[i-2] or dp[i-3]).
+4. Edge cases: The base case is an empty prefix (dp[0] = True). The minimum subarray length is 2, so checks start from indices 2 and 3.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(n) for the DP table.
+</thinking>

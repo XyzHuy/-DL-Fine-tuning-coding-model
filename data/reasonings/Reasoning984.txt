@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a string of length a+b containing 'a' a's and 'b' b's such that there are no "aaa" or "bbb" substrings.
+2. Problem type / algorithm category: String construction / Greedy algorithm.
+3. Step-by-step approach: While a or b are greater than 0, greedily add the character that has more remaining. If one character has significantly more count than the other, add at most two of them, then add one of the other to prevent "aaa" or "bbb". If they are equal, add one of each.
+4. Edge cases: a=0 or b=0, cases where one is significantly larger than the other. These are handled by the while loop condition and the conditionals within.
+5. Time and space complexity: Time complexity is O(a+b) because the while loop iterates a+b times. Space complexity is O(a+b) to store the result string.
+</thinking>

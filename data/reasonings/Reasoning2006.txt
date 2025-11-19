@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) with i < j such that the absolute difference between nums[i] and nums[j] equals k.
+2. Problem type / algorithm category: Brute force, pair enumeration.
+3. Step-by-step approach: Iterate through all possible pairs (i, j) where i < j. For each pair, calculate the absolute difference between nums[i] and nums[j]. If this difference is equal to k, increment a counter.
+4. Edge cases: Empty input array (not possible due to constraints), array with single element, k being 0 (not possible due to constraints).
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(1) as only a counter variable is used.
+</thinking>

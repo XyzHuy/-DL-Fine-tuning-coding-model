@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two sparse matrices, compute their product.
+2. Problem type / algorithm category: Matrix multiplication, optimization for sparse matrices.
+3. Step-by-step approach: Convert each matrix into a representation containing only non-zero elements and their indices. Iterate through the rows of the first matrix and the columns of the second matrix. Multiply and sum only when the column index of the first matrix matches the row index of the second matrix.
+4. Edge cases: Empty matrices, matrices with all zero elements, and matrices with only a few non-zero elements.
+5. Time and space complexity: Time complexity is O(m*n*k') where k' is the number of non-zero elements. Space complexity is O(m*k + n*k) in the worst case, where m, n are dimensions and k is the common dimension.
+</thinking>

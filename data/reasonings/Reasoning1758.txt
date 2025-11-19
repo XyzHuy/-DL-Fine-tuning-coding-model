@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations to make a binary string alternating by changing characters.
+2. Problem type / algorithm category: Greedy, String manipulation.
+3. Step-by-step approach: Calculate mismatches against two target alternating patterns ("0101..." and "1010..."), then return the minimum of the two mismatch counts.
+4. Edge cases: String length of 1, string already alternating.
+5. Time and space complexity: O(N) time complexity, O(1) space complexity.
+</thinking>

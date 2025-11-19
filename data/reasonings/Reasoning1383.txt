@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Select at most k engineers to maximize (sum of speeds * minimum efficiency) modulo 10^9 + 7.
+2. Problem type / algorithm category: Greedy approach with a min-heap.
+3. Step-by-step approach: Sort engineers by efficiency descending. Iterate through engineers, maintaining a min-heap of the top k speeds encountered so far and their sum. For each engineer, add their speed, update the sum, and if the heap size exceeds k, remove the smallest speed. Calculate performance with current engineer's efficiency and the current total speed, updating the maximum.
+4. Edge cases: k = 1 (select the engineer with highest efficiency * their speed), n = k (consider all engineers).
+5. Time and space complexity: Time O(N log N) for sorting and heap operations, Space O(K) for the heap.
+</thinking>

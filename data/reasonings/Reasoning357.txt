@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of integers with unique digits in the range [0, 10^n).
+2. Problem type / algorithm category: Dynamic Programming / Combinatorics
+3. Step-by-step approach: Handle base cases n=0 and n=1. Iterate from 2 to n, calculating the number of unique digit numbers for each length and adding to the total count. The number of unique digit numbers for length i is calculated by multiplying the number of unique digit numbers of length i-1 with available digits (decreasing from 9).
+4. Edge cases: n = 0, n = 1, n > 1. The problem states n <= 8 so we don't need to worry about larger numbers.
+5. Time and space complexity: Time complexity is O(n) because of the loop. Space complexity is O(1) because only a few variables are used.
+</thinking>

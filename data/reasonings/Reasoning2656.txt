@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize score by repeatedly picking the largest element, removing it, adding element + 1, and adding picked element to score, k times.
+2. Problem type / algorithm category: Greedy, Arithmetic Series.
+3. Step-by-step approach: Find the maximum element. Simulate picking it k times, each time incrementing the chosen element for the next pick. Sum these k chosen elements. This forms an arithmetic progression.
+4. Edge cases: k=1, all elements are the same, nums contains only one element.
+5. Time and space complexity: O(N) time to find max, O(1) space. The calculation of the sum is O(1).
+</thinking>

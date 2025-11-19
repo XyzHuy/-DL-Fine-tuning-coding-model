@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays of digits representing two numbers, find the largest possible number of length k that can be formed by merging digits from the two arrays while maintaining the relative order of digits from the same array.
+2. Problem type / algorithm category: Dynamic Programming, Greedy, Merge Sort
+3. Step-by-step approach: Extract the largest possible sub-sequence of length i from nums1 and length k-i from nums2. Merge these sub-sequences to form a number of length k. Iterate through all possible values of i from 0 to k, compare the merged numbers, and return the largest one.
+4. Edge cases: When one of the arrays is empty or when k is larger than the sum of lengths of the arrays. Also, when comparing two sub-sequences during merge, it is necessary to compare them lexicographically in case of ties.
+5. Time and space complexity: Time complexity is O(k * (m + n)^2) due to the merge operation and the loop. The space complexity is O(k).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an n x n matrix initialized to zeros and a list of queries, where each query specifies a submatrix, increment all elements within each submatrix by 1. The goal is to return the final state of the matrix after all queries are processed.
+2. Problem type / algorithm category: 2D Prefix Sum / Difference Array.
+3. Step-by-step approach: Create a difference matrix of size (n+1)x(n+1). For each query [r1, c1, r2, c2], update the difference matrix at (r1, c1) by +1, (r2+1, c1) by -1, (r1, c2+1) by -1, and (r2+1, c2+1) by +1. Then, compute the 2D prefix sum of this difference matrix to reconstruct the final matrix where each element represents the sum of increments applied to it.
+4. Edge cases: Queries can span the entire matrix. Queries can be at the boundaries of the matrix. The matrix size n can be as small as 1. The number of queries can be large.
+5. Time and space complexity: Time complexity is O(N*N + Q), where N is the matrix dimension and Q is the number of queries, due to initializing the difference matrix, processing queries, and computing the prefix sum. Space complexity is O(N*N) for storing the difference and result matrices.
+</thinking>

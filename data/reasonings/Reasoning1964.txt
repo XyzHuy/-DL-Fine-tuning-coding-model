@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each obstacle, find the longest non-decreasing subsequence of obstacles ending at that obstacle, considering only obstacles up to the current index.
+2. Problem type / algorithm category: Dynamic Programming with Patience Sorting / Longest Increasing Subsequence variation.
+3. Step-by-step approach: Maintain a `dp` array where `dp[j]` stores the smallest ending obstacle height for a non-decreasing subsequence of length `j+1`. For each obstacle, find the largest `j` such that `dp[j]` is less than or equal to the current obstacle's height using binary search (bisect_right). The length of the longest course ending at the current obstacle is `j+1`. Update `dp[j+1]` with the current obstacle's height if it's smaller.
+4. Edge cases: The input array can contain duplicate obstacle heights, and the lengths of courses are at least 1 (the obstacle itself).
+5. Time and space complexity: Time complexity is O(N log N) due to the binary search within the loop. Space complexity is O(N) for the dp array.
+</thinking>

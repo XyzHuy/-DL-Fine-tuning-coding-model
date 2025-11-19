@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all distinct combinations of k numbers (1-9) that sum to n, using each number at most once.
+2. Problem type / algorithm category: Backtracking / Combination Search.
+3. Step-by-step approach: Use backtracking to explore combinations. Start with 1, explore adding numbers up to 9. Prune branches if the current sum exceeds n or if we have already picked k numbers. If we reach a sum equal to n with k numbers, add the combination to the result.
+4. Edge cases: k is too large for n (e.g., k=4, n=1). Early stopping if the current number is greater than the remaining target.
+5. Time and space complexity: Time complexity is difficult to precisely determine but is roughly O(9 choose k). Space complexity is O(k) due to the depth of the recursion and the size of the path.
+</thinking>

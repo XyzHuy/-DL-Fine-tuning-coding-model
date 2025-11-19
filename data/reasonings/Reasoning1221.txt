@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a balanced string s, split it into the maximum number of balanced substrings.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation.
+3. Step-by-step approach: Iterate through the string, maintaining a balance counter. Increment for 'L' and decrement for 'R'. When the balance is zero, a balanced substring has been found, increment the count of balanced strings.
+4. Edge cases: The input string is guaranteed to be balanced and have a minimum length of 2. An empty string is not possible.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(1) as we only use a few variables.
+</thinking>

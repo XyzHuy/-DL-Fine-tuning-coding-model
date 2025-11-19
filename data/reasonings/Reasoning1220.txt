@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of vowel strings of length n, adhering to specific character transition rules, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, State Compression.
+3. Step-by-step approach: Use DP where states represent the counts of strings ending in 'a', 'e', 'i', 'o', 'u' for a given length. Iterate from length 1 to n, calculating new counts based on transition rules. Sum up counts for all vowels at length n.
+4. Edge cases: n=1, where each vowel forms a valid string. Constraints ensure n is at least 1.
+5. Time and space complexity: O(n) time to iterate through lengths, O(1) space as we only store counts for the previous length.
+</thinking>

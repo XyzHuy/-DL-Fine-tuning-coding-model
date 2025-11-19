@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of block building times and a split cost, find the minimum time to build all blocks starting with one worker. Workers can split or build a block.
+2. Problem type / algorithm category: Greedy algorithm, Heap (Priority Queue).
+3. Step-by-step approach: Use a min-heap to store the block building times. Repeatedly extract the two smallest times, combine them by adding the split cost to the larger of the two, and push the result back into the heap. The final element remaining in the heap is the minimum build time.
+4. Edge cases: Empty block list (should return 0, but the problem states the list is non-empty). Split cost being very large, forcing us to build blocks sequentially.
+5. Time and space complexity: Time complexity is O(N log N) due to heap operations. Space complexity is O(N) to store the heap.
+</thinking>

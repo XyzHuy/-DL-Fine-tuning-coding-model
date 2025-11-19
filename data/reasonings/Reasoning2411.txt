@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each index i, find the minimum length of a subarray starting at i whose bitwise OR is maximal among all subarrays starting at i.
+2. Problem type / algorithm category: Array traversal, Bitwise operations, Greedy.
+3. Step-by-step approach: Iterate from right to left. For each element, update the last seen index for each bit. The maximum among these last seen indices determines the farthest reach for the current bitwise OR. The length is then calculated as the difference between this farthest index and the current index plus one.
+4. Edge cases: An array with a single element, where the minimum length is always 1. Non-negative integers, meaning bits up to 30 or 31 are relevant.
+5. Time and space complexity: Time complexity is O(n * log(max_val)), where max_val is the maximum value in nums, due to iterating through bits for each number. Space complexity is O(log(max_val)) for storing the last seen indices of bits.
+</thinking>

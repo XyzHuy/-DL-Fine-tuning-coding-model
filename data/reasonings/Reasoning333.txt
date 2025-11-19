@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest subtree within a given binary tree that is also a Binary Search Tree (BST), and return the number of nodes in that subtree.
+2. Problem type / algorithm category: Tree traversal, Binary Search Tree, Recursion.
+3. Step-by-step approach: Use a recursive helper function that traverses the tree. For each node, check if the subtree rooted at that node is a BST. The helper function returns the minimum value in the subtree, the maximum value in the subtree, and the size of the subtree. If the current subtree is a BST, update the overall maximum size found so far. If it is not a BST, return float('-inf'), float('inf'), and the maximum size of the left or right subtrees.
+4. Edge cases: Empty tree, single node tree, skewed trees, cases where the largest BST is a single node or the entire tree.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H) where H is the height of the tree, due to the recursive call stack. In the worst case, H can be equal to N.
+</thinking>

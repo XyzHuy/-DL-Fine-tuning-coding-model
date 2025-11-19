@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of unique numbers, construct a maximum binary tree where each node's value is the maximum value of its subtree's array, with left and right subtrees constructed similarly from the subarrays to the left and right of the maximum element.
+2. Problem type / algorithm category: Tree construction, recursion, divide and conquer.
+3. Step-by-step approach: Find the maximum element in the array, create a node with this value as the root, recursively call the function on the left subarray to construct the left subtree, recursively call the function on the right subarray to construct the right subtree, and return the root.
+4. Edge cases: Empty input array (should return None).
+5. Time and space complexity: Time complexity is O(n^2) in the worst case (skewed tree) due to finding the maximum element and array slicing in each recursive call. Space complexity is O(n) due to the recursion depth and the creation of new subarrays.
+</thinking>

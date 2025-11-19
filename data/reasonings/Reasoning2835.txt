@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of powers of 2 and a target, find the minimum operations to form a subsequence summing to the target. An operation involves splitting a number N into two N/2.
+2. Problem type / algorithm category: Greedy, Bit Manipulation.
+3. Step-by-step approach: First, check if the total sum of initial numbers is less than the target. If so, return -1. Then, count occurrences of each power of 2. Iterate through the bits of the target from least significant to most significant. For each bit, if it's 1, check if the current sum (of available powers of 2 up to this bit's value) is sufficient. If not, find the smallest available higher power of 2, split it repeatedly to satisfy the current bit's requirement, and increment operations. If the bit is 0, use available powers to contribute to higher bits if possible.
+4. Edge cases: Total sum of initial numbers is less than target. Target is 0 (implicitly handled by bit iteration). Array contains only 1s.
+5. Time and space complexity: O(N + log(target)) for time, O(log(max(nums))) for space.
+</thinking>

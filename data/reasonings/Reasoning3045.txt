@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of indices (i, j) where i < j and words[i] is both a prefix and suffix of words[j].
+2. Problem type / algorithm category: String manipulation, Hash Map (Dictionary) usage.
+3. Step-by-step approach: Iterate through the words. For each word, check against previously seen words stored in a hash map. If a previous word is a prefix and suffix of the current word, add its frequency from the hash map to the total count. Then, add or update the current word in the hash map.
+4. Edge cases: Empty input array, single word input, words that are prefixes/suffixes of themselves, words that are not prefixes/suffixes of any previous words.
+5. Time and space complexity: O(N*L^2) time in worst case for string checks, O(N*L) space for hash map, where N is the number of words and L is the max length of a word.
+</thinking>

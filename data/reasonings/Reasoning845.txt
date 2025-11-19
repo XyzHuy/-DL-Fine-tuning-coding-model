@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest mountain subarray within a given array of integers. A mountain subarray is defined as a subarray with a peak, where elements strictly increase to the peak and strictly decrease from the peak.
+2. Problem type / algorithm category: Array traversal, peak finding, sliding window (though not strictly sliding), dynamic programming (can be solved with DP as well).
+3. Step-by-step approach: Iterate through the array, identifying potential peaks. For each peak, expand outwards to find the left and right boundaries of the mountain. Calculate the length of the mountain and update the maximum length found so far. Move the index to the end of the identified mountain to avoid redundant checks.
+4. Edge cases: Empty array or array with less than 3 elements. Cases where there is no mountain in the array. Cases where the peak is at the beginning or the end of the array.
+5. Time and space complexity: Time complexity is O(N) because in the worst case, we iterate through each element of the array multiple times but not in a nested fashion. Space complexity is O(1) as we are only using a constant amount of extra space.
+</thinking>

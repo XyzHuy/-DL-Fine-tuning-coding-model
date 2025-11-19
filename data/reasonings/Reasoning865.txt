@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest subtree that contains all the deepest nodes in a given binary tree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Use a recursive DFS function to traverse the tree. The function returns the subtree root and the depth of the deepest node in that subtree. If the depths of the left and right subtrees are equal, the current node is the subtree containing all deepest nodes. Otherwise, the subtree containing all deepest nodes is in either the left or right subtree, depending on their depths.
+4. Edge cases: Empty tree (root is None). Single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, resulting in O(N) space complexity. In the best case (balanced tree), H is log N, resulting in O(log N) space complexity.
+</thinking>

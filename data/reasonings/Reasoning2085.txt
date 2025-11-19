@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count strings that appear exactly once in both input word lists.
+2. Problem type / algorithm category: Counting, Frequency Maps (Hash Maps/Dictionaries).
+3. Step-by-step approach: Use frequency maps (Counters) to store counts of words in each list. Iterate through one frequency map and check if the word's count is 1 and if its count in the other map is also 1. Increment a result counter if both conditions are met.
+4. Edge cases: Empty input lists (not possible by constraints), lists with no common words, lists where common words appear more than once in either list.
+5. Time and space complexity: Time O(N + M), Space O(N + M) where N and M are the lengths of words1 and words2 respectively.
+</thinking>

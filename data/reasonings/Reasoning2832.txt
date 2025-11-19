@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each element in a distinct integer array, find the length of the longest subarray where that element is the maximum.
+2. Problem type / algorithm category: Monotonic stack, Array manipulation.
+3. Step-by-step approach: Find the index of the next greater element and the previous greater element for each number using a monotonic stack. The range for an element nums[i] to be the maximum is bounded by its previous and next greater elements. The length is then calculated as next_greater_index - previous_greater_index - 1.
+4. Edge cases: Array with a single element. Elements at the beginning or end of the array having no previous or next greater element respectively.
+5. Time and space complexity: Time complexity is O(n) because each element is pushed onto and popped from the stack at most once. Space complexity is O(n) for storing the next and previous greater element arrays and the stack.
+</thinking>

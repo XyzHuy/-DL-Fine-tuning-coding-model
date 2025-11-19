@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given events with start times, end times, and values, find the maximum sum achievable by attending at most two non-overlapping events.
+2. Problem type / algorithm category: Dynamic Programming with Binary Search, Greedy Optimization.
+3. Step-by-step approach: Sort events by start time. For each event, find the best non-overlapping event after it using binary search on start times and a precomputed suffix maximum array of event values. The overall maximum sum is updated.
+4. Edge cases: Events with identical start/end times, cases where only one event is optimal, or no events can be chosen.
+5. Time and space complexity: O(N log N) time due to sorting and binary search, O(N) space for auxiliary arrays.
+</thinking>

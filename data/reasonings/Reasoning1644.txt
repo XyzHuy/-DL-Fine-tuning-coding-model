@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lowest node in a binary tree that has both given nodes p and q as descendants, considering a node can be a descendant of itself. Return null if either p or q is not present.
+2. Problem type / algorithm category: Binary Tree Traversal, Recursion, Lowest Common Ancestor (LCA).
+3. Step-by-step approach: Recursively traverse the tree. For each node, check if it's p or q. If it is, return the node. If the recursive calls on the left and right children both return a non-null node, the current node is the LCA. Otherwise, return whichever child returned a non-null node. Maintain flags to track if p and q are found.
+4. Edge cases: One or both nodes p and q might not exist in the tree. The root of the tree could be null. p or q could be the root.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited at most once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, making space complexity O(N).
+</thinking>

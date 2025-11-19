@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest number less than or equal to a given number `n` such that its digits are monotonically increasing.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Convert the integer to a list of digits, iterate from right to left, and if a digit is smaller than its previous digit, decrement the previous digit and mark the current position. Finally, change all digits from the marked position to the end of the list to '9'.
+4. Edge cases: Input 0, single-digit input, already monotonically increasing input.
+5. Time and space complexity: Time complexity is O(n) where n is the number of digits in the input number. Space complexity is O(n) for storing the digits in a list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the contiguous subarray within a given array of numbers which has the largest sum and return that sum.
+2. Problem type / algorithm category: Dynamic Programming / Kadane's Algorithm.
+3. Step-by-step approach: Iterate through the array, keeping track of the current maximum sum ending at the current position and the overall maximum sum seen so far. Update the current maximum sum by either starting a new subarray from the current element or extending the previous subarray. Update the overall maximum sum if the current maximum sum is greater.
+4. Edge cases: Empty array (should return 0, although the prompt says the array will have at least one element), array with all negative numbers (should return the largest negative number).
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we only use a constant amount of extra space for variables.
+</thinking>

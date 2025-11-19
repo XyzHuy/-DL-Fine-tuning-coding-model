@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path from a starting point '*' to any food cell '#' in a grid, avoiding obstacles 'X' and moving through free space 'O'.
+2. Problem type / algorithm category: Breadth-First Search (BFS) on a grid.
+3. Step-by-step approach: Initialize BFS with the starting position, a queue, and a visited set. Iterate level by level, exploring valid neighbors (within bounds, not visited, not an obstacle). Return the number of steps when a food cell is found. If the queue becomes empty before finding food, return -1.
+4. Edge cases: No food cells available, starting cell is surrounded by obstacles, grid is empty or has invalid dimensions (though constraints prevent this).
+5. Time and space complexity: Time complexity is O(m*n) because each cell is visited at most once. Space complexity is O(m*n) for the visited set and the queue in the worst case.
+</thinking>

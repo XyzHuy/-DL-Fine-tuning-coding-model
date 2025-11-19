@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of tilts of all nodes in a binary tree, where the tilt of a node is the absolute difference between the sum of its left subtree and the sum of its right subtree.
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Use a recursive depth-first search (DFS) approach. For each node, recursively calculate the sum of the left and right subtrees. The tilt of the current node is the absolute difference between these sums. Accumulate the tilt in a global variable. Return the sum of the current subtree to the parent.
+4. Edge cases: Empty tree (root is None). Leaf nodes have a tilt of 0 because their left and right subtrees are empty, considered as 0.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H) where H is the height of the tree due to the recursive call stack, which can be O(N) in the worst case (skewed tree) and O(log N) in the best case (balanced tree).
+</thinking>

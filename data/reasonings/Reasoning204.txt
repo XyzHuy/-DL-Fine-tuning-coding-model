@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of prime numbers strictly less than a given integer n.
+2. Problem type / algorithm category: Number theory, Sieve of Eratosthenes.
+3. Step-by-step approach: Initialize a boolean array of size n, marking all numbers as potentially prime. Iterate from 2 up to the square root of n. If a number is marked as prime, mark all its multiples as non-prime. Finally, count the number of remaining prime numbers.
+4. Edge cases: Handle cases where n is 0, 1, or 2, returning 0 in these situations since there are no primes less than or equal to 2.
+5. Time and space complexity: Time complexity is O(n log log n) due to the Sieve of Eratosthenes. Space complexity is O(n) to store the boolean array.
+</thinking>

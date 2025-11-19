@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Combine adjacent elements in an array if the left element is less than or equal to the right element, merging them by summing the right element with the left element and removing the left element, aiming to maximize a single final element.
+2. Problem type / algorithm category: Greedy algorithm, dynamic programming (implicit), iteration.
+3. Step-by-step approach: Iterate through the array from right to left. Maintain a 'current maximum' value. If the current element is less than or equal to the 'current maximum', add the current element to it. Otherwise, update the 'current maximum' to the current element.
+4. Edge cases: Array with a single element, all elements are strictly increasing, all elements are strictly decreasing.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables for storage.
+</thinking>

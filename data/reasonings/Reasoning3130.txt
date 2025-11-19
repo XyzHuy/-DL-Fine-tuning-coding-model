@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count binary arrays with specific counts of 0s and 1s, where no subarray longer than 'limit' contains only one type of digit.
+2. Problem type / algorithm category: Dynamic Programming with Memoization / Recursive Backtracking.
+3. Step-by-step approach: Use a recursive function with memoization. The state should track remaining zeros, remaining ones, the last digit added, and the consecutive count of the last digit. Explore adding a 0 or a 1, ensuring the 'limit' constraint is not violated. Sum up valid combinations from the base case where all zeros and ones are used.
+4. Edge cases: The initial call considers starting with either a 0 or a 1. The base case handles when both zeros and ones are fully consumed. Invalid states (negative counts of zeros/ones) return 0.
+5. Time and space complexity: O(zero * one * limit) for both time and space due to the memoization table size and recursion depth.
+</thinking>

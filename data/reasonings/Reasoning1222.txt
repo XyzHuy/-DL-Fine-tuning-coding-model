@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find black queens on an 8x8 chessboard that can attack a white king, considering queens only attack if no other piece is between them.
+2. Problem type / algorithm category: Grid traversal, directional search.
+3. Step-by-step approach: For each of the 8 directions from the king, move one step at a time until a queen is found or the board edge is reached. If a queen is found, add it to the result.
+4. Edge cases: The king or a queen being on the edge of the board, no queens attacking the king, all queens attacking the king.
+5. Time and space complexity: O(1) time complexity because the board size and number of directions are constant, O(1) space complexity as the storage for attacked queens is at most 8.
+</thinking>

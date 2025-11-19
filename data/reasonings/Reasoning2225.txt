@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify players with zero losses and players with exactly one loss from a list of match outcomes.
+2. Problem type / algorithm category: Data structures (hash maps/dictionaries and sets), sorting.
+3. Step-by-step approach: Use a dictionary to count losses for each player. Iterate through matches, incrementing loser's count. Collect all unique players. Filter for players with zero losses and players with exactly one loss from the counts. Sort both resulting lists.
+4. Edge cases: No matches played, no players with exactly one loss, players who only win but never lose.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(P) where P is the number of unique players.
+</thinking>

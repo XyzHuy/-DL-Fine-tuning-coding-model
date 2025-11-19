@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of triplets in an array that can form valid triangles.
+2. Problem type / algorithm category: Sorting and Two Pointers
+3. Step-by-step approach: Sort the input array. Iterate from the end of the array. Use two pointers, left and right, to find pairs that satisfy the triangle inequality.
+4. Edge cases: Array with less than 3 elements. Zero or negative side lengths.
+5. Time and space complexity: Time: O(n^2), Space: O(1)
+</thinking>

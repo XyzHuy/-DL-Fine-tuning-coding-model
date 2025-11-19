@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings that start and end with the same character.
+2. Problem type / algorithm category: Combinatorics / Counting.
+3. Step-by-step approach: Count the frequency of each character. For each character, if it appears 'k' times, it contributes k*(k+1)/2 substrings starting and ending with itself. Sum these contributions.
+4. Edge cases: String with a single character, string with all same characters, string with all unique characters.
+5. Time and space complexity: Time O(N), Space O(1) (since alphabet size is constant).
+</thinking>

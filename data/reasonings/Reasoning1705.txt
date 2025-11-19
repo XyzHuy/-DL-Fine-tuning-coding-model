@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize apples eaten from a tree over n days, where apples have a limited lifespan, and you can eat at most one apple per day.
+2. Problem type / algorithm category: Greedy approach with a min-heap.
+3. Step-by-step approach: Iterate through the days, adding newly grown apples (with their rot day) to a min-heap. Remove rotten apples from the heap. Eat one apple from the batch that will rot earliest if available. After n days, continue eating remaining non-rotten apples from the heap.
+4. Edge cases: No apples grown on a given day, apples that rot immediately, continuing to eat after the initial n days.
+5. Time and space complexity: Time complexity is O(N log N) due to heap operations, where N is the number of days. Space complexity is O(N) to store apples in the heap.
+</thinking>

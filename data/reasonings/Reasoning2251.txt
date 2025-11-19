@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of flowers in full bloom for each person's arrival time.
+2. Problem type / algorithm category: Prefix Sum, Binary Search.
+3. Step-by-step approach: Create a timeline of bloom changes, calculate prefix sums to get bloom counts at specific times, and use binary search for each person's arrival time.
+4. Edge cases: People arriving before any flowers bloom or after all flowers have finished blooming.
+5. Time and space complexity: Time O(F log F + P log F), Space O(F).
+</thinking>

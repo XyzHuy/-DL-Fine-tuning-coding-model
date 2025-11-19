@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring in a given string that contains all 5 vowels in alphabetical order.
+2. Problem type / algorithm category: String manipulation, Sliding window.
+3. Step-by-step approach: Iterate through the string, maintaining the current length of a potential beautiful substring and the index of the current vowel being sought. Reset if the alphabetical order is broken or if a non-'a' character appears after a reset. Update the maximum length when a beautiful substring is completed or the string ends.
+4. Edge cases: The input string has only one character, or no beautiful substring can be formed.
+5. Time and space complexity: O(N) time and O(1) space, where N is the length of the input string.
+</thinking>

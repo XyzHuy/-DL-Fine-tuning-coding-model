@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign robots to factories to minimize total travel distance, considering factory repair limits.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Sort robots and factories. Use a recursive DP function `dp(r, f)` representing the minimum distance for robots from index `r` onwards using factories from index `f` onwards. At each step, either skip the current factory `f` or assign a group of robots to it up to its `limit`.
+4. Edge cases: All robots repaired, no remaining robots, no remaining factories.
+5. Time and space complexity: O(N*M*K) time and O(N*M) space where N is number of robots, M is number of factories, K is max factory limit. With optimization due to `lru_cache` and sorted inputs, it's closer to O(N*M) states where each state is computed efficiently.
+</thinking>

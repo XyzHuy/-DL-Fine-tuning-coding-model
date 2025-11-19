@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace elements in a matrix with smallest possible positive integers while preserving relative order within rows and columns.
+2. Problem type / algorithm category: Greedy approach, sorting, matrix manipulation.
+3. Step-by-step approach: Flatten the grid with original values and coordinates, sort by value, iterate through sorted elements assigning new values greedily based on current row/column maximums plus one, and update row/column maximums.
+4. Edge cases: A single-element matrix.
+5. Time and space complexity: Time complexity is dominated by sorting O(MN log MN), space complexity is O(MN) for storing flattened grid and result.
+</thinking>

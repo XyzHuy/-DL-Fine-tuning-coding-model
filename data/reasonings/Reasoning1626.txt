@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum possible team score where no younger player has a strictly higher score than an older player.
+2. Problem type / algorithm category: Dynamic Programming (specifically, Longest Increasing Subsequence variant).
+3. Step-by-step approach: Combine scores and ages, sort players by age (and score for ties), then use dynamic programming. dp[i] stores the max score of a valid team ending with player i. Iterate through players, and for each player i, find the max dp[j] among all previous players j where player i is compatible with player j (age[i] >= age[j] and score[i] >= score[j]), and update dp[i].
+4. Edge cases: A single player forms a valid team. All players might form a valid team. The constraints on the number of players and their scores/ages are within reasonable limits.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops for DP, and space complexity is O(N) for the DP array and player list.
+</thinking>

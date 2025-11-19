@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the numerical value of a string representing an integer by inserting a given digit.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate through the string. For positive numbers, insert x before the first digit smaller than x. For negative numbers, insert x before the first digit larger than x (after the sign). If no such digit is found, append x.
+4. Edge cases: Handling negative numbers (inserting after the sign), and cases where x should be appended at the end.
+5. Time and space complexity: O(N) time for iteration, O(N) space for string slicing and concatenation.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rotate a singly linked list to the right by k positions, where k can be larger than the length of the list.
+2. Problem type / algorithm category: Linked list manipulation, modulo arithmetic.
+3. Step-by-step approach: Calculate the length of the list, make the list circular by connecting the tail to the head, find the new tail by moving (length - k % length - 1) steps from the original head, break the circle by setting new_tail.next to None, and set the new head as new_tail.next.
+4. Edge cases: Empty list, single node list, k = 0, k is a multiple of list length.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the list. Space complexity is O(1).
+</thinking>

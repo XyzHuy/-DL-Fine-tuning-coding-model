@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the integer square root of a non-negative integer x, rounded down.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Initialize left to 1 and right to x. Use binary search to find the mid point. Compare the square of mid with x. Adjust left or right accordingly. Return right when the loop finishes. Handle the x=0 case separately.
+4. Edge cases: x = 0, x = 1, large values of x.
+5. Time and space complexity: Time: O(log x), Space: O(1)
+</thinking>

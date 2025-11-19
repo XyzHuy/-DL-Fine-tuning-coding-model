@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count distinct dice roll sequences of length n with GCD of adjacent elements being 1 and no repeated values within a gap of 2 rolls.
+2. Problem type / algorithm category: Dynamic Programming with state representing the last two rolls.
+3. Step-by-step approach: Precompute valid transitions for GCD=1. Use DP where dp[length][last_roll][second_last_roll] stores the count of valid sequences. Iterate through lengths, prev, curr, and next rolls to fill DP table. Sum final states.
+4. Edge cases: n=1 requires special handling as the DP is for length 2+; modulo arithmetic for large numbers.
+5. Time and space complexity: Time O(n * 6^3) and Space O(n * 6^2) due to DP table size.
+</thinking>

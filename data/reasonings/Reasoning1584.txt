@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum total Manhattan distance to connect all given points on a 2D plane, forming a single connected component.
+2. Problem type / algorithm category: Minimum Spanning Tree (MST) problem, specifically using Kruskal's algorithm.
+3. Step-by-step approach: Calculate the Manhattan distance between all pairs of points, create a list of all possible edges with their weights, sort these edges by weight, and then use a Union-Find data structure to iteratively add the cheapest edges that do not form a cycle until all points are connected.
+4. Edge cases: A single point (no connections needed, cost is 0), all points already collinear (though Kruskal's handles this implicitly). The constraints ensure at least one point and distinct points.
+5. Time and space complexity: Time complexity is dominated by edge calculation and sorting, O(N^2 log N), where N is the number of points. Space complexity is O(N^2) to store edges and O(N) for Union-Find.
+</thinking>

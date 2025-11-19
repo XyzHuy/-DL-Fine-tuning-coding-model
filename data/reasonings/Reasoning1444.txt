@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count ways to cut a pizza into k pieces, each having at least one apple, using k-1 horizontal or vertical cuts.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down), Prefix Sums.
+3. Step-by-step approach: Precompute a 2D prefix sum array to efficiently count apples in any rectangular subgrid. Use a recursive function with memoization (DFS) that takes current subgrid boundaries (top-left corner i, j) and remaining cuts k. For each state, iterate through possible horizontal and vertical cuts, ensuring the resulting piece has an apple, and recursively call DFS for the remaining pizza and cuts.
+4. Edge cases: When k becomes 0, check if the current piece has at least one apple. Initial call should consider the entire pizza and k-1 cuts.
+5. Time and space complexity: Time complexity is O(m * n * k * (m + n)) due to the DP states and loops for cuts, space complexity is O(m * n) for prefix sums and memoization table.
+</thinking>

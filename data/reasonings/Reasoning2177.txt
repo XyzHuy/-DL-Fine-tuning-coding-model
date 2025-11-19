@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find three consecutive integers that sum up to a given integer 'num'. Return an empty array if no such integers exist.
+2. Problem type / algorithm category: Mathematical, Number Theory.
+3. Step-by-step approach: Let the three consecutive integers be x-1, x, and x+1. Their sum is (x-1) + x + (x+1) = 3x. If this sum equals 'num', then 3x = num. Thus, x = num / 3. If 'num' is divisible by 3, then x will be an integer, and the three consecutive integers are x-1, x, and x+1. Otherwise, no such integers exist.
+4. Edge cases: The problem statement guarantees 0 <= num <= 10^15, so negative 'num' values are not a concern. The primary edge case is when 'num' is not divisible by 3.
+5. Time and space complexity: O(1) time complexity because it involves a single division and modulo operation. O(1) space complexity as it uses a constant amount of extra space for variables.
+</thinking>

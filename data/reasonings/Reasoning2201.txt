@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid, a list of artifact locations (defined by top-left and bottom-right coordinates), and a list of excavated cells, count how many artifacts are fully excavated.
+2. Problem type / algorithm category: Brute Force / Simulation.
+3. Step-by-step approach: Convert the dug cells into a set for efficient lookup. For each artifact, iterate through all its constituent cells. If any cell within an artifact's boundaries has not been dug, mark that artifact as not extractable. Otherwise, if all cells of an artifact have been dug, increment the count of extractable artifacts.
+4. Edge cases: An artifact might be a single cell. An artifact might cover exactly 4 cells. The dig list could be empty or contain all cells.
+5. Time and space complexity: Time complexity is O(A * C) where A is the number of artifacts and C is the maximum number of cells an artifact covers (which is constant at 4). Space complexity is O(D) where D is the number of dug cells, for storing the dug cells in a set.
+</thinking>

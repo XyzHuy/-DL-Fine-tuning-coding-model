@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of car parking intervals (start, end), find the total number of unique integer points covered by at least one car.
+2. Problem type / algorithm category: Set manipulation, Interval problems.
+3. Step-by-step approach: Initialize an empty set to store covered points. For each car interval, iterate through all integer points from its start to its end (inclusive) and add each point to the set. Finally, return the size of the set.
+4. Edge cases: Intervals can overlap or be adjacent. The constraints ensure valid intervals and non-empty input.
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of cars and M is the maximum range of a car. Space complexity is O(P) where P is the total number of unique points covered.
+</thinking>

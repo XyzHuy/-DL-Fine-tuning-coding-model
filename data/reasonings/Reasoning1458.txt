@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum dot product of two non-empty subsequences of equal length from given arrays nums1 and nums2.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a 2D DP table where dp[i][j] stores the maximum dot product considering nums1[0...i-1] and nums2[0...j-1]. For each pair (nums1[i-1], nums2[j-1]), consider taking the product, extending a previous dot product, or skipping elements from either array.
+4. Edge cases: All numbers could be negative, requiring the selection of the least negative product. DP table initialization with negative infinity handles cases where no positive products can be formed.
+5. Time and space complexity: O(m*n) for both time (iterating through DP table) and space (storing DP table), where m and n are lengths of nums1 and nums2 respectively.
+</thinking>

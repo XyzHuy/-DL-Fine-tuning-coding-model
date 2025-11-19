@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a contiguous subarray containing only unique elements.
+2. Problem type / algorithm category: Sliding window technique.
+3. Step-by-step approach: Use two pointers, 'left' and 'right', to define a window. Expand the window by moving 'right'. If a duplicate is found, shrink the window from the 'left' until the duplicate is removed. Maintain the current sum and the maximum sum encountered.
+4. Edge cases: An empty input array is not possible due to constraints. A single element array is a valid subarray. All elements are positive.
+5. Time and space complexity: O(N) time and O(N) space.
+</thinking>

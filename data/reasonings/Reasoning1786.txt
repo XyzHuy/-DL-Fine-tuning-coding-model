@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of paths from node 1 to node n in a weighted undirected graph such that for any two adjacent nodes u, v in the path, the shortest distance from v to node n is strictly less than the shortest distance from u to node n. Return the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Graph traversal, Shortest path (Dijkstra), Dynamic Programming with Memoization.
+3. Step-by-step approach: First, compute the shortest distance from every node to node n using Dijkstra's algorithm. Then, use a Depth First Search (DFS) with memoization to count restricted paths. The DFS from a node u counts paths by summing up the results of DFS calls from its neighbors v, provided dist(u, n) > dist(v, n). The base case is when DFS reaches node n, returning 1.
+4. Edge cases: The graph is connected, so paths always exist. n can be small. Node 1 might be directly connected to node n.
+5. Time and space complexity: Time complexity is dominated by Dijkstra's algorithm (O(E log V)) and DFS with memoization (O(V + E)). Total time: O(E log V). Space complexity is O(V + E) for adjacency list, distances, and memoization table.
+</thinking>

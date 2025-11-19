@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest valid substring of parentheses in a given string containing only '(' and ')'.
+2. Problem type / algorithm category: String manipulation, stack data structure.
+3. Step-by-step approach: Use a stack to keep track of the indices of unmatched '(' characters. When a ')' is encountered, pop from the stack. If the stack becomes empty, push the current index onto the stack. Otherwise, the length of the valid substring is the difference between the current index and the top of the stack.
+4. Edge cases: Empty string, string with no valid parentheses, string with only '(' or ')'. The stack is initialized with -1 to handle the case where the first character is ')' and there are no matching '(' before it.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(n) in the worst case, when the string contains only '(' characters.
+</thinking>

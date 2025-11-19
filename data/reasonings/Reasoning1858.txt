@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest word in a given list where all its prefixes are also present in the list. If multiple such words exist, return the lexicographically smallest one.
+2. Problem type / algorithm category: String manipulation, prefix checking, set usage.
+3. Step-by-step approach: Store all words in a set for efficient lookup. Iterate through each word. For each word, check if all its prefixes are present in the set. If they are, compare this word with the current longest valid word found so far, updating if it's longer or lexicographically smaller.
+4. Edge cases: Empty input list (although constraints say 1 <= words.length), no word satisfies the prefix condition, multiple words of the same max length.
+5. Time and space complexity: Time O(N*L) where N is number of words and L is max length of a word due to prefix checking, Space O(N*L) for storing words in a set.
+</thinking>

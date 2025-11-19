@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the result of an arithmetic expression using numbers from n down to 1 with a rotating sequence of operators (*, /, +, -), following the standard order of operations.
+2. Problem type / algorithm category: Math, Simulation.
+3. Step-by-step approach: The solution identifies a repeating pattern based on the order of operations. It first calculates the value of the first term, which is n * (n-1) // (n-2). Then, it iterates through the remaining numbers in chunks of four, observing that each subsequent chunk changes the total result by + i - (i-1) * (i-2) // (i-3). Finally, it handles the last one, two, or three numbers that do not form a full chunk.
+4. Edge cases: The general pattern does not hold for small n. The solution handles n <= 4 as special base cases to simplify the logic and avoid out-of-bounds calculations in the main loop.
+5. Time and space complexity: The algorithm processes each number from n down to 1 a single time, leading to a time complexity of O(n). It uses a constant amount of extra space for variables, resulting in a space complexity of O(1).
+</thinking>

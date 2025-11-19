@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks us to count how many elements in nums1 are present in nums2 and how many elements in nums2 are present in nums1, returning these two counts.
+2. Problem type / algorithm category: Set operations and counting.
+3. Step-by-step approach: Convert both input arrays into sets for efficient membership checking. Iterate through nums1, checking if each element exists in the set of nums2, and sum these occurrences for the first answer. Similarly, iterate through nums2, check for existence in the set of nums1, and sum for the second answer.
+4. Edge cases: Empty input arrays are not possible due to constraints. All elements are positive integers within a small range.
+5. Time and space complexity: Time complexity is O(n+m) for set creation and iteration. Space complexity is O(n+m) to store the sets.
+</thinking>

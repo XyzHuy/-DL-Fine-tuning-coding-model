@@ -1,0 +1,1281 @@
+{
+  "function_name": "minElement",
+  "test_cases": [
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1001,
+          1111
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          111,
+          222,
+          333
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          4321,
+          2134,
+          3412
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          12,
+          13,
+          14
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          200,
+          300,
+          400
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          1111,
+          2222,
+          3333,
+          4444
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1111,
+          2222,
+          3333
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          99,
+          999,
+          9999
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          5050,
+          550,
+          50,
+          5
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          899,
+          989,
+          998,
+          123
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1001,
+          2002,
+          3003
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          5678,
+          91011
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          1000,
+          100,
+          10,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          8888,
+          7777,
+          6666
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "nums": [
+          5050,
+          6060,
+          7070,
+          8080
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          999,
+          19,
+          199
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          56,
+          78,
+          90,
+          12
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "nums": [
+          9090,
+          8080,
+          7070,
+          6060
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1,
+          22,
+          333,
+          4444,
+          55555
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          1001,
+          1101,
+          1110,
+          1011,
+          1111
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          6789,
+          3456,
+          6543
+        ]
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "nums": [
+          10000,
+          9999,
+          9998,
+          9997,
+          9996,
+          9995
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          4321,
+          3214,
+          2143,
+          1432
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          123,
+          456,
+          789,
+          101
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1111,
+          2222,
+          3333
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          1099,
+          2099,
+          3099,
+          4099
+        ]
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "nums": [
+          99999,
+          11111,
+          12345,
+          54321
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          6543,
+          3210,
+          1234,
+          4321
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          6543,
+          3210,
+          1111
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          1111,
+          2222,
+          3333,
+          4444,
+          5555
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          555,
+          555,
+          555,
+          555,
+          555
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          9999,
+          9999,
+          9999,
+          9999
+        ]
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "nums": [
+          10000,
+          20000,
+          30000,
+          40000
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          10000,
+          5000,
+          2500,
+          1250
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          9900,
+          9800,
+          9700,
+          9600
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          5000,
+          500,
+          50,
+          5,
+          5555
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          10,
+          100,
+          1000,
+          10000
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          8888,
+          7777,
+          6666,
+          5555
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          999,
+          99,
+          9
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          10001,
+          20002,
+          30003,
+          40004
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          1234,
+          4321,
+          1111,
+          2222
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          4567,
+          1234,
+          890,
+          3333
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          4321,
+          2341,
+          1432,
+          3412
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          99999,
+          99998,
+          99997,
+          99996,
+          99995
+        ]
+      },
+      "expected_output": 41
+    },
+    {
+      "parameters": {
+        "nums": [
+          789,
+          897,
+          978,
+          879
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "nums": [
+          43210,
+          54321,
+          654321,
+          7654321,
+          87654321
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          5555,
+          555,
+          55,
+          5
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          99999,
+          88888,
+          77777,
+          66666
+        ]
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "nums": [
+          5678,
+          8765,
+          7890,
+          9012
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          5678,
+          91011,
+          121314
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          54321,
+          98765,
+          56789
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          888,
+          777,
+          666,
+          555,
+          444
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "nums": [
+          111,
+          222,
+          333,
+          444,
+          555,
+          666,
+          777,
+          888,
+          999
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          99,
+          999,
+          9999,
+          99999
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          123,
+          456,
+          789,
+          101,
+          202
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          67890,
+          13579,
+          24680,
+          97531
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          10101,
+          20202,
+          30303,
+          40404
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          8888,
+          7777,
+          6666
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "nums": [
+          123,
+          234,
+          345,
+          456,
+          567,
+          678,
+          789,
+          890,
+          901
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          54321,
+          21435,
+          35412,
+          41523
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          8888,
+          7777,
+          6666,
+          5555
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          67890,
+          54321,
+          98765
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          81,
+          72,
+          63,
+          54,
+          45,
+          36,
+          27,
+          18,
+          9
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          5000,
+          4000,
+          3000,
+          2000,
+          1000
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          321,
+          432,
+          543,
+          654,
+          765
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          123,
+          321,
+          213,
+          132,
+          312,
+          231
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          4321,
+          1111,
+          8765
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          54321,
+          43210,
+          32109,
+          21098
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          6789,
+          4321,
+          1234
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          555,
+          5555,
+          55555,
+          555555
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          555,
+          5555,
+          55555,
+          555555,
+          5555555
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          23456,
+          34567,
+          45678,
+          56789
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          1001,
+          1010,
+          1100,
+          111,
+          11,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          1999,
+          2999,
+          3999,
+          4999
+        ]
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "nums": [
+          43210,
+          43201,
+          43021,
+          42310
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          22,
+          333,
+          4444,
+          55555
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          2345,
+          3456,
+          4567,
+          5678,
+          6789
+        ]
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "nums": [
+          4567,
+          3456,
+          2345,
+          1234
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          9000,
+          900,
+          90,
+          9,
+          9990,
+          990,
+          909,
+          99
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          8765,
+          7654,
+          6543,
+          5432
+        ]
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          4321,
+          5678,
+          8765
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          1234,
+          4321,
+          2134,
+          3412
+        ]
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          54321,
+          11111,
+          99999
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          1999,
+          2998,
+          3997,
+          4996
+        ]
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "nums": [
+          1111,
+          2222,
+          3333,
+          4444,
+          5555,
+          6666,
+          7777,
+          8888,
+          9999
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "nums": [
+          10101,
+          10010,
+          11001,
+          10110
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          99999,
+          9999,
+          999,
+          99,
+          9
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          12345,
+          67890,
+          13579,
+          24680
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          9876,
+          8765,
+          7654,
+          6543,
+          5432,
+          4321,
+          3210,
+          2109,
+          1098,
+          987
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          98765,
+          98764,
+          98763,
+          98762
+        ]
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "nums": [
+          123456,
+          654321,
+          111111,
+          999999
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          99999,
+          100000,
+          100001,
+          100002,
+          100003
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          11111,
+          22222,
+          33333,
+          44444,
+          55555
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          10000,
+          9999,
+          8888,
+          7777,
+          6666
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          9999,
+          8888,
+          7777,
+          6666,
+          5555,
+          4444,
+          3333,
+          2222,
+          1111,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          1010,
+          2020,
+          3030,
+          4040,
+          5050
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          999999,
+          888888,
+          777777,
+          666666
+        ]
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          99,
+          999,
+          9999
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          10000,
+          1000,
+          100,
+          10,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "nums": [
+          5001,
+          6001,
+          7001,
+          8001
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          599,
+          488,
+          377,
+          266
+        ]
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "nums": [
+          999,
+          1001,
+          1010,
+          1100
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          1001,
+          1010,
+          1100,
+          10001
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "nums": [
+          11111,
+          22222,
+          33333,
+          44444,
+          55555,
+          66666,
+          77777,
+          88888,
+          99999
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          599,
+          123,
+          456,
+          789
+        ]
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "nums": [
+          55555,
+          66666,
+          77777,
+          88888
+        ]
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "nums": [
+          11111,
+          22222,
+          33333,
+          44444
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          101,
+          102,
+          103,
+          104
+        ]
+      },
+      "expected_output": 1
+    }
+  ]
+}

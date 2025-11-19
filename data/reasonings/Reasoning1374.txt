@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a string of length n where each character appears an odd number of times.
+2. Problem type / algorithm category: Greedy construction, String manipulation.
+3. Step-by-step approach: If n is odd, fill the string with n copies of a single character. If n is even, use n-1 copies of one character and 1 copy of another.
+4. Edge cases: The constraint n >= 1 means an empty string is not possible. The solution handles both odd and even n.
+5. Time and space complexity: O(n) time complexity for string construction, O(n) space complexity for the resulting string.
+</thinking>

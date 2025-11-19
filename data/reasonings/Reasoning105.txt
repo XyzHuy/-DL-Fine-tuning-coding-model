@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given preorder and inorder traversals of a binary tree, construct the tree.
+2. Problem type / algorithm category: Tree construction / Recursion
+3. Step-by-step approach: The first element of preorder is the root. Find the root in inorder. The elements to the left of the root in inorder are the left subtree, and the elements to the right are the right subtree. Use recursion to build left and right subtrees.
+4. Edge cases: Empty preorder or inorder lists, handle the base case of recursion.
+5. Time and space complexity: Time complexity is O(n) because each node is visited once. Space complexity is O(n) due to the recursive calls and the tree itself.
+</thinking>

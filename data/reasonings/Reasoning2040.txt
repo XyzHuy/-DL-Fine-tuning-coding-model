@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth smallest product formed by multiplying one element from sorted nums1 and one from sorted nums2.
+2. Problem type / algorithm category: Binary Search on Answer, Two Pointers.
+3. Step-by-step approach: Binary search for the product value. For a given product 'p', count how many pairs (nums1[i] * nums2[j]) are less than or equal to 'p'. Use two pointers or binary search within nums2 for each element in nums1 to efficiently count. Adjust the binary search range based on the count.
+4. Edge cases: Presence of negative numbers in nums1 and/or nums2, presence of zeros, large product values, k being 1 or maximum possible.
+5. Time and space complexity: Time complexity is O((N+M) * log(Range)), where Range is the difference between max and min possible products. Space complexity is O(1).
+</thinking>

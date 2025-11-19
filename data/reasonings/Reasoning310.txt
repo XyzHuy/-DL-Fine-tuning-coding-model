@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the root nodes of minimum height trees (MHTs) given a tree represented by n nodes and n-1 edges.
+2. Problem type / algorithm category: Graph traversal, topological sort, tree pruning.
+3. Step-by-step approach: Iteratively remove leaf nodes (nodes with degree 1) from the graph until only one or two nodes remain. These remaining nodes are the roots of the MHTs. Use a queue to store the leaf nodes.
+4. Edge cases: When n is 1, the only node (0) is the root.
+5. Time and space complexity: Time complexity is O(n) because each node is visited and processed at most once. Space complexity is O(n) for the adjacency list and degree array.
+</thinking>

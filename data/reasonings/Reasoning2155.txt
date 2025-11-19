@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all indices where the sum of zeros in the left part and ones in the right part of a binary array is maximized.
+2. Problem type / algorithm category: Prefix sums / Two pointers.
+3. Step-by-step approach: Calculate the total number of ones. Iterate through the array, maintaining the count of zeros to the left and decrementing the count of ones to the right. Calculate the score at each division point and track the maximum score and corresponding indices.
+4. Edge cases: Empty left or right subarrays (division at index 0 or n). All elements are the same.
+5. Time and space complexity: Time O(n) due to a single pass through the array. Space O(1) as only a few variables are used to store counts and results.
+</thinking>

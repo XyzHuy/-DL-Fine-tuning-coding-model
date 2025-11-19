@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Insert a value 'val' into a maximum binary tree such that the resulting tree is also a maximum binary tree.
+2. Problem type / algorithm category: Tree Traversal, Recursion.
+3. Step-by-step approach: Compare 'val' with the root's value. If 'val' is greater, create a new root node with 'val' and the original tree as its left subtree. Otherwise, recursively insert 'val' into the right subtree.
+4. Edge cases: Empty tree, 'val' being the new maximum, inserting in the right subtree.
+5. Time and space complexity: Time complexity is O(H) where H is the height of the tree. In the worst case, H can be N (number of nodes). Space complexity is O(H) due to the recursion stack.
+</thinking>

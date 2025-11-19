@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all starting indices of substrings in `s` that are concatenations of all words in `words` exactly once and in any order.
+2. Problem type / algorithm category: String manipulation, sliding window, hash map (Counter).
+3. Step-by-step approach: Iterate through `s` with a sliding window of the total length of the concatenated words. Use a Counter to store the word counts in `words`. For each window, check if it is a valid concatenation by comparing the word counts within the window with the word counts in `words`. Slide the window by the length of each word.
+4. Edge cases: Empty string `s`, empty `words` array, empty word in `words`. The input strings `s` and `words[i]` are assumed to only consist of lowercase English letters.
+5. Time and space complexity: Time complexity is O(N*M), where N is the length of s and M is the number of words. Space complexity is O(M) for the Counter objects.
+</thinking>

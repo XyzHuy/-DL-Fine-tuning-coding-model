@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of indices (i, j) with i < j such that hours[i] + hours[j] is a multiple of 24.
+2. Problem type / algorithm category: Hash Map (Dictionary) / Counting Pairs.
+3. Step-by-step approach: Iterate through the hours array. For each hour, calculate its remainder when divided by 24. Determine the "complement" remainder that, when added to the current remainder, results in a multiple of 24. Add the count of this complement seen so far to the total pair count. Then, increment the count for the current remainder in the frequency map.
+4. Edge cases: Empty input array (though constraints say length >= 1), single element array, all hours are multiples of 24, hours that sum up to exactly 24, 48, etc.
+5. Time and space complexity: Time complexity is O(N) due to a single pass through the array. Space complexity is O(1) because the remainder_count dictionary will have at most 24 keys (remainders 0-23).
+</thinking>

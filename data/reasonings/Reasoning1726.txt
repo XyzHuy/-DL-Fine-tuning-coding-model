@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of distinct tuples (a, b, c, d) from an array of distinct positive integers such that a * b = c * d and a, b, c, d are all distinct elements.
+2. Problem type / algorithm category: Counting, Hash Map (Dictionary).
+3. Step-by-step approach: Iterate through all unique pairs of numbers in the input array, calculate their product, and store the frequency of each product in a hash map. For each product that appears more than once (meaning multiple pairs yield the same product), calculate the number of ways to choose two distinct pairs whose products are equal. Each such selection of two pairs (e.g., {a, b} and {c, d}) can form 8 distinct tuples by permuting a, b, c, and d.
+4. Edge cases: The problem statement guarantees distinct positive integers, so empty arrays or arrays with non-positive/duplicate numbers are not expected based on constraints. The constraints on array size and element values are reasonable for the chosen approach.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops for product calculation, and space complexity is O(N^2) in the worst case for the hash map storing products.
+</thinking>

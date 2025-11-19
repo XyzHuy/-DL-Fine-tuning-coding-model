@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of straight line cuts, through the center or diameter, to divide a circle into n equal slices.
+2. Problem type / algorithm category: Mathematical reasoning, pattern recognition.
+3. Step-by-step approach: Handle the base case where n is 1 (no cuts needed). If n is even, each cut through the center creates two slices, so n/2 cuts are required. If n is odd and greater than 1, each cut can only create at most one new slice of equal size and shape from the perspective of starting with one piece, hence n cuts are needed.
+4. Edge cases: The input n=1 requires 0 cuts.
+5. Time and space complexity: O(1) time complexity and O(1) space complexity.
+</thinking>

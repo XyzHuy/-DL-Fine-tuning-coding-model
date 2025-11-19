@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize gold by selecting non-overlapping house selling offers.
+2. Problem type / algorithm category: Dynamic Programming with Binary Search (or Weighted Interval Scheduling).
+3. Step-by-step approach: Sort offers by end time. Use DP where dp[i] is max profit considering first i offers. For each offer, decide whether to include it (add its gold to profit from compatible previous offers) or exclude it (inherit profit from previous offer). Binary search helps find the latest compatible previous offer.
+4. Edge cases: No offers available, all offers overlap significantly, single house offers.
+5. Time and space complexity: O(M log M) time for sorting and O(M) space for DP table, where M is the number of offers.
+</thinking>

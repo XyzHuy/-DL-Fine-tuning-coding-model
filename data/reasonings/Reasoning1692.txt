@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute n unique candies into k bags such that each bag has at least one candy, and count the distinct ways modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming (Combinatorics).
+3. Step-by-step approach: Use a 2D DP table where dp[i][j] represents the number of ways to distribute i candies into j bags. To compute dp[i][j], consider the i-th candy: it can be placed into one of the j existing bags (j * dp[i-1][j] ways), or it can start a new bag (dp[i-1][j-1] ways). Sum these and take modulo.
+4. Edge cases: The base case is dp[0][0] = 1 (1 way to distribute 0 candies into 0 bags). Constraints are 1 <= k <= n <= 1000.
+5. Time and space complexity: Time complexity is O(n*k) due to the nested loops filling the DP table. Space complexity is O(n*k) for storing the DP table.
+</thinking>

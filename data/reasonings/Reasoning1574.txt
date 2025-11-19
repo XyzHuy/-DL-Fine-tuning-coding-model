@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum length of a subarray to remove from an array so that the remaining elements form a non-decreasing sequence.
+2. Problem type / algorithm category: Array manipulation, Two Pointers, Greedy approach.
+3. Step-by-step approach: Identify the longest non-decreasing prefix and the longest non-decreasing suffix. Consider two main scenarios: either remove elements from the end of the prefix to form the result, or remove elements from the start of the suffix. Also, explore merging the prefix and suffix by finding the shortest removal between them using two pointers.
+4. Edge cases: An already sorted array requires removing 0 elements. An array where only one element can be kept (e.g., strictly decreasing) requires removing n-1 elements.
+5. Time and space complexity: Time complexity is O(N) because of the multiple linear scans of the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of balanced subranges [l, r] in two arrays nums1 and nums2 where the sum of chosen elements from nums1 equals the sum of chosen elements from nums2 within the subrange, considering all possible choices.
+2. Problem type / algorithm category: Dynamic Programming, Prefix Sum.
+3. Step-by-step approach: Iterate through the array, maintaining a dictionary `dp` that stores the counts of achievable sum differences. For each element `i`, calculate new differences by considering picking `nums1[i]` or `nums2[i]`. The new sum difference `diff` is calculated by `diff + nums1[i]` or `diff - nums2[i]`. Add the count of ranges with a difference of 0 ending at the current index to the total count.
+4. Edge cases: Empty arrays (though constraints say n >= 1), large sums, modulo arithmetic for the final count.
+5. Time and space complexity: Time O(N^2) due to nested iteration over dp, Space O(N^2) in the worst case for the dp dictionary storing all possible differences.
+</thinking>

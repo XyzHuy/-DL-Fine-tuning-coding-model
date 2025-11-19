@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the minimum number of increments needed to make all elements unique.
+2. Problem type / algorithm category: Sorting, Greedy.
+3. Step-by-step approach: Sort the array. Iterate through the sorted array, and if a number is less than or equal to its preceding number, increment it to be one greater than the preceding number, accumulating the total increments.
+4. Edge cases: Empty input array, already unique array, array with many duplicate values.
+5. Time and space complexity: Time: O(n log n) due to sorting. Space: O(1) as sorting is done in-place.
+</thinking>

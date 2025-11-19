@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: For each query [k, m], select exactly m chocolates to minimize Bob's loss (Bob's payment - Alice's payment), where Bob pays up to k for each chocolate, and Alice pays the rest.
+2. Problem type / algorithm category: Optimization problem, involving sorting, binary search, and prefix sums.
+3. Step-by-step approach: Sort prices. For each query [k, m], use binary search to find the optimal split point: how many chocolates (l) are paid entirely by Bob (price <= k), and how many (r) are partially paid by Bob (price > k). The goal is to balance Bob's payment (up to k for r chocolates) against Alice's payment (price - k for r chocolates). Calculate total Bob payment and total Alice payment using prefix sums and subtract to find the loss.
+4. Edge cases: When m is less than or equal to the count of chocolates with price <= k. When m is greater than the count of chocolates with price <= k, meaning all m chocolates will have some cost covered by Alice.
+5. Time and space complexity: Time complexity is O(N log N + Q log N log M), where N is the number of prices and Q is the number of queries. Sorting takes O(N log N). Each query involves a binary search on m, and inside that, a binary search on the number of chocolates paid by Bob (up to M), and prefix sum lookups. Space complexity is O(N) for storing sorted prices and prefix sums.
+</thinking>

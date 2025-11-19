@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the nth ugly number, where ugly numbers are positive integers divisible by a, b, or c.
+2. Problem type / algorithm category: Binary Search, Inclusion-Exclusion Principle, Math.
+3. Step-by-step approach: Use binary search to find the nth ugly number within the range [1, 2 * 10^9]. For each mid value, count the number of ugly numbers less than or equal to mid using the inclusion-exclusion principle to avoid overcounting numbers divisible by multiple factors (a, b, c). Calculate LCM to find common multiples.
+4. Edge cases: Large values of a, b, c, and n. LCM calculation can result in large numbers, handled using integer division.
+5. Time and space complexity: Time complexity is O(log(2 * 10^9)), dominated by the binary search. Space complexity is O(1).
+</thinking>

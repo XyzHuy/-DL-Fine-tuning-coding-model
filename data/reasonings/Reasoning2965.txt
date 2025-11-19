@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the single repeating number and the single missing number in an n*n grid where numbers range from 1 to n*n.
+2. Problem type / algorithm category: Array manipulation, Frequency counting.
+3. Step-by-step approach: Iterate through the grid to count the occurrences of each number using a hash map (Counter) and calculate the sum of all elements. Then, iterate from 1 to n*n to identify the number with a count of 2 (repeated) and the number with a count of 0 (missing).
+4. Edge cases: The constraints ensure n >= 2, so the grid is at least 2x2. All numbers from 1 to n*n are present, with exactly one repeated and one missing.
+5. Time and space complexity: Time complexity is O(n^2) for iterating through the grid and O(n^2) for iterating through possible numbers, resulting in O(n^2). Space complexity is O(n^2) to store the counts in the Counter.
+</thinking>

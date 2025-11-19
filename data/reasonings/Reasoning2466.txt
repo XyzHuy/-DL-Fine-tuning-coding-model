@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of distinct strings of length between low and high, formed by appending '0' zero times or '1' one time any number of times, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Initialize a DP array where dp[i] stores the count of good strings of length i. Set dp[0] to 1 for the empty string. Iterate from length 1 to high. For each length i, if i >= zero, add dp[i - zero] to dp[i] (representing appending zero '0's). If i >= one, add dp[i - one] to dp[i] (representing appending one '1'). Finally, sum up dp values from low to high.
+4. Edge cases: The base case is an empty string (length 0) which has 1 way to be formed. Constraints ensure low, high, zero, and one are positive.
+5. Time and space complexity: Time complexity is O(high) due to the single loop up to high. Space complexity is O(high) for the DP array.
+</thinking>

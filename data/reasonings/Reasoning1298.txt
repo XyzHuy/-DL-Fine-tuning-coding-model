@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Collect maximum candies from boxes, starting with initial boxes, by opening them if they are status 1 or if a key is found. Keys and contained boxes are revealed upon opening a box.
+2. Problem type / algorithm category: Graph traversal (BFS or DFS variation) / Simulation.
+3. Step-by-step approach: Maintain sets of boxes owned and keys possessed. Iteratively find an owned box that is open or for which a key is possessed. If found, collect its candies, add its keys to owned keys, and add its contained boxes to owned boxes. Repeat until no more boxes can be opened.
+4. Edge cases: No initial boxes, all boxes are closed, no keys available, boxes containing other boxes that cannot be opened.
+5. Time and space complexity: Time complexity is O(N), where N is the number of boxes, as each box is processed at most once. Space complexity is O(N) to store sets of boxes, keys, and visited status.
+</thinking>

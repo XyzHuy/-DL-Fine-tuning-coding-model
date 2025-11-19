@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Process a sequence of buy and sell orders, matching them against a backlog and adding unmatched orders to the backlog. Return the total remaining orders modulo 10^9 + 7.
+2. Problem type / algorithm category: Heap (Priority Queue) based order matching.
+3. Step-by-step approach: Use a max-heap for buy orders and a min-heap for sell orders. For a buy order, try to match with the cheapest available sell order. For a sell order, try to match with the most expensive available buy order. Add remaining unmatched orders to their respective heaps. Sum all amounts in both heaps at the end.
+4. Edge cases: Empty input orders list. Large amounts and prices. Cases where all orders are matched or no orders are matched.
+5. Time and space complexity: Time O(N log N) where N is the number of orders, due to heap operations. Space O(N) in the worst case for storing orders in heaps.
+</thinking>

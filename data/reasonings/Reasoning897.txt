@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary search tree, rearrange it to an increasing order tree where each node has only a right child.
+2. Problem type / algorithm category: Tree traversal (in-order), Binary Search Tree manipulation.
+3. Step-by-step approach: Perform an in-order traversal of the BST. During the traversal, set the left child of each node to None and link it as the right child of the previously processed node. Use a dummy node to initiate the increasing BST.
+4. Edge cases: Empty tree, tree with single node.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree. Space complexity is O(H) due to recursion stack, where H is the height of the tree. In the worst case (skewed tree), H = N, so space complexity can be O(N).
+</thinking>

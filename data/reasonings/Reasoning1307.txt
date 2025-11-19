@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign unique digits to characters such that the sum of words equals the result, adhering to no leading zeros.
+2. Problem type / algorithm category: Backtracking, constraint satisfaction.
+3. Step-by-step approach: Identify all unique characters, then use a recursive backtracking function to assign digits. The function explores possible digit assignments for each character, checking for uniqueness and leading zero constraints. It processes the equation column by column, managing carries and verifying column sums.
+4. Edge cases: More than 10 unique characters, single-letter words, leading zeros for words or the result.
+5. Time and space complexity: Time complexity is roughly O(10^C), where C is the number of unique characters (at most 10). Space complexity is O(C) for storing mappings and recursion depth.
+</thinking>

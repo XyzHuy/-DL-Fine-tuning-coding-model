@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum operations to move all balls to each box, where an operation is moving a ball to an adjacent box.
+2. Problem type / algorithm category: Dynamic Programming or Prefix Sums.
+3. Step-by-step approach: Initialize operations for the first box by summing distances to all balls. Then, iteratively calculate operations for subsequent boxes by adjusting the previous box's count based on balls moving past the current position.
+4. Edge cases: All boxes are empty ('0') or all boxes contain balls ('1'). A single box.
+5. Time and space complexity: O(n) time and O(n) space.
+</thinking>

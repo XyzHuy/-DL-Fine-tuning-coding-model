@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given target integer is a majority element in a sorted integer array. A majority element appears more than n/2 times.
+2. Problem type / algorithm category: Binary search. The problem leverages the sorted nature of the array to efficiently locate the target's occurrences.
+3. Step-by-step approach: Use binary search (bisect_left and bisect_right) to find the first and last occurrences of the target. Calculate the count by subtracting the first index from the last index. Compare the count with n/2 to determine if the target is a majority element.
+4. Edge cases: Empty array (though the problem constraints state the array length is at least 1), target not present in the array, target appearing exactly n/2 times.
+5. Time and space complexity: Time complexity is O(log n) due to the binary search. Space complexity is O(1) as it uses a constant amount of extra space.
+</thinking>

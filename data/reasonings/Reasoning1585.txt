@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if string s can be transformed into string t by repeatedly sorting substrings of s.
+2. Problem type / algorithm category: Greedy algorithm, String manipulation, Data structures (queues/deques).
+3. Step-by-step approach: For each character in t, find its corresponding earliest available occurrence in s. This is only valid if all smaller digits that appear before this occurrence in s have already been placed in t. Use deques to efficiently manage the indices of each digit in s and check this condition.
+4. Edge cases: Strings s and t are empty, strings s and t have different lengths (problem statement guarantees same length), strings consist of single characters, all characters in s are already sorted, s and t are identical.
+5. Time and space complexity: Time complexity is O(N*D) where N is the length of strings and D is the number of unique digits (10 in this case, so O(N)), because each character in t is processed once, and the inner loop iterates at most D times. Space complexity is O(N) for storing indices in deques.
+</thinking>

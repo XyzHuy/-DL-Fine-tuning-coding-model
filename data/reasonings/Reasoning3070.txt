@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count submatrices starting from the top-left element (0,0) whose sum is less than or equal to k.
+2. Problem type / algorithm category: Prefix Sum (2D).
+3. Step-by-step approach: Compute a 2D prefix sum array. Iterate through each cell of the prefix sum array. If the prefix sum at cell (i,j) is less than or equal to k, increment the count. The prefix sum at (i,j) represents the sum of the submatrix from (0,0) to (i,j).
+4. Edge cases: The grid can have dimensions of 1x1. The constraints mention grid values and k can be large, but the prefix sum calculation handles this.
+5. Time and space complexity: Time complexity is O(m*n) for prefix sum computation and traversal. Space complexity is O(m*n) for storing the prefix sum array.
+</thinking>

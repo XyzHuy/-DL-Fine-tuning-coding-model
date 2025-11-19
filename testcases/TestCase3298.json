@@ -1,0 +1,481 @@
+{
+  "function_name": "validSubstringCount",
+  "test_cases": [
+    {
+      "parameters": {
+        "word1": "bcca",
+        "word2": "abc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "aabbcc",
+        "word2": "abc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word1": "hellothere",
+        "word2": "oth"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "word1": "abcabc",
+        "word2": "aaabc"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaa",
+        "word2": "a"
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word1": "abcabc",
+        "word2": "abc"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "word1": "mississippi",
+        "word2": "issi"
+      },
+      "expected_output": 27
+    },
+    {
+      "parameters": {
+        "word1": "teststring",
+        "word2": "ttt"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 325
+    },
+    {
+      "parameters": {
+        "word1": "abacabadabacabadabacabadabacabad",
+        "word2": "abacabad"
+      },
+      "expected_output": 325
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnopqrstuv"
+      },
+      "expected_output": 260
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohellohellohello",
+        "word2": "hello"
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "word1": "xyzyzyzyzyzyzyzyzy",
+        "word2": "zyx"
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "word1": "cccccccaaaaaaaabbbbbbb",
+        "word2": "abc"
+      },
+      "expected_output": 49
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohellohello",
+        "word2": "lohel"
+      },
+      "expected_output": 136
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "word2": "abcabcabc"
+      },
+      "expected_output": 1225
+    },
+    {
+      "parameters": {
+        "word1": "xyzzxyzzxyzz",
+        "word2": "zzxy"
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijabcdefghijabcdefghij",
+        "word2": "abcdefghij"
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 136
+    },
+    {
+      "parameters": {
+        "word1": "longstringwithmanyvowelsaeiou",
+        "word2": "aeiou"
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "word1": "aaaabbbbcccc",
+        "word2": "bbbaaccc"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word1": "abcdabcdabcdabcd",
+        "word2": "dcba"
+      },
+      "expected_output": 91
+    },
+    {
+      "parameters": {
+        "word1": "patternpatternpattern",
+        "word2": "ternpat"
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "word1": "xyxyxyxyxyxyxyxyxyxyxyxyxyxyxy",
+        "word2": "xyxyxyxy"
+      },
+      "expected_output": 276
+    },
+    {
+      "parameters": {
+        "word1": "abracadabra",
+        "word2": "abra"
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "word1": "abababababababababababab",
+        "word2": "ab"
+      },
+      "expected_output": 276
+    },
+    {
+      "parameters": {
+        "word1": "xyzabcdexyzabcdef",
+        "word2": "abcdef"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "word1": "xzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzy",
+        "word2": "xzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzy"
+      },
+      "expected_output": 325
+    },
+    {
+      "parameters": {
+        "word1": "bbaaccdd",
+        "word2": "abcd"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "thisisanotherexample",
+        "word2": "another"
+      },
+      "expected_output": 61
+    },
+    {
+      "parameters": {
+        "word1": "aabbaabbaabbaabb",
+        "word2": "aabb"
+      },
+      "expected_output": 91
+    },
+    {
+      "parameters": {
+        "word1": "banana",
+        "word2": "nan"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijabcdefghij",
+        "word2": "jihgfedcba"
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohello",
+        "word2": "hello"
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaabbbbccccdddd",
+        "word2": "bbbcccdddd"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 378
+    },
+    {
+      "parameters": {
+        "word1": "mnopqrlmnopqrlmnopqr",
+        "word2": "mnopqr"
+      },
+      "expected_output": 108
+    },
+    {
+      "parameters": {
+        "word1": "abracadabra",
+        "word2": "aca"
+      },
+      "expected_output": 29
+    },
+    {
+      "parameters": {
+        "word1": "randomstringwithsomerepeatedcharacters",
+        "word2": "som"
+      },
+      "expected_output": 402
+    },
+    {
+      "parameters": {
+        "word1": "longwordwithmanysamecharactersllllllllllllllllllllllllllllllllllllllll",
+        "word2": "lllllllll"
+      },
+      "expected_output": 1489
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongstringthatneedsmanyvalidsubstrings",
+        "word2": "this"
+      },
+      "expected_output": 565
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "z"
+      },
+      "expected_output": 1445
+    },
+    {
+      "parameters": {
+        "word1": "abababababababababab",
+        "word2": "ab"
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "word1": "pppppqqqqqrrrrrsssss",
+        "word2": "pqrs"
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "word1": "uniquestringwithoutrepeatedcharacters",
+        "word2": "que"
+      },
+      "expected_output": 128
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnop"
+      },
+      "expected_output": 572
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijk",
+        "word2": "jki"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "word1": "mississippiissi",
+        "word2": "iss"
+      },
+      "expected_output": 76
+    },
+    {
+      "parameters": {
+        "word1": "xyzzxyzzxyzz",
+        "word2": "xyzz"
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "word1": "aaabbbccc",
+        "word2": "abc"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "word1": "repeatedrepeatedrepeated",
+        "word2": "repeated"
+      },
+      "expected_output": 153
+    },
+    {
+      "parameters": {
+        "word1": "repeatedpatternsrepeatedpatterns",
+        "word2": "pattern"
+      },
+      "expected_output": 237
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongstringthatcontainsmanywords",
+        "word2": "word"
+      },
+      "expected_output": 76
+    },
+    {
+      "parameters": {
+        "word1": "repeatedrepeatedrepeated",
+        "word2": "atedrep"
+      },
+      "expected_output": 159
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongwordthatcontainsmanyletters",
+        "word2": "verylong"
+      },
+      "expected_output": 224
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "word2": "aaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 595
+    },
+    {
+      "parameters": {
+        "word1": "ababababababababab",
+        "word2": "ab"
+      },
+      "expected_output": 153
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzzz"
+      },
+      "expected_output": 210
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzzzz"
+      },
+      "expected_output": 465
+    },
+    {
+      "parameters": {
+        "word1": "mississippiississim",
+        "word2": "issi"
+      },
+      "expected_output": 117
+    },
+    {
+      "parameters": {
+        "word1": "abracadabra",
+        "word2": "abr"
+      },
+      "expected_output": 31
+    },
+    {
+      "parameters": {
+        "word1": "oneonetwoonetwoone",
+        "word2": "twoone"
+      },
+      "expected_output": 86
+    },
+    {
+      "parameters": {
+        "word1": "xyxyxyxyxyxyxyxyxyxy",
+        "word2": "xyx"
+      },
+      "expected_output": 162
+    },
+    {
+      "parameters": {
+        "word1": "bbaaccaabbaaccaabbaaccaabb",
+        "word2": "aabbaacc"
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "word1": "zyxzyxzyxzyxzyx",
+        "word2": "zyxzyx"
+      },
+      "expected_output": 55
+    }
+  ]
+}

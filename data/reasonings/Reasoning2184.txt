@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a brick wall of given height and width using bricks of specified widths, such that no two adjacent rows share a vertical seam at the same horizontal position, except at the wall's edges. Return the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking.
+3. Step-by-step approach: First, generate all valid configurations for a single row. A valid row configuration can be represented by a bitmask where bits indicate the start of a new brick. Then, identify compatible row configurations (those with no overlapping vertical seams). Finally, use dynamic programming where dp[h][i] represents the number of ways to build a wall of height h ending with row configuration i. The recurrence is dp[h][i] = sum(dp[h-1][j]) for all j compatible with i.
+4. Edge cases: If no valid row configuration can be formed (e.g., a brick is wider than the wall), or if a height of 1 is requested, handle these scenarios. The problem constraints imply width is at least 1.
+5. Time and space complexity: Generating rows is exponential in width. DP state transition is O(height * num_rows^2). Space is O(height * num_rows).
+</thinking>

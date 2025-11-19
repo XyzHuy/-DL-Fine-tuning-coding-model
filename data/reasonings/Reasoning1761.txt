@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum degree of a "connected trio" (three nodes mutually connected by edges) in an undirected graph. The degree of a trio is the count of edges connecting a node within the trio to a node outside the trio.
+2. Problem type / algorithm category: Graph traversal, Brute-force enumeration.
+3. Step-by-step approach: Represent the graph using an adjacency matrix and store node degrees. Iterate through all unique combinations of three nodes (i, j, k). If these three nodes form a connected trio (i.e., edges (i,j), (j,k), and (k,i) exist), calculate the trio's degree by summing their individual degrees and subtracting 6 (to account for the 3 internal edges). Keep track of the minimum trio degree found.
+4. Edge cases: The graph might not contain any connected trios, in which case -1 should be returned. The constraints on n and edges need to be considered for feasibility of brute-force.
+5. Time and space complexity: Time complexity is O(n^3) due to iterating through all possible trios. Space complexity is O(n^2) for the adjacency matrix and O(n) for degrees.
+</thinking>

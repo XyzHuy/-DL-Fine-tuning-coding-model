@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest string that contains both input strings as subsequences.
+2. Problem type / algorithm category: Dynamic Programming, String manipulation
+3. Step-by-step approach: First, find the length of the Longest Common Subsequence (LCS) of the two strings using dynamic programming. Then, reconstruct the shortest common supersequence by tracing back through the DP table and adding characters from either string that are not part of the LCS.
+4. Edge cases: Empty strings, identical strings.
+5. Time and space complexity: Time complexity is O(m*n), where m and n are the lengths of the input strings. Space complexity is O(m*n) due to the DP table.
+</thinking>

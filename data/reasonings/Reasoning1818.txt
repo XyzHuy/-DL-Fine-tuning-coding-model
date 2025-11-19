@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the absolute sum difference of two arrays by replacing at most one element in the first array.
+2. Problem type / algorithm category: Array manipulation, Binary Search, Greedy.
+3. Step-by-step approach: Calculate the initial sum difference. For each element in nums1, find the closest element in sorted nums1 to nums2[i] using binary search. Calculate the potential reduction in difference for that element. Keep track of the maximum possible reduction. Subtract the maximum reduction from the initial sum difference and return modulo 10^9 + 7.
+4. Edge cases: Arrays are of equal length, elements are positive integers, array lengths are within limits, the initial sum difference might be zero.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting and binary search. Space complexity is O(N) for the sorted copy of nums1.
+</thinking>

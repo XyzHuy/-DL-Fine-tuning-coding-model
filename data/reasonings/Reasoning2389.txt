@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum size of a subsequence from nums whose sum is less than or equal to each query value.
+2. Problem type / algorithm category: Sorting and Prefix Sums with Binary Search.
+3. Step-by-step approach: Sort nums. Calculate prefix sums of sorted nums. For each query, use binary search on prefix sums to find the largest index whose prefix sum is less than or equal to the query. The answer for that query is the found index minus one.
+4. Edge cases: Empty subsequence (sum 0) for queries smaller than the smallest element, queries that are larger than the sum of all elements in nums.
+5. Time and space complexity: O(N log N + M log N) time, O(N) space for prefix sums.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange digits of a given number by swapping digits of the same parity to form the largest possible number.
+2. Problem type / algorithm category: Greedy algorithm, digit manipulation.
+3. Step-by-step approach: Separate digits into odd and even groups, sort each group in descending order, then reconstruct the number by iterating through the original digits and picking the largest available digit from the corresponding sorted group.
+4. Edge cases: Single-digit numbers, numbers with all even or all odd digits.
+5. Time and space complexity: Time complexity is dominated by sorting the digits, which is O(N log N) where N is the number of digits. Space complexity is O(N) for storing the digits and sorted lists.
+</thinking>

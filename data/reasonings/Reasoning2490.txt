@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a sentence is circular, meaning the last character of each word matches the first character of the next word, and the last word's last character matches the first word's first character.
+2. Problem type / algorithm category: String manipulation, Array processing.
+3. Step-by-step approach: Split the sentence into words. Check if the last character of the last word matches the first character of the first word. Then iterate through the words, checking if the last character of each word matches the first character of the subsequent word.
+4. Edge cases: A sentence with a single word needs to have its first and last characters match. The constraints guarantee at least one word and no leading/trailing spaces.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the sentence, due to splitting and iterating. Space complexity is O(N) in the worst case for storing the words after splitting.
+</thinking>

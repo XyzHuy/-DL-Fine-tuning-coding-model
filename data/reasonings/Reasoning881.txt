@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of people's weights and a weight limit for each boat (max 2 people per boat), find the minimum number of boats to save everyone.
+2. Problem type / algorithm category: Greedy algorithm, two pointers.
+3. Step-by-step approach: Sort the people array. Use two pointers, one at the beginning (lightest person) and one at the end (heaviest person). If the lightest and heaviest person can fit in the same boat, increment the left pointer. Always decrement the right pointer and increment the boat count.
+4. Edge cases: Empty input array, a single person whose weight exceeds the limit (invalid input based on constraints), all people can be paired, only one person per boat is needed.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(1) (in-place sorting can be done) or O(N) depending on the sorting algorithm used.
+</thinking>

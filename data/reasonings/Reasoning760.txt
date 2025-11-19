@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two anagrams nums1 and nums2, return an array mapping where mapping[i] = j if nums1[i] = nums2[j].
+2. Problem type / algorithm category: Hash table / Array.
+3. Step-by-step approach: Create a hash map to store the indices of each element in nums2. Iterate through nums1 and for each element, find its corresponding index in nums2 using the hash map.
+4. Edge cases: Empty arrays. Duplicate values in arrays.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the arrays, because we iterate through both arrays once. Space complexity is O(n) due to the hash map storing indices of nums2.
+</thinking>

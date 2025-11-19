@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an integer is a Harshad number (divisible by the sum of its digits) and return the sum of digits if it is, otherwise return -1.
+2. Problem type / algorithm category: Number theory, basic arithmetic operations.
+3. Step-by-step approach: Convert the integer to a string to iterate through its digits. Sum these digits. Check if the original integer is perfectly divisible by the calculated sum of digits. Return the sum if divisible, else return -1.
+4. Edge cases: The input constraints (1 <= x <= 100) mean no negative numbers or zero, and the sum of digits will always be at least 1, preventing division by zero.
+5. Time and space complexity: O(log10(x)) for converting to string and summing digits; O(1) space.
+</thinking>

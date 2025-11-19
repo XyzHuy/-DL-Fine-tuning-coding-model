@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of keys within any subtree that is also a valid Binary Search Tree (BST).
+2. Problem type / algorithm category: Tree Traversal, Recursion, Dynamic Programming (post-order traversal).
+3. Step-by-step approach: Use a post-order traversal (DFS). For each node, recursively gather information from its left and right children: whether the subtree rooted at the child is a BST, its minimum and maximum values, and its sum. If both children subtrees are BSTs and the current node's value maintains the BST property (greater than left max, less than right min), then the current subtree is a BST. Calculate its sum and update the global maximum sum if necessary. Otherwise, propagate invalid BST information upwards.
+4. Edge cases: An empty tree (root is None) should result in a sum of 0. A single node tree is always a BST. Subtrees containing only negative values might yield a maximum sum of 0 if no valid positive sum BST is found.
+5. Time and space complexity: Time complexity is O(N) because each node is visited once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack; in the worst case (skewed tree), H can be N, leading to O(N) space.
+</thinking>

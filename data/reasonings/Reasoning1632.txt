@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign a rank to each element in a matrix based on its value and position, such that elements in the same row or column maintain relative order, and ranks are minimized.
+2. Problem type / algorithm category: Graph Theory (Union-Find), Sorting, Greedy.
+3. Step-by-step approach: Group elements by their values. For each value, use Union-Find to connect elements that share a row or column. Then, process these connected components, assigning ranks based on the maximum rank of elements already processed in their respective rows and columns, and update these maximums.
+4. Edge cases: Matrices with all same values; Matrices with single row or single column; Matrices with negative numbers.
+5. Time and space complexity: Time complexity is dominated by sorting unique values and Union-Find operations, roughly O(M*N*log(M*N)). Space complexity is O(M*N) for storing value-position mappings, ranks, and Union-Find structure.
+</thinking>

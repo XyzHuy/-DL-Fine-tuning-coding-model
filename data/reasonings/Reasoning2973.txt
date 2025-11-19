@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate coins for each node in a rooted tree. For subtrees smaller than 3 nodes, place 1 coin. For larger subtrees, place the maximum product of three distinct node costs, or 0 if negative.
+2. Problem type / algorithm category: Tree traversal (DFS), Dynamic Programming (implicitly by combining subtree results).
+3. Step-by-step approach: Build an adjacency list for the tree. Use DFS starting from the root. For each node, recursively collect costs from its subtree, sort these costs, and then calculate the maximum product of three distinct costs (considering both largest positive and smallest negative * largest positive). Update the coins array for the current node. Return the sorted subtree costs to the parent.
+4. Edge cases: Subtrees with fewer than 3 nodes (handled by base case of 1 coin). Negative costs in the cost array, leading to potential negative products. The maximum product might involve the two smallest (most negative) numbers and the largest positive number.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting within each DFS call for subtrees. Space complexity is O(N) for the adjacency list and the recursion stack.
+</thinking>

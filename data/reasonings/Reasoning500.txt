@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of words, return the words that can be typed using letters from only one row of an American keyboard.
+2. Problem type / algorithm category: String manipulation, set operations.
+3. Step-by-step approach: Define sets representing each keyboard row. For each word, convert it to lowercase and check if the set of its characters is a subset of any of the row sets. Return the words that satisfy this condition.
+4. Edge cases: Empty input list, empty string in the input list, words containing non-alphabetic characters (though the prompt states only English letters are present).
+5. Time and space complexity: Time complexity is O(N * M), where N is the number of words and M is the maximum length of a word. Space complexity is O(1) because the row sets are constant size, and the space used by the word set within the inner function is also at most O(1) since the alphabet size is considered fixed.
+</thinking>

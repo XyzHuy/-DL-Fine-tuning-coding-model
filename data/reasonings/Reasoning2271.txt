@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of non-overlapping white tile intervals and a carpet length, find the maximum number of white tiles a single carpet can cover.
+2. Problem type / algorithm category: Sliding Window on sorted intervals.
+3. Step-by-step approach: Sort the tiles by start position. Use a sliding window (left and right pointers) to represent the start and potential end of the carpet placement. Expand the right pointer to include as many tiles as possible within the carpet's reach from the current left pointer. Calculate covered tiles, considering partial coverage of the rightmost tile. Shrink the window from the left as needed.
+4. Edge cases: Empty tiles list (though constraints say at least one tile), carpet length is smaller than any single tile segment, carpet covers multiple disjoint segments perfectly.
+5. Time and space complexity: O(N log N) for sorting, O(N) for the sliding window traversal. Space complexity is O(1) if sorting is in-place, or O(N) if a new sorted array is created.
+</thinking>

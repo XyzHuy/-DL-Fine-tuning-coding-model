@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to reach the last index of an array starting from the first index, with specific jump conditions based on element values and costs associated with landing on each index.
+2. Problem type / algorithm category: Dynamic Programming / Graph Traversal (Dijkstra's Algorithm).
+3. Step-by-step approach: Precompute "next greater or equal" and "next smaller" indices using monotonic stacks. Then, apply Dijkstra's algorithm where nodes are array indices and edge weights are costs of landing on the destination index, considering only valid jumps determined by the precomputed indices.
+4. Edge cases: An array with only one element, where the cost is 0.
+5. Time and space complexity: O(N) time for precomputation and O(N log N) time for Dijkstra's, leading to O(N log N) overall. O(N) space for stacks, visited array, and priority queue.
+</thinking>

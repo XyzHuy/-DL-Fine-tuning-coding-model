@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum average value of any subtree in a given binary tree. The average value of a subtree is the sum of its node values divided by the number of nodes in the subtree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Perform a DFS traversal of the tree. At each node, recursively compute the sum and count of nodes in the left and right subtrees. Calculate the average of the subtree rooted at the current node using the sums and counts from the subtrees and the current node's value. Update the global maximum average if the current subtree's average is larger.
+4. Edge cases: Empty tree (root is None). Nodes with only left or right children.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack in DFS, which can be O(log N) for balanced trees and O(N) in the worst case (skewed tree).
+</thinking>

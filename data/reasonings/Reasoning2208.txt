@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reduce the sum of an array of positive integers by at least half using the minimum number of operations, where an operation consists of halving any chosen number.
+2. Problem type / algorithm category: Greedy algorithm, Heap (Priority Queue).
+3. Step-by-step approach: Calculate the initial sum and the target sum (half of the initial sum). Use a max-heap to store the numbers. Repeatedly extract the largest number from the heap, halve it, update the current sum, and push the halved number back into the heap. Count the operations until the current sum is less than or equal to the target sum.
+4. Edge cases: An array with a single element, an array where the sum is already less than or equal to half (though constraints say positive integers so sum will be positive), large numbers requiring many divisions.
+5. Time and space complexity: Time complexity is O(N log N) due to heap operations, space complexity is O(N) for storing elements in the heap.
+</thinking>

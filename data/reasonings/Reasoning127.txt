@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the shortest transformation sequence from a beginWord to an endWord using words from a given wordList, where each transformation can only change one letter at a time.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: First, check if endWord is in wordList. Then, create an adjacency list where keys are intermediate word patterns (e.g., 'h*t' for 'hot') and values are lists of words matching that pattern. Use BFS to explore possible transformations, starting from beginWord. Keep track of visited words to avoid cycles and the length of the sequence. If endWord is found, return the sequence length; otherwise, return 0.
+4. Edge cases: If endWord is not in wordList, return 0. The input words have the same length. No valid transformation exists.
+5. Time and space complexity: Time complexity is O(M*N^2) where N is the length of wordList and M is the length of each word. Space complexity is O(N*M) where N is the length of wordList and M is the length of each word.
+</thinking>

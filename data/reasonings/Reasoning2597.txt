@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of non-empty subsets of an array where no two elements have an absolute difference equal to k.
+2. Problem type / algorithm category: Backtracking / Combinatorial Search.
+3. Step-by-step approach: Use recursion (backtracking) to explore all possible subsets. At each step, decide whether to include the current element or not. If including an element, check if it maintains the "beautiful" property with existing elements in the current subset. The base case is when all elements are considered, return 1 if the subset is non-empty, else 0.
+4. Edge cases: An empty input array (though constraints say nums.length >= 1), k=0, large k values. The initial call must handle returning 0 for the empty set itself.
+5. Time and space complexity: Time complexity is O(2^n * n) due to exploring 2^n subsets and the is_beautiful check taking O(n) in the worst case for each subset. Space complexity is O(n) for the recursion depth and storing the current subset.
+</thinking>

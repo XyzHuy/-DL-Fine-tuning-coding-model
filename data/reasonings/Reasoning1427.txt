@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem requires applying a series of left or right shifts to a given string and returning the final string after all shifts.
+2. Problem type / algorithm category: String manipulation, simulation.
+3. Step-by-step approach: Calculate the total net shift by summing up right shifts and subtracting left shifts. Normalize this net shift by taking it modulo the string length. Then, perform a single combined shift based on the net shift value.
+4. Edge cases: Empty string (though constraints prevent this), shifts that result in zero net movement, and shifts that are multiples of the string length.
+5. Time and space complexity: Time complexity is O(N + M), where N is the length of the string and M is the number of shifts. Space complexity is O(N) for creating the new string.
+</thinking>

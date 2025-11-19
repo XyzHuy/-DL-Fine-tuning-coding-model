@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the first bad version in a range of versions [1, n], given that all versions after a bad version are also bad.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Use binary search to narrow down the range of possible bad versions. If the middle version is bad, search in the left half. Otherwise, search in the right half.
+4. Edge cases: n = 1, the first version is bad, the first version is good
+5. Time and space complexity: O(log n) time complexity, O(1) space complexity
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the total number of unique substrings within a given string.
+2. Problem type / algorithm category: String manipulation, brute force generation and set for uniqueness.
+3. Step-by-step approach: Iterate through all possible start and end indices to generate every substring, add each substring to a set to automatically handle duplicates, and return the size of the set.
+4. Edge cases: The string can have a length of 1. The string consists of only lowercase English letters.
+5. Time and space complexity: O(n^3) time for substring generation and O(n^2) space to store all unique substrings.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest distance between two given words in a list of words. The two words can be the same.
+2. Problem type / algorithm category: Array traversal, string comparison.
+3. Step-by-step approach: Iterate through the wordsDict array, keep track of the most recent index of word1 and word2. In each iteration, update the minimum distance if both word1 and word2 have been found before, taking into account that word1 and word2 can be equal.
+4. Edge cases: word1 and word2 are the same, the words appear at the beginning or end of the list, the list is empty.
+5. Time and space complexity: Time complexity is O(n) where n is the length of wordsDict. Space complexity is O(1).
+</thinking>

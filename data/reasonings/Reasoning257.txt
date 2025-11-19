@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return a list of strings representing all root-to-leaf paths.
+2. Problem type / algorithm category: Tree traversal / Depth-First Search (DFS).
+3. Step-by-step approach: Use DFS to traverse the tree. Maintain a path list while traversing. When a leaf node is reached, add the current path (joined by "->") to the result list. Backtrack by removing the current node from the path after exploring its children.
+4. Edge cases: Empty tree (root is None), single node tree (root is the only node).
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree. Space complexity is O(H), where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, leading to O(N) space.
+</thinking>

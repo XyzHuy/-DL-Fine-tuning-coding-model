@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a non-empty linked list representing a non-negative integer, double the integer it represents and return the head of the modified linked list.
+2. Problem type / algorithm category: Linked List Manipulation, Arithmetic Operations on Linked Lists.
+3. Step-by-step approach: Reverse the linked list. Iterate through the reversed list, doubling each node's value and handling any carry-over to the next node. If a carry remains after processing the last node, append a new node for it. Finally, reverse the list back to its original order.
+4. Edge cases: A single-node list, list representing zero, list where doubling causes an additional leading digit due to carry.
+5. Time and space complexity: Time complexity is O(N) due to three traversals of the list (reverse, process, reverse back). Space complexity is O(1) as modifications are done in-place, excluding the recursion stack if a recursive reverse was used (iterative reverse is O(1)).
+</thinking>

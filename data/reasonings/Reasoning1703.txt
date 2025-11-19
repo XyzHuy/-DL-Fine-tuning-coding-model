@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize moves to get k consecutive 1s in a binary array by swapping adjacent elements.
+2. Problem type / algorithm category: Sliding Window, Median Property, Greedy Approach.
+3. Step-by-step approach: Find all indices of 1s. Use a sliding window of size k on these indices. For each window, find the median index. Calculate moves by summing absolute differences between each 1's index and its target position relative to the median. The target position is calculated to make them consecutive around the median.
+4. Edge cases: k equal to the total number of 1s, array already containing k consecutive 1s.
+5. Time and space complexity: O(N) time and O(N) space, where N is the length of nums.
+</thinking>

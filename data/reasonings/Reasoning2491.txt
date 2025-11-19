@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Divide players with given skills into pairs such that the sum of skills in each pair is equal, and return the sum of the product of skills in each pair.
+2. Problem type / algorithm category: Sorting, Two Pointers, Greedy.
+3. Step-by-step approach: Sort the skill array. The target sum for each pair must be the sum of the smallest and largest skill. Use two pointers, one at the beginning and one at the end, to form pairs. Check if the sum of each pair equals the target sum. If so, calculate and sum their chemistry. If any pair doesn't match, return -1.
+4. Edge cases: The array length is guaranteed to be even and at least 2. The core edge case is when it's impossible to form teams with equal skill sums.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N). Space complexity is O(1) if sorting is in-place, or O(N) or O(log N) depending on the sorting algorithm's auxiliary space.
+</thinking>

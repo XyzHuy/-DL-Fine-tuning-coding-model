@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given parentheses string can be made valid by changing characters at unlocked positions.
+2. Problem type / algorithm category: Greedy approach with two-pass validation.
+3. Step-by-step approach: First, check if the string length is even. Then, iterate from left to right, maintaining counts of flexible characters and locked open parentheses. Ensure closing parentheses can always be matched. Next, iterate from right to left, doing the same for flexible characters and locked close parentheses. This ensures all locked open parentheses can be matched from the right.
+4. Edge cases: The length of the string must be even for it to be a valid parentheses string.
+5. Time and space complexity: Time complexity is O(N) due to two linear passes through the string. Space complexity is O(1) as only a few counters are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a text and a two-character pattern, find the maximum number of times the pattern appears as a subsequence after inserting one character from the pattern into the text.
+2. Problem type / algorithm category: Greedy, String manipulation, Counting subsequences.
+3. Step-by-step approach: Handle the case where pattern characters are the same separately. For distinct characters, iterate through the text, maintaining counts of pattern[0] and pattern[1] encountered so far. Calculate existing subsequences. Then, consider two scenarios: inserting pattern[0] and inserting pattern[1], calculating the potential new subsequence counts for each, and returning the maximum.
+4. Edge cases: The pattern consists of two identical characters; the text or pattern is empty (though constraints prevent empty text).
+5. Time and space complexity: Time O(N), Space O(1), where N is the length of the text.
+</thinking>

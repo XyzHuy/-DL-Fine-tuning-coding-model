@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of egg drops to determine the critical floor f (0 <= f <= n) in a building with n floors, given two identical eggs.
+2. Problem type / algorithm category: Dynamic Programming or Mathematical/Greedy approach. The provided solution uses a mathematical/greedy insight.
+3. Step-by-step approach: The strategy involves dropping the first egg from progressively higher floors, with decreasing intervals between drops. This forms an arithmetic progression sum. The goal is to find the minimum number of drops (x) such that the sum of intervals (1 + 2 + ... + x) is at least n. We can iteratively increment the number of moves and subtract it from n until n becomes zero or less.
+4. Edge cases: n = 1. The problem statement guarantees 1 <= n, so n = 0 is not a concern.
+5. Time and space complexity: Time complexity is O(sqrt(n)) because the loop runs until moves * (moves + 1) / 2 >= n. Space complexity is O(1) as only a few variables are used.
+</thinking>

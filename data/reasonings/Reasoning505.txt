@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest distance for a ball to travel from a start position to a destination in a maze, where the ball rolls until it hits a wall.
+2. Problem type / algorithm category: Graph traversal / Shortest path / Priority Queue (Dijkstra's algorithm).
+3. Step-by-step approach: Use a priority queue to explore possible paths, storing the distance from the start, row, and column. At each step, roll the ball in all four directions until a wall is hit. If the new position is the destination, return the distance. If the new position hasn't been visited, add it to the priority queue with updated distance.
+4. Edge cases: The ball cannot reach the destination; the start and destination are the same; the maze is empty or has only one cell.
+5. Time and space complexity: Time: O(m*n*log(m*n)) where m and n are the dimensions of the maze. Space: O(m*n) for the priority queue and visited set.
+</thinking>

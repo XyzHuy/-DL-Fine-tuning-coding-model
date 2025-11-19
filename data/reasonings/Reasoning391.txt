@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a set of rectangles exactly covers a rectangular region without overlaps or gaps.
+2. Problem type / algorithm category: Geometry, area calculation, corner point analysis.
+3. Step-by-step approach: Calculate the area of the large rectangle formed by the input rectangles. Also, calculate the sum of the areas of each individual rectangle. If these areas are not equal, return false. Then, check if the corners of the large rectangle appear exactly once and all other corners appear an even number of times.
+4. Edge cases: Empty input, overlapping rectangles, gaps between rectangles, incorrect area calculation.
+5. Time and space complexity: Time complexity is O(N), where N is the number of rectangles, due to iterating through the rectangles once. Space complexity is O(N) in the worst case, to store the corner counts.
+</thinking>

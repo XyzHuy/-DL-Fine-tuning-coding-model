@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the smaller angle between hour and minute hands on an analog clock given hour and minute values.
+2. Problem type / algorithm category: Mathematical calculation, Angle calculation.
+3. Step-by-step approach: Calculate the angle of the minute hand (minutes * 6 degrees). Calculate the angle of the hour hand, considering its movement based on minutes (hour % 12 * 30 degrees + minutes/60 * 30 degrees). Find the absolute difference and take the minimum of this difference and 360 minus this difference.
+4. Edge cases: Hour 12 should be treated as 0 for angle calculation purposes. When the angle difference is greater than 180 degrees, the smaller angle is 360 minus the difference.
+5. Time and space complexity: O(1) time complexity as calculations are constant. O(1) space complexity as only a few variables are used.
+</thinking>

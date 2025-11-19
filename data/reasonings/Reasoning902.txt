@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a set of digits, count how many numbers can be formed using these digits (with repetition allowed) that are less than or equal to a given number n.
+2. Problem type / algorithm category: Dynamic Programming / Counting, String manipulation.
+3. Step-by-step approach: Convert n to a string. Count all numbers with length less than the length of n. Iterate through the digits of n, and for each digit, compare it with the available digits. If a digit is smaller, add the count of possible numbers of the remaining length. If it's equal, continue to the next digit. If no digit is equal, return the current count. If all digits match, add 1 to the count.
+4. Edge cases: n is a single digit, digits contains only one digit, n is very large, no possible numbers can be formed.
+5. Time and space complexity: Time complexity is O(log(n)), where n is the input integer, due to iterating through the digits of n. Space complexity is O(log(n)) due to converting n to a string.
+</thinking>

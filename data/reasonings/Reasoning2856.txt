@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted array, repeatedly remove two elements `nums[i]` and `nums[j]` where `nums[i] < nums[j]` to find the minimum possible remaining array length.
+2. Problem type / algorithm category: Greedy approach, Frequency analysis, Math.
+3. Step-by-step approach: Count the frequency of each number. Find the maximum frequency. If the maximum frequency is less than or equal to half the array length, the result is the parity of the original length. Otherwise, the result depends on how many elements of the most frequent number remain after pairing them with other numbers.
+4. Edge cases: All elements are the same, all elements can be removed, array with only one element.
+5. Time and space complexity: Time O(N) for counting frequencies and finding max frequency. Space O(U) where U is the number of unique elements, at most O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Transform a given string into a "fancy" string by removing the minimum number of characters such that no three consecutive characters are identical.
+2. Problem type / algorithm category: String manipulation, greedy approach.
+3. Step-by-step approach: Iterate through the string starting from the third character. For each character, check if it's the same as the previous two characters. If it is, skip it. Otherwise, append it to the result. Initialize the result with the first two characters if they exist.
+4. Edge cases: Strings with length less than 3 do not require any modifications.
+5. Time and space complexity: O(N) time to iterate through the string once, and O(N) space for the result string.
+</thinking>

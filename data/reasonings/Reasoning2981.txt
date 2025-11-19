@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest special substring (composed of a single repeating character) that appears at least three times within a given string.
+2. Problem type / algorithm category: String manipulation, counting occurrences, dynamic programming (implicitly).
+3. Step-by-step approach: Iterate through the string to identify contiguous blocks of the same character. For each block, calculate how many special substrings of varying lengths can be formed within it. Store these counts. Finally, iterate through the stored counts to find the maximum length of a special substring that occurred at least thrice.
+4. Edge cases: Strings with no special substrings occurring thrice, strings with only one character type, strings where the longest special substring appears less than three times.
+5. Time and space complexity: Time complexity is O(N^2) due to nested loops over substring lengths, and space complexity is O(alphabet_size * N) in the worst case to store counts.
+</thinking>

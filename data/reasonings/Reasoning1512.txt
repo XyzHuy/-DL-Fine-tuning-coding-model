@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) in an array where nums[i] equals nums[j] and i is strictly less than j.
+2. Problem type / algorithm category: Hash Map / Frequency Counting.
+3. Step-by-step approach: Iterate through the array, use a hash map to store the frequency of each number encountered. For each number, if it has appeared before, add its current frequency to the total count of good pairs, and then increment its frequency in the hash map.
+4. Edge cases: An empty array or an array with all unique elements (resulting in zero good pairs).
+5. Time and space complexity: O(n) time complexity because we iterate through the array once. O(k) space complexity where k is the number of unique elements in the array (at most 100 based on constraints).
+</thinking>

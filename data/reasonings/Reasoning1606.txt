@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign requests to k servers based on arrival time and load, prioritizing server i % k, then next available. Identify servers with the most requests.
+2. Problem type / algorithm category: Simulation, Greedy, Heap (Priority Queue), Two Pointers.
+3. Step-by-step approach: Maintain available servers and busy servers (with finish times) using heaps. For each request, free up busy servers that finish before arrival. Try preferred server (i % k) first. If busy, search for the next available server circularly. If no servers are available, drop the request. Track request counts for each server.
+4. Edge cases: All servers busy when a request arrives. All servers are available. All servers handle an equal number of requests.
+5. Time and space complexity: Time O(N log K) where N is number of requests, space O(K).
+</thinking>

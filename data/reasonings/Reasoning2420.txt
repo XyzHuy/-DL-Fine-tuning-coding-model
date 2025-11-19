@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify indices i where the k preceding elements are non-increasing and the k succeeding elements are non-decreasing.
+2. Problem type / algorithm category: Dynamic Programming, Array Traversal.
+3. Step-by-step approach: Precompute lengths of consecutive non-increasing subarrays ending at each index and non-decreasing subarrays starting at each index. Then iterate through possible good indices and check precomputed lengths.
+4. Edge cases: Array length less than 2*k + 1, meaning no index can satisfy the k-element requirement on both sides.
+5. Time and space complexity: Time O(n), Space O(n) due to auxiliary arrays.
+</thinking>

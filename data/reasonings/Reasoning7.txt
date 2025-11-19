@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the digits of a 32-bit signed integer, considering potential overflow.
+2. Problem type / algorithm category: Math / String manipulation.
+3. Step-by-step approach: Determine the sign, reverse the absolute value's digits as a string, convert back to integer, restore the sign, and check for overflow.
+4. Edge cases: Negative numbers, numbers ending in zero, and overflow beyond the 32-bit integer range.
+5. Time and space complexity: O(log|x|) time for reversing the digits, O(log|x|) space for storing the reversed string.
+</thinking>

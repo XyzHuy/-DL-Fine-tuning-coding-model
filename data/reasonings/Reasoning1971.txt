@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a path exists between a source and destination vertex in a given undirected graph.
+2. Problem type / algorithm category: Graph traversal (Breadth-First Search or Depth-First Search).
+3. Step-by-step approach: Build an adjacency list representation of the graph. Start a traversal (BFS in this case) from the source vertex. Keep track of visited vertices. If the destination vertex is encountered during the traversal, a path exists. If the traversal completes without reaching the destination, no path exists.
+4. Edge cases: The source and destination vertices could be the same. The graph might be disconnected.
+5. Time and space complexity: Time complexity is O(V + E) where V is the number of vertices and E is the number of edges. Space complexity is O(V + E) for storing the adjacency list and visited set/queue.
+</thinking>

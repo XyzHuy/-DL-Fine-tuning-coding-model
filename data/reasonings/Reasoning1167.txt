@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to connect all sticks into one stick, where the cost of connecting two sticks is their sum.
+2. Problem type / algorithm category: Greedy algorithm, Heap (Priority Queue)
+3. Step-by-step approach: Use a min-heap to store the stick lengths. Repeatedly extract the two smallest sticks, combine them (add their lengths), add the combined length to the total cost, and push the combined length back into the min-heap until only one stick remains.
+4. Edge cases: If there is only one stick, the cost is 0.
+5. Time and space complexity: Time complexity is O(n log n) due to heap operations. Space complexity is O(n) to store the heap.
+</thinking>

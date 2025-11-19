@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path from a source node 's' to a destination node 'd' in a weighted undirected graph, with the ability to make the weight of at most 'k' edges zero.
+2. Problem type / algorithm category: Graph traversal, Shortest path algorithms, Modified Dijkstra's algorithm.
+3. Step-by-step approach: Use a modified Dijkstra's algorithm where the state in the priority queue includes the current node, the accumulated distance, and the number of hops (edges whose weights were zeroed). The distance array `dist[node][hops]` stores the minimum distance to `node` using exactly `hops` zeroed edges. When exploring an edge from `u` to `v` with weight `w`: 1. If `hops < k`, consider zeroing the edge: update `dist[v][hops + 1]` if `current_dist` is shorter, and push `(current_dist, hops + 1, v)` to PQ. 2. Always consider not zeroing the edge: update `dist[v][hops]` if `current_dist + w` is shorter, and push `(current_dist + w, hops, v)` to PQ. The final answer is the minimum value in `dist[d][0...k]`.
+4. Edge cases: The graph is guaranteed to be connected. Source and destination nodes are distinct. `k` can be 0. All weights are positive.
+5. Time and space complexity: Time complexity is O(E * k * log(N * k)) or O(E * k * log E) if E > N*k, where N is the number of nodes and E is the number of edges, due to the state space of (node, hops) and priority queue operations. Space complexity is O(N * k) for the distance array and O(N * k) for the priority queue in the worst case.
+</thinking>

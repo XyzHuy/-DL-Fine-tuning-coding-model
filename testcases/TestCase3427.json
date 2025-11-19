@@ -1,0 +1,1648 @@
+{
+  "function_name": "subarraySum",
+  "test_cases": [
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 38
+    },
+    {
+      "parameters": {
+        "nums": [
+          50,
+          25,
+          50,
+          25,
+          50
+        ]
+      },
+      "expected_output": 600
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          5,
+          2,
+          3
+        ]
+      },
+      "expected_output": 62
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6
+        ]
+      },
+      "expected_output": 130
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          3,
+          1
+        ]
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          1,
+          10,
+          1,
+          10
+        ]
+      },
+      "expected_output": 85
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 75
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 75
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 35
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6
+        ]
+      },
+      "expected_output": 130
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          100,
+          100
+        ]
+      },
+      "expected_output": 600
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19,
+          21,
+          23,
+          25,
+          27,
+          29,
+          31
+        ]
+      },
+      "expected_output": 1496
+    },
+    {
+      "parameters": {
+        "nums": [
+          50,
+          40,
+          30,
+          20,
+          10,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 635
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          10,
+          5,
+          1
+        ]
+      },
+      "expected_output": 806
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          200,
+          300,
+          400,
+          500,
+          600,
+          700,
+          800,
+          900,
+          1000
+        ]
+      },
+      "expected_output": 22000
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 95
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          128,
+          256,
+          512
+        ]
+      },
+      "expected_output": 2036
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3
+        ]
+      },
+      "expected_output": 53
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          12,
+          6,
+          3,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 861
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 635
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          100,
+          99,
+          98,
+          97,
+          96,
+          95
+        ]
+      },
+      "expected_output": 2193
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10,
+          10
+        ]
+      },
+      "expected_output": 550
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 54
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          2,
+          3,
+          5,
+          8,
+          13,
+          21,
+          34,
+          55
+        ]
+      },
+      "expected_output": 364
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          5,
+          1,
+          10,
+          5,
+          1,
+          10,
+          5,
+          1,
+          10
+        ]
+      },
+      "expected_output": 232
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          12,
+          6,
+          3,
+          1,
+          2,
+          4,
+          8
+        ]
+      },
+      "expected_output": 988
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          10,
+          30,
+          10,
+          40,
+          10,
+          50,
+          10,
+          60
+        ]
+      },
+      "expected_output": 1100
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          3,
+          2,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 69
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          10,
+          15,
+          20,
+          25,
+          30,
+          35,
+          40,
+          45,
+          50
+        ]
+      },
+      "expected_output": 1100
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 222
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          6,
+          10,
+          15,
+          21,
+          28,
+          36,
+          45,
+          55
+        ]
+      },
+      "expected_output": 715
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          3,
+          8,
+          6,
+          2,
+          7,
+          4,
+          1,
+          9,
+          10
+        ]
+      },
+      "expected_output": 230
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 110
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          1,
+          20,
+          2,
+          30,
+          3,
+          40,
+          4,
+          50,
+          5
+        ]
+      },
+      "expected_output": 670
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          4,
+          3,
+          2,
+          1,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 78
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          90,
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 9640
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          10,
+          2,
+          9,
+          3,
+          8,
+          4,
+          7,
+          5,
+          6,
+          11
+        ]
+      },
+      "expected_output": 318
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91
+        ]
+      },
+      "expected_output": 5335
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1,
+          2,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          1
+        ]
+      },
+      "expected_output": 2301
+    },
+    {
+      "parameters": {
+        "nums": [
+          1000,
+          999,
+          998,
+          997,
+          996,
+          995,
+          994,
+          993,
+          992,
+          991
+        ]
+      },
+      "expected_output": 54835
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          90,
+          80,
+          70,
+          60,
+          50,
+          40,
+          30,
+          20,
+          10
+        ]
+      },
+      "expected_output": 3850
+    },
+    {
+      "parameters": {
+        "nums": [
+          99,
+          98,
+          97,
+          96,
+          95,
+          94,
+          93,
+          92,
+          91,
+          90
+        ]
+      },
+      "expected_output": 5280
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          5,
+          3,
+          8,
+          2,
+          7,
+          1,
+          4,
+          6,
+          9
+        ]
+      },
+      "expected_output": 233
+    },
+    {
+      "parameters": {
+        "nums": [
+          1000,
+          500,
+          1000,
+          500,
+          1000,
+          500,
+          1000,
+          500,
+          1000,
+          500
+        ]
+      },
+      "expected_output": 42500
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          5,
+          2,
+          10,
+          5,
+          2,
+          10,
+          5,
+          2,
+          10
+        ]
+      },
+      "expected_output": 274
+    },
+    {
+      "parameters": {
+        "nums": [
+          20,
+          15,
+          10,
+          5,
+          1,
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "expected_output": 460
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          3,
+          8,
+          6,
+          2,
+          7,
+          4,
+          9,
+          1,
+          10
+        ]
+      },
+      "expected_output": 234
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+        ]
+      },
+      "expected_output": 235
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          5
+        ]
+      },
+      "expected_output": 380
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15,
+          17,
+          19
+        ]
+      },
+      "expected_output": 385
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          32,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      },
+      "expected_output": 904
+    },
+    {
+      "parameters": {
+        "nums": [
+          512,
+          256,
+          128,
+          64,
+          32,
+          16,
+          8,
+          4,
+          2,
+          1
+        ]
+      },
+      "expected_output": 6293
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 221
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 220
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ]
+      },
+      "expected_output": 37
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 265
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          12,
+          6,
+          3,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 855
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expected_output": 21000
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          1,
+          4,
+          1,
+          5,
+          9,
+          2,
+          6,
+          5,
+          3,
+          5
+        ]
+      },
+      "expected_output": 175
+    },
+    {
+      "parameters": {
+        "nums": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20
+        ]
+      },
+      "expected_output": 440
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          3,
+          2,
+          4,
+          1,
+          2,
+          3,
+          4,
+          1,
+          2
+        ]
+      },
+      "expected_output": 69
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          20,
+          10,
+          20,
+          30,
+          20,
+          10,
+          20,
+          30,
+          20,
+          10,
+          20,
+          30,
+          20,
+          10,
+          20,
+          30,
+          20
+        ]
+      },
+      "expected_output": 3960
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 340
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "expected_output": 1540
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "expected_output": 465
+    },
+    {
+      "parameters": {
+        "nums": [
+          999,
+          998,
+          997,
+          996,
+          995,
+          994,
+          993,
+          992,
+          991,
+          990
+        ]
+      },
+      "expected_output": 54780
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          5,
+          10,
+          5,
+          10
+        ]
+      },
+      "expected_output": 375
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100
+        ]
+      },
+      "expected_output": 6465
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          40,
+          30,
+          20,
+          10,
+          5
+        ]
+      },
+      "expected_output": 1405
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          100,
+          1000,
+          10,
+          100,
+          1000,
+          10,
+          100,
+          1000,
+          10
+        ]
+      },
+      "expected_output": 17020
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ]
+      },
+      "expected_output": 5500
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1,
+          100,
+          1
+        ]
+      },
+      "expected_output": 2015
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          10,
+          5,
+          1,
+          100,
+          50,
+          25,
+          10
+        ]
+      },
+      "expected_output": 2180
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ]
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "nums": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 102
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1,
+          5,
+          1
+        ]
+      },
+      "expected_output": 219
+    },
+    {
+      "parameters": {
+        "nums": [
+          50,
+          45,
+          40,
+          35,
+          30,
+          25,
+          20,
+          15,
+          10,
+          5
+        ]
+      },
+      "expected_output": 1755
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100
+        ]
+      },
+      "expected_output": 2200
+    },
+    {
+      "parameters": {
+        "nums": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 225
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 39
+    },
+    {
+      "parameters": {
+        "nums": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 175
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          10,
+          5,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 814
+    },
+    {
+      "parameters": {
+        "nums": [
+          1,
+          2,
+          3,
+          6,
+          1,
+          2,
+          3,
+          6,
+          1,
+          2,
+          3,
+          6,
+          1,
+          2,
+          3,
+          6,
+          1,
+          2,
+          3,
+          6
+        ]
+      },
+      "expected_output": 226
+    },
+    {
+      "parameters": {
+        "nums": [
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000,
+          1000
+        ]
+      },
+      "expected_output": 55000
+    },
+    {
+      "parameters": {
+        "nums": [
+          100,
+          50,
+          25,
+          10,
+          5,
+          2,
+          1,
+          0,
+          1,
+          2
+        ]
+      },
+      "expected_output": 824
+    },
+    {
+      "parameters": {
+        "nums": [
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150
+        ]
+      },
+      "expected_output": 6800
+    }
+  ]
+}

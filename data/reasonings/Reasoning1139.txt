@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest square subgrid with all 1s on the border in a given 2D grid of 0s and 1s. Return the area of the square, or 0 if no such square exists.
+2. Problem type / algorithm category: Dynamic Programming
+3. Step-by-step approach: Create two DP tables, horizontal and vertical, to store the lengths of consecutive 1s ending at each cell in both directions. Iterate through the grid from bottom right to top left, and for each cell containing '1', check for possible square sizes using the horizontal and vertical lengths stored in DP tables. Update the maximum side length found so far.
+4. Edge cases: Empty grid or grid with no 1s.
+5. Time and space complexity: Time complexity is O(n*m*min(n,m)) where n and m are the dimensions of the grid. Space complexity is O(n*m) due to the horizontal and vertical auxiliary arrays.
+</thinking>

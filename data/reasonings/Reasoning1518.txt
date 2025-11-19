@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total number of water bottles that can be drunk, starting with a given number of full bottles and an exchange rate for empty bottles to new full bottles.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Start with the initial number of full bottles as drunk. Repeatedly exchange as many empty bottles as possible for new full bottles, add these new bottles to the total drunk, and update the count of empty bottles. Continue until the number of empty bottles is less than the exchange requirement.
+4. Edge cases: numBottles is less than numExchange initially; numBottles is very large.
+5. Time and space complexity: Time complexity is logarithmic with respect to numBottles because the number of empty bottles decreases significantly in each exchange. Space complexity is constant as only a few variables are used.
+</thinking>

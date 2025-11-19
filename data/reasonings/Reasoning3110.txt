@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the score of a string by summing the absolute differences of ASCII values of adjacent characters.
+2. Problem type / algorithm category: Iteration, String manipulation.
+3. Step-by-step approach: Initialize a score to 0. Iterate through the string from the second character. In each iteration, calculate the absolute difference between the current character's ASCII value and the previous character's ASCII value, and add it to the score. Return the final score.
+4. Edge cases: The problem constraints guarantee a string length of at least 2, so there are no empty or single-character strings to consider.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the string, as we iterate through it once. Space complexity is O(1) as we only use a few variables.
+</thinking>

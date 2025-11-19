@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring within a given string that contains no repeating characters.
+2. Problem type / algorithm category: String manipulation, sliding window, hash map.
+3. Step-by-step approach: Use a sliding window approach, tracking the start of the window and the last seen index of each character in a hash map. When a repeating character is encountered within the current window, move the start of the window to the right of the previous occurrence. Keep track of the longest substring seen so far.
+4. Edge cases: Empty string.
+5. Time and space complexity: O(n) time, O(min(m, n)) space where n is the length of the string and m is the size of the character set.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Split a four-digit number into two new numbers using its digits to minimize their sum.
+2. Problem type / algorithm category: Greedy, Sorting.
+3. Step-by-step approach: Extract digits, sort them, then combine them greedily to form two numbers, ensuring the smallest digits contribute to the most significant places possible to minimize the sum.
+4. Edge cases: The problem guarantees a four-digit positive integer, so no empty or non-four-digit inputs. Leading zeros are allowed, which is handled by the digit concatenation.
+5. Time and space complexity: O(1) time due to fixed number of digits, O(1) space for storing digits.
+</thinking>

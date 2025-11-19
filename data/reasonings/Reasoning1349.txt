@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize students in a classroom grid where students can cheat if they see neighbors (left, right, upper-left, upper-right), avoiding broken seats.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking.
+3. Step-by-step approach: Represent each row's student placement as a bitmask. Use DP where dp[r][mask] stores the max students up to row r with 'mask' representing student placement in row r. Transition involves checking validity between current mask and previous row's masks.
+4. Edge cases: Rows or columns with all broken seats, or empty classroom.
+5. Time and space complexity: O(m * 2^n * 2^n) time, O(m * 2^n) space where m is rows and n is columns.
+</thinking>

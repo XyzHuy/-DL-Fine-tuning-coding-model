@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Concatenate strings in an array using a specific join operation that reduces length if ends match, aiming to minimize the final string length.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Use a recursive function with memoization that considers joining the current word either at the beginning or end of the accumulated string, tracking the first and last characters of the accumulated string to calculate length reduction.
+4. Edge cases: The array can have only one word, which means no joins occur and the length is just the length of that word.
+5. Time and space complexity: O(N * C^2) time and O(N * C^2) space, where N is the number of words and C is the alphabet size (26 for lowercase English letters).
+</thinking>

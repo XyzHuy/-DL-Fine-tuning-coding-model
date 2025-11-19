@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Collect coins from a rooted tree, starting at the root. For each node, choose between collecting all coins (gain coins[i] - k points) or collecting half coins (gain floor(coins[i]/2) points and halve coins in the entire subtree). Maximize total points.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming with Memoization (Top-Down), Recursion.
+3. Step-by-step approach: Build an adjacency list for the tree. Use a recursive DFS function `dfs(node, parent, halves)` where `halves` tracks how many times the coins at the current node (and its descendants) have been halved. At each node, calculate points for two options: (1) use `coins[node] - k` and recursively call for children with the same `halves`, and (2) use `coins[node] // 2` and recursively call for children with `halves + 1`. Memoize results for `(node, halves)` to avoid redundant calculations. The maximum of the two options at each node is returned.
+4. Edge cases: Tree with only two nodes. When `coins[i] - k` is negative. When `coins[i]` is 0. The constraint that `halves` can go up to 14 is important because further halving beyond that (for `coins[i]` up to 10^4) does not change the value significantly due to integer division.
+5. Time and space complexity: Time complexity is O(N * log(max_coins)), where N is the number of nodes and log(max_coins) is due to the maximum number of halvings (around 14). Space complexity is O(N * log(max_coins)) for the memoization table and recursion stack.
+</thinking>

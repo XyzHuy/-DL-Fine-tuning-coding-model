@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the score by playing tokens either face-up (lose power, gain score) or face-down (gain power, lose score).
+2. Problem type / algorithm category: Greedy algorithm, sorting, two pointers.
+3. Step-by-step approach: Sort the tokens. Use two pointers, left and right, to represent the smallest and largest tokens. If we have enough power, play the smallest token face-up to increase score. Otherwise, if we have score, play the largest token face-down to increase power. If neither is possible, stop.
+4. Edge cases: Empty token list, initial power is sufficient to play all tokens face-up, initial power is insufficient to play any token, score is zero and cannot play tokens face down.
+5. Time and space complexity: Time: O(n log n) for sorting. Space: O(1) excluding the input array.
+</thinking>

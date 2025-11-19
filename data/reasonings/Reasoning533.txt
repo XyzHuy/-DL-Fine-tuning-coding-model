@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D grid of 'B' and 'W' pixels, find the number of 'B' pixels that satisfy two conditions: the row and column containing the pixel both have exactly `target` number of 'B' pixels, and all rows containing a 'B' in the same column as the pixel are identical to the pixel's row.
+2. Problem type / algorithm category: Array manipulation, Counting, Hash Table (defaultdict)
+3. Step-by-step approach: First, count the number of black pixels in each row and column. Then, iterate through the grid, and for each black pixel, check if it satisfies the row and column count conditions. If they do, verify that all rows that have a black pixel in the same column are identical to the current row.
+4. Edge cases: Empty input grid, target larger than possible black pixels in row or column.
+5. Time and space complexity: Time: O(m*n*m) in the worst case (checking rows), Space: O(m+n) for row_count, col_count and potentially O(m*n) for the dictionary in a worst-case scenario where all entries are 'B'.
+</thinking>

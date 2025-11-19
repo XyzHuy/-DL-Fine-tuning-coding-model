@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the number of taps to water a garden of length n, given tap positions and their watering ranges.
+2. Problem type / algorithm category: Greedy algorithm, Interval covering.
+3. Step-by-step approach: First, determine the maximum watering reach for each possible starting point of an interval. Then, greedily select the tap that extends the furthest from the current watered region until the entire garden is covered.
+4. Edge cases: The garden cannot be watered completely if there's a gap that no tap can cover. n=0 is not possible by constraints. Ranges can be 0.
+5. Time and space complexity: Time complexity is O(n) due to iterating through ranges and the garden. Space complexity is O(n) to store the maximum reach for each point.
+</thinking>

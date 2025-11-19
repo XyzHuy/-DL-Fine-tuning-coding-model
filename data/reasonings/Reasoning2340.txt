@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum adjacent swaps to move the smallest element to the first position and the largest element to the last position.
+2. Problem type / algorithm category: Greedy approach, array manipulation.
+3. Step-by-step approach: Find the index of the first occurrence of the minimum value and the last occurrence of the maximum value. Calculate the swaps needed to move the minimum to the start and the maximum to the end. Adjust if the original positions require them to "cross paths".
+4. Edge cases: Array with a single element is already valid.
+5. Time and space complexity: Time complexity is O(N) due to finding min/max and their indices. Space complexity is O(1) if slicing for reversing is not considered, otherwise O(N) for the reversed list.
+</thinking>

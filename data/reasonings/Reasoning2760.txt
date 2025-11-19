@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest contiguous subarray where the first element is even, adjacent elements have different parity, and all elements are less than or equal to a given threshold.
+2. Problem type / algorithm category: Sliding window or linear scan with state tracking.
+3. Step-by-step approach: Iterate through the array, maintaining the current length of a valid alternating subarray. Reset or restart the count based on the threshold condition and parity alternation. Update the maximum length found so far.
+4. Edge cases: Empty array (though constraints say nums.length >= 1), array with all elements exceeding the threshold, array with no even numbers, array where no alternating sequence can be formed.
+5. Time and space complexity: O(n) time complexity as we iterate through the array once. O(1) space complexity as we only use a few variables to store state.
+</thinking>

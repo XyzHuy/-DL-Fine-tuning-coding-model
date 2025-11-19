@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of disjoint intervals and an interval to be removed, return the remaining intervals after removal.
+2. Problem type / algorithm category: Interval manipulation, set operations.
+3. Step-by-step approach: Iterate through each given interval. For each interval, compare it with the interval to be removed. If an interval is entirely before or after the removal interval, keep it. Otherwise, check if a portion of the interval exists before the removal start and add it, and check if a portion exists after the removal end and add it.
+4. Edge cases: Intervals completely outside the toBeRemoved range, intervals completely overlapping with toBeRemoved, intervals partially overlapping with toBeRemoved.
+5. Time and space complexity: O(N) time where N is the number of intervals, O(N) space in the worst case for the result.
+</thinking>

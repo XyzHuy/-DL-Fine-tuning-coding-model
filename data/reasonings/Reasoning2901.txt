@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subsequence of words such that adjacent words have different groups, equal lengths, and a Hamming distance of 1.
+2. Problem type / algorithm category: Dynamic Programming, Longest Increasing Subsequence variant.
+3. Step-by-step approach: Use DP to find the length of the longest valid subsequence ending at each index. For each word, iterate through previous words, and if conditions are met, update DP state and parent pointer. Reconstruct the path from the end of the longest subsequence.
+4. Edge cases: Single word input, all words in the same group, all words with different groups.
+5. Time and space complexity: Time complexity is O(n^2 * L) where L is the max word length. Space complexity is O(n) for DP table and parent pointers.
+</thinking>

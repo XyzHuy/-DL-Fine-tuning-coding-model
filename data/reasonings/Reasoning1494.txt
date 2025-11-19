@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of semesters to complete all courses, given prerequisites and a limit k on courses per semester.
+2. Problem type / algorithm category: Dynamic programming with bitmasking and graph traversal (specifically, Kahn's algorithm variation with state representation).
+3. Step-by-step approach: Model courses and prerequisites as a directed graph. Use dynamic programming with a bitmask to represent the set of completed courses. At each state, identify courses with no pending prerequisites that can be taken. Explore combinations of taking up to k such courses, recursively solving for the remaining courses and summing semesters. Memoize results to avoid redundant calculations.
+4. Edge cases: No relations (all courses can be taken immediately), k equals n (all courses can be taken in one semester if no prereqs), or k=1 (sequential completion if prereqs exist). The problem guarantees a DAG and that all courses are completable.
+5. Time and space complexity: Time complexity is O(2^n * n * k) due to iterating through all 2^n states, and for each state, considering combinations of up to k courses. Space complexity is O(2^n) for memoization.
+</thinking>

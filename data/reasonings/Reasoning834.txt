@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a tree, calculate the sum of distances from each node to all other nodes.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming.
+3. Step-by-step approach: Build an adjacency list representing the tree. Perform a first DFS to calculate the sum of distances from an arbitrary root (node 0) and the size of each subtree. Perform a second DFS to propagate this information to calculate the sums of distances for all other nodes.
+4. Edge cases: n = 1, n = 2, disconnected graph (invalid input according to the constraints).
+5. Time and space complexity: Time: O(N), Space: O(N).
+</thinking>

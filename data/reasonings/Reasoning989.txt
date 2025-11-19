@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of digits representing a number and an integer k, return the array representation of the sum of the number and k.
+2. Problem type / algorithm category: Array manipulation, addition
+3. Step-by-step approach: Iterate through the array from right to left, adding k to the current digit. Calculate the carry and the digit to be added to the result. Handle cases where the array is exhausted or k is zero. Finally, reverse the result.
+4. Edge cases: The input array can be of any length and k can also be any integer. The carry needs to be handled correctly.
+5. Time and space complexity: Time complexity is O(max(N, logK)) where N is the length of num and K is the integer. Space complexity is O(max(N, logK)).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of distinct paths from intersection 0 to intersection n-1 that take the shortest possible time, modulo 10^9 + 7.
+2. Problem type / algorithm category: Graph traversal, Shortest Path algorithm with path counting (modified Dijkstra's).
+3. Step-by-step approach: Build an adjacency matrix representing graph weights. Initialize distances to infinity and path counts to 0, with distance 0 and count 1 for the source node. Use a Dijkstra-like approach: repeatedly select the unvisited node with the smallest current shortest distance, mark it visited, and relax its neighbors. When relaxing, update distance if a shorter path is found, resetting the path count. If an equally short path is found, add to the current path count.
+4. Edge cases: Graph with only two nodes, disconnected graph (though problem statement guarantees connectivity), large time values requiring modulo arithmetic.
+5. Time and space complexity: Time complexity is O(N^2) due to the nested loops in the Dijkstra-like implementation using an adjacency matrix. Space complexity is O(N^2) for the adjacency matrix and O(N) for distance and path count arrays.
+</thinking>

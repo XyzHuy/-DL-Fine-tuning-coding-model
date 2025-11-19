@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D grid representing cube towers, calculate the total area of the projections onto the xy, yz, and zx planes.
+2. Problem type / algorithm category: Array traversal, geometric projection.
+3. Step-by-step approach: Calculate the top view area by counting non-zero cells. Calculate the front view area by summing the maximum value of each row. Calculate the side view area by summing the maximum value of each column. Return the sum of these three areas.
+4. Edge cases: Empty grid (although the problem constraints prevent this), grids with all zeros.
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through the grid multiple times. Space complexity is O(1) as we are using constant extra space.
+</thinking>

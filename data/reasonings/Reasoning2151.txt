@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of people who can be good, given a set of statements about whether others are good or bad, considering good people always tell the truth and bad people can lie or tell the truth.
+2. Problem type / algorithm category: Brute Force, Backtracking, Combinatorics (checking all possibilities).
+3. Step-by-step approach: Iterate through all 2^n possible assignments of 'good' or 'bad' to each person. For each assignment, check if it's consistent with the given statements. A consistent assignment means that if a person is assumed to be good, all their statements must be true according to the assignment. If an assignment is consistent, count the number of 'good' people and update the maximum found so far.
+4. Edge cases: Smallest 'n' (n=2). Cases where no one is good, or everyone is good.
+5. Time and space complexity: Time complexity is O(2^n * n^2) because we check 2^n combinations, and for each combination, we validate statements which takes O(n^2). Space complexity is O(n) for recursion stack or bitmask representation.
+</thinking>

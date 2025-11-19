@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted array of integers, return a new array containing the square of each number, also sorted in non-decreasing order.
+2. Problem type / algorithm category: Two Pointers / Sorting.
+3. Step-by-step approach: Use two pointers, one at the beginning and one at the end of the input array. Compare the absolute values of the numbers pointed to by the two pointers, and place the square of the larger number into the correct position of the result array, filling it from right to left. Move the corresponding pointer inward.
+4. Edge cases: Empty array, array with one element, array with all negative numbers, array with all positive numbers.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) because we create a new array of the same size.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given list of node-parent pairs represents a valid preorder traversal of a binary tree.
+2. Problem type / algorithm category: Tree traversal, Stack-based validation.
+3. Step-by-step approach: Iterate through the nodes. Maintain a stack of potential parent IDs. For each node, pop elements from the stack that are not its parent. If the stack becomes empty and the node is not the root, it's invalid. Push the current node's ID onto the stack.
+4. Edge cases: The root node (parentId == -1), an empty input list (though constraints state at least one node), and sequences where a node appears before its parent.
+5. Time and space complexity: O(N) time complexity as each node is pushed and popped from the stack at most once. O(N) space complexity in the worst case for the stack (e.g., a skewed tree).
+</thinking>

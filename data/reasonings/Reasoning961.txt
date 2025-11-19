@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the element that occurs n times in an array of size 2n containing n+1 unique elements.
+2. Problem type / algorithm category: Hash set / Frequency counting.
+3. Step-by-step approach: Iterate through the array, adding each number to a set. If a number is already in the set, it is the number repeated n times, so return it.
+4. Edge cases: The problem statement guarantees a solution exists. Array size constraints are given.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) because the set can store up to n unique elements.
+</thinking>

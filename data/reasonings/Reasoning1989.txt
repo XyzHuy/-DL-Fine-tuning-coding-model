@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the number of people who are not "it" caught by people who are "it", given a reach distance.
+2. Problem type / algorithm category: Greedy, Two Pointers.
+3. Step-by-step approach: Use two pointers, one for people who are not "it" (zeros) and one for people who are "it" (ones). Iterate, if a person is not "it", advance the zero pointer. If a person is "it", check if they can catch the person represented by the zero pointer within the given distance. If yes, increment caught count and advance both pointers. If not, advance the pointer that is too far behind.
+4. Edge cases: Array with only zeros, array with only ones, small arrays where distance exceeds array bounds.
+5. Time and space complexity: O(N) time complexity as each pointer traverses the array at most once. O(1) space complexity as only a few variables are used.
+</thinking>

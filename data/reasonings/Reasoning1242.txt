@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to implement a multi-threaded web crawler that starts from a given URL, extracts all reachable URLs within the same hostname, and avoids crawling the same URL twice.
+2. Problem type / algorithm category: Breadth-First Search (BFS) with multi-threading and URL parsing.
+3. Step-by-step approach: Extract the hostname from the start URL. Initialize a queue with the start URL and a set to track visited URLs. Use multiple threads to concurrently process URLs from the queue. For each URL, extract its hostname. If it matches the target hostname and hasn't been visited, mark it as visited and add its extracted links (that also match the hostname) to the queue. Threads continue until the queue is empty.
+4. Edge cases: The start URL might be the only URL within its hostname. The queue could become empty while threads are still processing. Ensure correct hostname extraction and comparison.
+5. Time and space complexity: Time complexity is difficult to define precisely due to the nature of web crawling and `getUrls` being a blocking call, but in a simplified sense, it's O(V + E) where V is the number of visited URLs and E is the number of edges explored. Space complexity is O(V) for storing visited URLs and the queue.
+</thinking>

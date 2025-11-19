@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove duplicate values from a sorted linked list, leaving only distinct values.
+2. Problem type / algorithm category: Linked list manipulation.
+3. Step-by-step approach: Iterate through the linked list, comparing the current node's value with the next node's value. If they are equal, skip the next node. If they are different, advance to the next node.
+4. Edge cases: Empty list, list with one element, all elements are duplicates.
+5. Time and space complexity: Time: O(n), where n is the number of nodes. Space: O(1).
+</thinking>

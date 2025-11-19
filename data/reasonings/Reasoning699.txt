@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: We are given a list of squares falling onto the x-axis, and we need to return the maximum height after each square falls.
+2. Problem type / algorithm category: Interval overlap, simulation.
+3. Step-by-step approach: Iterate through the squares, calculate the height of the current square by checking for overlaps with previously dropped squares. Update the maximum height seen so far after dropping each square.
+4. Edge cases: No overlapping squares, squares completely contained within other squares, squares partially overlapping.
+5. Time and space complexity: Time complexity is O(n^2) due to the nested loop for overlap checking. Space complexity is O(n) to store the heights of dropped squares.
+</thinking>

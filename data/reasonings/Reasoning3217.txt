@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove nodes from a linked list whose values are present in a given array of integers.
+2. Problem type / algorithm category: Linked List manipulation, Set for efficient lookups.
+3. Step-by-step approach: Convert the input array `nums` into a set for O(1) average time complexity lookups. Use a dummy node to simplify the process of removing nodes, especially the head. Iterate through the linked list, maintaining a pointer to the current node. If the next node's value is found in the set, bypass it by updating the current node's `next` pointer to the node after the next. If the next node's value is not in the set, advance the current pointer. Return the `next` of the dummy node.
+4. Edge cases: The head node might need to be removed, which is handled by the dummy node. The linked list could be empty, though constraints state at least one node. All nodes might need removal, but constraints guarantee at least one node remains.
+5. Time and space complexity: Time complexity is O(N + M) where N is the number of nodes in the linked list and M is the number of elements in `nums`. Space complexity is O(M) for storing `nums` in a set.
+</thinking>

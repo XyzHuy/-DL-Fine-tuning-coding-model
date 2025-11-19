@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of 0s and 1s, divide it into three non-empty parts with equal binary values. Find indices i and j such that the parts [0, i], [i+1, j-1], and [j, end] represent the same binary number.
+2. Problem type / algorithm category: Array manipulation, Greedy algorithm.
+3. Step-by-step approach: Count total ones. If zero, return [0, n-1]. If ones not divisible by 3, return [-1, -1]. Find start indices of the three parts based on ones_per_part. Compare the three parts after aligning their lengths based on the last part length.
+4. Edge cases: Array with all zeros, array where the number of ones is not divisible by 3.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array a few times. Space complexity is O(1) since we use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a target array using stack operations (Push, Pop) from a stream of integers [1, n].
+2. Problem type / algorithm category: Array manipulation, simulation, greedy.
+3. Step-by-step approach: Iterate through numbers from 1 up to n. For each target number, push it. If the current stream number is not the target number, push and then pop until the stream number matches the target number.
+4. Edge cases: Target array can be empty (though constraints say length >= 1), n can be small or large, target values are strictly increasing.
+5. Time and space complexity: Time complexity is O(n) because we iterate up to n and perform constant operations per stream number. Space complexity is O(k) where k is the length of the output operations list.
+</thinking>

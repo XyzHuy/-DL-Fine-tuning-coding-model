@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the absolute difference in days between two given dates provided as YYYY-MM-DD strings.
+2. Problem type / algorithm category: Date/Time Manipulation, Utility Functions.
+3. Step-by-step approach: Parse both input date strings into datetime objects, compute the absolute difference between these two objects, and extract the number of days from the resulting timedelta.
+4. Edge cases: The problem constraints guarantee valid dates within a specific year range (1971-2100), so leap years are implicitly handled, and invalid date formats are not expected.
+5. Time and space complexity: Time complexity is O(1) as date parsing and subtraction are constant time operations. Space complexity is O(1) for storing datetime objects and timedelta.
+</thinking>

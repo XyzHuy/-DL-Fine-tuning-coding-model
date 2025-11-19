@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort an array of 0s, 1s, and 2s in-place such that elements of the same value are adjacent, and in the order 0, 1, 2.
+2. Problem type / algorithm category: Array manipulation, sorting, Dutch National Flag problem.
+3. Step-by-step approach: Use three pointers: low, mid, and high. Iterate through the array using the mid pointer. If nums[mid] is 0, swap nums[mid] with nums[low], and increment both low and mid. If nums[mid] is 1, increment mid. If nums[mid] is 2, swap nums[mid] with nums[high], and decrement high. Continue until mid > high.
+4. Edge cases: Empty array, array with only one element, array with all elements being the same, array already sorted.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we are sorting in-place and only using a few extra variables.
+</thinking>

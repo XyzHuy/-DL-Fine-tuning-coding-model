@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a baseball game scorekeeping system with special rules for adding, doubling, summing, and invalidating scores, then return the total score.
+2. Problem type / algorithm category: Stack data structure, simulation.
+3. Step-by-step approach: Iterate through the operations list. If the operation is an integer, append it to the record list (stack). If it's '+', append the sum of the last two elements. If it's 'D', append double the last element. If it's 'C', pop the last element. Finally, return the sum of the record list.
+4. Edge cases: The problem statement guarantees that all operations are valid, the answer and all intermediate calculations fit in a 32-bit integer, and there will always be at least two previous scores for '+' and at least one for 'C' and 'D'. No explicit handling of empty input is needed.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the operations list once. Space complexity is O(n) because the record list (stack) can grow up to the size of the input list in the worst case.
+</thinking>

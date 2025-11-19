@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the team that is stronger than all other teams given a pairwise strength comparison matrix.
+2. Problem type / algorithm category: Brute force, Iteration, Matrix traversal.
+3. Step-by-step approach: Iterate through each team. For each team, count how many other teams it is stronger than by summing its row in the grid. If a team is stronger than n-1 other teams, it is the champion.
+4. Edge cases: A tournament always has a champion due to the problem constraints guaranteeing a transitive relationship and unique wins. The minimum number of teams is 2.
+5. Time and space complexity: Time O(n^2) for iterating through the grid, Space O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Insert a new node with the greatest common divisor (GCD) of adjacent node values between every pair of adjacent nodes in a linked list.
+2. Problem type / algorithm category: Linked list manipulation, arithmetic (GCD calculation).
+3. Step-by-step approach: Iterate through the linked list. For each node, calculate the GCD of its value and the next node's value. Create a new node with this GCD and insert it between the current node and the next node. Advance the iteration pointer to the node after the newly inserted GCD node.
+4. Edge cases: An empty linked list or a linked list with only one node (no adjacent pairs to insert between).
+5. Time and space complexity: Time complexity is O(N * log(max_val)) due to iterating through N nodes and calculating GCD for each pair. Space complexity is O(1) as new nodes are inserted in-place.
+</thinking>

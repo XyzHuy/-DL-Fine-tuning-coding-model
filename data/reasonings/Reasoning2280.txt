@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given stock prices for different days, determine the minimum number of line segments required to represent the entire stock price chart.
+2. Problem type / algorithm category: Greedy approach, slope calculation.
+3. Step-by-step approach: Sort the stock prices by day. Iterate through the sorted prices, calculating the slope between consecutive points. If the current slope differs from the previous slope, increment the line count and update the previous slope.
+4. Edge cases: A single stock price point requires zero lines.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(1) or O(N) depending on the sorting implementation.
+</thinking>

@@ -1,0 +1,859 @@
+{
+  "function_name": "longestPalindrome",
+  "test_cases": [
+    {
+      "parameters": {
+        "s": "b",
+        "t": "aaaa"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "t": "world"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "aaaa",
+        "t": "bbbb"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "abcde",
+        "t": "ecdba"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "noon",
+        "t": "moon"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "race",
+        "t": "care"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "a",
+        "t": "a"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "t": "dcba"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "xyz",
+        "t": "zyx"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abc",
+        "t": "def"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "referrefer",
+        "t": "referref"
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "abccba",
+        "t": "abcba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabc",
+        "t": "cbacba"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "mnopqr",
+        "t": "rqpomn"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "rotorrotor",
+        "t": "rotorrot"
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "madam",
+        "t": "madammadam"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "aabbaabb",
+        "t": "bbaa"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "aaaaabbbbb",
+        "t": "bbbbbbaaaa"
+      },
+      "expected_output": 19
+    },
+    {
+      "parameters": {
+        "s": "abccba",
+        "t": "bccbab"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "aabbcc",
+        "t": "ccbbaa"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "t": "fedabc"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "xyxyxy",
+        "t": "yxyxyx"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "aba",
+        "t": "bab"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "t": "gfedcba"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "tatactatta",
+        "t": "tatattac"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "madam",
+        "t": "madam"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "aabaa",
+        "t": "bbabb"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "t": "fedcbaghi"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "palindrome",
+        "t": "emordnilap"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "xyzaaayzx",
+        "t": "zyxxzyxzy"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "abcabcabc",
+        "t": "cbacbacba"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "pqr",
+        "t": "rqp"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcdcba",
+        "t": "abcdcba"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "deified",
+        "t": "deified"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "t": "abraccadabr"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "longestpalindrome",
+        "t": "emordnilapgnol"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "abcdefghijk",
+        "t": "kjihgfedcba"
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "abacax",
+        "t": "xacaba"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "pqrstu",
+        "t": "utsrqponmlkjihgfedcba"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "t": "gfedcbaa"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "civiccivic",
+        "t": "iviciciv"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "aabbccdd",
+        "t": "ddeeccbbaa"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "abcxyzdef",
+        "t": "fedxyzcba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "civic",
+        "t": "civiccivic"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "t": "nanaba"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "abacdfgdcaba",
+        "t": "abacdfgdcaba"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "tattarrattat",
+        "t": "tattarrattat"
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "level",
+        "t": "levvel"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "xxyyyzzz",
+        "t": "zzzyyyxx"
+      },
+      "expected_output": 16
+    },
+    {
+      "parameters": {
+        "s": "rotorrotor",
+        "t": "rotor"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "rotor",
+        "t": "rotator"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abacaxbaca",
+        "t": "xacabacaba"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "mnopqrstu",
+        "t": "utsrqponmlkjihgfedcbazyxwvut"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "t": "ggffeeeeddccbbaa"
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "xyzyx",
+        "t": "yzyxxy"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "aaaaaa",
+        "t": "bbbbbb"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "abcdefg",
+        "t": "hijklmn"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "abcdef",
+        "t": "fedcbag"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "level",
+        "t": "leveleveleveleveleveleveleveleveleveleveleveleveleve"
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "s": "abcdabcd",
+        "t": "dcbaabcd"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "abcdeedcba",
+        "t": "fghijklkjihgf"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "aaaabb",
+        "t": "aabbaa"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "civic",
+        "t": "civic"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "level",
+        "t": "levevl"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "t": "madam"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "deifieddeified",
+        "t": "deifiededeif"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "noonhighnoon",
+        "t": "deifiedlevel"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "t": "aracabradab"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "level",
+        "t": "deified"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "mirror",
+        "t": "rimmom"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "abcdedcba",
+        "t": "zyxwxyzyx"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "pneumonoultramicroscopicsilicovolcanoconiosis",
+        "t": "osivicnoclovosicrepimicroscopultramaounep"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "xyzzyx",
+        "t": "abczyzyxcba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcxyzyxcba",
+        "t": "xyzzyx"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "abcabcabc",
+        "t": "abcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "t": "ppissimms"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "abacaxaba",
+        "t": "abacaxaba"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "t": "olleh"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "noonhighnoon",
+        "t": "noonlownoon"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "abaccadda",
+        "t": "addacca"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "refer",
+        "t": "repaper"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "t": "ippississimm"
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "abacaba",
+        "t": "bdcabdc"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "mississippi",
+        "t": "noon"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "noon",
+        "t": "noonnoonnoonnoon"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "t": "abacabadabrac"
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "s": "abcd",
+        "t": "abcdabcd"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "abc",
+        "t": "mnopqr"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "s": "abccba",
+        "t": "xyzyx"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "zzzzzz",
+        "t": "zzzzzz"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "amanaplanacanalpanama",
+        "t": "amanaP lanac a nalp a namA"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "s": "noonnoon",
+        "t": "moonmoon"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "noonhighnoon",
+        "t": "noon"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "xyzz",
+        "t": "zzxy"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "t": "civic"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "mnopqr",
+        "t": "rqponm"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "levellevellevel",
+        "t": "levevlevevlevevl"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "mammam",
+        "t": "mammam"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "kayak",
+        "t": "yakayk"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "radar",
+        "t": "radar"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "neveroddoreven",
+        "t": "levelmadamrotor"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "madam",
+        "t": "refer"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "s": "hello",
+        "t": "ollehworld"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "s": "xyzuvw",
+        "t": "vwxyz"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "s": "zzzzzzzzzz",
+        "t": "zzzzzzzzzz"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "zzzzz",
+        "t": "zzzz"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "s": "banana",
+        "t": "ananab"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "s": "abacabadabacaba",
+        "t": "abacabadabacaba"
+      },
+      "expected_output": 30
+    },
+    {
+      "parameters": {
+        "s": "rotor",
+        "t": "rotorrotorrotor"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeff",
+        "t": "ffeeddccbbaa"
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "abracadabra",
+        "t": "arbadacarba"
+      },
+      "expected_output": 22
+    },
+    {
+      "parameters": {
+        "s": "aaaabbbb",
+        "t": "bbbbcccc"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "s": "abacdfgdcaba",
+        "t": "abacdgfdcaba"
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "repaper",
+        "t": "repaper"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeffgg",
+        "t": "ggffeeddcbaabbccddeeffgg"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "t": "carrear"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "s": "abcabcabcabc",
+        "t": "cbacbacbacba"
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "s": "racecar",
+        "t": "racecar"
+      },
+      "expected_output": 14
+    },
+    {
+      "parameters": {
+        "s": "aabbccdd",
+        "t": "dccbbaaa"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "s": "abcdefgfedcba",
+        "t": "ghijklimno"
+      },
+      "expected_output": 13
+    },
+    {
+      "parameters": {
+        "s": "aabbccddeeaabbccddeeaabb",
+        "t": "ddeeaabbccddeeaabb"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "s": "rotor",
+        "t": "rotor"
+      },
+      "expected_output": 10
+    }
+  ]
+}

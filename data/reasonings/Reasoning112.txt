@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree and a target sum, determine if there exists a root-to-leaf path whose sum of node values equals the target sum.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Recursively traverse the tree. At each node, subtract the node's value from the target sum. If a leaf node is reached (no children) and the remaining sum is zero, return true. Otherwise, recursively call the function on the left and right subtrees with the updated remaining sum.
+4. Edge cases: Empty tree (return false), negative node values, target sum is zero.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, and in the best case (balanced tree), H is log N.
+</thinking>

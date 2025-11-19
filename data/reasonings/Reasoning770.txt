@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a given expression containing variables, integers, and operators (+, -, *), with variable values provided in a map. The output should be a list of simplified terms, sorted by degree and lexicographically, in a specific format.
+2. Problem type / algorithm category: Parsing, expression evaluation, polynomial representation, sorting.
+3. Step-by-step approach: Tokenize the expression, substitute variable values, convert the infix expression to postfix, evaluate the postfix expression using a polynomial class to handle variable terms, and format the result according to the problem specifications.
+4. Edge cases: Empty expression, zero coefficient terms, expressions with only constants, handling of parentheses, and correct ordering of terms with variables.
+5. Time and space complexity: Time complexity is dominated by the parsing, conversion to postfix, and polynomial multiplication which can be O(N^2) where N is the number of terms after expansion. The space complexity is O(N) to store the tokens, postfix expression, and polynomial representation.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of darts that can be covered by a single dartboard of a given radius.
+2. Problem type / algorithm category: Geometry, Optimization, Brute Force with geometrical insights.
+3. Step-by-step approach: Iterate through all pairs of darts. For each pair, calculate the centers of all possible circles of radius r that pass through both darts. For each potential center, count how many darts lie within the circle. Keep track of the maximum count found. Also, consider circles centered directly on each dart.
+4. Edge cases: The case where no two darts can be contained in a circle of radius r (distance > 2r). The case where the optimal circle is centered on one of the darts itself.
+5. Time and space complexity: O(N^3) time complexity because of nested loops and point counting, O(1) extra space complexity (excluding input).
+</thinking>

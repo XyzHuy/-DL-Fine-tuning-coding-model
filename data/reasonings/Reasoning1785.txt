@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum number of elements to add to an array `nums` so its sum equals `goal`, given each added element's absolute value must be at most `limit`.
+2. Problem type / algorithm category: Greedy approach, Arithmetic.
+3. Step-by-step approach: First, compute the sum of the existing elements in `nums`. Then, find the absolute difference between this `current_sum` and the `goal`. This `difference` is the total value that needs to be added (or subtracted). To minimize the number of added elements, each added element should contribute the maximum possible absolute value, which is `limit`. Therefore, divide the `difference` by `limit` and take the ceiling to find the minimum number of elements.
+4. Edge cases: The initial sum could already be equal to the goal (difference is 0). The `goal` can be positive or negative, and `nums` can contain positive and negative numbers. The ceiling division handles cases where the difference is not perfectly divisible by `limit`.
+5. Time and space complexity: Time complexity is O(N) due to summing the array elements, where N is the length of `nums`. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a linked list and a value x, rearrange the list so that all nodes with values less than x come before all nodes with values greater than or equal to x, preserving the original order within each partition.
+2. Problem type / algorithm category: Linked list manipulation, partitioning.
+3. Step-by-step approach: Create two new linked lists: one for nodes less than x and one for nodes greater than or equal to x. Iterate through the original list, adding each node to the appropriate new list. Finally, connect the two lists.
+4. Edge cases: Empty list, list with only one element, x is smaller/larger than all elements, list already partitioned.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the list once. Space complexity is O(1) because we are only using a constant amount of extra space (dummy nodes).
+</thinking>

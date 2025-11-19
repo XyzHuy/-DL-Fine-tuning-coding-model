@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a starting gas station index such that a car can complete a circular route given gas available at each station and the cost to travel to the next station. Return -1 if no such index exists.
+2. Problem type / algorithm category: Array manipulation, Greedy algorithm
+3. Step-by-step approach: Start from the last station and iterate backwards. Keep track of the current gas level. If the gas level becomes negative, move the starting point backwards and add the gas difference at that station to the gas level. If the total gas is still negative after iterating through all stations, there is no solution, otherwise, the current starting point is the answer.
+4. Edge cases: Empty gas or cost array (not possible based on constraints). No solution exists.
+5. Time and space complexity: Time complexity is O(n), space complexity is O(1).
+</thinking>

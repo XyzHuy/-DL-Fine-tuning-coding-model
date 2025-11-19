@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array of integers can be partitioned into groups of size k, where each group consists of k consecutive numbers.
+2. Problem type / algorithm category: Greedy approach with frequency counting and sorting.
+3. Step-by-step approach: First, check if the total number of elements is divisible by k. Then, count the frequency of each number. Iterate through the unique numbers in sorted order. If a number has a positive count, try to form a consecutive sequence of k numbers starting from it, decrementing their counts. If at any point a required number is not available or its count is insufficient, return false. If all numbers are processed successfully, return true.
+4. Edge cases: The total number of elements not being divisible by k. Empty input array (though constraints prevent this).
+5. Time and space complexity: Time complexity is dominated by sorting and iterating through the counts, O(N log N) where N is the number of elements. Space complexity is O(N) for storing counts.
+</thinking>

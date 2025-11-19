@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score by selecting k elements, calculated as the sum of selected nums1 elements multiplied by the minimum of selected nums2 elements.
+2. Problem type / algorithm category: Greedy, Heap (Priority Queue).
+3. Step-by-step approach: Sort pairs by nums2 descending. Use a min-heap to maintain the k largest nums1 elements seen so far. Iterate through sorted pairs, update sum and heap, and calculate score with current nums2 element as minimum.
+4. Edge cases: k = 1 (simply find max nums1[i] * nums2[i]), n = k (consider all elements).
+5. Time and space complexity: O(N log N) time due to sorting and heap operations, O(K) space for the heap.
+</thinking>

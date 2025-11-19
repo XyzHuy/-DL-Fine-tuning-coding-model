@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the final price of items by applying a discount from the next item with a price less than or equal to the current item's price.
+2. Problem type / algorithm category: Array traversal, nested loops, finding the next smaller element.
+3. Step-by-step approach: Iterate through each item, then for each item, iterate through subsequent items to find the first one with a price less than or equal to the current item. Apply the discount if found, otherwise keep the original price.
+4. Edge cases: Prices array is empty, all prices are increasing, all prices are decreasing, duplicate prices.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops, space complexity is O(n) for the answer array.
+</thinking>

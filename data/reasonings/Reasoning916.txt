@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two string arrays words1 and words2, find the strings in words1 that are universal. A string a from words1 is universal if every string b in words2 is a subset of a.
+2. Problem type / algorithm category: String manipulation, Counter, comparison
+3. Step-by-step approach: First, find the maximum frequency of each character required across all strings in words2. Then, iterate through words1, and for each word, check if it contains each character with at least the required frequency. If a word satisfies the condition, it's a universal string and is added to the result.
+4. Edge cases: Empty input arrays, words1 or words2 containing empty strings, words containing non-lowercase characters.
+5. Time and space complexity: Time complexity is O(N + M), where N is the total length of all strings in words1 and M is the total length of all strings in words2. Space complexity is O(1) since the counter only stores up to 26 lowercase letters.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of a valid point closest to (x, y) using Manhattan distance, prioritizing smaller indices for ties.
+2. Problem type / algorithm category: Brute-force search, iteration, Manhattan distance calculation.
+3. Step-by-step approach: Iterate through each point, check if it's valid (same x or y coordinate), calculate Manhattan distance if valid, and keep track of the minimum distance and its index.
+4. Edge cases: No valid points found, resulting in -1. The closest point being the current location (x, y) itself.
+5. Time and space complexity: Time complexity is O(N) where N is the number of points, as we iterate through the array once. Space complexity is O(1) as we only use a few variables to store minimum distance and index.
+</thinking>

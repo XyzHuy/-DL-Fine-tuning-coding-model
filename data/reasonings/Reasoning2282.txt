@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count how many people each person in a 2D grid can see to their right or below, given that everyone in between must be shorter.
+2. Problem type / algorithm category: Monotonic stack, Grid traversal.
+3. Step-by-step approach: Process each row independently from right to left using a monotonic decreasing stack to count visible people to the right. Then, process each column independently from bottom to top using a similar monotonic stack approach to count visible people below. Sum these counts for each cell.
+4. Edge cases: A single row or single column grid. The last person in any row or column cannot see anyone.
+5. Time and space complexity: O(m*n) time complexity as each cell is visited a constant number of times for row and column processing. O(m+n) space complexity for the stacks used in processing rows and columns.
+</thinking>

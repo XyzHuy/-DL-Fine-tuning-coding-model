@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count binary arrays with exact 'zero' zeros and 'one' ones, such that no subarray longer than 'limit' contains only identical elements.
+2. Problem type / algorithm category: Dynamic programming with memoization (or recursion with cache).
+3. Step-by-step approach: Use a recursive function dfs(i, j, k) representing the number of stable arrays with 'i' zeros and 'j' ones, ending with the character represented by 'k' (0 for zero, 1 for one). The base cases handle when either 'i' or 'j' becomes zero. The recursive steps consider adding a zero or a one, subtracting invalid states where a block of identical elements exceeds 'limit'.
+4. Edge cases: When 'zero' or 'one' count reaches zero, ensure the remaining elements and 'limit' condition are met. Handle cases where subtracting an invalid prefix (i - limit - 1 < 0 or j - limit - 1 < 0) would go out of bounds.
+5. Time and space complexity: Time complexity is O(zero * one * 2) because of the DP states (zero, one, and the last element). Space complexity is O(zero * one) for the memoization cache.
+</thinking>

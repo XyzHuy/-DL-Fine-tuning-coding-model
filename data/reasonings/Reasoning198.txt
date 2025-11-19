@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of house values, find the maximum amount that can be robbed without robbing adjacent houses.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a DP array where dp[i] stores the maximum loot obtainable up to house i. Fill the DP array using the recurrence relation: dp[i] = max(dp[i-1], dp[i-2] + nums[i]). The base cases are dp[0] = nums[0] and dp[1] = max(nums[0], nums[1]).
+4. Edge cases: Empty input array, single-house array.
+5. Time and space complexity: Time complexity is O(n), and space complexity is O(n), where n is the number of houses.
+</thinking>

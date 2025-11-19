@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize swaps of adjacent balls ('0' or '1') to group all '0's to the left and all '1's to the right.
+2. Problem type / algorithm category: Greedy algorithm, Counting inversions.
+3. Step-by-step approach: Iterate through the string, count the number of '1's encountered so far. When a '0' is found, add the current count of '1's to the total steps, as this '0' needs to be swapped past all those '1's to reach its final sorted position.
+4. Edge cases: String with all '0's, string with all '1's, string already sorted.
+5. Time and space complexity: O(N) time, O(1) space.
+</thinking>

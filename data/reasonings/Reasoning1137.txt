@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the nth Tribonacci number, where T0=0, T1=1, T2=1, and Tn+3 = Tn + Tn+1 + Tn+2.
+2. Problem type / algorithm category: Dynamic programming / sequence calculation.
+3. Step-by-step approach: Handle base cases for n=0, 1, and 2. Iterate from 3 up to n, calculating each Tribonacci number using the previous three.
+4. Edge cases: n = 0, n = 1, n = 2. The problem statement specifies 0 <= n <= 37.
+5. Time and space complexity: Time complexity is O(n) due to the loop. Space complexity is O(1) because only three variables are used to store the previous Tribonacci numbers.
+</thinking>

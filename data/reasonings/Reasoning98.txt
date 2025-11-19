@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given binary tree is a valid binary search tree.
+2. Problem type / algorithm category: Tree traversal, Binary Search Tree, Recursion.
+3. Step-by-step approach: Use a helper function to recursively traverse the tree, passing down lower and upper bounds for each node's value. Check if the current node's value falls within these bounds.
+4. Edge cases: Empty tree is a valid BST. Integer overflow should be considered, so use float('-inf') and float('inf') as initial bounds.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree. Space complexity is O(H) where H is the height of the tree due to the recursive call stack, which can be O(N) in the worst case (skewed tree) and O(log N) in the best case (balanced tree).
+</thinking>

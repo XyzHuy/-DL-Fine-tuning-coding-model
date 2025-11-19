@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum product of the lengths of two words in a given list of words, where the two words do not share any common letters.
+2. Problem type / algorithm category: String manipulation, nested loops, set operations.
+3. Step-by-step approach: Convert each word into a set of characters. Iterate through all possible pairs of words. Check if the sets representing the words have any intersection (common letters). If not, calculate the product of their lengths and update the maximum product found so far.
+4. Edge cases: Empty input list, words with repeated characters, no pair of words with no common characters (resulting in a 0 return value).
+5. Time and space complexity: Time complexity is O(N^2 * M), where N is the number of words and M is the average length of a word (due to set creation and intersection). Space complexity is O(N * M) to store the sets of characters for each word.
+</thinking>

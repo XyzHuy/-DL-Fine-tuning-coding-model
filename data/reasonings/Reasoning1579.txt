@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to find the maximum number of edges that can be removed from a graph such that it remains fully traversable for both Alice and Bob, given three types of edges: Alice-only, Bob-only, and shared.
+2. Problem type / algorithm category: Graph connectivity, Union-Find data structure.
+3. Step-by-step approach: Iterate through type 3 edges first, adding them if they connect previously disconnected components for both Alice and Bob using Union-Find. Then, iterate through type 1 edges for Alice and type 2 edges for Bob, adding them if they connect new components for their respective traversals. Finally, check if both Alice and Bob can traverse the entire graph; if so, the answer is the total edges minus the used edges, otherwise it's -1.
+4. Edge cases: The graph might be impossible to fully traverse for either Alice or Bob, which should result in -1. Small number of nodes or edges.
+5. Time and space complexity: Time complexity is O(E * alpha(N)) where E is the number of edges and N is the number of nodes, due to Union-Find operations. Space complexity is O(N) for the Union-Find data structures.
+</thinking>

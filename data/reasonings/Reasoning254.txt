@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all possible combinations of factors for a given integer n, where factors must be between 2 and n-1.
+2. Problem type / algorithm category: Backtracking, Depth-First Search (DFS)
+3. Step-by-step approach: Implement a backtracking function that iterates through potential factors from 2 up to the square root of the current target number. If a factor is found, add it to the current path, add the path along with the remaining factor (target/i) to the result, and recursively call the backtracking function with the current factor and the new target. After the recursive call, remove the last added factor from the path to explore other possibilities.
+4. Edge cases: If n is less than or equal to 1, return an empty list. If n is prime, return an empty list.
+5. Time and space complexity: Time complexity is difficult to precisely determine due to the nature of backtracking, but it's roughly O(number of factors). Space complexity is O(number of factor combinations) to store the results and O(log n) for the recursion depth in the call stack.
+</thinking>

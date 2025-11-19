@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the diameter (longest path between any two nodes) of a given binary tree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Define a recursive function `depth` to calculate the height of each node. During the calculation of the height of each node, update the `max_diameter` by considering the sum of the depths of the left and right subtrees. The diameter is the maximum sum of left and right depths encountered during this traversal.
+4. Edge cases: Empty tree (root is None), single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree (each node is visited once). Space complexity is O(H), where H is the height of the tree, due to the recursion stack (worst case O(N) for a skewed tree, average case O(log N) for a balanced tree).
+</thinking>

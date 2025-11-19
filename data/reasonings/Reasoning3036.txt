@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays in `nums` that follow the relationships defined by `pattern` elements (-1, 0, 1) between adjacent elements.
+2. Problem type / algorithm category: Subarray matching, pattern recognition.
+3. Step-by-step approach: Iterate through `nums` starting from each possible index `i`. For each `i`, check if the subarray `nums[i..i+m]` matches the `pattern` by comparing adjacent elements according to `pattern` values. Increment count if a match is found.
+4. Edge cases: The length of `nums` is at least 2, and the length of `pattern` is at least 1 and less than `nums` length. The values in `nums` can be large, but only their relative order matters.
+5. Time and space complexity: Time complexity is O(n*m) due to nested loops. Space complexity is O(1) as no extra data structures proportional to input size are used beyond iteration variables.
+</thinking>

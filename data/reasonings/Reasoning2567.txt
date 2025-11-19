@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the sum of the minimum and maximum absolute differences between any two elements in an array after changing exactly two elements.
+2. Problem type / algorithm category: Array manipulation, sorting, optimization.
+3. Step-by-step approach: Sort the array first. The minimum difference will likely be 0 if we can make two elements equal. The maximum difference will be between the remaining smallest and largest elements. Consider three scenarios: changing the two largest, changing the two smallest, or changing one smallest and one largest element. Calculate the score (max difference - min difference, where min difference is 0) for each and return the minimum.
+4. Edge cases: The problem constraints guarantee at least 3 elements, so no empty or single-element arrays. The core logic handles cases where all numbers become identical.
+5. Time and space complexity: Sorting dominates, so O(N log N) time. Space complexity is O(log N) or O(N) depending on the sorting algorithm's implementation for recursion stack or auxiliary space.
+</thinking>

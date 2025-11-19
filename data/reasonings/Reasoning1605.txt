@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given arrays representing row sums and column sums of a matrix, construct any valid non-negative integer matrix that satisfies these sums.
+2. Problem type / algorithm category: Greedy approach, matrix construction.
+3. Step-by-step approach: Iterate through each cell (i, j) of the matrix. Assign the minimum of the remaining row sum for row i and the remaining column sum for column j to matrix[i][j]. Update the remaining row and column sums by subtracting the assigned value.
+4. Edge cases: The problem guarantees that a solution always exists, so no specific edge case handling is explicitly required beyond the algorithm itself. The sums can be zero.
+5. Time and space complexity: Time complexity is O(rows * cols) due to iterating through each cell. Space complexity is O(rows * cols) to store the resulting matrix.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array and a list of indices to remove, find the maximum contiguous sum of positive numbers after each removal.
+2. Problem type / algorithm category: Data Structures (Disjoint Set Union - DSU), Greedy.
+3. Step-by-step approach: Process removals in reverse. Initialize each number as a segment. When a number is effectively added (in reverse), union it with adjacent existing segments and update the maximum segment sum.
+4. Edge cases: Empty segments (all zeros), array boundaries when checking neighbors.
+5. Time and space complexity: Time O(n * alpha(n)) where alpha is the inverse Ackermann function, Space O(n).
+</thinking>

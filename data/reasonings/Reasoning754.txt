@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves to reach a target on an infinite number line, where the ith move has length i.
+2. Problem type / algorithm category: Mathematical problem, iterative summation.
+3. Step-by-step approach: Take the absolute value of the target. Increment the number of moves and sum until the sum is greater than or equal to the absolute value of the target and the difference between the sum and the absolute value of the target is even.
+4. Edge cases: Target can be negative. Target cannot be zero (constraint).
+5. Time and space complexity: O(sqrt(target)) time complexity, O(1) space complexity.
+</thinking>

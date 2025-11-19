@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Merge nodes in a linked list separated by zeros. Consecutive zeros delimit segments whose intermediate node values are summed into a single node. The first and last nodes are zeros.
+2. Problem type / algorithm category: Linked List Traversal and Manipulation.
+3. Step-by-step approach: Use a dummy node to build the result list. Iterate through the input list, accumulating node values. When a zero is encountered, create a new node in the result list with the accumulated sum and reset the sum. Skip the zero nodes themselves.
+4. Edge cases: The problem guarantees the list starts and ends with 0, and no consecutive zeros, simplifying handling. The initial dummy node handles the start of the result list.
+5. Time and space complexity: Time complexity is O(N) as each node is visited once. Space complexity is O(1) if we modify in-place or O(M) for the new list where M is the number of merged nodes. The provided solution uses O(M) for a new list.
+</thinking>

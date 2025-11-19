@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute elements of `nums` into `arr1` and `arr2` based on counts of elements strictly greater than the current number in each array, prioritizing the array with fewer elements in case of ties.
+2. Problem type / algorithm category: Array manipulation, simulation with efficient counting.
+3. Step-by-step approach: Initialize `arr1` and `arr2` with the first two elements. For subsequent elements, calculate `greaterCount` in both arrays. Append to `arr1` if `greaterCount(arr1)` is larger, to `arr2` if `greaterCount(arr2)` is larger. If counts are equal, append to the shorter array, and finally to `arr1` in case of a tie in length. Use `SortedList` for efficient `greaterCount` calculation.
+4. Edge cases: The problem statement implies `n >= 3`, so empty initial arrays or `n=1, n=2` are not primary concerns for the general loop. Tie-breaking rules are explicitly handled.
+5. Time and space complexity: Time complexity is O(n log n) due to `SortedList` operations (insertions and bisect). Space complexity is O(n) to store the elements in `SortedList`s and the result arrays.
+</thinking>

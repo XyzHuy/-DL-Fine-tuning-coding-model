@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the absolute difference between the average of the first i+1 elements and the average of the remaining elements for each index i, rounding averages down. Return the index with the minimum difference.
+2. Problem type / algorithm category: Array traversal, prefix sums, greedy approach.
+3. Step-by-step approach: Iterate through the array, maintaining a running sum of the left part. Calculate the average of the left part and the average of the right part (using total sum minus left sum). Compute the absolute difference. Keep track of the minimum difference found and its corresponding index.
+4. Edge cases: Array with a single element (right average is 0). If multiple indices have the minimum difference, return the smallest index.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used for calculation.
+</thinking>

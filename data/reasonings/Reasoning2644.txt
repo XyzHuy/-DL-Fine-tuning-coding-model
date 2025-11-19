@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the divisor from a given list that has the highest divisibility score with respect to another list of numbers. If there's a tie in scores, return the smallest divisor.
+2. Problem type / algorithm category: Brute Force, Iteration, Conditional Logic.
+3. Step-by-step approach: Initialize maximum score and best divisor. Iterate through each divisor. For each divisor, calculate its divisibility score by counting how many numbers in nums are divisible by it. Update the best divisor if the current divisor has a higher score or the same score but is smaller.
+4. Edge cases: Empty input arrays (though constraints say lengths are at least 1), all divisors yielding a score of 0, duplicate divisors.
+5. Time and space complexity: Time O(N*M), Space O(1) where N is the length of nums and M is the length of divisors.
+</thinking>

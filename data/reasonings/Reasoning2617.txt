@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of cells to visit in a grid, starting from (0,0) and moving right or down based on cell values, to reach (m-1, n-1).
+2. Problem type / algorithm category: Breadth-First Search (BFS) on a grid with optimized state transitions.
+3. Step-by-step approach: Use BFS to explore reachable cells. For each cell, consider all valid rightward and downward moves within the jump range. Maintain visited states and distances. Optimize by tracking maximum reachable indices per row and column to avoid redundant checks.
+4. Edge cases: Grid with only one cell (1x1). No path exists to the destination.
+5. Time and space complexity: Time complexity is O(m*n) due to visiting each cell at most once. Space complexity is O(m*n) for the queue and visited set in the worst case.
+</thinking>

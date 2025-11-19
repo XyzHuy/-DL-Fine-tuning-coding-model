@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Insert a new interval into a list of sorted, non-overlapping intervals, merging if necessary to maintain the sorted and non-overlapping properties.
+2. Problem type / algorithm category: Interval merging / sorting.
+3. Step-by-step approach: Iterate through the existing intervals, adding intervals that end before the new interval starts. Then, merge any overlapping intervals with the new interval. Finally, add the merged new interval and any remaining intervals.
+4. Edge cases: Empty input list of intervals, new interval needs to be inserted at the beginning or end, new interval overlaps with multiple existing intervals.
+5. Time and space complexity: Time complexity is O(n), where n is the number of intervals. Space complexity is O(n) in the worst case due to creating a new list.
+</thinking>

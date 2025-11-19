@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree and a limit, remove all nodes that lie on root-to-leaf paths with sums less than the limit.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Perform a DFS traversal of the tree, keeping track of the current path sum. At each leaf node, check if the path sum is greater than or equal to the limit. If not, return None. If a node's left and right children are both pruned, prune the node itself. The function returns the modified root.
+4. Edge cases: Empty tree, limit is very large or very small, all nodes are pruned, the root itself needs to be pruned.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, leading to O(N) space complexity.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find an index i in nums where nums[i] equals target, such that the absolute difference between i and start is minimized. Return this minimum absolute difference.
+2. Problem type / algorithm category: Linear search, finding minimum.
+3. Step-by-step approach: Iterate through the array, checking each element. If an element matches the target, calculate its absolute distance from the start index. Keep track of the smallest distance found so far.
+4. Edge cases: The problem guarantees that the target exists in nums. The array can have duplicate target values, requiring comparison of distances. The start index could be one of the target indices.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables to store the minimum distance.
+</thinking>

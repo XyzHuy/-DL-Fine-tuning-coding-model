@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given array nums can be partitioned into disjoint subarrays, each matching a subarray in groups, in the same order as they appear in groups.
+2. Problem type / algorithm category: Array searching and partitioning.
+3. Step-by-step approach: Iterate through each group. For each group, find its first occurrence in nums starting from the current position. If found, advance the current position in nums by the length of the found group. If a group is not found before reaching the end of nums, return false. If all groups are found sequentially, return true.
+4. Edge cases: Empty groups, groups longer than nums, nums being empty, no matches found, groups appearing multiple times but not disjointly.
+5. Time and space complexity: Time complexity is O(N*M*L) where N is the number of groups, M is the length of nums, and L is the average length of a group. Space complexity is O(1).
+</thinking>

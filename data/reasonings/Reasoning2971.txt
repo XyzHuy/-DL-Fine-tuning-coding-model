@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest perimeter of a polygon using a subset of given positive integer side lengths, where the longest side must be less than the sum of all other sides. Return -1 if no polygon can be formed.
+2. Problem type / algorithm category: Greedy approach, sorting.
+3. Step-by-step approach: Sort the array in non-decreasing order. Iterate through the sorted array, maintaining a running sum of elements encountered so far. For each element, check if it can be the longest side of a polygon with the preceding elements as its other sides (i.e., if the running sum of preceding elements is greater than the current element). If it can, update the maximum perimeter.
+4. Edge cases: The input array has at least 3 elements. If no valid polygon can be formed after checking all possible combinations, return -1.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of elements in nums. Space complexity is O(1) if sorting is in-place, or O(N) depending on the sort implementation.
+</thinking>

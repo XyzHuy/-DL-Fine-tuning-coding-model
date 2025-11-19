@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count distinct elements in all subarrays of fixed size k.
+2. Problem type / algorithm category: Sliding Window, Hash Map (Dictionary).
+3. Step-by-step approach: Initialize a frequency map for the first window of size k. Add the count of distinct elements to the result. Then, slide the window by removing the leftmost element's count and adding the new rightmost element's count. If an element's count becomes zero after removal, remove it from the map. Append the current map's size (distinct count) to the result for each window.
+4. Edge cases: k equals nums.length (single window), k equals 1 (each element is a window).
+5. Time and space complexity: Time O(n), Space O(k) or O(distinct elements in a window).
+</thinking>

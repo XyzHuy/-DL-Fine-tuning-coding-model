@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove subtrees with a sum of node values equal to zero and count the remaining nodes.
+2. Problem type / algorithm category: Tree Traversal (DFS), Recursion.
+3. Step-by-step approach: Build an adjacency list representation of the tree. Use a post-order DFS traversal to calculate the sum of values for each subtree. If a subtree's sum is zero, it and all its descendants are considered removed, and their count is zeroed out. Otherwise, the count of nodes in the subtree is added to the total count.
+4. Edge cases: An empty tree (though constraints say nodes >= 1). A single node tree. All subtree sums are zero. No subtree sums are zero.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited once. Space complexity is O(N) for the adjacency list and recursion stack.
+</thinking>

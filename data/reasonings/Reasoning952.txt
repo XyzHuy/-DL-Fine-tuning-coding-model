@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest connected component in a graph where nodes are numbers from the input array, and edges exist if two numbers share a common factor greater than 1.
+2. Problem type / algorithm category: Graph connectivity, Union Find, number theory (prime factorization).
+3. Step-by-step approach: Use Union Find to connect numbers sharing prime factors. Iterate through the input `nums`, find prime factors for each number, and union the number with its prime factors. Keep track of the size of each component using Union Find. Find the maximum component size after processing all numbers.
+4. Edge cases: Numbers with no common factors (other than 1) will form isolated components. Numbers that are prime. The input array can contain duplicate prime factors across different numbers.
+5. Time and space complexity: Time complexity is dominated by prime factorization which is O(N * sqrt(M)), where N is the length of nums and M is the maximum value in nums. Union Find operations take close to O(1) due to path compression and rank optimization. Space complexity is O(M) due to the UnionFind data structure.
+</thinking>

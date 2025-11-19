@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a Binary Search Tree (BST) by inserting elements from a given permutation `order` and return its maximum depth.
+2. Problem type / algorithm category: Binary Search Tree construction, Depth calculation, Data structures (balanced BST implicit).
+3. Step-by-step approach: Maintain a sorted list of inserted elements and their depths. For each new element, find its potential parent's depth by checking its predecessor and successor in the sorted list, and update its own depth. Track the maximum depth encountered.
+4. Edge cases: An empty input `order` array should result in a depth of 0.
+5. Time and space complexity: Time complexity is O(N log N) due to bisect operations; Space complexity is O(N) to store depths and the sorted list.
+</thinking>

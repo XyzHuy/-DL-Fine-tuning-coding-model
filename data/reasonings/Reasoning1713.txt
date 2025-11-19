@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum insertions needed in array `arr` to make `target` a subsequence, where `target` has distinct elements and `arr` can have duplicates.
+2. Problem type / algorithm category: Dynamic Programming / Longest Increasing Subsequence (LIS) on transformed indices.
+3. Step-by-step approach: Create a map from `target` elements to their indices. Transform `arr` into a sequence of these indices, keeping only elements present in `target`. Find the Longest Increasing Subsequence (LIS) of this transformed sequence. The minimum operations is `len(target) - length of LIS`.
+4. Edge cases: `target` or `arr` are empty. `target` elements not present in `arr`. All elements of `target` form a subsequence in `arr`.
+5. Time and space complexity: Time O(N log N), where N is the length of arr. Space O(M), where M is the length of target for the map and O(N) for the transformed array.
+</thinking>

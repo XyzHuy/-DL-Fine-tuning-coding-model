@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path directions from a start node to a destination node in a binary tree, using 'L', 'R', and 'U' for left, right, and up movements.
+2. Problem type / algorithm category: Tree traversal, Lowest Common Ancestor (LCA), Depth First Search (DFS).
+3. Step-by-step approach: First, find the Lowest Common Ancestor (LCA) of the start and destination nodes. Then, find the path from the LCA to the start node and the path from the LCA to the destination node. Convert the path to the start node into 'U' (up) movements and append the path from the LCA to the destination node.
+4. Edge cases: The tree can have only two nodes. The start and destination nodes can be parent and child. The start or destination node could be the root.
+5. Time and space complexity: Time complexity is O(N) due to tree traversals to find LCA and paths. Space complexity is O(N) in the worst case (skewed tree) for recursion stack and path storage.
+</thinking>

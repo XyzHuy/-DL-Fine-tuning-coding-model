@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum absolute difference between two numbers picked from two different arrays in a list of sorted arrays.
+2. Problem type / algorithm category: Greedy algorithm, finding maximum/minimum values.
+3. Step-by-step approach: Iterate through the arrays, keeping track of the overall minimum and maximum values encountered so far. In each iteration, calculate the maximum distance between the current array's min/max and the overall max/min. Update the overall max/min accordingly.
+4. Edge cases: Empty input array, arrays with only one element, duplicate min/max values within and across arrays.
+5. Time and space complexity: Time complexity is O(m) where m is the number of arrays. Space complexity is O(1).
+</thinking>

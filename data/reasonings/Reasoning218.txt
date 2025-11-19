@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of buildings represented by their left edge, right edge, and height, construct the skyline formed by these buildings.
+2. Problem type / algorithm category: Divide and Conquer / Heap / Line Sweep Algorithm
+3. Step-by-step approach: Create a sorted list of critical points (start and end of buildings). Use a heap to track the current heights of active buildings. Iterate through the critical points, updating the heap with building starts and ends, and adding new key points to the skyline.
+4. Edge cases: Overlapping buildings, buildings with the same start or end points, empty input.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting and heap operations. Space complexity is O(n) to store critical points and the heap.
+</thinking>

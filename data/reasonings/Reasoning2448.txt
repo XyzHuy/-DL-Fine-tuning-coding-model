@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost to make all elements in nums equal, where the cost of changing an element by 1 is given by the corresponding element in cost.
+2. Problem type / algorithm category: Optimization, Calculus / Ternary Search, or Greedy approach on sorted data.
+3. Step-by-step approach: Combine nums and cost, sort by nums, calculate initial cost for the smallest num, then iteratively update cost as the target shifts to subsequent nums, keeping track of the minimum cost encountered.
+4. Edge cases: All numbers in nums are already equal (cost is 0), array with a single element.
+5. Time and space complexity: O(N log N) time for sorting, O(N) space for storing combined data and prefix sums.
+</thinking>

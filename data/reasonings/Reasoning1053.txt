@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array, find the lexicographically largest permutation that is smaller than the input array, achievable by swapping only two elements. If no such permutation exists, return the original array.
+2. Problem type / algorithm category: Array manipulation, permutation, greedy algorithm.
+3. Step-by-step approach: First, find the rightmost index `i` such that `arr[i] > arr[i+1]`. If no such index exists, the array is already the smallest permutation. Otherwise, find the rightmost index `j` to the right of `i` such that `arr[j] < arr[i]`. Swap `arr[i]` and `arr[j]`. To ensure the lexicographically largest permutation, find the rightmost element that is equal to arr[j] before swapping.
+4. Edge cases: Empty array, array already in descending order (smallest permutation), array with duplicate elements.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the array, due to the linear scans. Space complexity is O(1) as the algorithm operates in place.
+</thinking>

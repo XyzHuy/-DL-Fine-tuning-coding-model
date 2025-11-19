@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays with an odd sum, returning the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Prefix Sums, Dynamic Programming.
+3. Step-by-step approach: Iterate through the array maintaining a running prefix sum. Track counts of even and odd prefix sums encountered so far. If the current prefix sum is even, odd subarrays ending here are formed by subtracting previous even prefix sums. If current prefix sum is odd, odd subarrays ending here are formed by subtracting previous odd prefix sums. Update counts and result modulo 10^9 + 7.
+4. Edge cases: Array with all even numbers, array with all odd numbers, single element array. The initial even count is 1 to account for an empty prefix sum (sum of 0 being even).
+5. Time and space complexity: O(N) time complexity as we iterate through the array once. O(1) space complexity as we only use a few variables to store counts and prefix sum.
+</thinking>

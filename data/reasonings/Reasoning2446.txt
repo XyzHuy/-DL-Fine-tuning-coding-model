@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two time intervals representing events on the same day overlap.
+2. Problem type / algorithm category: Interval intersection, String manipulation.
+3. Step-by-step approach: Convert all event start and end times from HH:MM format to minutes since midnight. Then, check if the end of one event is before the start of the other, or vice-versa. If neither of these non-overlapping conditions is met, the events overlap.
+4. Edge cases: Events that are exactly adjacent (e.g., one ends at 02:00 and the other starts at 02:00) are considered overlapping.
+5. Time and space complexity: Time complexity is O(1) because the operations are constant regardless of input values. Space complexity is O(1) as only a few variables are used.
+</thinking>

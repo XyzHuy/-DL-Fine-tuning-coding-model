@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of gift piles and a number of seconds k, repeatedly remove the square root (floor) of gifts from the largest pile for k seconds, then sum the remaining gifts.
+2. Problem type / algorithm category: Greedy, Simulation, Heap (Priority Queue)
+3. Step-by-step approach: Iterate k times. In each iteration, find the maximum value in the gifts array, replace it with its square root (floored), and repeat until k iterations are done. Finally, sum all elements in the modified gifts array.
+4. Edge cases: All gift piles having 1 gift (sqrt(1) is 1), k being larger than necessary to reduce all piles significantly.
+5. Time and space complexity: Time: O(k * n) using a list or O(k * log n) using a max-heap. Space: O(1) if modifying in-place or O(n) for a heap.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to find the number of ways to divide a corridor represented by a string of 'S' (seats) and 'P' (plants) into sections, where each section must contain exactly two seats and any number of plants. Dividers can be placed between any two adjacent characters.
+2. Problem type / algorithm category: Greedy approach, counting, dynamic programming (implicitly).
+3. Step-by-step approach: First, find the indices of all seats. If the total number of seats is odd or less than two, return 0. Otherwise, iterate through the seat indices, considering pairs of seats (the 1st and 2nd, 3rd and 4th, etc.). For each pair of seats (starting from the second pair), the number of possible positions for a divider is the difference between the index of the current seat and the index of the previous seat (which is the seat before the current pair starts). Multiply these counts together modulo 10^9 + 7.
+4. Edge cases: The corridor might have an odd number of seats, or zero seats, in which case no valid division is possible. The corridor might have only one pair of seats, requiring no additional dividers.
+5. Time and space complexity: Time complexity is O(N) to iterate through the corridor and find seat indices. Space complexity is O(S) where S is the number of seats, to store their indices, which can be up to O(N) in the worst case.
+</thinking>

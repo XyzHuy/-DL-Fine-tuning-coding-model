@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove the nth node from the end of a singly linked list and return the head of the modified list.
+2. Problem type / algorithm category: Linked list manipulation, two pointers.
+3. Step-by-step approach: Use two pointers, 'first' and 'second'. Move 'first' n+1 steps ahead. Then, move both pointers until 'first' reaches the end. 'second' will now be pointing to the node before the one to be deleted. Update 'second.next' to skip the nth node from the end.
+4. Edge cases: Empty list, n equals the length of the list (remove the head), n is greater than the length of the list (invalid input based on problem statement).
+5. Time and space complexity: Time complexity is O(N) because we traverse the list once. Space complexity is O(1) because we only use a constant amount of extra space.
+</thinking>

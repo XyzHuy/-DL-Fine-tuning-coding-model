@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum time by which all buses, given their individual trip times, can complete a total number of trips.
+2. Problem type / algorithm category: Binary Search on the Answer.
+3. Step-by-step approach: Define a helper function to check if a given time `t` is sufficient to complete `totalTrips`. This function sums up `t // bus_time` for all buses. Then, perform binary search on the possible range of times (from 1 to a safe upper bound) using this helper function to find the smallest `t` that satisfies the condition.
+4. Edge cases: The minimum possible time is 1. A safe upper bound for binary search can be the minimum bus trip time multiplied by totalTrips, as one bus completing all trips is a valid scenario.
+5. Time and space complexity: Time complexity is O(N log(M*T)) where N is the number of buses, M is the minimum trip time, and T is totalTrips. Space complexity is O(1).
+</thinking>

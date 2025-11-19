@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the run-length encoded string length by deleting at most k characters.
+2. Problem type / algorithm category: Dynamic programming with memoization.
+3. Step-by-step approach: Use a recursive function with memoization (dp(index, deletions_left, last_char, last_char_count)) to explore two options for each character: delete it or keep it. If keeping, update last_char and last_char_count, and add cost if count becomes 2, 10, or 100.
+4. Edge cases: Empty string, k = 0, k = s.length, string with all same characters, string with all different characters.
+5. Time and space complexity: O(n * k * alphabet_size * max_count) time, O(n * k * alphabet_size * max_count) space.
+</thinking>

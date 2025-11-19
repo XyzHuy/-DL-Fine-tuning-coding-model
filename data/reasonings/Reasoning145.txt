@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree, return a list containing the postorder traversal of its nodes' values.
+2. Problem type / algorithm category: Tree traversal, iterative postorder traversal.
+3. Step-by-step approach: Use a stack to simulate the traversal. Push the root node onto the stack. While the stack is not empty, pop a node, add its value to the result list, then push its left and right children onto the stack (in reverse order so left is processed after right). Finally, reverse the result list to obtain the postorder traversal.
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree. Space complexity is O(N) in the worst case (skewed tree).
+</thinking>

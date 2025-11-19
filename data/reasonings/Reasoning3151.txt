@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all adjacent elements in an integer array have different parities (one even, one odd).
+2. Problem type / algorithm category: Array traversal, parity check.
+3. Step-by-step approach: Iterate through the array comparing each element with its immediate successor. Check if their remainders when divided by 2 are the same. If they are, the array is not special, return False. If the loop completes without finding such a pair, the array is special, return True.
+4. Edge cases: An array with a single element is always considered special.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

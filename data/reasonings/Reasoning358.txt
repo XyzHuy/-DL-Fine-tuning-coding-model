@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange a given string such that identical characters have at least a distance k between them. Return an empty string if this rearrangement is impossible.
+2. Problem type / algorithm category: Heap, greedy algorithm, string manipulation.
+3. Step-by-step approach: Use a max heap to store the frequency of each character. Greedily pick the most frequent character, append it to the result, and decrement its frequency. Use a queue to keep track of characters that have been used in the last k positions. When a character is k positions away, add it back to the heap if its frequency is still greater than 0.
+4. Edge cases: If k is 0, the string can always be rearranged, return the original string. If the rearranged string length is not equal to the original string length, return an empty string.
+5. Time and space complexity: Time complexity is O(n log n) due to heap operations. Space complexity is O(n) for the heap and queue.
+</thinking>

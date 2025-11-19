@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of words in any given sentence from a list of sentences.
+2. Problem type / algorithm category: String manipulation, iteration, finding maximum.
+3. Step-by-step approach: Iterate through each sentence, split it by spaces to count words, and keep track of the maximum count encountered.
+4. Edge cases: Sentences with single words, sentences with multiple spaces between words (not allowed by constraints), empty input list (not allowed by constraints).
+5. Time and space complexity: Time complexity is O(N*L) where N is the number of sentences and L is the average length of a sentence. Space complexity is O(N) to store word counts or O(1) if updating max on the fly.
+</thinking>

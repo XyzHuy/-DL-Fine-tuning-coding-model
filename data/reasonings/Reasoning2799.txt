@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays where the number of distinct elements equals the total number of distinct elements in the original array.
+2. Problem type / algorithm category: Sliding window or prefix sum variation, brute force with optimization.
+3. Step-by-step approach: First, determine the total number of distinct elements in the input array. Then, iterate through all possible start points of a subarray. For each start point, expand the subarray to the right, maintaining a count of distinct elements encountered. Once the count of distinct elements in the current subarray matches the total, all subarrays starting from the current start point and ending at or after the current end point are considered complete. Add the remaining number of possible end points to the total count and break the inner loop to move to the next start point.
+4. Edge cases: An array with all identical elements (resulting in 1 distinct element) and an array where every element is unique.
+5. Time and space complexity: Time complexity is O(n^2) in the worst case, where n is the length of the array. Space complexity is O(k), where k is the number of distinct elements in the array, due to the use of a counter.
+</thinking>

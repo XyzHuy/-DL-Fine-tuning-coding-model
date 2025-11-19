@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate a prefix common array where each element C[i] is the count of numbers appearing in both A and B up to index i.
+2. Problem type / algorithm category: Array manipulation, counting, prefix sums.
+3. Step-by-step approach: Iterate through A and B simultaneously. Maintain frequency counts of elements seen so far in both arrays. For each index, calculate the sum of minimum frequencies for each number across both frequency maps to find the common count. Append this count to the result array.
+4. Edge cases: Empty input arrays (though constraints say n >= 1), arrays with single elements.
+5. Time and space complexity: Time O(n^2) due to iterating through Counter keys for summation at each step, Space O(n) for Counters and result array.
+</thinking>

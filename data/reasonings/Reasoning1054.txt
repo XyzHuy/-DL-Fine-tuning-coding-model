@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange a list of barcodes such that no two adjacent barcodes are the same.
+2. Problem type / algorithm category: Greedy algorithm, sorting, and frequency counting.
+3. Step-by-step approach: Count barcode frequencies, sort barcodes by frequency in descending order, then fill the result array by placing most frequent barcodes at even indices first, then odd indices.
+4. Edge cases: Empty barcode list, barcode list with only one element, barcode list where a single barcode dominates.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(N) because of the Counter and the result array.
+</thinking>

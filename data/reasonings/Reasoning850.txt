@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of rectangles, calculate the total area covered by them, considering overlapping areas only once, modulo 10^9 + 7.
+2. Problem type / algorithm category: Geometry, Sweep Line Algorithm
+3. Step-by-step approach: Extract unique y-coordinates, sort them, and map them to indices. Use a sweep line algorithm, processing rectangles by their x-coordinates. Maintain active y-intervals and calculate the area of each strip between x-coordinates.
+4. Edge cases: Large coordinates requiring modulo operation.
+5. Time and space complexity: Time complexity is O(n^2 log n) due to sorting and iterating. Space complexity is O(n) to store events and y-coordinates.
+</thinking>

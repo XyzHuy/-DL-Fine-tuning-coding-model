@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total reward by picking unmarked rewards if the reward is greater than current total.
+2. Problem type / algorithm category: Dynamic Programming / Bit Manipulation.
+3. Step-by-step approach: Sort unique reward values. Use a bitmask where each bit represents a possible sum. Iterate through sorted values, updating the bitmask to include new sums achievable by adding the current reward to previous sums that are smaller than the current reward.
+4. Edge cases: Empty input array (not possible by constraints), all rewards are the same.
+5. Time and space complexity: Time O(N log N) for sorting, and O(MaxReward * N) in naive DP, but optimized to O(N log N + MaxReward) with bit manipulation. Space O(MaxReward) for the bitmask.
+</thinking>

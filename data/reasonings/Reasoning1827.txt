@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to find the minimum operations to make an array strictly increasing by only incrementing elements.
+2. Problem type / algorithm category: Greedy approach, Array manipulation.
+3. Step-by-step approach: Iterate through the array starting from the second element. If the current element is not strictly greater than the previous one, calculate the difference needed to make it strictly greater, add this difference to the total operations, and update the current element.
+4. Edge cases: An array with 0 or 1 element is already strictly increasing and requires 0 operations.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables to store the count and temporary values.
+</thinking>

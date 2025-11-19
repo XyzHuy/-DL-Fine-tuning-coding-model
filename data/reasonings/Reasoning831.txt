@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Mask personal information (email or phone number) according to specified rules.
+2. Problem type / algorithm category: String manipulation.
+3. Step-by-step approach: Check if the input is an email or phone number based on the first character. If email, convert to lowercase, mask the middle, and return. If phone number, remove non-digits, determine country code length, format the number accordingly, and return.
+4. Edge cases: Empty string, phone number with varying country code lengths (0-3).
+5. Time and space complexity: O(n) time, where n is the length of the input string. O(1) space.
+</thinking>

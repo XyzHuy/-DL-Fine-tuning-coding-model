@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) in an array such that i < j and the sum of nums[i] and nums[j] is strictly less than a given target.
+2. Problem type / algorithm category: Brute force, Nested loops.
+3. Step-by-step approach: Iterate through all possible pairs of indices (i, j) where i is less than j. For each pair, check if the sum of the corresponding elements is less than the target. If it is, increment a counter.
+4. Edge cases: An empty input array or an array with only one element will result in zero pairs, as no i < j condition can be met.
+5. Time and space complexity: Time complexity is O(n^2) due to the nested loops. Space complexity is O(1) as only a constant amount of extra space is used for variables.
+</thinking>

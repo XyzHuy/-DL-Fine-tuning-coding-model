@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of a subarray where the absolute difference between its first and last element is exactly k.
+2. Problem type / algorithm category: Prefix sums, hash map optimization, dynamic programming idea.
+3. Step-by-step approach: Iterate through the array, maintaining the current prefix sum and a map of numbers to their minimum prefix sums encountered so far. For each number, check if `num + k` or `num - k` exists in the map. If so, calculate the potential subarray sum using the current prefix sum and the stored minimum prefix sum, updating the maximum sum found.
+4. Edge cases: No good subarray found (return 0), negative numbers in the array, large input values for array elements and k.
+5. Time and space complexity: O(n) time complexity due to single pass through the array, O(n) space complexity for the hash map in the worst case.
+</thinking>

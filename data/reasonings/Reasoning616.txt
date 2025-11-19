@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` and a list of words, wrap the substrings of `s` that match words in `words` with `<b>` and `</b>` tags. Overlapping and consecutive bold tags should be merged.
+2. Problem type / algorithm category: String manipulation, pattern matching.
+3. Step-by-step approach: First, create a boolean mask of the same length as `s` to mark the characters that should be bolded. Iterate through each word in `words` and find all occurrences of the word in `s`. Update the mask accordingly. Then, iterate through the mask and the string `s` and construct the result string by adding the bold tags where needed.
+4. Edge cases: Empty input string `s` or empty `words` list.
+5. Time and space complexity: Time complexity is O(N*M*L), where N is the length of s, M is the number of words, and L is the average length of the words. Space complexity is O(N) for the mask and the result string.
+</thinking>

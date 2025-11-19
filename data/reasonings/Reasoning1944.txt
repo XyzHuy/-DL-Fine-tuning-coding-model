@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of distinct heights, for each person, count how many people to their right they can see. A person i can see person j (i < j) if all people between them are shorter than both person i and person j.
+2. Problem type / algorithm category: Monotonic stack.
+3. Step-by-step approach: Iterate through the heights from left to right. Maintain a decreasing monotonic stack of indices. When considering person `i`, pop elements from the stack whose heights are less than or equal to `heights[i]`, incrementing the visible count for the popped person and the current person. If the stack is not empty after popping, the person at the top of the stack can see person `i`, so increment their visible count. Finally, push `i` onto the stack.
+4. Edge cases: An empty input array (though constraints say n >= 1), a single person (sees no one), all people in strictly increasing or decreasing order.
+5. Time and space complexity: Time complexity is O(n) because each element is pushed onto and popped from the stack at most once. Space complexity is O(n) in the worst case for the stack.
+</thinking>

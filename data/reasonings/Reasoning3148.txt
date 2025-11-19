@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score achievable by moving from any cell to another cell to its bottom or right in a matrix, where the score of a move is the difference between the destination and starting cell values. At least one move is required.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a DP table to store the minimum value encountered to reach cell (i, j) from any valid starting point. Iterate through the grid, updating DP[i][j] with the minimum of its current value, DP[i-1][j], DP[i][j-1], and grid[i][j]. Then, iterate again to calculate the maximum score by considering moves from previous cells (i-1, j) and (i, j-1) to the current cell (i, j) as destination, and finding the maximum difference.
+4. Edge cases: The problem guarantees at least one move is made. The constraints ensure the matrix size is at least 2x2. Minimum possible score can be negative.
+5. Time and space complexity: Time complexity is O(m*n) due to two nested loops iterating through the matrix. Space complexity is O(m*n) for the DP table.
+</thinking>

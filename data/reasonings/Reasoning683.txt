@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array representing the order in which bulbs are turned on, find the earliest day such that there are two turned-on bulbs with exactly k turned-off bulbs between them.
+2. Problem type / algorithm category: Array, Sliding Window
+3. Step-by-step approach: Create a `days` array where `days[i]` stores the day on which bulb `i+1` is turned on. Use a sliding window of size `k+2` to check if all bulbs between the two end bulbs are turned on after both end bulbs. Update the minimum day if such a window is found.
+4. Edge cases: No such pair of bulbs exists (return -1), k=0, array is empty.
+5. Time and space complexity: Time: O(N), Space: O(N)
+</thinking>

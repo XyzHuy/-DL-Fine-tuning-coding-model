@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all 1s in a binary matrix can be removed by flipping entire rows or columns.
+2. Problem type / algorithm category: Greedy approach, Matrix manipulation.
+3. Step-by-step approach: Observe that if a solution exists, all rows must be identical to the first row or its bitwise inverse after some operations. Iterate through each row and check if it matches the first row or its inverse. If any row doesn't match either, return false. Otherwise, return true.
+4. Edge cases: An empty grid or a grid with an empty row should be considered valid (returning true).
+5. Time and space complexity: O(m*n) time complexity due to iterating through the grid, and O(n) space complexity for storing the inverted first row.
+</thinking>

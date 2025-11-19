@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest string that contains all possible n-digit passwords from digits 0 to k-1.
+2. Problem type / algorithm category: Graph theory, Eulerian path, De Bruijn sequence.
+3. Step-by-step approach: Construct a De Bruijn graph where nodes are (n-1)-digit sequences and edges represent adding a digit to form an n-digit sequence. Find an Eulerian path in this graph, which visits every edge exactly once. The resulting string is the concatenation of the digits along the path plus the initial n-1 digits.
+4. Edge cases: n = 1, k = 1. The problem statement constraints guarantee n >= 1 and k >= 1.
+5. Time and space complexity: Time complexity is O(k^n), as we visit each of the k^n possible edges once. Space complexity is O(k^n) to store the visited edges and the resulting string.
+</thinking>

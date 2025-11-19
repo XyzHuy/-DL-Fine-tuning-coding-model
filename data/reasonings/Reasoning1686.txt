@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Alice and Bob take turns picking stones, each wanting to maximize their score. Players choose stones optimally, knowing the other's values. Return 1 if Alice wins, -1 if Bob wins, 0 for a draw.
+2. Problem type / algorithm category: Greedy approach, Game Theory.
+3. Step-by-step approach: Calculate the potential gain for the current player if they pick a stone (their value minus the opponent's value). Sort stones by this difference in descending order. Iterate through sorted stones, assigning them greedily to Alice and Bob.
+4. Edge cases: The problem constraints ensure n is at least 1. Ties in scores result in a draw. All stone values are positive.
+5. Time and space complexity: Time complexity is dominated by sorting, which is O(N log N), where N is the number of stones. Space complexity is O(N) to store combined values.
+</thinking>

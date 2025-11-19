@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given flight bookings with start, end, and seat counts, calculate the total seats booked for each flight.
+2. Problem type / algorithm category: Array manipulation, prefix sum.
+3. Step-by-step approach: Use an array to store seat changes at the start and end of booking ranges, then compute the prefix sum to determine the total seats for each flight.
+4. Edge cases: Empty bookings array, single flight bookings, overlapping bookings.
+5. Time and space complexity: Time complexity is O(n + m) where n is the number of flights and m is the number of bookings. Space complexity is O(n).
+</thinking>

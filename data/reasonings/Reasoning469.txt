@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a polygon, given by a list of its vertices, is convex.
+2. Problem type / algorithm category: Geometry, Convexity Check
+3. Step-by-step approach: Iterate through each set of three consecutive points and calculate the cross product. If the sign of the cross product changes, the polygon is not convex.
+4. Edge cases: Polygons with fewer than 3 points are not convex.
+5. Time and space complexity: Time complexity is O(n), where n is the number of points. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find any element in an array of distinct positive integers that is not the minimum or maximum. Return -1 if no such element exists.
+2. Problem type / algorithm category: Array traversal, simple conditional logic.
+3. Step-by-step approach: First, check if the array length is less than 3. If so, no intermediate element can exist. Otherwise, find the minimum and maximum values in the array. Then, iterate through the array and return the first element that is strictly greater than the minimum and strictly less than the maximum. If the loop completes without finding such an element, return -1.
+4. Edge cases: Arrays with less than 3 elements (e.g., [1], [1, 2]), where no element can be neither the minimum nor the maximum.
+5. Time and space complexity: Time complexity is O(n) due to finding min/max and iterating through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

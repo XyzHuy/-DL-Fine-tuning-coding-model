@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of ways to place houses on a street with 2n plots (n on each side), such that no two houses are adjacent on the same side, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming, Fibonacci sequence.
+3. Step-by-step approach: For one side of the street, the number of ways to place houses follows a Fibonacci-like pattern. Let dp[i] be the ways for i plots on one side. dp[i] = dp[i-1] (don't place house at i) + dp[i-2] (place house at i). This is because if you place a house at plot i, you cannot place one at i-1. The total for n plots on one side is dp[n]. Since each side is independent, the total ways for both sides is dp[n] * dp[n].
+4. Edge cases: The constraint n >= 1 is given. Base cases for DP are n=0 (1 way) and n=1 (2 ways: empty or house).
+5. Time and space complexity: Time complexity is O(n) due to the loop to fill the DP table. Space complexity is O(n) for storing the DP table.
+</thinking>

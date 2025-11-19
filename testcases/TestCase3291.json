@@ -1,0 +1,1793 @@
+{
+  "function_name": "minValidStrings",
+  "test_cases": [
+    {
+      "parameters": {
+        "words": [
+          "abc"
+        ],
+        "target": "abcabc"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "ab",
+          "ba"
+        ],
+        "target": "abab"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d"
+        ],
+        "target": "abcdabcdabcd"
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcde",
+          "fghij",
+          "klmno"
+        ],
+        "target": "abcdefghijklmno"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "z"
+        ],
+        "target": "zzzzzzzzzz"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "words": [
+          "abababab",
+          "ab"
+        ],
+        "target": "ababaababa"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "abc",
+          "abc"
+        ],
+        "target": "abcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "aa",
+          "aaa"
+        ],
+        "target": "aaaaaa"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world"
+        ],
+        "target": "hello"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcdef"
+        ],
+        "target": "xyz"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix"
+        ],
+        "target": "prefixfix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "aa",
+          "aaa"
+        ],
+        "target": "aaaaaaaaaa"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world"
+        ],
+        "target": "hello"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaa"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "aa",
+          "bb",
+          "cc"
+        ],
+        "target": "aabbcc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "ab",
+          "bc",
+          "cd"
+        ],
+        "target": "abcd"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "efgh",
+          "ijkl"
+        ],
+        "target": "abcdefghijl"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c"
+        ],
+        "target": "abc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world"
+        ],
+        "target": "helloworld"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc"
+        ],
+        "target": "abcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c"
+        ],
+        "target": "abc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi"
+        ],
+        "target": "abcdef"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix"
+        ],
+        "target": "prefixfix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world"
+        ],
+        "target": "world"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "words": [
+          "a"
+        ],
+        "target": "aaaaa"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc"
+        ],
+        "target": "abc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "suffix"
+        ],
+        "target": "prefixsuffix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "aaaaa",
+          "bcdef"
+        ],
+        "target": "aabcdabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno"
+        ],
+        "target": "abcdefghijklmno"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "target": "abcdabcdabcd"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix",
+          "suffix"
+        ],
+        "target": "prefixsuffix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "bca",
+          "cab"
+        ],
+        "target": "abcabcabcabc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "aaaa",
+          "aaaaa",
+          "aaaaaa"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "jump",
+          "jum",
+          "ju",
+          "j"
+        ],
+        "target": "jumpjumpjump"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "ab",
+          "ba",
+          "aba",
+          "bab",
+          "abab"
+        ],
+        "target": "ababbababababa"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "brown",
+          "brow",
+          "bro",
+          "br",
+          "b"
+        ],
+        "target": "brownbrownbrow"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "aa",
+          "a",
+          "aaaa"
+        ],
+        "target": "aaaaaaaaa"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl"
+        ],
+        "target": "abcdefghijk"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcdefghij",
+          "jihgfedcba",
+          "abcdefgh",
+          "hgfedcba"
+        ],
+        "target": "abcdefghijhgfedcbahgfedcba"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl",
+          "mno"
+        ],
+        "target": "abcdefghijklmnopqrstuvwxyza"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "lazy",
+          "laz",
+          "la",
+          "l"
+        ],
+        "target": "lazylazy"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa",
+          "aaaaa"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "two",
+          "three",
+          "four",
+          "five",
+          "six",
+          "seven",
+          "eight",
+          "nine",
+          "ten"
+        ],
+        "target": "onetwothreefourfivesixseveneightnineten"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "words": [
+          "repeated",
+          "repeat",
+          "re",
+          "rep",
+          "repe"
+        ],
+        "target": "repeatedrepeated"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "bcd",
+          "cd",
+          "d"
+        ],
+        "target": "abcdbcdbcd"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "two",
+          "three"
+        ],
+        "target": "onetwothree"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world",
+          "hello",
+          "world"
+        ],
+        "target": "helloworldhello"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "zyx",
+          "yz",
+          "zx",
+          "yx"
+        ],
+        "target": "zyxzyxzyx"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix",
+          "fixx",
+          "fixxx"
+        ],
+        "target": "prefixfixfixxxfixfixfixx"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "two",
+          "three",
+          "four"
+        ],
+        "target": "onetwothreefour"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "xy",
+          "x"
+        ],
+        "target": "xyzyzyxzyzyx"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "longprefix",
+          "longerprefix",
+          "longestprefix"
+        ],
+        "target": "longestprefixlongprefixlongerprefix"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "dog",
+          "do",
+          "d"
+        ],
+        "target": "dogdogdog"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "short",
+          "longer",
+          "longestword"
+        ],
+        "target": "shortlongerlongestwordshortlongerlongestwordshortlongerlongestword"
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "abc",
+          "ab",
+          "a"
+        ],
+        "target": "abcabcabcabc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcdefg",
+          "bcdefgh",
+          "cdefghi",
+          "defghij",
+          "efghijk"
+        ],
+        "target": "abcdefghijk"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "unique",
+          "words",
+          "only",
+          "here"
+        ],
+        "target": "uniquewordsonlyhere"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcdefgh",
+          "ijklmnop",
+          "qrstuvwx",
+          "yz"
+        ],
+        "target": "abcdefghijklmnopqrstuvwxyzyz"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "abab",
+          "baba",
+          "abba",
+          "baab",
+          "aaaa"
+        ],
+        "target": "ababbabaabbaab"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world",
+          "hello",
+          "world"
+        ],
+        "target": "helloworldhelloworld"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "longword",
+          "longerword",
+          "longestword"
+        ],
+        "target": "longwordlongerwordlongestwordlongestwordlongestword"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "hell",
+          "he",
+          "h"
+        ],
+        "target": "hellohello"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "prefixprefix",
+          "prefixprefixprefix"
+        ],
+        "target": "prefixprefixprefixprefix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "target": "abcabcdab"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "aab",
+          "aac",
+          "aad"
+        ],
+        "target": "aaabaaacaaad"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "small",
+          "big",
+          "medium"
+        ],
+        "target": "smallbigmediumbig"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "two",
+          "three",
+          "four"
+        ],
+        "target": "onetwothreefour"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "world",
+          "hel",
+          "lo",
+          "wor",
+          "ld"
+        ],
+        "target": "helloworld"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "giraffe",
+          "gira",
+          "gir",
+          "gi",
+          "g"
+        ],
+        "target": "giraffegiraffe"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa",
+          "aaaaa"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "on",
+          "o"
+        ],
+        "target": "ononeone"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "x",
+          "y",
+          "z",
+          "xy",
+          "yz",
+          "xz",
+          "xyz"
+        ],
+        "target": "xyzxyzxyz"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "fix",
+          "pre",
+          "prefixfix"
+        ],
+        "target": "prefixprefix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z"
+        ],
+        "target": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix",
+          "prefixfix"
+        ],
+        "target": "prefixprefixfix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "aabb",
+          "ab",
+          "aab",
+          "aa"
+        ],
+        "target": "aabbabaaababaab"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "pqr",
+          "pq",
+          "p"
+        ],
+        "target": "pqrpqppqrpqpp"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "abcabc",
+          "abcabcabc",
+          "abcabcabcabc"
+        ],
+        "target": "abcabcabcabcabcabcabcabcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "xy",
+          "x"
+        ],
+        "target": "xyzyxzyz"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "suffix",
+          "pre",
+          "fix",
+          "postfix"
+        ],
+        "target": "prefixpostfix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "target": "abcdeabcdeabcde"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "abcde",
+          "abcdef",
+          "abcdefg"
+        ],
+        "target": "abcdefgabcdefgabcdefg"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "bcde",
+          "cdef",
+          "defg"
+        ],
+        "target": "abcdefg"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "abc",
+          "ab",
+          "a"
+        ],
+        "target": "abcdabc"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "bcd",
+          "cde",
+          "def"
+        ],
+        "target": "abcdef"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "hellohello",
+          "hellohellohello"
+        ],
+        "target": "hellohellohellohellohellohello"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "quick",
+          "qui",
+          "qu",
+          "q"
+        ],
+        "target": "quickquick"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "yz",
+          "z"
+        ],
+        "target": "xyzxyz"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "longword",
+          "long",
+          "lo",
+          "l"
+        ],
+        "target": "longwordlongwordlongword"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "panda",
+          "pan",
+          "pa",
+          "p"
+        ],
+        "target": "pandapanpapanda"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl"
+        ],
+        "target": "abcdefghijkl"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "b",
+          "c"
+        ],
+        "target": "abcbabcbabc"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "repeated",
+          "repeat",
+          "rep",
+          "r"
+        ],
+        "target": "repeatedrepeatedrepeated"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "zebra",
+          "zeb",
+          "ze",
+          "z"
+        ],
+        "target": "zebrazebrazebra"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "cba",
+          "bac"
+        ],
+        "target": "abcbacbac"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "target": "abcdabcdabcd"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaaa",
+          "aaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "aa",
+          "aaa",
+          "aaaa"
+        ],
+        "target": "aaaaaaaaaaaa"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "ab",
+          "a",
+          "b"
+        ],
+        "target": "abababababab"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaaa",
+          "aaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaaaaaaaa"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "longprefix",
+          "prefix",
+          "fix",
+          "suffix"
+        ],
+        "target": "longprefixsuffix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "fox",
+          "fo",
+          "f"
+        ],
+        "target": "foxfoxfoxfox"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "abc",
+          "ab",
+          "a"
+        ],
+        "target": "abcdabcaba"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "pqr",
+          "pq",
+          "p"
+        ],
+        "target": "ppppqqqrrr"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "prefi",
+          "pref",
+          "pre",
+          "pr"
+        ],
+        "target": "prefixprefix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "cat",
+          "ca",
+          "c"
+        ],
+        "target": "catcatcatcat"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pref",
+          "pre",
+          "p"
+        ],
+        "target": "prefixprefix"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "bcd",
+          "cde",
+          "def"
+        ],
+        "target": "abcdefg"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "apple",
+          "banana",
+          "cherry"
+        ],
+        "target": "applebananaapple"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "partial",
+          "part",
+          "par",
+          "pa",
+          "p"
+        ],
+        "target": "partialpartparpap"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "abc",
+          "ab",
+          "a"
+        ],
+        "target": "abcdabcab"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "pre",
+          "fix",
+          "fixx"
+        ],
+        "target": "prefixprefixfixfixxfix"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "prefix",
+          "prefixing",
+          "pre",
+          "fix",
+          "fixing"
+        ],
+        "target": "prefixprefixfix"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "qwerty",
+          "werty",
+          "erty",
+          "rty",
+          "ty",
+          "y",
+          "yt",
+          "tyu"
+        ],
+        "target": "qwertytyutytutytutytutytutytutytutytutu"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "abac",
+          "bac",
+          "cab",
+          "abc"
+        ],
+        "target": "abacbacabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "over",
+          "ove",
+          "ov",
+          "o"
+        ],
+        "target": "overoverover"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaaaa",
+          "aaaa",
+          "aaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcde",
+          "cdefg",
+          "efghi",
+          "fghij"
+        ],
+        "target": "abcdefghij"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e"
+        ],
+        "target": "edcba"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "one",
+          "two",
+          "three"
+        ],
+        "target": "onetwothreeonetwo"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "ab",
+          "a"
+        ],
+        "target": "abcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd"
+        ],
+        "target": "abcdabcd"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "hello",
+          "hi",
+          "h",
+          "he",
+          "hel"
+        ],
+        "target": "hellohellohi"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "zyx",
+          "yyz",
+          "xzy"
+        ],
+        "target": "zyxzyxzyx"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "same",
+          "same",
+          "same"
+        ],
+        "target": "samesamesamesamesame"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "words": [
+          "pqr",
+          "pr",
+          "qr",
+          "r",
+          "pq",
+          "q"
+        ],
+        "target": "pqrprqrpqr"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "test",
+          "testing",
+          "testcase"
+        ],
+        "target": "testtestingtestcase"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcd",
+          "bcd",
+          "cde",
+          "def",
+          "efg",
+          "fgh"
+        ],
+        "target": "abcdefg"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "abcd",
+          "abcde"
+        ],
+        "target": "abcdeabcdeabcde"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "complex",
+          "words",
+          "example"
+        ],
+        "target": "complexwordscomplex"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "elephant",
+          "elepha",
+          "eleph",
+          "elep",
+          "ele",
+          "el",
+          "e"
+        ],
+        "target": "elephantelephant"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "bc",
+          "c",
+          "abcd"
+        ],
+        "target": "abcabcabc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "zyx",
+          "yzx"
+        ],
+        "target": "xyzzyxyzzyx"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "xy",
+          "xyz",
+          "xyza",
+          "xyzabc"
+        ],
+        "target": "xyzabcxyzabcxyz"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "xy",
+          "x"
+        ],
+        "target": "xyzyxyzyx"
+      },
+      "expected_output": -1
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j"
+        ],
+        "target": "abcdefghij"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaa",
+          "bbb",
+          "ccc"
+        ],
+        "target": "aaabbbccc"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "abcd",
+          "ab",
+          "bcde"
+        ],
+        "target": "abcdabcde"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "a",
+          "ab",
+          "abc",
+          "abcd",
+          "abcde"
+        ],
+        "target": "abcdeabcde"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "words": [
+          "xyz",
+          "zyx",
+          "yxz",
+          "yxzyx"
+        ],
+        "target": "xyzzyxzyxzyxzyxzyx"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "zzz",
+          "zz",
+          "z"
+        ],
+        "target": "zzzzzzzzzzzzzzzzzzzz"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "words": [
+          "z",
+          "yz",
+          "xyz",
+          "wxyz"
+        ],
+        "target": "wxyzwxyzwxyz"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "acb",
+          "bac",
+          "bca",
+          "cab",
+          "cba"
+        ],
+        "target": "abcacbabcabc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "words": [
+          "abcde",
+          "bcd",
+          "cde",
+          "efg"
+        ],
+        "target": "abcdecdefg"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "repeated",
+          "repeate",
+          "repea",
+          "repe",
+          "rep",
+          "re",
+          "r"
+        ],
+        "target": "repeatedrepeatedrepeated"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "aaaa",
+          "aa",
+          "a"
+        ],
+        "target": "aaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "words": [
+          "onetwo",
+          "one",
+          "two",
+          "three"
+        ],
+        "target": "onetwothreeonetwo"
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "words": [
+          "abc",
+          "def",
+          "ghi",
+          "jkl"
+        ],
+        "target": "abcdefghijk"
+      },
+      "expected_output": 4
+    }
+  ]
+}

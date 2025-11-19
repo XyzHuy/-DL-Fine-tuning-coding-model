@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find indices of strings in a list that contain a specific character.
+2. Problem type / algorithm category: String manipulation, Iteration.
+3. Step-by-step approach: Iterate through each word in the input list along with its index. For each word, check if the target character is present. If it is, add the word's index to a result list.
+4. Edge cases: The target character might not be present in any word, resulting in an empty output list. The input list of words might be empty (though constraints state 1 <= words.length).
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of words and M is the average length of a word. Space complexity is O(K) where K is the number of words containing the character.
+</thinking>

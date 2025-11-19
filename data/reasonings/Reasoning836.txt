@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two axis-aligned rectangles overlap.
+2. Problem type / algorithm category: Geometry, interval intersection.
+3. Step-by-step approach: Check if the rectangles do NOT overlap by checking if one is to the left, right, above, or below the other. If none of these conditions are met, they must overlap.
+4. Edge cases: Rectangles that only touch at the corner or edges should not be considered overlapping.
+5. Time and space complexity: O(1) time complexity and O(1) space complexity.
+</thinking>

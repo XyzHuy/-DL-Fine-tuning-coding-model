@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum element in a rotated sorted array that may contain duplicate elements.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Use a modified binary search to narrow down the search space. Compare the middle element with the rightmost element. If the middle element is greater than the rightmost element, the minimum is in the right half. If the middle element is less than the rightmost element, the minimum is in the left half (including the middle). If they are equal, decrement the right pointer to reduce the search space.
+4. Edge cases: Empty array (though constraints specify at least one element), array with a single element, array where all elements are the same. The equality case `nums[mid] == nums[right]` requires special handling to avoid infinite loops.
+5. Time and space complexity: Time complexity is O(log n) in the average case and O(n) in the worst case (when all elements are the same). Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all integers within a given range [low, high] that have digits that increase by exactly one sequentially.
+2. Problem type / algorithm category: Number generation, brute-force generation with filtering.
+3. Step-by-step approach: Iterate through all possible starting digits (1-9) and lengths, constructing sequential numbers. Add numbers to a list if they are less than or equal to high. Finally, filter this list to include only numbers greater than or equal to low and sort the result.
+4. Edge cases: The input range [low, high] can include numbers of varying lengths. The maximum value of high is 10^9.
+5. Time and space complexity: Time complexity is O(1) because the number of possible sequential digit numbers is finite and small (at most 9*9 = 81 numbers to generate). Space complexity is O(1) for the same reason, as the storage for the generated numbers is constant.
+</thinking>

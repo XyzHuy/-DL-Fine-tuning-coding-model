@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the lexicographically largest merge of two strings by repeatedly taking the first character from either string until both are empty.
+2. Problem type / algorithm category: Greedy approach, String manipulation.
+3. Step-by-step approach: While both strings have characters, compare them. Append the first character of the lexicographically larger string to the result and remove it from its source string. After one string is exhausted, append the remaining characters of the other string.
+4. Edge cases: One or both input strings could be empty initially. The comparison `word1 > word2` correctly handles cases where one string is a prefix of another.
+5. Time and space complexity: Time complexity is O(N*M) where N and M are lengths of word1 and word2, due to string slicing. Space complexity is O(N+M) for the merged string.
+</thinking>

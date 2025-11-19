@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of email addresses, determine the number of unique email addresses that actually receive mail after applying the given rules for '.' and '+' characters in the local name.
+2. Problem type / algorithm category: String manipulation, set.
+3. Step-by-step approach: Iterate through each email, split it into local and domain parts. Process the local part by removing characters after the first '+' and then removing all '.' characters. Combine the processed local part with the domain part and add it to a set. Finally, return the size of the set.
+4. Edge cases: Empty email list, emails with only local or domain parts (invalid input based on constraints), emails without '+' or '.' characters, multiple '+' characters.
+5. Time and space complexity: Time complexity is O(N*M) where N is the number of emails and M is the average length of an email. Space complexity is O(N) in the worst case where all emails are unique.
+</thinking>

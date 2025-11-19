@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Schedule tasks in order, with a minimum cooldown period between tasks of the same type.
+2. Problem type / algorithm category: Simulation, Greedy.
+3. Step-by-step approach: Iterate through tasks, track the last completion day for each task type, and advance the current day if needed due to cooldown.
+4. Edge cases: Tasks array can be empty or contain only one task. Space can be zero or very large.
+5. Time and space complexity: O(N) time complexity where N is the number of tasks, and O(U) space complexity where U is the number of unique task types.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest common subarray between two integer arrays.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a 2D DP array where dp[i][j] stores the length of the longest common suffix of nums1[:i] and nums2[:j]. Iterate through nums1 and nums2, if nums1[i-1] == nums2[j-1], then dp[i][j] = dp[i-1][j-1] + 1, otherwise dp[i][j] = 0. Update the maximum length found so far.
+4. Edge cases: Empty arrays, arrays with no common subarrays.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the lengths of nums1 and nums2, respectively. Space complexity is O(m*n) due to the DP table.
+</thinking>

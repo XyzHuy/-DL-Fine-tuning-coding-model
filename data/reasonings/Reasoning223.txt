@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total area covered by two potentially overlapping rectangles in a 2D plane.
+2. Problem type / algorithm category: Geometry, area calculation, overlap detection.
+3. Step-by-step approach: Calculate the area of each rectangle. Find the intersection rectangle's coordinates, and its area. Subtract the overlapping area from the sum of individual areas.
+4. Edge cases: Rectangles not overlapping (overlap area is 0), one rectangle contained within the other, rectangles sharing an edge or corner (overlap area is 0).
+5. Time and space complexity: O(1) time complexity because it involves constant-time arithmetic operations. O(1) space complexity since no extra space is used.
+</thinking>

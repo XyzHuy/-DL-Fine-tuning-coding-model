@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest positive integer that is missing from an unsorted array of integers.
+2. Problem type / algorithm category: Array manipulation, in-place modification, and searching.
+3. Step-by-step approach: Rearrange the array such that each positive integer `k` is at index `k-1`. Then, iterate through the array and find the first index `i` where `nums[i]` is not equal to `i+1`. If all numbers are in their correct positions, the missing positive integer is `n+1`.
+4. Edge cases: Empty array, array with only negative numbers, array with all positive numbers from 1 to n.
+5. Time and space complexity: Time complexity is O(n) due to the while loop and for loops, and space complexity is O(1) as the algorithm modifies the array in-place.
+</thinking>

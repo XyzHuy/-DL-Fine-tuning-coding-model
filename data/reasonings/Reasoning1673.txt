@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest subsequence of length k from a given array.
+2. Problem type / algorithm category: Greedy approach, Monotonic stack.
+3. Step-by-step approach: Iterate through the array. Maintain a stack to build the result. If the current number is smaller than the top of the stack and we can still form a subsequence of length k by removing elements from the stack and adding the current number, pop from the stack. Then, if the stack size is less than k, push the current number.
+4. Edge cases: k equals the length of nums (return nums), k equals 1 (return min(nums)). The logic handles these naturally.
+5. Time and space complexity: Time complexity is O(N) because each element is pushed and popped at most once. Space complexity is O(k) for the stack.
+</thinking>

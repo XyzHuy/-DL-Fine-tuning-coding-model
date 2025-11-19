@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of binary strings and max counts of '0's and '1's, find the size of the largest subset of strings that satisfies the '0's and '1's constraints.
+2. Problem type / algorithm category: Dynamic Programming, Knapsack variation.
+3. Step-by-step approach: Use a 3D DP array where dp[i][j][k] stores the maximum size of a subset using the first i strings with at most j '0's and k '1's. Iterate through the strings, and for each string, either include it (if enough '0's and '1's are available) or exclude it, taking the maximum of the two options.
+4. Edge cases: Empty input string array, zero m or n values.
+5. Time and space complexity: Time complexity is O(N * M * N) where N is the number of strings, and M and N are the maximum counts of zeros and ones respectively. Space complexity is also O(N * M * N) due to the 3D DP array.
+</thinking>

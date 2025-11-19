@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find any element in a 2D matrix that is strictly greater than its four neighbors (up, down, left, right), considering -1 as boundary values, and return its coordinates [row, col].
+2. Problem type / algorithm category: Binary Search on rows combined with a greedy approach to find the maximum in a row.
+3. Step-by-step approach: Perform binary search on the rows. For the middle row, find the column with the maximum element. Compare this maximum element with its top and bottom neighbors. If it's smaller than the bottom neighbor, search in the lower half of the rows; otherwise, search in the upper half. Repeat until only one row remains, then find the peak in that row.
+4. Edge cases: The problem statement guarantees that no two adjacent cells are equal and the matrix is surrounded by -1, simplifying boundary checks. The matrix dimensions are at least 1x1.
+5. Time and space complexity: O(m log n) time because binary search on rows takes log m steps, and in each step, we find the maximum in a row which takes O(n) time. Space complexity is O(1).
+</thinking>

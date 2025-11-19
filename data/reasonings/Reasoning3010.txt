@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Divide an array into 3 contiguous subarrays and minimize the sum of their first elements.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: The first subarray's cost is fixed by nums[0]. To minimize the total cost, we need to find the smallest possible starting elements for the second and third subarrays. These will be the two smallest elements in the array excluding the very first element.
+4. Edge cases: The problem constraints guarantee n >= 3, so there are always enough elements to form 3 subarrays. The values are positive.
+5. Time and space complexity: O(N log N) time due to sorting, O(N) space for storing remaining elements.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings that contain only vowels and include all five distinct vowels ('a', 'e', 'i', 'o', 'u').
+2. Problem type / algorithm category: String manipulation, sliding window (implicitly via nested loops), counting.
+3. Step-by-step approach: Iterate through all possible start indices. For each start index, expand a window to the right. Within this window, track the unique vowels encountered. If a non-vowel is found, break the inner loop. If all five vowels are seen, increment the count.
+4. Edge cases: String length less than 5 (no vowel substring possible), string contains no vowels, string contains only vowels but not all five.
+5. Time and space complexity: Time O(N^2) due to nested loops. Space O(1) as the vowel set size is constant.
+</thinking>

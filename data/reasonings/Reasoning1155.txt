@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of ways to achieve a target sum by rolling n dice with k faces each, modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Create a 2D DP table where dp[i][j] stores the number of ways to achieve sum j using i dice. Iterate through the number of dice from 1 to n and the target sum from 1 to target. For each die and target sum, iterate through the faces from 1 to k. If the current face value is less than or equal to the target sum, add the number of ways to achieve the remaining target sum with one less die to the current cell.
+4. Edge cases: The base case is dp[0][0] = 1, meaning there's one way to achieve a sum of 0 with 0 dice. Also, the target sum can be larger than n*k or smaller than n, in which case the answer would be zero but this is handled by the loops.
+5. Time and space complexity: Time complexity is O(n*target*k). Space complexity is O(n*target).
+</thinking>

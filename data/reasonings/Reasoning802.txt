@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a directed graph, find all safe nodes. A safe node is one where every path from it leads to a terminal node (a node with no outgoing edges).
+2. Problem type / algorithm category: Graph, topological sort, Depth-First Search (DFS), Breadth-First Search (BFS)
+3. Step-by-step approach: Construct a reversed graph and compute the out-degree of each node. Initialize a queue with nodes having an out-degree of 0. Then, process the queue: for each node, decrement the out-degree of its neighbors in the reversed graph. If a neighbor's out-degree becomes 0, add it to the queue and the set of safe nodes. Finally, return the sorted list of safe nodes.
+4. Edge cases: Empty graph, graph with cycles, graph with self-loops, a single node graph.
+5. Time and space complexity: Time complexity is O(N + E), where N is the number of nodes and E is the number of edges. Space complexity is O(N + E) to store the reversed graph and the queue.
+</thinking>

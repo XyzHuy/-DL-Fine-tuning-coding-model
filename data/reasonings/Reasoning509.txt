@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the nth Fibonacci number given n.
+2. Problem type / algorithm category: Dynamic Programming / Iterative
+3. Step-by-step approach: Initialize a and b to 0 and 1 respectively. Iterate from 2 to n, updating a and b in each iteration to represent the previous two Fibonacci numbers. Return the final value of b.
+4. Edge cases: If n is 0 or 1, return n directly.
+5. Time and space complexity: Time complexity is O(n) due to the loop. Space complexity is O(1) as we only use a constant amount of extra space.
+</thinking>

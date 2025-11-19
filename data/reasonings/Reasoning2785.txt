@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange a string such that consonants stay in place, and vowels are sorted by ASCII value.
+2. Problem type / algorithm category: String manipulation, sorting.
+3. Step-by-step approach: Identify all vowels, sort them, then reconstruct the string by placing sorted vowels back into vowel positions and keeping consonants in their original spots.
+4. Edge cases: Strings with no vowels, strings with all vowels, strings with only one character.
+5. Time and space complexity: Time O(N log N) due to sorting vowels, Space O(N) for storing vowels and result string.
+</thinking>

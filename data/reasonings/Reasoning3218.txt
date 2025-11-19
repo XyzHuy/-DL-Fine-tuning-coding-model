@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of cutting an m x n cake into 1 x 1 pieces, given costs for horizontal and vertical cuts.
+2. Problem type / algorithm category: Greedy algorithm, optimization.
+3. Step-by-step approach: Sort both horizontal and vertical cut costs in descending order. Iterate by picking the cut with the higher cost. If a horizontal cut is chosen, multiply its cost by the current number of vertical pieces. If a vertical cut is chosen, multiply its cost by the current number of horizontal pieces. Update the number of pieces accordingly.
+4. Edge cases: Cakes that are already 1x1 (m=1, n=1) require no cuts. If there are no horizontal or vertical cuts required (m=1 or n=1), the remaining cuts of the other dimension are processed.
+5. Time and space complexity: Time complexity is dominated by sorting, O(m log m + n log n). Space complexity is O(1) if sorting is in-place, or O(m+n) if temporary arrays are used for sorting.
+</thinking>

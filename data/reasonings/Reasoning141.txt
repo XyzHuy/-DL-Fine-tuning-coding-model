@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given linked list has a cycle.
+2. Problem type / algorithm category: Linked list, cycle detection, Floyd's Tortoise and Hare algorithm.
+3. Step-by-step approach: Use two pointers, slow and fast. The slow pointer moves one node at a time, and the fast pointer moves two nodes at a time. If there is a cycle, the two pointers will eventually meet. If the fast pointer reaches the end of the list, there is no cycle.
+4. Edge cases: Empty list, single node list, no cycle, cycle at the beginning, cycle in the middle.
+5. Time and space complexity: Time complexity is O(n), space complexity is O(1).
+</thinking>

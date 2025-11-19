@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs (i, j) with i < j such that nums[i] * nums[j] is divisible by k.
+2. Problem type / algorithm category: Number Theory, Greatest Common Divisor (GCD), Combinatorics.
+3. Step-by-step approach: For each number, find its GCD with k. Store the counts of these GCDs. Iterate through pairs of GCDs (g1, g2) such that their product is divisible by k. If g1 equals g2, use combination formula for counting pairs within the same GCD group. If g1 is less than g2, multiply their counts.
+4. Edge cases: k = 1 (all products are divisible), empty input array (not possible by constraints), all numbers same.
+5. Time and space complexity: Time complexity is O(N * sqrt(max(nums)) + D^2) where D is the number of unique GCDs, and space complexity is O(D). The sqrt(max(nums)) comes from calculating GCD. In practice, D is much smaller than N and max(nums).
+</thinking>

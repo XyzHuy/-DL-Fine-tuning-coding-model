@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a shuffled list of numbers that are the result of combining two arrays, 'lower' and 'higher', which were formed by subtracting and adding a constant 'k' to an original array 'arr', reconstruct the original array 'arr'.
+2. Problem type / algorithm category: Array manipulation, brute-force with optimization, constructive algorithm.
+3. Step-by-step approach: Sort the input 'nums'. Iterate through possible values of 'k' by considering pairs of numbers from the sorted 'nums', specifically `nums[i]` and `nums[0]`. For each potential 'k', attempt to construct the original array 'arr' by checking if `num + k` can form a valid 'arr' element such that `num` is in 'lower' and `num + 2*k` is in 'higher' (and both are present in the input). Use a counter to track frequencies. If a valid 'arr' of size n/2 is formed, return it.
+4. Edge cases: k must be positive. The difference between `nums[i]` and `nums[0]` must be even to yield an integer k. The input array size is always even and at least 2. Duplicate numbers in the input array need careful handling using counts.
+5. Time and space complexity: O(N^2 log N) time due to sorting and iterating through N elements for each of the N possible k candidates, with O(N) for counter operations within the loop. O(N) space for the counter and the result array.
+</thinking>

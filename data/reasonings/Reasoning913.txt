@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Two players, Mouse and Cat, play a game on a graph. The goal is to determine the winner (Mouse, Cat, or Draw) assuming optimal play. The Mouse starts at node 1, the Cat at node 2, and the Hole is at node 0.
+2. Problem type / algorithm category: Game theory, graph traversal, dynamic programming, topological sort.
+3. Step-by-step approach: The solution uses a topological sort approach combined with dynamic programming. It initializes a 3D array `ans` to store the state (win/lose/draw) for each combination of Mouse position, Cat position, and turn. The code then initializes the queue with the immediate win conditions (Mouse at hole, Cat at Mouse). It iteratively processes the queue, updating the `ans` array based on whether previous states can lead to a win or a draw. The `degree` array keeps track of the number of possible moves from each state, and when it reaches 0, it means all possible moves lead to a loss for that player.
+4. Edge cases: The Cat cannot enter the Hole (node 0). If the Cat and Mouse occupy the same node, the Cat wins. If a position is repeated with the same player's turn, the game is a draw.
+5. Time and space complexity: Time complexity is O(N^3), where N is the number of nodes in the graph. Space complexity is O(N^2), due to the `ans` and `degree` arrays.
+</thinking>

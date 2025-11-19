@@ -1,0 +1,11 @@
+<thinking>
+1. Problem summary: Determine if an array can be split into three contiguous non-empty subarrays, where the sum of elements in each subarray is equal.
+
+2. Problem type / algorithm category: Array, Greedy, Prefix Sum.
+
+3. Step-by-step approach: The core idea is to first determine the target sum for each of the three parts. If the total sum of the array is not divisible by 3, it's impossible, so we return false. The target sum for each part is the total sum divided by 3. Then, we iterate through the array, accumulating a running sum. Whenever this running sum equals the target, we have found a valid part. We count how many such parts we can find. If we find three or more parts, we can group the third part and anything after it to form the final valid third partition, so we can return true.
+
+4. Edge cases: The primary edge case is when the total sum is not divisible by 3, which is handled by an initial check. Another case is when the target sum is zero; the greedy search for segments summing to zero correctly identifies valid non-empty partitions like [1, -1]. The constraint that partitions must be non-empty is naturally handled by the greedy approach, as each new part must contain at least one element.
+
+5. Time and space complexity: The time complexity is O(N) because we perform a single pass to calculate the total sum and another single pass to find the partitions. The space complexity is O(1) as we only use a constant amount of extra space for variables like total sum, target, and the part counter.
+</thinking>

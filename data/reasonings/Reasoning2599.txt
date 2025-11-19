@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations by moving elements to the end to ensure all prefix sums are non-negative.
+2. Problem type / algorithm category: Greedy with a min-heap.
+3. Step-by-step approach: Iterate through the array, maintaining the current prefix sum. If the prefix sum becomes negative, identify the smallest element that contributed to this negativity (which must be negative itself) and conceptually move it to the end. This is achieved by using a min-heap to track negative numbers encountered so far, and when a prefix sum dips below zero, we remove the smallest negative number from consideration (which is the smallest element overall if we moved it) by popping it from the heap and adjusting the prefix sum, incrementing the operation count.
+4. Edge cases: All numbers are positive (no operations needed), array length is 1. The problem guarantees a solution is always possible.
+5. Time and space complexity: Time O(N log N) due to heap operations, Space O(N) for the min-heap.
+</thinking>

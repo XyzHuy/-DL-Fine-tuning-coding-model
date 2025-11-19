@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers where each element represents the maximum jump length from that position, find the minimum number of jumps required to reach the last index.
+2. Problem type / algorithm category: Greedy algorithm, dynamic programming can also be used but is less efficient.
+3. Step-by-step approach: Iterate through the array, keeping track of the farthest reachable index and the current jump's end. Increment the jump count when the current index reaches the current jump's end, and update the current jump's end to the farthest reachable index.
+4. Edge cases: If the array has only one element, return 0. The problem statement guarantees that the last index is reachable.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we use a constant amount of extra space.
+</thinking>

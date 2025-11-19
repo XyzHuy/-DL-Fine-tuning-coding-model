@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a directed graph that was originally a rooted tree with one extra edge added, the task is to find and return the redundant edge that, when removed, restores the rooted tree structure.
+2. Problem type / algorithm category: Graph theory, directed graphs, union-find, cycle detection.
+3. Step-by-step approach: First, check if there is a node with two parents. If so, identify the two edges pointing to that node. Then, use the union-find algorithm to detect cycles. If a cycle is detected before processing the second edge pointing to the doubly-parented node, remove the first edge. Otherwise, remove the second edge. If there is no node with two parents, use the union-find algorithm to find the edge that creates a cycle.
+4. Edge cases: A node having two parents; a cycle forming without a node having two parents; multiple possible solutions - return the last one.
+5. Time and space complexity: Time complexity is O(N), where N is the number of edges. Space complexity is O(N) due to the parent array in the union-find algorithm and the indegree array.
+</thinking>

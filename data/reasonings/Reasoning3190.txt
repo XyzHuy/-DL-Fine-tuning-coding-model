@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make all array elements divisible by 3 by adding or subtracting 1.
+2. Problem type / algorithm category: Greedy, Number Theory (Modulo Arithmetic).
+3. Step-by-step approach: Count occurrences of numbers with remainders 1 and 2 when divided by 3. Calculate the cost to convert all remainder 1 numbers to 0s (1 op each) and remainder 2 numbers to 0s (1 op each). Calculate the cost to convert all remainder 1 numbers to remainder 2s (2 ops each) and remainder 2 numbers to remainder 1s (2 ops each). Return the minimum of these two costs.
+4. Edge cases: An array where all elements are already divisible by 3 requires 0 operations.
+5. Time and space complexity: Time O(N), Space O(1).
+</thinking>

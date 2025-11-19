@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign people to groups based on their specified group size, ensuring each person is in exactly one group of the correct size.
+2. Problem type / algorithm category: Grouping, Hash Map.
+3. Step-by-step approach: Iterate through each person, storing their ID in a list associated with their required group size using a hash map. Then, iterate through the hash map, and for each group size, divide the list of people into chunks of that size, forming the final groups.
+4. Edge cases: The input guarantees a valid solution exists. Constraints on n and groupSizes[i] are within reasonable limits, so no specific complex edge cases are identified beyond standard list processing.
+5. Time and space complexity: O(N) time complexity because each person is processed twice. O(N) space complexity to store the mapping and the result.
+</thinking>

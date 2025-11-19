@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum number of parenthesis insertions needed to make a given parenthesis string valid.
+2. Problem type / algorithm category: String manipulation, stack (implicitly using counters).
+3. Step-by-step approach: Iterate through the string, maintaining counters for needed open and close parentheses. If an opening parenthesis is encountered, increment the open counter. If a closing parenthesis is encountered, decrement the open counter if it's positive, otherwise increment the close counter. The sum of the open and close counters is the result.
+4. Edge cases: Empty string (should return 0), string with only opening parentheses, string with only closing parentheses, balanced string (should return 0).
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(1), as we only use a constant amount of extra space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of valid words in a given sentence string. A valid word adheres to specific rules regarding letters, hyphens, and punctuation.
+2. Problem type / algorithm category: String processing, pattern matching, validation.
+3. Step-by-step approach: Split the sentence into tokens by spaces. For each token, check if it meets the criteria for a valid word: no digits, at most one hyphen surrounded by letters, and at most one punctuation mark at the very end. Count the tokens that satisfy all conditions.
+4. Edge cases: Tokens consisting only of punctuation, tokens with hyphens at the beginning or end, tokens with multiple hyphens or punctuation, tokens with digits, empty tokens (handled by split).
+5. Time and space complexity: Time complexity is O(N*L) where N is the number of tokens and L is the average length of a token, as each token is iterated over. Space complexity is O(N*L) for storing tokens, or O(N) if considering only the extra space used for counts.
+</thinking>

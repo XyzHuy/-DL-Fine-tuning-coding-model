@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring in a given string that contains at most k distinct characters.
+2. Problem type / algorithm category: Sliding window, Hash map.
+3. Step-by-step approach: Use a sliding window to iterate through the string. Use a hash map to store the characters and their rightmost index in the current window. When the number of distinct characters in the window exceeds k, remove the leftmost character from the window and update the left pointer of the window. Update the maximum length of the substring encountered so far.
+4. Edge cases: If k is 0, return 0. The string can be empty or contain only one character.
+5. Time and space complexity: Time complexity is O(n) because each character is visited at most twice. Space complexity is O(k) because the hash map stores at most k distinct characters.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of repetitions of string `a` such that string `b` becomes a substring of the repeated `a`. Return -1 if `b` cannot become a substring.
+2. Problem type / algorithm category: String manipulation, substring search.
+3. Step-by-step approach: Calculate the minimum repetitions needed. Iterate from `min_repeats` to `min_repeats + 1` and check if `b` is a substring of `a` repeated `repeats` times. Return `repeats` if it is found, otherwise return -1.
+4. Edge cases: Empty strings (handled implicitly as lengths are used), cases where b is longer than a, cases where no repetition makes b a substring.
+5. Time and space complexity: O(N*M) time complexity, where N is the number of repetitions and M is the length of `a`, due to the substring check (`in` operator). O(N*len(a)) space complexity due to creating the repeated string `a * repeats`.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays whose elements' greatest common divisor (GCD) equals k.
+2. Problem type / algorithm category: Brute Force, Number Theory (GCD).
+3. Step-by-step approach: Iterate through all possible subarrays using nested loops. For each subarray, compute the GCD of its elements. If the GCD equals k, increment a counter. Optimization: if the GCD becomes less than k, break the inner loop early.
+4. Edge cases: Empty array (not possible by constraints), single element array, k larger than any element, k equal to an element.
+5. Time and space complexity: Time complexity is O(n^2 * log(max(nums))), where n is the length of nums, due to nested loops and GCD calculation. Space complexity is O(1).
+</thinking>

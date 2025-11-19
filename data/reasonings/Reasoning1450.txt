@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count students doing homework at a specific time, given their start and end times.
+2. Problem type / algorithm category: Iteration, Linear Scan.
+3. Step-by-step approach: Iterate through each student's start and end time. For each student, check if the queryTime falls within their homework interval [startTime[i], endTime[i]] inclusive. Increment a counter if it does.
+4. Edge cases: Empty input arrays (though constraints state length >= 1), queryTime exactly at start or end time, all students busy or none busy.
+5. Time and space complexity: Time complexity is O(n) where n is the number of students. Space complexity is O(1).
+</thinking>

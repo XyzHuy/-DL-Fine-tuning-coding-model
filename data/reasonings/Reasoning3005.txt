@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count occurrences of elements that have the highest frequency in a given array of positive integers.
+2. Problem type / algorithm category: Frequency counting, Hash Map (or Counter).
+3. Step-by-step approach: 1. Count the frequency of each number using a hash map (Counter). 2. Find the maximum frequency value among all counts. 3. Iterate through the frequencies again and sum up the counts of all numbers that match the maximum frequency.
+4. Edge cases: An array with all unique elements, an array with all duplicate elements, an array with a single element.
+5. Time and space complexity: Time complexity is O(N) where N is the number of elements in nums, for counting frequencies and then iterating. Space complexity is O(K) where K is the number of unique elements in nums, to store frequencies.
+</thinking>

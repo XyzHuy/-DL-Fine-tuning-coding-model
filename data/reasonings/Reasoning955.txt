@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of columns to delete from a list of strings of equal length such that the remaining rows are lexicographically sorted.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Iterate through each column. For each column, check if deleting it would make the rows lexicographically sorted up to that column. If deleting the column is necessary, increment the deletion count. Otherwise, update the `sorted_until` array to keep track of which rows are already sorted.
+4. Edge cases: Empty input list or empty strings in the list. All rows are already sorted. All rows are reverse sorted.
+5. Time and space complexity: Time: O(n*m) where n is the number of strings and m is the length of each string. Space: O(n) to store the sorted_until array.
+</thinking>

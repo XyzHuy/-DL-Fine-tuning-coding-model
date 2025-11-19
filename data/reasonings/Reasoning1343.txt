@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays of size k with an average greater than or equal to a given threshold.
+2. Problem type / algorithm category: Sliding window.
+3. Step-by-step approach: Calculate the target sum (k * threshold). Compute the sum of the first k elements. Iterate through the rest of the array, maintaining a sliding window sum by subtracting the element leaving the window and adding the element entering. Increment a counter if the current window sum is greater than or equal to the target sum.
+4. Edge cases: Array length equal to k, empty array (not possible by constraints), threshold of 0.
+5. Time and space complexity: O(n) time, O(1) space.
+</thinking>

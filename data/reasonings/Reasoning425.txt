@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all possible word squares that can be formed using a given list of unique words, where the kth row and column read the same string.
+2. Problem type / algorithm category: Backtracking, Trie (prefix search).
+3. Step-by-step approach: Build a prefix map to find candidate words. Use backtracking to explore possible word squares, pruning branches when the current prefix doesn't lead to any valid word.
+4. Edge cases: Empty input list, words of different lengths, no possible word squares.
+5. Time and space complexity: Time complexity is difficult to determine precisely but is roughly O(N * 4^L) where N is the number of words and L is the length of each word. Space complexity is O(N * L) for the prefix map and the recursion stack.
+</thinking>

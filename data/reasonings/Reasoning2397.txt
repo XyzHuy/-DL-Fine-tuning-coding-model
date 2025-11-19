@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix and an integer numSelect, find the maximum number of rows that can be covered by selecting exactly numSelect columns. A row is covered if all its 1s are in selected columns, or if it contains no 1s.
+2. Problem type / algorithm category: Combinatorial search, brute force.
+3. Step-by-step approach: Iterate through all possible combinations of numSelect columns. For each combination, check how many rows are covered. A row is covered if for every column j, either matrix[i][j] is 0 or column j is selected. Keep track of the maximum number of covered rows found.
+4. Edge cases: Rows with all zeros are always covered. numSelect equal to n (all columns) will cover all rows that don't have any 1s outside the selected columns (which would be all of them if numSelect is n).
+5. Time and space complexity: Time complexity is O(C(n, k) * m * n), where C(n, k) is the number of combinations of n items taken k at a time, m is the number of rows, and n is the number of columns. Space complexity is O(k) for storing a combination.
+</thinking>

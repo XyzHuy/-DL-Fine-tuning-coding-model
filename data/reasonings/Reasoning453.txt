@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves to make all elements in an array equal, where a move consists of incrementing n-1 elements by 1.
+2. Problem type / algorithm category: Array manipulation, Math.
+3. Step-by-step approach: Find the minimum element in the array. The number of moves is the sum of the differences between each element and the minimum element. Incrementing n-1 elements is equivalent to decrementing one element. So the target is the minimum element of the array.
+4. Edge cases: Empty array, array with only one element, array with all elements equal. The problem states 1 <= nums.length, so the array is never empty. If all elements are equal, the answer is 0.
+5. Time and space complexity: Time complexity is O(n) to find the minimum and O(n) to calculate the sum, so O(n) overall. Space complexity is O(1).
+</thinking>

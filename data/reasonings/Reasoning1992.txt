@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify and return the top-left and bottom-right coordinates of all non-adjacent rectangular groups of 1s (farmland) in a binary matrix.
+2. Problem type / algorithm category: Grid Traversal, Flood Fill (implicit), Matrix Iteration.
+3. Step-by-step approach: Iterate through each cell of the matrix. If a cell is farmland (1) and it's the top-left corner of a new group (i.e., its top and left neighbors are forest (0) or out of bounds), find the extent of the rectangle by expanding downwards and rightwards as long as farmland is encountered. Record the top-left and bottom-right coordinates.
+4. Edge cases: An empty input matrix, a matrix with only forest (0s), a matrix with only farmland (1s), and single-cell farmland groups.
+5. Time and space complexity: Time O(m*n) as each cell is visited at most a constant number of times. Space O(1) if we don't count the output array, otherwise O(k) where k is the number of farmland groups.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of right triangles formed by three '1' cells in a 2D boolean grid. A right triangle is formed if one cell shares a row with another and a column with the third.
+2. Problem type / algorithm category: Brute Force / Iterative Counting.
+3. Step-by-step approach: Iterate through each cell. If a cell contains a '1', consider it as the potential vertex of a right angle. For this vertex, count '1's in its row (excluding the vertex cell) and '1's in its column (excluding the vertex cell). The number of right triangles with this cell as the right angle is the product of the count of '1's in its row and the count of '1's in its column. Sum these products for all '1' cells.
+4. Edge cases: Grids with all '0's, grids with only one row or column, grids with only a few '1's. The provided solution implicitly handles these by iterating and checking conditions.
+5. Time and space complexity: Time complexity is O(R*C * (R+C)), where R is the number of rows and C is the number of columns, due to nested loops and inner loops for counting row/column elements. Space complexity is O(1) as only a few variables are used.
+</thinking>

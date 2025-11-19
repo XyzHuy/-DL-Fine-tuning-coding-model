@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of indices (i, j) such that i < j and words[i] is a prefix and a suffix of words[j].
+2. Problem type / algorithm category: Brute force, String manipulation.
+3. Step-by-step approach: Iterate through all possible pairs of indices (i, j) where i is less than j. For each pair, check if words[i] is both a prefix and a suffix of words[j] using string startswith and endswith methods. Increment a counter if the condition is met.
+4. Edge cases: Empty input list (not possible due to constraints), lists with one element, identical strings, strings where one is a prefix/suffix of another but not vice-versa.
+5. Time and space complexity: Time complexity is O(N^2 * L), where N is the number of words and L is the maximum length of a word, due to nested loops and string operations. Space complexity is O(1) as only a counter variable is used.
+</thinking>

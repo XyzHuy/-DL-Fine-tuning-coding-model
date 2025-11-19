@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute a given number of candies to a row of people in a round-robin fashion, where each person receives an increasing number of candies in each round, until all candies are distributed. The last person receives any remaining candies.
+2. Problem type / algorithm category: Simulation. We simulate the candy distribution process.
+3. Step-by-step approach: Initialize an array to store the candies received by each person. Iterate through the people, giving each person an increasing number of candies until the total candies are exhausted. The number of candies given is the minimum of the current required candies and the remaining candies.
+4. Edge cases: When candies are exhausted before all people have received candies in a round.
+5. Time and space complexity: Time complexity is O(sqrt(candies)) because the number of rounds is proportional to the square root of candies. Space complexity is O(num_people) to store the result array.
+</thinking>

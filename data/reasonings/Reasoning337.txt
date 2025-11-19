@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree where each node represents a house with a certain amount of money, determine the maximum amount of money that can be robbed without robbing two adjacent houses.
+2. Problem type / algorithm category: Dynamic Programming, Tree Traversal. Specifically, a post-order traversal combined with dynamic programming to avoid recomputation.
+3. Step-by-step approach: Use a recursive depth-first search (DFS) function that returns two values for each node: the maximum amount that can be robbed if the current node is robbed, and the maximum amount that can be robbed if the current node is not robbed. The recursion proceeds from the leaves up to the root. At each node, calculate the two values based on the values returned by the recursive calls on the left and right children. Finally, return the maximum of the two values at the root.
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H = N, so the space complexity can be O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves to determine the critical floor f in a building with n floors using k identical eggs.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a 2D DP array where dp[m][i] represents the maximum number of floors that can be checked with m moves and i eggs. Iterate through moves (m) and eggs (i). For each move, the egg either breaks or doesn't. If it breaks, we have m-1 moves and i-1 eggs to check the floors below. If it doesn't break, we have m-1 moves and i eggs to check floors above. dp[m][i] = dp[m-1][i-1] + dp[m-1][i] + 1. The +1 accounts for the current floor. Iterate the moves until dp[m][k] >= n.
+4. Edge cases: k=1 (linear search), n=1 (1 move), and cases where k is much larger than n.
+5. Time and space complexity: Time complexity is O(kn), where k is the number of eggs and n is the number of floors, and space complexity is O(kn).
+</thinking>

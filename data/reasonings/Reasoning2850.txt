@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize moves to redistribute stones in a 3x3 grid so each cell has one stone, given initial stone counts and adjacency-based moves.
+2. Problem type / algorithm category: Combinatorial Optimization, Backtracking (Depth-First Search).
+3. Step-by-step approach: Identify cells with excess stones and cells needing stones. Use DFS to explore all valid assignments of excess stones to needed cells, calculating Manhattan distance for each move, and find the minimum total moves.
+4. Edge cases: The grid always sums to 9 stones, and is 3x3. Cells with 0 stones need stones, cells with >1 stone have excess. All cells must end with exactly one stone.
+5. Time and space complexity: Time complexity is roughly O(N! * N) where N is the number of stones to move, due to permutations of assignments. Space complexity is O(N) for recursion depth and storing stone positions.
+</thinking>

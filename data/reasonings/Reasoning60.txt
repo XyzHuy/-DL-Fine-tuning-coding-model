@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given n and k, find the kth permutation of the sequence [1, 2, ..., n].
+2. Problem type / algorithm category: Permutation generation, mathematical reasoning.
+3. Step-by-step approach: Calculate factorial values to determine how many permutations start with each digit, iteratively reduce k and construct the permutation sequence.
+4. Edge cases: The constraints specify 1 <= n <= 9 and 1 <= k <= n!.
+5. Time and space complexity: Time complexity is O(n^2) due to the inner loop. Space complexity is O(n) to store the visited array and the answer.
+</thinking>

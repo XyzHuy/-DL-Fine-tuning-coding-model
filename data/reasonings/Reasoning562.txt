@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest line of consecutive 1s in a matrix, where the line can be horizontal, vertical, diagonal, or anti-diagonal.
+2. Problem type / algorithm category: Dynamic programming.
+3. Step-by-step approach: Use a 3D DP array to store the length of consecutive 1s in each of the four directions (horizontal, vertical, diagonal, anti-diagonal). Iterate through the matrix and update the DP array based on the current cell's value and the values of its neighbors in the corresponding direction. Keep track of the maximum length found so far.
+4. Edge cases: Empty matrix, matrix with all 0s, matrix with only one row or column.
+5. Time and space complexity: Time complexity is O(m*n), where m is the number of rows and n is the number of columns. Space complexity is O(m*n) due to the DP array.
+</thinking>

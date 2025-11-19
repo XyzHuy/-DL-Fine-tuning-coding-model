@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of transactions, find the minimum number of transactions required to settle all debts.
+2. Problem type / algorithm category: Depth-First Search (DFS), Backtracking, Graph (Debt Settlement).
+3. Step-by-step approach: Calculate the net balance for each person. Filter out people with zero balance. Use DFS and backtracking to find the minimum number of transactions needed to settle the debts, trying each possible settlement and minimizing the transaction count.
+4. Edge cases: Empty transactions list, cases where the initial balance is already settled (all net balances are 0), transactions that can cancel each other out.
+5. Time and space complexity: O(N!), where N is the number of people with non-zero balance. This is due to the backtracking nature of the solution. Space complexity is O(N) for the call stack and storing the net balances.
+</thinking>

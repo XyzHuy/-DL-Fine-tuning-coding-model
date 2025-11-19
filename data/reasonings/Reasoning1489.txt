@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find critical and pseudo-critical edges in a given undirected connected graph's Minimum Spanning Tree (MST). Critical edges are essential for the MST's weight, while pseudo-critical edges can be part of some MSTs but not all.
+2. Problem type / algorithm category: Graph algorithms, Minimum Spanning Tree (MST), Kruskal's algorithm, Union-Find data structure.
+3. Step-by-step approach: First, compute the MST weight of the original graph. Then, for each edge, iterate: (1) Temporarily remove the edge and recompute the MST. If the MST weight increases or the graph becomes disconnected, the edge is critical. (2) If the edge is not critical, force include it in a new graph and compute its MST. If the MST weight matches the original MST weight, the edge is pseudo-critical.
+4. Edge cases: Graphs with fewer than 2 vertices (not allowed by constraints), disconnected graphs (problem statement guarantees connected), all edges having the same weight (all can be pseudo-critical).
+5. Time and space complexity: Time complexity is dominated by iterating through edges and running MST algorithms (Kruskal's) for each, leading to O(E * (E log E)) or O(E^2 log E). Space complexity is O(E) for storing edges and O(N) for Union-Find.
+</thinking>

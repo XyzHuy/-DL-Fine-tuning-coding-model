@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign extra students to classes to maximize the average pass ratio across all classes.
+2. Problem type / algorithm category: Greedy approach with a priority queue (max heap).
+3. Step-by-step approach: Repeatedly assign an extra student to the class that yields the largest immediate increase in its pass ratio until all extra students are assigned. Calculate the average pass ratio of all classes.
+4. Edge cases: Classes with 100% pass ratio initially, or classes with 0 students initially (though constraints prevent this). All extra students assigned.
+5. Time and space complexity: O(E log N) time and O(N) space, where N is the number of classes and E is the number of extra students.
+</thinking>

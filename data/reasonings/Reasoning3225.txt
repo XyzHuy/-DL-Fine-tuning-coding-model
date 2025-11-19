@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the score by strategically coloring columns, where score is sum of white cells adjacent to black cells.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use DP states representing maximum score ending at a column, considering whether the current column's bottom-most black cell is deeper or shallower than the previous. Prefix sums help calculate column segment sums efficiently.
+4. Edge cases: The grid can be of size 1x1. The problem implies that operations can be performed on any column and any row, meaning all combinations are possible.
+5. Time and space complexity: O(n^3) time due to three nested loops (columns, current row, previous row) and O(n^2) space for prefix sums and DP states.
+</thinking>

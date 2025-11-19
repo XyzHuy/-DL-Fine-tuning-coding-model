@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the number of longest increasing subsequences.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use two arrays, lengths and counts, to store the length of the longest increasing subsequence ending at each index and the number of such subsequences, respectively. Iterate through the input array, and for each element, iterate through the preceding elements. If a preceding element is smaller, update the length and count if a longer subsequence is found, or increment the count if a subsequence of the same length is found. Finally, sum the counts of all subsequences that have the maximum length.
+4. Edge cases: Empty input array.
+5. Time and space complexity: Time complexity is O(n^2), space complexity is O(n).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The goal is to find the length of the longest contiguous subarray that contains at most k zeros. Flipping these zeros to ones would create the longest possible sequence of consecutive ones.
+2. Problem type / algorithm category: This is a classic sliding window problem on an array.
+3. Step-by-step approach: We use a sliding window defined by a left and a right pointer. The right pointer expands the window, and we count the zeros inside it. If the zero count exceeds k, we shrink the window by moving the left pointer forward until the window is valid again. At each step, we update our answer with the maximum valid window size found.
+4. Edge cases: If k is large enough to flip all zeros in the array, the answer is the total length of the array. If the array contains no zeros, the answer is also the array's length. The sliding window approach correctly handles these scenarios.
+5. Time and space complexity: The time complexity is O(N) because each element is visited by the left and right pointers at most once. The space complexity is O(1) as we only use a few variables to store the state.
+</thinking>

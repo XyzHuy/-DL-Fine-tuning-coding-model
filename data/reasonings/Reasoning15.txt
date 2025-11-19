@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find all unique triplets that sum to zero.
+2. Problem type / algorithm category: Two Pointers, Sorting, Array.
+3. Step-by-step approach: First, sort the array. Then, iterate through the array. For each element, use two pointers (left and right) to find two other elements that sum to the negative of the current element. Skip duplicate elements to avoid duplicate triplets.
+4. Edge cases: Empty array, array with fewer than three elements, array with all same elements.
+5. Time and space complexity: Time complexity is O(n^2) due to the nested loops (one loop and two pointers). Space complexity is O(1) or O(n) depending on the sorting algorithm used (in-place vs. creating a new array).
+</thinking>

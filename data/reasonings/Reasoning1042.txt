@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign flower types (1-4) to n gardens such that adjacent gardens (connected by paths) have different flower types, given a list of paths.
+2. Problem type / algorithm category: Graph coloring / Greedy algorithm
+3. Step-by-step approach: Build an adjacency list representing the graph. Iterate through each garden and assign it a flower type that is not used by its neighbors.
+4. Edge cases: Empty paths list, single garden, all gardens connected. The problem guarantees a solution exists, so extensive validation is unnecessary.
+5. Time and space complexity: Time complexity is O(n + e) where n is the number of gardens and e is the number of paths. Space complexity is O(n + e) due to the adjacency list and the answer array.
+</thinking>

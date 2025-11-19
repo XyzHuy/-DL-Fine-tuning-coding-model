@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to construct a target string by concatenating strings from a given list, each with an associated cost.
+2. Problem type / algorithm category: Dynamic Programming, String Matching.
+3. Step-by-step approach: Use dynamic programming where dp[i] represents the minimum cost to form the prefix of target of length i. Iterate through all possible words that can end at index i. If a word matches the suffix of the prefix and its cost plus the minimum cost to form the prefix before the word is less than the current minimum cost for dp[i], update dp[i].
+4. Edge cases: The target string cannot be formed (return -1). Empty input arrays (though constraints disallow). If a word appears multiple times with different costs, use the minimum cost.
+5. Time and space complexity: Time complexity is O(N * M * L) where N is the length of target, M is the number of words, and L is the average length of words. Space complexity is O(N) for the DP table and O(M*L) for the suffix_costs map.
+</thinking>

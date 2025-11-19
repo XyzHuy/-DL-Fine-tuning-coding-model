@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum characters to append to string s to make string t a subsequence of s.
+2. Problem type / algorithm category: Two Pointers, Greedy Approach.
+3. Step-by-step approach: Use two pointers, one for s and one for t. Iterate through s. If s[i] matches t[j], advance j. Always advance i. The remaining characters in t (len(t) - j) are the ones to append.
+4. Edge cases: t is already a subsequence of s (j reaches len(t)), s is empty, t is empty.
+5. Time and space complexity: Time O(len(s) + len(t)), Space O(1).
+</thinking>

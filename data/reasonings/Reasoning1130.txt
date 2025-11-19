@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of leaf node values, construct a binary tree where non-leaf node values are the product of the largest leaf values in its children, and return the minimum sum of non-leaf node values.
+2. Problem type / algorithm category: Dynamic Programming, Tree construction.
+3. Step-by-step approach: Use dynamic programming with memoization. The `dp(left, right)` function computes the minimum cost to construct a tree from the subarray `arr[left:right+1]`. Iterate through all possible split points `i` from `left` to `right-1`, calculate the cost of the current split, and update the minimum cost accordingly.
+4. Edge cases: The base case is when `left >= right`, meaning there are no more nodes to process, so the cost is 0. The input array will always have at least two elements.
+5. Time and space complexity: Time complexity is O(n^3) due to the nested loops and max operations in each recursive call. Space complexity is O(n^2) because of the `lru_cache` storing the results of `dp` for each pair of `(left, right)`.
+</thinking>

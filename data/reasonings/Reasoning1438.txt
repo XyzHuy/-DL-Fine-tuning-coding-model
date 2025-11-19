@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subarray where the difference between the maximum and minimum element is at most limit.
+2. Problem type / algorithm category: Sliding Window with Monotonic Deques.
+3. Step-by-step approach: Use a sliding window with two monotonic deques (one for maximums, one for minimums) to efficiently track the max and min elements within the current window. Expand the window to the right. If the window violates the limit, shrink it from the left.
+4. Edge cases: An empty input array is not possible due to constraints. A limit of 0 implies all elements in the subarray must be identical.
+5. Time and space complexity: O(N) time complexity due to each element being added and removed from deques at most once. O(N) space complexity for the deques in the worst case.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Search for a target value in a rotated sorted array and return its index, or -1 if not found.
+2. Problem type / algorithm category: Binary search in a rotated sorted array.
+3. Step-by-step approach: Use binary search to narrow down the search range. Check if the middle element is in the same sorted portion as the start. If so, check if the target is within that portion. Otherwise, the middle element is in the other sorted portion, so check if the target is in that portion.
+4. Edge cases: Array with one element, target not present in the array.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it's in-place.
+</thinking>

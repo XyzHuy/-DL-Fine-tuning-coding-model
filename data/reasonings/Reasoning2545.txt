@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort rows of a 2D matrix based on the values in a specific column (k) in descending order.
+2. Problem type / algorithm category: Sorting / Custom sort key.
+3. Step-by-step approach: Use a built-in sorting function with a custom key that extracts the element at index k from each row, and specify reverse sorting.
+4. Edge cases: The matrix could be empty or have only one row, or k could be the first or last column.
+5. Time and space complexity: Time complexity is O(m log m * n) for comparison-based sorts if row comparison is O(n), or O(m log m) if element access is O(1). Space complexity is O(m) or O(n) depending on the sorting algorithm implementation (e.g., for temporary storage).
+</thinking>

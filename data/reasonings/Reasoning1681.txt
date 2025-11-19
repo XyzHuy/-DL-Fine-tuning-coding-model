@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute an integer array into k subsets of equal size, ensuring no duplicate elements within a subset. Minimize the sum of incompatibilities (max - min) across all subsets.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking, Combinatorial Optimization.
+3. Step-by-step approach: First, precompute the incompatibility for all valid subsets of size n/k that contain unique elements. Then, use DP where dp[mask] represents the minimum incompatibility for elements represented by the bitmask. Iterate through masks, and for each state, try adding a new valid subset to transition to a new state.
+4. Edge cases: It's impossible to form subsets if the array length is not divisible by k, or if duplicates prevent forming unique-element subsets. The problem statement guarantees divisibility. Duplicates within potential subsets are handled during precomputation.
+5. Time and space complexity: Precomputation is O(2^n * n), and DP is O(3^n). Total time is dominated by DP. Space is O(2^n) for DP table and precomputation table.
+</thinking>

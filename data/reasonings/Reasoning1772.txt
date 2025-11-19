@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort product features by their popularity (number of responses containing them) in descending order, using their original index as a tie-breaker.
+2. Problem type / algorithm category: Sorting, Counting, String Manipulation.
+3. Step-by-step approach: Map features to their original indices. For each response, split it into words and use a set to count unique features present. Aggregate these counts across all responses. Finally, sort the original features based on their aggregated counts (descending) and original indices (ascending).
+4. Edge cases: Empty responses list, features not present in any response, features appearing multiple times in a single response (handled by using a set for each response).
+5. Time and space complexity: Time complexity is dominated by processing responses and sorting. Space complexity is for storing feature counts and indices.
+</thinking>

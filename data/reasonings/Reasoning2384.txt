@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the largest palindromic integer string using digits from a given input string, without leading zeros.
+2. Problem type / algorithm category: String manipulation, greedy approach, frequency counting.
+3. Step-by-step approach: Count digit frequencies, build the left half by pairing digits from largest to smallest, identify the largest single middle digit (if any), and then construct the palindrome. Handle potential leading zeros in the constructed left half.
+4. Edge cases: Input string with only zeros, input string yielding an empty left half, single digit input.
+5. Time and space complexity: O(N) time due to frequency counting and string construction, O(N) space for storing counts and the resulting string, where N is the length of the input string.
+</thinking>

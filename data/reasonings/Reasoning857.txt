@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to hire k workers, ensuring each worker receives at least their minimum wage and pay is proportional to quality.
+2. Problem type / algorithm category: Greedy algorithm, heap (priority queue).
+3. Step-by-step approach: Calculate wage/quality ratios, sort workers by this ratio, iterate through sorted workers maintaining a max-heap of quality values of the k currently considered workers and tracking the total quality to calculate total cost.
+4. Edge cases: Empty quality or wage lists, k greater than the number of workers, zero quality values (handled by the problem constraints), floating-point precision.
+5. Time and space complexity: Time complexity is O(n log n) for sorting and heap operations, space complexity is O(n) for storing the ratios and the heap.
+</thinking>

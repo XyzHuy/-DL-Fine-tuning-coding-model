@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a graph and queries, determine for each query if a path exists between two nodes where all edges have a distance strictly less than a given limit.
+2. Problem type / algorithm category: Graph traversal, Union-Find data structure.
+3. Step-by-step approach: Sort edges by distance and queries by their limit. Iterate through sorted queries. For each query, add all edges with distance less than the query's limit to a Union-Find structure. Then, check if the two query nodes belong to the same set in the Union-Find structure.
+4. Edge cases: Graph with no edges, queries with limits smaller than any edge distance, disconnected components in the graph, multiple edges between the same pair of nodes.
+5. Time and space complexity: Time O(E log E + Q log Q + (E+Q) * alpha(N)), Space O(N + E + Q), where E is the number of edges, Q is the number of queries, N is the number of nodes, and alpha is the inverse Ackermann function.
+</thinking>

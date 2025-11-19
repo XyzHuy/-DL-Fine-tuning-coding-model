@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to equalize sums of two integer arrays by changing values (1-6).
+2. Problem type / algorithm category: Greedy algorithm, Difference calculation.
+3. Step-by-step approach: Calculate initial sums, ensure one sum is smaller. Generate all possible maximum value changes (increase in smaller array, decrease in larger array). Sort these changes greedily in descending order. Iterate through sorted changes, subtracting from the sum difference and counting operations until the difference is zero or negative.
+4. Edge cases: Initial sums are already equal (0 operations). Impossible to equalize sums even with all possible changes.
+5. Time and space complexity: Time O(N log N + M log M) due to sorting, Space O(N + M) for storing changes.
+</thinking>

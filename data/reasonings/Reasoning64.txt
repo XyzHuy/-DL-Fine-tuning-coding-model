@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum path sum from the top-left to the bottom-right corner of a grid, only moving down or right.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Modify the input grid in place to store the minimum path sum to each cell. First, initialize the first row and column. Then, for each remaining cell, add the minimum of the path from above or the path from the left. Finally, return the value in the bottom-right cell.
+4. Edge cases: Empty grid.
+5. Time and space complexity: Time: O(m*n), Space: O(1) (in-place modification).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if it's possible to finish all courses given the number of courses and prerequisites.
+2. Problem type / algorithm category: Graph, Topological Sort, Kahn's Algorithm, Directed Acyclic Graph (DAG) detection.
+3. Step-by-step approach: Build an adjacency list representing the courses and their prerequisites. Calculate the in-degree of each course. Add courses with no prerequisites to a queue. While the queue is not empty, remove a course, decrement the in-degree of its neighbors, and add neighbors with an in-degree of 0 to the queue. Finally, check if all courses have been visited.
+4. Edge cases: Empty prerequisites list (no dependencies), cyclic dependencies between courses (making it impossible to finish all courses).
+5. Time and space complexity: Time complexity is O(V+E), where V is the number of courses and E is the number of prerequisites. Space complexity is O(V+E) for storing the graph and in-degree array.
+</thinking>

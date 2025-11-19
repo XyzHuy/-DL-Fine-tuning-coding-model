@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest continuous strictly increasing subsequence in an array.
+2. Problem type / algorithm category: Array traversal, dynamic programming (although a simple iterative approach suffices).
+3. Step-by-step approach: Iterate through the array, keeping track of the current continuous increasing subsequence length. If the current element is greater than the previous, increment the current length and update the maximum length found so far. If not, reset the current length to 1.
+4. Edge cases: Empty array (should return 0 based on constraints), array with all equal elements (should return 1), single element array (should return 1).
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) because we only use a few constant extra variables.
+</thinking>

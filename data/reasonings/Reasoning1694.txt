@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reformat a phone number string by removing spaces and dashes, then grouping digits into blocks of three, with special handling for the last 2, 3, or 4 digits.
+2. Problem type / algorithm category: String manipulation, pattern matching, greedy approach.
+3. Step-by-step approach: First, clean the input string by removing all spaces and dashes. Then, iteratively extract blocks of three digits from the beginning of the cleaned string until four or fewer digits remain. Finally, handle the remaining digits: if four remain, split them into two blocks of two; otherwise, keep them as a single block. Join all extracted blocks with dashes.
+4. Edge cases: The input string has at least two digits. The number of remaining digits after forming blocks of three can be 2, 3, or 4.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the input string, due to string cleaning and processing. Space complexity is O(N) for storing the cleaned string and the resulting blocks.
+</thinking>

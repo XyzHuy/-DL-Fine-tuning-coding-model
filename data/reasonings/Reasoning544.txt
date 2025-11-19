@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given n teams, pair them in rounds such that the strongest team plays the weakest team in each round until only one match remains.
+2. Problem type / algorithm category: String manipulation, iterative pairing.
+3. Step-by-step approach: Initialize a list of team strings. Iteratively pair the teams, creating new strings representing matches. Halve the number of teams in each round until only one string remains.
+4. Edge cases: The problem states that n is always a power of 2.
+5. Time and space complexity: Time complexity is O(n log n) due to the halving of the problem size in each iteration. Space complexity is O(n) to store the intermediate team pairings.
+</thinking>

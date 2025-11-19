@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of consecutive identical characters ('T' or 'F') achievable by changing at most k characters in a given string.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: For each target character ('T' and 'F'), use a sliding window to find the longest subarray where the count of the other character is at most k. The maximum length obtained from both targets is the answer.
+4. Edge cases: The string length can be 1, k can be equal to the string length, and the string can consist of all identical characters.
+5. Time and space complexity: Time O(N) because the sliding window iterates through the string twice. Space O(1) as only a few variables are used.
+</thinking>

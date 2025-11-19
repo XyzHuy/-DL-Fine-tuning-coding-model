@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Multiply two non-negative integers represented as strings without using built-in big integer libraries or converting the strings to integers directly.
+2. Problem type / algorithm category: String manipulation, arithmetic.
+3. Step-by-step approach: Reverse the strings, multiply digit by digit and store the results in an array, handle carry-over, remove leading zeros, and convert the array back into a string.
+4. Edge cases: If either number is "0", return "0". The numbers can have different lengths. Need to handle leading zeros in the result.
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the lengths of the input strings. Space complexity is O(m+n) to store the result.
+</thinking>

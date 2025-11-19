@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree and a desired pre-order traversal (voyage), determine the minimum number of node flips (swapping left and right children) required to match the voyage. Return the values of the flipped nodes or [-1] if impossible.
+2. Problem type / algorithm category: Tree traversal (pre-order), Depth-First Search (DFS).
+3. Step-by-step approach: Perform a DFS traversal of the tree. Compare the current node's value with the corresponding value in the voyage. If they don't match, return False. If the current node has both left and right children, and the right child's value matches the next value in voyage while the left child's does not, then flip the current node (swap left and right children) and record the current node's value. Recursively call DFS on the left and right subtrees.
+4. Edge cases: Empty tree, voyage doesn't match the tree's structure even with flips, cases where no flips are needed, a node having only one child.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursion stack in DFS. In the worst case (skewed tree), H can be N, leading to O(N) space complexity. In the average case (balanced tree), H is log(N), leading to O(log(N)) space complexity.
+</thinking>

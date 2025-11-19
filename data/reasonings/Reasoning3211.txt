@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate all binary strings of length n where no two consecutive characters are '0'.
+2. Problem type / algorithm category: Backtracking/Recursion.
+3. Step-by-step approach: Start with initial valid strings of length 1 ("0" and "1"). Recursively build longer strings by appending '0' or '1'. If the last character of the current string is '1', we can append either '0' or '1'. If the last character is '0', we can only append '1' to avoid "00". Base case is when the string length equals n.
+4. Edge cases: The smallest input n=1 needs to be handled separately as the recursive logic might not apply directly for the first character.
+5. Time and space complexity: The number of valid strings can grow exponentially. Time complexity is roughly O(2^n * n) due to string concatenations and O(2^n) states explored. Space complexity is O(n) for the recursion depth and O(2^n * n) for storing results.
+</thinking>

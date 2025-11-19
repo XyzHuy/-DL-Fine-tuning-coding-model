@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest contiguous subarray whose elements' bitwise AND equals the maximum possible bitwise AND achievable by any subarray.
+2. Problem type / algorithm category: Array traversal, Bitwise operations (though not explicitly used in the final logic for this specific optimization), Greedy.
+3. Step-by-step approach: First, determine the maximum value present in the entire array. This maximum value will be the target bitwise AND for our subarrays. Then, iterate through the array, maintaining a count of consecutive elements that are equal to this maximum value. Reset the count whenever an element not equal to the maximum value is encountered. Keep track of the maximum count found during this iteration.
+4. Edge cases: An array with all identical elements; an array where the maximum value appears only once.
+5. Time and space complexity: Time complexity is O(n) due to a single pass to find the maximum and another single pass to find the longest sequence. Space complexity is O(1) as only a few variables are used for tracking.
+</thinking>

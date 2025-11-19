@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string of tiles, find the number of distinct non-empty sequences that can be formed using the tiles.
+2. Problem type / algorithm category: Backtracking / Depth-First Search (DFS) with permutations.
+3. Step-by-step approach: Sort the tiles to handle duplicate tiles efficiently. Use backtracking to explore all possible sequences. In the backtrack function, iterate through the tiles. If a tile is the same as the previous one, skip it to avoid duplicates. Recursively call the backtrack function with the current tile added to the path and the remaining tiles. Increment a counter for each valid sequence.
+4. Edge cases: Input string can be empty or contain duplicate characters. The length of the input string is limited to 7.
+5. Time and space complexity: Time complexity is O(N!), where N is the length of the input `tiles`. Space complexity is O(N) due to the recursion depth and storing the path.
+</thinking>

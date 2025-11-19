@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the largest island size after changing at most one 0 to 1.
+2. Problem type / algorithm category: Graph traversal (DFS), island detection.
+3. Step-by-step approach: First, identify and label each island with a unique ID and calculate its size using DFS. Then, iterate through each 0 in the grid, and for each 0, check its adjacent cells. If adjacent cells are part of islands, sum up the sizes of the connected islands and add 1 (for the changed 0). Update the maximum island size found so far.
+4. Edge cases: Empty grid, grid with no zeros, grid where changing a zero doesn't increase island size, grid with only one island.
+5. Time and space complexity: Time complexity is O(N^2) where N is the size of the grid. Space complexity is O(N^2) in the worst case to store the island sizes and for the recursion stack during DFS.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest index in an array where the sum of elements to its left equals the sum of elements to its right.
+2. Problem type / algorithm category: Array traversal, prefix sums.
+3. Step-by-step approach: Calculate the total sum of the array. Iterate through the array maintaining a `left_sum`. For each index, subtract the current element from the total sum to get the `right_sum`. If `left_sum` equals `right_sum`, return the current index. Otherwise, add the current element to `left_sum` for the next iteration.
+4. Edge cases: Array with one element, array with no middle index, indices 0 and n-1 acting as middle indices.
+5. Time and space complexity: O(n) time complexity due to a single pass through the array. O(1) space complexity as only a few variables are used.
+</thinking>

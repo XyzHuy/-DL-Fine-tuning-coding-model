@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D matrix, repeatedly find the largest element in each row, remove them, and add the maximum of these removed elements to a running score until the matrix is empty.
+2. Problem type / algorithm category: Matrix manipulation, sorting, greedy approach.
+3. Step-by-step approach: First, sort each row of the matrix in descending order. Then, iterate through the columns. In each column iteration, find the maximum element across all rows at that column index. Add this maximum to the total score.
+4. Edge cases: A matrix with a single row, a matrix with a single column, a matrix with all identical elements, and small matrices are handled by the general logic.
+5. Time and space complexity: Time complexity is dominated by sorting each row, O(M * N log N) where M is the number of rows and N is the number of columns. Space complexity is O(1) if sorting is done in-place, or O(N) for recursion stack space if a recursive sort is used.
+</thinking>

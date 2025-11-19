@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest position on a number line that is illuminated by the maximum number of street lamps. Each lamp has a position and a range.
+2. Problem type / algorithm category: Sweep line algorithm, event-based processing.
+3. Step-by-step approach: Represent each lamp's coverage as an interval. Create start and end events for these intervals. Sort all events by position. Iterate through sorted events, maintaining a current brightness count. Update max brightness and corresponding smallest position when current brightness exceeds max.
+4. Edge cases: No lights, lights with zero range, overlapping intervals, very large coordinates.
+5. Time and space complexity: Time is O(N log N) due to sorting events, space is O(N) for storing events.
+</thinking>

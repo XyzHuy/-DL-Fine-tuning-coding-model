@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum area of a rectangular piece of cake after applying horizontal and vertical cuts, and return the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Greedy approach, Sorting.
+3. Step-by-step approach: Sort the horizontal cuts and add the top and bottom edges (0 and h). Find the maximum difference between consecutive horizontal cuts. Sort the vertical cuts and add the left and right edges (0 and w). Find the maximum difference between consecutive vertical cuts. The maximum area is the product of these two maximum differences, modulo 10^9 + 7.
+4. Edge cases: The constraints guarantee at least one horizontal and one vertical cut. The cake dimensions and cut positions are within reasonable bounds. Sorting handles the order of input cuts.
+5. Time and space complexity: Time complexity is dominated by sorting, O(H log H + V log V), where H and V are the number of horizontal and vertical cuts, respectively. Space complexity is O(H + V) for storing the sorted cuts.
+</thinking>

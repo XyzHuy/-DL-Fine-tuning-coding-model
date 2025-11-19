@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of non-negative integers, arrange them to form the largest possible number, returning it as a string.
+2. Problem type / algorithm category: Sorting, String comparison
+3. Step-by-step approach: Convert integers to strings, sort strings using a custom comparator that compares the concatenation of two numbers in both orders (x+y vs y+x), join sorted strings and handle leading zeros.
+4. Edge cases: Empty input list, list with only zeros, large numbers requiring string representation.
+5. Time and space complexity: Time: O(n log n) due to sorting. Space: O(n) for storing strings.
+</thinking>

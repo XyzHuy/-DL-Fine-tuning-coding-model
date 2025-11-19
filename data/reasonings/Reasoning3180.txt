@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize total reward by picking unmarked items, only if their value exceeds current total reward.
+2. Problem type / algorithm category: Dynamic Programming with Memoization (Top-Down) and Sorting.
+3. Step-by-step approach: Sort reward values. Use a recursive function with memoization (dfs) that takes the current total reward (x) as input. Inside dfs, find the first reward value greater than x. Iterate through rewards greater than x, for each, add its value to the result of a recursive call with updated total reward (x + current reward value).
+4. Edge cases: Empty rewardValues array (though constraints prevent this), all reward values are smaller than initial reward 0 (not possible due to constraints).
+5. Time and space complexity: Time O(N log N + N * Sum(rewards)) without memoization optimization, but with memoization and sorted array, effectively O(N log N + N * MaxReward) due to bisect_right and cache, Space O(N + MaxReward) for recursion stack and memoization cache.
+</thinking>

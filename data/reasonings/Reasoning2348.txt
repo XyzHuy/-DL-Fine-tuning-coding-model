@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the total number of subarrays that contain only zeros.
+2. Problem type / algorithm category: Array traversal, Counting.
+3. Step-by-step approach: Iterate through the array, maintain a current streak of consecutive zeros. If a zero is encountered, increment the streak and add the streak length to the total count. If a non-zero is encountered, reset the streak to zero.
+4. Edge cases: An array with no zeros, an array with all zeros, an array with single zeros.
+5. Time and space complexity: Time complexity is O(n) as we iterate through the array once. Space complexity is O(1) as we only use a few extra variables.
+</thinking>

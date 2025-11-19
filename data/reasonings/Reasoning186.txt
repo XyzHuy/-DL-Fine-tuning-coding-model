@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the order of words in a character array in-place, where words are separated by single spaces.
+2. Problem type / algorithm category: String manipulation, in-place reversal.
+3. Step-by-step approach: First reverse the entire array. Then, iterate through the array, identifying individual words (sequences of non-space characters). Reverse each word in-place.
+4. Edge cases: Empty array (though constraints say at least one word exists), single-word array.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the array, due to the reversals. Space complexity is O(1) because it's done in-place.
+</thinking>

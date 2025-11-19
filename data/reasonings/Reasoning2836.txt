@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a receiver array representing ball passes and an integer k, find the maximum sum of player indices visited after k passes, starting from any player.
+2. Problem type / algorithm category: Dynamic Programming with Binary Lifting (or Sparse Table).
+3. Step-by-step approach: Precompute for each player and powers of 2 jumps (1, 2, 4, 8, ...) the player reached and the sum of indices along the path. Then, for each starting player, decompose k into its binary representation and use the precomputed values to quickly calculate the total sum for k passes. Finally, return the maximum sum found.
+4. Edge cases: The receiver array can contain duplicates, and a player can pass the ball to themselves. k can be very large, necessitating an efficient method beyond simple simulation.
+5. Time and space complexity: Time complexity is O(N log K) for precomputation and O(N log K) for querying, resulting in O(N log K) overall. Space complexity is O(N log K) for the DP table.
+</thinking>

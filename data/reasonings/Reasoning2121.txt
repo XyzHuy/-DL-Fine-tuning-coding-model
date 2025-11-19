@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate for each element in an array, the sum of index differences to all other elements with the same value.
+2. Problem type / algorithm category: Array manipulation, Prefix sums, Hashing/Dictionary.
+3. Step-by-step approach: Group indices by their corresponding values using a hash map. For each value group, calculate prefix sums of indices. Then, for each index within the group, compute its total interval sum using the prefix sums to efficiently calculate sums of indices to its left and right.
+4. Edge cases: Elements that appear only once in the array will have a sum of intervals equal to 0. The array can contain duplicate values.
+5. Time and space complexity: Time complexity is O(N) because each element is processed a constant number of times. Space complexity is O(N) to store the index groupings and prefix sums.
+</thinking>

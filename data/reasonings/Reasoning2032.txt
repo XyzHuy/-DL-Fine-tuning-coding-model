@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find distinct elements present in at least two of three given integer arrays.
+2. Problem type / algorithm category: Set operations, Iteration.
+3. Step-by-step approach: Convert each input array into a set to handle duplicates efficiently. Iterate through a possible range of numbers (1 to 100 as per constraints). For each number, check its presence in the three sets and count how many sets contain it. If the count is greater than one, add the number to the result list.
+4. Edge cases: Empty result list if no element appears in at least two arrays. Numbers outside the constraint range (though constraints limit values to 1-100). Duplicate numbers within input arrays are handled by using sets.
+5. Time and space complexity: Time complexity is O(N) where N is the maximum possible value (100) plus the total length of input arrays for set creation. Space complexity is O(N) for storing the sets.
+</thinking>

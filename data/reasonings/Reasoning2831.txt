@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest contiguous subarray of equal elements achievable by deleting at most k elements from the original array.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: Maintain a sliding window [left, right]. For each number encountered at 'right', update its frequency count. Keep track of the most frequent element within the current window. If the number of elements to be deleted (window_size - count_of_most_frequent_element) exceeds k, shrink the window from the 'left' by decrementing the frequency of the element at 'left' and moving 'left' forward. The maximum length of a valid equal subarray is updated at each step.
+4. Edge cases: An empty array (though constraints state nums.length >= 1), k = 0 (no deletions allowed), k = nums.length (all elements can be deleted). The most frequent element logic correctly handles cases where multiple elements have the same highest frequency.
+5. Time and space complexity: Time complexity is O(N) because each element is visited at most twice (once by 'right' and once by 'left'). Space complexity is O(N) in the worst case for the frequency map if all elements are distinct.
+</thinking>

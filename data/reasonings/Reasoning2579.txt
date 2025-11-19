@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given n minutes, calculate the total number of blue cells after a specific coloring process on an infinite grid.
+2. Problem type / algorithm category: Mathematical observation and formula derivation.
+3. Step-by-step approach: Observe the pattern of colored cells for small values of n. Recognize that the number of newly colored cells added each minute forms a pattern, leading to a direct formula.
+4. Edge cases: The constraint n >= 1 means we don't need to consider n=0 or negative values. The formula holds for n=1.
+5. Time and space complexity: O(1) time and O(1) space as it involves a direct calculation.
+</thinking>

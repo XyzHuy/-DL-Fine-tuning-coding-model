@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Color a minimum initial set of triangles red in an equilateral triangle such that a propagation process eventually colors all triangles red. The propagation colors a white triangle red if it has at least two red neighbors.
+2. Problem type / algorithm category: Greedy algorithm, pattern recognition.
+3. Step-by-step approach: The solution identifies a repeating pattern for selecting initial red triangles based on row index modulo 4. For rows (n down to 2), it selectively colors triangles. Specifically, it colors all odd-indexed triangles in a row, then the second triangle, then odd-indexed triangles again, and finally the first triangle of the row, cycling through these patterns.
+4. Edge cases: n=1 would result in only [[1,1]] being colored. The current code handles n=1 by returning [[1,1]]. The loop for i starts from n and goes down to 2, implicitly handling this.
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through rows and potentially appending up to 2*i-1 triangles per row. Space complexity is O(n^2) to store the output list of coordinates.
+</thinking>

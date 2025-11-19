@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a string expression containing digits, '+', '-', '*', '/', '(', and ')' operators, handling operator precedence and integer division.
+2. Problem type / algorithm category: Stack-based expression evaluation, recursion for handling parentheses.
+3. Step-by-step approach: Use a stack to store intermediate results and the current sign. Iterate through the string, building numbers and applying operators based on precedence. Recursively evaluate expressions within parentheses.
+4. Edge cases: Empty string, single numbers, division by zero (handled by integer truncation), and handling the last character of the string.
+5. Time and space complexity: Time complexity is O(n) where n is the length of the string. Space complexity is O(n) due to the stack and recursive calls in the worst-case scenario (nested parentheses).
+</thinking>

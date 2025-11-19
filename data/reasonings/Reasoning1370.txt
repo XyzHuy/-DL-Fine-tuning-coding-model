@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The problem asks to reorder a given string by repeatedly appending the smallest available character and then the largest available character in an alternating ascending and descending manner until all characters are used.
+2. Problem type / algorithm category: Greedy algorithm, character counting, string manipulation.
+3. Step-by-step approach: Count character frequencies. Iterate while the result string is shorter than the original. In each iteration, traverse unique characters in ascending order, appending and decrementing counts. Then, traverse unique characters in descending order, appending and decrementing counts.
+4. Edge cases: String with all same characters, string with only two unique characters. The constraints ensure a non-empty string with lowercase English letters.
+5. Time and space complexity: Time complexity is O(N*C), where N is the length of the string and C is the number of unique characters (at most 26). Space complexity is O(C) for storing character counts and unique characters.
+</thinking>

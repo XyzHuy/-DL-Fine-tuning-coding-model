@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the intersection of two lists of sorted, disjoint closed intervals.
+2. Problem type / algorithm category: Interval intersection, two pointers.
+3. Step-by-step approach: Use two pointers to iterate through both lists simultaneously. Calculate the intersection of the intervals pointed to by the two pointers. Advance the pointer of the interval that ends earlier.
+4. Edge cases: Empty input lists, no overlapping intervals.
+5. Time and space complexity: Time complexity is O(m+n), where m and n are the lengths of the two lists. Space complexity is O(min(m,n)) in the worst case, where almost every interval overlaps, but typically less.
+</thinking>

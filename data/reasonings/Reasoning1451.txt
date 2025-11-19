@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange words in a sentence by their length, preserving original order for same-length words, and ensure the first word is capitalized.
+2. Problem type / algorithm category: String manipulation, Sorting.
+3. Step-by-step approach: Split the sentence into words, convert the first word to lowercase for consistent sorting, sort the words based on length (maintaining original order for ties), capitalize the new first word, and join the words back into a sentence.
+4. Edge cases: A sentence with a single word needs to be handled. The original capitalization of the first word is handled by converting to lowercase and then re-capitalizing.
+5. Time and space complexity: Time complexity is dominated by sorting, which is O(N log N) where N is the number of words. Space complexity is O(N) to store the words.
+</thinking>

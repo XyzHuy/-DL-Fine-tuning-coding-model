@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize ship trips to deliver boxes in order, respecting ship capacity (max boxes, max weight) and port destinations.
+2. Problem type / algorithm category: Dynamic programming with a sliding window/deque optimization.
+3. Step-by-step approach: Use DP where f[i] is min trips for first i boxes. Precompute cumulative weights and port change costs. Use a deque to maintain a sliding window of valid previous states (q[0]) to efficiently calculate f[i] by considering the cost of delivering a segment of boxes.
+4. Edge cases: Empty boxes list (though constraints say 1 <= boxes.length), single box, all boxes fitting in one trip.
+5. Time and space complexity: O(N) time due to single pass and deque operations, O(N) space for DP table and auxiliary arrays.
+</thinking>

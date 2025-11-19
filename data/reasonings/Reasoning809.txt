@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine how many words in a given list can be stretched to match a target string by extending groups of identical characters to be of length 3 or more.
+2. Problem type / algorithm category: String manipulation, pattern matching.
+3. Step-by-step approach: Compress the target string and each word in the input list into groups of (character, count). Then, iterate through the words, comparing their compressed form to the compressed form of the target string. Check if each character matches and if the count in the target string is greater than or equal to the count in the word, and that if the target string count is less than 3 it must match the word's count exactly.
+4. Edge cases: Empty input strings, empty input word lists, counts less than 3 requiring exact matches.
+5. Time and space complexity: Time complexity is O(N*M*K) where N is the number of words, M is the length of the longest word, and K is the length of the string s. Space complexity is O(M+L) where M is the length of s and L is the length of the longest word in words (due to the compress function).
+</thinking>

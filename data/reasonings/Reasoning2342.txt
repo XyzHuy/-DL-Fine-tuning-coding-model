@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of two distinct numbers in an array whose digits sum to the same value.
+2. Problem type / algorithm category: Hashing, Greedy.
+3. Step-by-step approach: Iterate through the array, calculate the sum of digits for each number. Use a hash map to store the largest number encountered so far for each digit sum. If a digit sum is already in the map, update the maximum sum by pairing the current number with the stored maximum. Otherwise, store the current number as the maximum for its digit sum.
+4. Edge cases: No pairs found (return -1), array contains only one element.
+5. Time and space complexity: Time O(N*logM) where N is the number of elements and M is the maximum value of an element, due to digit sum calculation. Space O(K) where K is the number of unique digit sums.
+</thinking>

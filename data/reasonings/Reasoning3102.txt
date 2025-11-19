@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum possible maximum Manhattan distance between any two points after removing exactly one point from a given set of 2D points.
+2. Problem type / algorithm category: Brute Force (naive solution), Optimization (transformed coordinates, geometric properties).
+3. Step-by-step approach: Iterate through each point, temporarily remove it, calculate the maximum Manhattan distance among the remaining points, and keep track of the minimum of these maximum distances. The optimized approach transforms coordinates to simplify finding extreme values and checks critical points.
+4. Edge cases: All points are identical (max distance is 0), small number of points (e.g., 3 points).
+5. Time and space complexity: Naive: O(N^3) time, O(1) space. Optimized: O(N log N) or O(N) time (depending on heap implementation), O(N) space.
+</thinking>

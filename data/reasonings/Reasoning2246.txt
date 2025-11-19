@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest path in a tree where adjacent nodes have different characters.
+2. Problem type / algorithm category: Tree traversal, Depth First Search (DFS).
+3. Step-by-step approach: Build an adjacency list representation of the tree. Perform a DFS starting from the root. For each node, recursively find the longest valid paths in its subtrees. Combine these paths with the current node, ensuring adjacent characters differ, to update a global maximum path length. The DFS function returns the longest valid path starting from the current node and going downwards.
+4. Edge cases: A tree with only one node. All nodes having the same character.
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited once. Space complexity is O(N) for the adjacency list and recursion stack.
+</thinking>

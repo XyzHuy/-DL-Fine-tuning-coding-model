@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of non-empty subarrays of a given array whose sum is divisible by a given integer k.
+2. Problem type / algorithm category: Hashing, Prefix Sum, Modulo Arithmetic.
+3. Step-by-step approach: Iterate through the array, maintaining a prefix sum. At each element, calculate the prefix sum modulo k. Use a hash map to store the frequency of each modulo value encountered so far. If a modulo value is encountered again, it means there is a subarray between the previous occurrence and the current element whose sum is divisible by k. Increment the count accordingly. Account for negative remainders by adding k to them to make them positive.
+4. Edge cases: Empty input array, k=1 (every subarray is divisible), negative numbers in the input, k is larger than the sum of all elements.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input array, due to the single iteration. Space complexity is O(k) in the worst case, where k is the given integer, because the hash map can store at most k distinct modulo values.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two strings are "almost equivalent" by checking if the frequency difference of each character ('a' through 'z') between them is at most 3.
+2. Problem type / algorithm category: Frequency counting, Hash Maps (Dictionaries).
+3. Step-by-step approach: Count character frequencies for both strings. Iterate through all possible lowercase letters ('a' to 'z'). For each letter, calculate the absolute difference between its counts in the two strings. If any difference exceeds 3, return false. If all differences are 3 or less, return true.
+4. Edge cases: Strings can be empty (though constraints say 1 <= n), contain only one type of character, or have identical characters. The comparison should cover all 26 lowercase letters, even if they don't appear in one or both strings.
+5. Time and space complexity: Time complexity is O(N + K) where N is the length of the strings and K is the size of the alphabet (26). Space complexity is O(K) for storing frequency counts.
+</thinking>

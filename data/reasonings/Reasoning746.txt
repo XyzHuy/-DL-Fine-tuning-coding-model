@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to reach the top of a staircase, where you can either climb one or two steps at a time, starting from index 0 or 1.
+2. Problem type / algorithm category: Dynamic Programming
+3. Step-by-step approach: Use dynamic programming to compute the minimum cost to reach each step. dp[i] is the minimum cost to reach step i. The value of dp[i] is the minimum of dp[i-1] + cost[i-1] and dp[i-2] + cost[i-2]. The final result will be dp[n].
+4. Edge cases: Array length 0 or 1, though the constraints guarantee a minimum length of 2.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the cost array. Space complexity is O(n) due to the dp array.
+</thinking>

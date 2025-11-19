@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum possible maximum jump length for a frog to travel from the first stone to the last stone and back to the first, visiting each stone at most once.
+2. Problem type / algorithm category: Greedy algorithm, optimization.
+3. Step-by-step approach: The optimal path involves alternating between the even-indexed stones and odd-indexed stones to minimize the maximum jump. Calculate the maximum jump required for the forward path (first to last) by considering jumps between stones with a step of 2 (e.g., 0->2, 1->3, etc.) and similarly for the backward path (last to first), then take the maximum of these two.
+4. Edge cases: The case where there are only two stones.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the stones. Space complexity is O(1) as only a few variables are used.
+</thinking>

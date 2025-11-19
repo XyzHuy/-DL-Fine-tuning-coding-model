@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary grid, find the minimum swaps of rows and columns to transform it into a chessboard pattern.
+2. Problem type / algorithm category: Grid manipulation, parity check.
+3. Step-by-step approach: First check if a chessboard is possible by verifying the XOR property. Then, calculate the number of swaps needed for rows and columns independently. Finally, combine the swaps and return the result.
+4. Edge cases: Impossible boards due to parity issues, even vs. odd board sizes requiring different calculations, boards that are already valid chessboards (resulting in 0 moves).
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through the board. Space complexity is O(1) as it uses constant extra space.
+</thinking>

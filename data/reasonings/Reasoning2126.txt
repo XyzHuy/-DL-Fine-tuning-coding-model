@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a planet can destroy all given asteroids by colliding with them in any order, gaining mass from destroyed asteroids.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Sort asteroids by mass. Iterate, if current planet mass is less than asteroid mass, return false. Otherwise, add asteroid mass to planet mass. If loop completes, return true.
+4. Edge cases: Empty asteroid list (implicitly handled by loop), initial planet mass too small for any asteroid.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, space complexity is O(1) if sorting is in-place or O(N) if a copy is made.
+</thinking>

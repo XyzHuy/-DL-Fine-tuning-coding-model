@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of widths (max - min) of all non-empty subsequences of an array, modulo 10^9 + 7.
+2. Problem type / algorithm category: Math, Sorting, Subsequences.
+3. Step-by-step approach: Sort the array. For each number at index i, it will be the maximum in 2^i subsequences and the minimum in 2^(n-i-1) subsequences. Calculate the contribution of each number as max - min and sum these contributions, taking the modulo at each step to prevent overflow. Precompute powers of 2 to optimize calculations.
+4. Edge cases: Empty array (not possible based on constraints), single element array. The modulo operation handles large sums.
+5. Time and space complexity: Time: O(n log n) due to sorting. Space: O(n) for storing the powers of 2.
+</thinking>

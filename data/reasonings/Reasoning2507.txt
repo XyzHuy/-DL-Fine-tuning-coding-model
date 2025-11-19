@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, repeatedly replace it with the sum of its prime factors (counting multiplicities) until the value stabilizes, and return this smallest stable value.
+2. Problem type / algorithm category: Number Theory, Prime Factorization, Iterative Process.
+3. Step-by-step approach: Implement a function to calculate the sum of prime factors of a given number. Continuously call this function with the current number, updating the number with the result, until the number no longer changes. Return the stabilized number.
+4. Edge cases: The input n is always a prime number itself (e.g., 3), in which case the sum of prime factors is just the number itself, and it stabilizes immediately.
+5. Time and space complexity: The time complexity is dominated by the repeated prime factorization. In the worst case, the number of iterations might be related to how quickly the sum of prime factors reduces the number. The space complexity is O(1) as only a few variables are used.
+</thinking>

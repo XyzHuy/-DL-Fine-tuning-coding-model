@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count valid non-decreasing comma-separated lists of positive integers from a given digit string, avoiding leading zeros.
+2. Problem type / algorithm category: Dynamic programming with memoization, string comparisons.
+3. Step-by-step approach: Use a recursive DP function `dp(start_index, previous_number_string)` that counts valid combinations from `start_index`. Iterate through possible end indices for the current number, checking for leading zeros and non-decreasing order against `previous_number_string`.
+4. Edge cases: Numbers starting with '0', empty input string (though constraints say length >= 1), single digit string, very long strings.
+5. Time and space complexity: O(N^3) time due to substring operations and N^2 DP states, O(N^2) space for memoization.
+</thinking>

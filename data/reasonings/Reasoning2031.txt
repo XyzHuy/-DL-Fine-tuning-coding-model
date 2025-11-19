@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous subarrays in a binary array where the count of 1s exceeds the count of 0s, returning the result modulo 10^9 + 7.
+2. Problem type / algorithm category: Prefix Sums, Fenwick Tree (or similar data structure for range queries), Counting Inversions variant.
+3. Step-by-step approach: Transform the array by replacing 0s with -1s. Calculate prefix sums. For each element at index i, we need to find how many previous prefix sums (at index j < i) satisfy prefix_sum[i] - prefix_sum[j] > 0, which simplifies to prefix_sum[j] < prefix_sum[i]. A sorted data structure like SortedList (or a Fenwick tree) can efficiently count these previous smaller prefix sums.
+4. Edge cases: An empty input array (though constraints say length >= 1), an array with all 0s, an array with all 1s. The initial prefix sum of 0 must be considered.
+5. Time and space complexity: Time complexity is O(N log N) due to insertions and lookups in the SortedList (or Fenwick tree). Space complexity is O(N) to store prefix sums in the SortedList (or Fenwick tree).
+</thinking>

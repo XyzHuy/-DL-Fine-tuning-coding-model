@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count non-crossing handshakes among an even number of people in a circle.
+2. Problem type / algorithm category: Dynamic Programming, Catalan Numbers.
+3. Step-by-step approach: Use dynamic programming to compute Catalan numbers. catalan[i] represents the number of ways to form non-crossing handshakes for 2*i people. The recurrence relation catalan[i] = sum(catalan[j] * catalan[i-j-1]) for j from 0 to i-1 is used.
+4. Edge cases: The base case is catalan[0] = 1 (0 pairs of people have one way to shake hands - do nothing). The input numPeople is guaranteed to be even and at least 2.
+5. Time and space complexity: Time complexity is O(n^2) where n = numPeople/2, due to nested loops. Space complexity is O(n) for storing Catalan numbers.
+</thinking>

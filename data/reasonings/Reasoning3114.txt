@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 12-hour format time string with some unknown digits represented by "?", replace "?" to form the latest possible valid 12-hour time.
+2. Problem type / algorithm category: String manipulation, brute-force search, greedy approach.
+3. Step-by-step approach: Iterate through all possible hours from 11 down to 0, and for each hour, iterate through all possible minutes from 59 down to 0. For each generated valid time, check if it matches the pattern of the input string (where "?" can match any digit). The first match found will be the latest possible time.
+4. Edge cases: The input guarantees that at least one valid time can be formed. The hour part can be 00-11, and the minute part can be 00-59. The colon is fixed at index 2.
+5. Time and space complexity: Time complexity is O(1) because the number of hours (12) and minutes (60) are constant. Space complexity is O(1) as only a few variables are used.
+</thinking>

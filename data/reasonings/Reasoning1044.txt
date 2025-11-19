@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest duplicated substring within a given string.
+2. Problem type / algorithm category: String manipulation, binary search.
+3. Step-by-step approach: Use binary search to find the length of the longest duplicated substring. For a given length, iterate through all substrings of that length and check for duplicates using a set. If a duplicate is found, update the longest substring and try a larger length. Otherwise, try a smaller length.
+4. Edge cases: Empty string or string with no duplicate substrings should return "".
+5. Time and space complexity: Time complexity is O(N log N), where N is the length of the string, due to the binary search and substring comparisons. Space complexity is O(N) for the set used to store seen substrings.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the average of the minimum and maximum elements in an array, remove them, and repeat until the array is empty. Return the count of unique averages.
+2. Problem type / algorithm category: Array manipulation, Two Pointers, Sorting, Set.
+3. Step-by-step approach: Sort the input array. Use two pointers, one at the beginning (for minimum) and one at the end (for maximum). In a loop, calculate the average of the elements pointed to by the two pointers, add it to a set, and move the pointers inwards. The final answer is the size of the set.
+4. Edge cases: The problem guarantees `nums.length` is even and at least 2, so no empty or odd-length arrays need explicit handling. The constraints on element values are also within standard integer limits.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the length of nums. Space complexity is O(N) in the worst case for the set if all averages are distinct.
+</thinking>

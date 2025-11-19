@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum area of a square that fits within the overlapping region of any two given rectangles.
+2. Problem type / algorithm category: Brute Force, Geometric Intersection.
+3. Step-by-step approach: Iterate through all unique pairs of rectangles, calculate their intersection rectangle, determine the largest square that fits within this intersection, and keep track of the maximum square area found.
+4. Edge cases: No intersection between any pair of rectangles, resulting in a maximum area of 0.
+5. Time and space complexity: O(n^2) time complexity due to nested loops checking all pairs, O(1) space complexity as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the k-radius average for each element in an array, where the average is of elements within a window of size 2k+1 centered at that element. If a window cannot be formed due to insufficient elements, the average is -1.
+2. Problem type / algorithm category: Sliding window sum.
+3. Step-by-step approach: Initialize an output array with -1s. If the window size is larger than the array, return the -1 array. Calculate the sum of the initial window and store its average at the corresponding index. Then, slide the window by adding the new element entering the window and subtracting the element leaving the window, calculating and storing the average for each new center index.
+4. Edge cases: Array length smaller than the window size (2k+1). k = 0. Array with only one element.
+5. Time and space complexity: Time complexity is O(n) due to a single pass for the sliding window. Space complexity is O(n) for storing the result array.
+</thinking>

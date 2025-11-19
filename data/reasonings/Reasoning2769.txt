@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given num and t, find the maximum x such that x can become num after at most t operations, where each operation modifies both x and num by +/-1 simultaneously.
+2. Problem type / algorithm category: Arithmetic manipulation / Greedy.
+3. Step-by-step approach: To maximize x, we want to increase num and decrease x in each step. Each operation increases the difference between num and x by 2. Thus, the maximum x is achieved when we apply this difference increase t times.
+4. Edge cases: Constraints are num >= 1 and t >= 1. No specific edge cases require special handling.
+5. Time and space complexity: O(1) time and O(1) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a set of balloons represented by their start and end x-coordinates, find the minimum number of arrows needed to burst all balloons. An arrow shot at x bursts all balloons whose x-range includes x.
+2. Problem type / algorithm category: Greedy algorithm, Interval Scheduling (or Interval Covering) problem.
+3. Step-by-step approach: Sort the balloons based on their end coordinates. Iterate through the sorted balloons. If a balloon's start coordinate is greater than the position of the last arrow, increment the arrow count and update the last arrow position to the end coordinate of the current balloon.
+4. Edge cases: Empty input list, balloons with overlapping ranges, balloons with non-overlapping ranges.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting, and space complexity is O(1) as we only use a few extra variables.
+</thinking>

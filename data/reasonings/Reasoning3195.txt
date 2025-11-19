@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum area of a rectangle that encloses all the '1's in a given 2D binary grid.
+2. Problem type / algorithm category: Brute Force / Iteration, Bounding Box.
+3. Step-by-step approach: Iterate through the grid to find the minimum row (top), maximum row (bottom), minimum column (left), and maximum column (right) indices containing a '1'. Calculate the height as bottom - top + 1 and width as right - left + 1. The area is height * width.
+4. Edge cases: The problem guarantees at least one '1' is present. Empty grid is implicitly handled by the constraints.
+5. Time and space complexity: Time complexity is O(R*C) where R is the number of rows and C is the number of columns, due to iterating through the entire grid. Space complexity is O(1) as only a few variables are used.
+</thinking>

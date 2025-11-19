@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, remove adjacent duplicate characters repeatedly until no more removals can be made.
+2. Problem type / algorithm category: String manipulation, Stack.
+3. Step-by-step approach: Iterate through the string, using a stack to keep track of the characters. If the current character matches the top of the stack, pop the stack; otherwise, push the character onto the stack. Finally, join the characters in the stack to form the result string.
+4. Edge cases: Empty string, string with no duplicates, string with all duplicates.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) in the worst case, if no characters are removed (stack can grow to the size of input string).
+</thinking>

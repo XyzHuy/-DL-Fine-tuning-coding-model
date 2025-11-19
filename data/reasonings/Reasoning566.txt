@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reshape a given m x n matrix into an r x c matrix if possible, maintaining the original row-traversing order. If not possible, return the original matrix.
+2. Problem type / algorithm category: Array manipulation, reshaping.
+3. Step-by-step approach: First, check if the reshape is possible (m*n == r*c). If not, return the original matrix. Otherwise, flatten the matrix into a 1D array and then create the new r x c matrix from the flattened array.
+4. Edge cases: If the reshape operation is not possible (m * n != r * c), the original matrix must be returned.
+5. Time and space complexity: Time complexity is O(m*n) to flatten and reshape the matrix. Space complexity is O(m*n) because we store the flattened matrix.
+</thinking>

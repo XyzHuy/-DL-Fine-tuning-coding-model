@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of ways to select three buildings from a binary string such that no two selected buildings are consecutive and of the same type.
+2. Problem type / algorithm category: Counting, Prefix Sums/Precomputation.
+3. Step-by-step approach: For each building, consider it as the middle building of a potential triplet. If it's a '0', we need to find pairs of '1's before and after it. If it's a '1', we need to find pairs of '0's before and after it. Precompute counts of '0's and '1's before and after each index to efficiently calculate these pairs.
+4. Edge cases: The input string length is at least 3. The logic inherently handles cases where there are insufficient '0's or '1's before or after a potential middle building, resulting in zero valid combinations for that middle building.
+5. Time and space complexity: O(n) time complexity due to three linear passes (precomputation and then calculating counts). O(n) space complexity for storing the prefix and suffix counts.
+</thinking>

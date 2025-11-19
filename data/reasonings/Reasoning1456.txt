@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of vowels within any substring of a given string `s` that has a fixed length `k`.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: Use a sliding window of size `k`. Iterate through the string, expanding the window by adding the new character on the right. Maintain a count of vowels within the current window. If the window size exceeds `k`, shrink the window from the left, decrementing the vowel count if the removed character was a vowel. Update the maximum vowel count seen so far after each window expansion.
+4. Edge cases: The string length is at least 1 and at most 10^5, `k` is between 1 and string length. Consider strings with no vowels, all vowels, or `k` equal to string length.
+5. Time and space complexity: Time complexity is O(N) where N is the length of `s` because each character is visited at most twice (once by `right` pointer and once by `left` pointer). Space complexity is O(1) as we only use a few variables to store counts and pointers, and the vowel set is constant size.
+</thinking>

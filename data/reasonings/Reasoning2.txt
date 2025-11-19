@@ -1,0 +1,7 @@
+thinking>
+1. Problem summary: Add two numbers represented by linked lists where digits are stored in reverse order.
+2. Problem type / algorithm category: Linked List, Arithmetic.
+3. Step-by-step approach: Iterate through both linked lists, summing the digits at each position along with any carry from the previous position. Create a new linked list to store the result.
+4. Edge cases: One list might be shorter than the other, or there might be a carry remaining after processing all digits.
+5. Time and space complexity: Time complexity is O(max(m, n)), where m and n are the lengths of the two linked lists. Space complexity is O(max(m, n)) as well, for the resulting linked list.
+</thinking>

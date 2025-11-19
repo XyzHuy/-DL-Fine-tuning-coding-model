@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two arrays nums1 and nums2 of equal length, find an integer x such that adding x to each element of nums1 makes it equal to nums2. Equality means same elements with same frequencies.
+2. Problem type / algorithm category: Arithmetic, basic array manipulation.
+3. Step-by-step approach: Since adding x to every element of nums1 makes it equal to nums2, the difference between corresponding elements must be constant. Therefore, the difference between any element in nums2 and its corresponding element in nums1 will be x. We can find x by subtracting the minimum element of nums1 from the minimum element of nums2.
+4. Edge cases: Arrays of length 1, arrays with all same elements, x being 0, positive, or negative.
+5. Time and space complexity: O(N) time to find the minimums, O(1) space.
+</thinking>

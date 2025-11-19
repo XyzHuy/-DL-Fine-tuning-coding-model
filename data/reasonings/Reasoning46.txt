@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of distinct integers, return a list of all possible permutations of the integers.
+2. Problem type / algorithm category: Backtracking / Permutations.
+3. Step-by-step approach: Use the `itertools.permutations` function to generate all permutations of the input list. Convert each permutation tuple to a list and return the list of lists.
+4. Edge cases: Empty input list, single element input list.
+5. Time and space complexity: Time complexity is O(n!), where n is the length of the input list, due to generating all permutations. Space complexity is O(n!) to store all permutations in the output list.
+</thinking>

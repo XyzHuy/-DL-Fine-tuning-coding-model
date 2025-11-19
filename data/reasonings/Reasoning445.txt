@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two linked lists representing two non-negative integers, where digits are stored in reverse order, add the two numbers and return the sum as a linked list.
+2. Problem type / algorithm category: Linked list manipulation, recursion.
+3. Step-by-step approach: First, get the lengths of both linked lists. Pad the shorter list with leading zeros to make them the same length. Recursively add the digits from the least significant digit, propagating any carry. Prepend the carry to the result if it exists.
+4. Edge cases: Empty lists (handled by the while loops and base case of the recursion), different list lengths, carry at the end.
+5. Time and space complexity: Time complexity is O(max(N, M)), where N and M are the lengths of the two linked lists. Space complexity is O(max(N, M)) due to the recursive calls and the creation of the new linked list.
+</thinking>

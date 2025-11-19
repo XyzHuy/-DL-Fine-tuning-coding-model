@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k-th positive integer missing from a strictly increasing sorted array of positive integers.
+2. Problem type / algorithm category: Array traversal, Linear scan.
+3. Step-by-step approach: Iterate through positive integers starting from 1, checking if each integer is present in the input array. Decrement k for each missing integer. When k reaches 0, the current integer (minus 1) is the k-th missing integer.
+4. Edge cases: The array might not contain any missing numbers up to a certain point (e.g., [1,2,3,4]), or k might be larger than the number of missing integers within the range of the array. The array could be empty.
+5. Time and space complexity: O(n + k) time and O(1) space, where n is the length of the array.
+</thinking>

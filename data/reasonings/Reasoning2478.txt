@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count partitions of a string into k substrings, each at least minLength, starting with a prime digit and ending with a non-prime digit.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Initialize DP table. Iterate through possible end points of partitions. For each end point, check previous valid partition points to build up the count of beautiful partitions.
+4. Edge cases: String starting with non-prime or ending with prime digit, or no valid partition points.
+5. Time and space complexity: O(n*k*n) time and O(n*k) space for DP table.
+</thinking>

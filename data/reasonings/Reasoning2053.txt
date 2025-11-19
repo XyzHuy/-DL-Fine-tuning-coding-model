@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the k-th string that appears exactly once in an array, maintaining original order.
+2. Problem type / algorithm category: Array manipulation, frequency counting, iteration.
+3. Step-by-step approach: First, count the occurrences of each string. Then, iterate through the original array and collect strings that have a count of one, in their original order. Finally, return the k-th string from this collected list if it exists, or an empty string otherwise.
+4. Edge cases: When k is larger than the number of distinct strings found, or when the input array is empty (though constraints prevent this).
+5. Time and space complexity: Time complexity is O(N) for counting and O(N) for filtering, resulting in O(N) overall, where N is the length of the array. Space complexity is O(N) to store the counts and potentially O(N) for the distinct strings list.
+</thinking>

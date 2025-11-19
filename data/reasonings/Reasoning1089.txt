@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array, duplicate each zero, shifting the remaining elements to the right, in-place, truncating if necessary to maintain original length.
+2. Problem type / algorithm category: Array manipulation, in-place modification.
+3. Step-by-step approach: Iterate through the array. If an element is zero, insert another zero at the next index. Increment the index by two to account for the inserted zero. If the element is not zero, increment the index by one. After processing, truncate the array to its original length.
+4. Edge cases: Empty array, array with no zeros, array with zeros at the end, array with consecutive zeros.
+5. Time and space complexity: Time complexity is O(n^2) due to the insert operation. Space complexity is O(1) because the operations are done in-place (excluding the space potentially used by insert which depends on the implementation).
+</thinking>

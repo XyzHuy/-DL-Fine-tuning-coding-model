@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path from a source node 's' to any node within a given set of 'marked' nodes in a directed weighted graph.
+2. Problem type / algorithm category: Shortest Path on a weighted directed graph. Dijkstra's Algorithm is suitable.
+3. Step-by-step approach: Build an adjacency list. Initialize distances from 's'. Use a min-priority queue to explore nodes in increasing order of distance. If a marked node is extracted from the priority queue, its distance is the minimum. Otherwise, relax edges to neighbors, updating distances and pushing to the priority queue. If the priority queue is empty and no marked node was found, return -1.
+4. Edge cases: No path exists from 's' to any marked node. The graph is disconnected. Marked nodes might not be reachable.
+5. Time and space complexity: Time complexity is O(E log V) or O(E + V log V) with a Fibonacci heap, where V is the number of nodes and E is the number of edges. Space complexity is O(V + E) for storing the graph and distances.
+</thinking>

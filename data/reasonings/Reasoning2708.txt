@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum product achievable from a non-empty subarray of given student scores.
+2. Problem type / algorithm category: Dynamic Programming or Greedy approach on subarrays.
+3. Step-by-step approach: Separate positive and negative numbers. If there are no positive numbers and only one negative, return the largest number. Otherwise, sort negative numbers and remove the smallest (most negative) if the count of negative numbers is odd. Multiply all positive numbers and the selected negative numbers.
+4. Edge cases: Single element array, arrays with only negative numbers, arrays with no positive numbers.
+5. Time and space complexity: O(N log N) time due to sorting, O(N) space for storing positive and negative numbers.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort arr1 based on the relative order of elements in arr2. Elements in arr1 but not in arr2 should be appended to the end in ascending order.
+2. Problem type / algorithm category: Sorting, Hashing (Counter), Array Manipulation
+3. Step-by-step approach: Count the occurrences of each element in arr1 using a Counter. Iterate through arr2, adding elements from arr1 to the result array based on their count and order in arr2. Then, add any remaining elements from arr1 (those not in arr2) to the result array in sorted order based on their counts.
+4. Edge cases: Empty input arrays, arr1 and arr2 containing the same elements, arr1 containing no elements from arr2, arr2 containing all elements from arr1.
+5. Time and space complexity: Time: O(n + m + klogk), where n is the length of arr1, m is the length of arr2, and k is the number of distinct elements in arr1 that are not in arr2. Space: O(n) due to the Counter and result array.
+</thinking>

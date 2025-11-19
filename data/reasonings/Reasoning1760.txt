@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the maximum number of balls in any bag after splitting bags at most maxOperations times.
+2. Problem type / algorithm category: Binary Search on Answer.
+3. Step-by-step approach: Use binary search on the possible values of the minimum penalty (maximum balls in a bag). For a given penalty value, check if it's achievable within maxOperations by calculating the minimum operations required to ensure no bag exceeds this penalty. If achievable, try a smaller penalty; otherwise, try a larger penalty.
+4. Edge cases: Single bag input, maxOperations is zero, all bags initially have 1 ball, or maxOperations is very large allowing all bags to be split into single balls.
+5. Time and space complexity: Time complexity is O(N * log(max(nums))), where N is the number of bags. Space complexity is O(1).
+</thinking>

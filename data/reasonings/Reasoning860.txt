@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if it's possible to give correct change to every customer at a lemonade stand where each lemonade costs $5, given the bills each customer pays with.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Iterate through the bills, maintaining counts of $5 and $10 bills. If a customer pays with $10, try to give back $5. If a customer pays with $20, prioritize giving back $10 and $5, otherwise give back three $5. If at any point we can't give correct change, return false. If all customers can be given correct change, return true.
+4. Edge cases: When a customer pays with a $10 and we have no $5, or when a customer pays with a $20 and we don't have a $10 and a $5, or three $5, we should return false. The input array could be empty.
+5. Time and space complexity: The time complexity is O(n) because we iterate through the bills array once. The space complexity is O(1) because we only store a constant number of variables (five_count and ten_count).
+</thinking>

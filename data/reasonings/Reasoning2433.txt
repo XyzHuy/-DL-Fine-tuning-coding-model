@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a prefix XOR array `pref`, reconstruct the original array `arr` such that `pref[i]` is the XOR sum of elements in `arr` from index 0 to `i`.
+2. Problem type / algorithm category: Array manipulation, Bitwise operations (XOR).
+3. Step-by-step approach: The first element `arr[0]` is simply `pref[0]`. For subsequent elements, notice that `pref[i] = arr[0] ^ arr[1] ^ ... ^ arr[i-1] ^ arr[i]`. Also, `pref[i-1] = arr[0] ^ arr[1] ^ ... ^ arr[i-1]`. XORing `pref[i]` with `pref[i-1]` isolates `arr[i]` because `x ^ x = 0` and `y ^ 0 = y`. Thus, `arr[i] = pref[i] ^ pref[i-1]`.
+4. Edge cases: The input array `pref` will always have at least one element. The constraints on `pref.length` and `pref[i]` are within standard integer limits.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the `pref` array once. Space complexity is O(n) for storing the resulting `arr` (or O(1) if modifying in-place is considered, but a new array is typically returned).
+</thinking>

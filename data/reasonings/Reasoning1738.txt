@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate XOR sums for all top-left submatrices and find the kth largest among them.
+2. Problem type / algorithm category: Dynamic Programming (Prefix XOR) and Heap (Min-Heap for Kth Largest).
+3. Step-by-step approach: Build a prefix XOR matrix where each cell stores the XOR sum of its corresponding submatrix. Iterate through this prefix XOR matrix, maintaining a min-heap of size k to store the k largest XOR sums encountered so far.
+4. Edge cases: The matrix dimensions can be 1x1. The initial cell (0,0) requires special handling in prefix XOR calculation. k can be equal to m*n.
+5. Time and space complexity: Time complexity is O(m*n log k) due to iterating through the matrix and heap operations. Space complexity is O(m*n) for the prefix XOR matrix and O(k) for the heap.
+</thinking>

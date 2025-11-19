@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest string containing a, b, and c as substrings, and if there are ties, return the lexicographically smallest one.
+2. Problem type / algorithm category: String manipulation, Permutations, Greedy merging.
+3. Step-by-step approach: Define a helper function `merge(x, y)` that merges string `y` onto string `x` by maximizing overlap. Iterate through all 6 permutations of (a, b, c). For each permutation (s1, s2, s3), compute `merge(merge(s1, s2), s3)`. Collect all resulting merged strings and find the one with the minimum length, breaking ties with lexicographical order.
+4. Edge cases: One string being a substring of another. Empty strings are not possible based on constraints.
+5. Time and space complexity: O(P * (L^2 + L)) time where P is the number of permutations (6), L is the maximum length of input strings, due to the `in` operator and string slicing/concatenation within merge, and O(P * L) space for storing candidates.
+</thinking>

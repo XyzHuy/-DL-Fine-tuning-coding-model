@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of hills and valleys in an array, where hills have strictly greater non-equal neighbors and valleys have strictly smaller non-equal neighbors. Consecutive equal numbers are treated as a single element for determining neighbors.
+2. Problem type / algorithm category: Array traversal, pattern identification.
+3. Step-by-step approach: First, remove consecutive duplicate elements to simplify neighbor comparisons. Then, iterate through the filtered array from the second element to the second-to-last element. For each element, check if it's greater than both its left and right neighbors (hill) or smaller than both its left and right neighbors (valley). Increment a counter for each identified hill or valley.
+4. Edge cases: Arrays with fewer than 3 distinct elements cannot contain hills or valleys. Arrays with all identical elements or only two distinct values also have no hills or valleys.
+5. Time and space complexity: Time complexity is O(N) due to single pass for filtering and single pass for counting. Space complexity is O(N) in the worst case for storing the filtered array if all elements are unique.
+</thinking>

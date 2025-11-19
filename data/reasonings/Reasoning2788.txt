@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Combine strings from an input array by splitting each string based on a given separator, then collect all non-empty resulting substrings.
+2. Problem type / algorithm category: String manipulation, array processing.
+3. Step-by-step approach: Iterate through each string in the input array. For each string, split it using the provided separator. Filter out any empty strings that result from the split. Append the remaining non-empty substrings to a final result list.
+4. Edge cases: Strings that consist solely of the separator (resulting in only empty strings after split), strings that do not contain the separator, and an empty input array.
+5. Time and space complexity: Time complexity is O(N*L), where N is the number of words and L is the average length of a word. Space complexity is O(N*L) in the worst case, to store all resulting substrings.
+</thinking>

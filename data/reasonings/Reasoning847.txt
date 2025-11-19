@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path length to visit all nodes in a given undirected graph, starting and ending at any node.
+2. Problem type / algorithm category: Graph traversal, Breadth-First Search (BFS), Bitmasking.
+3. Step-by-step approach: Use BFS to explore paths. Represent visited nodes as a bitmask, where each bit corresponds to a node. The queue stores the current node, the visited mask, and the path length. Start BFS from all nodes.
+4. Edge cases: If the graph has only one node, the path length is 0.
+5. Time and space complexity: Time complexity is O(2^n * n), where n is the number of nodes. Space complexity is O(2^n * n).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of appeals of all possible substrings of a given string s, where appeal is the count of distinct characters.
+2. Problem type / algorithm category: String manipulation, Mathematical calculation / Combinatorics.
+3. Step-by-step approach: For each character in the string, determine how many substrings it contributes to and its unique contribution. The contribution of a character at index i is (i - last_occurrence) * (length_of_string - i). Update the last occurrence index for the character. Sum these contributions.
+4. Edge cases: String with all same characters, string with all distinct characters, single character string. The approach handles these by correctly calculating `last` occurrences.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(1) as we use a fixed-size array (26 for lowercase English letters) to store last occurrences.
+</thinking>

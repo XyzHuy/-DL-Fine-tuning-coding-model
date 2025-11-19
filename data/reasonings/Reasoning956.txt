@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum height of a billboard that can be supported by two steel supports of equal length, given a set of rods that can be welded together.
+2. Problem type / algorithm category: Dynamic Programming. The problem can be approached by considering the difference between the lengths of the two supports.
+3. Step-by-step approach: Use a dictionary `dp` to store the maximum height achievable for a given difference between the two supports. Iterate through the rods, and for each rod, consider three cases: not using the rod, adding the rod to the taller support, and adding the rod to the shorter support. Update the `dp` dictionary accordingly. Finally, return the maximum height when the difference is 0.
+4. Edge cases: The initial difference is 0 with height 0. If no rods can be combined to make equal supports, the result is 0.
+5. Time and space complexity: Time complexity is O(n*sum(rods)), where n is the number of rods. Space complexity is O(sum(rods)), due to the size of the dp dictionary.
+</thinking>

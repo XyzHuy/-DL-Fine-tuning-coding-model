@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum initial energy needed to complete all tasks, where each task has an actual energy cost and a minimum required energy to start. Tasks can be done in any order.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort tasks by the difference between minimum and actual energy in descending order, prioritizing tasks with larger energy "buffers". Iterate through sorted tasks, maintaining current energy. If current energy is insufficient for a task's minimum requirement, add the deficit to the total required initial energy and update current energy. Then, subtract the task's actual energy cost from current energy.
+4. Edge cases: Tasks with identical (minimum - actual) differences should be ordered by their minimum requirement in descending order to satisfy stricter requirements first. Empty task list (though constraints prevent this).
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of tasks. Space complexity is O(1) if sorting is done in-place, or O(N) if a new list is created for sorting.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute water among buckets to equalize the amount in each, considering a percentage loss during transfers.
+2. Problem type / algorithm category: Binary Search on Answer, Greedy.
+3. Step-by-step approach: Define a check function `can_equalize(target)` that determines if it's possible to make all buckets equal to `target`. This function calculates the total water that can be poured out from buckets with more than `target` water, accounting for loss, and compares it to the total water needed to fill buckets with less than `target` water. Use binary search on the possible target amount of water per bucket, from 0 to the maximum initial amount.
+4. Edge cases: All buckets already have the same amount of water. Loss percentage is 0. Loss percentage is 99.
+5. Time and space complexity: Time complexity is O(N * log(MaxBucketValue / Precision)), where N is the number of buckets. Space complexity is O(1).
+</thinking>

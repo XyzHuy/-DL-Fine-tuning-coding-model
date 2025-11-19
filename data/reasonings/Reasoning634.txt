@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of derangements of an array of size n, modulo 10^9 + 7. A derangement is a permutation where no element is in its original position.
+2. Problem type / algorithm category: Dynamic Programming / Combinatorics. The problem asks for a count based on a recurrence relation, fitting the DP paradigm.
+3. Step-by-step approach: Use the recurrence relation D(n) = (n-1) * (D(n-1) + D(n-2)). Iterate from 2 up to n, calculating D(i) using the previously computed values D(i-1) and D(i-2). Use modulo operator in each calculation to prevent overflow. Initialize D(0) = 1 and D(1) = 0.
+4. Edge cases: n = 0 should return 1, n = 1 should return 0. The problem statement constrains n to be at least 1, but the provided code handles n=0.
+5. Time and space complexity: Time complexity is O(n) due to the single loop. Space complexity is O(1) because we only store the previous two derangement counts instead of the entire DP table.
+</thinking>

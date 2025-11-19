@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest substring with at most two occurrences of any character.
+2. Problem type / algorithm category: Sliding Window.
+3. Step-by-step approach: Use two pointers, left and right, to define a window. Expand the window by moving the right pointer. Maintain a frequency map of characters within the window. If any character count exceeds 2, shrink the window from the left until the condition is met. Update the maximum length at each valid window.
+4. Edge cases: Strings where all characters appear more than twice initially, or strings where a valid substring is the entire string.
+5. Time and space complexity: Time O(N), Space O(1) since alphabet size is constant.
+</thinking>

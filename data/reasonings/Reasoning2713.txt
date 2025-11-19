@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest path of strictly increasing values by moving horizontally or vertically in a matrix.
+2. Problem type / algorithm category: Dynamic Programming, Graph Traversal (Implicit DAG).
+3. Step-by-step approach: Sort all cells by value, then iterate through them. For each cell, calculate the longest path ending at it by considering the maximum path length from cells in the same row or column with smaller values, plus one. Use dictionaries to efficiently track the maximum path lengths for each row and column encountered so far.
+4. Edge cases: All elements are the same (result is 1). Single cell matrix. Matrix with negative numbers.
+5. Time and space complexity: Time O(m*n log(m*n)) for sorting, space O(m*n) for DP table and auxiliary dictionaries.
+</thinking>

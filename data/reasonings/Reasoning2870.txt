@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to empty an array by removing pairs or triplets of equal elements. Return -1 if impossible.
+2. Problem type / algorithm category: Greedy, Frequency Counting.
+3. Step-by-step approach: Count frequencies of each number. For each count, if it's 1, return -1. Otherwise, use integer division by 3 for triplets and add 1 if there's a remainder for a pair. Sum these for the total operations.
+4. Edge cases: Any number with a frequency of 1 makes the array impossible to empty.
+5. Time and space complexity: Time is O(N) for counting frequencies, space is O(U) where U is the number of unique elements.
+</thinking>

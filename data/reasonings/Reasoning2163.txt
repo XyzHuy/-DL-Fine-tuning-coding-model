@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum difference between the sums of two halves of an array after removing n elements from a 3n-sized array.
+2. Problem type / algorithm category: Prefix sums, heaps, optimization.
+3. Step-by-step approach: Calculate the minimum sum of the first n elements by iterating from the start and using a min-heap (max-heap with negated values) to keep track of the smallest n elements seen so far. Simultaneously, calculate the maximum sum of the last n elements by iterating from the end and using a max-heap to keep track of the largest n elements. The minimum difference is then found by iterating through all possible split points between the first 2n elements and the last 2n elements, subtracting the maximum sum of the last n elements from the minimum sum of the first n elements.
+4. Edge cases: The array size is always 3*n. The constraints on n and element values are standard.
+5. Time and space complexity: Time complexity is O(n log n) due to heap operations. Space complexity is O(n) for storing prefix sums and heaps.
+</thinking>

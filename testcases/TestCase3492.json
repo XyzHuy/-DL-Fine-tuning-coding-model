@@ -1,0 +1,925 @@
+{
+  "function_name": "maxContainers",
+  "test_cases": [
+    {
+      "parameters": {
+        "n": 10,
+        "w": 5,
+        "maxWeight": 25
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "w": 1,
+        "maxWeight": 10
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 2,
+        "maxWeight": 20
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 10,
+        "maxWeight": 50
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 10,
+        "maxWeight": 100
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 1000,
+        "maxWeight": 1000000000
+      },
+      "expected_output": 1000000
+    },
+    {
+      "parameters": {
+        "n": 2,
+        "w": 3,
+        "maxWeight": 15
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "w": 10,
+        "maxWeight": 50
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "n": 1,
+        "w": 1,
+        "maxWeight": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "w": 3,
+        "maxWeight": 60
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "n": 4,
+        "w": 5,
+        "maxWeight": 10
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "n": 7,
+        "w": 2,
+        "maxWeight": 50
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "n": 3,
+        "w": 5,
+        "maxWeight": 20
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "n": 1,
+        "w": 1,
+        "maxWeight": 1000
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "n": 333,
+        "w": 334,
+        "maxWeight": 100000
+      },
+      "expected_output": 299
+    },
+    {
+      "parameters": {
+        "n": 150,
+        "w": 150,
+        "maxWeight": 22499
+      },
+      "expected_output": 149
+    },
+    {
+      "parameters": {
+        "n": 600,
+        "w": 50,
+        "maxWeight": 25000
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 125,
+        "maxWeight": 10000000
+      },
+      "expected_output": 80000
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 50,
+        "maxWeight": 4500
+      },
+      "expected_output": 90
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 50,
+        "maxWeight": 4900
+      },
+      "expected_output": 98
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 200,
+        "maxWeight": 99999999
+      },
+      "expected_output": 250000
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 350,
+        "maxWeight": 875000
+      },
+      "expected_output": 2500
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 25,
+        "maxWeight": 4999
+      },
+      "expected_output": 199
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 100,
+        "maxWeight": 50000
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 500,
+        "maxWeight": 45000
+      },
+      "expected_output": 90
+    },
+    {
+      "parameters": {
+        "n": 666,
+        "w": 166,
+        "maxWeight": 100000000
+      },
+      "expected_output": 443556
+    },
+    {
+      "parameters": {
+        "n": 400,
+        "w": 250,
+        "maxWeight": 1000000
+      },
+      "expected_output": 4000
+    },
+    {
+      "parameters": {
+        "n": 550,
+        "w": 800,
+        "maxWeight": 4400000
+      },
+      "expected_output": 5500
+    },
+    {
+      "parameters": {
+        "n": 400,
+        "w": 250,
+        "maxWeight": 100000
+      },
+      "expected_output": 400
+    },
+    {
+      "parameters": {
+        "n": 999,
+        "w": 500,
+        "maxWeight": 499500
+      },
+      "expected_output": 999
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 1001,
+        "maxWeight": 100100
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 300,
+        "maxWeight": 675000
+      },
+      "expected_output": 2250
+    },
+    {
+      "parameters": {
+        "n": 600,
+        "w": 1200,
+        "maxWeight": 7200000
+      },
+      "expected_output": 6000
+    },
+    {
+      "parameters": {
+        "n": 333,
+        "w": 333,
+        "maxWeight": 333333333
+      },
+      "expected_output": 110889
+    },
+    {
+      "parameters": {
+        "n": 678,
+        "w": 9,
+        "maxWeight": 6000
+      },
+      "expected_output": 666
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 50,
+        "maxWeight": 12499
+      },
+      "expected_output": 249
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 200,
+        "maxWeight": 150000
+      },
+      "expected_output": 750
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 200,
+        "maxWeight": 999
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "n": 999,
+        "w": 999,
+        "maxWeight": 998001
+      },
+      "expected_output": 999
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 500,
+        "maxWeight": 399999
+      },
+      "expected_output": 799
+    },
+    {
+      "parameters": {
+        "n": 600,
+        "w": 400,
+        "maxWeight": 250000
+      },
+      "expected_output": 625
+    },
+    {
+      "parameters": {
+        "n": 666,
+        "w": 150,
+        "maxWeight": 100000
+      },
+      "expected_output": 666
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 400,
+        "maxWeight": 100000
+      },
+      "expected_output": 250
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 1,
+        "maxWeight": 500
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 100,
+        "maxWeight": 200
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 400,
+        "maxWeight": 1000000
+      },
+      "expected_output": 2500
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 500,
+        "maxWeight": 500000
+      },
+      "expected_output": 1000
+    },
+    {
+      "parameters": {
+        "n": 400,
+        "w": 200,
+        "maxWeight": 79999
+      },
+      "expected_output": 399
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 200,
+        "maxWeight": 1000000
+      },
+      "expected_output": 5000
+    },
+    {
+      "parameters": {
+        "n": 400,
+        "w": 50,
+        "maxWeight": 99999
+      },
+      "expected_output": 1999
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 999,
+        "maxWeight": 200000
+      },
+      "expected_output": 200
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 15,
+        "maxWeight": 5000
+      },
+      "expected_output": 333
+    },
+    {
+      "parameters": {
+        "n": 300,
+        "w": 150,
+        "maxWeight": 50000
+      },
+      "expected_output": 333
+    },
+    {
+      "parameters": {
+        "n": 900,
+        "w": 300,
+        "maxWeight": 270000
+      },
+      "expected_output": 900
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 7,
+        "maxWeight": 350000
+      },
+      "expected_output": 50000
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 750,
+        "maxWeight": 300000
+      },
+      "expected_output": 400
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 1,
+        "maxWeight": 100
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 10,
+        "maxWeight": 8000
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "n": 900,
+        "w": 950,
+        "maxWeight": 855000000
+      },
+      "expected_output": 810000
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 50,
+        "maxWeight": 125000
+      },
+      "expected_output": 2500
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 50,
+        "maxWeight": 20000
+      },
+      "expected_output": 400
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 50,
+        "maxWeight": 180000
+      },
+      "expected_output": 3600
+    },
+    {
+      "parameters": {
+        "n": 666,
+        "w": 667,
+        "maxWeight": 500000
+      },
+      "expected_output": 749
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "w": 10,
+        "maxWeight": 99
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 900,
+        "maxWeight": 900000
+      },
+      "expected_output": 1000
+    },
+    {
+      "parameters": {
+        "n": 5,
+        "w": 5000,
+        "maxWeight": 25000
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 75,
+        "maxWeight": 20000
+      },
+      "expected_output": 266
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 1000,
+        "maxWeight": 999999999
+      },
+      "expected_output": 999999
+    },
+    {
+      "parameters": {
+        "n": 999,
+        "w": 1,
+        "maxWeight": 999
+      },
+      "expected_output": 999
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 100,
+        "maxWeight": 24900
+      },
+      "expected_output": 249
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 250,
+        "maxWeight": 100000000
+      },
+      "expected_output": 250000
+    },
+    {
+      "parameters": {
+        "n": 999,
+        "w": 999,
+        "maxWeight": 999000000
+      },
+      "expected_output": 998001
+    },
+    {
+      "parameters": {
+        "n": 999,
+        "w": 1,
+        "maxWeight": 1000000000
+      },
+      "expected_output": 998001
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 999,
+        "maxWeight": 998001
+      },
+      "expected_output": 999
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 150,
+        "maxWeight": 112500
+      },
+      "expected_output": 750
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 50,
+        "maxWeight": 100000
+      },
+      "expected_output": 2000
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 1000,
+        "maxWeight": 800000
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "n": 333,
+        "w": 333,
+        "maxWeight": 33266667
+      },
+      "expected_output": 99899
+    },
+    {
+      "parameters": {
+        "n": 1,
+        "w": 1000000000,
+        "maxWeight": 1000000000
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "n": 600,
+        "w": 60,
+        "maxWeight": 359999
+      },
+      "expected_output": 5999
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 300,
+        "maxWeight": 60000
+      },
+      "expected_output": 200
+    },
+    {
+      "parameters": {
+        "n": 123,
+        "w": 456,
+        "maxWeight": 67890123
+      },
+      "expected_output": 15129
+    },
+    {
+      "parameters": {
+        "n": 300,
+        "w": 100,
+        "maxWeight": 25000
+      },
+      "expected_output": 250
+    },
+    {
+      "parameters": {
+        "n": 200,
+        "w": 1000,
+        "maxWeight": 199000
+      },
+      "expected_output": 199
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 123,
+        "maxWeight": 1000000
+      },
+      "expected_output": 8130
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "w": 999,
+        "maxWeight": 9990
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 250,
+        "maxWeight": 125000
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 100,
+        "maxWeight": 80000
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "n": 300,
+        "w": 700,
+        "maxWeight": 2000000
+      },
+      "expected_output": 2857
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 2,
+        "maxWeight": 1000
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 300,
+        "w": 200,
+        "maxWeight": 60000
+      },
+      "expected_output": 300
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 10,
+        "maxWeight": 7900
+      },
+      "expected_output": 790
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 10,
+        "maxWeight": 4990
+      },
+      "expected_output": 499
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 150,
+        "maxWeight": 1200000
+      },
+      "expected_output": 8000
+    },
+    {
+      "parameters": {
+        "n": 800,
+        "w": 125,
+        "maxWeight": 100000
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "n": 650,
+        "w": 100,
+        "maxWeight": 70000
+      },
+      "expected_output": 700
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 75,
+        "maxWeight": 450000
+      },
+      "expected_output": 6000
+    },
+    {
+      "parameters": {
+        "n": 50,
+        "w": 200,
+        "maxWeight": 19999
+      },
+      "expected_output": 99
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 750,
+        "maxWeight": 375000
+      },
+      "expected_output": 500
+    },
+    {
+      "parameters": {
+        "n": 400,
+        "w": 400,
+        "maxWeight": 599999
+      },
+      "expected_output": 1499
+    },
+    {
+      "parameters": {
+        "n": 10,
+        "w": 100,
+        "maxWeight": 1000
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "n": 250,
+        "w": 333,
+        "maxWeight": 83250
+      },
+      "expected_output": 250
+    },
+    {
+      "parameters": {
+        "n": 50,
+        "w": 100,
+        "maxWeight": 4500
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "n": 150,
+        "w": 25,
+        "maxWeight": 3749
+      },
+      "expected_output": 149
+    },
+    {
+      "parameters": {
+        "n": 900,
+        "w": 50,
+        "maxWeight": 45000
+      },
+      "expected_output": 900
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 10,
+        "maxWeight": 999
+      },
+      "expected_output": 99
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 1,
+        "maxWeight": 999
+      },
+      "expected_output": 999
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 300,
+        "maxWeight": 500000000
+      },
+      "expected_output": 562500
+    },
+    {
+      "parameters": {
+        "n": 15,
+        "w": 15,
+        "maxWeight": 225
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 750,
+        "w": 20,
+        "maxWeight": 14500
+      },
+      "expected_output": 725
+    },
+    {
+      "parameters": {
+        "n": 500,
+        "w": 250,
+        "maxWeight": 500000
+      },
+      "expected_output": 2000
+    },
+    {
+      "parameters": {
+        "n": 1000,
+        "w": 10,
+        "maxWeight": 9999999
+      },
+      "expected_output": 999999
+    },
+    {
+      "parameters": {
+        "n": 100,
+        "w": 100,
+        "maxWeight": 5000
+      },
+      "expected_output": 50
+    },
+    {
+      "parameters": {
+        "n": 333,
+        "w": 250,
+        "maxWeight": 200000
+      },
+      "expected_output": 800
+    },
+    {
+      "parameters": {
+        "n": 900,
+        "w": 90,
+        "maxWeight": 729000
+      },
+      "expected_output": 8100
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate an m x n matrix by filling it with values from a linked list in a clockwise spiral pattern, starting from the top-left. Unfilled cells should be -1.
+2. Problem type / algorithm category: Matrix traversal, linked list manipulation, simulation.
+3. Step-by-step approach: Initialize an m x n matrix with -1. Define boundary pointers (top, bottom, left, right). Traverse layer by layer: fill top row, then right column, then bottom row, then left column. Update boundaries after each traversal. Continue until all nodes are placed or boundaries cross.
+4. Edge cases: Empty linked list, matrix with only one row or one column, linked list shorter than the total cells in the matrix.
+5. Time and space complexity: Time complexity is O(m*n) because each cell is visited and filled at most once. Space complexity is O(m*n) to store the resulting matrix.
+</thinking>

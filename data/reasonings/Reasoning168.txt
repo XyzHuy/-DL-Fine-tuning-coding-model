@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a given column number to its corresponding Excel column title (e.g., 1 -> "A", 26 -> "Z", 27 -> "AA").
+2. Problem type / algorithm category: Base-26 conversion.
+3. Step-by-step approach: Repeatedly divide the column number by 26, taking the remainder to determine the rightmost character. Adjust the column number for the next iteration, handling the "off-by-one" issue where 'A' corresponds to 1. Prepend the character to the result string in each step.
+4. Edge cases: Input 1 should return "A", larger numbers like 28, 701 should be handled correctly, input constraints must be respected.
+5. Time and space complexity: Time complexity is O(log26(n)) where n is columnNumber, since the number of iterations depends on how many times we can divide columnNumber by 26. Space complexity is O(log26(n)) as well, to store the result string.
+</thinking>

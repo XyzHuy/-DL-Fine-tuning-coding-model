@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of traversing multiple trips in a tree, where node prices can be halved on non-adjacent nodes before any trips begin.
+2. Problem type / algorithm category: Tree traversal, Dynamic Programming on Trees, Graph Algorithms (DFS, LCA implicitly used for pathfinding).
+3. Step-by-step approach: Build adjacency list, find paths for all trips and count node visit frequencies, use DFS to compute DP states for each node (whether its price is halved or not), and return the minimum cost from the root.
+4. Edge cases: Single node tree, trips starting and ending at the same node, all nodes being visited in trips.
+5. Time and space complexity: Time complexity is O(N * (N+E) + T*N), where N is nodes, E is edges, T is trips. Space complexity is O(N+E) for graph, O(N) for DP, and O(N) for pathfinding.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of substrings from s and t that differ by exactly one character.
+2. Problem type / algorithm category: Brute force with nested loops and substring comparison.
+3. Step-by-step approach: Iterate through all possible starting positions in s and t. For each pair of starting positions, check all possible substring lengths emanating from them. Keep a count of differences; if exactly one difference is found, increment the total count.
+4. Edge cases: Empty strings are not possible based on constraints. String lengths of 1.
+5. Time and space complexity: O(len(s)^2 * len(t)^2 * min(len(s), len(t))) time, O(1) space.
+</thinking>

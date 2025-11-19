@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute m balls into n baskets at given positions such that the minimum distance between any two balls is maximized.
+2. Problem type / algorithm category: Binary Search on Answer, Greedy.
+3. Step-by-step approach: First, sort the basket positions. Then, perform a binary search on the possible minimum distances. For a given candidate minimum distance, greedily try to place m balls in baskets ensuring this minimum distance. If possible, try a larger distance; otherwise, try a smaller distance.
+4. Edge cases: m=2 (simplest case, distance is max difference), all positions are far apart, all positions are close together.
+5. Time and space complexity: O(N log N) time due to sorting and binary search; O(1) or O(N) space depending on sort implementation.
+</thinking>

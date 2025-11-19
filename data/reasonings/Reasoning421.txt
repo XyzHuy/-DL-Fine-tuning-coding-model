@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, find the maximum XOR value between any two numbers in the array.
+2. Problem type / algorithm category: Bit manipulation, Trie.
+3. Step-by-step approach: Build a Trie data structure where each node represents a bit of a number. Iterate through the numbers and insert them into the Trie. Then, for each number, search the Trie to find the number that maximizes the XOR value.
+4. Edge cases: Empty input array. Array with only one element. Numbers with leading zeros.
+5. Time and space complexity: Time complexity is O(n * 32) where n is the number of elements in the array, and 32 is the maximum number of bits in an integer. Space complexity is O(n * 32) in the worst case due to the Trie.
+</thinking>

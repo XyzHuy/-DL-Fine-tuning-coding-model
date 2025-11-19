@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to make no adjacent characters in a string "almost-equal". Almost-equal means identical or alphabetically adjacent.
+2. Problem type / algorithm category: Greedy algorithm, string manipulation.
+3. Step-by-step approach: Iterate through the string, starting from the second character. If the current character and the previous character are almost-equal, increment the operation count and skip the next character (because it's now adjacent to a modified character, effectively). Otherwise, move to the next character.
+4. Edge cases: String of length 1 has no adjacent characters, so 0 operations. Strings with no almost-equal adjacent characters also require 0 operations.
+5. Time and space complexity: Time complexity is O(N) because we iterate through the string once. Space complexity is O(1) as we only use a few variables.
+</thinking>

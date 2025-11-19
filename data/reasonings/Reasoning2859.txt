@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of array elements whose indices have exactly k set bits in their binary form.
+2. Problem type / algorithm category: Bit manipulation, Iteration.
+3. Step-by-step approach: Iterate through each index of the input array. For each index, count its set bits. If the count equals k, add the element at that index to a running sum. Finally, return the total sum.
+4. Edge cases: The input array can be empty. The value of k can be 0. Indices can be 0.
+5. Time and space complexity: Time complexity is O(N log N) where N is the length of nums, due to iterating through N elements and counting bits for each index (max index value is N-1, and log N bits are needed). Space complexity is O(1) as only a few variables are used.
+</thinking>

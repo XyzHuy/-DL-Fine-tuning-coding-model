@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of straight lines required to cover all given unique points on a 2D plane.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking, Set Cover variation.
+3. Step-by-step approach: Identify all unique lines that can be formed by pairs of points. Use a bitmask DP where each state represents covered points. Transition by adding a line that covers at least one new point and recursively solve for the remaining uncovered points.
+4. Edge cases: When there is only one point, zero lines are needed (handled by DP base case). When all points are collinear, one line is sufficient.
+5. Time and space complexity: O(2^N * N * L) time where L is the number of unique lines, O(2^N) space for memoization.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given string `s` matches a given pattern based on a bijective mapping from pattern characters to non-empty strings.
+2. Problem type / algorithm category: Backtracking / String Matching
+3. Step-by-step approach: Use backtracking to explore possible mappings between pattern characters and substrings of the input string. If a character is already mapped, verify the mapping. If not, try mapping to all possible substrings and recursively check if it leads to a valid solution. Backtrack by removing mappings when necessary.
+4. Edge cases: Reaching the end of the pattern or string, ensuring no character maps to two different strings, and no two characters map to the same string.
+5. Time and space complexity: Time complexity is exponential, potentially O(n^m) where n is the length of s and m is the length of the pattern. Space complexity is O(m) due to the recursion depth and the mapping dictionary.
+</thinking>

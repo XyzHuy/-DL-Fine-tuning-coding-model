@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign monsters to heroes to maximize total coins collected by each hero, where a hero can defeat a monster if their power is greater than or equal to the monster's power.
+2. Problem type / algorithm category: Greedy algorithm with sorting and binary search.
+3. Step-by-step approach: Sort monsters by power. Calculate prefix sums of coins for sorted monsters. For each hero, use binary search to find the highest power monster they can defeat and sum coins up to that point.
+4. Edge cases: Heroes with no power to defeat any monster; no monsters to defeat; empty input arrays.
+5. Time and space complexity: O(M log M + N log M) time, O(M) space.
+</thinking>

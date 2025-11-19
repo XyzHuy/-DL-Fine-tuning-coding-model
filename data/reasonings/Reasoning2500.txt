@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove the maximum element from each row iteratively, sum the maximums of removed elements in each step, and return the total sum.
+2. Problem type / algorithm category: Iterative simulation, greedy.
+3. Step-by-step approach: Sort each row in descending order. Iterate as long as rows are not empty. In each iteration, find the maximum element in each row (which will be the first element after sorting), collect these maximums, find the overall maximum among them, add it to the total sum, and remove these maximums from their respective rows.
+4. Edge cases: Empty grid (though constraints prevent this), grid with a single row or column.
+5. Time and space complexity: Time complexity is O(m * n * log n + m * n) dominated by sorting each row, and space complexity is O(m) for storing maximums temporarily.
+</thinking>

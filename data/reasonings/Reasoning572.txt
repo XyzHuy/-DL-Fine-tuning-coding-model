@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a binary tree `subRoot` is a subtree of another binary tree `root`.
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Recursively traverse the `root` tree. At each node, check if the subtree rooted at that node is identical to `subRoot`. If it is, return true. If not, recursively check the left and right subtrees of the current node.
+4. Edge cases: Empty `root` tree, `subRoot` larger than `root`, identical trees.
+5. Time and space complexity: Time complexity is O(M*N) in the worst case, where M is the number of nodes in root and N is the number of nodes in subRoot. The space complexity is O(H) where H is the height of the tree 'root', due to the recursion stack.
+</thinking>

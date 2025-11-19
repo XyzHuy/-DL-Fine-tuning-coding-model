@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the order of words in a string, removing leading/trailing/multiple spaces.
+2. Problem type / algorithm category: String manipulation / Array reversal.
+3. Step-by-step approach: Split the string into a list of words, reverse the list, and join the words back into a string with single spaces.
+4. Edge cases: Empty input string, string with only spaces, string with leading/trailing spaces, string with multiple spaces between words.
+5. Time and space complexity: Time: O(n), Space: O(n) due to the list of words.
+</thinking>

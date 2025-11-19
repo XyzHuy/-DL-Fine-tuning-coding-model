@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the nth super ugly number, where a super ugly number's prime factors are within a given array of primes.
+2. Problem type / algorithm category: Heap, Priority Queue, Dynamic Programming
+3. Step-by-step approach: Use a min-heap to store the super ugly numbers found so far. Initialize the heap with 1. Repeatedly extract the smallest element from the heap, and for each prime number in the given array, multiply the extracted number by the prime, and add the result to the heap if it's not already present. Repeat this process n times, the nth extracted element is the nth super ugly number.
+4. Edge cases: n = 1, primes can be empty (though the problem states primes.length >= 1). Duplicates in the heap are handled using a set.
+5. Time and space complexity: Time complexity is O(n * k * log(n)), where n is the target number and k is the number of primes. Space complexity is O(n) to store the heap and the set.
+</thinking>

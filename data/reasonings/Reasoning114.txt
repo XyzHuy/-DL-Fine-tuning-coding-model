@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Flatten a binary tree into a linked list using the right child pointer, following a pre-order traversal. The left child should always be null.
+2. Problem type / algorithm category: Tree traversal, iterative pre-order traversal, in-place modification.
+3. Step-by-step approach: Use a stack to simulate pre-order traversal. Pop a node, push its right child and then its left child onto the stack (if they exist), making sure to set the current node's left to null and right to the top of the stack.
+4. Edge cases: Empty tree (root is None). Single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes. Space complexity is O(N) in the worst case (skewed tree), due to the stack.
+</thinking>

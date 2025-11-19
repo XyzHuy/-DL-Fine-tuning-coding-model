@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of divisors for numbers in an array that have exactly four divisors.
+2. Problem type / algorithm category: Number Theory, Iteration, Divisor Counting.
+3. Step-by-step approach: For each number, find its divisors. If the count of divisors is exactly four, sum these divisors and add to a running total.
+4. Edge cases: Numbers with fewer or more than four divisors, an empty input array, or an array where no number has exactly four divisors.
+5. Time and space complexity: Time complexity is O(N * sqrt(M)) where N is the length of nums and M is the maximum value in nums. Space complexity is O(1) beyond input storage.
+</thinking>

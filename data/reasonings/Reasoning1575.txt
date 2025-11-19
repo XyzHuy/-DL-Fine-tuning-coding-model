@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of distinct paths from a start city to a finish city using a given initial fuel, where traveling between cities consumes fuel equal to the distance between them.
+2. Problem type / algorithm category: Dynamic Programming with Recursion (Memoization) / Depth First Search.
+3. Step-by-step approach: Use a recursive Depth First Search (DFS) function that takes the current city index and remaining fuel. The base case is when fuel is insufficient to reach the finish city. Otherwise, count the current city as a valid finish if it is the target, and recursively explore all other cities, subtracting the travel cost from fuel. Memoize results for (current city, remaining fuel) pairs to avoid redundant calculations.
+4. Edge cases: Insufficient initial fuel to reach the finish city, even directly. Visiting cities multiple times is allowed.
+5. Time and space complexity: Time complexity is O(N^2 * F) and space complexity is O(N * F), where N is the number of locations and F is the initial fuel.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count integers in a given range [low, high] where the sum of the first half of digits equals the sum of the second half, only if the number of digits is even.
+2. Problem type / algorithm category: Brute-force iteration with digit manipulation.
+3. Step-by-step approach: Iterate through each number from low to high. For each number, convert it to a string. Check if the number of digits is even. If even, split the string into two halves, calculate the sum of digits for each half, and compare. Increment a counter if the sums are equal.
+4. Edge cases: Numbers with an odd number of digits are never symmetric. Single-digit numbers are implicitly not symmetric as they have an odd number of digits.
+5. Time and space complexity: Time complexity is O((high - low) * D), where D is the maximum number of digits (log10(high)). Space complexity is O(D) for string conversion.
+</thinking>

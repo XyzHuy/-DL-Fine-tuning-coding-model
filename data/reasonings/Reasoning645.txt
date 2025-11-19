@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the duplicate and missing number in an array that should contain numbers from 1 to n.
+2. Problem type / algorithm category: Array, Set, Math.
+3. Step-by-step approach: Use a set to identify the duplicate number by comparing the sum of the original array to the sum of the set. Find the missing number by comparing the sum of numbers from 1 to n to the sum of the set.
+4. Edge cases: Array with length 2.
+5. Time and space complexity: Time: O(n), Space: O(n).
+</thinking>

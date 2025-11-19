@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the sum of (time_taken * satisfaction) for a subset of dishes, where time_taken increases by 1 for each subsequent dish prepared. Dishes can be prepared in any order and some can be discarded.
+2. Problem type / algorithm category: Greedy approach, Dynamic Programming (implicitly).
+3. Step-by-step approach: Sort dishes by satisfaction in descending order. Iterate through sorted dishes, maintaining a running sum of satisfaction and a total like-time coefficient. Add a dish's satisfaction to the running sum. If the running sum becomes negative, stop, as adding more dishes will only decrease the total. Otherwise, add the running sum to the total coefficient.
+4. Edge cases: All satisfaction values are negative (result should be 0). Only one dish is selected.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(1) if sorting is in-place, or O(N) if a copy is made.
+</thinking>

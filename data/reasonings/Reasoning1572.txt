@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of elements on the main diagonal and the anti-diagonal of a square matrix, ensuring elements at the intersection are counted only once.
+2. Problem type / algorithm category: Matrix traversal, Array manipulation.
+3. Step-by-step approach: Iterate through the matrix, summing elements on the primary diagonal (i, i) and secondary diagonal (i, n-1-i). If the matrix dimension is odd, subtract the center element to avoid double counting.
+4. Edge cases: A 1x1 matrix, where the single element is on both diagonals.
+5. Time and space complexity: O(n) time complexity for iterating through the matrix once, and O(1) space complexity as only a few variables are used.
+</thinking>

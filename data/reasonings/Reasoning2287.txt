@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of times a target string can be formed by rearranging characters available in a source string s.
+2. Problem type / algorithm category: Character counting and frequency analysis.
+3. Step-by-step approach: Count character frequencies in both s and target. For each character in target, divide its count in s by its count in target to find the maximum possible copies based on that character. The minimum of these values across all target characters is the answer.
+4. Edge cases: If a character required by target is not present in s, zero copies can be formed.
+5. Time and space complexity: Time complexity is O(N + M) where N is the length of s and M is the length of target. Space complexity is O(1) as the alphabet size is constant (26 lowercase English letters).
+</thinking>

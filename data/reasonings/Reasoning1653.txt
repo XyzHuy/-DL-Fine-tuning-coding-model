@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum deletions to make a string of 'a's and 'b's balanced, meaning no 'b' appears before an 'a'.
+2. Problem type / algorithm category: Dynamic Programming / Greedy Approach.
+3. Step-by-step approach: Iterate through the string maintaining a count of preceding 'b's and the minimum deletions needed so far. For each 'a', decide whether to delete it or delete all preceding 'b's.
+4. Edge cases: String with all 'a's or all 'b's, which are already balanced and require 0 deletions.
+5. Time and space complexity: O(n) time complexity due to single pass, O(1) space complexity for storing counts.
+</thinking>

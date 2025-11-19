@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a string of digits can be split into at least two numerical substrings where each subsequent substring's value is exactly one less than the previous one.
+2. Problem type / algorithm category: Backtracking / Recursion.
+3. Step-by-step approach: Iterate through possible first substrings, then recursively attempt to split the remainder of the string. The recursive function checks if the current substring's value is one less than the previous one, and if so, continues the process. Success is achieved if the entire string is consumed with more than one part.
+4. Edge cases: String length of 1 cannot be split into multiple parts. Leading zeros in substrings are handled by integer conversion. The first number can be any value.
+5. Time and space complexity: Time complexity is roughly O(2^N) in the worst case, where N is the length of the string, due to the branching nature of recursion. Space complexity is O(N) due to the recursion depth.
+</thinking>

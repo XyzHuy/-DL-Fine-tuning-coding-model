@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate a score by repeatedly selecting the smallest unmarked number, adding it to the score, and marking it and its neighbors.
+2. Problem type / algorithm category: Greedy algorithm, Sorting.
+3. Step-by-step approach: Create pairs of (number, index) and sort them by number, then by index for ties. Iterate through sorted pairs. If an element is unmarked, add its value to the score and mark the element and its immediate neighbors.
+4. Edge cases: Array with single element, all elements same value, elements at the boundaries of the array.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, and space complexity is O(N) for storing marked status and sorted pairs.
+</thinking>

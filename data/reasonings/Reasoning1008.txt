@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to reconstruct a unique Binary Search Tree (BST) given its preorder traversal array.
+2. Problem type / algorithm category: Tree, Recursion, Divide and Conquer, Binary Search.
+3. Step-by-step approach: A recursive function builds the tree. The first element of any preorder sub-array is the root of that subtree. We then find the boundary in the remaining sub-array that separates smaller values (left subtree) from larger values (right subtree). This boundary is found efficiently using binary search. The function is then called recursively on the two partitions to build the left and right children.
+4. Edge cases: The base case of the recursion (when the start index is greater than the end index) handles empty subtrees. The logic correctly constructs skewed trees where all nodes are either left or right children.
+5. Time and space complexity: The time complexity is O(n log n) because for each node, we perform a binary search. The space complexity is O(n) for the recursion stack in the worst case of a skewed tree.
+</thinking>

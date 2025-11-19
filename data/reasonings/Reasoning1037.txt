@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if three given points form a boomerang, meaning they are distinct and non-collinear.
+2. Problem type / algorithm category: Geometry, Collinearity Check
+3. Step-by-step approach: Extract coordinates, compute the area of the triangle formed by the points using the determinant formula, and check if the area is non-zero.
+4. Edge cases: Points being the same, points being collinear (lying on the same line). The constraint ensures only 3 points are input.
+5. Time and space complexity: O(1) time for calculation, O(1) space for variables.
+</thinking>

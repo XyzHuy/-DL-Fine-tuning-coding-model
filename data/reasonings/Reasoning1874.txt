@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the minimum product sum of two arrays by rearranging one of them.
+2. Problem type / algorithm category: Sorting and greedy approach.
+3. Step-by-step approach: Sort the first array in ascending order and the second array in descending order. Then, compute the sum of element-wise products.
+4. Edge cases: Arrays can have a length of 1, and elements are positive integers. Empty arrays are not possible due to constraints.
+5. Time and space complexity: O(N log N) time due to sorting, O(1) or O(N) space depending on sorting implementation.
+</thinking>

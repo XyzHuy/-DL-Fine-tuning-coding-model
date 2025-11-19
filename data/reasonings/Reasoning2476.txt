@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a BST and queries, find for each query, the largest value less than or equal to the query and the smallest value greater than or equal to the query.
+2. Problem type / algorithm category: Binary Search Tree traversal, Binary Search.
+3. Step-by-step approach: First, perform an in-order traversal of the BST to obtain a sorted list of all node values. Then, for each query, use binary search on the sorted list to find the indices for the largest element less than or equal to the query and the smallest element greater than or equal to the query.
+4. Edge cases: Queries that are smaller than all elements in the BST, queries that are larger than all elements, and queries that exactly match an element in the BST.
+5. Time and space complexity: O(N + Q * log N) time complexity, where N is the number of nodes in the BST and Q is the number of queries. O(N) space complexity for storing the sorted values.
+</thinking>

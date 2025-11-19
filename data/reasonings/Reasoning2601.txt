@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be made strictly increasing by subtracting prime numbers less than current elements from chosen indices.
+2. Problem type / algorithm category: Greedy approach with precomputation (Sieve of Eratosthenes).
+3. Step-by-step approach: First, precompute all primes up to the maximum value in the array using a sieve. Then, iterate through the array greedily, for each element, find the largest possible prime to subtract such that the new element is strictly greater than the previous element. If at any point this is not possible, return false.
+4. Edge cases: The array might already be strictly increasing. The target value to be subtracted from may be less than the smallest prime (2). The maximum element in nums can be up to 1000.
+5. Time and space complexity: Time complexity is dominated by the sieve and the iteration, approximately O(M log log M + N*P) where M is max(nums) and P is the number of primes. Space complexity is O(M) for the sieve.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace '?' in a string with lowercase letters to minimize the sum of character costs, returning the lexicographically smallest string if multiple solutions exist.
+2. Problem type / algorithm category: Greedy, String manipulation.
+3. Step-by-step approach: Count existing character frequencies, then greedily assign the least frequent character to each '?', incrementing its count. Sort these assigned characters to maintain lexicographical order and then substitute them into the original string.
+4. Edge cases: The string may contain only '?' characters, or no '?' characters. The length of the string is at least 1.
+5. Time and space complexity: O(N * A + M log M) time and O(N + A) space, where N is string length, A is alphabet size (26), and M is number of '?'.
+</thinking>

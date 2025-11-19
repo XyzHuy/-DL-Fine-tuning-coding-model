@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if two strings, s and goal, can become equal by swapping exactly two characters in s.
+2. Problem type / algorithm category: String manipulation, conditional logic.
+3. Step-by-step approach: Check length equality, handle identical strings by checking for duplicates, find differing indices, verify there are exactly two differences, and finally, check if swapping the differing characters makes the strings equal.
+4. Edge cases: Strings of different lengths, identical strings without duplicates, strings with more or less than two differing characters.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the strings, due to the linear scan. Space complexity is O(1), since we use a fixed amount of extra space, excluding the space used by the input strings.
+</thinking>

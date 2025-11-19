@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique palindromic permutations of a given string. If no such permutation exists, return an empty list.
+2. Problem type / algorithm category: Backtracking, String manipulation, Palindrome generation.
+3. Step-by-step approach: First, count character occurrences. Check if a palindromic permutation is possible by ensuring at most one character has an odd count. Identify the middle character (if any). Then, use Depth-First Search (DFS) to generate permutations by adding characters to both ends of the current palindrome being built.
+4. Edge cases: Empty input string, string with no palindromic permutations (more than one character with an odd count).
+5. Time and space complexity: Time complexity is difficult to determine precisely but is roughly O(N!), where N is the length of the string in the worst case. Space complexity is O(N) due to the recursion depth and storing the answer.
+</thinking>

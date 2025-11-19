@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find for each person the quietest person richer than or equal to them.
+2. Problem type / algorithm category: Graph traversal / Depth-First Search (DFS).
+3. Step-by-step approach: Build a graph representing the richer relationships. Use DFS to find the quietest person who is richer than or equal to each person. Memoize results to avoid redundant computations.
+4. Edge cases: Empty richer list, single person in quiet list.
+5. Time and space complexity: Time: O(n + m) where n is the number of people and m is the number of richer relations. Space: O(n + m) for the graph and recursion stack.
+</thinking>

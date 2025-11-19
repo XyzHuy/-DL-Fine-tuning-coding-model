@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of substrings with equal numbers of consecutive 0s and 1s in a given binary string.
+2. Problem type / algorithm category: String manipulation, counting, greedy approach.
+3. Step-by-step approach: Iterate through the string, keeping track of the counts of consecutive 0s and 1s. When the character changes, add the minimum of the previous count and the current count to the result.
+4. Edge cases: Empty string (not applicable due to constraints), strings with only 0s or only 1s.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(1).
+</thinking>

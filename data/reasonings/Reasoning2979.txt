@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the largest integer price that cannot be formed by a non-negative integer linear combination of two distinct prime numbers.
+2. Problem type / algorithm category: Number theory, Frobenius Coin Problem (or Coin Problem for two coins).
+3. Step-by-step approach: Apply the formula for the Frobenius number of two coprime integers, which is m*n - m - n, where m and n are the two coprime integers. In this case, primeOne and primeTwo are distinct primes and thus coprime.
+4. Edge cases: The problem statement guarantees distinct prime inputs, so no special handling for non-primes or identical primes is needed. The constraints ensure inputs are within a reasonable range.
+5. Time and space complexity: O(1) time complexity because the solution involves a simple arithmetic calculation. O(1) space complexity as no extra data structures are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to travel from city 0 to city n-1, given highways with tolls and a limited number of discounts that halve the toll of a highway.
+2. Problem type / algorithm category: Shortest path on a weighted graph with an additional state (discounts). This is a variation of Dijkstra's algorithm.
+3. Step-by-step approach: Build an adjacency list for the graph. Use a priority queue to explore states (current_cost, current_city, remaining_discounts). Maintain a 2D array to store the minimum cost to reach each city with a specific number of remaining discounts. For each city, consider two transitions to neighbors: one without using a discount, and one using a discount if available.
+4. Edge cases: The destination city might be unreachable from the source city. The number of discounts can be zero.
+5. Time and space complexity: Time complexity is O(E * D * log(N * D)), where E is the number of highways, D is the number of discounts, and N is the number of cities. Space complexity is O(N * D) for storing minimum costs and O(E) for the graph representation.
+</thinking>

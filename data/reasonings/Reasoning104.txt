@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum depth (longest path from root to leaf) of a given binary tree.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Recursion.
+3. Step-by-step approach: Recursively calculate the depth of the left and right subtrees. The maximum depth of the tree is the maximum of the left and right subtree depths, plus 1 (for the current node).
+4. Edge cases: Empty tree (root is None).
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree. Space complexity is O(H) in the worst case (skewed tree) and O(log N) in the average case (balanced tree), where H is the height of the tree, due to the recursion stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of squares of distinct counts for all possible subarrays of a given integer array.
+2. Problem type / algorithm category: Brute force iteration, counting distinct elements.
+3. Step-by-step approach: Iterate through all possible start indices `i` and for each `i`, iterate through all possible end indices `j`. For each subarray `nums[i..j]`, maintain a set of distinct elements encountered and add the square of the set's size to a running total.
+4. Edge cases: The array can contain duplicate numbers, and subarrays can be of length 1. The constraints on array length and element values are small.
+5. Time and space complexity: Time complexity is O(n^3) due to nested loops and set operations (though set operations are typically O(1) on average, in the worst case they can be O(k) where k is the number of distinct elements, leading to O(n^3)). Space complexity is O(n) in the worst case for the set to store distinct elements.
+</thinking>

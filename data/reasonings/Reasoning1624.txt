@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest substring length between two occurrences of the same character in a given string, excluding the characters themselves. Return -1 if no character appears twice.
+2. Problem type / algorithm category: String manipulation, Hash Map (Dictionary).
+3. Step-by-step approach: Iterate through the string, using a dictionary to record the first index of each character encountered. When a character is seen again, calculate the distance between its current index and its first recorded index, subtract 2 (for the two equal characters), and update the maximum length found so far. Initialize max length to -1.
+4. Edge cases: Strings with no repeating characters (should return -1). Strings with adjacent repeating characters (substring length is 0). The shortest possible string length is 1.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(k) where k is the number of unique characters in the string (at most 26 for lowercase English letters).
+</thinking>

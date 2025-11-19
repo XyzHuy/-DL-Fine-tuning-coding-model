@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate people arriving and using a single door to enter or exit, with specific priority rules for simultaneous access, to determine each person's door usage time.
+2. Problem type / algorithm category: Simulation, Queue management.
+3. Step-by-step approach: Maintain separate queues for people wanting to enter and exit. At each second, add newly arrived people to their respective queues. Then, based on the last door usage and current queue states, decide who gets to use the door (exit has priority if door was unused or used for exit, otherwise enter has priority if available). If no one is waiting, advance time to the next arrival. Otherwise, increment time and repeat.
+4. Edge cases: No one arriving, everyone arriving at the same time, all wanting to enter/exit, alternating enter/exit requests.
+5. Time and space complexity: O(n) time complexity as each person is processed once, and O(n) space complexity for the queues and result array.
+</thinking>

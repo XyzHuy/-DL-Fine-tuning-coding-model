@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of distinct ways to climb n stairs, taking either 1 or 2 steps at a time.
+2. Problem type / algorithm category: Dynamic Programming / Fibonacci sequence.
+3. Step-by-step approach: Use dynamic programming to store the number of ways to reach each step. The number of ways to reach step i is the sum of the number of ways to reach step i-1 and step i-2.
+4. Edge cases: n = 1 (1 way), n = 2 (2 ways).
+5. Time and space complexity: Time complexity is O(n), space complexity is O(1).
+</thinking>

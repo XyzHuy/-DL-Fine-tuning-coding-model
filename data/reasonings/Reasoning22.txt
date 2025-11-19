@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Generate all possible valid combinations of parentheses given n pairs.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Use a recursive backtracking function to explore all possible combinations. Keep track of the number of open and closed parentheses used. Add an open parenthesis if the number of open parentheses is less than n, and add a closed parenthesis if the number of closed parentheses is less than the number of open parentheses. When the length of the string reaches 2*n, add it to the result.
+4. Edge cases: n = 1 is a base case. n can be at most 8.
+5. Time and space complexity: Time complexity is O(4^n / sqrt(n)) due to the Catalan number. Space complexity is O(n) due to the recursion depth.
+</thinking>

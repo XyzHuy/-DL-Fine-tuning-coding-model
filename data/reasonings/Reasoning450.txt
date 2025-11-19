@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Delete a node with the given key from a binary search tree and return the modified root.
+2. Problem type / algorithm category: Binary Search Tree deletion.
+3. Step-by-step approach: Recursively search for the node to delete. If found, handle cases: node has no children, one child, or two children. If two children, find the inorder successor (min of the right subtree) to replace the node to be deleted.
+4. Edge cases: Empty tree, key not found, node to be deleted is root, node has only left or right child.
+5. Time and space complexity: Time: O(H), where H is the height of the tree. Space: O(H) due to recursion stack.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum eating speed (k) such that Koko can finish all piles of bananas within h hours.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use binary search to find the minimum eating speed k. The search space is from 1 to the maximum number of bananas in a pile. For each mid value, calculate the total hours needed to eat all piles at speed k. If the total hours are less than or equal to h, try a smaller speed (right = mid - 1). Otherwise, increase the speed (left = mid + 1).
+4. Edge cases: The minimum possible speed is 1, and the maximum possible speed is the largest pile size. Also, the number of piles is less than or equal to h.
+5. Time and space complexity: Time complexity is O(N log M), where N is the number of piles and M is the maximum number of bananas in a pile. Space complexity is O(1).
+</thinking>

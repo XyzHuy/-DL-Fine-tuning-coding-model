@@ -1,0 +1,754 @@
+{
+  "function_name": "validSubstringCount",
+  "test_cases": [
+    {
+      "parameters": {
+        "word1": "banana",
+        "word2": "ban"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "abc",
+        "word2": "abcd"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "aaaabc",
+        "word2": "aaa"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word1": "mississippi",
+        "word2": "issi"
+      },
+      "expected_output": 27
+    },
+    {
+      "parameters": {
+        "word1": "abcabc",
+        "word2": "aaabc"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word1": "abababab",
+        "word2": "aba"
+      },
+      "expected_output": 18
+    },
+    {
+      "parameters": {
+        "word1": "abcabc",
+        "word2": "abc"
+      },
+      "expected_output": 10
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaaa",
+        "word2": "aaaa"
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzz",
+        "word2": "zzz"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "word1": "a",
+        "word2": ""
+      },
+      "expected_output": "Error: string index out of range"
+    },
+    {
+      "parameters": {
+        "word1": "abcdeabcde",
+        "word2": "abc"
+      },
+      "expected_output": 26
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "",
+        "word2": "a"
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "word1": "bcca",
+        "word2": "abc"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "aaa",
+        "word2": "a"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word1": "aabbcc",
+        "word2": "abc"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "xyz",
+        "word2": "xyz"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word1": "aaaa",
+        "word2": "aa"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word1": "abcdabcd",
+        "word2": "abcd"
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzz"
+      },
+      "expected_output": 171
+    },
+    {
+      "parameters": {
+        "word1": "abababababababababab",
+        "word2": "ababab"
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 91
+    },
+    {
+      "parameters": {
+        "word1": "overlappingprefixoverlappingprefix",
+        "word2": "overlappingprefix"
+      },
+      "expected_output": 171
+    },
+    {
+      "parameters": {
+        "word1": "supercalifragilisticexpialidocious",
+        "word2": "califragilisticexpialidocious"
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "word1": "xzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzyxzy",
+        "word2": "xyz"
+      },
+      "expected_output": 5356
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnopqrstuvwxyzaabbccddeeff"
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "word1": "abracadabra",
+        "word2": "abra"
+      },
+      "expected_output": 25
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzz"
+      },
+      "expected_output": 1176
+    },
+    {
+      "parameters": {
+        "word1": "ababababababababababababababababab",
+        "word2": "ababab"
+      },
+      "expected_output": 435
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 1081
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeff",
+        "word2": "abcdef"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongstringtocheck",
+        "word2": "verylong"
+      },
+      "expected_output": 112
+    },
+    {
+      "parameters": {
+        "word1": "aaaaabaaaabaaaaaaaabaaaabaaaaabaaaabaaaaabaaaabaaaaabaaaaabaaaaabaaaabaaaaabaaaaabaaaaabaaaaaab",
+        "word2": "aaab"
+      },
+      "expected_output": 4225
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxwvutsrqponmlkjihgfedcba"
+      },
+      "expected_output": 378
+    },
+    {
+      "parameters": {
+        "word1": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "word2": "abcdabcd"
+      },
+      "expected_output": 561
+    },
+    {
+      "parameters": {
+        "word1": "abcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "word2": "abcdabcd"
+      },
+      "expected_output": 435
+    },
+    {
+      "parameters": {
+        "word1": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm",
+        "word2": "qwertyuiopasdfghjklzxcvbnm"
+      },
+      "expected_output": 378
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaabbbbbbbbbbccccccccccdddddddddd",
+        "word2": "abcd"
+      },
+      "expected_output": 100
+    },
+    {
+      "parameters": {
+        "word1": "xyxxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyx",
+        "word2": "xyxy"
+      },
+      "expected_output": 1538
+    },
+    {
+      "parameters": {
+        "word1": "repeatedprefixprefixprefixprefix",
+        "word2": "prefix"
+      },
+      "expected_output": 342
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "abcdefghijklmnopqrstuv"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "word1": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm",
+        "word2": "qwerty"
+      },
+      "expected_output": 608
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "word1": "repeatedrepeatedrepeated",
+        "word2": "repeatedrepeated"
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongwordthatcontainsmultipleoccurrencesofthesubstring",
+        "word2": "substring"
+      },
+      "expected_output": 146
+    },
+    {
+      "parameters": {
+        "word1": "ababababab",
+        "word2": "abab"
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffaabbccddeeffaabbccddeeff",
+        "word2": "aabbccdd"
+      },
+      "expected_output": 349
+    },
+    {
+      "parameters": {
+        "word1": "mississippimississippi",
+        "word2": "issi"
+      },
+      "expected_output": 161
+    },
+    {
+      "parameters": {
+        "word1": "racecar",
+        "word2": "race"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohello",
+        "word2": "hell"
+      },
+      "expected_output": 69
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzz",
+        "word2": "zzz"
+      },
+      "expected_output": 36
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnopqrstuvwxzy"
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "word1": "twoprefixtwoprefixtwoprefix",
+        "word2": "twoprefix"
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "word1": "shortword",
+        "word2": "word"
+      },
+      "expected_output": 6
+    },
+    {
+      "parameters": {
+        "word1": "threeprefixthreeprefixthreeprefix",
+        "word2": "threeprefix"
+      },
+      "expected_output": 276
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "word1": "abababababababababababababababababababababababababababababa",
+        "word2": "bab"
+      },
+      "expected_output": 1624
+    },
+    {
+      "parameters": {
+        "word1": "abcdeabcdeabcdeabcdeabcde",
+        "word2": "abcde"
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnopqrstuvwxyz"
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohellohellohello",
+        "word2": "lohel"
+      },
+      "expected_output": 231
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabc",
+        "word2": "abcabc"
+      },
+      "expected_output": 325
+    },
+    {
+      "parameters": {
+        "word1": "ababababababababababab",
+        "word2": "bababa"
+      },
+      "expected_output": 153
+    },
+    {
+      "parameters": {
+        "word1": "oneprefixoneprefixoneprefix",
+        "word2": "oneprefix"
+      },
+      "expected_output": 190
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzzzzzzzzz"
+      },
+      "expected_output": 946
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaa",
+        "word2": "aa"
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "word1": "ababababababababababababababababababababababababa",
+        "word2": "ab"
+      },
+      "expected_output": 1176
+    },
+    {
+      "parameters": {
+        "word1": "xylophone",
+        "word2": "phone"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word1": "qwertyuiopasdfghjklzxcvbnm",
+        "word2": "zxcvbnm"
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "word2": "aaa"
+      },
+      "expected_output": 1176
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz",
+        "word2": "zyxcba"
+      },
+      "expected_output": 588
+    },
+    {
+      "parameters": {
+        "word1": "abracadabraabracadabraabracadabra",
+        "word2": "abrac"
+      },
+      "expected_output": 375
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongstringwithrepeatingcharacters",
+        "word2": "repeating"
+      },
+      "expected_output": 391
+    },
+    {
+      "parameters": {
+        "word1": "xyzzxyzzxyzz",
+        "word2": "xyzz"
+      },
+      "expected_output": 45
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijabcdefghij",
+        "word2": "abcdefghij"
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "word1": "abracadabraabracadabra",
+        "word2": "abracadabra"
+      },
+      "expected_output": 78
+    },
+    {
+      "parameters": {
+        "word1": "testingtestingtestingtesting",
+        "word2": "testingtesting"
+      },
+      "expected_output": 120
+    },
+    {
+      "parameters": {
+        "word1": "thisisaverylongstringthatcontainssomeprefixsomewhere",
+        "word2": "somewhere"
+      },
+      "expected_output": 183
+    },
+    {
+      "parameters": {
+        "word1": "mississippi",
+        "word2": "iss"
+      },
+      "expected_output": 38
+    },
+    {
+      "parameters": {
+        "word1": "thisisanexamplestringfortesting",
+        "word2": "example"
+      },
+      "expected_output": 159
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohellohellohellohellohellohello",
+        "word2": "hellohello"
+      },
+      "expected_output": 496
+    },
+    {
+      "parameters": {
+        "word1": "alphabet",
+        "word2": "beta"
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "word1": "zyxwvutsrqponmlkjihgfedcba",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "xyzxyzxyzxyzxyzxyz",
+        "word2": "zyxzyx"
+      },
+      "expected_output": 91
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabcabc",
+        "word2": "abc"
+      },
+      "expected_output": 4465
+    },
+    {
+      "parameters": {
+        "word1": "hellohellohellohellohellohellohellohellohellohellohello",
+        "word2": "hello"
+      },
+      "expected_output": 1326
+    },
+    {
+      "parameters": {
+        "word1": "abacabadabacaba",
+        "word2": "abaca"
+      },
+      "expected_output": 56
+    },
+    {
+      "parameters": {
+        "word1": "verylongstringwithmanymatchingprefixes",
+        "word2": "prefix"
+      },
+      "expected_output": 93
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzzz"
+      },
+      "expected_output": 1431
+    },
+    {
+      "parameters": {
+        "word1": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+        "word2": "zzzz"
+      },
+      "expected_output": 5151
+    },
+    {
+      "parameters": {
+        "word1": "pppppppppppppppppppppppppppppppppppppppppppppppppppppppppp",
+        "word2": "ppppppp"
+      },
+      "expected_output": 1378
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "abcde"
+      },
+      "expected_output": 88
+    },
+    {
+      "parameters": {
+        "word1": "onetwothreefourfivesixseveneightnine",
+        "word2": "threefour"
+      },
+      "expected_output": 164
+    },
+    {
+      "parameters": {
+        "word1": "abababababababababababababababababab",
+        "word2": "aba"
+      },
+      "expected_output": 578
+    },
+    {
+      "parameters": {
+        "word1": "aaabbbcccdddeeefffggghhhiiiijjjjkkkkllllmmmmnnnnooopppqqqqrrrrssssttttuuuuvvvvwwwwxxxxyyyyzzzz",
+        "word2": "mnopqrstuvwxyz"
+      },
+      "expected_output": 176
+    },
+    {
+      "parameters": {
+        "word1": "aaaaaaaaaa",
+        "word2": "aaaaa"
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "word1": "abcabcabcabcabcabcabcabcabcabc",
+        "word2": "abcabcabc"
+      },
+      "expected_output": 253
+    },
+    {
+      "parameters": {
+        "word1": "qwertyuiopasdfghjklzxcvbnm",
+        "word2": "abcdefghijklmnopqrstuvwxyz"
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "word1": "abcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcdabcd",
+        "word2": "abcdabcdabcd"
+      },
+      "expected_output": 1431
+    },
+    {
+      "parameters": {
+        "word1": "aabbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzz",
+        "word2": "mnop"
+      },
+      "expected_output": 572
+    },
+    {
+      "parameters": {
+        "word1": "loooooooooooooooooooongwordwithrepeatedletters",
+        "word2": "oooooo"
+      },
+      "expected_output": 557
+    },
+    {
+      "parameters": {
+        "word1": "almostmatchingprefixalmostmatchingprefix",
+        "word2": "almostmatching"
+      },
+      "expected_output": 259
+    },
+    {
+      "parameters": {
+        "word1": "xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyz",
+        "word2": "xyzxyz"
+      },
+      "expected_output": 496
+    },
+    {
+      "parameters": {
+        "word1": "12345678901234567890",
+        "word2": "9087654321"
+      },
+      "expected_output": 66
+    },
+    {
+      "parameters": {
+        "word1": "uniquecharacters",
+        "word2": "characters"
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "word1": "abcdefghijklmnopqrstuvwxyz",
+        "word2": "zyx"
+      },
+      "expected_output": 24
+    }
+  ]
+}

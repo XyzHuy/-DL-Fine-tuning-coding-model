@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary string, find the minimum type-2 operations (flips) to make it alternating, where type-1 operations (rotations) can be performed to change the starting point of the string.
+2. Problem type / algorithm category: String manipulation, sliding window, prefix sums.
+3. Step-by-step approach: Consider two target alternating patterns ('0101...' and '1010...'). For each possible rotation of the input string, calculate the flips needed to match these target patterns. The minimum among all these is the answer. This is optimized using a sliding window where we efficiently update flip counts as the window (representing a rotation) shifts.
+4. Edge cases: The input string can have length 1. The string might already be alternating, requiring 0 flips.
+5. Time and space complexity: Time complexity is O(N) due to the single pass for the initial counts and the sliding window. Space complexity is O(N) to store the reference alternating strings.
+</thinking>

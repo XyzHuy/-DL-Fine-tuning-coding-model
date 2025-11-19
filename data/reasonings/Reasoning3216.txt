@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest string by performing at most one adjacent swap of digits with the same parity.
+2. Problem type / algorithm category: Greedy approach, String manipulation.
+3. Step-by-step approach: Iterate through the string. If two adjacent digits have the same parity and the first digit is greater than the second, swap them and return the modified string. If no such swap is found after checking all adjacent pairs, return the original string.
+4. Edge cases: The string already being lexicographically smallest, meaning no swaps are beneficial or possible.
+5. Time and space complexity: O(N) time complexity for iterating through the string and O(N) space complexity for creating a mutable list of digits.
+</thinking>

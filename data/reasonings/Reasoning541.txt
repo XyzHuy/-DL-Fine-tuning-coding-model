@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the first k characters of every 2k characters in a string.
+2. Problem type / algorithm category: String manipulation, array manipulation, iteration.
+3. Step-by-step approach: Iterate through the string with a step of 2k. For each chunk, reverse the first k characters and append them to the result. Append the next k characters (or remaining characters) without reversing. Finally, join the result.
+4. Edge cases: String length less than k, string length between k and 2k, string length a multiple of 2k.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) because we store the reversed string in the result list.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse only the vowels within a given string.
+2. Problem type / algorithm category: String manipulation, two pointers.
+3. Step-by-step approach: Use two pointers, one starting from the beginning and the other from the end of the string. Move the pointers towards each other, swapping vowels when both pointers point to vowels.
+4. Edge cases: Empty string, string with no vowels, string with only vowels.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(n) because we convert the string to a list.
+</thinking>

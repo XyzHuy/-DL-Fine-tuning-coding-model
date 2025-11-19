@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, return a new array where each element represents the number of smaller elements to its right in the original array.
+2. Problem type / algorithm category: Array manipulation, sorting, binary search (bisect).
+3. Step-by-step approach: Iterate through the input array `nums` from right to left. Maintain a sorted list `sorted_nums` of the elements encountered so far. For each element, use binary search (`bisect_left`) to find the index where it should be inserted in `sorted_nums`. This index represents the number of smaller elements to its right. Append the index to a `counts` list. Finally, reverse the `counts` list to obtain the desired result.
+4. Edge cases: Empty input array, array with duplicate elements, array with negative numbers. The solution handles these cases correctly.
+5. Time and space complexity: Time complexity is O(n log n) due to the n binary searches and insertions into the sorted list. Space complexity is O(n) to store the sorted list and the counts array.
+</thinking>

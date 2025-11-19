@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count nodes in a binary tree where the node's value equals the average of its subtree, rounded down.
+2. Problem type / algorithm category: Tree Traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Perform a post-order DFS. For each node, recursively compute the sum of values and the count of nodes in its left and right subtrees. Combine these with the current node's value to get the total sum and count for the current subtree. Calculate the average. If the current node's value equals this average, increment a counter. Return the sum, count, and incremented counter upwards.
+4. Edge cases: An empty tree (though constraints state at least one node). A single-node tree. Nodes with null children.
+5. Time and space complexity: Time complexity is O(N) because each node is visited once. Space complexity is O(H) for the recursion stack, where H is the height of the tree (O(N) in the worst case for a skewed tree, O(log N) for a balanced tree).
+</thinking>

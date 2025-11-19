@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the Hamming distance between two given integers, which is the number of differing bits in their binary representations.
+2. Problem type / algorithm category: Bit manipulation.
+3. Step-by-step approach: XOR the two integers, then count the set bits (1s) in the result's binary representation.
+4. Edge cases: The constraints specify a valid range for inputs (0 to 2^31 - 1), so explicit error handling for invalid inputs is not strictly necessary.
+5. Time and space complexity: Time complexity is O(1) as the number of bits is fixed within 32 bits. Space complexity is O(1).
+</thinking>

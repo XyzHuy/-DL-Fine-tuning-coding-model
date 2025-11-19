@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize profit from operating a Ferris wheel by deciding when to stop serving customers, given arrival rates, boarding cost, and running cost.
+2. Problem type / algorithm category: Greedy approach and simulation.
+3. Step-by-step approach: Iterate through customer arrivals, simulate boarding (up to 4 per rotation), calculate profit after each rotation (earnings minus running cost), and track the maximum profit and corresponding rotations. Continue simulating rotations even after all customers have arrived if there are still waiting customers, as profit might increase. If maximum profit is not positive, return -1.
+4. Edge cases: No customers arrive, boarding/running costs are very high leading to no positive profit, all customers can be served before incurring excessive running costs.
+5. Time and space complexity: O(N) time complexity where N is the number of customer arrival events. O(1) space complexity as we only store a few variables.
+</thinking>

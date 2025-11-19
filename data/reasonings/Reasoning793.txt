@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer k, find the number of non-negative integers x such that the number of trailing zeros in x! is equal to k.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: The number of trailing zeros is a monotonically increasing function. Use binary search to find the smallest x such that f(x) >= k. Then, check if f(x) == k. If it is, the answer is 5, otherwise it is 0.
+4. Edge cases: k=0. The range of x to consider for the binary search is from 0 up to approximately 5 * (k+1).
+5. Time and space complexity: Time complexity is O(log N), where N is 5 * (k+1), due to the binary search. Space complexity is O(1).
+</thinking>

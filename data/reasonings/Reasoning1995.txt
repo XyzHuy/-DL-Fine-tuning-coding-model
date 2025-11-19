@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count quadruplets (a, b, c, d) in an array where indices satisfy a < b < c < d and the sum of elements at the first three indices equals the element at the fourth index.
+2. Problem type / algorithm category: Brute Force / Iterative Search.
+3. Step-by-step approach: Iterate through all possible combinations of four indices (a, b, c, d) such that a < b < c < d. For each combination, check if the sum of nums[a], nums[b], and nums[c] equals nums[d]. If it does, increment a counter.
+4. Edge cases: The input array length is at least 4, ensuring at least one possible quadruplet can be formed. The values in the array are positive integers.
+5. Time and space complexity: Time complexity is O(n^4) due to four nested loops. Space complexity is O(1) as only a counter variable is used.
+</thinking>

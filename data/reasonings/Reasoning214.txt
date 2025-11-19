@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, find the shortest palindrome by adding characters to the beginning of the string.
+2. Problem type / algorithm category: String manipulation, palindrome detection, KMP (Longest Prefix Suffix).
+3. Step-by-step approach: Find the longest palindromic prefix of the input string. Reverse the remaining suffix of the string (the part that's not part of the longest palindromic prefix). Prepend this reversed suffix to the original string.
+4. Edge cases: Empty string, already a palindrome, single character string.
+5. Time and space complexity: Time complexity is O(n) due to KMP and string reversals. Space complexity is O(n) for storing the LPS array and reversed strings.
+</thinking>

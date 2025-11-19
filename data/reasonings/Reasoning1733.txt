@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of users to teach a single common language to ensure all friends can communicate, given initial language proficiencies and friendships.
+2. Problem type / algorithm category: Graph traversal, Set operations, Optimization (finding minimum).
+3. Step-by-step approach: First, identify pairs of friends who cannot communicate. Collect all users involved in such unfruitful friendships. Then, for each language, iterate through the identified users and count how many would need to learn that language. The minimum count across all languages is the answer.
+4. Edge cases: No friendships, all users already speak a common language, all users need to learn a new language.
+5. Time and space complexity: O(N*M + F*L + N*U), where N is the number of languages, M is the number of users, F is the number of friendships, L is the max languages per user, and U is the number of users involved in unfruitful friendships. Space complexity is O(M*L) for storing languages.
+</thinking>

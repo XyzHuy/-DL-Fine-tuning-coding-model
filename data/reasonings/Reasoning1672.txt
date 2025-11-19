@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of money across all accounts for any single customer.
+2. Problem type / algorithm category: Iteration, Summation, Finding Maximum.
+3. Step-by-step approach: Iterate through each customer's list of bank accounts, calculate the sum of money for each customer, and keep track of the maximum sum found so far.
+4. Edge cases: The grid can have a single row or single column. All account balances are positive.
+5. Time and space complexity: Time complexity is O(m*n) where m is the number of customers and n is the number of bank accounts per customer. Space complexity is O(m) to store the wealth of each customer.
+</thinking>

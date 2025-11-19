@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if the binary representation of a given integer has alternating bits (0 and 1).
+2. Problem type / algorithm category: Bit manipulation, string processing.
+3. Step-by-step approach: Convert the integer to its binary string representation. Iterate through the string and compare adjacent characters. If any adjacent characters are the same, return false. Otherwise, return true.
+4. Edge cases: The input integer is always positive, so no need to handle negative numbers or zero.
+5. Time and space complexity: Time complexity is O(log n) because the binary representation length is log n. Space complexity is O(log n) to store the binary string.
+</thinking>

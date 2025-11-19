@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum path sum from the top to the bottom of a triangle, where each step can only move to an adjacent number in the row below.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use bottom-up dynamic programming, starting from the last row and iterating upwards. Store the minimum path sum from each element to the bottom in a DP array. Update the DP array in each row using the minimum of the two adjacent elements in the row below.
+4. Edge cases: Empty triangle, triangle with only one row.
+5. Time and space complexity: Time complexity is O(n^2), where n is the number of rows. Space complexity is O(n) due to the DP array.
+</thinking>

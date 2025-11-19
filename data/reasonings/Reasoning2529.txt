@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count positive and negative integers in a sorted array and return the maximum count.
+2. Problem type / algorithm category: Array traversal, Binary Search (for follow-up/optimization).
+3. Step-by-step approach: Use binary search (bisect_left) to find the index of the first non-negative number to determine the count of negatives. Use binary search (bisect_left) to find the index of the first positive number (1) to determine the count of positives. Return the maximum of these two counts.
+4. Edge cases: Array contains only positive numbers, only negative numbers, or only zeros.
+5. Time and space complexity: O(log n) time complexity due to binary search, O(1) space complexity.
+</thinking>

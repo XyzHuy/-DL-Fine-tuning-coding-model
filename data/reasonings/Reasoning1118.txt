@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the number of days in a given month of a given year, accounting for leap years.
+2. Problem type / algorithm category: Date calculation, conditional logic.
+3. Step-by-step approach: Create a list of days in each month for a non-leap year. Determine if the given year is a leap year based on divisibility by 4, 100, and 400. If it's a leap year, update the days in February to 29. Return the appropriate value from the days_in_month list using the month as an index (subtract 1 since lists are zero-indexed).
+4. Edge cases: February in leap years, valid year and month inputs according to the constraints.
+5. Time and space complexity: Time complexity is O(1) because the operations are constant time. Space complexity is O(1) because the days_in_month array is fixed size.
+</thinking>

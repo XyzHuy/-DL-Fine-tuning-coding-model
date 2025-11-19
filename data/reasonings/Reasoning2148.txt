@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count numbers in an array that have at least one smaller and one larger number also present in the array.
+2. Problem type / algorithm category: Array traversal, finding min/max.
+3. Step-by-step approach: Find the minimum and maximum values in the array. Iterate through the array again, and for each element, check if it's strictly greater than the minimum and strictly smaller than the maximum. If both conditions are met, increment a counter.
+4. Edge cases: Arrays with fewer than 3 elements cannot have such numbers, so return 0. Duplicate minimum or maximum values do not affect the counting logic as strict inequality is used.
+5. Time and space complexity: Time is O(N) due to finding min/max and a single pass. Space is O(1) as only a few variables are used.
+</thinking>

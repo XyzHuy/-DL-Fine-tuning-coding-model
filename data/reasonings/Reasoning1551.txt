@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array where arr[i] = 2*i + 1, find the minimum operations to make all elements equal by moving value between elements.
+2. Problem type / algorithm category: Arithmetic progression, greedy approach, simulation.
+3. Step-by-step approach: Identify the target value (average of all elements). Sum the differences between elements in the first half of the array and the target value.
+4. Edge cases: n=1 (array [1], 0 operations), n=2 (array [1, 3], target 2, 1 operation).
+5. Time and space complexity: Time O(n), Space O(1).
+</thinking>

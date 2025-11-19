@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the average salary from a list of unique employee salaries, excluding the minimum and maximum salary.
+2. Problem type / algorithm category: Basic array manipulation, arithmetic operations.
+3. Step-by-step approach: Find the minimum and maximum salaries in the input array. Calculate the sum of all salaries and subtract the minimum and maximum. Divide this sum by the count of salaries minus two.
+4. Edge cases: The problem constraints guarantee at least 3 salaries, so no division by zero or empty list issues.
+5. Time and space complexity: O(n) time complexity due to finding min/max and sum. O(1) space complexity if min/max and sum are calculated iteratively.
+</thinking>

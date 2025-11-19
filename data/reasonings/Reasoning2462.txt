@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Hire k workers by repeatedly selecting the minimum cost worker from the first or last 'candidates' available workers, breaking ties with the smallest index.
+2. Problem type / algorithm category: Greedy, Min-Heap.
+3. Step-by-step approach: Initialize two min-heaps, one for the first 'candidates' and one for the last 'candidates'. In each of the k hiring rounds, compare the top elements of both heaps, select the worker with the minimum cost (and smallest index for ties), add their cost to the total, and then refill the chosen heap by adding the next available worker from the remaining pool.
+4. Edge cases: When 'candidates * 2' is greater than or equal to the total number of workers, meaning all workers are initially considered from either end, in which case sorting the entire list and taking the first k is simpler. Also, the case where one heap becomes empty.
+5. Time and space complexity: Time O(N log C + K log C), Space O(C) where N is the number of workers and C is the number of candidates.
+</thinking>

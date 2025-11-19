@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate for each element in a sorted array, the sum of absolute differences between itself and all other elements.
+2. Problem type / algorithm category: Prefix Sums, Array manipulation.
+3. Step-by-step approach: Compute the total sum of the array. For each element, calculate the sum of differences to elements on its left and sum of differences to elements on its right, using prefix sums. Sum these two values for the result at that index.
+4. Edge cases: Array length is at least 2. Elements are sorted and non-decreasing.
+5. Time and space complexity: Time O(N), Space O(N) (or O(1) if modifying input is allowed).
+</thinking>

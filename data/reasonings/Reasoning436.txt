@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a set of intervals, find the right interval for each interval, which is the interval with the smallest start value that is greater than or equal to the current interval's end value. Return -1 if no such interval exists.
+2. Problem type / algorithm category: Binary Search, Interval Searching
+3. Step-by-step approach: Create a sorted list of start values and their indices. For each interval, use binary search to find the smallest start value that is greater than or equal to the interval's end value. Store the index of the found interval or -1 if no such interval exists.
+4. Edge cases: Empty input list, no right interval exists for an interval.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting and binary search. Space complexity is O(n) to store the sorted start intervals and the result array.
+</thinking>

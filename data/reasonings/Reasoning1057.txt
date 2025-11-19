@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign bikes to workers based on Manhattan distance, worker index, and bike index, ensuring each worker gets a unique bike.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Calculate all Manhattan distances between workers and bikes, store them with worker and bike indices, sort the distances based on distance, worker index, and bike index, then iterate through the sorted distances and assign bikes to workers if they haven't been assigned yet and the bike hasn't been used.
+4. Edge cases: Multiple workers with the same distance to multiple bikes (handled by sorting and greedy assignment).
+5. Time and space complexity: Time complexity is O(m*n*log(m*n)) due to sorting the distances. Space complexity is O(m*n) to store the distances.
+</thinking>

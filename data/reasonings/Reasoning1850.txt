@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum adjacent swaps to transform a given large integer string into its k-th smallest lexicographically greater permutation.
+2. Problem type / algorithm category: Permutations, greedy algorithm, string manipulation.
+3. Step-by-step approach: First, find the k-th smallest lexicographical permutation of the input string. Then, calculate the minimum adjacent swaps required to transform the original string into this k-th permutation using a greedy approach by matching digits from left to right and counting swaps.
+4. Edge cases: The input string contains only digits; k is guaranteed to be valid and such that the k-th permutation exists; leading zeros are handled by permutation generation.
+5. Time and space complexity: Generating the k-th permutation can be O(N) where N is the length of num. Calculating swaps is O(N^2) due to nested loops. Overall time complexity is O(N^2). Space complexity is O(N) for storing permutations and modified strings.
+</thinking>

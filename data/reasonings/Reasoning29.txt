@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Divide two integers without using multiplication, division, and mod operator, handling integer overflow.
+2. Problem type / algorithm category: Bit manipulation, integer division.
+3. Step-by-step approach: Determine the sign, use absolute values, and iteratively subtract the divisor (multiplied by powers of 2) from the dividend until the dividend is less than the divisor. Keep track of how many times each multiple of the divisor can be subtracted. Finally, apply the correct sign and handle the overflow.
+4. Edge cases: Division by zero (not explicitly handled but prevented by problem statement), overflow (dividend is min integer and divisor is -1), and general negative and positive number combinations.
+5. Time and space complexity: Time complexity is O(log N) where N is the dividend, due to the bitwise operations. Space complexity is O(1) as it uses constant extra space.
+</thinking>

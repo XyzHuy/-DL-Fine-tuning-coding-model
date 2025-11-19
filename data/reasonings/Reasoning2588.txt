@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count contiguous subarrays where all elements can be reduced to zero by repeatedly subtracting powers of 2 from pairs of elements sharing that bit.
+2. Problem type / algorithm category: Prefix sums/XOR, Bit manipulation.
+3. Step-by-step approach: Realize that the operation is equivalent to XORing elements within the subarray. A subarray is beautiful if and only if the XOR sum of its elements is 0. Use prefix XORs to efficiently count subarrays with a XOR sum of 0. Iterate through the array, maintaining the current prefix XOR. For each element, the number of beautiful subarrays ending at the current position is equal to the number of times the current prefix XOR has been seen before.
+4. Edge cases: An empty input array is not possible due to constraints. A single element array where the element is 0 is a beautiful subarray.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) in the worst case for the hash map storing prefix XORs.
+</thinking>

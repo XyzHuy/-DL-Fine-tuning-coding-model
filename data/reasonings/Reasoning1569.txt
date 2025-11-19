@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of permutations of a given array that result in the same Binary Search Tree as the original array, modulo 10^9 + 7.
+2. Problem type / algorithm category: Recursive partitioning, Combinatorics, Dynamic Programming (implicit).
+3. Step-by-step approach: For a given array (or subarray), the first element is the root. Partition the remaining elements into left and right subarrays based on their values relative to the root. Recursively calculate the number of ways to form the same BSTs for the left and right subarrays. The total number of ways for the current level is the product of the ways for the left and right subarrays, multiplied by the number of ways to choose positions for the left elements among the combined left and right elements (using combinations).
+4. Edge cases: An empty array or an array with a single element results in 1 way. The final result subtracts 1 to exclude the original permutation.
+5. Time and space complexity: Time complexity is O(N^2) due to repeated list slicing and filtering within the recursion, where N is the length of nums. Space complexity is O(N) for the recursion stack. Pre-calculating combinations or using Pascal's triangle can optimize time to O(N).
+</thinking>

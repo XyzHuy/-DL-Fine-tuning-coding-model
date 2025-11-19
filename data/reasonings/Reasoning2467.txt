@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an undirected tree, Alice starts at node 0 and moves towards a leaf, while Bob moves towards node 0. They collect/pay amounts at nodes. Calculate Alice's maximum net income.
+2. Problem type / algorithm category: Graph traversal (BFS, DFS), Tree algorithms, Optimization.
+3. Step-by-step approach: 1. Build an adjacency list for the tree. 2. Find Bob's path to the root (node 0) using BFS, storing distance to each node on his path. 3. Traverse Alice's paths from the root using DFS. For each node Alice visits, check if Bob will also visit it, and if so, at the same time. Adjust profit by adding full amount, half amount, or zero based on these conditions. 4. If Alice reaches a leaf, record her total profit. 5. Return the maximum profit found among all of Alice's possible paths.
+4. Edge cases: Bob might be the root (node 0); Alice might reach a leaf node before Bob reaches the root; the tree might be very small (e.g., two nodes).
+5. Time and space complexity: Time: O(N) for graph building, BFS, and DFS. Space: O(N) for graph, parent map, Bob's path map, and recursion stack.
+</thinking>

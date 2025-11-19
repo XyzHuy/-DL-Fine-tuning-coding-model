@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a non-negative integer to its English words representation.
+2. Problem type / algorithm category: String manipulation, recursion, divide and conquer.
+3. Step-by-step approach: Handle the base case of zero. Break the number into chunks based on billions, millions, thousands, and remaining numbers. Recursively convert each chunk into words using a helper function. The helper function handles numbers less than 1000.
+4. Edge cases: Zero, numbers less than 20, numbers less than 100, numbers less than 1000.
+5. Time and space complexity: Time complexity is O(1) because the input number is bounded by 2^31 - 1. Space complexity is O(1) since the size of the string arrays is constant.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reduce the total number of stones by applying a specific operation k times to minimize the final sum.
+2. Problem type / algorithm category: Greedy approach with a max-heap.
+3. Step-by-step approach: Repeatedly select the largest pile, remove floor(pile_size / 2) stones from it, and update the pile size until k operations are exhausted.
+4. Edge cases: Empty piles list, k=0, all piles having 1 stone.
+5. Time and space complexity: O(N log N + K log N) time, O(N) space where N is the number of piles.
+</thinking>

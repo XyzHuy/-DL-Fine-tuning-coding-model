@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Check if an integer array contains at least three consecutive odd numbers.
+2. Problem type / algorithm category: Array traversal, pattern matching.
+3. Step-by-step approach: Iterate through the array up to the third-to-last element. For each element, check if it and the next two elements are all odd. If a triplet of consecutive odds is found, return true immediately. If the loop completes without finding such a triplet, return false.
+4. Edge cases: Arrays with fewer than 3 elements cannot have three consecutive odds. The problem constraints ensure array length is at least 1.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we use a constant amount of extra space.
+</thinking>

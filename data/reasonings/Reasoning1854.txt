@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the earliest year with the largest number of people alive, where a person is alive from their birth year up to, but not including, their death year.
+2. Problem type / algorithm category: Array manipulation, prefix sum, simulation.
+3. Step-by-step approach: Create an array to track population changes, incrementing at birth year and decrementing at death year. Iterate through this array, maintaining a running population count, and record the earliest year that achieves the maximum population seen so far.
+4. Edge cases: The problem constraints define a fixed range of years (1950-2050), and death years can be up to 2050. The logic needs to handle these boundaries correctly.
+5. Time and space complexity: O(N + Y) time where N is the number of logs and Y is the range of years, O(Y) space.
+</thinking>

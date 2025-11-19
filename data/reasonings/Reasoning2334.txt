@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the size of any subarray where all elements are strictly greater than threshold / subarray_length. Return the size or -1 if none exists.
+2. Problem type / algorithm category: Monotonic Stack, Array Manipulation.
+3. Step-by-step approach: Iterate through the array using a monotonic increasing stack. When a smaller element is encountered, pop elements from the stack. For each popped element, determine the length of the valid subarray it forms with the current and previous stack elements, and check the condition against the threshold.
+4. Edge cases: Empty array, single element array, array where no subarray satisfies the condition, and handling boundaries with sentinel values.
+5. Time and space complexity: Time complexity is O(N) because each element is pushed and popped from the stack at most once. Space complexity is O(N) in the worst case for the stack.
+</thinking>

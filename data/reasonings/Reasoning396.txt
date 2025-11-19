@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value of a rotation function F(k) for an array nums, where F(k) is calculated based on the rotated array by k positions.
+2. Problem type / algorithm category: Array manipulation, rotation, dynamic programming (though solved iteratively).
+3. Step-by-step approach: First calculate F(0). Then, iteratively calculate F(k) based on F(k-1) using the formula F(k) = F(k-1) + sum(nums) - n * nums[n-k]. Keep track of the maximum value seen so far.
+4. Edge cases: Empty array (should return 0), single element array (returns 0 as F(0) would be 0).
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once to calculate F(0) and then iterate n-1 times to calculate the remaining F(k) values. Space complexity is O(1) because we only use a few variables to store the sum, F(k), and the maximum value.
+</thinking>

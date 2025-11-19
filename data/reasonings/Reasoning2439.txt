@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the maximum element in an array by moving units from `nums[i]` to `nums[i-1]`.
+2. Problem type / algorithm category: Greedy approach, prefix sums, binary search on answer (though a simpler greedy solution exists).
+3. Step-by-step approach: Iterate through the array, maintaining a running sum of elements encountered so far. For each prefix, calculate the average value (sum / count). The maximum possible minimum value for the maximum element is the ceiling of these prefix averages.
+4. Edge cases: Array with only two elements, array with large values, array with zeros.
+5. Time and space complexity: O(n) time complexity due to a single pass, O(1) space complexity as only a few variables are used.
+</thinking>

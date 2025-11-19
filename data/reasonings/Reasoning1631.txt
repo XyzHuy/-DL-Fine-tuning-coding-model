@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the path with the minimum maximum absolute height difference between consecutive cells from the top-left to the bottom-right of a 2D grid.
+2. Problem type / algorithm category: Graph traversal, specifically Dijkstra's algorithm or a variant using a min-heap.
+3. Step-by-step approach: Use a min-heap to store (effort, row, col), prioritizing paths with lower maximum effort. Initialize with (0, 0, 0). While the heap is not empty, extract the minimum effort path. If the destination is reached, return the effort. Otherwise, mark the current cell as visited and explore adjacent cells, updating their minimum effort if a better path is found and pushing them to the heap.
+4. Edge cases: A grid with only one cell, or cases where all cells have the same height, resulting in zero effort. The problem guarantees a path exists.
+5. Time and space complexity: Time complexity is O(E log V) where V is the number of cells (rows * cols) and E is the number of edges (at most 4 * V), effectively O(rows * cols * log(rows * cols)). Space complexity is O(rows * cols) for the distance dictionary and the visited set.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value of nums[i] - nums[j] + nums[k] for i < j < k and nums[i] < nums[j] < nums[k].
+2. Problem type / algorithm category: Array manipulation, prefix/suffix optimization, ordered data structures.
+3. Step-by-step approach: Precompute the maximum value to the right of each index. Iterate through the array for the middle element j. For each j, find the smallest element to its left (i) and the largest element to its right (k). Use an ordered data structure to efficiently find the smallest i such that nums[i] < nums[j]. Update the maximum triplet value.
+4. Edge cases: Array length is at least 3. All elements are positive. At least one valid triplet exists.
+5. Time and space complexity: Time O(n log n), Space O(n).
+</thinking>

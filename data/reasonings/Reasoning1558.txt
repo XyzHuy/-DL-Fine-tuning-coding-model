@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert an array of zeros to a target integer array using minimum operations, where operations are incrementing elements by 1 or doubling all elements.
+2. Problem type / algorithm category: Greedy, Bit manipulation (implied by the reverse operations).
+3. Step-by-step approach: To minimize operations, we consider the process in reverse. For each number, repeatedly divide by 2 if even, or subtract 1 then divide by 2 if odd. An odd number requires an increment operation (subtract 1) and a division operation. An even number only requires a division operation. Track total increments across all numbers and the maximum number of divisions needed for any single number.
+4. Edge cases: The input array can contain zeros. If a number is 0, it requires no operations for that number. The constraints ensure the output fits in a 32-bit integer.
+5. Time and space complexity: Time complexity is O(N * log(max(nums))) where N is the length of nums, as each number is processed via bitwise operations. Space complexity is O(1) as we only use a few variables.
+</thinking>

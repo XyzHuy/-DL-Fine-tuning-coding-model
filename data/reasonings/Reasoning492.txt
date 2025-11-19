@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an area, find the length and width of a rectangle with that area such that L >= W and L-W is minimized. Return [L, W].
+2. Problem type / algorithm category: Math, factorization.
+3. Step-by-step approach: Start with the integer square root of the area as a potential width. Decrement the width until it evenly divides the area. Calculate the length by dividing the area by the found width. Return the length and width as a list [L, W].
+4. Edge cases: Area is a perfect square (e.g., 4, 9, 16). Area is a prime number (e.g., 37). Area is 1.
+5. Time and space complexity: Time complexity is O(sqrt(area)) because the while loop iterates at most sqrt(area) times. Space complexity is O(1) as only a constant amount of extra space is used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of cameras required to cover all nodes in a binary tree, where a camera at a node covers itself, its parent, and its children.
+2. Problem type / algorithm category: Dynamic Programming, Tree Traversal (Depth First Search)
+3. Step-by-step approach: Perform a DFS traversal. Maintain states for each node: unmonitored, monitored by a child, or has a camera. Recursively compute the minimum cameras needed for subtrees and decide camera placement based on child states.
+4. Edge cases: Empty tree (no nodes), single node tree, root node not being monitored after the DFS.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes due to the DFS traversal. Space complexity is O(H) where H is the height of the tree due to the recursion stack, which can be O(N) in worst case (skewed tree) and O(log N) in best case (balanced tree).
+</thinking>

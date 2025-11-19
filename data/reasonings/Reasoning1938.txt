@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum XOR difference between a query value and any node's genetic value on the path from a given node to the root in a tree.
+2. Problem type / algorithm category: Tree Traversal (DFS), Trie (Binary Trie for XOR maximization).
+3. Step-by-step approach: Build an adjacency list for the tree. Group queries by node. Perform a DFS from the root. During DFS, for each node, add its genetic value to a Trie. For all queries associated with the current node, use the Trie to find the maximum XOR difference. After visiting all children of a node, remove its genetic value from the Trie.
+4. Edge cases: The root node (parent is -1), empty queries, single node tree.
+5. Time and space complexity: Time: O(N * L + Q * L), where N is the number of nodes, Q is the number of queries, and L is the number of bits in the maximum genetic value. Space: O(N + Q + N*L) for the tree, queries, and Trie.
+</thinking>

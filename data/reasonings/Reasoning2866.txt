@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct a mountain array `heights` such that `1 <= heights[i] <= maxHeights[i]` and the sum of `heights` is maximized.
+2. Problem type / algorithm category: Dynamic Programming, Monotonic Stack, Prefix/Suffix Sums.
+3. Step-by-step approach: For each possible peak index, calculate the maximum valid heights to its left (non-decreasing) and to its right (non-increasing), respecting `maxHeights`. Sum these heights and find the overall maximum. Use monotonic stacks to efficiently compute prefix and suffix sums.
+4. Edge cases: Array with a single element. All elements in `maxHeights` are the same.
+5. Time and space complexity: O(n) time complexity due to single passes with monotonic stacks. O(n) space complexity for storing prefix and suffix sums and the stack.
+</thinking>

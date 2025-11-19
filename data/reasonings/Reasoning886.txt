@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a group of people can be split into two groups such that no two people who dislike each other are in the same group.
+2. Problem type / algorithm category: Graph coloring / Bipartite graph check using Depth First Search (DFS).
+3. Step-by-step approach: Build an adjacency list representing dislikes. Use DFS to color each node (person) with one of two colors (groups). If a conflict arises (adjacent nodes have the same color), return false. Iterate through all nodes, coloring uncolored components.
+4. Edge cases: Empty dislike list (always possible to bipartition), a single connected component, multiple disconnected components.
+5. Time and space complexity: Time complexity is O(N + D), where N is the number of people and D is the number of dislikes. Space complexity is O(N + D) for the adjacency list and color array.
+</thinking>

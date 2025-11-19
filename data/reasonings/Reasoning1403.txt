@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a subsequence with the smallest size, and then the largest sum, where its elements' sum is strictly greater than the sum of the remaining elements, sorted non-increasingly.
+2. Problem type / algorithm category: Greedy approach, sorting.
+3. Step-by-step approach: Sort the input array in descending order. Iterate through the sorted array, adding elements to a subsequence and accumulating their sum. Stop when the subsequence sum exceeds the sum of the remaining elements.
+4. Edge cases: Array with a single element, array where all elements are the same, array where the smallest subsequence might include many elements.
+5. Time and space complexity: Time complexity is dominated by sorting O(N log N), space complexity is O(N) for storing the subsequence or O(1) if in-place modification is allowed.
+</thinking>

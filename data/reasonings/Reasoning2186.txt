@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two strings, find the minimum number of character appends to make them anagrams.
+2. Problem type / algorithm category: String manipulation, frequency counting.
+3. Step-by-step approach: Count character frequencies for both strings. For each character, determine the absolute difference in counts. Sum these differences to get the total steps.
+4. Edge cases: Strings can be empty or contain only one character. Strings can be identical or have no common characters.
+5. Time and space complexity: Time O(N+M), Space O(1) where N and M are lengths of s and t.
+</thinking>

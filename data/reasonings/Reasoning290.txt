@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a string `s` follows the same pattern as a given pattern string. The pattern consists of characters, and the string consists of words. A "follow" means there's a bijection between pattern characters and words in the string.
+2. Problem type / algorithm category: Hash table / bijection checking.
+3. Step-by-step approach: Split the input string `s` into a list of words. Check if the lengths of the pattern and word list are different, returning False if so. Use two dictionaries, `char_to_word` and `word_to_char`, to store the mapping between characters and words, and vice versa. Iterate through the pattern and word list using zip. For each character and word, check if they already exist in the dictionaries. If they do, ensure the existing mapping is consistent. If not, create the new mapping. If any inconsistency is found, return False. If the entire iteration completes without inconsistencies, return True.
+4. Edge cases: Empty pattern or string, pattern and string with different lengths, inconsistent mappings (e.g., 'a' maps to "dog" but later maps to "cat"), same word maps to different characters.
+5. Time and space complexity: Time complexity is O(N), where N is the length of the pattern (and also the number of words in s). Space complexity is O(M), where M is the number of unique characters in the pattern or the number of unique words in s, whichever is greater.
+</thinking>

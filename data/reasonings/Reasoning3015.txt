@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of pairs of houses with a minimum shortest path distance of k, for each k from 1 to n, given a linear arrangement of houses with an additional shortcut between house x and house y.
+2. Problem type / algorithm category: Graph traversal / shortest path / brute force enumeration.
+3. Step-by-step approach: Iterate through all possible pairs of houses (i, j). For each pair, calculate the shortest distance considering direct travel, travel via the x-y shortcut in both directions, and standard linear travel. Increment the count for the corresponding distance k in the result array. Finally, double the count for each distance to account for both (i, j) and (j, i) if i is not equal to j.
+4. Edge cases: x and y can be equal, meaning the shortcut connects a house to itself, which doesn't change distances compared to a linear graph. Houses can be at the ends of the linear arrangement. The problem statement specifies positive integers for n, x, and y, with n >= 2.
+5. Time and space complexity: O(N^2) time complexity due to nested loops iterating through all pairs of houses. O(N) space complexity for storing the result array.
+</thinking>

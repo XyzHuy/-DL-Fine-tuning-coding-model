@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum fruits collectible by moving at most k steps from startPos on an x-axis, with fruits at given positions.
+2. Problem type / algorithm category: Sliding window, Prefix sums.
+3. Step-by-step approach: Use a sliding window to iterate through all possible contiguous segments of fruit locations. For each window, calculate the fruits and check if the total steps to reach the furthest fruit in either direction (left or right) from startPos plus the distance between the window's endpoints exceeds k. Expand the window to the right and shrink from the left when the step constraint is violated.
+4. Edge cases: No fruits present, k is 0, startPos is outside the range of fruits, all fruits are out of reach.
+5. Time and space complexity: Time complexity is O(N) due to the single pass for the sliding window and prefix sums. Space complexity is O(N) for prefix sums or O(1) if prefix sums are computed on the fly.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum profit achievable with at most k transactions in a given array of stock prices.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Use a DP table dp[i][j] to store the maximum profit with i transactions up to day j. Iterate through the DP table, updating each cell based on either not transacting on day j or transacting on day j (selling on day j). Optimize for large k by simply summing up all positive price differences.
+4. Edge cases: Empty prices array, k=0. Handle the case where k is large enough to perform unlimited transactions (k >= n//2) with a simpler greedy approach.
+5. Time and space complexity: Time complexity is O(k*n), where n is the length of prices, due to the nested loops. When k >= n//2, time complexity becomes O(n). Space complexity is O(k*n) due to the DP table.
+</thinking>

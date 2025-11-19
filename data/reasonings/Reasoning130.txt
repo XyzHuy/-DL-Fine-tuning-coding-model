@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D board with 'X' and 'O', capture 'O' regions surrounded by 'X'. Surrounded regions are replaced with 'X'. 'O's connected to the border are not captured.
+2. Problem type / algorithm category: Graph traversal / Depth-First Search (DFS).
+3. Step-by-step approach: First, find 'O's connected to the border and mark them as 'T'. Then, iterate through the board and flip remaining 'O's to 'X's. Finally, revert 'T's back to 'O's.
+4. Edge cases: Empty board, board with no 'O's, board with only 'X's.
+5. Time and space complexity: Time complexity is O(m*n) where m is the number of rows and n is the number of columns. Space complexity is O(m*n) in the worst case due to the recursion depth of the DFS.
+</thinking>

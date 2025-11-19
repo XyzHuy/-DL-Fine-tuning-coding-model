@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D image array, starting row/column, and a new color, perform flood fill starting from the given coordinate, replacing all connected pixels with the same original color with the new color.
+2. Problem type / algorithm category: Graph traversal / Depth-First Search (DFS)
+3. Step-by-step approach: First, store the original color of the starting pixel. If the original color is already the same as the new color, return the image. Otherwise, implement a DFS function that changes the color of the current pixel and recursively calls itself on its neighbors (up, down, left, right) if they have the original color and are within the image boundaries.
+4. Edge cases: The starting color is the same as the new color (no change needed). Handle boundary conditions (out-of-bounds access).
+5. Time and space complexity: Time complexity is O(m*n) where m and n are the dimensions of the image, as we might visit each pixel. Space complexity is O(m*n) in the worst case for the recursion stack (if all pixels have the same color).
+</thinking>

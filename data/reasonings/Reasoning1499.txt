@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value of yi + yj + |xi - xj| for pairs of points (xi, yi) and (xj, yj) where xi < xj and xj - xi <= k.
+2. Problem type / algorithm category: Sliding Window Maximum (or Monotonic Queue) on a sorted array.
+3. Step-by-step approach: Iterate through points with index j. For each point j, maintain a data structure (deque) of candidate points i such that xj - xi <= k and (yi - xi) is maximized. Remove old points from the left of the deque if xj - xi > k. Calculate the equation using the current point j and the best candidate point i from the left of the deque. Add the current point j to the deque while maintaining its monotonic property for (yi - xi).
+4. Edge cases: The problem guarantees at least one pair satisfies the condition. The constraints on coordinates and k are large, requiring 64-bit integers implicitly if language doesn't handle it. Points are already sorted by x.
+5. Time and space complexity: Time complexity is O(N) because each point is added and removed from the deque at most once. Space complexity is O(N) in the worst case for the deque.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the number of unique pairs in an array where the absolute difference between the pair is equal to k.
+2. Problem type / algorithm category: Hash map / Counting.
+3. Step-by-step approach: First, check if k is negative, if so return 0. Count the frequency of each number using a hash map. Iterate through the hash map, if k is 0, count the numbers with frequency greater than 1. Otherwise, count the numbers where number + k exists in the hash map.
+4. Edge cases: k is negative, duplicate numbers in nums, k is 0.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the input array once to count frequencies and then iterate through the hash map (which has at most n unique keys). Space complexity is O(n) in the worst case where all the numbers are unique.
+</thinking>

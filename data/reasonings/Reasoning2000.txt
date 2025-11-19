@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the prefix of a string up to and including the first occurrence of a given character.
+2. Problem type / algorithm category: String manipulation, searching.
+3. Step-by-step approach: Find the index of the first occurrence of ch. If found, reverse the substring from the beginning up to that index (inclusive) and append the rest of the original string. If not found, return the original string.
+4. Edge cases: The character ch might not be present in the string word. The string word could have length 1.
+5. Time and space complexity: O(N) time to find the character and O(N) space to create the new string, where N is the length of the word.
+</thinking>

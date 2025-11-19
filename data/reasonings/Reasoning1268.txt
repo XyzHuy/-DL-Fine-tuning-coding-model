@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of products and a search word, suggest up to three lexicographically smallest products that share a prefix with the search word after each character is typed.
+2. Problem type / algorithm category: String manipulation, sorting, prefix matching.
+3. Step-by-step approach: Sort the products lexicographically. Iterate through each character of the search word, building a prefix. For each prefix, filter the existing list of products to keep only those that start with the current prefix. Then, take the first three remaining products (or fewer if less than three exist) and add them to the result list.
+4. Edge cases: An empty product list, a search word shorter than any product, a search word that matches no products, or when fewer than three products match a prefix.
+5. Time and space complexity: Sorting is O(N log N * L), where N is the number of products and L is the average product length. The filtering loop is O(M * N * L), where M is the length of searchWord. Space complexity is O(M * N * L) in the worst case for storing intermediate results, or O(N*L) if not counting output.
+</thinking>

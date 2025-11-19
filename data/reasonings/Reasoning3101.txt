@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of contiguous subarrays in a binary array where adjacent elements are different.
+2. Problem type / algorithm category: Array traversal, counting subarrays.
+3. Step-by-step approach: Iterate through the array, maintaining the current length of an alternating subarray. If the current element differs from the previous, increment the length. If it's the same, calculate the number of alternating subarrays ending at the previous position using the formula n*(n+1)/2 and reset the length to 1. Finally, add the subarrays from the last alternating sequence.
+4. Edge cases: An empty input array should return 0. A single-element array results in 1 subarray.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

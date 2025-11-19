@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string `s` and a list of strings `words`, count the number of strings in `words` that are subsequences of `s`.
+2. Problem type / algorithm category: String matching / subsequence check, using binary search.
+3. Step-by-step approach: Create a dictionary mapping characters in `s` to a list of their indices. Then, for each word in `words`, check if it is a subsequence of `s` by iterating through the word and finding the next valid index in `s` for each character using binary search. Increment the count if the word is a subsequence.
+4. Edge cases: Empty `words` list, empty string `s`, characters in a word that are not present in `s`, words that are longer than `s`.
+5. Time and space complexity: Time complexity is O(len(s) + len(words) * len(word) * log(len(s))), where len(word) is the average length of words in the words array. Space complexity is O(len(s)).
+</thinking>

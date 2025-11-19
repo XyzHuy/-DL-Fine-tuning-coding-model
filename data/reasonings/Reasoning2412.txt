@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the minimum starting money to complete all transactions in any order, given transaction costs and cashbacks.
+2. Problem type / algorithm category: Greedy approach, optimization.
+3. Step-by-step approach: Calculate the total net loss across all transactions. Identify the maximum "buffer" needed at any single transaction's start. The minimum starting money is the sum of the total loss and this maximum buffer.
+4. Edge cases: Transactions with zero cost or zero cashback. All transactions having cashback >= cost.
+5. Time and space complexity: O(N) time complexity for iterating through transactions. O(1) space complexity (excluding input storage).
+</thinking>

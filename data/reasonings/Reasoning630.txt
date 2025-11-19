@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of courses with durations and deadlines, find the maximum number of courses that can be taken without overlapping and respecting deadlines.
+2. Problem type / algorithm category: Greedy algorithm with a heap (priority queue).
+3. Step-by-step approach: Sort courses by their deadlines. Iterate through each course, add its duration to the total time, and push its duration onto a max-heap. If the total time exceeds the course's deadline, remove the longest duration course from the heap. The size of the heap at the end represents the maximum number of courses taken.
+4. Edge cases: Empty input list, courses with very short durations, courses with very long durations, tight deadlines.
+5. Time and space complexity: Time: O(N log N) due to sorting and heap operations. Space: O(N) for the heap.
+</thinking>

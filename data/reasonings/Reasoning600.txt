@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, count the number of integers between 0 and n (inclusive) that do not have consecutive 1s in their binary representation.
+2. Problem type / algorithm category: Dynamic programming and binary representation manipulation.
+3. Step-by-step approach: Convert n to its binary representation. Use dynamic programming to calculate the number of valid binary sequences of length i. Iterate through the binary representation of n from left to right, adding the number of valid sequences of length i if the current bit is 1. Handle the case where consecutive 1s are encountered.
+4. Edge cases: n = 0, n = 1, numbers with leading zeros in their binary representation (handled implicitly by the DP).
+5. Time and space complexity: Time complexity is O(log n) due to iterating through the bits of n and filling the DP table. Space complexity is O(log n) to store the DP table and the binary representation of n.
+</thinking>

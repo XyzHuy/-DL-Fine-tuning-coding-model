@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate pouring champagne into a pyramid of glasses and determine how full a specific glass is after the champagne settles.
+2. Problem type / algorithm category: Dynamic Programming / Simulation
+3. Step-by-step approach: Use a list of lists to represent the pyramid. Iterate through the rows, simulating the champagne flow. If a glass has more than 1 cup, distribute the excess equally to the glasses below. Finally, return the amount in the queried glass, capped at 1.
+4. Edge cases: The poured champagne is a non-negative integer. Handle the case where the glass is full (value capped at 1).
+5. Time and space complexity: Time complexity is O(query_row^2) due to nested loops. Space complexity is O(query_row) as we only need to store the current and next rows.
+</thinking>

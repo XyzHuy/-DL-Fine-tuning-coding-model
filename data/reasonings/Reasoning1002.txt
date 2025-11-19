@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all characters that appear in every string in an input array, considering the frequency of each character. The final count for any character must be the minimum of its counts across all strings.
+2. Problem type / algorithm category: Hash Map, Frequency Counting, String.
+3. Step-by-step approach: First, compute the character frequency count for the first word. Then, iterate through the rest of the words, intersecting the current common character counts with the character counts of each new word. The intersection operation effectively keeps the minimum frequency for each character. Finally, expand the resulting frequency map into a list of characters.
+4. Edge cases: The input list of words could be empty; the solution handles this by returning an empty list. If the list has only one word, the result is all characters of that word.
+5. Time and space complexity: Time complexity is O(N * L), where N is the number of words and L is the maximum length of a word, as we process every character. Space complexity is O(1) because the frequency counters are limited to 26 lowercase letters.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Implement a regular expression matcher that supports '.' (any single character) and '*' (zero or more of the preceding element) for an input string and a pattern. The match must cover the entire string.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: We use a 2D DP table where dp[i][j] is true if the substring s[i:] matches the subpattern p[j:]. We fill the table bottom-up. If the character after the current pattern character p[j] is a '*', we have two choices: either skip the p[j]* part (check dp[i][j+2]) or match the current characters and move to the next character in s (check dp[i+1][j]). Otherwise, it's a standard character match where we check if the current characters match and then look at the result for the rest of the strings (dp[i+1][j+1]).
+4. Edge cases: Empty strings and patterns are handled by the DP table dimensions and the base case (dp[len(s)][len(p)] = True). Patterns like 'a*b*' matching an empty string are correctly resolved by the logic for '*'.
+5. Time and space complexity: Time complexity is O(S * P) and space complexity is O(S * P), where S and P are the lengths of the string and pattern respectively, due to the 2D DP table.
+</thinking>

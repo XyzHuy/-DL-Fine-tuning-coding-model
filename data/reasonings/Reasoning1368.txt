@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to modify grid cell signs to create a path from the top-left (0,0) to the bottom-right (m-1, n-1) cell, where modifying a sign costs 1.
+2. Problem type / algorithm category: Graph traversal, shortest path with weighted edges (0 or 1). Specifically, Dijkstra's algorithm or 0-1 BFS.
+3. Step-by-step approach: Use a priority queue (min-heap) to explore cells. Start with (0, 0) and cost 0. For each cell, consider all four adjacent cells. If moving to an adjacent cell follows the sign in the current cell, the cost is 0. If it requires changing the sign, the cost is 1. Push the new state (cost, next_x, next_y) into the priority queue. Mark visited cells to avoid cycles and redundant computations. The first time the bottom-right cell is reached, the associated cost is the minimum cost.
+4. Edge cases: The grid dimensions can be small (1x1). The start and end points might be the same. Paths might go out of bounds (handled by boundary checks). The grid might already have a valid path (cost 0).
+5. Time and space complexity: Time complexity is O(m*n * log(m*n)) due to Dijkstra's algorithm with a priority queue. Space complexity is O(m*n) for the visited set and the priority queue.
+</thinking>

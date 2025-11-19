@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the 0-indexed rank of a given permutation in the lexicographically sorted list of all permutations of numbers from 1 to n.
+2. Problem type / algorithm category: Combinatorics, Factoradic Number System, Permutation Ranking.
+3. Step-by-step approach: Iterate through the permutation. For each element, count how many smaller available elements could have preceded it. Multiply this count by the factorial of the remaining positions and add to the total index. Remove the current element from the set of available elements.
+4. Edge cases: The input array is guaranteed to be a valid permutation. The modulo operation handles large results. The smallest permutation [1, 2, ..., n] should result in 0.
+5. Time and space complexity: Time complexity is O(n^2) due to the nested loop (outer loop iterates n times, inner loop for counting smaller elements can iterate up to n times). Space complexity is O(n) for storing the set of available elements.
+</thinking>

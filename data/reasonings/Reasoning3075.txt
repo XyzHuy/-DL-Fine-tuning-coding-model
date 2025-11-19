@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Select k children from a queue to maximize their total happiness sum, where selecting a child reduces the happiness of unselected children by 1 in each turn, capped at 0.
+2. Problem type / algorithm category: Greedy approach, sorting.
+3. Step-by-step approach: Sort the happiness values in descending order. Iterate through the top k happiest children. For each child selected, subtract the number of turns already passed (i) from their current happiness. Add the adjusted happiness (or 0 if it becomes negative) to the total sum.
+4. Edge cases: k equals n, all happiness values are 1, k is 1. The happiness values cannot go below zero.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting. Space complexity is O(1) or O(N) depending on the sorting implementation (in-place or not).
+</thinking>

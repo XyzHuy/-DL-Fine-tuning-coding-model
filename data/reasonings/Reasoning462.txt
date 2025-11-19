@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves to make all elements in an array equal, where a move is incrementing or decrementing an element by 1.
+2. Problem type / algorithm category: Array manipulation, median finding, and absolute difference summation.
+3. Step-by-step approach: Find the median of the sorted array. Calculate the sum of absolute differences between each element and the median. Return the sum.
+4. Edge cases: Empty array (not possible based on constraints), array with one element (zero moves), array with even/odd number of elements.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1) or O(n) depending on the sorting algorithm implementation.
+</thinking>

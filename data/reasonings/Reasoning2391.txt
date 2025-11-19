@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate minimum time to collect all metal, paper, and glass garbage by three trucks starting at house 0, with travel times between houses.
+2. Problem type / algorithm category: Greedy, Prefix Sums.
+3. Step-by-step approach: First, sum up all garbage collection times (each unit takes 1 minute). Then, for each garbage type, determine the farthest house it appears in. Calculate the travel time to reach these farthest houses for each truck independently. Sum up all collection times and travel times.
+4. Edge cases: No garbage of a certain type exists, meaning its truck won't travel. All garbage is at house 0.
+5. Time and space complexity: Time complexity O(N), Space complexity O(1).
+</thinking>

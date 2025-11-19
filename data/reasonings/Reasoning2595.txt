@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of set bits (1s) at even and odd indices in the binary representation of a given integer n.
+2. Problem type / algorithm category: Bit manipulation, Iteration.
+3. Step-by-step approach: Iterate through the bits of n by repeatedly checking the least significant bit and right-shifting n. Maintain a count for even and odd indices.
+4. Edge cases: The input n is always a positive integer. The constraints ensure n is within a reasonable range.
+5. Time and space complexity: Time complexity is O(log n) because we iterate through the bits of n. Space complexity is O(1) as we only use a few variables for counting.
+</thinking>

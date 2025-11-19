@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a target integer array, find the minimum operations to transform an array of zeros into the target array. An operation consists of choosing a subarray and incrementing all its elements by one.
+2. Problem type / algorithm category: Greedy approach, single pass.
+3. Step-by-step approach: Initialize operations with the first element of target. Iterate from the second element. If the current element is greater than the previous, add the difference to the total operations.
+4. Edge cases: Array with a single element. All elements are the same.
+5. Time and space complexity: O(N) time, O(1) space.
+</thinking>

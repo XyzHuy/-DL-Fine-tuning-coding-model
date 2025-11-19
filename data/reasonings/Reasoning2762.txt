@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count subarrays where the difference between the maximum and minimum element is at most 2.
+2. Problem type / algorithm category: Sliding window with ordered data structure.
+3. Step-by-step approach: Use a sliding window (left, right pointers). Maintain elements within the window in a sorted list. Expand the window by adding nums[right]. If the max-min difference exceeds 2, shrink the window from the left by removing nums[left] until the condition is met. Add the current window size (right - left + 1) to the total count.
+4. Edge cases: Empty input array (constraint says nums.length >= 1), array with a single element.
+5. Time and space complexity: O(N log N) time due to sorted list operations, O(N) space for the sorted list.
+</thinking>

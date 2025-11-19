@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest non-empty prefix of a given string that is also a suffix of the same string, excluding the string itself.
+2. Problem type / algorithm category: String matching, pattern recognition, KMP algorithm's prefix function.
+3. Step-by-step approach: Compute the KMP prefix function (pi table) for the input string. The last value in the pi table, pi[n-1], directly represents the length of the longest proper prefix which is also a suffix. Return the substring from the beginning of the string up to this length.
+4. Edge cases: The string could be short (e.g., length 1) or have no happy prefix at all, in which case an empty string should be returned. The solution handles this naturally as pi[n-1] would be 0.
+5. Time and space complexity: Time complexity is O(n) due to the single pass to compute the prefix function. Space complexity is O(n) to store the prefix function array.
+</thinking>

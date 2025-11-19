@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth bit of a binary string Sn, where Sn is recursively defined.
+2. Problem type / algorithm category: Recursive string generation and pattern recognition.
+3. Step-by-step approach: Base case for n=1. For n>1, check if k is the middle bit (always '1'). If k is in the first half, recurse on n-1 with the same k. If k is in the second half, find the mirrored and inverted position in the n-1 string and recurse.
+4. Edge cases: n=1 base case, middle bit of Sn.
+5. Time and space complexity: O(n) time and O(n) space due to recursion depth.
+</thinking>

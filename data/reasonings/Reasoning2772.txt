@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an array can be made all zeros by repeatedly decreasing subarrays of size k.
+2. Problem type / algorithm category: Greedy approach, prefix sums/differences.
+3. Step-by-step approach: Iterate through the array. Maintain the net effect of operations at the current index using a difference array or prefix sums. If the current adjusted element is positive, we must perform an operation starting at this index. Check if an operation of size k is possible. Update the difference array to reflect the operation's effect. If at any point an adjusted element is negative, return false. Finally, verify if all elements are zero.
+4. Edge cases: Array length is equal to k. An operation might extend beyond the array bounds. Initial array elements are already zero.
+5. Time and space complexity: O(N) time and O(N) space (or O(1) if modifying input or using a single variable for prefix sum).
+</thinking>

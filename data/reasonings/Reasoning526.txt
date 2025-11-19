@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of permutations of integers from 1 to n such that for each index i, the number at that index is either divisible by i or i is divisible by the number at that index.
+2. Problem type / algorithm category: Backtracking, Permutation Generation
+3. Step-by-step approach: Use backtracking to explore all possible permutations. Keep track of which numbers have been used. For each position, iterate through the available numbers and check if the divisibility condition is met. If it is, mark the number as used and recursively call the backtracking function for the next position. After the recursive call, unmark the number as used to explore other possibilities.
+4. Edge cases: The problem statement specifies 1 <= n <= 15.
+5. Time and space complexity: Time complexity is O(k), where k is the number of valid permutations, and in the worst case, it could be close to O(n!). Space complexity is O(n) due to the recursion depth and the used array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if friend requests are valid given network restrictions, processing them in order and updating friendships.
+2. Problem type / algorithm category: Union-Find (Disjoint Set Union) with constraint checking.
+3. Step-by-step approach: For each request, find the roots of the two people involved using Union-Find. Check if forming a friendship between them would violate any restrictions by iterating through all people and their restricted pairs to see if their roots would become the same as the requested pair's roots. If valid, unite the sets of the two people. Record the validity of the request.
+4. Edge cases: People already friends, direct restrictions between requested individuals, indirect violations of restrictions.
+5. Time and space complexity: Time complexity is roughly O(R * N * alpha(N) + R * N * M) where R is number of requests, N is number of people, M is number of restrictions, and alpha is inverse Ackermann function; Space complexity is O(N + M).
+</thinking>

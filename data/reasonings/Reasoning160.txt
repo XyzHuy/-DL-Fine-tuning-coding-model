@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the intersection node of two singly linked lists, if one exists; otherwise, return null.
+2. Problem type / algorithm category: Linked list, two pointers.
+3. Step-by-step approach: Use two pointers, one for each linked list. Move each pointer to the next node. If a pointer reaches the end of its list, redirect it to the head of the other list. The intersection point will be found when the two pointers are equal.
+4. Edge cases: Empty lists, no intersection. The lists might have different lengths.
+5. Time and space complexity: O(m+n) time, O(1) space, where m and n are the lengths of the two lists.
+</thinking>

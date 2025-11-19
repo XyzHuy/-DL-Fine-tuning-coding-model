@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum flips to make a binary string monotone increasing (0's followed by 1's).
+2. Problem type / algorithm category: Dynamic Programming / Greedy.
+3. Step-by-step approach: Iterate through the string, keep track of the number of ones encountered so far, and the number of flips needed. When a zero is encountered, consider flipping the current zero to one, or flipping all previous ones to zeros, and pick the minimum flips needed.
+4. Edge cases: Empty string, string of all 0's, string of all 1's.
+5. Time and space complexity: Time: O(n), Space: O(1).
+</thinking>

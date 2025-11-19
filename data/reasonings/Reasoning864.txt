@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest path to collect all keys in a grid, starting from a given starting point, considering walls, locks, and keys.
+2. Problem type / algorithm category: Graph traversal / Breadth-First Search (BFS) with state representation (bitmasking).
+3. Step-by-step approach: Use BFS to explore the grid. Keep track of the current position and the keys collected using a bitmask. For each cell, check if it's a wall, a lock (and if we have the key), or a key (and update the key bitmask). If all keys are collected, return the number of steps.
+4. Edge cases: The grid can be empty, there might be no solution (return -1), the starting point may be surrounded by walls (handled by BFS).
+5. Time and space complexity: Time complexity is O(m * n * 2^k), where m and n are the dimensions of the grid and k is the number of keys. Space complexity is O(m * n * 2^k) to store the visited states.
+</thinking>

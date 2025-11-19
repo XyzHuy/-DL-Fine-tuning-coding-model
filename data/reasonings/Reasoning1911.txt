@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum alternating sum of any subsequence of a given array, where elements at even indices contribute positively and elements at odd indices contribute negatively.
+2. Problem type / algorithm category: Dynamic Programming (specifically, optimized DP with constant space).
+3. Step-by-step approach: Maintain two sums: `even_sum` (max alternating sum ending with a positive contribution) and `odd_sum` (max alternating sum ending with a negative contribution). Iterate through the array, updating `even_sum` by considering either not picking the current number or picking it as a positive term after a negative term, and updating `odd_sum` by considering either not picking the current number or picking it as a negative term after a positive term. The final result is `even_sum`.
+4. Edge cases: An empty array is not possible due to constraints. A single element array results in that element as the maximum sum.
+5. Time and space complexity: Time complexity is O(n) due to a single pass through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Identify indices of elements in a 0-indexed array that are strictly greater than their immediate left and right neighbors, excluding the first and last elements.
+2. Problem type / algorithm category: Array traversal, searching.
+3. Step-by-step approach: Iterate through the array from the second element up to the second-to-last element. For each element, check if it is strictly greater than its preceding and succeeding elements. If both conditions are true, add the current index to a list of peaks.
+4. Edge cases: The problem constraints guarantee an array length of at least 3, so empty or very short arrays are not a concern. The first and last elements are explicitly excluded from being peaks by definition.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(p) where p is the number of peaks, which in the worst case can be O(n) but is typically much less.
+</thinking>

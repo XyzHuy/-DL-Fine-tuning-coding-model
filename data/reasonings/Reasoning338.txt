@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of set bits (1s) in the binary representation of each number from 0 to n and return the counts in an array.
+2. Problem type / algorithm category: Dynamic Programming, Bit Manipulation.
+3. Step-by-step approach: Initialize an array of size n+1. Iterate from 1 to n. Use the formula ans[i] = ans[i >> 1] + (i & 1). This formula leverages the fact that right shifting i by 1 is equivalent to dividing by 2, and the least significant bit (i & 1) indicates whether the current number is odd or even. If odd, we add 1 to the count from i/2.
+4. Edge cases: n = 0 should return [0].
+5. Time and space complexity: Time complexity is O(n) because we iterate through each number from 1 to n. Space complexity is O(n) because we store the result in an array of size n+1.
+</thinking>

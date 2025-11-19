@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the furthest building index reachable given building heights, a limited number of bricks, and ladders, where bricks or ladders are needed to ascend.
+2. Problem type / algorithm category: Greedy approach with a min-heap for optimal resource allocation.
+3. Step-by-step approach: Iterate through buildings, identify height differences requiring resources. Greedily use ladders for largest differences encountered so far (by keeping track in a min-heap and popping smallest to convert to bricks if ladder count exceeds). If bricks become insufficient, stop and return the current index.
+4. Edge cases: All buildings are descending (no resources needed), insufficient resources even for the first ascent, reaching the end successfully.
+5. Time and space complexity: O(N log L) time and O(L) space, where N is the number of buildings and L is the number of ladders.
+</thinking>

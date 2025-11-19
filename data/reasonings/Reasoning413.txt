@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of arithmetic subarrays (at least 3 elements) within a given integer array. An arithmetic subarray has a constant difference between consecutive elements.
+2. Problem type / algorithm category: Dynamic Programming / Array Traversal
+3. Step-by-step approach: Iterate through the array, checking if the current element, along with the two preceding elements, forms an arithmetic sequence. If it does, increment the `current_slices` counter and add it to the `total_slices` counter. If it doesn't reset `current_slices` to 0.
+4. Edge cases: If the input array has fewer than 3 elements, return 0.
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the array. Space complexity is O(1) as only a few variables are used.
+</thinking>

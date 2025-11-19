@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a Binary Search Tree to a Greater Sum Tree, where each node's value is replaced by the sum of all nodes greater than or equal to it.
+2. Problem type / algorithm category: Binary Search Tree, Tree Traversal, Inorder Traversal (Reverse)
+3. Step-by-step approach: Perform a reverse inorder traversal of the BST. During the traversal, maintain a running sum of the nodes visited so far. For each node, add the running sum to its value and update the running sum.
+4. Edge cases: Empty tree (root is None), single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H can be N, and in the best case (balanced tree), H is log N.
+</thinking>

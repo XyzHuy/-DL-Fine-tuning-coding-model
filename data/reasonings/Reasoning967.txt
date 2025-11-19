@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all n-digit numbers such that the absolute difference between consecutive digits is k.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Use backtracking to explore possible digits. Start with single-digit numbers from 1 to 9. At each step, extend the current number by adding or subtracting k from the last digit, if valid (i.e., the resulting digit is between 0 and 9). If the number reaches n digits, add it to the result.
+4. Edge cases: Handle the case where n=1, and avoid leading zeros. Handle the case where k=0 to avoid duplicates.
+5. Time and space complexity: Time complexity is O(2^n) in the worst case where k!=0, and O(1) space complexity excluding the output array.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Distribute marbles into k non-empty bags such that marbles between indices i and j in a bag implies all marbles between i and j are in that bag, and bag cost is sum of first and last marble weights. Find difference between max and min total scores.
+2. Problem type / algorithm category: Dynamic Programming (Implicitly) / Greedy Algorithm with Sorting.
+3. Step-by-step approach: Calculate all possible adjacent sums (weights[i] + weights[i+1]) which represent potential costs for splitting between i and i+1. Sort these sums. To minimize the total score, pick the k-1 smallest sums as split points. To maximize, pick the k-1 largest sums. The difference is the answer.
+4. Edge cases: If k=1 or k equals the number of marbles, all marbles must be in one bag, so the score difference is 0.
+5. Time and space complexity: Time complexity is dominated by sorting the potential split costs, O(N log N) where N is the number of weights. Space complexity is O(N) to store the split costs.
+</thinking>

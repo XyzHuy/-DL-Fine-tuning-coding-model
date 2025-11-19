@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two sentences, return a list of uncommon words, where an uncommon word appears exactly once in one sentence and not at all in the other.
+2. Problem type / algorithm category: String manipulation, hash table (Counter).
+3. Step-by-step approach: Split each sentence into a list of words. Count the occurrences of each word in both sentences using Counters. Iterate through the words and counts of the first sentence's counter, adding to the result list if the word appears once and is not present in the second sentence's counter. Repeat this process for the second sentence.
+4. Edge cases: Empty sentences, sentences with only common words, sentences with multiple uncommon words.
+5. Time and space complexity: Time complexity is O(m + n), where m and n are the lengths of the sentences. Space complexity is O(m + n) to store the word counts.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of digits representing a non-negative integer, increment the integer by one and return the new list of digits.
+2. Problem type / algorithm category: Array manipulation, arithmetic.
+3. Step-by-step approach: Iterate through the digits from right to left. If a digit is less than 9, increment it and return. If a digit is 9, set it to 0 and continue the loop. If all digits were 9, add 1 to the beginning of the list.
+4. Edge cases: Input array containing only 9s, resulting in an increase in the number of digits.
+5. Time and space complexity: Time complexity is O(n) in the worst case (all 9s), where n is the number of digits. Space complexity is O(1) in the best case (no new array created), and O(n) in the worst case (new array created due to leading 1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of differences between consecutive elements and a valid range [lower, upper], find the number of possible hidden sequences of length n+1.
+2. Problem type / algorithm category: Prefix Sum, Range Calculation.
+3. Step-by-step approach: Calculate the prefix sums of the differences. Determine the minimum and maximum prefix sums encountered. The valid range for the first element is determined by how the minimum and maximum prefix sums relate to the overall bounds [lower, upper]. The number of valid starting elements is then derived from this adjusted range.
+4. Edge cases: The case where no valid sequence can be formed (i.e., the calculated range for the first element is invalid, resulting in a negative count).
+5. Time and space complexity: O(n) time complexity due to a single pass through the differences array, and O(1) space complexity as only a few variables are used.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum length of a contiguous subarray with an equal number of 0s and 1s.
+2. Problem type / algorithm category: Array manipulation, Hash Map, Prefix Sum.
+3. Step-by-step approach: Use a hash map to store the first occurrence of each count (difference between the number of 1s and 0s). Iterate through the array, update the count, and check if the count exists in the hash map. If it does, calculate the length of the subarray and update the maximum length. If not, store the current index in the hash map.
+4. Edge cases: Empty array (although the constraints specify length >= 1), all 0s, all 1s, cases where the maximum length subarray starts from index 0. The hashmap initialization with {0: -1} handles the case where the prefix has equal 0s and 1s.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(n) in the worst case where we store all counts in the hash map.
+</thinking>

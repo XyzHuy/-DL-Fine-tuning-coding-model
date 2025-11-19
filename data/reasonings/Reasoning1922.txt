@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of digit strings of length n where digits at even indices are even (0, 2, 4, 6, 8) and digits at odd indices are prime (2, 3, 5, 7), modulo 10^9 + 7.
+2. Problem type / algorithm category: Combinatorics, Modular Arithmetic, Exponentiation by Squaring.
+3. Step-by-step approach: Determine the count of even and odd indices. For each even index, there are 5 choices (0, 2, 4, 6, 8). For each odd index, there are 4 choices (2, 3, 5, 7). The total count is 5 raised to the power of the number of even indices, multiplied by 4 raised to the power of the number of odd indices, all modulo 10^9 + 7. Modular exponentiation (power function) is used for efficient calculation of large powers.
+4. Edge cases: The constraints specify n >= 1. The calculation handles n correctly by determining even_count and odd_count using integer division. The modulo operation handles large results.
+5. Time and space complexity: Time complexity is O(log n) due to modular exponentiation. Space complexity is O(1) as only a few variables are used.
+</thinking>

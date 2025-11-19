@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a sorted array, find the k closest elements to a given value x. The result should also be sorted.
+2. Problem type / algorithm category: Array manipulation, binary search.
+3. Step-by-step approach: Use binary search (bisect_left) to find the potential insertion point of x. Initialize left and right pointers around this point. Shrink the range between left and right until right - left + 1 equals k by comparing distances to x. Return the subarray from left to right.
+4. Edge cases: k is equal to the array length, x is smaller or larger than all elements in the array, x is present in the array.
+5. Time and space complexity: Time complexity is O(log n + k), where n is the length of the array. Space complexity is O(1).
+</thinking>

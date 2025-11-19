@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum difference between the indices of any two prime numbers in an integer array.
+2. Problem type / algorithm category: Array traversal, Prime number check.
+3. Step-by-step approach: Iterate through the array to find the first prime number's index. Then, iterate backward from the end of the array to find the last prime number's index. The difference between these two indices is the maximum prime difference.
+4. Edge cases: An array with only one prime number, where the maximum difference is 0.
+5. Time and space complexity: Time O(n*sqrt(max(nums))), Space O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given start times, end times and profits for n jobs, find the maximum total profit from a subset of non-overlapping jobs.
+2. Problem type / algorithm category: Dynamic Programming, Binary Search (bisect), Greedy.
+3. Step-by-step approach: Combine the jobs, sort them by end time. Use DP to store the maximum profit achievable up to each end time. Use binary search to find the latest non-overlapping job and calculate current job's maximum profit.
+4. Edge cases: Empty input arrays, overlapping start and end times, single job.
+5. Time and space complexity: Time: O(N log N) due to sorting and binary search. Space: O(N) for the DP array.
+</thinking>

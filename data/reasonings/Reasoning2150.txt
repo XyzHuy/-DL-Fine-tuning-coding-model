@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find numbers in an array that appear exactly once and have no adjacent numbers (num-1 or num+1) present in the array.
+2. Problem type / algorithm category: Frequency counting, Hash Table.
+3. Step-by-step approach: First, count the frequency of each number in the input array using a hash map. Then, iterate through the original array. For each number, check if its count in the hash map is 1 and if both num-1 and num+1 are absent from the hash map. If both conditions are true, add the number to the result list.
+4. Edge cases: An empty input array (though constraints say length is at least 1). Numbers at the boundary of the possible range (0 and 10^6).
+5. Time and space complexity: Time complexity is O(N) due to counting frequencies and iterating through the array once. Space complexity is O(N) in the worst case for the hash map to store distinct numbers.
+</thinking>

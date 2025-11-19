@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest distance from each character in a string to the nearest occurrence of a given character.
+2. Problem type / algorithm category: String manipulation, dynamic programming (kind of, due to updating the result based on previous calculations)
+3. Step-by-step approach: Initialize an array with infinite distances. Iterate from left to right, updating distances from the nearest character 'c' seen so far. Then, iterate from right to left, updating distances from the nearest character 'c' seen so far, taking the minimum of the current distance and the newly calculated distance.
+4. Edge cases: Empty string (not possible based on constraints), string with only one character, character 'c' appearing at the beginning or end of the string.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string twice. Space complexity is O(n) because we store the distances in an array of the same length as the input string.
+</thinking>

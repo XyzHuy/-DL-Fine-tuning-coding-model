@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a circular route with distances between stops, find the shortest distance between two specified stops, considering both clockwise and counter-clockwise directions.
+2. Problem type / algorithm category: Array manipulation, circular array, optimization.
+3. Step-by-step approach: Calculate the clockwise distance between the start and destination. Then, calculate the counter-clockwise distance by subtracting the clockwise distance from the total distance of the circular route. Finally, return the minimum of the clockwise and counter-clockwise distances. Ensure start <= destination by swapping if needed.
+4. Edge cases: start and destination can be the same. The distance array can contain zeros.
+5. Time and space complexity: Time complexity is O(n) because of the sum operations. Space complexity is O(1) because we are only using a few extra variables.
+</thinking>

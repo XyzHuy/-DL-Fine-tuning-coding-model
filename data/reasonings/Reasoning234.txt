@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given singly linked list is a palindrome.
+2. Problem type / algorithm category: Linked list, palindrome check, fast/slow pointer.
+3. Step-by-step approach: Find the middle of the list using slow and fast pointers, reverse the second half of the list, and then compare the first half with the reversed second half element by element.
+4. Edge cases: Empty list, single-node list (both are palindromes).
+5. Time and space complexity: Time complexity is O(n) because we traverse the list to find the middle, reverse the second half, and compare the two halves. Space complexity is O(1) because we reverse the list in place.
+</thinking>

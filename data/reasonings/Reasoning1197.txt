@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of moves for a knight to reach target coordinates (x, y) from (0, 0) on an infinite chessboard.
+2. Problem type / algorithm category: Graph Traversal / Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore possible knight moves. Maintain a queue of positions and the number of steps to reach them. Use a visited set to avoid cycles. Optimize by only considering relevant portions of the board around the target.
+4. Edge cases: The problem statement guarantees the answer exists and that -300 <= x, y <= 300. The code takes the absolute value of x and y to handle negative input due to symmetry, effectively reducing the problem to the first quadrant.
+5. Time and space complexity: Time complexity is O(max(|x|, |y|)^2) due to the BFS search space. Space complexity is also O(max(|x|, |y|)^2) for the queue and visited set.
+</thinking>

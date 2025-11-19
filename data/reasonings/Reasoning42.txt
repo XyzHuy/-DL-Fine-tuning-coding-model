@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of non-negative integers representing an elevation map, calculate the amount of water that can be trapped between the bars after rain.
+2. Problem type / algorithm category: Dynamic Programming / Two Pointers
+3. Step-by-step approach: Create two arrays, `left_max` and `right_max`, storing the maximum height to the left and right of each bar, respectively. Iterate through the height array, and for each bar, calculate the trapped water as the minimum of its `left_max` and `right_max` minus the height of the bar. Sum the trapped water for all bars.
+4. Edge cases: Empty input array.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array three times. Space complexity is O(n) because we use two additional arrays of size n.
+</thinking>

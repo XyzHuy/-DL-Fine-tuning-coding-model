@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest subsequence of a string containing all its distinct characters exactly once.
+2. Problem type / algorithm category: String manipulation, stack, greedy algorithm.
+3. Step-by-step approach: Use a stack to maintain a potential subsequence. Iterate through the string. For each character, if it's not already in the stack, compare it with the last element of the stack. If the last element is greater and occurs later in the string, remove it from the stack and add the current character. Keep track of the occurrences of each character and whether each character is in the stack.
+4. Edge cases: Empty string, string with only one distinct character, string where the lexicographically smallest character appears last.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string. Space complexity is O(1) because the stack and other data structures store at most 26 characters (lowercase English letters).
+</thinking>

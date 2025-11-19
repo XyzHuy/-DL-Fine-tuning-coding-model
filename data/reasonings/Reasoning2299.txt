@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given password string meets specific criteria including length, character types (lowercase, uppercase, digit, special), and no adjacent repeating characters.
+2. Problem type / algorithm category: String manipulation and validation, conditional checks.
+3. Step-by-step approach: First, check if the password length is at least 8. Then, iterate through the password, using boolean flags to track if lowercase, uppercase, digit, and special characters are present. Simultaneously, check for any adjacent identical characters. Finally, return true only if all flags are set and no adjacent duplicates were found.
+4. Edge cases: Passwords shorter than 8 characters, passwords with only one type of character, passwords with no special characters, passwords with only letters and digits.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the password because we iterate through the string once. Space complexity is O(1) as we only use a few boolean flags and a set of constant size for special characters.
+</thinking>

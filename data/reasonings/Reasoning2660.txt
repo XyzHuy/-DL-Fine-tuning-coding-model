@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate scores for two players in a bowling game where hitting 10 pins doubles the score of the current and next turns, then determine which player has a higher score.
+2. Problem type / algorithm category: Simulation, Iteration, Scoring.
+3. Step-by-step approach: Iterate through each player's turns, maintaining a count of "strikes" (turns where 10 pins were hit). If a strike is active, double the current turn's pins for the score and decrement the strike count. If the current turn involves hitting 10 pins, reset the strike count to 2. Sum up the calculated turn values for each player's total score and compare.
+4. Edge cases: The game can have a minimum of 1 turn and a maximum of 1000 turns. Scores can be tied. A player might hit 10 pins on the last turn, which still affects the conceptual future turns if there were any.
+5. Time and space complexity: Time complexity is O(N) where N is the number of turns, as each player's array is traversed once. Space complexity is O(1) as only a few variables are used to track scores and strikes.
+</thinking>

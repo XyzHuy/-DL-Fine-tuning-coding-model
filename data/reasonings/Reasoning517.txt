@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of washing machines with varying numbers of dresses, determine the minimum number of moves to redistribute the dresses such that each machine has the same number.
+2. Problem type / algorithm category: Array manipulation, balancing, prefix sum (cumulative sum), greedy approach.
+3. Step-by-step approach: First, check if the total number of dresses can be evenly distributed. Then, iterate through the machines, keeping track of the cumulative excess dresses on the left. The number of moves at each machine is determined by the maximum of the absolute value of the left excess and the difference between the current machine's dresses and the target dresses. Update the overall maximum moves.
+4. Edge cases: If the total number of dresses is not divisible by the number of machines, return -1. Empty input or single machine scenarios are handled implicitly.
+5. Time and space complexity: Time complexity is O(n) due to the single pass through the array. Space complexity is O(1) as we only use a few constant extra space variables.
+</thinking>

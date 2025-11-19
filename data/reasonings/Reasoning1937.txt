@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize score by picking one cell per row, adding its value and subtracting column differences between adjacent rows.
+2. Problem type / algorithm category: Dynamic Programming with optimized state transitions.
+3. Step-by-step approach: Use DP where dp[j] stores the max score ending at column j of the current row. For each new row, precompute max scores from the left and right considering the penalty. Update dp[j] by adding current row's points to the max of precomputed left/right values.
+4. Edge cases: Single row matrix, single column matrix, large number of points.
+5. Time and space complexity: Time O(m*n), Space O(n).
+</thinking>

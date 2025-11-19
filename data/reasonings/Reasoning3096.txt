@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary array representing levels (1 for clearable, 0 for impossible), Alice plays a prefix of levels and Bob plays the rest. Both play optimally to maximize their score (1 point for clearing, -1 for failing). Find the minimum prefix length for Alice so her score is strictly greater than Bob's.
+2. Problem type / algorithm category: Greedy / Prefix Sum.
+3. Step-by-step approach: Calculate the total score for all levels. Iterate through possible split points, calculating Alice's score for the prefix and Bob's score (total score minus Alice's score). Return the smallest prefix length where Alice's score exceeds Bob's.
+4. Edge cases: The array must have at least two elements. Alice must play at least one level, and Bob must play at least one level. If no such split point is found, return -1.
+5. Time and space complexity: Time complexity is O(N) due to calculating total points and then iterating through the array once. Space complexity is O(1) as only a few variables are used.
+</thinking>

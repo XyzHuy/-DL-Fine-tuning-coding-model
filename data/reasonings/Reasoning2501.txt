@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subsequence where each element is the square of the previous one, after sorting.
+2. Problem type / algorithm category: Dynamic Programming or Greedy with Set lookups.
+3. Step-by-step approach: Iterate through each number as a potential start of a square streak. For each start, repeatedly check if its square exists in the input set. Track the length of valid streaks and find the maximum.
+4. Edge cases: No square streak found (return -1), input array with small elements, input array with large elements.
+5. Time and space complexity: O(N log M) time where N is the number of elements and M is the maximum value, due to repeated squaring. O(N) space for the set.
+</thinking>

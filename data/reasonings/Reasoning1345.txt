@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of jumps from the first index to the last index of an array, with allowed moves to adjacent indices or any index with the same value.
+2. Problem type / algorithm category: Breadth-First Search (BFS).
+3. Step-by-step approach: Use BFS to explore possible jumps level by level. Store indices of each value to efficiently find jumps to same-valued elements. Keep track of visited indices to avoid cycles and redundant exploration.
+4. Edge cases: Array with a single element (0 jumps), handling boundaries of the array.
+5. Time and space complexity: O(N) time complexity because each index and its associated value-based jumps are processed at most once. O(N) space complexity for storing visited indices and the BFS queue.
+</thinking>

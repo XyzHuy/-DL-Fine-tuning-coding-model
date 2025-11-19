@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find an integer 'x' such that exactly 'x' elements in the input array are greater than or equal to 'x'. Return 'x' if found, otherwise -1.
+2. Problem type / algorithm category: Searching and Counting, potentially involving sorting.
+3. Step-by-step approach: Sort the array in descending order. Iterate through possible values of 'x' from 0 up to the length of the array. For each 'x', check if the count of elements greater than or equal to 'x' matches 'x'.
+4. Edge cases: Empty array (though constraints say 1 <= nums.length), array with all zeros, array with all large numbers, the case where x=0 and x=n need special handling.
+5. Time and space complexity: O(N log N) for sorting, O(N) for iteration, so overall O(N log N) time. O(1) or O(N) space depending on sorting implementation.
+</thinking>

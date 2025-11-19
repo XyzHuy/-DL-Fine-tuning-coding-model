@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest path in a binary tree where the path alternates between left and right turns.
+2. Problem type / algorithm category: Tree Traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Use a recursive DFS function that explores paths from each node. The function takes the current node, the direction of the last move (left or right), and the current zigzag length. If the direction is left, it continues left with incremented length and starts a new path to the right with length 0. If the direction is right, it continues right with incremented length and starts a new path to the left with length 0. The maximum length found is returned.
+4. Edge cases: An empty tree (root is None) should return 0. A single-node tree also has a zigzag length of 0.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes, as each node is visited at most once. Space complexity is O(H) where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H can be N, leading to O(N) space.
+</thinking>

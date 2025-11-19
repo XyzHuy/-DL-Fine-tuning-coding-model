@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count unique substrings where all digits present appear the same number of times.
+2. Problem type / algorithm category: String manipulation, counting, substring generation, set for uniqueness.
+3. Step-by-step approach: Iterate through all possible start and end points to generate substrings. For each substring, maintain a frequency count of its digits. Check if all digit frequencies are equal using a helper function. If they are, add the substring to a set to ensure uniqueness. Finally, return the size of the set.
+4. Edge cases: Single digit strings, strings with only one distinct digit, and strings where no substrings meet the criteria.
+5. Time and space complexity: Time complexity is O(N^3) due to nested loops for substrings and potentially O(N) for frequency check within each substring. Space complexity is O(N^2) in the worst case for storing unique substrings.
+</thinking>

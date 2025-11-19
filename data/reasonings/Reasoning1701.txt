@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the average waiting time for customers at a restaurant with a single chef who processes orders sequentially.
+2. Problem type / algorithm category: Simulation, Greedy approach.
+3. Step-by-step approach: Iterate through customers, track the chef's current time. For each customer, determine when the chef starts their order (maximum of customer arrival or chef's current time), calculate finish time, then waiting time, and sum up all waiting times. Finally, divide by the number of customers.
+4. Edge cases: All customers arriving at the same time, or a significant gap between arrivals.
+5. Time and space complexity: Time O(N) for iterating through customers, Space O(1) for storing variables.
+</thinking>

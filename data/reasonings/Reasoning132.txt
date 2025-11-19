@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string, find the minimum number of cuts needed to partition it into palindromic substrings.
+2. Problem type / algorithm category: Dynamic Programming, String Manipulation
+3. Step-by-step approach: Iterate through the string, expanding outwards from each character (and between each pair of adjacent characters) to find all palindromes centered there. Use dynamic programming to store the minimum cuts needed for each prefix of the string. If a palindrome starts at the beginning of the string, then no cuts are needed. Otherwise, the number of cuts needed is one more than the number of cuts needed for the prefix ending just before the start of the palindrome.
+4. Edge cases: Empty string, single character string, string that is already a palindrome.
+5. Time and space complexity: Time complexity is O(n^2) because we potentially expand from each character to cover the string, and space complexity is O(n) for the DP array.
+</thinking>

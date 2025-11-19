@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of strings, determine the minimum number of columns to delete such that the remaining columns are lexicographically sorted from top to bottom.
+2. Problem type / algorithm category: Array traversal, string comparison.
+3. Step-by-step approach: Iterate through each column of the input string array. For each column, check if the column is lexicographically sorted. If not, increment the deletion count. Return the deletion count.
+4. Edge cases: Empty input array, single-row input array, single-column input array, already sorted array, completely unsorted array.
+5. Time and space complexity: Time complexity is O(n*m) where n is the number of strings and m is the length of each string. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of complete rows in a staircase that can be built with a given number of coins, where each row i requires i coins.
+2. Problem type / algorithm category: Mathematics / Binary Search (can be solved using quadratic formula derivation).
+3. Step-by-step approach: Derive the equation for the number of coins required for k rows: k(k+1)/2 <= n.  Then, solve for k using the quadratic formula. Finally, return the integer part of k.
+4. Edge cases: n = 1 (returns 1). n can be a large number so using integer division might not be appropriate, using float and math.sqrt is required.
+5. Time and space complexity: Time complexity is O(1) because the math operations are constant time. Space complexity is O(1) because only a constant amount of extra space is used.
+</thinking>

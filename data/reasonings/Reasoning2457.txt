@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the smallest non-negative integer x such that n + x has a digit sum less than or equal to target.
+2. Problem type / algorithm category: Greedy, Number theory, Iterative search.
+3. Step-by-step approach: First, check if the digit sum of n is already within the target. If not, iteratively increase n by finding the smallest increment to round up n to the next power of ten, until the digit sum of the new n is within the target.
+4. Edge cases: The initial number n might already be beautiful, requiring no addition (x=0). The maximum value of n is large, requiring careful handling of powers of ten.
+5. Time and space complexity: Time complexity is O(log10(n) * log10(n)) due to the iterative rounding and digit sum calculation. Space complexity is O(log10(n)) for string conversion.
+</thinking>

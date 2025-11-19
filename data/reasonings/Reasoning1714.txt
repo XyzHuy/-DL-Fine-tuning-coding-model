@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate sums of elements in nums starting from index xi, where indices j are selected if (j - xi) is divisible by yi, for multiple queries and return results modulo 10^9 + 7.
+2. Problem type / algorithm category: Prefix sums, Dynamic Programming.
+3. Step-by-step approach: Find the maximum yi value among queries. For each possible yi from 1 up to this maximum, precompute suffix sums where sums at index x for step y include elements nums[x], nums[x+y], nums[x+2y], etc. until the end of the array. Then, for each query [xi, yi], retrieve the precomputed sum starting from index xi with step yi.
+4. Edge cases: Empty queries array, n=1, yi=1, xi=0, xi=n-1. Modulo arithmetic applied at each addition.
+5. Time and space complexity: Time complexity is O(N * max_y + Q), where N is length of nums, max_y is max yi in queries, and Q is number of queries. Space complexity is O(N * max_y).
+</thinking>

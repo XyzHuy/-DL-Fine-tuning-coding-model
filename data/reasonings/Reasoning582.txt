@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a process tree represented by process IDs and parent process IDs, determine which processes will be killed when a specific process is killed (including its descendants).
+2. Problem type / algorithm category: Tree traversal (Depth-First Search), Hash Map.
+3. Step-by-step approach: First, construct a dictionary/hash map representing the process tree, mapping parent IDs to a list of their children IDs. Then, perform a Depth-First Search (DFS) starting from the process to be killed, adding each visited process to the list of killed processes.
+4. Edge cases: The 'kill' process might be the only process (root process), or the 'kill' process might not have any children.
+5. Time and space complexity: The time complexity is O(N), where N is the number of processes, due to the DFS traversal and hash map creation. The space complexity is also O(N) in the worst case, to store the process tree and the list of killed processes.
+</thinking>

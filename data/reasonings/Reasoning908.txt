@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers `nums` and an integer `k`, we want to minimize the difference between the maximum and minimum elements of `nums` by either adding or subtracting a value from the range [-k, k] from each number in `nums` at most once.
+2. Problem type / algorithm category: Optimization, Array Manipulation.
+3. Step-by-step approach: Find the maximum and minimum values in the input array. Reduce the maximum value by `k` and increase the minimum value by `k`. Calculate the difference between the new maximum and new minimum. If the difference is negative, then the minimum possible difference is 0.
+4. Edge cases: If the length of the array is 1, the result is always 0. If k is large enough such that `max(nums) - k <= min(nums) + k`, the result is 0.
+5. Time and space complexity: Time complexity is O(n) due to finding the min and max of the array. Space complexity is O(1) as we are only using a constant amount of extra space.
+</thinking>

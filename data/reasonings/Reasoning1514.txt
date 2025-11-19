@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the path with the highest probability of success between two nodes in an undirected weighted graph.
+2. Problem type / algorithm category: Graph traversal, specifically a variation of Dijkstra's algorithm.
+3. Step-by-step approach: Represent the graph using an adjacency list. Use a max-heap (priority queue) to store nodes to visit, prioritizing higher success probabilities. Start with the start node having a probability of 1. For each visited node, explore its neighbors, calculating the new success probability by multiplying the current node's probability with the edge's success probability. If the new probability is higher than the recorded probability for the neighbor, update it and add to the heap.
+4. Edge cases: No path exists between start and end nodes, graph with only two nodes, start and end nodes are the same (though problem constraints state start != end).
+5. Time and space complexity: Time complexity is O(E log V) and space complexity is O(V + E), where V is the number of nodes and E is the number of edges.
+</thinking>

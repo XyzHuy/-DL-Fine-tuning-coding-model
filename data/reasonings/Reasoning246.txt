@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given number (string representation) is strobogrammatic, meaning it looks the same when rotated 180 degrees.
+2. Problem type / algorithm category: String manipulation, Hash map (dictionary)
+3. Step-by-step approach: Create a dictionary mapping digits to their strobogrammatic counterparts. Iterate through the input string in reverse order. For each digit, check if it exists in the mapping. If it does, append its strobogrammatic counterpart to a list. After processing all digits, join the list to form the rotated string. Finally, compare the original string with the rotated string.
+4. Edge cases: Empty string (though the constraints say the length is between 1 and 50), invalid digits (not 0, 1, 6, 8, 9), single-digit numbers.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) because we store the rotated string in a list of size n.
+</thinking>

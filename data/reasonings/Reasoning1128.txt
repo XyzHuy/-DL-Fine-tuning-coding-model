@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of equivalent domino pairs in a list, where equivalence is defined as either identical dominoes or dominoes that can be made identical by rotation.
+2. Problem type / algorithm category: Hashing/Counting, Array Traversal.
+3. Step-by-step approach: Iterate through the dominoes, normalize each domino by sorting its elements to treat rotations as the same domino. Use a hash map (dictionary) to count the occurrences of each normalized domino. For each domino, add the current count of its normalized form to the result, then increment the count.
+4. Edge cases: Empty input list, list with only one domino, list with all identical dominoes, list with no equivalent dominoes.
+5. Time and space complexity: Time complexity is O(n), where n is the number of dominoes. Space complexity is O(n) in the worst case (all dominoes are distinct), but practically O(1) because domino values are limited to 1-9, and the normalized form becomes the key.
+</thinking>

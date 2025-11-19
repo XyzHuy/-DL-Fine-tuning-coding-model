@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the average of numbers in an array that are both even and divisible by 3, rounding down.
+2. Problem type / algorithm category: Array traversal, conditional filtering, arithmetic operations.
+3. Step-by-step approach: Iterate through the input array, identify numbers divisible by both 2 and 3 (i.e., by 6), sum these numbers, count them, and then compute their integer division average.
+4. Edge cases: If no numbers meet the criteria, return 0.
+5. Time and space complexity: O(n) time complexity for iterating through the array, O(k) space complexity where k is the number of elements satisfying the condition (for storing filtered numbers, though can be optimized to O(1) by summing and counting on the fly).
+</thinking>

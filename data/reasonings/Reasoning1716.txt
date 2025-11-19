@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total money saved by Hercy after n days, given a specific daily deposit pattern that resets weekly and increases each week.
+2. Problem type / algorithm category: Arithmetic progression, simulation.
+3. Step-by-step approach: Determine the number of full weeks and remaining days. Sum the deposits for each full week, noting the starting deposit increases each week. Then, sum the deposits for the remaining days, continuing the weekly increment pattern.
+4. Edge cases: The input n can be less than 7 (no full weeks).
+5. Time and space complexity: O(n) time because of the loop iterating up to n times (implicitly or explicitly), and O(1) space complexity as only a few variables are used.
+</thinking>

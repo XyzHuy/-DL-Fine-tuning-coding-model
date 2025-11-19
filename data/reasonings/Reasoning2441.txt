@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest positive integer k in an array such that its negative counterpart -k also exists in the same array.
+2. Problem type / algorithm category: Searching, Hash Set.
+3. Step-by-step approach: Create a set of all numbers in the input array for efficient lookups. Iterate through the array. For each positive number, check if its negative counterpart is present in the set. If it is, update the maximum k found so far.
+4. Edge cases: No number has its negative counterpart in the array. All numbers are positive or all are negative. The array contains only one element.
+5. Time and space complexity: Time complexity is O(n) due to set creation and single pass. Space complexity is O(n) for storing numbers in the set.
+</thinking>

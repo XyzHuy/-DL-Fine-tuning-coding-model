@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the index of a target integer in a sorted array of integers. Return -1 if the target is not found.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Initialize left and right pointers to the start and end of the array. While left is less than or equal to right, calculate the middle index. If the middle element is equal to the target, return the index. If the middle element is less than the target, move the left pointer to mid + 1. Otherwise, move the right pointer to mid - 1. If the target is not found, return -1.
+4. Edge cases: Empty array, target smaller or larger than all elements in array, target is the first or last element.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1) as it uses constant extra space.
+</thinking>

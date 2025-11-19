@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of fractions given as a string, and return the result as an irreducible fraction string.
+2. Problem type / algorithm category: String parsing, arithmetic, number theory (GCD).
+3. Step-by-step approach: Parse the string to extract numerators and denominators along with their signs. Calculate a common denominator (LCM, though the code uses multiplication initially) and accumulate the numerators accordingly. Finally, simplify the fraction by dividing both numerator and denominator by their greatest common divisor (GCD).
+4. Edge cases: The expression might start with a digit; handle positive and negative signs correctly; the resulting fraction must be irreducible.
+5. Time and space complexity: Time complexity is O(N + log(M)), where N is the length of the input string and M is the product of denominators. Space complexity is O(1), excluding the output string.
+</thinking>

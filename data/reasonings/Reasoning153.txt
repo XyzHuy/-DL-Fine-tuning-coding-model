@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum element in a rotated sorted array.
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use binary search to find the point where the array is rotated. Compare the first element with the middle element to determine which half is sorted. If the first element is less than or equal to the last element, the array is not rotated, and the first element is the minimum.
+4. Edge cases: Array is not rotated.
+5. Time and space complexity: Time complexity is O(log n), and space complexity is O(1).
+</thinking>

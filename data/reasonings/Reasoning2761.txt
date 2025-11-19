@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all pairs of prime numbers [x, y] such that 1 <= x <= y <= n and x + y == n.
+2. Problem type / algorithm category: Number Theory (Prime Numbers), Sieve of Eratosthenes.
+3. Step-by-step approach: First, use the Sieve of Eratosthenes to efficiently determine all prime numbers up to n. Then, iterate from 2 up to n/2. For each number x in this range, check if both x and n-x are prime. If they are, add the pair [x, n-x] to the result list.
+4. Edge cases: If n is less than 4, no prime pairs are possible (e.g., n=2, n=3).
+5. Time and space complexity: Time complexity is O(n log log n) for the Sieve, and O(n) for iterating to find pairs. Space complexity is O(n) to store the primality information.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort an array of integers in ascending order without using built-in sorting functions, achieving O(n log n) time complexity.
+2. Problem type / algorithm category: Sorting algorithm / Merge Sort.
+3. Step-by-step approach: Implement merge sort recursively, dividing the array into halves until single elements are reached, then merge the sorted halves back together.
+4. Edge cases: Empty array, array with one element, array with duplicate elements.
+5. Time and space complexity: Time complexity is O(n log n), space complexity is O(n) due to the auxiliary space used in merging.
+</thinking>

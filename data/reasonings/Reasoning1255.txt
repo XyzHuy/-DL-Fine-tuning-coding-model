@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score achievable by forming a subset of given words using a limited supply of letters, where each letter has a specific score.
+2. Problem type / algorithm category: Backtracking/Recursion with optimization.
+3. Step-by-step approach: Use a recursive function that explores two possibilities for each word: either include it if enough letters are available or skip it. Keep track of available letters and the current score. Precompute word scores and convert available letters to a frequency map for efficient lookups.
+4. Edge cases: Empty input lists for words or letters, no words can be formed with available letters, all letters are used, score of zero for all characters.
+5. Time and space complexity: Time complexity is O(2^N * L), where N is the number of words and L is the maximum word length. Space complexity is O(N + M), where N is the number of words and M is the total number of unique characters (26 for English alphabet).
+</thinking>

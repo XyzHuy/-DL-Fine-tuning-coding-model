@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a string and an array of shifts, shift the first i+1 characters of the string by shifts[i] wrapping around the alphabet.
+2. Problem type / algorithm category: String manipulation, prefix sum/cumulative sum.
+3. Step-by-step approach: Calculate the cumulative shifts from right to left. Then, iterate through the string, applying the appropriate cumulative shift to each character and updating the cumulative shift for the next character.
+4. Edge cases: Large shift values require modulo operation to stay within alphabet range (0-25).
+5. Time and space complexity: Time complexity is O(n) due to iterating through the string and shifts array. Space complexity is O(n) due to storing the shifted characters in a list.
+</thinking>

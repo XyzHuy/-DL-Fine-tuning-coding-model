@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find maximal, non-overlapping uncovered ranges in an array of length n, given a list of possibly overlapping covered ranges.
+2. Problem type / algorithm category: Interval merging and gap finding.
+3. Step-by-step approach: Sort ranges by start. Iterate, merging overlapping ranges and identifying gaps between the end of the last merged range and the start of the current range. Handle potential uncovered range at the beginning and end.
+4. Edge cases: No ranges provided, ranges cover the entire array, array length is 1, ranges are adjacent.
+5. Time and space complexity: O(R log R) time due to sorting, O(R) space for sorted ranges and results, where R is the number of ranges.
+</thinking>

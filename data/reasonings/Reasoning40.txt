@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique combinations of numbers from a given list of candidates that sum up to a specific target, where each number can only be used once in a combination and duplicate combinations should be avoided.
+2. Problem type / algorithm category: Backtracking, Combination Sum.
+3. Step-by-step approach: Sort the candidates array. Implement a backtracking function to explore possible combinations. The backtracking function takes the starting index, current path, and remaining target as input. In each recursive call, iterate through the candidates array from the starting index. Skip duplicate numbers to avoid duplicate combinations. Include the current number in the combination and recursively call the backtracking function with updated parameters. If the target reaches 0, add the current path to the result. If the target becomes negative, backtrack.
+4. Edge cases: Empty input list, target is zero, no combinations sum up to the target, duplicate numbers in the input list.
+5. Time and space complexity: Time complexity is O(2^n) in the worst case, where n is the number of candidates, due to the nature of backtracking exploring all possible combinations. The space complexity is O(n) due to the recursion depth and the space used to store the combinations.
+</thinking>

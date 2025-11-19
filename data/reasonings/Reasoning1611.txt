@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize operations to turn an integer n into 0 by flipping bits. Allowed operations are: flip the 0th bit, or flip the ith bit if (i-1)th bit is 1 and all lower bits are 0.
+2. Problem type / algorithm category: Dynamic Programming / Recursion with Memoization.
+3. Step-by-step approach: Find the highest set bit (k). Recursively solve for n - (2^k). The cost to flip the highest bit and then solve for the remainder is (2^(k+1)) - 1.
+4. Edge cases: n = 0 requires 0 operations.
+5. Time and space complexity: Time complexity is O(log n) because each recursive call reduces the problem size by targeting the most significant bit. Space complexity is O(log n) due to recursion depth.
+</thinking>

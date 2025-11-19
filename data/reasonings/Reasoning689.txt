@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array, find the starting indices of three non-overlapping subarrays of length k that maximize the sum of the subarrays.
+2. Problem type / algorithm category: Dynamic Programming / Sliding Window
+3. Step-by-step approach: Calculate prefix sums for all subarrays of size k. Use dynamic programming to find the best subarray to the left and right of each possible middle subarray. Iterate through possible middle subarray positions and calculate the total sum of the three subarrays (left, middle, right), updating the result array with the lexicographically smallest indices that yield the maximum sum.
+4. Edge cases: Empty input array, k is larger than the array size, multiple solutions exist and we need to choose the lexicographically smallest one.
+5. Time and space complexity: Time complexity is O(n) due to the sliding window and dynamic programming. Space complexity is O(n) to store the sums, left, and right arrays.
+</thinking>

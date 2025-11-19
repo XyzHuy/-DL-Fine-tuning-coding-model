@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the exclusive execution time for each function given a log of function calls and returns.
+2. Problem type / algorithm category: Stack-based simulation.
+3. Step-by-step approach: Use a stack to track function calls. Iterate through the logs, updating the exclusive time for the function at the top of the stack. Handle "start" and "end" log entries accordingly, accounting for overlapping execution times.
+4. Edge cases: Empty stack at the beginning, function calls nested within each other.
+5. Time and space complexity: Time complexity is O(N), where N is the number of logs. Space complexity is O(N) in the worst case, where all functions are nested in the stack.
+</thinking>

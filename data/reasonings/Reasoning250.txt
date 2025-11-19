@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count the number of subtrees in a given binary tree where all nodes have the same value (uni-value subtrees).
+2. Problem type / algorithm category: Tree traversal, recursion.
+3. Step-by-step approach: Use a recursive helper function to traverse the tree. For each node, check if its left and right subtrees are uni-value and if their values match the current node's value. If all conditions are met, increment the count and return True and the node's value. Otherwise, return False and the node's value.
+4. Edge cases: Empty tree (root is None), leaf nodes.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H can be N, so the space complexity can be O(N). In the best case (balanced tree), H is log N, so the space complexity can be O(log N).
+</thinking>

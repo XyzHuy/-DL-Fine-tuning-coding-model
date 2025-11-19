@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the lexicographically smallest string from a leaf node to the root of a binary tree, where node values represent characters 'a' to 'z'.
+2. Problem type / algorithm category: Tree traversal (Depth-First Search), string manipulation, lexicographical comparison.
+3. Step-by-step approach: Perform a DFS traversal. At each node, prepend the corresponding character to the current path. If a leaf node is reached, return the path. Otherwise, recursively explore the left and right subtrees and return the lexicographically smaller of the two paths.
+4. Edge cases: Empty tree (root is None), single node tree, cases where left or right child is None.
+5. Time and space complexity: Time complexity is O(N) where N is the number of nodes in the tree since each node is visited once. Space complexity is O(H) in the average case and O(N) in the worst case where H is the height of the tree, due to the recursion stack and string concatenation, which stores the path from the leaf to the root.
+</thinking>

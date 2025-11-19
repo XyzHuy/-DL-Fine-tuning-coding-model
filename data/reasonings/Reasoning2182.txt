@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Construct the lexicographically largest string by selecting characters from a given string `s`, such that no character repeats more than `repeatLimit` times consecutively.
+2. Problem type / algorithm category: Greedy, String manipulation, Frequency counting.
+3. Step-by-step approach: Count character frequencies, sort characters by lexicographical order descending. Greedily append characters, prioritizing larger ones. When a character limit is reached, append the next available smaller character to break the sequence, then continue with the larger character if available.
+4. Edge cases: String `s` might be empty, `repeatLimit` might be 1, all characters might be the same, or there might be no smaller characters available to break a sequence.
+5. Time and space complexity: Time O(N log N) due to sorting, Space O(N) for character counts and result string.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum beauty of an item for each query price, considering only items with price less than or equal to the query price.
+2. Problem type / algorithm category: Sorting and Binary Search (specifically `bisect_right`).
+3. Step-by-step approach: Sort items by price. Precompute a cumulative maximum beauty array where each element stores the maximum beauty seen so far up to that item's price. For each query, use binary search on the sorted prices to find the index of the rightmost item whose price is less than or equal to the query. Use this index to retrieve the precomputed maximum beauty.
+4. Edge cases: No items found for a query price (binary search returns index 0), multiple items with the same price, empty items list or queries list.
+5. Time and space complexity: Time complexity is O(N log N + Q log N) where N is the number of items and Q is the number of queries, due to sorting and binary search. Space complexity is O(N) for storing precomputed maximum beauties and prices.
+</thinking>

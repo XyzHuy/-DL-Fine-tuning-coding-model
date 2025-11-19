@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Replace each element in an array with the largest element to its right, and the last element with -1.
+2. Problem type / algorithm category: Array traversal, greedy.
+3. Step-by-step approach: Iterate from right to left. Maintain a variable for the maximum element encountered so far to the right. For each element, store its original value, then replace it with the current maximum. Update the maximum with the stored original value.
+4. Edge cases: An array with a single element should result in [-1].
+5. Time and space complexity: Time complexity is O(n) because of a single pass. Space complexity is O(1) as it modifies the array in-place.
+</thinking>

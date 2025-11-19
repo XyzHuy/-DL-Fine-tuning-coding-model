@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest special substring (composed of a single repeated character) that appears at least three times in the given string s. Return -1 if no such substring exists.
+2. Problem type / algorithm category: String manipulation, counting occurrences, greedy approach.
+3. Step-by-step approach: Group consecutive identical characters to find lengths of maximal special substrings. For each character, calculate how many special substrings of various lengths can be formed from its consecutive occurrences. Track the maximum length of a special substring that occurs at least thrice.
+4. Edge cases: String length less than 3 (not possible due to constraints), no special substring occurring thrice.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, as each character is visited a constant number of times. Space complexity is O(1) because the number of unique characters and possible lengths are bounded.
+</thinking>

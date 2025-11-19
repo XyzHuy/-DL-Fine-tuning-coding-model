@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of intervals, divide them into the minimum number of groups such that no intervals within the same group intersect.
+2. Problem type / algorithm category: Greedy, Sorting, Heap (Priority Queue).
+3. Step-by-step approach: Sort intervals by start time. Use a min-heap to store the end times of intervals in active groups. For each interval, if its start time is after the earliest end time in the heap, it can be placed in that group (pop the old end time). Then, add the current interval's end time to the heap. The final heap size is the minimum number of groups.
+4. Edge cases: Intervals that do not overlap (return 1 group). All intervals overlap significantly.
+5. Time and space complexity: Time O(N log N) due to sorting and heap operations. Space O(N) for the heap in the worst case.
+</thinking>

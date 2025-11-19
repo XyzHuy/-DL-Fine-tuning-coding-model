@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix, find the maximum area of an island, where an island is a group of connected 1s.
+2. Problem type / algorithm category: Graph Traversal / Depth-First Search (DFS).
+3. Step-by-step approach: Iterate through the grid. If a cell is 1, perform a DFS to explore the island, calculate its area, and update the maximum area found so far. Mark visited cells as 0 to avoid revisiting.
+4. Edge cases: Empty grid, grid with no islands (all 0s), grid with a single island.
+5. Time and space complexity: Time: O(m*n), where m and n are the dimensions of the grid. Space: O(m*n) in the worst case (when the entire grid is an island) due to recursion depth of DFS.
+</thinking>

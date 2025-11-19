@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a Reverse Polish Notation (RPN) arithmetic expression given as an array of strings, returning the integer result.
+2. Problem type / algorithm category: Stack data structure, Expression evaluation.
+3. Step-by-step approach: Iterate through the tokens. If a token is an operand, push it onto the stack. If it's an operator, pop the top two operands from the stack, perform the operation, and push the result back onto the stack. Finally, return the single remaining element in the stack.
+4. Edge cases: The problem statement guarantees valid input and no division by zero, which simplifies the edge case handling.
+5. Time and space complexity: Time complexity is O(n) because we iterate through each token once. Space complexity is O(n) in the worst case where the stack stores all the operands.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Color an m x n grid with 3 colors such that no adjacent cells have the same color, returning the count modulo 10^9 + 7.
+2. Problem type / algorithm category: Dynamic programming with state compression or profile DP.
+3. Step-by-step approach: First, generate all valid single column colorings (where adjacent cells within a column have different colors). Then, use dynamic programming where dp[i][column_state] represents the number of ways to color the first i columns ending with column_state. The transition involves summing up counts from valid previous column states.
+4. Edge cases: The base case for DP is the first column. Small values of m and n, as m is small (<= 5) and n can be large.
+5. Time and space complexity: Let V be the number of valid column states. Time complexity is O(n * V^2). Space complexity is O(V) for storing DP states.
+</thinking>

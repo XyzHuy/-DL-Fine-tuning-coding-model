@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of accounts (name and emails), merge accounts belonging to the same person based on common emails, and return the merged accounts with emails sorted.
+2. Problem type / algorithm category: Disjoint Set Union (DSU) / Union Find.
+3. Step-by-step approach: Use Union Find to merge accounts based on shared emails. Create a mapping of email to account index. Iterate through accounts, and if an email is seen, union the current account with the account associated with that email. After unioning, consolidate the emails for each root account and then format the output with the account name and sorted emails.
+4. Edge cases: Empty input list, accounts with no emails, multiple accounts with the same name but different emails.
+5. Time and space complexity: Time complexity is O(N * M * log(M)), where N is the number of accounts and M is the maximum number of emails per account. The space complexity is O(N * M) to store the email to ID mapping and merged emails.
+</thinking>

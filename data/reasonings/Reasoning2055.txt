@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count plates ('*') located strictly between two candles ('|') within specified query ranges in a string.
+2. Problem type / algorithm category: String manipulation, prefix sums, array precomputation.
+3. Step-by-step approach: Precompute three arrays: `prev_candle_left` (index of the nearest candle to the left for each position), `next_candle_right` (index of the nearest candle to the right for each position), and `prefix_plates` (cumulative count of plates up to each position). For each query [left, right], find the index of the first candle right of or at `left` and the last candle left of or at `right`. If these candles exist and the right candle is indeed to the right of the left candle, calculate plates between them using prefix sums.
+4. Edge cases: Substrings without candles, substrings with candles only at the boundaries, queries where `left_candle` is not strictly less than `right_candle` (no plates between candles).
+5. Time and space complexity: Time O(N + Q) where N is string length and Q is number of queries. Space O(N) for precomputed arrays.
+</thinking>

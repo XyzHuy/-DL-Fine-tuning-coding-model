@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find a non-empty subset of rows in a binary matrix such that the sum of each column within the subset is at most half the subset's size. Return the sorted indices of such a subset.
+2. Problem type / algorithm category: Bit manipulation, hashing, brute-force with optimization.
+3. Step-by-step approach: Represent each row as a bitmask. Store unique row bitmasks and their original indices. Check if any row is all zeros (returning its index). Iterate through pairs of row bitmasks, checking if their bitwise AND is zero. If so, their union forms a good subset of size 2. If no pair is found, no good subset of size 2 exists.
+4. Edge cases: A single row that is all zeros is a valid good subset. If no good subset of size 1 or 2 can be formed, return an empty list. The constraint n <= 5 allows for efficient bitmask representation.
+5. Time and space complexity: Time complexity is O(m*n + u^2), where m is rows, n is columns, and u is the number of unique row masks (u <= 2^n). Since n is small, this is efficient. Space complexity is O(u) for storing unique masks.
+</thinking>

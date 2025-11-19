@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth lexicographically smallest sequence of 'H' (horizontal) and 'V' (vertical) moves to reach a given destination (row, column) starting from (0,0).
+2. Problem type / algorithm category: Combinatorics, Greedy approach, Lexicographical ordering.
+3. Step-by-step approach: At each step, decide whether to move horizontally ('H') or vertically ('V'). Greedily choose 'H' if the number of lexicographically smaller paths starting with 'H' is greater than or equal to the remaining k. Otherwise, choose 'V' and adjust k. The number of such paths can be calculated using combinations.
+4. Edge cases: When all horizontal moves are exhausted, only vertical moves can be made. When all vertical moves are exhausted, only horizontal moves can be made.
+5. Time and space complexity: Time complexity is O(R+C) because we iterate through each move, and combination calculation is efficient. Space complexity is O(R+C) for storing the path.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the row with the most ones in a binary matrix, returning its index and count, prioritizing the smallest index for ties.
+2. Problem type / algorithm category: Iteration and counting.
+3. Step-by-step approach: Initialize variables for maximum ones count and its row index. Iterate through each row of the matrix. For each row, count the number of ones. If the current row's one count is greater than the maximum seen so far, update the maximum count and the result row index.
+4. Edge cases: Matrices with all zeros, matrices with all ones, single row or single column matrices, and tie-breaking for maximum ones.
+5. Time and space complexity: O(m*n) time complexity due to iterating through all elements, and O(1) space complexity as only a few variables are used.
+</thinking>

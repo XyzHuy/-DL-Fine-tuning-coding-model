@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate positions on a street (0 to n-1) where the number of covering lights meets or exceeds a given requirement for that position.
+2. Problem type / algorithm category: Difference Array / Prefix Sum.
+3. Step-by-step approach: For each light, mark the start of its coverage with +1 and one position beyond its end with -1 in a difference array. Compute the prefix sum of the difference array to get the actual brightness at each position. Then, iterate through the street, comparing the calculated brightness with the requirement for each position, and count those that meet the criteria.
+4. Edge cases: Lights extending beyond the street boundaries (0 and n-1) need to be clipped. Requirements can be 0 or very high. Lights might not cover all positions.
+5. Time and space complexity: Time complexity is O(L + N), where L is the number of lights and N is the length of the street, due to iterating through lights and then through the street once for prefix sums and once for checking requirements. Space complexity is O(N) for the difference array and prefix sums.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of any path in a binary tree, where a path is a sequence of connected nodes, and a node can appear at most once in the path. The path doesn't need to go through the root.
+2. Problem type / algorithm category: Tree traversal, recursion, dynamic programming (implicitly storing intermediate results).
+3. Step-by-step approach: Use a recursive helper function to traverse the tree. For each node, calculate the maximum path sum that includes this node as the turning point. This involves adding the node's value to the maximum gain from its left and right subtrees (or 0 if the gain is negative). Update the global maximum sum. Return the maximum gain the current node can contribute to a path going upwards to its parent.
+4. Edge cases: Empty tree (though the problem states the tree is non-empty, handling this case in the helper makes it more robust), negative node values, single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as we visit each node once. Space complexity is O(H), where H is the height of the tree, due to the recursion stack. In the worst case (skewed tree), H = N, so the space complexity can be O(N). In a balanced tree, H = log N, so the space complexity would be O(log N).
+</thinking>

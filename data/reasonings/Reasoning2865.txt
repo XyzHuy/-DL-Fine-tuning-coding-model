@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum sum of tower heights that can form a mountain shape (non-decreasing then non-increasing) by removing some bricks.
+2. Problem type / algorithm category: Dynamic Programming, Monotonic Stack.
+3. Step-by-step approach: For each potential peak element, calculate the maximum sum of heights to its left (non-decreasing towards the peak) and to its right (non-increasing away from the peak) using a monotonic stack. The total sum for a peak is the sum of left, right, minus the peak element itself (as it's counted twice). The overall maximum is the maximum of these sums over all possible peaks.
+4. Edge cases: An array with a single element can be considered a mountain. The peak can be at the beginning or end of the array. All elements might be the same height.
+5. Time and space complexity: O(n) time and O(n) space.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if an m x n binary grid, with some cells occupied (1) and others empty (0), can be completely covered by non-rotating stamps of a given size (stampHeight x stampWidth) without covering any occupied cells.
+2. Problem type / algorithm category: Grid Traversal, Prefix Sum (2D).
+3. Step-by-step approach: Use 2D prefix sums to efficiently check if a stamp can be placed on an empty subgrid. Then, use another 2D prefix sum on potential stamp placement locations to verify if every empty cell is covered by at least one valid stamp placement.
+4. Edge cases: Stamps that would extend beyond the grid boundaries. Empty grid. Grid with all occupied or all empty cells.
+5. Time and space complexity: Time complexity is O(m*n) due to prefix sum calculations and checks. Space complexity is O(m*n) for storing the prefix sum grids.
+</thinking>

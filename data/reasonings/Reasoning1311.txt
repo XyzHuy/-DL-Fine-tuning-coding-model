@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find videos watched by friends at a specific distance (level) from a given person, ordered by video watch frequency and then alphabetically.
+2. Problem type / algorithm category: Graph traversal (BFS) and frequency counting.
+3. Step-by-step approach: Perform a Breadth-First Search (BFS) starting from the given ID to find all people at the specified level. Then, collect all videos watched by these people. Count the occurrences of each video. Finally, sort the videos by their counts (ascending) and then alphabetically for ties.
+4. Edge cases: No friends at the specified level, no videos watched by friends at the specified level, friends list being empty for a person.
+5. Time and space complexity: Time complexity is O(N + V + E*L + F*V*log(F*V)) where N is the number of people, V is the number of unique videos, E is the total number of friendships, L is the max level, and F is the number of friends at the target level. Space complexity is O(N + V) for visited set, queue, and video counts.
+</thinking>

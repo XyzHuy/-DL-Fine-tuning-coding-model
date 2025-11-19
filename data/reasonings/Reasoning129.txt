@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of all numbers formed by root-to-leaf paths in a binary tree where each node contains a digit.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Perform a DFS traversal. At each node, update the current number being formed. If a leaf node is reached, add the current number to the total sum.
+4. Edge cases: Empty tree (root is None), single node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes. Space complexity is O(H), where H is the height of the tree, due to the recursion stack in DFS, which can be O(N) in the worst case (skewed tree) and O(log N) in the average case (balanced tree).
+</thinking>

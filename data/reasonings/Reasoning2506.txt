@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count pairs of strings in an array that are "similar", meaning they contain the same set of characters.
+2. Problem type / algorithm category: Hashing, Counting, Combinatorics.
+3. Step-by-step approach: Normalize each word by creating a sorted string of its unique characters. Then, count the frequency of each normalized string. For each normalized string that appears 'k' times, add k * (k - 1) / 2 to the total pair count.
+4. Edge cases: An empty input list of words, words with only one character, words with all the same characters.
+5. Time and space complexity: Time complexity is O(N * L log L) where N is the number of words and L is the maximum length of a word, due to sorting unique characters. Space complexity is O(N * L) to store normalized words and counts.
+</thinking>

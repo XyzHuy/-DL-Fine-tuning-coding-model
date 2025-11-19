@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Evaluate a string expression containing integers and operators (+, -, *, /), handling integer division.
+2. Problem type / algorithm category: Stack-based expression evaluation.
+3. Step-by-step approach: Iterate through the string, building numbers and keeping track of the current operator. Use a stack to store intermediate results. Apply operator precedence by performing multiplication and division immediately, and pushing the results onto the stack. Finally sum the values in the stack to get the final result.
+4. Edge cases: Empty string, single number string, handling spaces in the input string, integer division truncation.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(n) in the worst case where all operations are additions or subtractions, and all numbers are pushed onto the stack.
+</thinking>

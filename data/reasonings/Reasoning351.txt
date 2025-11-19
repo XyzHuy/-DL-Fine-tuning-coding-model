@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an Android lock screen grid, count the number of valid unlock patterns of length between m and n, following specific rules about connecting dots and avoiding jumps through unvisited dots.
+2. Problem type / algorithm category: Backtracking / Depth-First Search (DFS).
+3. Step-by-step approach: Use DFS to explore possible patterns starting from each dot. Keep track of visited dots and the current pattern length. Check the jump condition using a dictionary to map pairs of dots to the intermediate dot that must be visited. Recursively explore valid next dots until the pattern length reaches n, counting valid patterns within the [m, n] length range. Exploit symmetry to reduce computation.
+4. Edge cases: The length constraints m and n, ensuring all dots in a pattern are distinct, handling jumps over intermediate dots.
+5. Time and space complexity: Time complexity is O(9!) in the worst case (exploring all possible permutations of 9 dots), though pruning through the m and n constraints improves performance. Space complexity is O(9) for the visited set and recursion stack.
+</thinking>

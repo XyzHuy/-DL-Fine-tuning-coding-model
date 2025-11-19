@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign each job to a unique worker to minimize the maximum days any single worker takes to complete their assigned job.
+2. Problem type / algorithm category: Greedy algorithm.
+3. Step-by-step approach: Sort both the jobs and workers arrays in ascending order. Then, iterate through the sorted arrays, pairing the ith smallest job with the ith smallest worker. Calculate the days needed for each pair using ceiling division (job / worker) and keep track of the maximum days encountered.
+4. Edge cases: The constraints ensure n >= 1, so empty arrays are not possible. All job and worker times are positive.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N), where N is the number of jobs/workers. Space complexity is O(1) if sorting is in-place, or O(N) if a copy is made for sorting.
+</thinking>

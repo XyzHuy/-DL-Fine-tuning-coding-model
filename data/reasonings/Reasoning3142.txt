@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Verify if each cell in a 2D grid is equal to the cell below it and different from the cell to its right.
+2. Problem type / algorithm category: Grid traversal, condition checking.
+3. Step-by-step approach: Iterate through each cell of the grid. For each cell, check if it violates the conditions (equal to cell below or same as cell to the right). If any violation is found, return false. If all cells are checked without violations, return true.
+4. Edge cases: Grids with single row or single column, where boundary checks for adjacent cells are crucial.
+5. Time and space complexity: Time complexity is O(m*n) as each cell is visited once. Space complexity is O(1) as only a few variables are used.
+</thinking>

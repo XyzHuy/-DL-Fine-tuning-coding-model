@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse the order of characters in each word of a given sentence while preserving the whitespace and initial word order.
+2. Problem type / algorithm category: String manipulation.
+3. Step-by-step approach: Split the input string into a list of words, reverse each word using slicing, and then join the reversed words back into a single string with spaces.
+4. Edge cases: Empty input string, string with only one word, string with multiple spaces (although the prompt states there are no leading/trailing spaces and words are separated by single space).
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input string s. Space complexity is O(n) because we are creating a list of words and a new string of reversed words.
+</thinking>

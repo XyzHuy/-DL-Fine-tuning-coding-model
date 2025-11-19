@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the distance (number of edges) between two nodes with given values p and q in a binary tree.
+2. Problem type / algorithm category: Tree Traversal (DFS), Lowest Common Ancestor (LCA).
+3. Step-by-step approach: First, find the Lowest Common Ancestor (LCA) of nodes p and q. Then, calculate the distance from the LCA to node p and the distance from the LCA to node q. The sum of these two distances is the total distance between p and q.
+4. Edge cases: If p and q are the same, the distance is 0. If one node is an ancestor of the other, the LCA will be the ancestor node. The tree can be empty or contain only one node.
+5. Time and space complexity: Time complexity is O(N) due to tree traversals to find LCA and distances. Space complexity is O(H) where H is the height of the tree, for the recursion stack. In the worst case (skewed tree), H can be N.
+</thinking>

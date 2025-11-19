@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reorder an array of logs such that letter logs precede digit logs, letter logs are sorted lexicographically by content (and identifier if contents are the same), and digit logs maintain their original order.
+2. Problem type / algorithm category: Sorting, String manipulation
+3. Step-by-step approach: Define a custom sorting key that categorizes logs as letter or digit logs. For letter logs, the key returns a tuple to sort first by content, then by identifier. For digit logs, the key returns a tuple that ensures they are placed after letter logs. Finally, use the sort function with the custom key to reorder the logs.
+4. Edge cases: Empty input list, logs with identical content, logs with only identifier and a single word.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting, where N is the number of logs. Space complexity is O(1) as the sorting is done in place.
+</thinking>

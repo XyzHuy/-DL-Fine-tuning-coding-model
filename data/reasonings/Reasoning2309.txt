@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest English letter that appears as both lowercase and uppercase in a given string, returning it in uppercase. Return an empty string if no such letter exists.
+2. Problem type / algorithm category: String manipulation, character frequency analysis, brute force with optimization.
+3. Step-by-step approach: Use a set to store all unique characters for efficient lookups. Iterate through the string, and for each character, check if its opposite case counterpart also exists in the set. If both exist, compare it with the current greatest qualifying letter found so far and update if the current one is larger.
+4. Edge cases: The input string contains no letters that appear in both cases. The input string contains only one case of letters. The input string is short or long.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the string, due to iterating through the string and set operations. Space complexity is O(1) because the set will store at most 26 lowercase and 26 uppercase letters, which is a constant.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Minimize the total cost of flying 2n people to two cities, A and B, such that exactly n people go to each city, given the individual costs of flying each person to each city.
+2. Problem type / algorithm category: Greedy algorithm / Sorting.
+3. Step-by-step approach: Sort the costs array based on the difference between the cost of flying to city A and city B. Assign the first n people to city A and the remaining n people to city B. Calculate the total cost.
+4. Edge cases: Empty input array (though constraints say otherwise), equal costs for both cities for all people.
+5. Time and space complexity: Time complexity is O(n log n) due to sorting. Space complexity is O(1) as sorting is done in place.
+</thinking>

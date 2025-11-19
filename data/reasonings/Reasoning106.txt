@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the inorder and postorder traversals of a binary tree, reconstruct and return the binary tree.
+2. Problem type / algorithm category: Tree construction, recursion.
+3. Step-by-step approach: The last element in postorder is the root. Find the root in inorder. Divide inorder into left and right subtrees based on the root's index. Recursively build left and right subtrees using the divided inorder and postorder arrays.
+4. Edge cases: Empty inorder or postorder arrays.
+5. Time and space complexity: O(N) time complexity, where N is the number of nodes in the tree. O(N) space complexity due to recursion stack and storing the tree.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given two strings `s` and `t`, find the minimum window substring of `s` that contains all characters in `t` (including duplicates).
+2. Problem type / algorithm category: String manipulation, sliding window.
+3. Step-by-step approach: Use a sliding window to iterate through `s`. Maintain a counter for characters in `t` and characters in the current window. Expand the window until it contains all characters in `t`. Then, contract the window from the left while maintaining all characters in `t`. Keep track of the minimum window size found so far.
+4. Edge cases: Empty string inputs, `t` is longer than `s` or `s` does not contain all characters in `t`.
+5. Time and space complexity: Time complexity is O(m + n) where n is the length of s and m is the length of t. Space complexity is O(m) in the worst case where m is the number of unique characters in `t`.
+</thinking>

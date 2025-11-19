@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the next greater element in nums2 for each element in nums1, where nums1 is a subset of nums2.
+2. Problem type / algorithm category: Stack and Hash Map.
+3. Step-by-step approach: Iterate through nums2 from right to left, using a stack to keep track of potential next greater elements. A hash map stores each number's next greater element. Iterate through nums1 and use the hash map to build the result array.
+4. Edge cases: Empty stack (no next greater element, so the next greater element is -1), number not found in nums2 (though problem constraints prevent this).
+5. Time and space complexity: Time complexity is O(nums1.length + nums2.length) due to the single pass through each array. Space complexity is O(nums2.length) because of the hash map and stack which, in the worst case, stores all elements of nums2.
+</thinking>

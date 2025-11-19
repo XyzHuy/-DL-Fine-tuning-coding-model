@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the difference between the count of distinct elements in the prefix nums[0...i] and the suffix nums[i+1...n-1] for each index i in the input array nums.
+2. Problem type / algorithm category: Array manipulation, Prefix/Suffix sums (conceptual).
+3. Step-by-step approach: Iterate through the array from index 0 to n-1. For each index i, create the prefix subarray nums[0...i] and the suffix subarray nums[i+1...n-1]. Convert both subarrays to sets to get distinct elements. Calculate the difference between the lengths of these sets and store it in the result array.
+4. Edge cases: The last element (i = n-1) will have an empty suffix, resulting in a distinct suffix count of 0. The first element (i = 0) will have a prefix of size 1.
+5. Time and space complexity: Time complexity is O(n^2) due to slicing and set creation within the loop. Space complexity is O(n) for storing the result array and O(n) for temporary sets, leading to O(n) overall.
+</thinking>

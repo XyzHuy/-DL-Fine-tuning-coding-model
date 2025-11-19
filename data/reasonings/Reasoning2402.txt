@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Assign meetings to rooms, prioritizing lower room numbers and earlier start times when delays occur, and find the room that hosted the most meetings.
+2. Problem type / algorithm category: Greedy, Priority Queue (Min-Heap).
+3. Step-by-step approach: Sort meetings by start time. Use two heaps: one for available rooms and one for ongoing meetings (end time, room number). Process meetings chronologically. If available rooms exist, assign the lowest numbered room. If not, delay the meeting in the earliest finishing room. Update room meeting counts and track the room with the maximum count.
+4. Edge cases: All rooms are occupied when a meeting is scheduled, requiring a delay. Multiple rooms having the same maximum number of meetings.
+5. Time and space complexity: Time complexity is O(M log M + M log N) due to sorting meetings and heap operations, where M is the number of meetings and N is the number of rooms. Space complexity is O(N + M) for storing ongoing meetings and room counts.
+</thinking>

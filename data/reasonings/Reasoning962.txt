@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum width of a ramp in an array, where a ramp is defined as a pair (i, j) such that i < j and nums[i] <= nums[j].
+2. Problem type / algorithm category: Array, Sorting. This problem can be solved using sorting and a single pass through the sorted data.
+3. Step-by-step approach: Create a list of (value, index) pairs. Sort the list based on the value. Iterate through the sorted list, keeping track of the minimum index encountered so far. For each element, update the maximum width by calculating the difference between the current index and the minimum index.
+4. Edge cases: The problem statement specifies that if no ramp exists, return 0. The input array will always have at least two elements.
+5. Time and space complexity: Time complexity is O(n log n) due to the sorting step. Space complexity is O(n) to store the indexed array.
+</thinking>

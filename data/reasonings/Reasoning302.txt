@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary matrix representing an image with a single connected component of black pixels, find the area of the smallest rectangle enclosing all black pixels.
+2. Problem type / algorithm category: Binary search. The problem requires an algorithm with less than O(mn) runtime, which suggests using binary search to find the boundaries of the rectangle.
+3. Step-by-step approach: Use binary search to find the top, bottom, left, and right boundaries of the rectangle. Then calculate the area based on these boundaries. The binary search is performed on rows and columns independently, using helper functions to check for the presence of black pixels.
+4. Edge cases: Empty image or image with no black pixels. The coordinates x, y are guaranteed to be within bounds and to contain a black pixel, so no need to check that explicitly.
+5. Time and space complexity: Time complexity is O(m log n + n log m) due to the four binary searches. Space complexity is O(1).
+</thinking>

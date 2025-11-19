@@ -1,0 +1,2138 @@
+{
+  "function_name": "totalNumbers",
+  "test_cases": [
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          6,
+          6,
+          6
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 55
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          0,
+          0,
+          2
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          1,
+          3,
+          4,
+          2,
+          4,
+          2,
+          4,
+          2,
+          2
+        ]
+      },
+      "expected_output": 28
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          0,
+          0,
+          2,
+          2
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          2
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "digits": [
+          8,
+          6,
+          8,
+          6,
+          8,
+          6,
+          8,
+          6,
+          8,
+          6
+        ]
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0
+        ]
+      },
+      "expected_output": 48
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          8,
+          0,
+          7,
+          4,
+          9,
+          3,
+          0,
+          3,
+          0,
+          9
+        ]
+      },
+      "expected_output": 63
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      "expected_output": 48
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1,
+          0
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          0,
+          0,
+          2
+        ]
+      },
+      "expected_output": 5
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6,
+          8,
+          8
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6
+        ]
+      },
+      "expected_output": 99
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 446
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0
+        ]
+      },
+      "expected_output": 260
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "expected_output": 63
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3,
+          5,
+          7,
+          9,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected_output": 202
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2
+        ]
+      },
+      "expected_output": 97
+    },
+    {
+      "parameters": {
+        "digits": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          5,
+          5,
+          5,
+          5,
+          7,
+          7,
+          7,
+          7,
+          9,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5
+        ]
+      },
+      "expected_output": 80
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ]
+      },
+      "expected_output": 58
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          1,
+          3,
+          5,
+          7,
+          9,
+          2
+        ]
+      },
+      "expected_output": 349
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          1,
+          3,
+          5,
+          7,
+          9,
+          0
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected_output": 228
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "expected_output": 60
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4
+        ]
+      },
+      "expected_output": 58
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4
+        ]
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "digits": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "expected_output": 380
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          2,
+          4,
+          6,
+          8,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 224
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 52
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          2
+        ]
+      },
+      "expected_output": 349
+    },
+    {
+      "parameters": {
+        "digits": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected_output": 11
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          1,
+          3,
+          5,
+          7,
+          9
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          1,
+          3,
+          5,
+          7,
+          9,
+          9
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          9
+        ]
+      },
+      "expected_output": 228
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          4,
+          4,
+          6,
+          6,
+          8,
+          8,
+          0,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 12
+    },
+    {
+      "parameters": {
+        "digits": [
+          7,
+          7,
+          7,
+          8,
+          8,
+          8,
+          9,
+          9,
+          9,
+          0
+        ]
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          0,
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          1
+        ]
+      },
+      "expected_output": 333
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5
+        ]
+      },
+      "expected_output": 48
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          0,
+          0,
+          1,
+          3,
+          5
+        ]
+      },
+      "expected_output": 193
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2,
+          4
+        ]
+      },
+      "expected_output": 98
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      "expected_output": 2
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          5,
+          6,
+          6
+        ]
+      },
+      "expected_output": 87
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      "expected_output": 24
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          3,
+          5,
+          7,
+          9,
+          2,
+          4,
+          6,
+          8,
+          0
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          4,
+          4,
+          6,
+          6,
+          8,
+          8,
+          0,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6
+        ]
+      },
+      "expected_output": 90
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          8,
+          8,
+          7,
+          7,
+          6,
+          6,
+          5,
+          5
+        ]
+      },
+      "expected_output": 48
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          3,
+          3
+        ]
+      },
+      "expected_output": 9
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          7,
+          7,
+          8,
+          8,
+          9,
+          9,
+          0,
+          0
+        ]
+      },
+      "expected_output": 23
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "expected_output": 271
+    },
+    {
+      "parameters": {
+        "digits": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "expected_output": 0
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2
+        ]
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "digits": [
+          9,
+          9,
+          9,
+          8,
+          8,
+          8,
+          7,
+          7,
+          7,
+          6,
+          6,
+          6
+        ]
+      },
+      "expected_output": 32
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 4
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          1
+        ]
+      },
+      "expected_output": 228
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          2,
+          3,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6
+        ]
+      },
+      "expected_output": 102
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          1,
+          3
+        ]
+      },
+      "expected_output": 232
+    },
+    {
+      "parameters": {
+        "digits": [
+          2,
+          4,
+          6,
+          8,
+          2,
+          4,
+          6,
+          8,
+          0,
+          0
+        ]
+      },
+      "expected_output": 96
+    },
+    {
+      "parameters": {
+        "digits": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0,
+          0
+        ]
+      },
+      "expected_output": 337
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "expected_output": 328
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      "expected_output": 21
+    },
+    {
+      "parameters": {
+        "digits": [
+          7,
+          8,
+          9,
+          0,
+          2,
+          4,
+          6,
+          8,
+          0,
+          2
+        ]
+      },
+      "expected_output": 166
+    },
+    {
+      "parameters": {
+        "digits": [
+          0,
+          0,
+          2,
+          2,
+          4,
+          4,
+          6,
+          6,
+          8,
+          8
+        ]
+      },
+      "expected_output": 96
+    }
+  ]
+}

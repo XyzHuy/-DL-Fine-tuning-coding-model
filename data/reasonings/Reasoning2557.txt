@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum count of distinct integers from 1 to n, not in the banned list, whose sum is at most maxSum.
+2. Problem type / algorithm category: Greedy approach.
+3. Step-by-step approach: Iterate through numbers from 1 to n. If a number is not banned and adding it to the current sum does not exceed maxSum, include it, increment the count, and update the sum. Stop when either n is reached or adding the next valid number exceeds maxSum.
+4. Edge cases: n is very large, maxSum is very small, all numbers are banned, no numbers are banned.
+5. Time and space complexity: Time O(n), Space O(len(banned)) for the set.
+</thinking>

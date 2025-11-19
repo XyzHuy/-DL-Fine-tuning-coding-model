@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique permutations of a list of numbers which may contain duplicates.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Sort the input array, use backtracking to generate permutations, and use a 'used' array and a condition to avoid duplicate permutations caused by duplicate numbers in the input.
+4. Edge cases: Empty input array, input array with only duplicate numbers, general case with mixed unique and duplicate numbers.
+5. Time and space complexity: O(n*n!) time, where n is the length of nums, and O(n) space.
+</thinking>

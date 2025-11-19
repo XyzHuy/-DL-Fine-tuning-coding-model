@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count substrings of a given string that contain only one distinct character.
+2. Problem type / algorithm category: String manipulation, counting.
+3. Step-by-step approach: Iterate through the string, counting consecutive occurrences of each character. When a different character is encountered, calculate the number of substrings formed by the previous character and add it to the total. Repeat until the end of the string and return the total. The number of substrings for n consecutive same characters is n * (n + 1) / 2.
+4. Edge cases: Empty string (though the constraint says the length is at least 1, so no need to check for that), string with only one character, string with all the same characters.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the string once. Space complexity is O(1) because we only use a few constant space variables.
+</thinking>

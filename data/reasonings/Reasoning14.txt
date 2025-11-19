@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest common prefix string amongst an array of strings. Return an empty string if no common prefix exists.
+2. Problem type / algorithm category: String manipulation, Array.
+3. Step-by-step approach: Initialize the prefix to be the first string in the array. Iterate through the rest of the strings, shortening the prefix if it's not a prefix of the current string. If the prefix becomes empty, return an empty string.
+4. Edge cases: Empty input array, no common prefix.
+5. Time and space complexity: O(S) time, where S is the sum of all characters in all strings. O(1) space.
+</thinking>

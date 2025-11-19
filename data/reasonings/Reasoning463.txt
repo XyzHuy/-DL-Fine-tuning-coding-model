@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a 2D grid representing an island, calculate the perimeter of the island.
+2. Problem type / algorithm category: Grid traversal, basic arithmetic.
+3. Step-by-step approach: Iterate through each cell in the grid. If a cell is land (1), initialize its contribution to the perimeter as 4. Check its top and left neighbors. If a neighbor is also land, subtract 2 from the perimeter (since two sides are shared). Accumulate the perimeter for each land cell.
+4. Edge cases: Empty grid (though the problem states there is always one island, handling this case prevents errors), single island cell, island at the edge of the grid.
+5. Time and space complexity: Time complexity is O(rows * cols) due to iterating through each cell in the grid. Space complexity is O(1) as it uses constant extra space.
+</thinking>

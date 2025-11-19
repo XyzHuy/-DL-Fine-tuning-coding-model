@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a tree structure representing cities and roads, and initial road directions, find the minimum number of roads to reorient so that all cities can reach city 0.
+2. Problem type / algorithm category: Graph Traversal (DFS/BFS), Tree algorithms.
+3. Step-by-step approach: Build an adjacency list representing the tree, storing both original and reverse directions with associated costs (1 for original, 0 for reversed). Perform a Depth First Search (DFS) starting from city 0. During DFS, if an edge needs to be traversed in its original direction to reach a child node from the parent node, it contributes 1 to the total reorientation count; otherwise, it contributes 0. Sum these costs across all traversals originating from city 0.
+4. Edge cases: The input is guaranteed to be a tree with n cities and n-1 connections, and it's guaranteed that all cities can reach city 0 after reordering, so no disconnected components or unreachable cities. The minimum value for n is 2.
+5. Time and space complexity: Time complexity is O(N) because each node and edge is visited exactly once during the DFS traversal. Space complexity is O(N) for storing the graph (adjacency list) and the recursion stack in DFS.
+</thinking>

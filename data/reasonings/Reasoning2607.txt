@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a circular array and an integer k, find the minimum operations to make the sum of all subarrays of length k equal by incrementing or decrementing elements.
+2. Problem type / algorithm category: Greedy, Number Theory, Array manipulation, Connected components.
+3. Step-by-step approach: Identify cycles/components formed by indices i, (i+k)%n, (i+2k)%n, etc. For each component, find the median of its elements and calculate the sum of absolute differences to make all elements in that component equal to the median. Sum these minimum operations across all components.
+4. Edge cases: k=1 (each element forms its own component), k=n (the entire array is one component), all elements are already equal.
+5. Time and space complexity: O(N log N) time due to sorting within components, O(N) space for visited array and storing components.
+</thinking>

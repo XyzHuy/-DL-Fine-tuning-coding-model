@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary string, find the lexicographically largest string achievable by repeatedly replacing "00" with "10" and "10" with "01".
+2. Problem type / algorithm category: String manipulation, Greedy approach.
+3. Step-by-step approach: Count the total zeros. If more than one zero exists, the goal is to shift all zeros to the right as much as possible, leaving a single zero before the last possible position. The final string will consist of ones, followed by a single zero, followed by the remaining ones. The position of this single zero is determined by the initial count of zeros and the index of the first zero.
+4. Edge cases: If the input string contains zero or one zero, no operations can change it to a larger string, so the original string is returned.
+5. Time and space complexity: Time complexity is O(N) due to counting zeros and string construction. Space complexity is O(N) for storing the result string.
+</thinking>

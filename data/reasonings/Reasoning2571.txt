@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a positive integer n, find the minimum operations to reach 0 by adding or subtracting powers of 2.
+2. Problem type / algorithm category: Greedy approach, Number theory.
+3. Step-by-step approach: In each step, find the largest power of 2 less than or equal to the current number. Decide whether to subtract this power or add to the next power of 2 to minimize operations. Update the number and increment the operation count until the number becomes 0.
+4. Edge cases: The input n is always positive (1 <= n <= 10^5). The smallest input is 1, which requires one operation.
+5. Time and space complexity: Time complexity is O(log n) because each operation effectively halves the number or brings it close to a power of 2. Space complexity is O(1).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum number of refueling stops needed to reach a target distance, given an initial fuel amount and a list of gas stations with their positions and fuel amounts.
+2. Problem type / algorithm category: Greedy algorithm with a heap (priority queue).
+3. Step-by-step approach: Iterate through the stations, maintaining a max-heap of fuel amounts from stations passed. If the current fuel is insufficient to reach the next station, refuel from the station with the largest fuel amount in the heap until enough fuel is available or the heap is empty. If the heap is empty and we still cannot reach the station, it's impossible to reach the target, so return -1. Add each station's fuel to the heap as we pass it.
+4. Edge cases: Starting fuel is sufficient to reach the target without refueling (return 0). Cannot reach the first station or any subsequent station even after refueling from all previous stations (return -1). The target is treated as a final station with 0 fuel.
+5. Time and space complexity: Time complexity is O(N log N) due to the heap operations, where N is the number of stations. Space complexity is O(N) to store the fuel amounts in the heap.
+</thinking>

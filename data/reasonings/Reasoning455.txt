@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of children that can be content given their greed factors and cookie sizes. A child is content if they receive a cookie with size greater than or equal to their greed factor.
+2. Problem type / algorithm category: Greedy algorithm, sorting.
+3. Step-by-step approach: Sort both the children's greed factors and cookie sizes in ascending order. Iterate through both sorted arrays, assigning a cookie to a child if the cookie size is sufficient. The number of assigned cookies is the answer.
+4. Edge cases: Empty arrays for children or cookies, all cookies too small, all children already content.
+5. Time and space complexity: Time complexity is O(n log n + m log m) due to sorting, where n is the number of children and m is the number of cookies. Space complexity is O(1) or O(n+m) depending on the sorting algorithm used.
+</thinking>

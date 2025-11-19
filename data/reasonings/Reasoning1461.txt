@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if all binary codes of length k exist as substrings within a given binary string s.
+2. Problem type / algorithm category: String manipulation, Set operations, Sliding window (implicit).
+3. Step-by-step approach: Iterate through the input string s, extracting all substrings of length k. Store these unique substrings in a set. Finally, compare the size of the set to 2 raised to the power of k.
+4. Edge cases: The string s might be shorter than k. The string might contain only one type of character (all '0's or all '1's).
+5. Time and space complexity: Time complexity is O(N*K) due to substring slicing, but can be optimized to O(N) with a rolling hash or integer conversion. Space complexity is O(2^K) in the worst case to store all unique substrings.
+</thinking>

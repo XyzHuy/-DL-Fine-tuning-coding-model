@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the total number of matches played in a tournament until a single winner remains, based on specific rules for even and odd numbers of teams.
+2. Problem type / algorithm category: Simulation, Iterative process.
+3. Step-by-step approach: Initialize total matches to zero. While the number of teams is greater than one, calculate matches played and teams advancing based on whether the current number of teams is even or odd, and add the matches to the total. Update the number of teams for the next round.
+4. Edge cases: The base case is when only one team remains (the winner), at which point the loop terminates. The input constraint of n >= 1 is handled.
+5. Time and space complexity: Time complexity is O(log n) because the number of teams roughly halves in each round. Space complexity is O(1) as only a few variables are used.
+</thinking>

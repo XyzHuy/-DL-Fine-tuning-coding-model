@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring containing at most two distinct characters.
+2. Problem type / algorithm category: Sliding window, string manipulation.
+3. Step-by-step approach: Use a sliding window to iterate through the string, maintaining a count of characters within the window. If the number of distinct characters exceeds 2, shrink the window from the left until the condition is met. Track the maximum window length.
+4. Edge cases: Empty string, string with only one character, string with only two distinct characters.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the string. Space complexity is O(1) since the hashmap will store at most three characters.
+</thinking>

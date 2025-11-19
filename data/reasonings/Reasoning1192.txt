@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all critical connections (bridges) in a given undirected graph. A critical connection is one that, if removed, would disconnect the graph.
+2. Problem type / algorithm category: Graph theory, Tarjan's algorithm for finding bridges.
+3. Step-by-step approach: Build an adjacency list from the given connections. Then, use Tarjan's algorithm to find critical connections. Tarjan's algorithm involves depth-first search, discovery times (dfn), and lowest reachable ancestor (low) for each node. An edge (u, v) is critical if low[v] > dfn[u].
+4. Edge cases: Empty graph (n=0), graph with only one node (n=1), graph with no critical connections, graph with all connections being critical.
+5. Time and space complexity: Time complexity is O(n + m), where n is the number of nodes and m is the number of connections, due to the DFS traversal and adjacency list construction. Space complexity is O(n + m) to store the adjacency list, dfn, low, and the result.
+</thinking>

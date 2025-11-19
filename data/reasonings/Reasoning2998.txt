@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum operations (divide by 11, divide by 5, increment by 1, decrement by 1) to transform integer x into integer y.
+2. Problem type / algorithm category: Breadth-First Search (BFS) on a state space.
+3. Step-by-step approach: Start with x at 0 operations. Use a queue for BFS. Explore possible next states by applying the four operations. Keep track of visited states to avoid cycles and redundant computations. The first time y is reached, the current operation count is the minimum.
+4. Edge cases: The initial state x being equal to y (0 operations). The maximum value of x and y being 10^4 means we might explore values slightly larger than 10^4 due to increment operations, but the search should remain bounded.
+5. Time and space complexity: The state space is roughly proportional to the maximum possible value explored, which can be around max(x, y) + some buffer for increments. Time: O(V) where V is the number of reachable states. Space: O(V) for the queue and visited set.
+</thinking>

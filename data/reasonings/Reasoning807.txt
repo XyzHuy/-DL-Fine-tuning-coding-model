@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a grid of building heights, find the maximum total increase in building heights such that the skyline remains unchanged when viewed from all four directions.
+2. Problem type / algorithm category: Array manipulation, finding maximums, and greedy algorithm.
+3. Step-by-step approach: First, find the maximum height for each row and column, representing the skylines. Then, iterate through the grid, and for each cell, determine the maximum allowed height as the minimum of the corresponding row and column maximums. Calculate the increase for that cell and add it to the total increase.
+4. Edge cases: Empty grid (though constraints state n >= 2, so it won't happen), grid with all zeros, grid with already optimal heights (no increase possible).
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through the grid and calculating row/column maxes. Space complexity is O(n) to store the row and column maximums.
+</thinking>

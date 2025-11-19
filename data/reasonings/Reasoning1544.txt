@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Remove adjacent characters that are the same letter but different cases (e.g., 'a' and 'A') from a string until no such pairs exist.
+2. Problem type / algorithm category: String manipulation, Stack-based processing.
+3. Step-by-step approach: Iterate through the input string. If the current character forms a "bad pair" with the top of a stack (same letter, different case), pop the stack. Otherwise, push the current character onto the stack. Finally, join the characters remaining in the stack.
+4. Edge cases: An empty input string or a string with no "bad pairs" should be handled. A string that reduces to an empty string is also an edge case.
+5. Time and space complexity: Time complexity is O(n) because each character is pushed and popped at most once. Space complexity is O(n) in the worst case, where the stack might store all characters.
+</thinking>

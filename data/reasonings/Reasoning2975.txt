@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest square area formed by existing fences after removing some, considering mandatory boundary fences.
+2. Problem type / algorithm category: Greedy, Set operations, Brute force on distances.
+3. Step-by-step approach: Include boundary fences in horizontal and vertical lists, sort them, compute all possible distances between adjacent fences in both dimensions, find common distances, take the maximum common distance as the side of the largest square, and return its square modulo 10^9 + 7.
+4. Edge cases: No common distances found between horizontal and vertical fences result in an impossible square (-1).
+5. Time and space complexity: Time O(H^2 + V^2) where H and V are the number of horizontal and vertical fences, space O(H^2 + V^2) to store distances.
+</thinking>

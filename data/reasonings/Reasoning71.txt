@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simplify an absolute Unix-style path to its canonical form by handling ".", "..", and multiple slashes.
+2. Problem type / algorithm category: String manipulation, Stack.
+3. Step-by-step approach: Split the path by '/', iterate through the components, use a stack to store valid directory names, handle ".." by popping from the stack, and construct the simplified path by joining the stack elements with '/'.
+4. Edge cases: Empty path components, consecutive slashes, leading/trailing slashes, ".." at the root, valid directory names like "...".
+5. Time and space complexity: O(N) time complexity, where N is the length of the path, due to splitting and iterating. O(N) space complexity for the stack in the worst case.
+</thinking>

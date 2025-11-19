@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: The task is to find the minimum operations to sort each level of a binary tree in strictly increasing order, where an operation involves swapping two nodes at the same level.
+2. Problem type / algorithm category: Tree traversal (Level Order Traversal / BFS) and Array manipulation (Minimum swaps to sort an array).
+3. Step-by-step approach: Perform a level order traversal to collect nodes at each level. For each level's values, calculate the minimum swaps required to sort them using a cycle sort approach, and sum these minimum swaps.
+4. Edge cases: An empty tree (root is None) requires 0 operations. A tree with a single node or levels that are already sorted require 0 operations for those levels.
+5. Time and space complexity: Time complexity is O(N log N) due to sorting within each level in the worst case, where N is the total number of nodes. Space complexity is O(W) where W is the maximum width of the tree for the queue and O(L) for storing level nodes, where L is the number of levels. In the worst case (a complete binary tree), W can be O(N), so space can be O(N).
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the starting and ending positions of a target value in a sorted array. If the target is not found, return [-1, -1].
+2. Problem type / algorithm category: Binary Search.
+3. Step-by-step approach: Use binary search to find the leftmost and rightmost occurrences of the target. Implement two helper functions, `find_left` and `find_right`, to perform binary searches for the leftmost and rightmost indices, respectively. Finally, check if the target exists and return the range, otherwise return [-1, -1].
+4. Edge cases: Empty array, target not found, target is at the beginning or end of the array, and target appears multiple times consecutively.
+5. Time and space complexity: Time complexity is O(log n) due to binary search. Space complexity is O(1).
+</thinking>

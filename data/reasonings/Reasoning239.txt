@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum value within a sliding window of size k as it moves across an array of integers.
+2. Problem type / algorithm category: Sliding window, Deque (double-ended queue).
+3. Step-by-step approach: Maintain a deque storing indices of potentially maximum elements in the current window. The deque stores indices in decreasing order of element values. When the window slides, remove elements outside the window and elements smaller than the new element. The maximum is always at the front of the deque.
+4. Edge cases: Empty input array, k equal to zero, k equal to one, k equal to the length of the array.
+5. Time and space complexity: Time complexity is O(n) because each element is processed at most twice (once for adding and once for removing). Space complexity is O(k) because the deque can hold at most k elements.
+</thinking>

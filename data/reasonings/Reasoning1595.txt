@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the minimum cost to connect two groups of points, where each point in the first group must connect to at least one in the second, and vice-versa.
+2. Problem type / algorithm category: Dynamic Programming with Bitmasking.
+3. Step-by-step approach: Use a recursive DP function with memoization. The state `dp(i, mask)` represents the minimum cost to connect points `i` through `n1-1` from the first group, given that points represented by `mask` in the second group are already connected. The base case is when all points from the first group are considered. In the recursive step, for the current point `i` from the first group, explore connecting it to each point `j` in the second group and transition to `dp(i+1, mask | (1 << j))`. Also, consider connecting point `i` to a set of points in the second group by iterating through all possible connections for point `i`.
+4. Edge cases: Small input sizes (n1, n2 <= 12), ensuring all points in the second group are covered in the base case.
+5. Time and space complexity: Time complexity is O(n1 * 2^n2 * n2) due to DP states and transitions. Space complexity is O(n1 * 2^n2) for memoization.
+</thinking>

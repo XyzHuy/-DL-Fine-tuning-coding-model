@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all unique, non-leading-zero, even integers formed by concatenating any three digits from a given array, where digits can be reused based on their frequency.
+2. Problem type / algorithm category: Permutations, Number formation, Filtering.
+3. Step-by-step approach: Generate all permutations of length 3 from the input digits, convert each permutation into a three-digit number, and filter these numbers to keep only those that do not have a leading zero and are even. Collect unique valid numbers and return them sorted.
+4. Edge cases: The input array might not contain any even digits, or it might not have enough distinct non-zero digits to form valid numbers. Leading zero constraint must be handled.
+5. Time and space complexity: Time complexity is dominated by generating permutations, approximately O(N^3) where N is the length of digits, plus set insertion and sorting. Space complexity is O(M) for storing unique numbers, where M is the count of unique numbers found.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest consecutive path (increasing or decreasing) in a binary tree. The path doesn't need to be parent-child, but adjacent nodes in the path must differ by 1.
+2. Problem type / algorithm category: Tree traversal, Depth-First Search (DFS), Dynamic Programming (implicitly).
+3. Step-by-step approach: Use DFS to traverse the tree. For each node, calculate the lengths of increasing and decreasing consecutive paths including the node. Update a global variable to track the maximum path length encountered so far. The increasing path means node.val = child.val - 1 and decreasing path means node.val = child.val + 1.
+4. Edge cases: Empty tree (root is None), single node tree, consecutive paths involving the root, no consecutive path at all.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree (each node visited once). Space complexity is O(H) in the worst case, where H is the height of the tree, due to the recursion stack. In a balanced tree, H = log(N), and in a skewed tree, H = N.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of non-overlapping subarrays in a given array that sum up to a specific target value.
+2. Problem type / algorithm category: Prefix Sum, Greedy Approach.
+3. Step-by-step approach: Iterate through the array, maintaining a running prefix sum. Use a hash map to store prefix sums and their indices. If (current_sum - target) is found in the hash map and its index is before the last chosen subarray's end, increment the count and update the last_end to the current index. Store the current prefix sum and its index in the hash map.
+4. Edge cases: Empty array (though constraints prevent this), target value being zero, all array elements summing to target, no subarrays summing to target.
+5. Time and space complexity: O(n) time complexity due to a single pass through the array and O(n) space complexity for the hash map.
+</thinking>

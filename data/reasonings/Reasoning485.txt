@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum number of consecutive 1s in a binary array.
+2. Problem type / algorithm category: Array traversal, iteration.
+3. Step-by-step approach: Iterate through the array, maintaining a current count of consecutive 1s and a maximum count. If the current element is 1, increment the current count and update the maximum count. If the current element is 0, reset the current count to 0.
+4. Edge cases: Empty array, array with all 0s, array with all 1s.
+5. Time and space complexity: Time: O(n), Space: O(1).
+</thinking>

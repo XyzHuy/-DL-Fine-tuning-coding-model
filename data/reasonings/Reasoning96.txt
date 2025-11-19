@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer n, the task is to calculate the number of structurally unique Binary Search Trees (BSTs) that can be formed using nodes with values from 1 to n.
+2. Problem type / algorithm category: Dynamic Programming / Catalan Numbers
+3. Step-by-step approach: The solution uses dynamic programming to calculate Catalan numbers. It initializes a DP array G of size n+1, where G[i] stores the number of unique BSTs with i nodes. The base cases G[0] and G[1] are set to 1. The algorithm iterates from i = 2 to n, and for each i, it calculates G[i] using the formula G[i] = sum(G[j-1] * G[i-j]) for j from 1 to i. Finally, it returns G[n].
+4. Edge cases: The problem states that 1 <= n <= 19. Base cases for n = 0 and n = 1 are handled in the DP array initialization.
+5. Time and space complexity: The time complexity is O(n^2) due to the nested loops. The space complexity is O(n) for the DP array.
+</thinking>

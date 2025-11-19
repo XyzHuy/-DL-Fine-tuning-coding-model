@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the kth smallest element in a sorted matrix where rows and columns are sorted.
+2. Problem type / algorithm category: Binary Search
+3. Step-by-step approach: Use binary search on the range of values in the matrix. For each mid value, count the number of elements less than or equal to mid. Adjust the search range based on the count.
+4. Edge cases: Empty matrix, k = 1, k = n*n. The problem statement says n >= 1 so empty matrix is not an issue.
+5. Time and space complexity: Time complexity is O(n log(range)), where range is the difference between the largest and smallest elements. Space complexity is O(1).
+</thinking>

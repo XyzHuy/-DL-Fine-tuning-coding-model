@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the even number with the highest frequency in an array, returning the smallest if there's a tie, or -1 if no even numbers exist.
+2. Problem type / algorithm category: Frequency counting, hash map (Counter), sorting/min function with custom key.
+3. Step-by-step approach: First, filter the input array to keep only even numbers. If the filtered list is empty, return -1. Otherwise, use a Counter to store the frequency of each even number. Then, find the number with the maximum frequency, using the number itself as a tie-breaker for the minimum value.
+4. Edge cases: The primary edge case is when the input array contains no even numbers. Another consideration is handling ties in frequency correctly by selecting the smallest number.
+5. Time and space complexity: Time complexity is O(N) due to iterating through the array and Counter. Space complexity is O(K) where K is the number of unique even elements, for storing frequencies.
+</thinking>

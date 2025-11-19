@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the number of distinct ways to achieve a target score by selecting questions of various types, where each type has a specific count and point value.
+2. Problem type / algorithm category: Dynamic Programming (Knapsack-like problem).
+3. Step-by-step approach: Use a 1D DP array where dp[i] stores the number of ways to achieve score i. Iterate through each question type. For each type, iterate through possible scores backwards. For each score, consider using 1 up to the available count of questions of the current type, updating dp[current_score] by adding ways from dp[current_score - (num_questions * marks)].
+4. Edge cases: Target score of 0 (1 way - no questions answered), empty types array (if applicable, though constraints say n >= 1), maximum possible score exceeding target.
+5. Time and space complexity: Time O(N * target * max_count), Space O(target).
+</thinking>

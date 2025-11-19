@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the third largest distinct number in an integer array. If it doesn't exist, return the largest number.
+2. Problem type / algorithm category: Array manipulation, sorting (implicitly), finding maximums.
+3. Step-by-step approach: Initialize three variables (first, second, third) to negative infinity. Iterate through the array, updating these variables if a larger distinct number is found. If third remains negative infinity after iteration, return the largest number (first), otherwise return third.
+4. Edge cases: Empty array (handled by initialization), array with fewer than three distinct elements, duplicate numbers.
+5. Time and space complexity: Time complexity is O(n) because it iterates through the array once. Space complexity is O(1) since it uses a fixed number of variables.
+</thinking>

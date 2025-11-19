@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, count the number of reverse pairs, where a reverse pair (i, j) satisfies 0 <= i < j < n and nums[i] > 2 * nums[j].
+2. Problem type / algorithm category: Divide and Conquer, Merge Sort.
+3. Step-by-step approach: The problem can be solved using a modified merge sort algorithm. Divide the array into two halves, recursively count reverse pairs in each half, and then count reverse pairs that span across the two halves during the merge process. The merge process also sorts the array.
+4. Edge cases: Empty array, array with one element, array with all elements being the same, large input array.
+5. Time and space complexity: Time complexity is O(n log n) due to the merge sort. Space complexity is O(n) because of the auxiliary space used during the merge operation.
+</thinking>

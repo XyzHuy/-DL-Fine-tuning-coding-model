@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum amount of gold that can be collected in a grid by traversing adjacent cells, collecting gold in each cell, and not revisiting cells or visiting cells with no gold.
+2. Problem type / algorithm category: Backtracking, Depth-First Search (DFS)
+3. Step-by-step approach: Iterate through each cell of the grid. If a cell contains gold, initiate a DFS from that cell. The DFS explores adjacent cells, summing the gold along the path. A global variable keeps track of the maximum gold found so far. Backtracking is used to reset the grid after exploring each path.
+4. Edge cases: Empty grid, grid with all zeros, starting cell has no gold, reaching the boundary of the grid.
+5. Time and space complexity: Time complexity is O(m*n*3^(m*n)) in the worst case where m and n are the dimensions of the grid. The space complexity is O(m*n) due to the recursion depth of the DFS.
+</thinking>

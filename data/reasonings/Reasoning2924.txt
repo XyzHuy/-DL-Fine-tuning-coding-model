@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a directed acyclic graph (DAG) representing team strengths (edges from stronger to weaker), find the unique team with no incoming edges, meaning no team is stronger than it. If no such unique team exists, return -1.
+2. Problem type / algorithm category: Graph traversal, specifically finding nodes with an in-degree of zero.
+3. Step-by-step approach: 1. Create a set to store all teams that have at least one incoming edge. 2. Iterate through the given edges; for each edge [u, v], add team `v` to the set. 3. Identify all teams from 0 to n-1 that are NOT present in the set of teams with incoming edges. 4. If exactly one such team exists, return it; otherwise, return -1.
+4. Edge cases: A graph with no edges (all teams have 0 in-degree), multiple teams with 0 in-degree, or no teams with 0 in-degree (though the problem guarantees a DAG which implies at least one source).
+5. Time and space complexity: Time complexity is O(N + M) due to iterating through edges and teams. Space complexity is O(N) to store the set of teams with incoming edges.
+</thinking>

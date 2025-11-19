@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the shortest non-empty subarray whose bitwise OR of elements is at least k.
+2. Problem type / algorithm category: Sliding Window, Bit Manipulation.
+3. Step-by-step approach: Use a sliding window. Expand the window to the right, updating the bitwise OR. If the OR value meets k, record the current length and try to shrink the window from the left, updating the bitwise OR and minimum length.
+4. Edge cases: No subarray satisfies the condition (return -1), k = 0 (any single element subarray is valid), all elements are 0 and k > 0.
+5. Time and space complexity: Time O(N*log(max(nums))), Space O(log(max(nums))).
+</thinking>

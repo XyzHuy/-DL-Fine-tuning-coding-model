@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange digits of a given integer to form the smallest possible number without leading zeros, preserving the sign.
+2. Problem type / algorithm category: String manipulation, Sorting, Greedy approach.
+3. Step-by-step approach: Convert the number to a string. If positive, sort digits ascendingly and swap the first digit with the smallest non-zero digit to avoid leading zeros. If negative, sort digits descendingly to get the smallest magnitude, then add the negative sign. Convert back to integer.
+4. Edge cases: The number zero itself, and handling the sign for negative numbers correctly.
+5. Time and space complexity: O(D log D) time for sorting digits, where D is the number of digits. O(D) space for string representation.
+</thinking>

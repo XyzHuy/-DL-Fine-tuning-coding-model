@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two indices i and j in an array such that the absolute difference between indices is at least indexDifference, and the absolute difference between their corresponding values is at least valueDifference.
+2. Problem type / algorithm category: Sliding window with min/max tracking.
+3. Step-by-step approach: Iterate through the array using index j, starting from indexDifference. Maintain the index of the minimum and maximum values encountered so far in the window from index 0 up to j - indexDifference. For each j, compare nums[j] with the minimum and maximum values in the relevant preceding window. If conditions are met, return the indices; otherwise, continue.
+4. Edge cases: Array length is less than indexDifference, or no pair of indices satisfies both conditions.
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once. Space complexity is O(1) as we only use a few variables.
+</thinking>

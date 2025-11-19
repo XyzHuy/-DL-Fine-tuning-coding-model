@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum profit that can be made by buying a stock on one day and selling it on a later day.
+2. Problem type / algorithm category: Dynamic Programming / Greedy
+3. Step-by-step approach: Iterate through the prices, keeping track of the minimum price seen so far and the maximum profit that can be made by selling at the current price.
+4. Edge cases: Empty input array.
+5. Time and space complexity: Time: O(n), Space: O(1)
+</thinking>

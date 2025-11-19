@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum beauty sum of a sub-sequence of flowers where the first and last flower have the same beauty, and there are at least two flowers.
+2. Problem type / algorithm category: Array manipulation, prefix sums, hash maps.
+3. Step-by-step approach: Iterate through unique flower beauties. For each beauty, find its first and last index. Calculate the sum of positive beauties between these indices using prefix sums. Add twice the current beauty to this sum. Update the maximum beauty found so far.
+4. Edge cases: Gardens with only two flowers, gardens with negative beauties, all flowers having the same beauty.
+5. Time and space complexity: Time O(n), Space O(n) where n is the number of flowers.
+</thinking>

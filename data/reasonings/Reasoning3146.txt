@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Calculate the sum of absolute differences of character indices between two strings s and t, where t is a permutation of s and characters are unique.
+2. Problem type / algorithm category: String manipulation, Hash Map (Dictionary).
+3. Step-by-step approach: Create a mapping of characters to their indices in string s. Iterate through string t, and for each character, find its index in s using the map and add the absolute difference of current index in t and mapped index from s to a running sum.
+4. Edge cases: The problem constraints guarantee that s has unique characters and t is a permutation of s, and s length is at most 26, so no explicit handling for empty strings or missing characters is required beyond the problem definition.
+5. Time and space complexity: Time complexity is O(N) where N is the length of the strings, due to iterating through both strings once. Space complexity is O(N) or O(K) where K is the alphabet size (26 in this case) for storing the index map.
+</thinking>

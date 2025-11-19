@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find all non-decreasing subsequences of length at least 2 from a given integer array.
+2. Problem type / algorithm category: Backtracking.
+3. Step-by-step approach: Use a depth-first search (DFS) to explore all possible subsequences. Maintain a temporary list to store the current subsequence. At each step, either include the current number if it's greater than or equal to the last number in the subsequence or skip it. Avoid duplicates by skipping the current number if it is equal to the last number considered in the current branch.
+4. Edge cases: Empty input array, duplicate numbers in the input array. The constraint of subsequence length being at least 2 is also considered.
+5. Time and space complexity: Time complexity is O(2^n) in the worst case, where n is the length of the input array. Space complexity is O(n) due to the recursion depth and the temporary list.
+</thinking>

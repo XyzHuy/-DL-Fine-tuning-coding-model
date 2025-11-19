@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of numbers, find the number of ways to assign '+' or '-' signs to each number such that the sum equals the target.
+2. Problem type / algorithm category: Dynamic Programming
+3. Step-by-step approach: Use a dictionary `dp` to store the number of ways to reach a sum at each step. Iterate through the numbers in `nums`. For each number, create a new dictionary `next_dp`. For each sum `s` in the current `dp`, add the current number to `s` and update the count in `next_dp`. Also subtract the current number from `s` and update the count in `next_dp`. After iterating through all the numbers, update `dp` to `next_dp`. Finally, return the count for the target sum in `dp`.
+4. Edge cases: If the target cannot be reached, the function returns 0.
+5. Time and space complexity: Time complexity is O(n*sum), where n is the length of `nums` and sum is the sum of all possible sums. Space complexity is O(sum).
+</thinking>

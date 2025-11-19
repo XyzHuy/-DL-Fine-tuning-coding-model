@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of flight tickets, reconstruct the itinerary starting from "JFK" and using all tickets exactly once. If multiple itineraries exist, return the lexicographically smallest one.
+2. Problem type / algorithm category: Graph traversal, Depth-First Search (DFS), Eulerian path.
+3. Step-by-step approach: Build an adjacency list (graph) from the tickets. Sort the destination airports for each departure airport in lexical order. Perform a DFS starting from "JFK". During the DFS, visit all neighbors (destinations) of the current city in lexicographical order and remove the edge. After visiting all neighbors of a city, add the city to the itinerary. Reverse the itinerary to obtain the correct order.
+4. Edge cases: The input guarantees at least one valid itinerary exists. The same destination can be reached multiple times from the same departure, requiring edge removal to avoid cycles or infinite loops.
+5. Time and space complexity: Time complexity is O(ElogE) where E is the number of edges (tickets) due to sorting. Space complexity is O(E) for storing the graph.
+</thinking>

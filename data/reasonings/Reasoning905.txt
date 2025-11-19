@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, rearrange the array such that all even numbers appear before all odd numbers. The order of even and odd numbers does not matter.
+2. Problem type / algorithm category: Two Pointers, Array Manipulation
+3. Step-by-step approach: Initialize two pointers, left and right, to the start and end of the array. While left < right, if the left element is even, move left to the right. If the right element is odd, move right to the left. If the left element is odd and the right element is even, swap them and move both pointers.
+4. Edge cases: Empty array, array with only even numbers, array with only odd numbers, array with a single element.
+5. Time and space complexity: Time complexity is O(n) because each element is visited at most once. Space complexity is O(1) because it's done in place.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Rearrange an array by sorting elements at even indices in non-decreasing order and elements at odd indices in non-increasing order.
+2. Problem type / algorithm category: Sorting, Array manipulation.
+3. Step-by-step approach: Separate elements into two lists based on index parity, sort the even-indexed list ascending and the odd-indexed list descending, then merge them back into the original array structure.
+4. Edge cases: Array with only one element, array with two elements, array where all elements are the same.
+5. Time and space complexity: O(N log N) time due to sorting, O(N) space for storing separate lists.
+</thinking>

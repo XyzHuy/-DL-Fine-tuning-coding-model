@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Count triplets (i, j, k) in a strictly increasing array where nums[j] - nums[i] == diff and nums[k] - nums[j] == diff.
+2. Problem type / algorithm category: Array traversal, Hash Set.
+3. Step-by-step approach: Convert the input array into a set for efficient lookups. Iterate through the array, and for each number, check if 'number + diff' and 'number + 2 * diff' exist in the set. If both exist, increment a counter.
+4. Edge cases: The problem constraints guarantee a minimum array length of 3, so empty or too-small arrays are not a concern. The array is strictly increasing.
+5. Time and space complexity: Time O(n) due to single pass through nums and O(1) average for set lookups. Space O(n) for storing nums in a set.
+</thinking>

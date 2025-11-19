@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a matrix representing connections between cities, find the number of provinces, where a province is a group of connected cities.
+2. Problem type / algorithm category: Graph traversal, Depth-First Search (DFS).
+3. Step-by-step approach: Iterate through each city. If a city hasn't been visited, perform a DFS to explore all connected cities, marking them as visited. Each DFS call represents a new province, incrementing the province count.
+4. Edge cases: Empty matrix, single city connected to itself.
+5. Time and space complexity: Time complexity is O(n^2) due to iterating through the adjacency matrix. Space complexity is O(n) for the visited array and the DFS stack in the worst case.
+</thinking>

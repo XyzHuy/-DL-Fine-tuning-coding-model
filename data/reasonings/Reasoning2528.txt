@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the minimum power across all cities by strategically adding k power stations, each with a given range r.
+2. Problem type / algorithm category: Binary search on the answer (minimum power) combined with a greedy approach.
+3. Step-by-step approach: First, calculate the initial power of each city. Then, binary search for the maximum possible minimum power. For a given target minimum power, check if it's achievable using a greedy strategy: iterate through cities, and if a city's power is below the target, add the required stations at the farthest possible city within the range to maximize its impact.
+4. Edge cases: Empty stations array (though constraints say n >= 1), k = 0, r = 0, all stations already have high power.
+5. Time and space complexity: Time complexity is O(N log(MaxPower)), where N is the number of cities and MaxPower is the maximum possible minimum power (initial max + k). Space complexity is O(N) for storing initial power and prefix sums.
+</thinking>

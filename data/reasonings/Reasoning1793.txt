@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum score of a subarray that includes index k, where the score is the minimum element in the subarray multiplied by its length.
+2. Problem type / algorithm category: Two pointers, Greedy.
+3. Step-by-step approach: Start with a window of size 1 at index k. Expand the window greedily by moving either the left or right pointer. At each step, choose to expand towards the side with the larger element to maintain a higher minimum value for the current window. Update the maximum score seen so far.
+4. Edge cases: The initial window is just nums[k]. The loop continues as long as there's room to expand to the left or right. The minimum value can be updated dynamically.
+5. Time and space complexity: O(N) time because each pointer traverses the array at most once. O(1) space because only a few variables are used.
+</thinking>

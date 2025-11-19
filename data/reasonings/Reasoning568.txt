@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum vacation days achievable by traveling between cities over k weeks, given flight connections and vacation days available in each city for each week.
+2. Problem type / algorithm category: Dynamic Programming.
+3. Step-by-step approach: Build a graph of city connections, initialize a DP array to store max vacation days achievable at each city for each week, iterate through the weeks and cities updating the DP array using flight connections and vacation days available, and finally return the maximum vacation days at the end.
+4. Edge cases: No flights available, starting city having zero vacation days, staying in the same city always being the best option.
+5. Time and space complexity: Time complexity is O(n^2 * k) due to the nested loops iterating through cities and weeks. Space complexity is O(n) for the DP arrays.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest subsequence where consecutive elements differ at most k times.
+2. Problem type / algorithm category: Dynamic Programming with Memoization.
+3. Step-by-step approach: Use a recursive function dp(index, last_num, changes) to track the maximum length subsequence ending at 'index', with 'last_num' as the previous element, and 'changes' representing the number of differing consecutive elements used so far. At each step, either skip the current element or include it if it doesn't exceed the 'k' limit for changes.
+4. Edge cases: Empty array, k=0 (no changes allowed), all elements same.
+5. Time and space complexity: O(N * M * K) time where N is nums length, M is unique numbers, K is given. O(N * M * K) space due to memoization.
+</thinking>

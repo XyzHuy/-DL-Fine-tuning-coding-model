@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of 2D points, find the maximum number of points that lie on the same straight line.
+2. Problem type / algorithm category: Geometry, line equation, brute force.
+3. Step-by-step approach: Iterate through each pair of points. For each pair, count how many other points lie on the same line defined by this pair. Update the maximum count found so far.
+4. Edge cases: Empty input list, all points are the same.
+5. Time and space complexity: Time complexity is O(n^3) due to the triple nested loops. Space complexity is O(1).
+</thinking>

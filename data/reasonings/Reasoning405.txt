@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Convert a given 32-bit integer to its hexadecimal representation, handling negative numbers using two's complement.
+2. Problem type / algorithm category: Bit manipulation and number conversion.
+3. Step-by-step approach: Handle the zero case. Create a character map for hex digits. Handle negative numbers by adding 2^32. Iterate from the most significant hex digit to the least significant, extracting each 4-bit segment and converting it to its hex character. Append the hex characters to a list, skipping leading zeros unless the result is zero itself. Join the characters to form the hex string.
+4. Edge cases: Zero input, negative input.
+5. Time and space complexity: Time complexity is O(1) because the loop iterates a fixed number of times (8). Space complexity is O(1) because the character array and hex string have a limited size.
+</thinking>

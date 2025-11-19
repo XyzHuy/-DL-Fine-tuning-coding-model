@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Sort an array of integers using pancake flips and return the sequence of k-values representing the flips.
+2. Problem type / algorithm category: Sorting algorithm, specifically pancake sorting.
+3. Step-by-step approach: Iterate from the end of the array to the beginning. For each index i, find the position j of the value i+1 in the array. If j is not equal to i, flip the array at j+1 and then flip the array at i+1. This places the value i+1 at index i.
+4. Edge cases: Empty array (though the problem statement specifies array length >= 1), already sorted array.
+5. Time and space complexity: Time complexity is O(n^2) due to nested loops. Space complexity is O(n) for the result array in the worst case.
+</thinking>

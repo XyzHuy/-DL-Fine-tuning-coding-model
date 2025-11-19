@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the subarray with the largest absolute sum.
+2. Problem type / algorithm category: Kadane's Algorithm variation.
+3. Step-by-step approach: Calculate both the maximum possible subarray sum and the minimum possible subarray sum using modified Kadane's algorithm. The result is the maximum of the absolute values of these two sums.
+4. Edge cases: An empty subarray has a sum of 0, which is handled. The entire array can also be the subarray.
+5. Time and space complexity: O(n) time complexity and O(1) space complexity.
+</thinking>

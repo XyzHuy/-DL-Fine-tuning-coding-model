@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find four distinct indices from an integer array to form two pairs, maximizing the difference between the product of the first pair and the product of the second pair.
+2. Problem type / algorithm category: Sorting, Finding extreme values.
+3. Step-by-step approach: Sort the input array. Identify the two largest numbers and the two smallest numbers. Calculate the product of the two largest and subtract the product of the two smallest.
+4. Edge cases: The problem constraints guarantee at least 4 elements, so no need to worry about arrays smaller than 4. All numbers are positive, simplifying multiplication.
+5. Time and space complexity: Time complexity is dominated by sorting (O(N log N)). Space complexity is O(1) if sorting is in-place, or O(N) if a copy is made depending on the sort implementation.
+</thinking>

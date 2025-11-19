@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the leftmost building where Alice and Bob can meet given their starting buildings and movement rules (must move to a building with a greater index and greater height).
+2. Problem type / algorithm category: Greedy algorithm with Monotonic Stack (implicitly via Min-Heap) and Offline Query Processing.
+3. Step-by-step approach: Handle immediate meeting cases. For remaining queries, re-index them so Alice is always at the smaller index. Group queries by Bob's initial building (the larger index). Iterate through buildings from left to right. Maintain a min-heap of (Alice's height, query index) for queries where Bob is at or beyond the current building. When processing building j, pop from the heap any queries where Alice's height is less than heights[j], as building j is a potential meeting point. Add Alice's info to the heap for queries where Bob is at building j.
+4. Edge cases: Alice and Bob starting in the same building; Alice can directly reach Bob's building; no common meeting building exists.
+5. Time and space complexity: Time O((N+Q) log N), where N is number of buildings and Q is number of queries, due to heap operations. Space O(N+Q) for storing pending queries and the heap.
+</thinking>

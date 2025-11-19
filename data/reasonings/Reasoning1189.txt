@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine the maximum number of "balloon" strings that can be formed using characters from the input string `text`, using each character at most once.
+2. Problem type / algorithm category: String manipulation, counting, and frequency analysis.
+3. Step-by-step approach: Count the occurrences of each character in the input string and the word "balloon". Then, for each character in "balloon", determine the maximum number of times it can be used based on its frequency in the input string. The minimum of these values will be the maximum number of "balloon" strings that can be formed.
+4. Edge cases: If a character in "balloon" is not present in the input string, the result is 0.
+5. Time and space complexity: Time complexity is O(n), where n is the length of the input string. Space complexity is O(1), as we only store counts for a limited number of characters.
+</thinking>

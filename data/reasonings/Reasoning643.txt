@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the maximum average of all contiguous subarrays of size k in a given array nums.
+2. Problem type / algorithm category: Sliding window algorithm.
+3. Step-by-step approach: Calculate initial sum of first k elements. Then slide the window by adding the next element and subtracting the first element of the previous window. Keep track of the maximum sum encountered. Finally, divide the maximum sum by k to get the maximum average.
+4. Edge cases: The problem statement handles the case when the array size is less than k (since k <= n). No need to handle empty array cases as n >= 1.
+5. Time and space complexity: Time complexity is O(n) because it iterates through the array once. Space complexity is O(1) because it only uses a few variables to store the sum and max_sum.
+</thinking>

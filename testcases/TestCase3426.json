@@ -1,0 +1,717 @@
+{
+  "function_name": "distanceSum",
+  "test_cases": [
+    {
+      "parameters": {
+        "m": 5,
+        "n": 5,
+        "k": 5
+      },
+      "expected_output": 1771000
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 10
+      },
+      "expected_output": 384963906
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 10,
+        "k": 20
+      },
+      "expected_output": 80781589
+    },
+    {
+      "parameters": {
+        "m": 1,
+        "n": 4,
+        "k": 3
+      },
+      "expected_output": 20
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 10,
+        "k": 10
+      },
+      "expected_output": 800580356
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 10,
+        "k": 5
+      },
+      "expected_output": 19167965
+    },
+    {
+      "parameters": {
+        "m": 3,
+        "n": 3,
+        "k": 4
+      },
+      "expected_output": 1512
+    },
+    {
+      "parameters": {
+        "m": 2,
+        "n": 2,
+        "k": 2
+      },
+      "expected_output": 8
+    },
+    {
+      "parameters": {
+        "m": 5,
+        "n": 5,
+        "k": 25
+      },
+      "expected_output": 1000
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 50,
+        "k": 200
+      },
+      "expected_output": 461891397
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 20,
+        "k": 100
+      },
+      "expected_output": 642676804
+    },
+    {
+      "parameters": {
+        "m": 1000,
+        "n": 1,
+        "k": 500
+      },
+      "expected_output": 349233848
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 20,
+        "k": 40
+      },
+      "expected_output": 112638724
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 100
+      },
+      "expected_output": 981249729
+    },
+    {
+      "parameters": {
+        "m": 4,
+        "n": 11,
+        "k": 22
+      },
+      "expected_output": 286084962
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 7,
+        "k": 10
+      },
+      "expected_output": 742720485
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 8,
+        "k": 20
+      },
+      "expected_output": 830928354
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 50,
+        "k": 250
+      },
+      "expected_output": 133218151
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 200
+      },
+      "expected_output": 917140960
+    },
+    {
+      "parameters": {
+        "m": 25,
+        "n": 35,
+        "k": 500
+      },
+      "expected_output": 268900107
+    },
+    {
+      "parameters": {
+        "m": 8,
+        "n": 5,
+        "k": 10
+      },
+      "expected_output": 293801805
+    },
+    {
+      "parameters": {
+        "m": 8,
+        "n": 7,
+        "k": 30
+      },
+      "expected_output": 245055662
+    },
+    {
+      "parameters": {
+        "m": 25,
+        "n": 20,
+        "k": 10
+      },
+      "expected_output": 467663753
+    },
+    {
+      "parameters": {
+        "m": 3,
+        "n": 9,
+        "k": 8
+      },
+      "expected_output": 248648400
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 15,
+        "k": 50
+      },
+      "expected_output": 144305104
+    },
+    {
+      "parameters": {
+        "m": 2,
+        "n": 8,
+        "k": 5
+      },
+      "expected_output": 145600
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 1,
+        "k": 50
+      },
+      "expected_output": 596684460
+    },
+    {
+      "parameters": {
+        "m": 2,
+        "n": 10,
+        "k": 15
+      },
+      "expected_output": 6511680
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 15,
+        "k": 20
+      },
+      "expected_output": 814749998
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 7,
+        "k": 49
+      },
+      "expected_output": 5488
+    },
+    {
+      "parameters": {
+        "m": 5,
+        "n": 20,
+        "k": 20
+      },
+      "expected_output": 350976988
+    },
+    {
+      "parameters": {
+        "m": 3,
+        "n": 30,
+        "k": 15
+      },
+      "expected_output": 694221074
+    },
+    {
+      "parameters": {
+        "m": 2,
+        "n": 10,
+        "k": 9
+      },
+      "expected_output": 24186240
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 2,
+        "k": 49
+      },
+      "expected_output": 464438831
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 1,
+        "k": 10
+      },
+      "expected_output": 642930774
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 10,
+        "k": 50
+      },
+      "expected_output": 608985873
+    },
+    {
+      "parameters": {
+        "m": 12,
+        "n": 15,
+        "k": 120
+      },
+      "expected_output": 614641576
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 1000
+      },
+      "expected_output": 934487950
+    },
+    {
+      "parameters": {
+        "m": 2,
+        "n": 20,
+        "k": 20
+      },
+      "expected_output": 162144738
+    },
+    {
+      "parameters": {
+        "m": 6,
+        "n": 9,
+        "k": 30
+      },
+      "expected_output": 84183825
+    },
+    {
+      "parameters": {
+        "m": 9,
+        "n": 4,
+        "k": 15
+      },
+      "expected_output": 395647069
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 10,
+        "k": 15
+      },
+      "expected_output": 633547079
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 15,
+        "k": 100
+      },
+      "expected_output": 132852497
+    },
+    {
+      "parameters": {
+        "m": 8,
+        "n": 9,
+        "k": 40
+      },
+      "expected_output": 353742539
+    },
+    {
+      "parameters": {
+        "m": 3,
+        "n": 7,
+        "k": 6
+      },
+      "expected_output": 2713200
+    },
+    {
+      "parameters": {
+        "m": 9,
+        "n": 9,
+        "k": 40
+      },
+      "expected_output": 14076899
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 5,
+        "k": 15
+      },
+      "expected_output": 518666205
+    },
+    {
+      "parameters": {
+        "m": 25,
+        "n": 25,
+        "k": 300
+      },
+      "expected_output": 287498383
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 50,
+        "k": 125
+      },
+      "expected_output": 203227794
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 5,
+        "k": 10
+      },
+      "expected_output": 725438
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 7,
+        "k": 14
+      },
+      "expected_output": 685863003
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 2,
+        "k": 100
+      },
+      "expected_output": 85800
+    },
+    {
+      "parameters": {
+        "m": 4,
+        "n": 6,
+        "k": 12
+      },
+      "expected_output": 594914320
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 7,
+        "k": 50
+      },
+      "expected_output": 236557592
+    },
+    {
+      "parameters": {
+        "m": 1,
+        "n": 1000,
+        "k": 10
+      },
+      "expected_output": 122738391
+    },
+    {
+      "parameters": {
+        "m": 1,
+        "n": 100,
+        "k": 50
+      },
+      "expected_output": 596684460
+    },
+    {
+      "parameters": {
+        "m": 4,
+        "n": 12,
+        "k": 20
+      },
+      "expected_output": 723849533
+    },
+    {
+      "parameters": {
+        "m": 9,
+        "n": 11,
+        "k": 99
+      },
+      "expected_output": 32340
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 50,
+        "k": 100
+      },
+      "expected_output": 31872683
+    },
+    {
+      "parameters": {
+        "m": 6,
+        "n": 7,
+        "k": 21
+      },
+      "expected_output": 662311702
+    },
+    {
+      "parameters": {
+        "m": 12,
+        "n": 5,
+        "k": 35
+      },
+      "expected_output": 152704514
+    },
+    {
+      "parameters": {
+        "m": 6,
+        "n": 6,
+        "k": 10
+      },
+      "expected_output": 753633765
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 8,
+        "k": 15
+      },
+      "expected_output": 927055315
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 15,
+        "k": 120
+      },
+      "expected_output": 745855507
+    },
+    {
+      "parameters": {
+        "m": 8,
+        "n": 9,
+        "k": 45
+      },
+      "expected_output": 569458134
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 50
+      },
+      "expected_output": 106535598
+    },
+    {
+      "parameters": {
+        "m": 9,
+        "n": 12,
+        "k": 54
+      },
+      "expected_output": 458241022
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 10000
+      },
+      "expected_output": 332999979
+    },
+    {
+      "parameters": {
+        "m": 3,
+        "n": 8,
+        "k": 24
+      },
+      "expected_output": 1012
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 5,
+        "k": 50
+      },
+      "expected_output": 543733780
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 2,
+        "k": 10
+      },
+      "expected_output": 281508913
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 3,
+        "k": 10
+      },
+      "expected_output": 52907400
+    },
+    {
+      "parameters": {
+        "m": 10,
+        "n": 10,
+        "k": 50
+      },
+      "expected_output": 434987024
+    },
+    {
+      "parameters": {
+        "m": 6,
+        "n": 6,
+        "k": 18
+      },
+      "expected_output": 982764729
+    },
+    {
+      "parameters": {
+        "m": 5,
+        "n": 10,
+        "k": 25
+      },
+      "expected_output": 329316644
+    },
+    {
+      "parameters": {
+        "m": 6,
+        "n": 5,
+        "k": 20
+      },
+      "expected_output": 931360310
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 5,
+        "k": 15
+      },
+      "expected_output": 136117652
+    },
+    {
+      "parameters": {
+        "m": 40,
+        "n": 40,
+        "k": 1200
+      },
+      "expected_output": 350729036
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 20,
+        "k": 100
+      },
+      "expected_output": 132852497
+    },
+    {
+      "parameters": {
+        "m": 100,
+        "n": 100,
+        "k": 5
+      },
+      "expected_output": 666666283
+    },
+    {
+      "parameters": {
+        "m": 1000,
+        "n": 1,
+        "k": 10
+      },
+      "expected_output": 122738391
+    },
+    {
+      "parameters": {
+        "m": 15,
+        "n": 15,
+        "k": 100
+      },
+      "expected_output": 268949671
+    },
+    {
+      "parameters": {
+        "m": 50,
+        "n": 50,
+        "k": 500
+      },
+      "expected_output": 833366694
+    },
+    {
+      "parameters": {
+        "m": 75,
+        "n": 75,
+        "k": 300
+      },
+      "expected_output": 770041881
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 5,
+        "k": 15
+      },
+      "expected_output": 541933847
+    },
+    {
+      "parameters": {
+        "m": 20,
+        "n": 25,
+        "k": 100
+      },
+      "expected_output": 883287723
+    },
+    {
+      "parameters": {
+        "m": 1,
+        "n": 1000,
+        "k": 500
+      },
+      "expected_output": 349233848
+    },
+    {
+      "parameters": {
+        "m": 7,
+        "n": 6,
+        "k": 20
+      },
+      "expected_output": 753814653
+    },
+    {
+      "parameters": {
+        "m": 30,
+        "n": 30,
+        "k": 90
+      },
+      "expected_output": 482659936
+    }
+  ]
+}

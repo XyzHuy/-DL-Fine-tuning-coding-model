@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest substring where each character appears at least k times.
+2. Problem type / algorithm category: String manipulation, divide and conquer, recursion.
+3. Step-by-step approach: Count character frequencies, find a character with frequency less than k, split the string by that character, and recursively check each substring. If all characters have frequency >= k, return the length of the string.
+4. Edge cases: Empty string, string length less than k, k larger than string length.
+5. Time and space complexity: Time complexity is O(N^2) in worst case where N is the length of the string. Space complexity is O(N) due to recursion depth and character counts.
+</thinking>

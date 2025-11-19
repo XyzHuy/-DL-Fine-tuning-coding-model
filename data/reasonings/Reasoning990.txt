@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a set of equality and inequality equations between single-character variables can be satisfied by assigning integer values to the variables.
+2. Problem type / algorithm category: Union-Find (Disjoint Set Union)
+3. Step-by-step approach: Use Union-Find to group equal variables. Then, iterate through the inequality equations and check if any unequal variables belong to the same group. If so, the equations are unsatisfiable.
+4. Edge cases: Empty input, single equation, multiple connected components of equal variables.
+5. Time and space complexity: Time complexity is O(N), where N is the number of equations. Space complexity is O(1) since there are only 26 possible variables.
+</thinking>

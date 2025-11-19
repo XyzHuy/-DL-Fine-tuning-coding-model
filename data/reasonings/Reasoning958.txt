@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Determine if a given binary tree is a complete binary tree.
+2. Problem type / algorithm category: Tree traversal, Breadth-First Search (BFS)
+3. Step-by-step approach: Use BFS to traverse the tree level by level. Maintain a flag to indicate if we have encountered a non-full node. If we encounter a node after the flag is set that has children, then the tree is not complete.
+4. Edge cases: Empty tree, single node tree, a complete tree, and an incomplete tree.
+5. Time and space complexity: Time complexity is O(N) because we visit each node once. Space complexity is O(W) where W is the maximum width of the tree (worst case O(N) for a complete binary tree).
+</thinking>

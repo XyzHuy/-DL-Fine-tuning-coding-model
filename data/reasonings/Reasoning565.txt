@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest cycle formed by repeatedly indexing into an array using the array values as indices, starting from each index.
+2. Problem type / algorithm category: Array, cycle detection, graph traversal.
+3. Step-by-step approach: Iterate through the array. For each index, follow the chain of indices until a cycle is detected (i.e., we encounter an index we've already visited). Keep track of the length of the current cycle and update the maximum length found so far. Use a boolean array to mark visited indices to avoid infinite loops and redundant computations.
+4. Edge cases: Empty array (though the problem statement says n >= 1, so it is not relevant), array with cycles of length 1.
+5. Time and space complexity: Time complexity is O(n) because each element is visited at most once. Space complexity is O(n) due to the visited array.
+</thinking>

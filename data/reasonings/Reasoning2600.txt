@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Maximize the sum by picking exactly k items from a collection containing 1s, 0s, and -1s.
+2. Problem type / algorithm category: Greedy approach.
+3. Step-by-step approach: Prioritize picking 1s, then 0s, and finally -1s if k items are not yet picked.
+4. Edge cases: k being smaller than or equal to the count of any item type, or k exceeding the total number of items.
+5. Time and space complexity: O(1) time complexity and O(1) space complexity.
+</thinking>

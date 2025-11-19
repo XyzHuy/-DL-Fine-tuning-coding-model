@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Reverse a linked list in groups of k nodes. If the number of nodes is not a multiple of k, leave the remaining nodes as is.
+2. Problem type / algorithm category: Linked list manipulation, recursion/iteration.
+3. Step-by-step approach: Use a helper function to reverse k nodes, iterate through the list, and connect reversed sublists. Use a dummy node to simplify head insertion.
+4. Edge cases: Empty list, k=1, k > length of list, list length not a multiple of k.
+5. Time and space complexity: O(N) time complexity where N is the number of nodes in the list. O(1) space complexity.
+</thinking>

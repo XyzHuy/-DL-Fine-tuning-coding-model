@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the longest substring within a given string where for every letter present, both its uppercase and lowercase forms exist. Return the earliest occurring longest nice substring, or an empty string if none exists.
+2. Problem type / algorithm category: String manipulation, Recursion, Divide and Conquer.
+3. Step-by-step approach: If a character is found whose case-swapped counterpart is missing, recursively search the substrings to the left and right of that character. The base case for recursion is when a substring is found to be entirely "nice," meaning all its characters have their counterparts. The longest nice substring found from these recursive calls is returned.
+4. Edge cases: Empty input string or a string with only one character, which cannot form a nice substring.
+5. Time and space complexity: Time complexity is O(N^2) in the worst case due to recursive splitting and set operations. Space complexity is O(N) due to recursion depth and set storage.
+</thinking>

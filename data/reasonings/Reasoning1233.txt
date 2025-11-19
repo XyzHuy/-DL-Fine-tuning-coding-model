@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a list of folder paths, remove all paths that are subfolders of other paths in the list.
+2. Problem type / algorithm category: String manipulation, sorting, greedy approach.
+3. Step-by-step approach: Sort the folder paths alphabetically. Initialize a result list with the first folder. Iterate through the sorted folders, and if a folder does not start with the last added folder followed by a "/", add it to the result.
+4. Edge cases: A single folder in the input list, folders that are direct children of the root, folders that are siblings.
+5. Time and space complexity: Time complexity is dominated by sorting, O(N log N * L) where N is the number of folders and L is the max length of a folder path. Space complexity is O(N * L) for storing the result and potentially for sorting in some implementations.
+</thinking>

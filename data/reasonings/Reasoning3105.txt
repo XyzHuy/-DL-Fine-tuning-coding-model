@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the length of the longest subarray that is either strictly increasing or strictly decreasing.
+2. Problem type / algorithm category: Dynamic Programming / Sliding Window variant.
+3. Step-by-step approach: Iterate through the array, maintaining the current length of an increasing or decreasing subarray. Reset the current length if the monotonic property is broken or if elements are equal. Update the maximum length found so far.
+4. Edge cases: Empty input array, array with all equal elements, array with a single element.
+5. Time and space complexity: Time O(n), Space O(1).
+</thinking>

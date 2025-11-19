@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Apply a quadratic function to each element of a sorted array and return the sorted array of the transformed values.
+2. Problem type / algorithm category: Two Pointers, Sorting, Quadratic Function
+3. Step-by-step approach: Use two pointers, one at the beginning and one at the end of the array. Evaluate the quadratic function for both pointers. If 'a' is non-negative, the larger value goes to the end of the result array. If 'a' is negative, the smaller value goes to the beginning of the result array. Move the corresponding pointer and repeat until the pointers meet.
+4. Edge cases: Empty input array, large input values potentially causing integer overflow (though constraints limit the size).
+5. Time and space complexity: Time complexity is O(n) because we iterate through the array once using two pointers. Space complexity is O(n) because we create a new array to store the transformed and sorted values.
+</thinking>

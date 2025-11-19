@@ -1,0 +1,341 @@
+{
+  "function_name": "smallestNumber",
+  "test_cases": [
+    {
+      "parameters": {
+        "n": 3
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "n": 12
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 100
+      },
+      "expected_output": 127
+    },
+    {
+      "parameters": {
+        "n": 1000
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 5
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "n": 64
+      },
+      "expected_output": 127
+    },
+    {
+      "parameters": {
+        "n": 16
+      },
+      "expected_output": 31
+    },
+    {
+      "parameters": {
+        "n": 2
+      },
+      "expected_output": 3
+    },
+    {
+      "parameters": {
+        "n": 1024
+      },
+      "expected_output": 2047
+    },
+    {
+      "parameters": {
+        "n": 8
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 255
+      },
+      "expected_output": 255
+    },
+    {
+      "parameters": {
+        "n": 999
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 256
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 768
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 14
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 512
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 9
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 31
+      },
+      "expected_output": 31
+    },
+    {
+      "parameters": {
+        "n": 6
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "n": 1
+      },
+      "expected_output": 1
+    },
+    {
+      "parameters": {
+        "n": 500
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 7
+      },
+      "expected_output": 7
+    },
+    {
+      "parameters": {
+        "n": 10
+      },
+      "expected_output": 15
+    },
+    {
+      "parameters": {
+        "n": 63
+      },
+      "expected_output": 63
+    },
+    {
+      "parameters": {
+        "n": 576
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 639
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 666
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 678
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 511
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 991
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 890
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 769
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 2047
+      },
+      "expected_output": 2047
+    },
+    {
+      "parameters": {
+        "n": 448
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 123
+      },
+      "expected_output": 127
+    },
+    {
+      "parameters": {
+        "n": 384
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 345
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 257
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 1001
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 640
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 733
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 128
+      },
+      "expected_output": 255
+    },
+    {
+      "parameters": {
+        "n": 101
+      },
+      "expected_output": 127
+    },
+    {
+      "parameters": {
+        "n": 777
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 789
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 555
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 383
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 997
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 1023
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 127
+      },
+      "expected_output": 127
+    },
+    {
+      "parameters": {
+        "n": 800
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 456
+      },
+      "expected_output": 511
+    },
+    {
+      "parameters": {
+        "n": 960
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 767
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 998
+      },
+      "expected_output": 1023
+    },
+    {
+      "parameters": {
+        "n": 719
+      },
+      "expected_output": 1023
+    }
+  ]
+}

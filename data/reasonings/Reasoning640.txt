@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Solve an equation with '+', '-', and 'x', and return the value of x or "No solution" or "Infinite solutions".
+2. Problem type / algorithm category: String parsing, equation solving.
+3. Step-by-step approach: Split the equation into left and right expressions. Parse each expression to calculate the coefficient of x and the constant term. Combine the coefficients and constants from both sides. Check for special cases (no solution, infinite solutions). If a unique solution exists, calculate and return it.
+4. Edge cases: No solution (0x = constant), infinite solutions (0x = 0).
+5. Time and space complexity: O(n) time, O(n) space where n is the length of the equation.
+</thinking>

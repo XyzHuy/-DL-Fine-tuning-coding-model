@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find two non-overlapping subarrays in a given array, each summing to a target value, such that the sum of their lengths is minimized. Return the minimum sum of lengths or -1 if no such pair exists.
+2. Problem type / algorithm category: Sliding Window, Prefix Sums, Dynamic Programming.
+3. Step-by-step approach: Calculate prefix sums. Iterate through the array with a right pointer, maintaining a left pointer for a sliding window. When a subarray with the target sum is found (right - left), record its length. Store the minimum length found up to each index in `min_lengths`. If a subarray ending at `right` with sum `target` is found, check `min_lengths[left]` for a previously found non-overlapping subarray, updating the overall minimum length sum if a better pair is found. Update `min_lengths[right]` with the minimum length found so far ending at or before `right`.
+4. Edge cases: Array with no subarrays summing to target. Array with only one subarray summing to target. Target value can be large. Array length can be large.
+5. Time and space complexity: Time complexity is O(n) due to single pass with sliding window. Space complexity is O(n) for storing prefix sums and minimum lengths.
+</thinking>

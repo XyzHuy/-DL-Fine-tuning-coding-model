@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an array of integers, determine if it can be partitioned into k non-empty subsets with equal sums.
+2. Problem type / algorithm category: Backtracking, Dynamic Programming (can be optimized with memoization, but backtracking is sufficient for the given constraints).
+3. Step-by-step approach: Calculate the target sum for each subset. Sort the input array in descending order to improve backtracking efficiency. Use a backtracking algorithm to try assigning each number to one of the k subsets (buckets). If a valid assignment is found, return true; otherwise, return false.
+4. Edge cases: If the sum of the numbers is not divisible by k, return false. If the largest number is greater than the target sum, return false. Empty input array not applicable due to constraints.
+5. Time and space complexity: Time complexity is O(k^N) in the worst case, where N is the number of elements in nums. Space complexity is O(k + N), for buckets and recursion stack.
+</thinking>

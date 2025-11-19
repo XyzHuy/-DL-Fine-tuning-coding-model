@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given a binary tree where every right node has a sibling (left node) and no children, turn the tree upside down such that the original left child becomes the new root, the original root becomes the new right child, and the original right child becomes the new left child.
+2. Problem type / algorithm category: Binary tree manipulation, recursion.
+3. Step-by-step approach: Recursively process the left subtree until reaching the bottom-left node (new root). Then, for each node, reassign its left child's left and right pointers to its right and itself, respectively. Finally, set the original node's left and right children to null.
+4. Edge cases: Empty tree, single-node tree.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree, as each node is visited once. Space complexity is O(H), where H is the height of the tree, due to the recursive call stack. In the worst case (skewed tree), H = N, so the space complexity can be O(N).
+</thinking>

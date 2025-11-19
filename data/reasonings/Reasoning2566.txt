@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given an integer, find the maximum and minimum possible values by remapping exactly one digit to another, and return their difference.
+2. Problem type / algorithm category: String manipulation, brute force (implicit).
+3. Step-by-step approach: Convert the number to a string. To find the maximum, iterate through digits, find the first non-'9' digit, and replace all occurrences with '9'. To find the minimum, replace the first digit with '0'. Convert the modified strings back to integers and calculate the difference.
+4. Edge cases: All digits in the number are '9' (max value is the number itself). The first digit is the only digit or needs to be replaced by '0' for the minimum.
+5. Time and space complexity: Time complexity is O(L) where L is the number of digits, due to string operations. Space complexity is O(L) for storing string representations.
+</thinking>

@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Select the longest subsequence of words where adjacent words have different associated group values.
+2. Problem type / algorithm category: Greedy approach, subsequence.
+3. Step-by-step approach: Initialize the result with the first word. Iterate through the remaining words, and if the current word's group is different from the last added word's group, add the current word to the result and update the last group.
+4. Edge cases: Empty input lists for words and groups.
+5. Time and space complexity: Time is O(n) because we iterate through the input lists once. Space is O(n) in the worst case to store the result subsequence.
+</thinking>

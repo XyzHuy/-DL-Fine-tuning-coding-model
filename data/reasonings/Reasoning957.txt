@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate prison cell state changes over N days, following specific vacancy/occupancy rules based on neighbors.
+2. Problem type / algorithm category: Simulation, Cycle Detection.
+3. Step-by-step approach: Implement the cell state transition rule. Detect repeating patterns in cell states using a dictionary to store seen states and their corresponding day. If a cycle is detected, calculate the remaining days after skipping complete cycles to optimize computation.
+4. Edge cases: The first and last cells always have only one neighbor, and their next state depends only on that neighbor. The cycle may start at day 0.
+5. Time and space complexity: Time complexity is O(2^8) in the worst case (all possible states), but cycle detection makes it much faster in practice. Space complexity is O(2^8) to store the seen states.
+</thinking>

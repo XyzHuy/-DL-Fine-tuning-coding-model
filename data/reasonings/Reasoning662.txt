@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Given the root of a binary tree, find the maximum width of the tree, where width is defined as the number of nodes (including null nodes) between the leftmost and rightmost non-null nodes at each level.
+2. Problem type / algorithm category: Breadth-First Search (BFS), Tree traversal.
+3. Step-by-step approach: Use BFS to traverse the tree level by level. Assign each node an index based on its position in a complete binary tree. At each level, the width is calculated as the difference between the largest and smallest indices plus one. Keep track of the maximum width seen so far.
+4. Edge cases: Empty tree (root is None), single node tree, skewed trees.
+5. Time and space complexity: Time complexity is O(N), where N is the number of nodes in the tree. Space complexity is O(W), where W is the maximum width of the tree (the maximum number of nodes at any level), which in the worst case can be O(N).
+</thinking>

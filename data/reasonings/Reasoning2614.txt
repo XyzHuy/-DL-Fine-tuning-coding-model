@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Find the largest prime number located on either the main diagonal or anti-diagonal of a square matrix.
+2. Problem type / algorithm category: Number theory (primality testing), Matrix traversal.
+3. Step-by-step approach: Iterate through the matrix, checking elements on both diagonals. For each diagonal element, determine if it's prime using a primality test. Keep track of the largest prime found so far. If no primes are found, return 0.
+4. Edge cases: The matrix may contain no prime numbers on its diagonals, in which case 0 should be returned. Numbers less than or equal to 1 are not prime.
+5. Time and space complexity: Time complexity is O(N^2 * sqrt(M)), where N is the dimension of the matrix and M is the maximum value in the matrix. Space complexity is O(1).
+</thinking>

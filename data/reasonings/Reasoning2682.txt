@@ -1,0 +1,7 @@
+<thinking>
+1. Problem summary: Simulate a ball passing game in a circle of n friends, where the i-th pass is k * i steps clockwise. Identify friends who never receive the ball when the game ends upon a repeat recipient.
+2. Problem type / algorithm category: Simulation, Modular Arithmetic.
+3. Step-by-step approach: Start at friend 0. Repeatedly add the current step count (1, 2, 3, ...) multiplied by k to the current friend's index, taking the result modulo n to handle circularity. Keep track of visited friends using a set. Stop when a friend is visited again. Finally, identify and list friends not in the visited set.
+4. Edge cases: k can be a multiple of n, leading to an immediate return to the first player. n=1 is a trivial case.
+5. Time and space complexity: Time complexity is O(n) because in the worst case, all friends might receive the ball. Space complexity is O(n) to store the set of friends who received the ball.
+</thinking>
